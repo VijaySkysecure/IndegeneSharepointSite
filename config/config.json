@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "migration-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/migration/MigrationWebPart.js",
+          "manifest": "./src/webparts/migration/MigrationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MigrationWebPartStrings": "lib/webparts/migration/loc/{locale}.js"
+  }
+}
+

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sharepoint-migration-site-client-side-solution",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "SkySecureTech",
+      "websiteUrl": "https://skysecuretech.sharepoint.com/sites/MigrationTest",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.0.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "description": "SharePoint Migration Site Frontend"
+      },
+      "longDescription": {
+        "description": "Frontend solution for SharePoint Migration Test site"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sharepoint-migration-site Feature",
+        "description": "The feature that activates elements of the sharepoint-migration-site solution.",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sharepoint-migration-site.sppkg"
+  }
+}
+

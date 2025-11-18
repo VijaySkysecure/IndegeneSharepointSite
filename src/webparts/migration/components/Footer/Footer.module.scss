@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  background-color: white;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footerContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoSquare {
+  width: 12px;
+  height: 12px;
+  background-color: #1976d2;
+  flex-shrink: 0;
+}
+
+.logoText {
+  font-size: 18px;
+  color: #1976d2;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+
+

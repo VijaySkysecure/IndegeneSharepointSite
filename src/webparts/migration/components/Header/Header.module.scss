@@ -1,0 +1,92 @@
+.header {
+  width: 100%;
+  background: linear-gradient(to right, #ff6b9d 0%, #c44569 30%, #6c5ce7 70%, #4834d4 100%);
+  padding: 40px 60px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.companyName {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.description {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  color: white;
+  opacity: 0.95;
+}
+
+.addFileButton {
+  background-color: #4834d4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #3d2db8;
+  }
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.leadership {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  min-width: 300px;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
