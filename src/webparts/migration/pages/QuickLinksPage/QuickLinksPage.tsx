@@ -25,15 +25,6 @@ export const QuickLinksPage: React.FunctionComponent<IQuickLinksPageProps> = (pr
   return (
     <div className={styles.quickLinksPage}>
       <div className={styles.pageContainer}>
-        <div className={styles.mainContent}>
-          <div className={styles.contentArea}>
-            <div className={styles.carouselIndicators}>
-              <span className={styles.dot}></span>
-              <span className={`${styles.dot} ${styles.active}`}></span>
-              <span className={styles.dot}></span>
-            </div>
-          </div>
-        </div>
         <div className={styles.quickLinksSidebar}>
           <h2 className={styles.sidebarTitle}>Quick Links</h2>
           <ul className={styles.linksList}>
