@@ -1,8 +1,12 @@
 import * as React from 'react';
 import { IHeaderProps } from './IHeaderProps';
 import styles from './Header.module.scss';
+import { useState } from 'react';
+import { FileUpload } from '../FileUpload/FileUpload';
 
 export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+  const [showUploader, setShowUploader] = useState(false);
+
   return (
     <div className={styles.header}>
       <div className={styles.headerContent}>
@@ -11,7 +15,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
           <p className={styles.description}>
             About Indegene, the services they provide...etc
           </p>
-          <button className={styles.addFileButton}>Add a file</button>
+          <button className={styles.addFileButton} onClick={() => setShowUploader(true)}>Add a file</button>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.leadership}>Leadership</div>
@@ -37,6 +41,10 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
           </div>
         </div>
       </div>
+
+      {showUploader && (
+        <FileUpload onClose={() => setShowUploader(false)} />
+      )}
     </div>
   );
 };
