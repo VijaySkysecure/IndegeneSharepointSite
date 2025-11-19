@@ -1,12 +1,12 @@
 
 require("./ContentArea.module.css");
 const styles = {
-  contentArea: 'contentArea_7f0beed9',
-  contentContainer: 'contentContainer_7f0beed9',
-  contentText: 'contentText_7f0beed9',
-  carouselIndicators: 'carouselIndicators_7f0beed9',
-  dot: 'dot_7f0beed9',
-  active: 'active_7f0beed9'
+  contentArea: 'contentArea_e198527e',
+  contentContainer: 'contentContainer_e198527e',
+  contentText: 'contentText_e198527e',
+  carouselIndicators: 'carouselIndicators_e198527e',
+  dot: 'dot_e198527e',
+  active: 'active_e198527e'
 };
 
 export default styles;

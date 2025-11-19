@@ -37,7 +37,7 @@
     "scriptResources": {
       "migration-web-part": {
         "type": "path",
-        "path": "migration-web-part.js"
+        "path": "migration-web-part_23f3e092d383d6243889.js"
       },
       "react": {
         "type": "component",
@@ -66,7 +66,7 @@
       },
       "MigrationWebPartStrings": {
         "type": "path",
-        "path": "MigrationWebPartStrings_en-us.js"
+        "path": "MigrationWebPartStrings_en-us_2dddf2406641eabebc0e1560efee0938.js"
       }
     }
   }

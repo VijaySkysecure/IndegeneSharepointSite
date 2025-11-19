@@ -5,17 +5,20 @@ import { Navigation } from './Navigation/Navigation';
 import { QuestionSection } from './QuestionSection/QuestionSection';
 import { Footer } from './Footer/Footer';
 import { ContentArea } from './ContentArea/ContentArea';
+import { BUDetailPage } from './BUDetailPage/BUDetailPage';
 import styles from './Migration.module.scss';
 
 interface IMigrationState {
   activePage: string;
+  selectedBU: string | null;
 }
 
 export default class Migration extends React.Component<IMigrationProps, IMigrationState> {
   constructor(props: IMigrationProps) {
     super(props);
     this.state = {
-      activePage: 'about'
+      activePage: 'about',
+      selectedBU: null
     };
   }
 
@@ -33,12 +36,38 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
     this.setState({ activePage: page });
   }
 
+  private handleBUClick = (buName: string): void => {
+    this.setState({ selectedBU: buName, activePage: 'about' });
+  }
+
+  private handleBackToMain = (): void => {
+    this.setState({ selectedBU: null, activePage: 'about' });
+  }
+
   public render(): React.ReactElement<IMigrationProps> {
+    // If a BU is selected, show BU detail page
+    if (this.state.selectedBU) {
+      return (
+        <div className={styles.migration}>
+          <BUDetailPage 
+            buName={this.state.selectedBU} 
+            context={this.props.context}
+            onBack={this.handleBackToMain}
+          />
+        </div>
+      );
+    }
+
+    // Otherwise show main page
     return (
       <div className={styles.migration}>
         <Header />
         <Navigation activePage={this.state.activePage} onNavClick={this.handleNavClick} />
-        <ContentArea activePage={this.state.activePage} context={this.props.context} />
+        <ContentArea 
+          activePage={this.state.activePage} 
+          context={this.props.context}
+          onBUClick={this.handleBUClick}
+        />
         <QuestionSection />
         <Footer />
       </div>
