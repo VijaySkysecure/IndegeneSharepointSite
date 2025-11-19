@@ -45,22 +45,23 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_887b6771{align-items:center;background:rgba(0,0,0,.45);display:flex;font-family:Inter,sans-serif;inset:0;justify-content:center;position:fixed;z-index:9999}.modal_887b6771{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_887b6771{color:#272727;font-size:22px;font-weight:700;margin:0 0 12px}.dropZone_887b6771{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_887b6771{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_887b6771{color:#4834d4;display:block;height:64px;width:64px}.hintText_887b6771{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_887b6771{color:#666;font-size:13px}.browseBtn_887b6771{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_887b6771{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_887b6771{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_887b6771{color:#333;font-size:14px;margin-bottom:12px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWxlVXBsb2FkL0ZpbGVVcGxvYWQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBS0Usa0JBQUEsQ0FGQSwwQkFBQSxDQUNBLFlBQUEsQ0FJQSw0QkFBQSxDQU5BLE9BQUEsQ0FJQSxzQkFBQSxDQUxBLGNBQUEsQ0FNQSxZQUNBLENBR0YsZ0JBQ0UsZUFBQSxDQUVBLGtCQUFBLENBR0Esc0NBQUEsQ0FEQSxhQUFBLENBSEEsWUFBQSxDQUVBLFdBRUEsQ0FHRixnQkFJRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FGQSxlQUdBLENBR0YsbUJBS0Usa0JBQUEsQ0FNQSwwRUFBQSxDQVZBLHFDQUFBLENBQ0Esa0JBQUEsQ0FVQSx5Q0FBQSxDQUhBLGNBQUEsQ0FMQSxZQUFBLENBR0EscUJBQUEsQ0FDQSxRQUFBLENBRkEsc0JBQUEsQ0FIQSxZQUFBLENBVUEsaUJBQUEsQ0FIQSwyRUFHQSxDQUdGLHdCQUVFLDhFQUFBLENBREEsb0JBQUEsQ0FFQSx5Q0FBQSxDQUdGLHFCQUdFLGFBQUEsQ0FDQSxhQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FHRix1QkFFRSxVQUFBLENBREEsY0FDQSxDQUdGLG9CQUNFLHdCQUFBLENBRUEsV0FBQSxDQUVBLGlCQUFBLENBSEEsVUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsaUJBR0EsQ0FHRixpQkFDRSxZQUFBLENBR0EsUUFBQSxDQUZBLHdCQUFBLENBQ0EsZUFDQSxDQUdGLG1CQUNFLGNBQUEsQ0FDQSxxQkFBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FGQSxnQkFFQSxDQUdGLG1CQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsa0JBQUEiLCJmaWxlIjoiRmlsZVVwbG9hZC5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_3200fcfd{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_3200fcfd,.overlay_3200fcfd{align-items:center;display:flex;justify-content:center}.modal_3200fcfd{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_3200fcfd{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_3200fcfd{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_3200fcfd{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_3200fcfd{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_3200fcfd{color:#4834d4;display:block;height:64px;width:64px}.hintText_3200fcfd{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_3200fcfd{color:#666;font-size:13px}.browseBtn_3200fcfd{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_3200fcfd{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_3200fcfd{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_3200fcfd{color:#333;font-size:14px;margin-bottom:12px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWxlVXBsb2FkL0ZpbGVVcGxvYWQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBR0UsMEJBQUEsQ0FLQSw0QkFBQSxDQU5BLE9BQUEsQ0FEQSxjQUFBLENBTUEsWUFDQSxDQUdGLGtDQU5FLGtCQUFBLENBREEsWUFBQSxDQUVBLHNCQWNBLENBVEYsZ0JBQ0UsY0FBQSxDQUVBLGtCQUFBLENBR0EsZUFBQSxDQURBLGFBQUEsQ0FIQSxTQUFBLENBRUEsVUFLQSxDQUdGLHFCQUNFLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBREEsYUFBQSxDQUhBLFlBQUEsQ0FFQSxXQUVBLENBR0YsZ0JBS0UsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSEEsZUFBQSxDQUtBLG1CQUFBLENBQ0EsZ0JBQUEsQ0FKQSxpQkFJQSxDQUdGLG1CQUtFLGtCQUFBLENBTUEsMEVBQUEsQ0FWQSxxQ0FBQSxDQUNBLGtCQUFBLENBVUEseUNBQUEsQ0FIQSxjQUFBLENBTEEsWUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUZBLHNCQUFBLENBSEEsWUFBQSxDQVVBLGlCQUFBLENBSEEsMkVBR0EsQ0FHRix3QkFFRSw4RUFBQSxDQURBLG9CQUFBLENBRUEseUNBQUEsQ0FHRixxQkFHRSxhQUFBLENBQ0EsYUFBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBR0YsdUJBRUUsVUFBQSxDQURBLGNBQ0EsQ0FHRixvQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FFQSxpQkFBQSxDQUhBLFVBQUEsQ0FJQSxjQUFBLENBQ0EsZUFBQSxDQUhBLGlCQUdBLENBR0YsaUJBQ0UsWUFBQSxDQUdBLFFBQUEsQ0FGQSx3QkFBQSxDQUNBLGVBQ0EsQ0FHRixtQkFDRSxjQUFBLENBQ0EscUJBQUEsQ0FHQSxpQkFBQSxDQUZBLFVBQUEsQ0FHQSxjQUFBLENBRkEsZ0JBRUEsQ0FHRixtQkFFRSxVQUFBLENBREEsY0FBQSxDQUVBLGtCQUFBIiwiZmlsZSI6IkZpbGVVcGxvYWQubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  overlay_887b6771: "overlay_887b6771",
-  modal_887b6771: "modal_887b6771",
-  title_887b6771: "title_887b6771",
-  dropZone_887b6771: "dropZone_887b6771",
-  dropZoneHover_887b6771: "dropZoneHover_887b6771",
-  uploadIcon_887b6771: "uploadIcon_887b6771",
-  hintText_887b6771: "hintText_887b6771",
-  instructions_887b6771: "instructions_887b6771",
-  browseBtn_887b6771: "browseBtn_887b6771",
-  footer_887b6771: "footer_887b6771",
-  closeBtn_887b6771: "closeBtn_887b6771",
-  fileName_887b6771: "fileName_887b6771"
+  overlay_3200fcfd: "overlay_3200fcfd",
+  modal_3200fcfd: "modal_3200fcfd",
+  uploadCard_3200fcfd: "uploadCard_3200fcfd",
+  title_3200fcfd: "title_3200fcfd",
+  dropZone_3200fcfd: "dropZone_3200fcfd",
+  dropZoneHover_3200fcfd: "dropZoneHover_3200fcfd",
+  uploadIcon_3200fcfd: "uploadIcon_3200fcfd",
+  hintText_3200fcfd: "hintText_3200fcfd",
+  instructions_3200fcfd: "instructions_3200fcfd",
+  browseBtn_3200fcfd: "browseBtn_3200fcfd",
+  footer_3200fcfd: "footer_3200fcfd",
+  closeBtn_3200fcfd: "closeBtn_3200fcfd",
+  fileName_3200fcfd: "fileName_3200fcfd"
 });
 
 
@@ -143,21 +144,29 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_e960cc00{background:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.06);display:flex;flex-direction:column;margin:20px auto;max-height:calc(100vh - 160px);max-width:96%;overflow:hidden;padding:18px;width:520px}.title_e960cc00{color:#272727;font-size:20px;font-weight:700;margin-bottom:12px}.formInner_e960cc00{display:flex;flex:1 1 auto;flex-direction:column;gap:12px;overflow-y:auto;padding-right:6px}.grid_e960cc00{display:grid;gap:12px 14px;grid-template-columns:repeat(2,1fr)}.fieldFull_e960cc00,.field_e960cc00{display:flex;flex-direction:column}.fieldFull_e960cc00{grid-column:1/-1}.label_e960cc00{color:#4834d4;font-size:13px;font-weight:600;margin-bottom:6px}.input_e960cc00{border:1px solid #e6e6e6;border-radius:6px;font-size:14px;padding:8px 10px;transition:border-color .12s,box-shadow .12s}.input_e960cc00:focus{border-color:#4834d4;box-shadow:0 4px 12px rgba(72,52,212,.06);outline:0}.textarea_e960cc00{border:1px solid #e6e6e6;border-radius:6px;font-size:14px;min-height:80px;padding:10px;resize:vertical}.textarea_e960cc00:focus{border-color:#4834d4;box-shadow:0 4px 12px rgba(72,52,212,.06);outline:0}.actions_e960cc00{background:#fff;border-top:1px solid rgba(0,0,0,.04);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:6px;padding-top:10px;position:sticky}.submitBtn_e960cc00{background-color:#4834d4;border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px}.submitBtn_e960cc00:hover{background-color:#3d2db8}@media (max-width:640px){.grid_e960cc00{grid-template-columns:1fr}}.formInner_e960cc00::-webkit-scrollbar{width:8px}.formInner_e960cc00::-webkit-scrollbar-thumb{background:rgba(72,52,212,.18);border-radius:8px}.formInner_e960cc00::-webkit-scrollbar-track{background:0 0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NZXRhZGF0YUZvcm0vTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLGVBQUEsQ0FFQSxrQkFBQSxDQUlBLHFDQUFBLENBSUEsWUFBQSxDQUNBLHFCQUFBLENBTkEsZ0JBQUEsQ0FHQSw4QkFBQSxDQUpBLGFBQUEsQ0FLQSxlQUFBLENBUkEsWUFBQSxDQUVBLFdBUUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxrQkFFQSxDQUdGLG9CQUNFLFlBQUEsQ0FNQSxhQUFBLENBTEEscUJBQUEsQ0FDQSxRQUFBLENBRUEsZUFBQSxDQUNBLGlCQUNBLENBR0YsZUFDRSxZQUFBLENBRUEsYUFBQSxDQURBLG1DQUNBLENBUUYsb0NBSkUsWUFBQSxDQUNBLHFCQU1BLENBSEYsb0JBQ0UsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUdFLHdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxjQUFBLENBREEsZ0JBQUEsQ0FJQSw0Q0FBQSxDQUVBLHNCQUNFLG9CQUFBLENBQ0EseUNBQUEsQ0FDQSxTQUFBLENBSUosbUJBS0Usd0JBQUEsQ0FDQSxpQkFBQSxDQUhBLGNBQUEsQ0FEQSxlQUFBLENBREEsWUFBQSxDQUdBLGVBRUEsQ0FFQSx5QkFDRSxvQkFBQSxDQUNBLHlDQUFBLENBQ0EsU0FBQSxDQUlKLGtCQU1FLGVBQUEsQ0FHQSxvQ0FBQSxDQUpBLFFBQUEsQ0FKQSxZQUFBLENBQ0Esd0JBQUEsQ0FDQSxjQUFBLENBS0Esa0JBQUEsQ0FEQSxnQkFBQSxDQUhBLGVBS0EsQ0FHRixvQkFFRSx3QkFBQSxDQUdBLFdBQUEsQ0FDQSxpQkFBQSxDQUhBLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFPQSxDQUVBLDBCQUNFLHdCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUNFLDhCQUFBLENBQ0EsaUJBQUEsQ0FFRiw2Q0FDRSxjQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_6d4eb6a4{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_6d4eb6a4{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_6d4eb6a4{color:#444;font-size:13px;margin-bottom:6px}.headerBar_6d4eb6a4{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_6d4eb6a4{background:0 0;padding:16px}.field_6d4eb6a4{display:flex;flex-direction:column}.title_6d4eb6a4{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_6d4eb6a4{align-items:flex-start;display:flex;flex-direction:column}.subtitle_6d4eb6a4{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_6d4eb6a4{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_6d4eb6a4{display:flex;flex-direction:column;grid-column:1/-1}.label_6d4eb6a4{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_6d4eb6a4{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4::placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_6d4eb6a4{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4::placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.grid_6d4eb6a4{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_6d4eb6a4{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_6d4eb6a4{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_6d4eb6a4:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_6d4eb6a4{grid-template-columns:1fr}}.formInner_6d4eb6a4::-webkit-scrollbar{width:8px}.formInner_6d4eb6a4::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_6d4eb6a4::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_6d4eb6a4::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_6d4eb6a4{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NZXRhZGF0YUZvcm0vTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBSUYsb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixlQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsaUJBQUEsQ0FJRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUhBLGNBQUEsQ0FJQSxpQkFBQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSxZQUNBLENBR0YsZ0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBR0YsZ0JBSUUsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBREEsUUFFQSxDQUdGLG9CQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLHFCQUNBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsY0FDQSxDQUdGLG1CQU9FLGtCQUFBLENBTkEsZUFBQSxDQUNBLG1DQUFBLENBT0EsaUJBQUEsQ0FDQSx3Q0FBQSxDQVBBLGFBQUEsQ0FVQSxjQUFBLENBUEEsbUJBQUEsQ0FLQSxjQUFBLENBTkEsV0FBQSxDQUdBLHNCQUFBLENBSUEsYUFBQSxDQUVBLGlCQUFBLENBRUEsVUFBQSxDQURBLFFBQUEsQ0FYQSxVQUFBLENBYUEsVUFBQSxDQUtGLG9CQUVFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGdCQUVBLENBR0YsZ0JBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHRixnQkFLRSxlQUFBLENBRkEsbUNBQUEsQ0FDQSxpQkFBQSxDQUVBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGlCQUFBLENBT0EsMkRBQUEsQ0FFQSw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHNDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixzQkFDRSxnQ0FBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUNBLDBCQUFBLENBSUosbUJBS0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGdCQUFBLENBREEsWUFBQSxDQUdBLGVBSUEsQ0FFQSxnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHlDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRix5QkFDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_e960cc00: "formWrapper_e960cc00",
-  title_e960cc00: "title_e960cc00",
-  formInner_e960cc00: "formInner_e960cc00",
-  grid_e960cc00: "grid_e960cc00",
-  field_e960cc00: "field_e960cc00",
-  fieldFull_e960cc00: "fieldFull_e960cc00",
-  label_e960cc00: "label_e960cc00",
-  input_e960cc00: "input_e960cc00",
-  textarea_e960cc00: "textarea_e960cc00",
-  actions_e960cc00: "actions_e960cc00",
-  submitBtn_e960cc00: "submitBtn_e960cc00"
+  formWrapper_6d4eb6a4: "formWrapper_6d4eb6a4",
+  formInner_6d4eb6a4: "formInner_6d4eb6a4",
+  note_6d4eb6a4: "note_6d4eb6a4",
+  headerBar_6d4eb6a4: "headerBar_6d4eb6a4",
+  cardMeta_6d4eb6a4: "cardMeta_6d4eb6a4",
+  field_6d4eb6a4: "field_6d4eb6a4",
+  title_6d4eb6a4: "title_6d4eb6a4",
+  titleWrap_6d4eb6a4: "titleWrap_6d4eb6a4",
+  subtitle_6d4eb6a4: "subtitle_6d4eb6a4",
+  closeBtn_6d4eb6a4: "closeBtn_6d4eb6a4",
+  fieldFull_6d4eb6a4: "fieldFull_6d4eb6a4",
+  label_6d4eb6a4: "label_6d4eb6a4",
+  input_6d4eb6a4: "input_6d4eb6a4",
+  input: "input",
+  textarea_6d4eb6a4: "textarea_6d4eb6a4",
+  textarea: "textarea",
+  grid_6d4eb6a4: "grid_6d4eb6a4",
+  actions_6d4eb6a4: "actions_6d4eb6a4",
+  submitBtn_6d4eb6a4: "submitBtn_6d4eb6a4"
 });
 
 
@@ -451,7 +460,7 @@ var FileUpload = function (props) {
         props.onClose && props.onClose();
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].overlay },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Upload Document"),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "".concat(_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZone, " ").concat(dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZoneHover : ''), onDragOver: function (e) { e.preventDefault(); setDragOver(true); }, onDragLeave: function () { return setDragOver(false); }, onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
@@ -459,15 +468,12 @@ var FileUpload = function (props) {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].hintText }, "Drag & drop files here"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX. Click browse or drop a file to start."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, onChange: function (e) { return onFileSelected(e.target.files); } })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].footer },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fileName },
-                "Uploaded: ",
-                uploadedFile.name),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit }))))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); } }))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -486,18 +492,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FileUpload.module.css */ 880);
 var styles = {
-    overlay: 'overlay_887b6771',
-    modal: 'modal_887b6771',
-    title: 'title_887b6771',
-    dropZone: 'dropZone_887b6771',
-    dropZoneHover: 'dropZoneHover_887b6771',
-    uploadIcon: 'uploadIcon_887b6771',
-    hintText: 'hintText_887b6771',
-    instructions: 'instructions_887b6771',
-    browseBtn: 'browseBtn_887b6771',
-    footer: 'footer_887b6771',
-    closeBtn: 'closeBtn_887b6771',
-    fileName: 'fileName_887b6771'
+    overlay: 'overlay_3200fcfd',
+    modal: 'modal_3200fcfd',
+    uploadCard: 'uploadCard_3200fcfd',
+    title: 'title_3200fcfd',
+    dropZone: 'dropZone_3200fcfd',
+    dropZoneHover: 'dropZoneHover_3200fcfd',
+    uploadIcon: 'uploadIcon_3200fcfd',
+    hintText: 'hintText_3200fcfd',
+    instructions: 'instructions_3200fcfd',
+    browseBtn: 'browseBtn_3200fcfd',
+    footer: 'footer_3200fcfd',
+    closeBtn: 'closeBtn_3200fcfd',
+    fileName: 'fileName_3200fcfd'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -648,7 +655,7 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 
 var MetadataForm = function (_a) {
-    var onSubmit = _a.onSubmit;
+    var onSubmit = _a.onSubmit, onClose = _a.onClose;
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState({
         title: '',
         abstract: '',
@@ -677,51 +684,52 @@ var MetadataForm = function (_a) {
         onSubmit && onSubmit(values);
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formWrapper },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title" }, "Title"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title", name: "title", value: values.title, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract" }, "Abstract"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu" }, "BU"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu", name: "bu", value: values.bu, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department" }, "Department"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department", name: "department", value: values.department, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region" }, "Region"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region", name: "region", value: values.region, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea" }, "Disease Area"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "diseaseArea", name: "diseaseArea", value: values.diseaseArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea" }, "Therapy Area"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "therapyArea", name: "therapyArea", value: values.therapyArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails" }, "Emails Found"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones" }, "Phones Found"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids" }, "IDs Found"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids", name: "ids", value: values.ids, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing" }, "Pricing / Sensitive Terms"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing", name: "pricing", value: values.pricing, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea }))),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].actions },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn }, "Submit"))))));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerBar },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].titleWrap },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle }, "Add context and tags for better discoverability"))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", "aria-label": "Close", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return onClose && onClose(); }, title: "Close" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M18 6L6 18M6 6l12 12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardMeta },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title" }, "Title"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title", name: "title", placeholder: "Enter document title", value: values.title, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu" }, "Business Unit"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu", name: "bu", placeholder: "Select or type BU", value: values.bu, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department" }, "Department"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department", name: "department", placeholder: "Department", value: values.department, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region" }, "Region"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region", name: "region", placeholder: "Region", value: values.region, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract" }, "Abstract"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails" }, "Emails Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones" }, "Phones Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids" }, "IDs Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids", name: "ids", value: values.ids, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing" }, "Pricing / Sensitive Terms"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing", name: "pricing", value: values.pricing, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea }))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { marginTop: 12, display: 'flex', justifyContent: 'flex-end' } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn }, "Submit")))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MetadataForm);
 
@@ -740,17 +748,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MetadataForm.module.css */ 856);
 var styles = {
-    formWrapper: 'formWrapper_e960cc00',
-    title: 'title_e960cc00',
-    formInner: 'formInner_e960cc00',
-    grid: 'grid_e960cc00',
-    field: 'field_e960cc00',
-    fieldFull: 'fieldFull_e960cc00',
-    label: 'label_e960cc00',
-    input: 'input_e960cc00',
-    textarea: 'textarea_e960cc00',
-    actions: 'actions_e960cc00',
-    submitBtn: 'submitBtn_e960cc00'
+    formWrapper: 'formWrapper_6d4eb6a4',
+    formInner: 'formInner_6d4eb6a4',
+    note: 'note_6d4eb6a4',
+    headerBar: 'headerBar_6d4eb6a4',
+    cardMeta: 'cardMeta_6d4eb6a4',
+    field: 'field_6d4eb6a4',
+    title: 'title_6d4eb6a4',
+    titleWrap: 'titleWrap_6d4eb6a4',
+    subtitle: 'subtitle_6d4eb6a4',
+    closeBtn: 'closeBtn_6d4eb6a4',
+    fieldFull: 'fieldFull_6d4eb6a4',
+    label: 'label_6d4eb6a4',
+    input: 'input_6d4eb6a4',
+    textarea: 'textarea_6d4eb6a4',
+    grid: 'grid_6d4eb6a4',
+    actions: 'actions_6d4eb6a4',
+    submitBtn: 'submitBtn_6d4eb6a4'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

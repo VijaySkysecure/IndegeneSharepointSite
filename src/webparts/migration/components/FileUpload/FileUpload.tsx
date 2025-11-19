@@ -41,7 +41,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     <div className={styles.overlay}>
       <div className={styles.modal} role="dialog" aria-modal="true">
         {!uploadedFile ? (
-          <>
+          <div className={styles.uploadCard}>
             <h3 className={styles.title}>Upload Document</h3>
             <div
               className={`${styles.dropZone} ${dragOver ? styles.dropZoneHover : ''}`}
@@ -58,7 +58,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 <path d="M12 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className={styles.hintText}>Drag & drop files here</div>
-              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX. Click browse or drop a file to start.</div>
+              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start.</div>
               <button className={styles.browseBtn} onClick={(e) => { e.stopPropagation(); onBrowse(); }}>
                 Browse files
               </button>
@@ -66,17 +66,17 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 ref={fileInputRef}
                 type="file"
                 style={{ display: 'none' }}
+                accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp"
                 onChange={(e) => onFileSelected(e.target.files)}
               />
             </div>
             <div className={styles.footer}>
               <button className={styles.closeBtn} onClick={() => props.onClose && props.onClose()}>Close</button>
             </div>
-          </>
+          </div>
         ) : (
           <>
-            <div className={styles.fileName}>Uploaded: {uploadedFile.name}</div>
-            <MetadataForm onSubmit={onFormSubmit} />
+            <MetadataForm onSubmit={onFormSubmit} onClose={() => props.onClose && props.onClose()} />
           </>
         )}
       </div>
