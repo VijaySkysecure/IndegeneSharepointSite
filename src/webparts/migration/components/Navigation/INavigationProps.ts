@@ -1,5 +1,6 @@
 export interface INavigationProps {
-  // Add props here if needed in the future
+  activePage: string;
+  onNavClick: (page: string) => void;
 }
 
 

@@ -1,8 +1,7 @@
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 
-export interface IAboutPageProps {
+export interface IContentAreaProps {
+  activePage: string;
   context?: WebPartContext;
 }
-
-
 

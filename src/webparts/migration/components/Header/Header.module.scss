@@ -4,6 +4,7 @@
   padding: 40px 60px;
   color: white;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 .headerContent {
@@ -20,9 +21,10 @@
 
 .companyName {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 10px 0;
   color: white;
+  font-family: 'Inter', sans-serif;
 }
 
 .description {
@@ -30,6 +32,8 @@
   margin: 0 0 20px 0;
   color: white;
   opacity: 0.95;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
 }
 
 .addFileButton {
@@ -41,6 +45,7 @@
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
+  font-family: 'Inter', sans-serif;
   transition: background-color 0.3s;
 
   &:hover {
@@ -59,6 +64,7 @@
   font-size: 18px;
   color: white;
   font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .searchContainer {
@@ -84,6 +90,8 @@
   font-size: 16px;
   color: #333;
   background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 
   &::placeholder {
     color: #999;
