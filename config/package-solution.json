@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "description": "SharePoint Migration Site Frontend"
+        "default": "SharePoint Migration Site Frontend"
       },
       "longDescription": {
-        "description": "Frontend solution for SharePoint Migration Test site"
+        "default": "Frontend solution for SharePoint Migration Test site"
       },
       "screenshotPaths": [],
       "videoUrl": "",

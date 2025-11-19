@@ -1,0 +1,131 @@
+.buHeader {
+  width: 100%;
+  background-color: #1976d2;
+  padding: 40px 60px;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.leftSection {
+  flex: 1;
+  position: relative;
+}
+
+.backButton {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, opacity 0.2s;
+  z-index: 10;
+
+  &:hover {
+    transform: translateX(-3px);
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateX(-1px);
+  }
+}
+
+.backArrow {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.buName {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.description {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  color: white;
+  opacity: 0.95;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.addFileButton {
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0d47a1;
+  }
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.buHead {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  min-width: 300px;
+}
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
