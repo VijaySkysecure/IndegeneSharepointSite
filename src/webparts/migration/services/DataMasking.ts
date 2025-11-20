@@ -63,17 +63,31 @@ export function maskPhone(phone: string): string {
  * Mask all emails in a comma-separated or newline-separated string
  */
 export function maskAllEmails(emailsString: string): string {
+  console.log('=== MASKING EMAILS ===');
+  console.log('Input:', emailsString);
+  
   if (!emailsString || emailsString.trim() === '') {
+    console.log('No emails to mask (empty input)');
     return '';
   }
 
-  // Split by comma or newline
+  // Split by comma, semicolon, or newline (handle various separators)
   const emails = emailsString
-    .split(/[,\n]/)
+    .split(/[,;\n]/)
     .map(e => e.trim())
     .filter(e => e.length > 0);
 
-  return emails.map(maskEmail).join(', ');
+  console.log('Split emails:', emails);
+  console.log('Email count:', emails.length);
+
+  if (emails.length === 0) {
+    console.log('No valid emails found after splitting');
+    return '';
+  }
+
+  const masked = emails.map(maskEmail).join(', ');
+  console.log('Masked result:', masked);
+  return masked;
 }
 
 /**

@@ -41,12 +41,33 @@ export class AzureOpenAIService {
    */
   async extractMetadata(documentText: string): Promise<MetadataExtraction> {
     try {
+      // Log the extracted text for debugging
+      console.log('=== DOCUMENT TEXT EXTRACTED ===');
+      console.log('Total length:', documentText.length, 'characters');
+      console.log('First 1000 chars:', documentText.substring(0, 1000));
+      console.log('Last 1000 chars:', documentText.substring(Math.max(0, documentText.length - 1000)));
+      
+      // Count emails in the raw text for debugging
+      const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+      const foundEmails = documentText.match(emailRegex);
+      console.log('=== EMAILS FOUND IN RAW TEXT ===');
+      console.log('Count:', foundEmails ? foundEmails.length : 0);
+      if (foundEmails) {
+        console.log('Emails:', foundEmails);
+      }
+
       // Truncate text if too long (GPT-4o has token limits)
-      // For ~20 pages, we'll limit to approximately 8000 characters to stay within limits
-      const maxLength = 8000;
+      // Increased to 15000 characters to capture more content
+      const maxLength = 15000;
       const truncatedText = documentText.length > maxLength 
         ? documentText.substring(0, maxLength) + '\n\n[... document truncated ...]'
         : documentText;
+
+      console.log('=== TEXT SENT TO AI ===');
+      console.log('Length:', truncatedText.length, 'characters');
+      if (documentText.length > maxLength) {
+        console.warn('⚠️ WARNING: Document was truncated! Some content may be missing.');
+      }
 
       const prompt = this.buildExtractionPrompt(truncatedText);
 
@@ -101,13 +122,31 @@ export class AzureOpenAIService {
         throw new Error('No content returned from Azure OpenAI');
       }
 
+      console.log('=== AI RESPONSE (RAW) ===');
+      console.log(content);
+
       // Parse JSON response (remove markdown code blocks if present)
       const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
       const jsonText = jsonMatch[1] || content;
       
+      console.log('=== PARSED JSON ===');
+      console.log(jsonText);
+      
       const extracted = JSON.parse(jsonText.trim()) as MetadataExtraction;
       
-      return this.sanitizeMetadata(extracted);
+      console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
+      console.log(JSON.stringify(extracted, null, 2));
+      console.log('Emails extracted:', extracted.emails);
+      console.log('Phones extracted:', extracted.phones);
+      
+      const sanitized = this.sanitizeMetadata(extracted);
+      
+      console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
+      console.log(JSON.stringify(sanitized, null, 2));
+      console.log('Emails (masked):', sanitized.emails);
+      console.log('Phones (masked):', sanitized.phones);
+      
+      return sanitized;
     } catch (error) {
       console.error('Error extracting metadata:', error);
       throw error;
@@ -148,9 +187,9 @@ If no Department is mentioned, use ""
 
 7. abstract - A brief summary (1-2 sentences) of the document content
 
-10. emails - ALL email addresses found in the document. Extract EVERY email address you can find, even if there are many. Separate with commas. Format: "email1@example.com, email2@example.com, ..."
+10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like "text@domain.com" or "name@company.org". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully. Separate multiple emails with commas. Format: "email1@example.com, email2@example.com, email3@example.com, ..." If you find even one email, include it. If you find none, use empty string "".
 
-11. phones - ALL phone numbers found in the document. Extract EVERY phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes). Separate with commas. Format: "+1-555-123-4567, 555-987-6543, ..."
+11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like "+1-555-123-4567", "(555) 123-4567", "555-123-4567", "555.123.4567", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses). Separate multiple phones with commas. Format: "+1-555-123-4567, 555-987-6543, ..." If you find even one phone, include it. If you find none, use empty string "".
 
 12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)
 
@@ -159,7 +198,7 @@ If no Department is mentioned, use ""
 Document text:
 ${documentText}
 
-Return only valid JSON in this format:
+Return only valid JSON in this format (use empty string "" for fields not found):
 {
   "title": "...",
   "documentType": "...",
@@ -168,13 +207,10 @@ Return only valid JSON in this format:
   "region": "...",
   "client": "...",
   "abstract": "...",
-  "diseaseArea": "...",
-  "therapyArea": "...",
   "emails": "...",
   "phones": "...",
   "ids": "...",
-  "pricing": "...",
-  "sensitive": "..."
+  "pricing": "..."
 }`;
   }
 
@@ -222,12 +258,20 @@ Return only valid JSON in this format:
     }
 
     // Mask emails and phones
+    console.log('=== BEFORE MASKING ===');
+    console.log('Raw emails:', sanitized.emails);
+    console.log('Raw phones:', sanitized.phones);
+    
     if (sanitized.emails) {
       sanitized.emails = maskAllEmails(sanitized.emails);
+    } else {
+      console.log('⚠️ No emails field in extracted metadata!');
     }
 
     if (sanitized.phones) {
       sanitized.phones = maskAllPhones(sanitized.phones);
+    } else {
+      console.log('⚠️ No phones field in extracted metadata!');
     }
 
     return sanitized;

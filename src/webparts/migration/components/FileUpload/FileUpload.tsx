@@ -61,6 +61,13 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         return;
       }
 
+      // Log parsed text for debugging
+      console.log('=== FILE PARSED SUCCESSFULLY ===');
+      console.log('File name:', file.name);
+      console.log('File size:', file.size, 'bytes');
+      console.log('Extracted text length:', parseResult.text.length, 'characters');
+      console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
+
       // Step 2: Extract metadata using Azure OpenAI
       const metadata = await openAIService.current.extractMetadata(parseResult.text);
       

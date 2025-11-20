@@ -1139,6 +1139,12 @@ var FileUpload = function (props) {
                         setIsProcessing(false);
                         return [2 /*return*/];
                     }
+                    // Log parsed text for debugging
+                    console.log('=== FILE PARSED SUCCESSFULLY ===');
+                    console.log('File name:', file.name);
+                    console.log('File size:', file.size, 'bytes');
+                    console.log('Extracted text length:', parseResult.text.length, 'characters');
+                    console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
                     return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
                 case 3:
                     metadata = _a.sent();
@@ -2178,15 +2184,32 @@ var AzureOpenAIService = /** @class */ (function () {
     AzureOpenAIService.prototype.extractMetadata = function (documentText) {
         var _a, _b, _c, _d;
         return __awaiter(this, void 0, void 0, function () {
-            var maxLength, truncatedText, prompt_1, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, error_1;
+            var emailRegex, foundEmails, maxLength, truncatedText, prompt_1, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, sanitized, error_1;
             return __generator(this, function (_e) {
                 switch (_e.label) {
                     case 0:
                         _e.trys.push([0, 5, , 6]);
-                        maxLength = 8000;
+                        // Log the extracted text for debugging
+                        console.log('=== DOCUMENT TEXT EXTRACTED ===');
+                        console.log('Total length:', documentText.length, 'characters');
+                        console.log('First 1000 chars:', documentText.substring(0, 1000));
+                        console.log('Last 1000 chars:', documentText.substring(Math.max(0, documentText.length - 1000)));
+                        emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+                        foundEmails = documentText.match(emailRegex);
+                        console.log('=== EMAILS FOUND IN RAW TEXT ===');
+                        console.log('Count:', foundEmails ? foundEmails.length : 0);
+                        if (foundEmails) {
+                            console.log('Emails:', foundEmails);
+                        }
+                        maxLength = 15000;
                         truncatedText = documentText.length > maxLength
                             ? documentText.substring(0, maxLength) + '\n\n[... document truncated ...]'
                             : documentText;
+                        console.log('=== TEXT SENT TO AI ===');
+                        console.log('Length:', truncatedText.length, 'characters');
+                        if (documentText.length > maxLength) {
+                            console.warn('⚠️ WARNING: Document was truncated! Some content may be missing.');
+                        }
                         prompt_1 = this.buildExtractionPrompt(truncatedText);
                         return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
                                 method: 'POST',
@@ -2237,10 +2260,23 @@ var AzureOpenAIService = /** @class */ (function () {
                         if (!content) {
                             throw new Error('No content returned from Azure OpenAI');
                         }
+                        console.log('=== AI RESPONSE (RAW) ===');
+                        console.log(content);
                         jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
                         jsonText = jsonMatch[1] || content;
+                        console.log('=== PARSED JSON ===');
+                        console.log(jsonText);
                         extracted = JSON.parse(jsonText.trim());
-                        return [2 /*return*/, this.sanitizeMetadata(extracted)];
+                        console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
+                        console.log(JSON.stringify(extracted, null, 2));
+                        console.log('Emails extracted:', extracted.emails);
+                        console.log('Phones extracted:', extracted.phones);
+                        sanitized = this.sanitizeMetadata(extracted);
+                        console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
+                        console.log(JSON.stringify(sanitized, null, 2));
+                        console.log('Emails (masked):', sanitized.emails);
+                        console.log('Phones (masked):', sanitized.phones);
+                        return [2 /*return*/, sanitized];
                     case 5:
                         error_1 = _e.sent();
                         console.error('Error extracting metadata:', error_1);
@@ -2256,7 +2292,7 @@ var AzureOpenAIService = /** @class */ (function () {
     AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
         var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
         var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
-        return "Analyze the following document and extract the following information. Return the result as a JSON object with these exact field names.\n\nCRITICAL RULES:\n- If a field cannot be found in the document, use an empty string \"\" (do NOT make up values)\n- For \"region\" and \"client\": ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n- Extract ALL email addresses and phone numbers found (even if there are 100+), separate them with commas\n- Be thorough and extract every single email and phone number you can find\n\nFields to extract:\n1. title - The document title or main heading (extract exactly as written)\n\n2. documentType - Type of document (e.g., \"PPTX\", \"Report\", \"Proposal\", \"Presentation\", \"PDF\")\n\n3. bu - Business Unit. MUST be one of these exact values (match the closest one):\n- ".concat(buList, "\nIf no Business Unit is mentioned, use \"\"\n\n4. department - Department. MUST be one of these exact values (match the closest one):\n- ").concat(deptList, "\nIf no Department is mentioned, use \"\"\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\"). ONLY fill if explicitly mentioned, otherwise \"\"\n\n6. client - Client name or organization. ONLY fill if explicitly mentioned, otherwise \"\"\n\n7. abstract - A brief summary (1-2 sentences) of the document content\n\n10. emails - ALL email addresses found in the document. Extract EVERY email address you can find, even if there are many. Separate with commas. Format: \"email1@example.com, email2@example.com, ...\"\n\n11. phones - ALL phone numbers found in the document. Extract EVERY phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes). Separate with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\"\n\n12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, or financial terms mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format:\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\",\n  \"sensitive\": \"...\"\n}");
+        return "Analyze the following document and extract the following information. Return the result as a JSON object with these exact field names.\n\nCRITICAL RULES:\n- If a field cannot be found in the document, use an empty string \"\" (do NOT make up values)\n- For \"region\" and \"client\": ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n- Extract ALL email addresses and phone numbers found (even if there are 100+), separate them with commas\n- Be thorough and extract every single email and phone number you can find\n\nFields to extract:\n1. title - The document title or main heading (extract exactly as written)\n\n2. documentType - Type of document (e.g., \"PPTX\", \"Report\", \"Proposal\", \"Presentation\", \"PDF\")\n\n3. bu - Business Unit. MUST be one of these exact values (match the closest one):\n- ".concat(buList, "\nIf no Business Unit is mentioned, use \"\"\n\n4. department - Department. MUST be one of these exact values (match the closest one):\n- ").concat(deptList, "\nIf no Department is mentioned, use \"\"\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\"). ONLY fill if explicitly mentioned, otherwise \"\"\n\n6. client - Client name or organization. ONLY fill if explicitly mentioned, otherwise \"\"\n\n7. abstract - A brief summary (1-2 sentences) of the document content\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, or financial terms mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
     };
     /**
      * Sanitize and validate extracted metadata
@@ -2296,11 +2332,20 @@ var AzureOpenAIService = /** @class */ (function () {
             sanitized.client = '';
         }
         // Mask emails and phones
+        console.log('=== BEFORE MASKING ===');
+        console.log('Raw emails:', sanitized.emails);
+        console.log('Raw phones:', sanitized.phones);
         if (sanitized.emails) {
             sanitized.emails = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllEmails)(sanitized.emails);
         }
+        else {
+            console.log('⚠️ No emails field in extracted metadata!');
+        }
         if (sanitized.phones) {
             sanitized.phones = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllPhones)(sanitized.phones);
+        }
+        else {
+            console.log('⚠️ No phones field in extracted metadata!');
         }
         return sanitized;
     };
@@ -2378,15 +2423,26 @@ function maskPhone(phone) {
  * Mask all emails in a comma-separated or newline-separated string
  */
 function maskAllEmails(emailsString) {
+    console.log('=== MASKING EMAILS ===');
+    console.log('Input:', emailsString);
     if (!emailsString || emailsString.trim() === '') {
+        console.log('No emails to mask (empty input)');
         return '';
     }
-    // Split by comma or newline
+    // Split by comma, semicolon, or newline (handle various separators)
     var emails = emailsString
-        .split(/[,\n]/)
+        .split(/[,;\n]/)
         .map(function (e) { return e.trim(); })
         .filter(function (e) { return e.length > 0; });
-    return emails.map(maskEmail).join(', ');
+    console.log('Split emails:', emails);
+    console.log('Email count:', emails.length);
+    if (emails.length === 0) {
+        console.log('No valid emails found after splitting');
+        return '';
+    }
+    var masked = emails.map(maskEmail).join(', ');
+    console.log('Masked result:', masked);
+    return masked;
 }
 /**
  * Mask all phone numbers in a comma-separated or newline-separated string
