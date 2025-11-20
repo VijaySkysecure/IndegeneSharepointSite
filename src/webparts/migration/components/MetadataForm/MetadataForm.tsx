@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './MetadataForm.module.scss';
 import { IMetadataFormProps } from './IMetadataFormProps';
 
-export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose }) => {
+export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, initialValues }) => {
   const [values, setValues] = React.useState<Record<string, any>>({
     title: '',
     abstract: '',
@@ -17,8 +17,16 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose }
     phones: '',
     ids: '',
     pricing: '',
-    sensitive: ''
+    sensitive: '',
+    ...initialValues
   });
+
+  // Update values when initialValues change
+  React.useEffect(() => {
+    if (initialValues) {
+      setValues(prev => ({ ...prev, ...initialValues }));
+    }
+  }, [initialValues]);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -92,12 +100,24 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose }
 
                   <div className={styles.fieldFull}>
                     <label className={styles.label} htmlFor="emails">Emails Found</label>
-                    <textarea id="emails" name="emails" value={values.emails} onChange={onChange} className={styles.textarea} />
+                    <textarea 
+                      id="emails" 
+                      name="emails" 
+                      value={values.emails} 
+                      onChange={onChange} 
+                      className={styles.textareaScrollable}
+                    />
                   </div>
 
                   <div className={styles.fieldFull}>
                     <label className={styles.label} htmlFor="phones">Phones Found</label>
-                    <textarea id="phones" name="phones" value={values.phones} onChange={onChange} className={styles.textarea} />
+                    <textarea 
+                      id="phones" 
+                      name="phones" 
+                      value={values.phones} 
+                      onChange={onChange} 
+                      className={styles.textareaScrollable}
+                    />
                   </div>
 
                   <div className={styles.fieldFull}>

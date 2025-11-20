@@ -149,6 +149,50 @@
   }
 }
 
+/* Scrollable textareas for emails and phones */
+.textareaScrollable {
+  padding: 14px;
+  min-height: 110px;
+  max-height: 200px;
+  font-size: 14px;
+  resize: none;
+  overflow-y: auto;
+  border: 1px solid rgba(15,33,51,0.12);
+  border-radius: 8px;
+  color: #6B7280;
+  font-weight: 500;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+
+  &::placeholder {
+    color: #9CA3AF;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 8px 24px rgba(108,92,231,0.08);
+    outline: none;
+  }
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgba(108,92,231,0.32);
+    border-radius: 8px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(108,92,231,0.46);
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: rgba(15,33,51,0.03);
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

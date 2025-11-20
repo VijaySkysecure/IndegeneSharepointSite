@@ -1,4 +1,4 @@
-define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__) => { return /******/ (() => { // webpackBootstrap
+(()=>{ var __RUSHSTACK_CURRENT_SCRIPT__ = document.currentScript; define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_bb56a150{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_bb56a150{margin:0 auto;max-width:1400px;text-align:center}.contentText_bb56a150{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVUNvbnRlbnRBcmVhL0JVQ29udGVudEFyZWEubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBR0UsYUFBQSxDQURBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixzQkFFRSxhQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLGVBRUEiLCJmaWxlIjoiQlVDb250ZW50QXJlYS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_bb56a150{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_bb56a150{margin:0 auto;max-width:1400px;text-align:center}.contentText_bb56a150{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVQ29udGVudEFyZWEvQlVDb250ZW50QXJlYS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsZUFFQSIsImZpbGUiOiJCVUNvbnRlbnRBcmVhLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -42,7 +42,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buDetailPage_291ec8d4{display:flex;flex-direction:column;font-family:Inter,sans-serif;margin:0;min-height:100vh;padding:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVURldGFpbFBhZ2UvQlVEZXRhaWxQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVCQUdFLFlBQUEsQ0FDQSxxQkFBQSxDQUdBLDRCQUFBLENBRkEsUUFBQSxDQUhBLGdCQUFBLENBSUEsU0FBQSxDQUxBLFVBTUEiLCJmaWxlIjoiQlVEZXRhaWxQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buDetailPage_291ec8d4{display:flex;flex-direction:column;font-family:Inter,sans-serif;margin:0;min-height:100vh;padding:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVRGV0YWlsUGFnZS9CVURldGFpbFBhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBR0UsWUFBQSxDQUNBLHFCQUFBLENBR0EsNEJBQUEsQ0FGQSxRQUFBLENBSEEsZ0JBQUEsQ0FJQSxTQUFBLENBTEEsVUFNQSIsImZpbGUiOiJCVURldGFpbFBhZ2UubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -66,7 +66,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buHeader_a61c6b58{background-color:#1976d2;box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_a61c6b58{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_a61c6b58{flex:1;position:relative}.backButton_a61c6b58{align-items:center;background-color:transparent;border:none;cursor:pointer;display:flex;justify-content:center;left:-40px;padding:8px;position:absolute;top:0;transition:transform .2s,opacity .2s;z-index:10}.backButton_a61c6b58:hover{opacity:.8;transform:translateX(-3px)}.backButton_a61c6b58:active{transform:translateX(-1px)}.backArrow_a61c6b58{flex-shrink:0;height:24px;width:24px}.buName_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:48px;font-weight:700;margin:0 0 10px}.description_a61c6b58{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_a61c6b58,.description_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:16px}.addFileButton_a61c6b58{background-color:#1565c0;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_a61c6b58:hover{background-color:#0d47a1}.rightSection_a61c6b58{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.buHead_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_a61c6b58{align-items:center;background-color:#fff;border-radius:4px;display:flex;min-width:300px;padding:8px 16px}.searchIcon_a61c6b58{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_a61c6b58{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_a61c6b58:-ms-input-placeholder{color:#999}.searchInput_a61c6b58::placeholder{color:#999}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVUhlYWRlci9CVUhlYWRlci5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxtQkFFRSx3QkFBQSxDQUdBLHFCQUFBLENBREEsVUFBQSxDQUVBLDRCQUFBLENBSEEsaUJBQUEsQ0FGQSxVQUtBLENBR0Ysd0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EsNkJBQUEsQ0FHQSxhQUFBLENBREEsZ0JBQ0EsQ0FHRixzQkFDRSxNQUFBLENBQ0EsaUJBQUEsQ0FHRixxQkFTRSxrQkFBQSxDQUxBLDRCQUFBLENBQ0EsV0FBQSxDQUNBLGNBQUEsQ0FFQSxZQUFBLENBRUEsc0JBQUEsQ0FQQSxVQUFBLENBSUEsV0FBQSxDQU5BLGlCQUFBLENBQ0EsS0FBQSxDQVNBLG9DQUFBLENBQ0EsVUFBQSxDQUVBLDJCQUVFLFVBQUEsQ0FEQSwwQkFDQSxDQUdGLDRCQUNFLDBCQUFBLENBSUosb0JBR0UsYUFBQSxDQURBLFdBQUEsQ0FEQSxVQUVBLENBR0YsaUJBSUUsVUFBQSxDQUNBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FDQSxlQUVBLENBR0Ysc0JBS0UsZUFBQSxDQUhBLGVBQUEsQ0FFQSxXQUVBLENBR0YsOENBTkUsVUFBQSxDQUdBLDRCQUFBLENBTEEsY0FrQkEsQ0FWRix3QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FJQSxpQkFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBSkEsaUJBQUEsQ0FNQSwrQkFBQSxDQUVBLDhCQUNFLHdCQUFBLENBSUosdUJBR0Usb0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQUEsQ0FFQSxRQUFBLENBR0YsaUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRiwwQkFFRSxrQkFBQSxDQUNBLHFCQUFBLENBQ0EsaUJBQUEsQ0FIQSxZQUFBLENBS0EsZUFBQSxDQURBLGdCQUNBLENBR0YscUJBSUUsYUFBQSxDQUZBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBR0EsQ0FHRixzQkFNRSxjQUFBLENBTEEsV0FBQSxDQUlBLFVBQUEsQ0FGQSxNQUFBLENBSUEsNEJBQUEsQ0FIQSxjQUFBLENBSUEsZUFBQSxDQU5BLFNBTUEsQ0FFQSxtQ0FDRSxVQUFBLENBREYsNENBQ0UsVUFBQSxDQURGLG1DQUNFLFVBQUEiLCJmaWxlIjoiQlVIZWFkZXIubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buHeader_a61c6b58{background-color:#1976d2;box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_a61c6b58{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_a61c6b58{flex:1;position:relative}.backButton_a61c6b58{align-items:center;background-color:transparent;border:none;cursor:pointer;display:flex;justify-content:center;left:-40px;padding:8px;position:absolute;top:0;transition:transform .2s,opacity .2s;z-index:10}.backButton_a61c6b58:hover{opacity:.8;transform:translateX(-3px)}.backButton_a61c6b58:active{transform:translateX(-1px)}.backArrow_a61c6b58{flex-shrink:0;height:24px;width:24px}.buName_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:48px;font-weight:700;margin:0 0 10px}.description_a61c6b58{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_a61c6b58,.description_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:16px}.addFileButton_a61c6b58{background-color:#1565c0;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_a61c6b58:hover{background-color:#0d47a1}.rightSection_a61c6b58{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.buHead_a61c6b58{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_a61c6b58{align-items:center;background-color:#fff;border-radius:4px;display:flex;min-width:300px;padding:8px 16px}.searchIcon_a61c6b58{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_a61c6b58{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_a61c6b58:-ms-input-placeholder{color:#999}.searchInput_a61c6b58::placeholder{color:#999}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVSGVhZGVyL0JVSGVhZGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1CQUVFLHdCQUFBLENBR0EscUJBQUEsQ0FEQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUZBLFVBS0EsQ0FHRix3QkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSw2QkFBQSxDQUdBLGFBQUEsQ0FEQSxnQkFDQSxDQUdGLHNCQUNFLE1BQUEsQ0FDQSxpQkFBQSxDQUdGLHFCQVNFLGtCQUFBLENBTEEsNEJBQUEsQ0FDQSxXQUFBLENBQ0EsY0FBQSxDQUVBLFlBQUEsQ0FFQSxzQkFBQSxDQVBBLFVBQUEsQ0FJQSxXQUFBLENBTkEsaUJBQUEsQ0FDQSxLQUFBLENBU0Esb0NBQUEsQ0FDQSxVQUFBLENBRUEsMkJBRUUsVUFBQSxDQURBLDBCQUNBLENBR0YsNEJBQ0UsMEJBQUEsQ0FJSixvQkFHRSxhQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRixpQkFJRSxVQUFBLENBQ0EsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGVBRUEsQ0FHRixzQkFLRSxlQUFBLENBSEEsZUFBQSxDQUVBLFdBRUEsQ0FHRiw4Q0FORSxVQUFBLENBR0EsNEJBQUEsQ0FMQSxjQWtCQSxDQVZGLHdCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUlBLGlCQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FKQSxpQkFBQSxDQU1BLCtCQUFBLENBRUEsOEJBQ0Usd0JBQUEsQ0FJSix1QkFHRSxvQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFBQSxDQUVBLFFBQUEsQ0FHRixpQkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFDQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUhBLFlBQUEsQ0FLQSxlQUFBLENBREEsZ0JBQ0EsQ0FHRixxQkFJRSxhQUFBLENBRkEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFHQSxDQUdGLHNCQU1FLGNBQUEsQ0FMQSxXQUFBLENBSUEsVUFBQSxDQUZBLE1BQUEsQ0FJQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBTkEsU0FNQSxDQUVBLG1DQUNFLFVBQUEsQ0FERiw0Q0FDRSxVQUFBLENBREYsbUNBQ0UsVUFBQSIsImZpbGUiOiJCVUhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -103,7 +103,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buNavigation_62aa4de0{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_62aa4de0{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_62aa4de0{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:16px 24px;text-decoration:none;transition:background-color .3s}.navItem_62aa4de0:hover{background-color:hsla(0,0%,100%,.5)}.navItem_62aa4de0.active_62aa4de0{background-color:#81d4fa;border-bottom:3px solid #1976d2;color:#424242}.dottedLine_62aa4de0{background-color:transparent;border-top:2px dotted #90caf9;height:2px;margin-top:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVU5hdmlnYXRpb24vQlVOYXZpZ2F0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVCQUVFLHdCQUFBLENBRUEsbUNBQUEsQ0FDQSw0QkFBQSxDQUZBLFNBQUEsQ0FGQSxVQUlBLENBR0YsdUJBRUUsa0JBQUEsQ0FEQSxZQUFBLENBS0EsS0FBQSxDQUZBLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLGNBQ0EsQ0FHRixrQkFRRSxtQ0FBQSxDQUxBLGFBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FDQSxvQkFBQSxDQUtBLCtCQUNBLENBRUEsd0JBQ0UsbUNBQUEsQ0FHRixrQ0FDRSx3QkFBQSxDQUVBLCtCQUFBLENBREEsYUFDQSxDQUlKLHFCQUtFLDRCQUFBLENBRkEsNkJBQUEsQ0FEQSxVQUFBLENBRUEsWUFBQSxDQUhBLFVBSUEiLCJmaWxlIjoiQlVOYXZpZ2F0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".buNavigation_62aa4de0{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_62aa4de0{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_62aa4de0{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:16px 24px;text-decoration:none;transition:background-color .3s}.navItem_62aa4de0:hover{background-color:hsla(0,0%,100%,.5)}.navItem_62aa4de0.active_62aa4de0{background-color:#81d4fa;border-bottom:3px solid #1976d2;color:#424242}.dottedLine_62aa4de0{background-color:transparent;border-top:2px dotted #90caf9;height:2px;margin-top:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVTmF2aWdhdGlvbi9CVU5hdmlnYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBRUUsd0JBQUEsQ0FFQSxtQ0FBQSxDQUNBLDRCQUFBLENBRkEsU0FBQSxDQUZBLFVBSUEsQ0FHRix1QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FLQSxLQUFBLENBRkEsYUFBQSxDQURBLGdCQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQUNBLG9CQUFBLENBS0EsK0JBQ0EsQ0FFQSx3QkFDRSxtQ0FBQSxDQUdGLGtDQUNFLHdCQUFBLENBRUEsK0JBQUEsQ0FEQSxhQUNBLENBSUoscUJBS0UsNEJBQUEsQ0FGQSw2QkFBQSxDQURBLFVBQUEsQ0FFQSxZQUFBLENBSEEsVUFJQSIsImZpbGUiOiJCVU5hdmlnYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -131,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_6f50e07b{background-color:#1976d2;box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_6f50e07b{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_6f50e07b{flex-shrink:0}.promptText_6f50e07b{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_6f50e07b{flex:1;max-width:600px}.questionInput_6f50e07b{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_6f50e07b:-ms-input-placeholder{color:#999}.questionInput_6f50e07b::placeholder{color:#999}.questionInput_6f50e07b:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVVF1ZXN0aW9uU2VjdGlvbi9CVVF1ZXN0aW9uU2VjdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSwwQkFFRSx3QkFBQSxDQUVBLHFCQUFBLENBQ0EsNEJBQUEsQ0FGQSxpQkFBQSxDQUZBLFVBSUEsQ0FHRiw0QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FLQSxRQUFBLENBSEEsNkJBQUEsQ0FFQSxhQUFBLENBREEsZ0JBRUEsQ0FHRixxQkFDRSxhQUFBLENBR0YscUJBRUUsVUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxRQUFBLENBR0Esa0JBQUEsQ0FHRixxQkFDRSxNQUFBLENBQ0EsZUFBQSxDQUdGLHdCQU1FLHFCQUFBLENBSEEsV0FBQSxDQUNBLGlCQUFBLENBTUEsbUNBQUEsQ0FGQSxxQkFBQSxDQURBLFVBQUEsQ0FJQSw0QkFBQSxDQU5BLGNBQUEsQ0FPQSxlQUFBLENBSEEsU0FBQSxDQVBBLGlCQUFBLENBREEsVUFXQSxDQUVBLHFDQUNFLFVBQUEsQ0FERiw4Q0FDRSxVQUFBLENBREYscUNBQ0UsVUFBQSxDQUdGLDhCQUNFLHFDQUFBIiwiZmlsZSI6IkJVUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_6f50e07b{background-color:#1976d2;box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_6f50e07b{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_6f50e07b{flex-shrink:0}.promptText_6f50e07b{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_6f50e07b{flex:1;max-width:600px}.questionInput_6f50e07b{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_6f50e07b:-ms-input-placeholder{color:#999}.questionInput_6f50e07b::placeholder{color:#999}.questionInput_6f50e07b:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVUXVlc3Rpb25TZWN0aW9uL0JVUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBCQUVFLHdCQUFBLENBRUEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBRkEsVUFJQSxDQUdGLDRCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLFFBQUEsQ0FIQSw2QkFBQSxDQUVBLGFBQUEsQ0FEQSxnQkFFQSxDQUdGLHFCQUNFLGFBQUEsQ0FHRixxQkFFRSxVQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLFFBQUEsQ0FHQSxrQkFBQSxDQUdGLHFCQUNFLE1BQUEsQ0FDQSxlQUFBLENBR0Ysd0JBTUUscUJBQUEsQ0FIQSxXQUFBLENBQ0EsaUJBQUEsQ0FNQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQUlBLDRCQUFBLENBTkEsY0FBQSxDQU9BLGVBQUEsQ0FIQSxTQUFBLENBUEEsaUJBQUEsQ0FEQSxVQVdBLENBRUEscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEiLCJmaWxlIjoiQlVRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_e198527e{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_e198527e{margin:0 auto;max-width:1400px;text-align:center}.contentText_e198527e{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}.carouselIndicators_e198527e{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_e198527e{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_e198527e:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_e198527e.active_e198527e{background-color:#1976d2}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9Db250ZW50QXJlYS9Db250ZW50QXJlYS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsZUFFQSxDQUdGLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEiLCJmaWxlIjoiQ29udGVudEFyZWEubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_e198527e{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_e198527e{margin:0 auto;max-width:1400px;text-align:center}.contentText_e198527e{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}.carouselIndicators_e198527e{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_e198527e{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_e198527e:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_e198527e.active_e198527e{background-color:#1976d2}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0NvbnRlbnRBcmVhL0NvbnRlbnRBcmVhLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUdFLGFBQUEsQ0FEQSxnQkFBQSxDQURBLGlCQUVBLENBR0Ysc0JBRUUsYUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxlQUVBLENBR0YsNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSIsImZpbGUiOiJDb250ZW50QXJlYS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -190,23 +190,29 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_3200fcfd{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_3200fcfd,.overlay_3200fcfd{align-items:center;display:flex;justify-content:center}.modal_3200fcfd{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_3200fcfd{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_3200fcfd{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_3200fcfd{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_3200fcfd{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_3200fcfd{color:#4834d4;display:block;height:64px;width:64px}.hintText_3200fcfd{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_3200fcfd{color:#666;font-size:13px}.browseBtn_3200fcfd{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_3200fcfd{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_3200fcfd{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_3200fcfd{color:#333;font-size:14px;margin-bottom:12px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWxlVXBsb2FkL0ZpbGVVcGxvYWQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBR0UsMEJBQUEsQ0FLQSw0QkFBQSxDQU5BLE9BQUEsQ0FEQSxjQUFBLENBTUEsWUFDQSxDQUdGLGtDQU5FLGtCQUFBLENBREEsWUFBQSxDQUVBLHNCQWNBLENBVEYsZ0JBQ0UsY0FBQSxDQUVBLGtCQUFBLENBR0EsZUFBQSxDQURBLGFBQUEsQ0FIQSxTQUFBLENBRUEsVUFLQSxDQUdGLHFCQUNFLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBREEsYUFBQSxDQUhBLFlBQUEsQ0FFQSxXQUVBLENBR0YsZ0JBS0UsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSEEsZUFBQSxDQUtBLG1CQUFBLENBQ0EsZ0JBQUEsQ0FKQSxpQkFJQSxDQUdGLG1CQUtFLGtCQUFBLENBTUEsMEVBQUEsQ0FWQSxxQ0FBQSxDQUNBLGtCQUFBLENBVUEseUNBQUEsQ0FIQSxjQUFBLENBTEEsWUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUZBLHNCQUFBLENBSEEsWUFBQSxDQVVBLGlCQUFBLENBSEEsMkVBR0EsQ0FHRix3QkFFRSw4RUFBQSxDQURBLG9CQUFBLENBRUEseUNBQUEsQ0FHRixxQkFHRSxhQUFBLENBQ0EsYUFBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBR0YsdUJBRUUsVUFBQSxDQURBLGNBQ0EsQ0FHRixvQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FFQSxpQkFBQSxDQUhBLFVBQUEsQ0FJQSxjQUFBLENBQ0EsZUFBQSxDQUhBLGlCQUdBLENBR0YsaUJBQ0UsWUFBQSxDQUdBLFFBQUEsQ0FGQSx3QkFBQSxDQUNBLGVBQ0EsQ0FHRixtQkFDRSxjQUFBLENBQ0EscUJBQUEsQ0FHQSxpQkFBQSxDQUZBLFVBQUEsQ0FHQSxjQUFBLENBRkEsZ0JBRUEsQ0FHRixtQkFFRSxVQUFBLENBREEsY0FBQSxDQUVBLGtCQUFBIiwiZmlsZSI6IkZpbGVVcGxvYWQubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_c09eba7f{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_c09eba7f,.overlay_c09eba7f{align-items:center;display:flex;justify-content:center}.modal_c09eba7f{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_c09eba7f{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_c09eba7f{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_c09eba7f{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_c09eba7f{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_c09eba7f{color:#4834d4;display:block;height:64px;width:64px}.hintText_c09eba7f{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_c09eba7f{color:#666;font-size:13px}.browseBtn_c09eba7f{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_c09eba7f{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_c09eba7f{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_c09eba7f{color:#333;font-size:14px;margin-bottom:12px}.processingContainer_c09eba7f{align-items:center;background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;justify-content:center;max-width:96%;padding:48px 32px;text-align:center;width:600px}.processingSpinner_c09eba7f{animation:spin_c09eba7f 1s linear infinite;border:4px solid rgba(72,52,212,.1);border-radius:50%;border-top-color:#4834d4;height:48px;margin-bottom:24px;width:48px}@keyframes spin_c09eba7f{to{transform:rotate(1turn)}}.processingTitle_c09eba7f{color:#1b3752;font-size:20px;font-weight:700;margin:0 0 12px}.processingMessage_c09eba7f{color:#666;font-size:14px;line-height:1.5;margin:0}.errorMessage_c09eba7f{background:#fee;border:1px solid #fcc;border-radius:6px;color:#c33;font-size:13px;margin-top:20px;max-width:100%;padding:12px 16px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0ZpbGVVcGxvYWQvRmlsZVVwbG9hZC5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQkFHRSwwQkFBQSxDQUtBLDRCQUFBLENBTkEsT0FBQSxDQURBLGNBQUEsQ0FNQSxZQUNBLENBR0Ysa0NBTkUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsc0JBY0EsQ0FURixnQkFDRSxjQUFBLENBRUEsa0JBQUEsQ0FHQSxlQUFBLENBREEsYUFBQSxDQUhBLFNBQUEsQ0FFQSxVQUtBLENBR0YscUJBQ0UsZUFBQSxDQUVBLGtCQUFBLENBR0Esc0NBQUEsQ0FEQSxhQUFBLENBSEEsWUFBQSxDQUVBLFdBRUEsQ0FHRixnQkFLRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FIQSxlQUFBLENBS0EsbUJBQUEsQ0FDQSxnQkFBQSxDQUpBLGlCQUlBLENBR0YsbUJBS0Usa0JBQUEsQ0FNQSwwRUFBQSxDQVZBLHFDQUFBLENBQ0Esa0JBQUEsQ0FVQSx5Q0FBQSxDQUhBLGNBQUEsQ0FMQSxZQUFBLENBR0EscUJBQUEsQ0FDQSxRQUFBLENBRkEsc0JBQUEsQ0FIQSxZQUFBLENBVUEsaUJBQUEsQ0FIQSwyRUFHQSxDQUdGLHdCQUVFLDhFQUFBLENBREEsb0JBQUEsQ0FFQSx5Q0FBQSxDQUdGLHFCQUdFLGFBQUEsQ0FDQSxhQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FHRix1QkFFRSxVQUFBLENBREEsY0FDQSxDQUdGLG9CQUNFLHdCQUFBLENBRUEsV0FBQSxDQUVBLGlCQUFBLENBSEEsVUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsaUJBR0EsQ0FHRixpQkFDRSxZQUFBLENBR0EsUUFBQSxDQUZBLHdCQUFBLENBQ0EsZUFDQSxDQUdGLG1CQUNFLGNBQUEsQ0FDQSxxQkFBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FGQSxnQkFFQSxDQUdGLG1CQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsa0JBQUEsQ0FHRiw4QkFTRSxrQkFBQSxDQVJBLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBQ0EsWUFBQSxDQUNBLHFCQUFBLENBRUEsc0JBQUEsQ0FMQSxhQUFBLENBSEEsaUJBQUEsQ0FTQSxpQkFBQSxDQVBBLFdBT0EsQ0FHRiw0QkFNRSwwQ0FBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FEQSx3QkFBQSxDQUZBLFdBQUEsQ0FLQSxrQkFBQSxDQU5BLFVBTUEsQ0FHRix5QkFDRSxHQUNFLHVCQUFBLENBQUEsQ0FJSiwwQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBR0YsNEJBRUUsVUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsUUFDQSxDQUdGLHVCQUdFLGVBQUEsQ0FDQSxxQkFBQSxDQUNBLGlCQUFBLENBQ0EsVUFBQSxDQUNBLGNBQUEsQ0FOQSxlQUFBLENBT0EsY0FBQSxDQU5BLGlCQU1BIiwiZmlsZSI6IkZpbGVVcGxvYWQubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  overlay_3200fcfd: "overlay_3200fcfd",
-  modal_3200fcfd: "modal_3200fcfd",
-  uploadCard_3200fcfd: "uploadCard_3200fcfd",
-  title_3200fcfd: "title_3200fcfd",
-  dropZone_3200fcfd: "dropZone_3200fcfd",
-  dropZoneHover_3200fcfd: "dropZoneHover_3200fcfd",
-  uploadIcon_3200fcfd: "uploadIcon_3200fcfd",
-  hintText_3200fcfd: "hintText_3200fcfd",
-  instructions_3200fcfd: "instructions_3200fcfd",
-  browseBtn_3200fcfd: "browseBtn_3200fcfd",
-  footer_3200fcfd: "footer_3200fcfd",
-  closeBtn_3200fcfd: "closeBtn_3200fcfd",
-  fileName_3200fcfd: "fileName_3200fcfd"
+  overlay_c09eba7f: "overlay_c09eba7f",
+  modal_c09eba7f: "modal_c09eba7f",
+  uploadCard_c09eba7f: "uploadCard_c09eba7f",
+  title_c09eba7f: "title_c09eba7f",
+  dropZone_c09eba7f: "dropZone_c09eba7f",
+  dropZoneHover_c09eba7f: "dropZoneHover_c09eba7f",
+  uploadIcon_c09eba7f: "uploadIcon_c09eba7f",
+  hintText_c09eba7f: "hintText_c09eba7f",
+  instructions_c09eba7f: "instructions_c09eba7f",
+  browseBtn_c09eba7f: "browseBtn_c09eba7f",
+  footer_c09eba7f: "footer_c09eba7f",
+  closeBtn_c09eba7f: "closeBtn_c09eba7f",
+  fileName_c09eba7f: "fileName_c09eba7f",
+  processingContainer_c09eba7f: "processingContainer_c09eba7f",
+  processingSpinner_c09eba7f: "processingSpinner_c09eba7f",
+  spin_c09eba7f: "spin_c09eba7f",
+  processingTitle_c09eba7f: "processingTitle_c09eba7f",
+  processingMessage_c09eba7f: "processingMessage_c09eba7f",
+  errorMessage_c09eba7f: "errorMessage_c09eba7f"
 });
 
 
@@ -226,7 +232,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".footer_49b3a56d{background-color:#fff;border-top:1px solid #e0e0e0;box-sizing:border-box;font-family:Inter,sans-serif;padding:20px 60px;width:100%}.footerContainer_49b3a56d{margin:0 auto;max-width:1400px}.logoContainer_49b3a56d{align-items:center;display:flex;gap:8px}.logoSquare_49b3a56d{background-color:#1976d2;flex-shrink:0;height:12px;width:12px}.logoText_49b3a56d{color:#1976d2;font-family:Inter,sans-serif;font-size:18px;font-weight:500;letter-spacing:.5px;text-transform:lowercase}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUVFLHFCQUFBLENBR0EsNEJBQUEsQ0FEQSxxQkFBQSxDQUVBLDRCQUFBLENBSEEsaUJBQUEsQ0FGQSxVQUtBLENBR0YsMEJBRUUsYUFBQSxDQURBLGdCQUNBLENBR0Ysd0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsT0FBQSxDQUdGLHFCQUdFLHdCQUFBLENBQ0EsYUFBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsbUJBRUUsYUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FHQSxtQkFBQSxDQURBLHdCQUNBIiwiZmlsZSI6IkZvb3Rlci5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".footer_49b3a56d{background-color:#fff;border-top:1px solid #e0e0e0;box-sizing:border-box;font-family:Inter,sans-serif;padding:20px 60px;width:100%}.footerContainer_49b3a56d{margin:0 auto;max-width:1400px}.logoContainer_49b3a56d{align-items:center;display:flex;gap:8px}.logoSquare_49b3a56d{background-color:#1976d2;flex-shrink:0;height:12px;width:12px}.logoText_49b3a56d{color:#1976d2;font-family:Inter,sans-serif;font-size:18px;font-weight:500;letter-spacing:.5px;text-transform:lowercase}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXIubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBRUUscUJBQUEsQ0FHQSw0QkFBQSxDQURBLHFCQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUZBLFVBS0EsQ0FHRiwwQkFFRSxhQUFBLENBREEsZ0JBQ0EsQ0FHRix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBR0YscUJBR0Usd0JBQUEsQ0FDQSxhQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRixtQkFFRSxhQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQUdBLG1CQUFBLENBREEsd0JBQ0EiLCJmaWxlIjoiRm9vdGVyLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -254,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_e245bf59{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_e245bf59{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_e245bf59{flex:1}.companyName_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:48px;font-weight:700;margin:0 0 10px}.description_e245bf59{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_e245bf59,.description_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:16px}.addFileButton_e245bf59{background-color:#4834d4;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_e245bf59:hover{background-color:#3d2db8}.rightSection_e245bf59{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_e245bf59{align-items:center;background-color:#fff;border-radius:4px;display:flex;min-width:300px;padding:8px 16px}.searchIcon_e245bf59{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_e245bf59{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_e245bf59:-ms-input-placeholder{color:#999}.searchInput_e245bf59::placeholder{color:#999}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9IZWFkZXIvSGVhZGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUVFLDJFQUFBLENBR0EscUJBQUEsQ0FEQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUZBLFVBS0EsQ0FHRix3QkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSw2QkFBQSxDQUdBLGFBQUEsQ0FEQSxnQkFDQSxDQUdGLHNCQUNFLE1BQUEsQ0FHRixzQkFJRSxVQUFBLENBQ0EsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGVBRUEsQ0FHRixzQkFLRSxlQUFBLENBSEEsZUFBQSxDQUVBLFdBRUEsQ0FHRiw4Q0FORSxVQUFBLENBR0EsNEJBQUEsQ0FMQSxjQWtCQSxDQVZGLHdCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUlBLGlCQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FKQSxpQkFBQSxDQU1BLCtCQUFBLENBRUEsOEJBQ0Usd0JBQUEsQ0FJSix1QkFHRSxvQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFBQSxDQUVBLFFBQUEsQ0FHRixxQkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFDQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUhBLFlBQUEsQ0FLQSxlQUFBLENBREEsZ0JBQ0EsQ0FHRixxQkFJRSxhQUFBLENBRkEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFHQSxDQUdGLHNCQU1FLGNBQUEsQ0FMQSxXQUFBLENBSUEsVUFBQSxDQUZBLE1BQUEsQ0FJQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBTkEsU0FNQSxDQUVBLG1DQUNFLFVBQUEsQ0FERiw0Q0FDRSxVQUFBLENBREYsbUNBQ0UsVUFBQSIsImZpbGUiOiJIZWFkZXIubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_e245bf59{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_e245bf59{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_e245bf59{flex:1}.companyName_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:48px;font-weight:700;margin:0 0 10px}.description_e245bf59{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_e245bf59,.description_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:16px}.addFileButton_e245bf59{background-color:#4834d4;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_e245bf59:hover{background-color:#3d2db8}.rightSection_e245bf59{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_e245bf59{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_e245bf59{align-items:center;background-color:#fff;border-radius:4px;display:flex;min-width:300px;padding:8px 16px}.searchIcon_e245bf59{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_e245bf59{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_e245bf59:-ms-input-placeholder{color:#999}.searchInput_e245bf59::placeholder{color:#999}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0hlYWRlci9IZWFkZXIubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBRUUsMkVBQUEsQ0FHQSxxQkFBQSxDQURBLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGlCQUFBLENBRkEsVUFLQSxDQUdGLHdCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLDZCQUFBLENBR0EsYUFBQSxDQURBLGdCQUNBLENBR0Ysc0JBQ0UsTUFBQSxDQUdGLHNCQUlFLFVBQUEsQ0FDQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBQ0EsZUFFQSxDQUdGLHNCQUtFLGVBQUEsQ0FIQSxlQUFBLENBRUEsV0FFQSxDQUdGLDhDQU5FLFVBQUEsQ0FHQSw0QkFBQSxDQUxBLGNBa0JBLENBVkYsd0JBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBSUEsaUJBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUpBLGlCQUFBLENBTUEsK0JBQUEsQ0FFQSw4QkFDRSx3QkFBQSxDQUlKLHVCQUdFLG9CQUFBLENBRkEsWUFBQSxDQUNBLHFCQUFBLENBRUEsUUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0YsMEJBRUUsa0JBQUEsQ0FDQSxxQkFBQSxDQUNBLGlCQUFBLENBSEEsWUFBQSxDQUtBLGVBQUEsQ0FEQSxnQkFDQSxDQUdGLHFCQUlFLGFBQUEsQ0FGQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUdBLENBR0Ysc0JBTUUsY0FBQSxDQUxBLFdBQUEsQ0FJQSxVQUFBLENBRkEsTUFBQSxDQUlBLDRCQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FOQSxTQU1BLENBRUEsbUNBQ0UsVUFBQSxDQURGLDRDQUNFLFVBQUEsQ0FERixtQ0FDRSxVQUFBIiwiZmlsZSI6IkhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -289,29 +295,31 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_6d4eb6a4{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_6d4eb6a4{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_6d4eb6a4{color:#444;font-size:13px;margin-bottom:6px}.headerBar_6d4eb6a4{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_6d4eb6a4{background:0 0;padding:16px}.field_6d4eb6a4{display:flex;flex-direction:column}.title_6d4eb6a4{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_6d4eb6a4{align-items:flex-start;display:flex;flex-direction:column}.subtitle_6d4eb6a4{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_6d4eb6a4{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_6d4eb6a4{display:flex;flex-direction:column;grid-column:1/-1}.label_6d4eb6a4{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_6d4eb6a4{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4::placeholder{color:#9ca3af;opacity:1}.input_6d4eb6a4:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_6d4eb6a4{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4::placeholder{color:#9ca3af;opacity:1}.textarea_6d4eb6a4:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.grid_6d4eb6a4{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_6d4eb6a4{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_6d4eb6a4{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_6d4eb6a4:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_6d4eb6a4{grid-template-columns:1fr}}.formInner_6d4eb6a4::-webkit-scrollbar{width:8px}.formInner_6d4eb6a4::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_6d4eb6a4::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_6d4eb6a4::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_6d4eb6a4{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NZXRhZGF0YUZvcm0vTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBSUYsb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixlQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsaUJBQUEsQ0FJRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUhBLGNBQUEsQ0FJQSxpQkFBQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSxZQUNBLENBR0YsZ0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBR0YsZ0JBSUUsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBREEsUUFFQSxDQUdGLG9CQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLHFCQUNBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsY0FDQSxDQUdGLG1CQU9FLGtCQUFBLENBTkEsZUFBQSxDQUNBLG1DQUFBLENBT0EsaUJBQUEsQ0FDQSx3Q0FBQSxDQVBBLGFBQUEsQ0FVQSxjQUFBLENBUEEsbUJBQUEsQ0FLQSxjQUFBLENBTkEsV0FBQSxDQUdBLHNCQUFBLENBSUEsYUFBQSxDQUVBLGlCQUFBLENBRUEsVUFBQSxDQURBLFFBQUEsQ0FYQSxVQUFBLENBYUEsVUFBQSxDQUtGLG9CQUVFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGdCQUVBLENBR0YsZ0JBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHRixnQkFLRSxlQUFBLENBRkEsbUNBQUEsQ0FDQSxpQkFBQSxDQUVBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGlCQUFBLENBT0EsMkRBQUEsQ0FFQSw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHNDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixzQkFDRSxnQ0FBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUNBLDBCQUFBLENBSUosbUJBS0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGdCQUFBLENBREEsWUFBQSxDQUdBLGVBSUEsQ0FFQSxnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHlDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRix5QkFDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_eb48e8e0{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_eb48e8e0{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_eb48e8e0{color:#444;font-size:13px;margin-bottom:6px}.headerBar_eb48e8e0{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_eb48e8e0{background:0 0;padding:16px}.field_eb48e8e0{display:flex;flex-direction:column}.title_eb48e8e0{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_eb48e8e0{align-items:flex-start;display:flex;flex-direction:column}.subtitle_eb48e8e0{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_eb48e8e0{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_eb48e8e0{display:flex;flex-direction:column;grid-column:1/-1}.label_eb48e8e0{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_eb48e8e0{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0::-webkit-scrollbar{width:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_eb48e8e0{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_eb48e8e0{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_eb48e8e0{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_eb48e8e0:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_eb48e8e0{grid-template-columns:1fr}}.formInner_eb48e8e0::-webkit-scrollbar{width:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_eb48e8e0{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_6d4eb6a4: "formWrapper_6d4eb6a4",
-  formInner_6d4eb6a4: "formInner_6d4eb6a4",
-  note_6d4eb6a4: "note_6d4eb6a4",
-  headerBar_6d4eb6a4: "headerBar_6d4eb6a4",
-  cardMeta_6d4eb6a4: "cardMeta_6d4eb6a4",
-  field_6d4eb6a4: "field_6d4eb6a4",
-  title_6d4eb6a4: "title_6d4eb6a4",
-  titleWrap_6d4eb6a4: "titleWrap_6d4eb6a4",
-  subtitle_6d4eb6a4: "subtitle_6d4eb6a4",
-  closeBtn_6d4eb6a4: "closeBtn_6d4eb6a4",
-  fieldFull_6d4eb6a4: "fieldFull_6d4eb6a4",
-  label_6d4eb6a4: "label_6d4eb6a4",
-  input_6d4eb6a4: "input_6d4eb6a4",
+  formWrapper_eb48e8e0: "formWrapper_eb48e8e0",
+  formInner_eb48e8e0: "formInner_eb48e8e0",
+  note_eb48e8e0: "note_eb48e8e0",
+  headerBar_eb48e8e0: "headerBar_eb48e8e0",
+  cardMeta_eb48e8e0: "cardMeta_eb48e8e0",
+  field_eb48e8e0: "field_eb48e8e0",
+  title_eb48e8e0: "title_eb48e8e0",
+  titleWrap_eb48e8e0: "titleWrap_eb48e8e0",
+  subtitle_eb48e8e0: "subtitle_eb48e8e0",
+  closeBtn_eb48e8e0: "closeBtn_eb48e8e0",
+  fieldFull_eb48e8e0: "fieldFull_eb48e8e0",
+  label_eb48e8e0: "label_eb48e8e0",
+  input_eb48e8e0: "input_eb48e8e0",
   input: "input",
-  textarea_6d4eb6a4: "textarea_6d4eb6a4",
+  textarea_eb48e8e0: "textarea_eb48e8e0",
   textarea: "textarea",
-  grid_6d4eb6a4: "grid_6d4eb6a4",
-  actions_6d4eb6a4: "actions_6d4eb6a4",
-  submitBtn_6d4eb6a4: "submitBtn_6d4eb6a4"
+  textareaScrollable_eb48e8e0: "textareaScrollable_eb48e8e0",
+  textareaScrollable: "textareaScrollable",
+  grid_eb48e8e0: "grid_eb48e8e0",
+  actions_eb48e8e0: "actions_eb48e8e0",
+  submitBtn_eb48e8e0: "submitBtn_eb48e8e0"
 });
 
 
@@ -331,7 +339,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".migration_c01701c8{display:flex;flex-direction:column;font-family:Inter,sans-serif;margin:0;min-height:100vh;padding:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NaWdyYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsb0JBR0UsWUFBQSxDQUNBLHFCQUFBLENBR0EsNEJBQUEsQ0FGQSxRQUFBLENBSEEsZ0JBQUEsQ0FJQSxTQUFBLENBTEEsVUFNQSIsImZpbGUiOiJNaWdyYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".migration_c01701c8{display:flex;flex-direction:column;font-family:Inter,sans-serif;margin:0;min-height:100vh;padding:0;width:100%}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01pZ3JhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFHRSxZQUFBLENBQ0EscUJBQUEsQ0FHQSw0QkFBQSxDQUZBLFFBQUEsQ0FIQSxnQkFBQSxDQUlBLFNBQUEsQ0FMQSxVQU1BIiwiZmlsZSI6Ik1pZ3JhdGlvbi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -355,7 +363,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_e0b26b5e{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_e0b26b5e{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_e0b26b5e{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:16px 24px;text-decoration:none;transition:background-color .3s}.navItem_e0b26b5e:hover{background-color:hsla(0,0%,100%,.5)}.navItem_e0b26b5e.active_e0b26b5e{background-color:#81d4fa;border-bottom:3px solid #1976d2;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9OYXZpZ2F0aW9uL05hdmlnYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEscUJBRUUsd0JBQUEsQ0FFQSxtQ0FBQSxDQUNBLDRCQUFBLENBRkEsU0FBQSxDQUZBLFVBSUEsQ0FHRix1QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FLQSxLQUFBLENBRkEsYUFBQSxDQURBLGdCQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQUNBLG9CQUFBLENBS0EsK0JBQ0EsQ0FFQSx3QkFDRSxtQ0FBQSxDQUdGLGtDQUNFLHdCQUFBLENBRUEsK0JBQUEsQ0FEQSxhQUNBIiwiZmlsZSI6Ik5hdmlnYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_e0b26b5e{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_e0b26b5e{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_e0b26b5e{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:16px 24px;text-decoration:none;transition:background-color .3s}.navItem_e0b26b5e:hover{background-color:hsla(0,0%,100%,.5)}.navItem_e0b26b5e.active_e0b26b5e{background-color:#81d4fa;border-bottom:3px solid #1976d2;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLEtBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxjQUNBLENBR0Ysa0JBUUUsbUNBQUEsQ0FMQSxhQUFBLENBR0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUpBLGlCQUFBLENBQ0Esb0JBQUEsQ0FLQSwrQkFDQSxDQUVBLHdCQUNFLG1DQUFBLENBR0Ysa0NBQ0Usd0JBQUEsQ0FFQSwrQkFBQSxDQURBLGFBQ0EiLCJmaWxlIjoiTmF2aWdhdGlvbi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -382,7 +390,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_fc045cad{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_fc045cad{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_fc045cad{flex-shrink:0}.promptText_fc045cad{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_fc045cad{flex:1;max-width:600px}.questionInput_fc045cad{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_fc045cad:-ms-input-placeholder{color:#999}.questionInput_fc045cad::placeholder{color:#999}.questionInput_fc045cad:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBCQUVFLDJFQUFBLENBRUEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBRkEsVUFJQSxDQUdGLDRCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLFFBQUEsQ0FIQSw2QkFBQSxDQUVBLGFBQUEsQ0FEQSxnQkFFQSxDQUdGLHFCQUNFLGFBQUEsQ0FHRixxQkFFRSxVQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLFFBQUEsQ0FHQSxrQkFBQSxDQUdGLHFCQUNFLE1BQUEsQ0FDQSxlQUFBLENBR0Ysd0JBTUUscUJBQUEsQ0FIQSxXQUFBLENBQ0EsaUJBQUEsQ0FNQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQUlBLDRCQUFBLENBTkEsY0FBQSxDQU9BLGVBQUEsQ0FIQSxTQUFBLENBUEEsaUJBQUEsQ0FEQSxVQVdBLENBRUEscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_fc045cad{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_fc045cad{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_fc045cad{flex-shrink:0}.promptText_fc045cad{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_fc045cad{flex:1;max-width:600px}.questionInput_fc045cad{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_fc045cad:-ms-input-placeholder{color:#999}.questionInput_fc045cad::placeholder{color:#999}.questionInput_fc045cad:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsNEJBRUUsa0JBQUEsQ0FEQSxZQUFBLENBS0EsUUFBQSxDQUhBLDZCQUFBLENBRUEsYUFBQSxDQURBLGdCQUVBLENBR0YscUJBQ0UsYUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsUUFBQSxDQUdBLGtCQUFBLENBR0YscUJBQ0UsTUFBQSxDQUNBLGVBQUEsQ0FHRix3QkFNRSxxQkFBQSxDQUhBLFdBQUEsQ0FDQSxpQkFBQSxDQU1BLG1DQUFBLENBRkEscUJBQUEsQ0FEQSxVQUFBLENBSUEsNEJBQUEsQ0FOQSxjQUFBLENBT0EsZUFBQSxDQUhBLFNBQUEsQ0FQQSxpQkFBQSxDQURBLFVBV0EsQ0FFQSxxQ0FDRSxVQUFBLENBREYsOENBQ0UsVUFBQSxDQURGLHFDQUNFLFVBQUEsQ0FHRiw4QkFDRSxxQ0FBQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -412,7 +420,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_afa5522c{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_afa5522c{margin:0 auto;max-width:1400px;text-align:center}.contentText_afa5522c{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}.carouselIndicators_afa5522c{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_afa5522c{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_afa5522c:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_afa5522c.active_afa5522c{background-color:#1976d2}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQWJvdXRQYWdlL0Fib3V0UGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsZUFFQSxDQUdGLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEiLCJmaWxlIjoiQWJvdXRQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_afa5522c{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_afa5522c{margin:0 auto;max-width:1400px;text-align:center}.contentText_afa5522c{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}.carouselIndicators_afa5522c{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_afa5522c{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_afa5522c:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_afa5522c.active_afa5522c{background-color:#1976d2}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9BYm91dFBhZ2UvQWJvdXRQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG9CQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUdFLGFBQUEsQ0FEQSxnQkFBQSxDQURBLGlCQUVBLENBR0Ysc0JBRUUsYUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxlQUVBLENBR0YsNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSIsImZpbGUiOiJBYm91dFBhZ2UubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -441,7 +449,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".busPage_fcea57b1{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_fcea57b1{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_fcea57b1{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_fcea57b1 :nth-child(6){grid-column:2}.buttonsGrid_fcea57b1 :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}.buButton_fcea57b1{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.buButton_fcea57b1:hover{background-color:#1565c0;transform:translateY(-2px)}.buButton_fcea57b1:active{transform:translateY(0)}.carouselIndicators_fcea57b1{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_fcea57b1{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_fcea57b1:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_fcea57b1.active_fcea57b1{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQlVzUGFnZS9CVXNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGtCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUVFLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQUEsQ0FHRixzQkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FFQSxnQkFBQSxDQUNBLGlCQUFBLENBRkEsZ0JBRUEsQ0FHQSxvQ0FDRSxhQUFBLENBR0Ysb0NBQ0UsYUFBQSxDQUlGLDBCQW5CRixzQkFvQkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUlKLHlCQTdCRixzQkE4QkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUtOLG1CQWFFLGtCQUFBLENBWkEsd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUdBLFlBQUEsQ0FMQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUUEsc0JBQUEsQ0FIQSxlQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FJQSxDQUVBLHlCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRiwwQkFDRSx1QkFBQSxDQUlKLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBREEsVUFDQSIsImZpbGUiOiJCVXNQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".busPage_fcea57b1{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_fcea57b1{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_fcea57b1{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_fcea57b1 :nth-child(6){grid-column:2}.buttonsGrid_fcea57b1 :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}.buButton_fcea57b1{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.buButton_fcea57b1:hover{background-color:#1565c0;transform:translateY(-2px)}.buButton_fcea57b1:active{transform:translateY(0)}.carouselIndicators_fcea57b1{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_fcea57b1{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_fcea57b1:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_fcea57b1.active_fcea57b1{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9CVXNQYWdlL0JVc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsVUFBQSxDQUdGLHNCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxrQkFBQSxDQUVBLGdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxnQkFFQSxDQUdBLG9DQUNFLGFBQUEsQ0FHRixvQ0FDRSxhQUFBLENBSUYsMEJBbkJGLHNCQW9CSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBSUoseUJBN0JGLHNCQThCSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBS04sbUJBYUUsa0JBQUEsQ0FaQSx3QkFBQSxDQUVBLFdBQUEsQ0FLQSxpQkFBQSxDQU5BLFVBQUEsQ0FPQSxjQUFBLENBR0EsWUFBQSxDQUxBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FRQSxzQkFBQSxDQUhBLGVBQUEsQ0FQQSxpQkFBQSxDQU1BLDZDQUlBLENBRUEseUJBQ0Usd0JBQUEsQ0FDQSwwQkFBQSxDQUdGLDBCQUNFLHVCQUFBLENBSUosNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FEQSxVQUNBIiwiZmlsZSI6IkJVc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -471,7 +479,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".testimonialsPage_6a9a225d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;overflow-x:hidden;padding:40px 60px;width:100%}.contentContainer_6a9a225d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.testimonialsGrid_6a9a225d{box-sizing:border-box;display:grid;gap:15px;grid-template-columns:repeat(5,1fr);margin-bottom:20px;width:100%}@media (max-width:1400px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(3,1fr)}}@media (max-width:768px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.testimonialsGrid_6a9a225d{grid-template-columns:1fr}}.testimonialCard_6a9a225d{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:30px 15px;text-align:center;width:100%}.testimonialText_6a9a225d{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;overflow-wrap:break-word}.carouselIndicators_6a9a225d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_6a9a225d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_6a9a225d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_6a9a225d.active_6a9a225d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQ2xpZW50VGVzdGltb25pYWxzUGFnZS9DbGllbnRUZXN0aW1vbmlhbHNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUVBLGlCQUFBLENBUEEsaUJBQUEsQ0FGQSxVQVNBLENBR0YsMkJBSUUscUJBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxVQUNBLENBR0YsMkJBTUUscUJBQUEsQ0FMQSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FDQSxVQUNBLENBRUEsMEJBUkYsMkJBU0ksbUNBQUEsQ0FBQSxDQUdGLHlCQVpGLDJCQWFJLG1DQUFBLENBQUEsQ0FHRix5QkFoQkYsMkJBaUJJLHlCQUFBLENBQUEsQ0FJSiwwQkFLRSxrQkFBQSxDQUpBLHdCQUFBLENBRUEsaUJBQUEsQ0FNQSxxQkFBQSxDQUxBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLGNBQUEsQ0FKQSxnQkFBQSxDQUtBLGVBQUEsQ0FWQSxpQkFBQSxDQU1BLGlCQUFBLENBRUEsVUFFQSxDQUdGLDBCQU9FLG9CQUFBLENBTEEsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FHQSxlQUFBLENBREEsUUFBQSxDQUdBLHdCQUFBLENBR0YsNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FEQSxVQUNBIiwiZmlsZSI6IkNsaWVudFRlc3RpbW9uaWFsc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".testimonialsPage_6a9a225d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;overflow-x:hidden;padding:40px 60px;width:100%}.contentContainer_6a9a225d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.testimonialsGrid_6a9a225d{box-sizing:border-box;display:grid;gap:15px;grid-template-columns:repeat(5,1fr);margin-bottom:20px;width:100%}@media (max-width:1400px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(3,1fr)}}@media (max-width:768px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.testimonialsGrid_6a9a225d{grid-template-columns:1fr}}.testimonialCard_6a9a225d{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:30px 15px;text-align:center;width:100%}.testimonialText_6a9a225d{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;overflow-wrap:break-word}.carouselIndicators_6a9a225d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_6a9a225d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_6a9a225d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_6a9a225d.active_6a9a225d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9DbGllbnRUZXN0aW1vbmlhbHNQYWdlL0NsaWVudFRlc3RpbW9uaWFsc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkJBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBRUEsaUJBQUEsQ0FQQSxpQkFBQSxDQUZBLFVBU0EsQ0FHRiwyQkFJRSxxQkFBQSxDQUZBLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQ0EsQ0FHRiwyQkFNRSxxQkFBQSxDQUxBLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxrQkFBQSxDQUNBLFVBQ0EsQ0FFQSwwQkFSRiwyQkFTSSxtQ0FBQSxDQUFBLENBR0YseUJBWkYsMkJBYUksbUNBQUEsQ0FBQSxDQUdGLHlCQWhCRiwyQkFpQkkseUJBQUEsQ0FBQSxDQUlKLDBCQUtFLGtCQUFBLENBSkEsd0JBQUEsQ0FFQSxpQkFBQSxDQU1BLHFCQUFBLENBTEEsWUFBQSxDQUVBLHNCQUFBLENBS0EsY0FBQSxDQUpBLGdCQUFBLENBS0EsZUFBQSxDQVZBLGlCQUFBLENBTUEsaUJBQUEsQ0FFQSxVQUVBLENBR0YsMEJBT0Usb0JBQUEsQ0FMQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQUdBLGVBQUEsQ0FEQSxRQUFBLENBR0Esd0JBQUEsQ0FHRiw2QkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLHNCQUFBLENBRUEsZUFBQSxDQUdGLGNBSUUsd0JBQUEsQ0FEQSxpQkFBQSxDQUVBLGNBQUEsQ0FIQSxXQUFBLENBSUEsNkNBQUEsQ0FMQSxVQUtBLENBRUEsb0JBRUUsd0JBQUEsQ0FEQSxvQkFDQSxDQUdGLDhCQUNFLHdCQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EiLCJmaWxlIjoiQ2xpZW50VGVzdGltb25pYWxzUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -502,7 +510,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".communityPage_01d0c138{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_01d0c138{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.communitiesGrid_01d0c138{box-sizing:border-box;display:grid;gap:20px;grid-template-columns:repeat(3,1fr);width:100%}@media (max-width:768px){.communitiesGrid_01d0c138{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.communitiesGrid_01d0c138{grid-template-columns:1fr}}.communityCard_01d0c138{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:40px 30px;text-align:center;width:100%}.communityText_01d0c138{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500;line-height:1.5;margin:0;overflow-wrap:break-word}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQ29tbXVuaXR5UGFnZS9Db21tdW5pdHlQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHdCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUlFLHFCQUFBLENBRkEsYUFBQSxDQURBLGdCQUFBLENBRUEsVUFDQSxDQUdGLDBCQUtFLHFCQUFBLENBSkEsWUFBQSxDQUVBLFFBQUEsQ0FEQSxtQ0FBQSxDQUVBLFVBQ0EsQ0FFQSx5QkFQRiwwQkFRSSxtQ0FBQSxDQUFBLENBR0YseUJBWEYsMEJBWUkseUJBQUEsQ0FBQSxDQUlKLHdCQUtFLGtCQUFBLENBSkEsd0JBQUEsQ0FFQSxpQkFBQSxDQU1BLHFCQUFBLENBTEEsWUFBQSxDQUVBLHNCQUFBLENBS0EsY0FBQSxDQUpBLGdCQUFBLENBS0EsZUFBQSxDQVZBLGlCQUFBLENBTUEsaUJBQUEsQ0FFQSxVQUVBLENBR0Ysd0JBT0Usb0JBQUEsQ0FMQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQUdBLGVBQUEsQ0FEQSxRQUFBLENBR0Esd0JBQUEiLCJmaWxlIjoiQ29tbXVuaXR5UGFnZS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".communityPage_01d0c138{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_01d0c138{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.communitiesGrid_01d0c138{box-sizing:border-box;display:grid;gap:20px;grid-template-columns:repeat(3,1fr);width:100%}@media (max-width:768px){.communitiesGrid_01d0c138{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.communitiesGrid_01d0c138{grid-template-columns:1fr}}.communityCard_01d0c138{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:40px 30px;text-align:center;width:100%}.communityText_01d0c138{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500;line-height:1.5;margin:0;overflow-wrap:break-word}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9Db21tdW5pdHlQYWdlL0NvbW11bml0eVBhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBSUUscUJBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxVQUNBLENBR0YsMEJBS0UscUJBQUEsQ0FKQSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsVUFDQSxDQUVBLHlCQVBGLDBCQVFJLG1DQUFBLENBQUEsQ0FHRix5QkFYRiwwQkFZSSx5QkFBQSxDQUFBLENBSUosd0JBS0Usa0JBQUEsQ0FKQSx3QkFBQSxDQUVBLGlCQUFBLENBTUEscUJBQUEsQ0FMQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxjQUFBLENBSkEsZ0JBQUEsQ0FLQSxlQUFBLENBVkEsaUJBQUEsQ0FNQSxpQkFBQSxDQUVBLFVBRUEsQ0FHRix3QkFPRSxvQkFBQSxDQUxBLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBR0EsZUFBQSxDQURBLFFBQUEsQ0FHQSx3QkFBQSIsImZpbGUiOiJDb21tdW5pdHlQYWdlLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -530,7 +538,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".quickLinksPage_19320504{background-color:#e3f2fd;box-sizing:border-box;font-family:Inter,sans-serif;height:330px;padding:40px 60px;width:100%}.pageContainer_19320504{align-items:center;justify-content:center;max-width:1400px}.pageContainer_19320504,.quickLinksSidebar_19320504{box-sizing:border-box;display:flex;height:100%;margin:0 auto}.quickLinksSidebar_19320504{background-color:#bbdefb;border-radius:6px;flex-direction:column;overflow:hidden;padding:20px 15px;width:300px}@media (max-width:1024px){.quickLinksSidebar_19320504{height:auto;min-height:300px;width:100%}}.sidebarTitle_19320504{border-bottom:2px solid #90caf9;color:#1976d2;flex-shrink:0;font-family:Inter,sans-serif;font-size:18px;font-weight:700;margin:0 0 15px;padding-bottom:12px}.linksList_19320504{flex:1;list-style:none;margin:0;overflow-x:hidden;overflow-y:auto;padding:0}.linkItem_19320504{align-items:center;color:#1976d2;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:15px;font-weight:500;padding:8px 0;text-decoration:none;transition:color .3s,transform .2s}.linkItem_19320504:hover{color:#1565c0;transform:translateX(5px)}.linkItem_19320504:active{transform:translateX(3px)}.linkArrow_19320504{color:#1976d2;font-size:18px;font-weight:600;margin-right:10px;transition:color .3s}.linkItem_19320504:hover .linkArrow_19320504{color:#1565c0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvUXVpY2tMaW5rc1BhZ2UvUXVpY2tMaW5rc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEseUJBRUUsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLDRCQUFBLENBREEsWUFBQSxDQUZBLGlCQUFBLENBRkEsVUFLQSxDQUdGLHdCQUtFLGtCQUFBLENBREEsc0JBQUEsQ0FIQSxnQkFNQSxDQUdGLG9EQUpFLHFCQUFBLENBSEEsWUFBQSxDQUlBLFdBQUEsQ0FMQSxhQWtCQSxDQVZGLDRCQUNFLHdCQUFBLENBRUEsaUJBQUEsQ0FLQSxxQkFBQSxDQUNBLGVBQUEsQ0FQQSxpQkFBQSxDQUlBLFdBSUEsQ0FFQSwwQkFaRiw0QkFjSSxXQUFBLENBQ0EsZ0JBQUEsQ0FGQSxVQUVBLENBQUEsQ0FJSix1QkFPRSwrQkFBQSxDQUpBLGFBQUEsQ0FLQSxhQUFBLENBSkEsNEJBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUdBLGVBQUEsQ0FDQSxtQkFFQSxDQUdGLG9CQUlFLE1BQUEsQ0FIQSxlQUFBLENBRUEsUUFBQSxDQUdBLGlCQUFBLENBREEsZUFBQSxDQUhBLFNBSUEsQ0FHRixtQkFFRSxrQkFBQSxDQUdBLGFBQUEsQ0FLQSxjQUFBLENBVEEsWUFBQSxDQU9BLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxhQUFBLENBQ0Esb0JBQUEsQ0FLQSxrQ0FDQSxDQUVBLHlCQUNFLGFBQUEsQ0FDQSx5QkFBQSxDQUdGLDBCQUNFLHlCQUFBLENBSUosb0JBSUUsYUFBQSxDQURBLGNBQUEsQ0FEQSxlQUFBLENBREEsaUJBQUEsQ0FJQSxvQkFBQSxDQUdGLDZDQUNFLGFBQUEiLCJmaWxlIjoiUXVpY2tMaW5rc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".quickLinksPage_19320504{background-color:#e3f2fd;box-sizing:border-box;font-family:Inter,sans-serif;height:330px;padding:40px 60px;width:100%}.pageContainer_19320504{align-items:center;justify-content:center;max-width:1400px}.pageContainer_19320504,.quickLinksSidebar_19320504{box-sizing:border-box;display:flex;height:100%;margin:0 auto}.quickLinksSidebar_19320504{background-color:#bbdefb;border-radius:6px;flex-direction:column;overflow:hidden;padding:20px 15px;width:300px}@media (max-width:1024px){.quickLinksSidebar_19320504{height:auto;min-height:300px;width:100%}}.sidebarTitle_19320504{border-bottom:2px solid #90caf9;color:#1976d2;flex-shrink:0;font-family:Inter,sans-serif;font-size:18px;font-weight:700;margin:0 0 15px;padding-bottom:12px}.linksList_19320504{flex:1;list-style:none;margin:0;overflow-x:hidden;overflow-y:auto;padding:0}.linkItem_19320504{align-items:center;color:#1976d2;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:15px;font-weight:500;padding:8px 0;text-decoration:none;transition:color .3s,transform .2s}.linkItem_19320504:hover{color:#1565c0;transform:translateX(5px)}.linkItem_19320504:active{transform:translateX(3px)}.linkArrow_19320504{color:#1976d2;font-size:18px;font-weight:600;margin-right:10px;transition:color .3s}.linkItem_19320504:hover .linkArrow_19320504{color:#1565c0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9RdWlja0xpbmtzUGFnZS9RdWlja0xpbmtzUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx5QkFFRSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsNEJBQUEsQ0FEQSxZQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUtBLENBR0Ysd0JBS0Usa0JBQUEsQ0FEQSxzQkFBQSxDQUhBLGdCQU1BLENBR0Ysb0RBSkUscUJBQUEsQ0FIQSxZQUFBLENBSUEsV0FBQSxDQUxBLGFBa0JBLENBVkYsNEJBQ0Usd0JBQUEsQ0FFQSxpQkFBQSxDQUtBLHFCQUFBLENBQ0EsZUFBQSxDQVBBLGlCQUFBLENBSUEsV0FJQSxDQUVBLDBCQVpGLDRCQWNJLFdBQUEsQ0FDQSxnQkFBQSxDQUZBLFVBRUEsQ0FBQSxDQUlKLHVCQU9FLCtCQUFBLENBSkEsYUFBQSxDQUtBLGFBQUEsQ0FKQSw0QkFBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsZUFBQSxDQUNBLG1CQUVBLENBR0Ysb0JBSUUsTUFBQSxDQUhBLGVBQUEsQ0FFQSxRQUFBLENBR0EsaUJBQUEsQ0FEQSxlQUFBLENBSEEsU0FJQSxDQUdGLG1CQUVFLGtCQUFBLENBR0EsYUFBQSxDQUtBLGNBQUEsQ0FUQSxZQUFBLENBT0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUpBLGFBQUEsQ0FDQSxvQkFBQSxDQUtBLGtDQUNBLENBRUEseUJBQ0UsYUFBQSxDQUNBLHlCQUFBLENBR0YsMEJBQ0UseUJBQUEsQ0FJSixvQkFJRSxhQUFBLENBREEsY0FBQSxDQURBLGVBQUEsQ0FEQSxpQkFBQSxDQUlBLG9CQUFBLENBR0YsNkNBQ0UsYUFBQSIsImZpbGUiOiJRdWlja0xpbmtzUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -560,7 +568,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".serviceLinesPage_12ef78dc{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_12ef78dc{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_12ef78dc{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_12ef78dc :nth-child(6){grid-column:2}.buttonsGrid_12ef78dc :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}.slButton_12ef78dc{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.slButton_12ef78dc:hover{background-color:#1565c0;transform:translateY(-2px)}.slButton_12ef78dc:active{transform:translateY(0)}.carouselIndicators_12ef78dc{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_12ef78dc{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_12ef78dc:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_12ef78dc.active_12ef78dc{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvU2VydmljZUxpbmVzUGFnZS9TZXJ2aWNlTGluZXNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUVFLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQUEsQ0FHRixzQkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FFQSxnQkFBQSxDQUNBLGlCQUFBLENBRkEsZ0JBRUEsQ0FHQSxvQ0FDRSxhQUFBLENBR0Ysb0NBQ0UsYUFBQSxDQUlGLDBCQW5CRixzQkFvQkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUlKLHlCQTdCRixzQkE4QkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUtOLG1CQWFFLGtCQUFBLENBWkEsd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUdBLFlBQUEsQ0FMQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUUEsc0JBQUEsQ0FIQSxlQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FJQSxDQUVBLHlCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRiwwQkFDRSx1QkFBQSxDQUlKLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBREEsVUFDQSIsImZpbGUiOiJTZXJ2aWNlTGluZXNQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".serviceLinesPage_12ef78dc{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_12ef78dc{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_12ef78dc{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_12ef78dc :nth-child(6){grid-column:2}.buttonsGrid_12ef78dc :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}.slButton_12ef78dc{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.slButton_12ef78dc:hover{background-color:#1565c0;transform:translateY(-2px)}.slButton_12ef78dc:active{transform:translateY(0)}.carouselIndicators_12ef78dc{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_12ef78dc{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_12ef78dc:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_12ef78dc.active_12ef78dc{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9TZXJ2aWNlTGluZXNQYWdlL1NlcnZpY2VMaW5lc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkJBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsVUFBQSxDQUdGLHNCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxrQkFBQSxDQUVBLGdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxnQkFFQSxDQUdBLG9DQUNFLGFBQUEsQ0FHRixvQ0FDRSxhQUFBLENBSUYsMEJBbkJGLHNCQW9CSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBSUoseUJBN0JGLHNCQThCSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBS04sbUJBYUUsa0JBQUEsQ0FaQSx3QkFBQSxDQUVBLFdBQUEsQ0FLQSxpQkFBQSxDQU5BLFVBQUEsQ0FPQSxjQUFBLENBR0EsWUFBQSxDQUxBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FRQSxzQkFBQSxDQUhBLGVBQUEsQ0FQQSxpQkFBQSxDQU1BLDZDQUlBLENBRUEseUJBQ0Usd0JBQUEsQ0FDQSwwQkFBQSxDQUdGLDBCQUNFLHVCQUFBLENBSUosNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FEQSxVQUNBIiwiZmlsZSI6IlNlcnZpY2VMaW5lc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -590,7 +598,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".whosWhoPage_e154758d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_e154758d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.buFilters_e154758d{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-bottom:20px}.buFilterButton_e154758d{background-color:#90caf9;border:none;border-radius:4px;color:#fff;cursor:pointer;font-family:Inter,sans-serif;font-size:16px;font-weight:500;min-width:80px;padding:12px 24px;transition:background-color .3s,transform .2s}.buFilterButton_e154758d:hover{background-color:#64b5f6;transform:translateY(-2px)}.buFilterButton_e154758d:active{transform:translateY(0)}.buFilterButton_e154758d.active_e154758d{background-color:#1976d2;font-weight:600}.mainContentBlock_e154758d{align-items:center;background-color:#1976d2;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;margin-bottom:20px;min-height:200px;padding:60px 40px}.contentText_e154758d{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;letter-spacing:.5px;margin:0;text-align:center}.carouselIndicators_e154758d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_e154758d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_e154758d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_e154758d.active_e154758d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmFtc2hpa1NoZXR0eS9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NreVNlY3VyZS9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvV2hvc1dob1BhZ2UvV2hvc1dob1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBSUUscUJBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxVQUNBLENBR0Ysb0JBQ0UsWUFBQSxDQUlBLGNBQUEsQ0FIQSxRQUFBLENBRUEsc0JBQUEsQ0FEQSxrQkFFQSxDQUdGLHlCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUtBLGlCQUFBLENBTkEsVUFBQSxDQU9BLGNBQUEsQ0FGQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsY0FBQSxDQVBBLGlCQUFBLENBTUEsNkNBQ0EsQ0FFQSwrQkFDRSx3QkFBQSxDQUNBLDBCQUFBLENBR0YsZ0NBQ0UsdUJBQUEsQ0FHRix5Q0FDRSx3QkFBQSxDQUNBLGVBQUEsQ0FJSiwyQkFNRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEsaUJBQUEsQ0FNQSxxQkFBQSxDQUpBLFlBQUEsQ0FFQSxzQkFBQSxDQUhBLGtCQUFBLENBSUEsZ0JBQUEsQ0FOQSxpQkFPQSxDQUdGLHNCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSUEsbUJBQUEsQ0FGQSxRQUFBLENBQ0EsaUJBQ0EsQ0FHRiw2QkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLHNCQUFBLENBRUEsZUFBQSxDQUdGLGNBSUUsd0JBQUEsQ0FEQSxpQkFBQSxDQUVBLGNBQUEsQ0FIQSxXQUFBLENBSUEsNkNBQUEsQ0FMQSxVQUtBLENBRUEsb0JBRUUsd0JBQUEsQ0FEQSxvQkFDQSxDQUdGLDhCQUNFLHdCQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EiLCJmaWxlIjoiV2hvc1dob1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".whosWhoPage_e154758d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_e154758d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.buFilters_e154758d{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-bottom:20px}.buFilterButton_e154758d{background-color:#90caf9;border:none;border-radius:4px;color:#fff;cursor:pointer;font-family:Inter,sans-serif;font-size:16px;font-weight:500;min-width:80px;padding:12px 24px;transition:background-color .3s,transform .2s}.buFilterButton_e154758d:hover{background-color:#64b5f6;transform:translateY(-2px)}.buFilterButton_e154758d:active{transform:translateY(0)}.buFilterButton_e154758d.active_e154758d{background-color:#1976d2;font-weight:600}.mainContentBlock_e154758d{align-items:center;background-color:#1976d2;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;margin-bottom:20px;min-height:200px;padding:60px 40px}.contentText_e154758d{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;letter-spacing:.5px;margin:0;text-align:center}.carouselIndicators_e154758d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_e154758d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_e154758d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_e154758d.active_e154758d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9XaG9zV2hvUGFnZS9XaG9zV2hvUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFJRSxxQkFBQSxDQUZBLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBSUEsY0FBQSxDQUhBLFFBQUEsQ0FFQSxzQkFBQSxDQURBLGtCQUVBLENBR0YseUJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUZBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FLQSxjQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FDQSxDQUVBLCtCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRixnQ0FDRSx1QkFBQSxDQUdGLHlDQUNFLHdCQUFBLENBQ0EsZUFBQSxDQUlKLDJCQU1FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxpQkFBQSxDQU1BLHFCQUFBLENBSkEsWUFBQSxDQUVBLHNCQUFBLENBSEEsa0JBQUEsQ0FJQSxnQkFBQSxDQU5BLGlCQU9BLENBR0Ysc0JBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FJQSxtQkFBQSxDQUZBLFFBQUEsQ0FDQSxpQkFDQSxDQUdGLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBREEsVUFDQSIsImZpbGUiOiJXaG9zV2hvUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -1024,24 +1032,133 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
 /* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 
 
 
+
+
+// Azure OpenAI Configuration
+// NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
+// Exposing API keys in client-side code is a security risk. Consider using a backend API proxy.
+var AZURE_OPENAI_CONFIG = {
+    apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+    endpoint: 'https://engineeringteamopenai.openai.azure.com',
+    deploymentName: 'gpt-4o'
+};
 var FileUpload = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), dragOver = _a[0], setDragOver = _a[1];
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), uploadedFile = _b[0], setUploadedFile = _b[1];
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isProcessing = _c[0], setIsProcessing = _c[1];
+    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), extractedMetadata = _d[0], setExtractedMetadata = _d[1];
+    var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _e[0], setProcessingError = _e[1];
     var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     var onBrowse = function () {
         var _a;
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
-    var onFileSelected = function (f) {
-        var file = f && f.length ? f[0] : undefined;
-        if (file) {
-            setUploadedFile(file);
-            props.onUploaded && props.onUploaded(file);
-        }
-    };
+    var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
+        var file;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    file = f && f.length ? f[0] : undefined;
+                    if (!file) return [3 /*break*/, 2];
+                    setUploadedFile(file);
+                    setProcessingError(null);
+                    setExtractedMetadata(null);
+                    props.onUploaded && props.onUploaded(file);
+                    // Process the file with AI
+                    return [4 /*yield*/, processFileWithAI(file)];
+                case 1:
+                    // Process the file with AI
+                    _a.sent();
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
+            }
+        });
+    }); };
+    var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var parseResult, metadata, error_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    setIsProcessing(true);
+                    setProcessingError(null);
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 4, 5, 6]);
+                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__.DocumentParser.parseFile(file)];
+                case 2:
+                    parseResult = _a.sent();
+                    if (!parseResult.success) {
+                        setProcessingError(parseResult.error || 'Failed to parse document');
+                        setIsProcessing(false);
+                        return [2 /*return*/];
+                    }
+                    if (!parseResult.text || parseResult.text.trim().length === 0) {
+                        setProcessingError('No text content found in the document');
+                        setIsProcessing(false);
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
+                case 3:
+                    metadata = _a.sent();
+                    // Step 3: Set the extracted metadata
+                    setExtractedMetadata(metadata);
+                    return [3 /*break*/, 6];
+                case 4:
+                    error_1 = _a.sent();
+                    console.error('Error processing file with AI:', error_1);
+                    setProcessingError(error_1 instanceof Error
+                        ? error_1.message
+                        : 'An error occurred while processing the document. Please fill the form manually.');
+                    return [3 /*break*/, 6];
+                case 5:
+                    setIsProcessing(false);
+                    return [7 /*endfinally*/];
+                case 6: return [2 /*return*/];
+            }
+        });
+    }); };
     var onDrop = function (e) {
         e.preventDefault();
         setDragOver(false);
@@ -1069,8 +1186,11 @@ var FileUpload = function (props) {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].footer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); } }))))));
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingSpinner }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingTitle }, "Analyzing Document..."),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
+            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -1089,19 +1209,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FileUpload.module.css */ 880);
 var styles = {
-    overlay: 'overlay_3200fcfd',
-    modal: 'modal_3200fcfd',
-    uploadCard: 'uploadCard_3200fcfd',
-    title: 'title_3200fcfd',
-    dropZone: 'dropZone_3200fcfd',
-    dropZoneHover: 'dropZoneHover_3200fcfd',
-    uploadIcon: 'uploadIcon_3200fcfd',
-    hintText: 'hintText_3200fcfd',
-    instructions: 'instructions_3200fcfd',
-    browseBtn: 'browseBtn_3200fcfd',
-    footer: 'footer_3200fcfd',
-    closeBtn: 'closeBtn_3200fcfd',
-    fileName: 'fileName_3200fcfd'
+    overlay: 'overlay_c09eba7f',
+    modal: 'modal_c09eba7f',
+    uploadCard: 'uploadCard_c09eba7f',
+    title: 'title_c09eba7f',
+    dropZone: 'dropZone_c09eba7f',
+    dropZoneHover: 'dropZoneHover_c09eba7f',
+    uploadIcon: 'uploadIcon_c09eba7f',
+    hintText: 'hintText_c09eba7f',
+    instructions: 'instructions_c09eba7f',
+    browseBtn: 'browseBtn_c09eba7f',
+    footer: 'footer_c09eba7f',
+    closeBtn: 'closeBtn_c09eba7f',
+    fileName: 'fileName_c09eba7f',
+    processingContainer: 'processingContainer_c09eba7f',
+    processingSpinner: 'processingSpinner_c09eba7f',
+    spin: 'spin_c09eba7f',
+    processingTitle: 'processingTitle_c09eba7f',
+    processingMessage: 'processingMessage_c09eba7f',
+    errorMessage: 'errorMessage_c09eba7f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1252,23 +1378,14 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 
 var MetadataForm = function (_a) {
-    var onSubmit = _a.onSubmit, onClose = _a.onClose;
-    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState({
-        title: '',
-        abstract: '',
-        bu: '',
-        department: '',
-        region: '',
-        client: '',
-        documentType: '',
-        diseaseArea: '',
-        therapyArea: '',
-        emails: '',
-        phones: '',
-        ids: '',
-        pricing: '',
-        sensitive: ''
-    }), values = _b[0], setValues = _b[1];
+    var onSubmit = _a.onSubmit, onClose = _a.onClose, initialValues = _a.initialValues;
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(__assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, initialValues)), values = _b[0], setValues = _b[1];
+    // Update values when initialValues change
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (initialValues) {
+            setValues(function (prev) { return (__assign(__assign({}, prev), initialValues)); });
+        }
+    }, [initialValues]);
     var onChange = function (e) {
         var _a = e.target, name = _a.name, value = _a.value;
         setValues(function (v) {
@@ -1315,10 +1432,10 @@ var MetadataForm = function (_a) {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails" }, "Emails Found"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones" }, "Phones Found"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids" }, "IDs Found"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids", name: "ids", value: values.ids, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
@@ -1345,23 +1462,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MetadataForm.module.css */ 8856);
 var styles = {
-    formWrapper: 'formWrapper_6d4eb6a4',
-    formInner: 'formInner_6d4eb6a4',
-    note: 'note_6d4eb6a4',
-    headerBar: 'headerBar_6d4eb6a4',
-    cardMeta: 'cardMeta_6d4eb6a4',
-    field: 'field_6d4eb6a4',
-    title: 'title_6d4eb6a4',
-    titleWrap: 'titleWrap_6d4eb6a4',
-    subtitle: 'subtitle_6d4eb6a4',
-    closeBtn: 'closeBtn_6d4eb6a4',
-    fieldFull: 'fieldFull_6d4eb6a4',
-    label: 'label_6d4eb6a4',
-    input: 'input_6d4eb6a4',
-    textarea: 'textarea_6d4eb6a4',
-    grid: 'grid_6d4eb6a4',
-    actions: 'actions_6d4eb6a4',
-    submitBtn: 'submitBtn_6d4eb6a4'
+    formWrapper: 'formWrapper_eb48e8e0',
+    formInner: 'formInner_eb48e8e0',
+    note: 'note_eb48e8e0',
+    headerBar: 'headerBar_eb48e8e0',
+    cardMeta: 'cardMeta_eb48e8e0',
+    field: 'field_eb48e8e0',
+    title: 'title_eb48e8e0',
+    titleWrap: 'titleWrap_eb48e8e0',
+    subtitle: 'subtitle_eb48e8e0',
+    closeBtn: 'closeBtn_eb48e8e0',
+    fieldFull: 'fieldFull_eb48e8e0',
+    label: 'label_eb48e8e0',
+    input: 'input_eb48e8e0',
+    textarea: 'textarea_eb48e8e0',
+    textareaScrollable: 'textareaScrollable_eb48e8e0',
+    grid: 'grid_eb48e8e0',
+    actions: 'actions_eb48e8e0',
+    submitBtn: 'submitBtn_eb48e8e0'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1986,6 +2104,710 @@ var styles = {
 
 /***/ }),
 
+/***/ 1651:
+/*!***************************************************************!*\
+  !*** ./lib/webparts/migration/services/AzureOpenAIService.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AzureOpenAIService: () => (/* binding */ AzureOpenAIService)
+/* harmony export */ });
+/* harmony import */ var _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ValidationConstants */ 7595);
+/* harmony import */ var _DataMasking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DataMasking */ 8623);
+/**
+ * Service to interact with Azure OpenAI API
+ */
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+var AzureOpenAIService = /** @class */ (function () {
+    function AzureOpenAIService(config) {
+        this.config = __assign(__assign({}, config), { apiVersion: config.apiVersion || '2024-02-15-preview' });
+    }
+    /**
+     * Extract metadata from document text using GPT-4o
+     */
+    AzureOpenAIService.prototype.extractMetadata = function (documentText) {
+        var _a, _b, _c, _d;
+        return __awaiter(this, void 0, void 0, function () {
+            var maxLength, truncatedText, prompt_1, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, error_1;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        _e.trys.push([0, 5, , 6]);
+                        maxLength = 8000;
+                        truncatedText = documentText.length > maxLength
+                            ? documentText.substring(0, maxLength) + '\n\n[... document truncated ...]'
+                            : documentText;
+                        prompt_1 = this.buildExtractionPrompt(truncatedText);
+                        return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'api-key': this.config.apiKey
+                                },
+                                body: JSON.stringify({
+                                    messages: [
+                                        {
+                                            role: 'system',
+                                            content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
+                                        },
+                                        {
+                                            role: 'user',
+                                            content: prompt_1
+                                        }
+                                    ],
+                                    temperature: 0.8,
+                                    max_tokens: 2000
+                                })
+                            })];
+                    case 1:
+                        response = _e.sent();
+                        if (!!response.ok) return [3 /*break*/, 3];
+                        return [4 /*yield*/, response.text()];
+                    case 2:
+                        errorText = _e.sent();
+                        errorMessage = "Azure OpenAI API error: ".concat(response.status);
+                        // Handle CORS errors
+                        if (response.status === 0 || response.statusText === '') {
+                            errorMessage = 'CORS error: Unable to connect to Azure OpenAI. The API may need CORS configuration or a backend proxy.';
+                        }
+                        else {
+                            try {
+                                errorJson = JSON.parse(errorText);
+                                errorMessage = ((_a = errorJson.error) === null || _a === void 0 ? void 0 : _a.message) || errorText || errorMessage;
+                            }
+                            catch (_f) {
+                                errorMessage = errorText || errorMessage;
+                            }
+                        }
+                        throw new Error(errorMessage);
+                    case 3: return [4 /*yield*/, response.json()];
+                    case 4:
+                        data = _e.sent();
+                        content = (_d = (_c = (_b = data.choices) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.message) === null || _d === void 0 ? void 0 : _d.content;
+                        if (!content) {
+                            throw new Error('No content returned from Azure OpenAI');
+                        }
+                        jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
+                        jsonText = jsonMatch[1] || content;
+                        extracted = JSON.parse(jsonText.trim());
+                        return [2 /*return*/, this.sanitizeMetadata(extracted)];
+                    case 5:
+                        error_1 = _e.sent();
+                        console.error('Error extracting metadata:', error_1);
+                        throw error_1;
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Build the prompt for metadata extraction
+     */
+    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
+        var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
+        var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
+        return "Analyze the following document and extract the following information. Return the result as a JSON object with these exact field names.\n\nCRITICAL RULES:\n- If a field cannot be found in the document, use an empty string \"\" (do NOT make up values)\n- For \"region\" and \"client\": ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n- Extract ALL email addresses and phone numbers found (even if there are 100+), separate them with commas\n- Be thorough and extract every single email and phone number you can find\n\nFields to extract:\n1. title - The document title or main heading (extract exactly as written)\n\n2. documentType - Type of document (e.g., \"PPTX\", \"Report\", \"Proposal\", \"Presentation\", \"PDF\")\n\n3. bu - Business Unit. MUST be one of these exact values (match the closest one):\n- ".concat(buList, "\nIf no Business Unit is mentioned, use \"\"\n\n4. department - Department. MUST be one of these exact values (match the closest one):\n- ").concat(deptList, "\nIf no Department is mentioned, use \"\"\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\"). ONLY fill if explicitly mentioned, otherwise \"\"\n\n6. client - Client name or organization. ONLY fill if explicitly mentioned, otherwise \"\"\n\n7. abstract - A brief summary (1-2 sentences) of the document content\n\n10. emails - ALL email addresses found in the document. Extract EVERY email address you can find, even if there are many. Separate with commas. Format: \"email1@example.com, email2@example.com, ...\"\n\n11. phones - ALL phone numbers found in the document. Extract EVERY phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes). Separate with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\"\n\n12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, or financial terms mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format:\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\",\n  \"sensitive\": \"...\"\n}");
+    };
+    /**
+     * Sanitize and validate extracted metadata
+     */
+    AzureOpenAIService.prototype.sanitizeMetadata = function (metadata) {
+        var sanitized = {};
+        // Ensure all fields are strings and trim whitespace
+        var fields = [
+            'title', 'documentType', 'bu', 'department', 'region', 'client',
+            'abstract', 'emails', 'phones',
+            'ids', 'pricing'
+        ];
+        for (var _i = 0, fields_1 = fields; _i < fields_1.length; _i++) {
+            var field = fields_1[_i];
+            var value = metadata[field];
+            sanitized[field] = typeof value === 'string' ? value.trim() : '';
+        }
+        // Validate and match Business Unit to allowed values
+        if (sanitized.bu) {
+            var matchedBU = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.bu, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS);
+            sanitized.bu = matchedBU;
+        }
+        // Validate and match Department to allowed values
+        if (sanitized.department) {
+            var matchedDept = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.department, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS);
+            sanitized.department = matchedDept;
+        }
+        // Ensure region and client are empty if not found (not just whitespace)
+        if (sanitized.region && sanitized.region.toLowerCase() === 'not found' ||
+            sanitized.region && sanitized.region.toLowerCase() === 'n/a' ||
+            sanitized.region && sanitized.region.toLowerCase() === 'none') {
+            sanitized.region = '';
+        }
+        if (sanitized.client && sanitized.client.toLowerCase() === 'not found' ||
+            sanitized.client && sanitized.client.toLowerCase() === 'n/a' ||
+            sanitized.client && sanitized.client.toLowerCase() === 'none') {
+            sanitized.client = '';
+        }
+        // Mask emails and phones
+        if (sanitized.emails) {
+            sanitized.emails = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllEmails)(sanitized.emails);
+        }
+        if (sanitized.phones) {
+            sanitized.phones = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllPhones)(sanitized.phones);
+        }
+        return sanitized;
+    };
+    return AzureOpenAIService;
+}());
+
+
+
+/***/ }),
+
+/***/ 8623:
+/*!********************************************************!*\
+  !*** ./lib/webparts/migration/services/DataMasking.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   maskAllEmails: () => (/* binding */ maskAllEmails),
+/* harmony export */   maskAllPhones: () => (/* binding */ maskAllPhones),
+/* harmony export */   maskEmail: () => (/* binding */ maskEmail),
+/* harmony export */   maskPhone: () => (/* binding */ maskPhone)
+/* harmony export */ });
+/**
+ * Utility functions for masking sensitive data
+ */
+/**
+ * Mask the first 4 characters of an email address
+ * Example: john.doe@example.com -> ****.doe@example.com
+ */
+function maskEmail(email) {
+    if (!email || email.trim() === '') {
+        return '';
+    }
+    var trimmed = email.trim();
+    var atIndex = trimmed.indexOf('@');
+    if (atIndex === -1 || atIndex <= 4) {
+        // If @ is not found or within first 4 chars, mask first 4 chars
+        return '****' + trimmed.substring(4);
+    }
+    // Mask first 4 characters before @
+    return '****' + trimmed.substring(4);
+}
+/**
+ * Mask the first 4 characters of a phone number
+ * Example: +1-555-123-4567 -> ****-123-4567
+ */
+function maskPhone(phone) {
+    if (!phone || phone.trim() === '') {
+        return '';
+    }
+    var trimmed = phone.trim();
+    // Remove common separators for masking, then add them back
+    var cleaned = trimmed.replace(/[\s\-().]/g, '');
+    if (cleaned.length <= 4) {
+        return '****';
+    }
+    // Mask first 4 digits, preserve formatting
+    var masked = '****';
+    var originalIndex = 4;
+    // Preserve separators after the masked portion
+    for (var i = 4; i < trimmed.length; i++) {
+        var char = trimmed[i];
+        if (/[\s\-().]/.test(char)) {
+            masked += char;
+        }
+        else {
+            masked += trimmed[i];
+            originalIndex++;
+        }
+    }
+    return masked;
+}
+/**
+ * Mask all emails in a comma-separated or newline-separated string
+ */
+function maskAllEmails(emailsString) {
+    if (!emailsString || emailsString.trim() === '') {
+        return '';
+    }
+    // Split by comma or newline
+    var emails = emailsString
+        .split(/[,\n]/)
+        .map(function (e) { return e.trim(); })
+        .filter(function (e) { return e.length > 0; });
+    return emails.map(maskEmail).join(', ');
+}
+/**
+ * Mask all phone numbers in a comma-separated or newline-separated string
+ */
+function maskAllPhones(phonesString) {
+    if (!phonesString || phonesString.trim() === '') {
+        return '';
+    }
+    // Split by comma or newline
+    var phones = phonesString
+        .split(/[,\n]/)
+        .map(function (p) { return p.trim(); })
+        .filter(function (p) { return p.length > 0; });
+    return phones.map(maskPhone).join(', ');
+}
+
+
+/***/ }),
+
+/***/ 2969:
+/*!***********************************************************!*\
+  !*** ./lib/webparts/migration/services/DocumentParser.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DocumentParser: () => (/* binding */ DocumentParser)
+/* harmony export */ });
+/**
+ * Service to extract text from various document formats
+ */
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var DocumentParser = /** @class */ (function () {
+    function DocumentParser() {
+    }
+    /**
+     * Extract text from a file based on its type
+     */
+    DocumentParser.parseFile = function (file) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function () {
+            var fileExtension, _b, error_1;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
+                        _c.label = 1;
+                    case 1:
+                        _c.trys.push([1, 12, , 13]);
+                        _b = fileExtension;
+                        switch (_b) {
+                            case 'pdf': return [3 /*break*/, 2];
+                            case 'docx': return [3 /*break*/, 4];
+                            case 'doc': return [3 /*break*/, 6];
+                            case 'pptx': return [3 /*break*/, 7];
+                            case 'ppt': return [3 /*break*/, 7];
+                            case 'xlsx': return [3 /*break*/, 8];
+                            case 'xls': return [3 /*break*/, 8];
+                            case 'mpp': return [3 /*break*/, 9];
+                        }
+                        return [3 /*break*/, 10];
+                    case 2: return [4 /*yield*/, this.parsePDF(file)];
+                    case 3: return [2 /*return*/, _c.sent()];
+                    case 4: return [4 /*yield*/, this.parseWord(file)];
+                    case 5: return [2 /*return*/, _c.sent()];
+                    case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
+                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 11: return [3 /*break*/, 13];
+                    case 12:
+                        error_1 = _c.sent();
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
+                            }];
+                    case 13: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from PDF file
+     */
+    DocumentParser.parsePDF = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var pdfjsLib, arrayBuffer, pdf, fullText, numPages, pageNum, page, textContent, pageText, error_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 9, , 10]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_pdfjs-dist_build_pdf_mjs").then(__webpack_require__.bind(__webpack_require__, /*! pdfjs-dist */ 1100))];
+                    case 1:
+                        pdfjsLib = _a.sent();
+                        // Set worker source - using CDN for compatibility
+                        // Alternative: bundle the worker file and reference it locally
+                        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
+                            pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/".concat(pdfjsLib.version, "/pdf.worker.min.js");
+                        }
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _a.sent();
+                        return [4 /*yield*/, pdfjsLib.getDocument({ data: arrayBuffer }).promise];
+                    case 3:
+                        pdf = _a.sent();
+                        fullText = '';
+                        numPages = pdf.numPages;
+                        pageNum = 1;
+                        _a.label = 4;
+                    case 4:
+                        if (!(pageNum <= numPages)) return [3 /*break*/, 8];
+                        return [4 /*yield*/, pdf.getPage(pageNum)];
+                    case 5:
+                        page = _a.sent();
+                        return [4 /*yield*/, page.getTextContent()];
+                    case 6:
+                        textContent = _a.sent();
+                        pageText = textContent.items
+                            .map(function (item) {
+                            // Handle both TextItem and TextMarkedContent types
+                            if ('str' in item && item.str) {
+                                return item.str;
+                            }
+                            return '';
+                        })
+                            .join(' ');
+                        fullText += pageText + '\n';
+                        _a.label = 7;
+                    case 7:
+                        pageNum++;
+                        return [3 /*break*/, 4];
+                    case 8: return [2 /*return*/, {
+                            text: fullText.trim(),
+                            success: true
+                        }];
+                    case 9:
+                        error_2 = _a.sent();
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: error_2 instanceof Error ? error_2.message : 'Failed to parse PDF'
+                            }];
+                    case 10: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from Word (.docx) file
+     */
+    DocumentParser.parseWord = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var mammoth, arrayBuffer, result, error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_mammoth_lib_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 845, 19))];
+                    case 1:
+                        mammoth = _a.sent();
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _a.sent();
+                        return [4 /*yield*/, mammoth.extractRawText({ arrayBuffer: arrayBuffer })];
+                    case 3:
+                        result = _a.sent();
+                        return [2 /*return*/, {
+                                text: result.value.trim(),
+                                success: true
+                            }];
+                    case 4:
+                        error_3 = _a.sent();
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: error_3 instanceof Error ? error_3.message : 'Failed to parse Word document'
+                            }];
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    return DocumentParser;
+}());
+
+
+
+/***/ }),
+
+/***/ 7595:
+/*!****************************************************************!*\
+  !*** ./lib/webparts/migration/services/ValidationConstants.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ALLOWED_BUSINESS_UNITS: () => (/* binding */ ALLOWED_BUSINESS_UNITS),
+/* harmony export */   ALLOWED_DEPARTMENTS: () => (/* binding */ ALLOWED_DEPARTMENTS),
+/* harmony export */   findBestMatch: () => (/* binding */ findBestMatch)
+/* harmony export */ });
+/**
+ * Validation constants for Business Units and Departments
+ */
+var ALLOWED_BUSINESS_UNITS = [
+    'Organization Functions',
+    'Chief Technology Office',
+    'Co-Commercialization',
+    'Enterprise Commercial',
+    'Growth Markets',
+    'Enterprise Clinical',
+    'Indegene Japan',
+    'Enterprise Medical',
+    'Medical Devices',
+    'Multi-Channel Marketing',
+    'Strategy and Development',
+    'Enterprise Product Office',
+    'Transformative Software Solutions',
+    'Finance and Legal',
+    'Global Operations',
+    'People Practices & Systems',
+    'Sales Lifesciences'
+];
+var ALLOWED_DEPARTMENTS = [
+    'Leadership & Organization Development',
+    'Chief Technology Office',
+    'Enterprise Informatics',
+    'Enterprise Product Office',
+    'Enterprise Tech Office',
+    'Research & Development',
+    'Co-Commercialization',
+    'Omnichannel Acceleration',
+    'Enterprise Commercial',
+    'Omnichannel Solutions',
+    'Enterprise Commercial Activation and Change Management',
+    'Content Transformation & Solutions',
+    'Enterprise Commercial Delivery Services',
+    'Customer Experience Success Office (CESO)',
+    'Digital Enablement',
+    'Data and Analytics',
+    'Content and Design Solutions',
+    'CXD Content and Experience Design',
+    'Web and Portal Solutions',
+    'Patient Experience',
+    'Customer Advisory and Experience',
+    'Digital Innovation and Transformation',
+    'Campaign and Channel Operations',
+    'ECS Platforms and Technology',
+    'ECS Solutioning Presales and Marketing',
+    'BU Sales',
+    'Campaign Ops',
+    'Growth Markets',
+    'GM - Sales & Solutions',
+    'Enterprise Clinical',
+    'Clinical Data Management',
+    'RWD & Biostats',
+    'Clinical Operations',
+    'Digital Patient Recruitment and Engagement',
+    'Indegene Japan',
+    'Sales - Japan',
+    'Enterprise Medical',
+    'Enterprise Medical Client Partnership and Advisory',
+    'Medical Affairs',
+    'Medical Communication',
+    'Material Review, Operations and Compliance',
+    'Promotional and Medical Review',
+    'Learning & Development Solutions',
+    'Health Care Practitioners (HCP)',
+    'Learning and Development',
+    'Safety',
+    'Pharmacovigilance',
+    'Regulatory Affairs',
+    'Labelling Solutions',
+    'Packaging Artwork and Labelling',
+    'Health Economics & Outcomes Research',
+    'PRMA Common',
+    'Enterprise Medical Platforms and Technology',
+    'Medical Devices',
+    'Device Technology',
+    'Quality and Regulatory',
+    'Solutioning Sales and Marketing',
+    'Medical Content Solutions',
+    'Multi-Channel Marketing',
+    'Medical Engagement Solutions',
+    'Digital Solutions',
+    'Strategy and Development',
+    'Corporate Planning',
+    'Corporate Strategy',
+    'Corporate Development',
+    'Enterprise Product Office',
+    'Product - Medical',
+    'Engineering - Commercial',
+    'Product - Commercial',
+    'Engineering - Medical',
+    'Transformative Software Solutions',
+    'Engineering Office',
+    'Finance and Legal',
+    'Business Finance',
+    'Finance - Controllership',
+    'Legal',
+    'Taxation',
+    'Global Operations',
+    'Knowledge Management',
+    'Risk Audit and Compliance',
+    'Process Design and Automation',
+    'Workforce Management',
+    'Enterprise Program Management Office (EPMO)',
+    'Operational Excellence',
+    'People Practices & Systems',
+    'HR Systems & Technology',
+    'Talent Operations',
+    'Talent Management and Engagement',
+    'Talent Acquisition',
+    'iAcademy',
+    'Campus and Pool',
+    'Organizational Development',
+    'Sales Lifesciences',
+    'Sales China',
+    'Growth and Emerging Accounts',
+    'Sales LifesSciences',
+    'Key Accounts',
+    'CultHealth',
+    'Corporate Planning',
+    'Global Delivery Center',
+    'Emerging Biotech',
+    'mySheets',
+    'Activation Framework',
+    'Amgen C 360',
+    'All',
+    'Indegene Products',
+    'Management',
+    'DT Consulting',
+    'Commercial and Facilities',
+    'Information Technology',
+    'Editorial',
+    'Marketing and Inside Sales'
+];
+/**
+ * Find the best match from allowed values using fuzzy matching
+ * Compatible with ES5 (no Array.find or String.includes)
+ */
+function findBestMatch(value, allowedValues) {
+    if (!value || value.trim() === '') {
+        return '';
+    }
+    var normalizedValue = value.trim().toLowerCase();
+    // Exact match (case-insensitive)
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        if (allowed.toLowerCase() === normalizedValue) {
+            return allowed;
+        }
+    }
+    // Partial match (contains)
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        var allowedLower = allowed.toLowerCase();
+        if (allowedLower.indexOf(normalizedValue) !== -1 || normalizedValue.indexOf(allowedLower) !== -1) {
+            return allowed;
+        }
+    }
+    // Fuzzy match - check if any words match
+    var valueWords = normalizedValue.split(/\s+/);
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        var allowedWords = allowed.toLowerCase().split(/\s+/);
+        for (var j = 0; j < valueWords.length; j++) {
+            var word = valueWords[j];
+            for (var k = 0; k < allowedWords.length; k++) {
+                var allowedWord = allowedWords[k];
+                if (allowedWord.indexOf(word) !== -1 || word.indexOf(allowedWord) !== -1) {
+                    return allowed;
+                }
+            }
+        }
+    }
+    // No match found
+    return '';
+}
+
+
+/***/ }),
+
 /***/ 6323:
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js ***!
@@ -2409,11 +3231,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -2428,6 +3253,36 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -2437,6 +3292,28 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "chunk." + chunkId + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -2457,6 +3334,55 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 		
+/******/ 				script.src = url;
+/******/ 				if (script.src.indexOf(window.location.origin + '/') !== 0) {
+/******/ 					script.crossOrigin = "anonymous";
+/******/ 				}
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -2466,6 +3392,102 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var _publicPath = __RUSHSTACK_CURRENT_SCRIPT__ ? __RUSHSTACK_CURRENT_SCRIPT__.src : '';
+/******/ 		__webpack_require__.p = _publicPath.slice(0, _publicPath.lastIndexOf('/') + 1);
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"migration-web-part": 0
+/******/ 		};
+/******/ 		
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if(true) { // all chunks have JS
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						}
+/******/ 					}
+/******/ 				}
+/******/ 		};
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 		
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackJsonp_a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0"] = self["webpackJsonp_a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -2566,5 +3588,5 @@ var MigrationWebPart = /** @class */ (function (_super) {
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});;
+});})();;
 //# sourceMappingURL=migration-web-part.js.map

@@ -1,23 +1,24 @@
 
 require("./MetadataForm.module.css");
 const styles = {
-  formWrapper: 'formWrapper_6d4eb6a4',
-  formInner: 'formInner_6d4eb6a4',
-  note: 'note_6d4eb6a4',
-  headerBar: 'headerBar_6d4eb6a4',
-  cardMeta: 'cardMeta_6d4eb6a4',
-  field: 'field_6d4eb6a4',
-  title: 'title_6d4eb6a4',
-  titleWrap: 'titleWrap_6d4eb6a4',
-  subtitle: 'subtitle_6d4eb6a4',
-  closeBtn: 'closeBtn_6d4eb6a4',
-  fieldFull: 'fieldFull_6d4eb6a4',
-  label: 'label_6d4eb6a4',
-  input: 'input_6d4eb6a4',
-  textarea: 'textarea_6d4eb6a4',
-  grid: 'grid_6d4eb6a4',
-  actions: 'actions_6d4eb6a4',
-  submitBtn: 'submitBtn_6d4eb6a4'
+  formWrapper: 'formWrapper_eb48e8e0',
+  formInner: 'formInner_eb48e8e0',
+  note: 'note_eb48e8e0',
+  headerBar: 'headerBar_eb48e8e0',
+  cardMeta: 'cardMeta_eb48e8e0',
+  field: 'field_eb48e8e0',
+  title: 'title_eb48e8e0',
+  titleWrap: 'titleWrap_eb48e8e0',
+  subtitle: 'subtitle_eb48e8e0',
+  closeBtn: 'closeBtn_eb48e8e0',
+  fieldFull: 'fieldFull_eb48e8e0',
+  label: 'label_eb48e8e0',
+  input: 'input_eb48e8e0',
+  textarea: 'textarea_eb48e8e0',
+  textareaScrollable: 'textareaScrollable_eb48e8e0',
+  grid: 'grid_eb48e8e0',
+  actions: 'actions_eb48e8e0',
+  submitBtn: 'submitBtn_eb48e8e0'
 };
 
 export default styles;

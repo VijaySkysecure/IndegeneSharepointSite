@@ -2,22 +2,79 @@ import * as React from 'react';
 import { IFileUploadProps } from './IFileUploadProps';
 import styles from './FileUpload.module.scss';
 import { MetadataForm } from '../MetadataForm/MetadataForm';
+import { DocumentParser } from '../../services/DocumentParser';
+import { AzureOpenAIService } from '../../services/AzureOpenAIService';
+
+// Azure OpenAI Configuration
+// NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
+// Exposing API keys in client-side code is a security risk. Consider using a backend API proxy.
+const AZURE_OPENAI_CONFIG = {
+  apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+  endpoint: 'https://engineeringteamopenai.openai.azure.com',
+  deploymentName: 'gpt-4o'
+};
 
 export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   const [dragOver, setDragOver] = React.useState(false);
   const [uploadedFile, setUploadedFile] = React.useState<File | null>(null);
+  const [isProcessing, setIsProcessing] = React.useState(false);
+  const [extractedMetadata, setExtractedMetadata] = React.useState<Record<string, any> | null>(null);
+  const [processingError, setProcessingError] = React.useState<string | null>(null);
 
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
+  const openAIService = React.useRef(new AzureOpenAIService(AZURE_OPENAI_CONFIG));
 
   const onBrowse = () => {
     fileInputRef.current?.click();
   };
 
-  const onFileSelected = (f?: FileList | null) => {
+  const onFileSelected = async (f?: FileList | null) => {
     const file = f && f.length ? f[0] : undefined;
     if (file) {
       setUploadedFile(file);
+      setProcessingError(null);
+      setExtractedMetadata(null);
       props.onUploaded && props.onUploaded(file);
+      
+      // Process the file with AI
+      await processFileWithAI(file);
+    }
+  };
+
+  const processFileWithAI = async (file: File) => {
+    setIsProcessing(true);
+    setProcessingError(null);
+
+    try {
+      // Step 1: Parse the document to extract text
+      const parseResult = await DocumentParser.parseFile(file);
+      
+      if (!parseResult.success) {
+        setProcessingError(parseResult.error || 'Failed to parse document');
+        setIsProcessing(false);
+        return;
+      }
+
+      if (!parseResult.text || parseResult.text.trim().length === 0) {
+        setProcessingError('No text content found in the document');
+        setIsProcessing(false);
+        return;
+      }
+
+      // Step 2: Extract metadata using Azure OpenAI
+      const metadata = await openAIService.current.extractMetadata(parseResult.text);
+      
+      // Step 3: Set the extracted metadata
+      setExtractedMetadata(metadata);
+    } catch (error) {
+      console.error('Error processing file with AI:', error);
+      setProcessingError(
+        error instanceof Error 
+          ? error.message 
+          : 'An error occurred while processing the document. Please fill the form manually.'
+      );
+    } finally {
+      setIsProcessing(false);
     }
   };
 
@@ -76,7 +133,26 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
           </div>
         ) : (
           <>
-            <MetadataForm onSubmit={onFormSubmit} onClose={() => props.onClose && props.onClose()} />
+            {isProcessing ? (
+              <div className={styles.processingContainer}>
+                <div className={styles.processingSpinner}></div>
+                <h3 className={styles.processingTitle}>Analyzing Document...</h3>
+                <p className={styles.processingMessage}>
+                  Reading your document and extracting information. This may take a moment.
+                </p>
+                {processingError && (
+                  <div className={styles.errorMessage}>
+                    {processingError}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <MetadataForm 
+                onSubmit={onFormSubmit} 
+                onClose={() => props.onClose && props.onClose()}
+                initialValues={extractedMetadata || undefined}
+              />
+            )}
           </>
         )}
       </div>
