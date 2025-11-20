@@ -10,6 +10,18 @@
 }
 
 .modal {
+  background: transparent; /* allow form's own styling; remove white container */
+  padding: 0;
+  border-radius: 12px;
+  width: auto;
+  max-width: 96%;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadCard {
   background: #fff;
   padding: 28px;
   border-radius: 12px;
@@ -20,9 +32,12 @@
 
 .title {
   margin: 0 0 12px 0;
-  font-size: 22px;
+  font-size: 24px;
+  text-align: center;
   font-weight: 700;
-  color: #272727;
+  color: #1b3752;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .dropZone {

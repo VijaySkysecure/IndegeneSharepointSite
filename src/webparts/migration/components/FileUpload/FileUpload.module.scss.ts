@@ -1,18 +1,19 @@
 
 require("./FileUpload.module.css");
 const styles = {
-  overlay: 'overlay_887b6771',
-  modal: 'modal_887b6771',
-  title: 'title_887b6771',
-  dropZone: 'dropZone_887b6771',
-  dropZoneHover: 'dropZoneHover_887b6771',
-  uploadIcon: 'uploadIcon_887b6771',
-  hintText: 'hintText_887b6771',
-  instructions: 'instructions_887b6771',
-  browseBtn: 'browseBtn_887b6771',
-  footer: 'footer_887b6771',
-  closeBtn: 'closeBtn_887b6771',
-  fileName: 'fileName_887b6771'
+  overlay: 'overlay_3200fcfd',
+  modal: 'modal_3200fcfd',
+  uploadCard: 'uploadCard_3200fcfd',
+  title: 'title_3200fcfd',
+  dropZone: 'dropZone_3200fcfd',
+  dropZoneHover: 'dropZoneHover_3200fcfd',
+  uploadIcon: 'uploadIcon_3200fcfd',
+  hintText: 'hintText_3200fcfd',
+  instructions: 'instructions_3200fcfd',
+  browseBtn: 'browseBtn_3200fcfd',
+  footer: 'footer_3200fcfd',
+  closeBtn: 'closeBtn_3200fcfd',
+  fileName: 'fileName_3200fcfd'
 };
 
 export default styles;

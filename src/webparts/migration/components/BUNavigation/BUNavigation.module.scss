@@ -1,0 +1,46 @@
+.buNavigation {
+  width: 100%;
+  background-color: #e3f2fd;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  gap: 0;
+}
+
+.navItem {
+  padding: 16px 24px;
+  text-decoration: none;
+  color: #424242;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s;
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &.active {
+    background-color: #81d4fa;
+    color: #424242;
+    border-bottom: 3px solid #1976d2;
+  }
+}
+
+.dottedLine {
+  width: 100%;
+  height: 2px;
+  border-top: 2px dotted #90caf9;
+  margin-top: 0;
+  background-color: transparent;
+}
+

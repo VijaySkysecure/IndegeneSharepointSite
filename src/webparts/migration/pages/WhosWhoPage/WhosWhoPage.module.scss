@@ -1,0 +1,104 @@
+.whosWhoPage {
+  width: 100%;
+  background-color: #e3f2fd;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.contentContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buFilters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buFilterButton {
+  background-color: #90caf9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 80px;
+
+  &:hover {
+    background-color: #64b5f6;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &.active {
+    background-color: #1976d2;
+    font-weight: 600;
+  }
+}
+
+.mainContentBlock {
+  background-color: #1976d2;
+  padding: 60px 40px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.contentText {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.carouselIndicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #90caf9;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: #64b5f6;
+  }
+
+  &.active {
+    background-color: #1976d2;
+    width: 14px;
+    height: 14px;
+  }
+}
+
