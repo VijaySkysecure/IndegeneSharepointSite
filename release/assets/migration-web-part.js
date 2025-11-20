@@ -1117,25 +1117,41 @@ var FileUpload = function (props) {
         });
     }); };
     var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var parseResult, metadata, error_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var parseResult, errorMsg, errorMsg, metadata, error_1, errorMsg;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0:
+                    console.log('=== STARTING FILE PROCESSING ===');
+                    console.log('File:', file.name);
+                    console.log('File type:', file.type);
+                    console.log('File size:', file.size, 'bytes');
                     setIsProcessing(true);
                     setProcessingError(null);
-                    _a.label = 1;
+                    _b.label = 1;
                 case 1:
-                    _a.trys.push([1, 4, 5, 6]);
+                    _b.trys.push([1, 4, 5, 6]);
+                    // Step 1: Parse the document to extract text
+                    console.log('Step 1: Parsing document...');
                     return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__.DocumentParser.parseFile(file)];
                 case 2:
-                    parseResult = _a.sent();
+                    parseResult = _b.sent();
+                    console.log('Parse result:', {
+                        success: parseResult.success,
+                        textLength: ((_a = parseResult.text) === null || _a === void 0 ? void 0 : _a.length) || 0,
+                        error: parseResult.error
+                    });
                     if (!parseResult.success) {
-                        setProcessingError(parseResult.error || 'Failed to parse document');
+                        errorMsg = parseResult.error || 'Failed to parse document';
+                        console.error('Document parsing failed:', errorMsg);
+                        setProcessingError(errorMsg);
                         setIsProcessing(false);
                         return [2 /*return*/];
                     }
                     if (!parseResult.text || parseResult.text.trim().length === 0) {
-                        setProcessingError('No text content found in the document');
+                        errorMsg = 'No text content found in the document. The document might be image-based or empty.';
+                        console.error('No text extracted:', errorMsg);
+                        setProcessingError(errorMsg);
                         setIsProcessing(false);
                         return [2 /*return*/];
                     }
@@ -1145,20 +1161,30 @@ var FileUpload = function (props) {
                     console.log('File size:', file.size, 'bytes');
                     console.log('Extracted text length:', parseResult.text.length, 'characters');
                     console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
+                    // Step 2: Extract metadata using Azure OpenAI
+                    console.log('Step 2: Extracting metadata with AI...');
                     return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
                 case 3:
-                    metadata = _a.sent();
+                    metadata = _b.sent();
                     // Step 3: Set the extracted metadata
+                    console.log('Step 3: Setting extracted metadata...');
                     setExtractedMetadata(metadata);
+                    console.log('=== FILE PROCESSING COMPLETE ===');
                     return [3 /*break*/, 6];
                 case 4:
-                    error_1 = _a.sent();
-                    console.error('Error processing file with AI:', error_1);
-                    setProcessingError(error_1 instanceof Error
+                    error_1 = _b.sent();
+                    console.error('=== ERROR PROCESSING FILE ===');
+                    console.error('Error type:', typeof error_1);
+                    console.error('Error details:', error_1);
+                    console.error('Error message:', error_1 instanceof Error ? error_1.message : String(error_1));
+                    console.error('Error stack:', error_1 instanceof Error ? error_1.stack : 'N/A');
+                    errorMsg = error_1 instanceof Error
                         ? error_1.message
-                        : 'An error occurred while processing the document. Please fill the form manually.');
+                        : 'An error occurred while processing the document. Please fill the form manually.';
+                    setProcessingError(errorMsg);
                     return [3 /*break*/, 6];
                 case 5:
+                    console.log('Setting isProcessing to false');
                     setIsProcessing(false);
                     return [7 /*endfinally*/];
                 case 6: return [2 /*return*/];
@@ -2180,15 +2206,15 @@ var AzureOpenAIService = /** @class */ (function () {
     }
     /**
      * Extract metadata from document text using GPT-4o
+     * Uses chunked processing for large documents
      */
     AzureOpenAIService.prototype.extractMetadata = function (documentText) {
-        var _a, _b, _c, _d;
         return __awaiter(this, void 0, void 0, function () {
-            var emailRegex, foundEmails, maxLength, truncatedText, prompt_1, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, sanitized, error_1;
-            return __generator(this, function (_e) {
-                switch (_e.label) {
+            var emailRegex, foundEmails, chunkSize, chunks, error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
                     case 0:
-                        _e.trys.push([0, 5, , 6]);
+                        _a.trys.push([0, 4, , 5]);
                         // Log the extracted text for debugging
                         console.log('=== DOCUMENT TEXT EXTRACTED ===');
                         console.log('Total length:', documentText.length, 'characters');
@@ -2201,16 +2227,196 @@ var AzureOpenAIService = /** @class */ (function () {
                         if (foundEmails) {
                             console.log('Emails:', foundEmails);
                         }
-                        maxLength = 15000;
-                        truncatedText = documentText.length > maxLength
-                            ? documentText.substring(0, maxLength) + '\n\n[... document truncated ...]'
-                            : documentText;
-                        console.log('=== TEXT SENT TO AI ===');
-                        console.log('Length:', truncatedText.length, 'characters');
-                        if (documentText.length > maxLength) {
-                            console.warn('⚠️ WARNING: Document was truncated! Some content may be missing.');
-                        }
-                        prompt_1 = this.buildExtractionPrompt(truncatedText);
+                        chunkSize = 15000;
+                        if (!(documentText.length <= chunkSize)) return [3 /*break*/, 2];
+                        console.log('=== PROCESSING AS SINGLE CHUNK ===');
+                        return [4 /*yield*/, this.processSingleChunk(documentText)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        // Otherwise, use chunked processing
+                        console.log('=== PROCESSING WITH CHUNKED METHOD ===');
+                        console.log('Document length:', documentText.length, 'characters');
+                        console.log('Chunk size:', chunkSize, 'characters');
+                        chunks = this.splitIntoChunks(documentText, chunkSize);
+                        console.log('Number of chunks:', chunks.length);
+                        return [4 /*yield*/, this.processChunks(chunks)];
+                    case 3: return [2 /*return*/, _a.sent()];
+                    case 4:
+                        error_1 = _a.sent();
+                        console.error('Error extracting metadata:', error_1);
+                        throw error_1;
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Build the prompt for metadata extraction
+     */
+    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
+        var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
+        var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
+        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Type of document. Analyze the content structure and format. Examples: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", \"Standard Operating Procedure\", \"Guideline\", \"Manual\", etc. MUST provide a value.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ".concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", \"Latin America\"). ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+    };
+    /**
+     * Sanitize and validate extracted metadata
+     */
+    AzureOpenAIService.prototype.sanitizeMetadata = function (metadata) {
+        var sanitized = {};
+        // Ensure all fields are strings and trim whitespace
+        var fields = [
+            'title', 'documentType', 'bu', 'department', 'region', 'client',
+            'abstract', 'emails', 'phones',
+            'ids', 'pricing'
+        ];
+        for (var _i = 0, fields_1 = fields; _i < fields_1.length; _i++) {
+            var field = fields_1[_i];
+            var value = metadata[field];
+            sanitized[field] = typeof value === 'string' ? value.trim() : '';
+        }
+        // MANDATORY FIELDS - Ensure they are never empty
+        // Title: If empty, use a default or file name
+        if (!sanitized.title || sanitized.title === '') {
+            sanitized.title = 'Untitled Document';
+            console.warn('⚠️ Title was empty, using default');
+        }
+        // DocumentType: If empty, infer from context or use default
+        if (!sanitized.documentType || sanitized.documentType === '') {
+            sanitized.documentType = 'Document';
+            console.warn('⚠️ DocumentType was empty, using default');
+        }
+        // Business Unit: Must always have a value - try to match or use first allowed value as fallback
+        if (!sanitized.bu || sanitized.bu === '') {
+            // Try to infer from other fields or use a default
+            sanitized.bu = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS[0]; // Use first as fallback
+            console.warn('⚠️ Business Unit was empty, using fallback:', sanitized.bu);
+        }
+        else {
+            var matchedBU = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.bu, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS);
+            if (matchedBU) {
+                sanitized.bu = matchedBU;
+            }
+            else {
+                // If no match found, use first allowed value
+                sanitized.bu = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS[0];
+                console.warn('⚠️ Business Unit did not match any allowed value, using fallback');
+            }
+        }
+        // Department: Must always have a value - try to match or use first allowed value as fallback
+        if (!sanitized.department || sanitized.department === '') {
+            sanitized.department = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS[0]; // Use first as fallback
+            console.warn('⚠️ Department was empty, using fallback:', sanitized.department);
+        }
+        else {
+            var matchedDept = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.department, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS);
+            if (matchedDept) {
+                sanitized.department = matchedDept;
+            }
+            else {
+                // If no match found, use first allowed value
+                sanitized.department = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS[0];
+                console.warn('⚠️ Department did not match any allowed value, using fallback');
+            }
+        }
+        // Abstract: Must always have a value
+        if (!sanitized.abstract || sanitized.abstract === '') {
+            sanitized.abstract = 'Document content summary not available.';
+            console.warn('⚠️ Abstract was empty, using default');
+        }
+        // Ensure region is empty if not found (not just whitespace)
+        if (sanitized.region && (sanitized.region.toLowerCase() === 'not found' ||
+            sanitized.region.toLowerCase() === 'n/a' ||
+            sanitized.region.toLowerCase() === 'none' ||
+            sanitized.region.toLowerCase() === 'unknown')) {
+            sanitized.region = '';
+        }
+        // Client field validation - should only contain company names
+        // Remove if it contains person names, generic terms, or invalid content
+        if (sanitized.client) {
+            var clientLower_1 = sanitized.client.toLowerCase();
+            // Remove invalid values
+            if (clientLower_1 === 'not found' ||
+                clientLower_1 === 'n/a' ||
+                clientLower_1 === 'none' ||
+                clientLower_1 === 'unknown' ||
+                clientLower_1 === 'the client' ||
+                clientLower_1 === 'our client' ||
+                clientLower_1 === 'client' ||
+                clientLower_1.indexOf('internal') !== -1 ||
+                clientLower_1.indexOf('team') !== -1) {
+                sanitized.client = '';
+                console.log('⚠️ Client field contained invalid value, cleared');
+            }
+            else {
+                // Check if it looks like a person's name (first name + last name pattern without company indicators)
+                // Company indicators: Inc, LLC, Corp, Ltd, Company, Co, etc.
+                var companyIndicators = ['inc', 'llc', 'corp', 'ltd', 'company', 'co', 'group', 'enterprises', 'solutions', 'systems', 'technologies', 'consulting', 'services'];
+                var hasCompanyIndicator = companyIndicators.some(function (indicator) { return clientLower_1.indexOf(indicator) !== -1; });
+                // If it's just a name without company indicators and doesn't look like a company, clear it
+                if (!hasCompanyIndicator && sanitized.client.split(' ').length <= 3) {
+                    // Might be a person's name - check if it's clearly a company by other means
+                    // If it's just 1-2 words without company indicators, it's likely a person's name
+                    var words = sanitized.client.trim().split(/\s+/);
+                    if (words.length <= 2 && !hasCompanyIndicator) {
+                        sanitized.client = '';
+                        console.log('⚠️ Client field appears to be a person name, not a company, cleared');
+                    }
+                }
+            }
+        }
+        // Mask emails and phones
+        console.log('=== BEFORE MASKING ===');
+        console.log('Raw emails:', sanitized.emails);
+        console.log('Raw phones:', sanitized.phones);
+        if (sanitized.emails) {
+            sanitized.emails = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllEmails)(sanitized.emails);
+        }
+        else {
+            console.log('⚠️ No emails field in extracted metadata!');
+        }
+        if (sanitized.phones) {
+            sanitized.phones = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllPhones)(sanitized.phones);
+        }
+        else {
+            console.log('⚠️ No phones field in extracted metadata!');
+        }
+        return sanitized;
+    };
+    /**
+     * Split document text into chunks of specified size
+     */
+    AzureOpenAIService.prototype.splitIntoChunks = function (text, chunkSize) {
+        var chunks = [];
+        var start = 0;
+        while (start < text.length) {
+            var end = start + chunkSize;
+            // If not the last chunk, try to break at a word boundary
+            if (end < text.length) {
+                // Look for a good break point (newline, period, space)
+                var breakPoint = Math.max(text.lastIndexOf('\n\n', end), text.lastIndexOf('\n', end), text.lastIndexOf('. ', end), text.lastIndexOf(' ', end));
+                if (breakPoint > start + chunkSize * 0.8) {
+                    // Only use break point if it's not too early (at least 80% of chunk size)
+                    end = breakPoint + 1;
+                }
+            }
+            chunks.push(text.substring(start, end));
+            start = end;
+        }
+        return chunks;
+    };
+    /**
+     * Process a single chunk of text
+     */
+    AzureOpenAIService.prototype.processSingleChunk = function (chunkText) {
+        var _a, _b, _c, _d;
+        return __awaiter(this, void 0, void 0, function () {
+            var prompt, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, sanitized;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        console.log('=== PROCESSING SINGLE CHUNK ===');
+                        console.log('Chunk length:', chunkText.length, 'characters');
+                        prompt = this.buildExtractionPrompt(chunkText);
                         return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
                                 method: 'POST',
                                 headers: {
@@ -2225,7 +2431,7 @@ var AzureOpenAIService = /** @class */ (function () {
                                         },
                                         {
                                             role: 'user',
-                                            content: prompt_1
+                                            content: prompt
                                         }
                                     ],
                                     temperature: 0.8,
@@ -2277,77 +2483,161 @@ var AzureOpenAIService = /** @class */ (function () {
                         console.log('Emails (masked):', sanitized.emails);
                         console.log('Phones (masked):', sanitized.phones);
                         return [2 /*return*/, sanitized];
-                    case 5:
-                        error_1 = _e.sent();
-                        console.error('Error extracting metadata:', error_1);
-                        throw error_1;
-                    case 6: return [2 /*return*/];
                 }
             });
         });
     };
     /**
-     * Build the prompt for metadata extraction
+     * Process multiple chunks and merge results
      */
-    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
-        var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
-        var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
-        return "Analyze the following document and extract the following information. Return the result as a JSON object with these exact field names.\n\nCRITICAL RULES:\n- If a field cannot be found in the document, use an empty string \"\" (do NOT make up values)\n- For \"region\" and \"client\": ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n- Extract ALL email addresses and phone numbers found (even if there are 100+), separate them with commas\n- Be thorough and extract every single email and phone number you can find\n\nFields to extract:\n1. title - The document title or main heading (extract exactly as written)\n\n2. documentType - Type of document (e.g., \"PPTX\", \"Report\", \"Proposal\", \"Presentation\", \"PDF\")\n\n3. bu - Business Unit. MUST be one of these exact values (match the closest one):\n- ".concat(buList, "\nIf no Business Unit is mentioned, use \"\"\n\n4. department - Department. MUST be one of these exact values (match the closest one):\n- ").concat(deptList, "\nIf no Department is mentioned, use \"\"\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\"). ONLY fill if explicitly mentioned, otherwise \"\"\n\n6. client - Client name or organization. ONLY fill if explicitly mentioned, otherwise \"\"\n\n7. abstract - A brief summary (1-2 sentences) of the document content\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, or financial terms mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+    AzureOpenAIService.prototype.processChunks = function (chunks) {
+        return __awaiter(this, void 0, void 0, function () {
+            var chunkResults, i, result, error_2, merged, finalResult;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
+                        chunkResults = [];
+                        i = 0;
+                        _a.label = 1;
+                    case 1:
+                        if (!(i < chunks.length)) return [3 /*break*/, 6];
+                        console.log("\n=== PROCESSING CHUNK ".concat(i + 1, "/").concat(chunks.length, " ==="));
+                        _a.label = 2;
+                    case 2:
+                        _a.trys.push([2, 4, , 5]);
+                        return [4 /*yield*/, this.processSingleChunk(chunks[i])];
+                    case 3:
+                        result = _a.sent();
+                        chunkResults.push(result);
+                        console.log("\u2713 Chunk ".concat(i + 1, " processed successfully"));
+                        return [3 /*break*/, 5];
+                    case 4:
+                        error_2 = _a.sent();
+                        console.error("\u2717 Error processing chunk ".concat(i + 1, ":"), error_2);
+                        // Continue with other chunks even if one fails
+                        chunkResults.push({});
+                        return [3 /*break*/, 5];
+                    case 5:
+                        i++;
+                        return [3 /*break*/, 1];
+                    case 6:
+                        console.log('\n=== MERGING CHUNK RESULTS ===');
+                        merged = this.mergeChunkResults(chunkResults);
+                        console.log('=== MERGED RESULT (BEFORE FINAL SANITIZATION) ===');
+                        console.log(JSON.stringify(merged, null, 2));
+                        finalResult = this.sanitizeMetadata(merged);
+                        console.log('=== FINAL MERGED RESULT ===');
+                        console.log(JSON.stringify(finalResult, null, 2));
+                        return [2 /*return*/, finalResult];
+                }
+            });
+        });
     };
     /**
-     * Sanitize and validate extracted metadata
+     * Merge results from multiple chunks intelligently
      */
-    AzureOpenAIService.prototype.sanitizeMetadata = function (metadata) {
-        var sanitized = {};
-        // Ensure all fields are strings and trim whitespace
-        var fields = [
-            'title', 'documentType', 'bu', 'department', 'region', 'client',
-            'abstract', 'emails', 'phones',
-            'ids', 'pricing'
-        ];
-        for (var _i = 0, fields_1 = fields; _i < fields_1.length; _i++) {
-            var field = fields_1[_i];
-            var value = metadata[field];
-            sanitized[field] = typeof value === 'string' ? value.trim() : '';
+    AzureOpenAIService.prototype.mergeChunkResults = function (results) {
+        var _a;
+        var merged = {
+            title: '',
+            documentType: '',
+            bu: '',
+            department: '',
+            region: '',
+            client: '',
+            abstract: '',
+            emails: '',
+            phones: '',
+            ids: '',
+            pricing: ''
+        };
+        // Collect all emails and phones (combine from all chunks)
+        var allEmails = [];
+        var allPhones = [];
+        var allIds = [];
+        var allPricing = [];
+        for (var i = 0; i < results.length; i++) {
+            var result = results[i];
+            // Title: Take from first chunk (most likely to be at the start)
+            if (!merged.title && result.title) {
+                merged.title = result.title;
+            }
+            // DocumentType: Take from first chunk
+            if (!merged.documentType && result.documentType) {
+                merged.documentType = result.documentType;
+            }
+            // BU: Take first non-empty match
+            if (!merged.bu && result.bu) {
+                merged.bu = result.bu;
+            }
+            // Department: Take first non-empty match
+            if (!merged.department && result.department) {
+                merged.department = result.department;
+            }
+            // Region: Take first non-empty match
+            if (!merged.region && result.region) {
+                merged.region = result.region;
+            }
+            // Client: Take first non-empty match
+            if (!merged.client && result.client) {
+                merged.client = result.client;
+            }
+            // Abstract: Take the longest one (most comprehensive)
+            if (result.abstract && result.abstract.length > (((_a = merged.abstract) === null || _a === void 0 ? void 0 : _a.length) || 0)) {
+                merged.abstract = result.abstract;
+            }
+            // Emails: Collect all unique emails
+            if (result.emails) {
+                var emails = result.emails.split(/[,;\n]/).map(function (e) { return e.trim(); }).filter(function (e) { return e.length > 0; });
+                for (var j = 0; j < emails.length; j++) {
+                    var email = emails[j];
+                    // Add if not already in the list (case-insensitive)
+                    if (email && allEmails.indexOf(email.toLowerCase()) === -1) {
+                        allEmails.push(email.toLowerCase());
+                        // Keep original case from first occurrence
+                        var originalEmail = emails[j];
+                        if (allEmails.indexOf(originalEmail.toLowerCase()) === -1) {
+                            allEmails[allEmails.length - 1] = originalEmail;
+                        }
+                    }
+                }
+            }
+            // Phones: Collect all unique phones
+            if (result.phones) {
+                var phones = result.phones.split(/[,;\n]/).map(function (p) { return p.trim(); }).filter(function (p) { return p.length > 0; });
+                for (var j = 0; j < phones.length; j++) {
+                    var phone = phones[j];
+                    // Add if not already in the list
+                    if (phone && allPhones.indexOf(phone) === -1) {
+                        allPhones.push(phone);
+                    }
+                }
+            }
+            // IDs: Collect all
+            if (result.ids) {
+                var ids = result.ids.split(/[,;\n]/).map(function (id) { return id.trim(); }).filter(function (id) { return id.length > 0; });
+                for (var j = 0; j < ids.length; j++) {
+                    var id = ids[j];
+                    if (id && allIds.indexOf(id) === -1) {
+                        allIds.push(id);
+                    }
+                }
+            }
+            // Pricing: Collect all (combine with newlines)
+            if (result.pricing) {
+                allPricing.push(result.pricing);
+            }
         }
-        // Validate and match Business Unit to allowed values
-        if (sanitized.bu) {
-            var matchedBU = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.bu, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS);
-            sanitized.bu = matchedBU;
-        }
-        // Validate and match Department to allowed values
-        if (sanitized.department) {
-            var matchedDept = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.department, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS);
-            sanitized.department = matchedDept;
-        }
-        // Ensure region and client are empty if not found (not just whitespace)
-        if (sanitized.region && sanitized.region.toLowerCase() === 'not found' ||
-            sanitized.region && sanitized.region.toLowerCase() === 'n/a' ||
-            sanitized.region && sanitized.region.toLowerCase() === 'none') {
-            sanitized.region = '';
-        }
-        if (sanitized.client && sanitized.client.toLowerCase() === 'not found' ||
-            sanitized.client && sanitized.client.toLowerCase() === 'n/a' ||
-            sanitized.client && sanitized.client.toLowerCase() === 'none') {
-            sanitized.client = '';
-        }
-        // Mask emails and phones
-        console.log('=== BEFORE MASKING ===');
-        console.log('Raw emails:', sanitized.emails);
-        console.log('Raw phones:', sanitized.phones);
-        if (sanitized.emails) {
-            sanitized.emails = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllEmails)(sanitized.emails);
-        }
-        else {
-            console.log('⚠️ No emails field in extracted metadata!');
-        }
-        if (sanitized.phones) {
-            sanitized.phones = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllPhones)(sanitized.phones);
-        }
-        else {
-            console.log('⚠️ No phones field in extracted metadata!');
-        }
-        return sanitized;
+        // Join collected values
+        merged.emails = allEmails.join(', ');
+        merged.phones = allPhones.join(', ');
+        merged.ids = allIds.join(', ');
+        merged.pricing = allPricing.join('\n\n');
+        console.log('Merged emails count:', allEmails.length);
+        console.log('Merged phones count:', allPhones.length);
+        console.log('Merged IDs count:', allIds.length);
+        return merged;
     };
     return AzureOpenAIService;
 }());
@@ -2567,36 +2857,81 @@ var DocumentParser = /** @class */ (function () {
      */
     DocumentParser.parsePDF = function (file) {
         return __awaiter(this, void 0, void 0, function () {
-            var pdfjsLib, arrayBuffer, pdf, fullText, numPages, pageNum, page, textContent, pageText, error_2;
+            var pdfjsLib, scripts, basePath, i, src, workerPath, minimalWorker, arrayBuffer, pdf, fullText, numPages, pageNum, page, textContent, pageText, pageError_1, extractedText, error_2, errorMessage, msg;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 9, , 10]);
+                        _a.trys.push([0, 11, , 12]);
+                        console.log('=== STARTING PDF PARSING ===');
+                        console.log('File name:', file.name);
+                        console.log('File size:', file.size, 'bytes');
                         return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_pdfjs-dist_build_pdf_mjs").then(__webpack_require__.bind(__webpack_require__, /*! pdfjs-dist */ 1100))];
                     case 1:
                         pdfjsLib = _a.sent();
-                        // Set worker source - using CDN for compatibility
-                        // Alternative: bundle the worker file and reference it locally
+                        console.log('PDF.js library loaded, version:', pdfjsLib.version);
+                        // For SharePoint Framework with strict CSP, we need to work around restrictions
+                        // Webpack bundles the worker as a chunk file that we can reference
+                        // The CSP is in "report-only" mode, so violations are logged but execution continues
                         if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
-                            pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/".concat(pdfjsLib.version, "/pdf.worker.min.js");
+                            try {
+                                scripts = document.getElementsByTagName('script');
+                                basePath = '';
+                                for (i = 0; i < scripts.length; i++) {
+                                    src = scripts[i].src;
+                                    if (src && src.indexOf('migration-web-part') !== -1) {
+                                        basePath = src.substring(0, src.lastIndexOf('/'));
+                                        break;
+                                    }
+                                }
+                                if (basePath) {
+                                    workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+                                    pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
+                                    console.log('PDF.js worker path set to bundled chunk:', workerPath);
+                                }
+                                else {
+                                    // Fallback: Try relative path
+                                    pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+                                    console.log('PDF.js worker path set to relative path (fallback)');
+                                }
+                            }
+                            catch (pathError) {
+                                console.warn('Could not set worker path, using data URL fallback:', pathError);
+                                minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
+                                pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
+                                console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
+                            }
                         }
+                        console.log('Reading file as ArrayBuffer...');
                         return [4 /*yield*/, file.arrayBuffer()];
                     case 2:
                         arrayBuffer = _a.sent();
-                        return [4 /*yield*/, pdfjsLib.getDocument({ data: arrayBuffer }).promise];
+                        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
+                        console.log('Loading PDF document...');
+                        return [4 /*yield*/, pdfjsLib.getDocument({
+                                data: arrayBuffer,
+                                verbosity: 0,
+                                useWorkerFetch: false,
+                                isEvalSupported: false,
+                                useSystemFonts: true
+                            }).promise];
                     case 3:
                         pdf = _a.sent();
+                        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
                         fullText = '';
                         numPages = pdf.numPages;
                         pageNum = 1;
                         _a.label = 4;
                     case 4:
-                        if (!(pageNum <= numPages)) return [3 /*break*/, 8];
-                        return [4 /*yield*/, pdf.getPage(pageNum)];
+                        if (!(pageNum <= numPages)) return [3 /*break*/, 10];
+                        console.log("Extracting text from page ".concat(pageNum, "/").concat(numPages, "..."));
+                        _a.label = 5;
                     case 5:
+                        _a.trys.push([5, 8, , 9]);
+                        return [4 /*yield*/, pdf.getPage(pageNum)];
+                    case 6:
                         page = _a.sent();
                         return [4 /*yield*/, page.getTextContent()];
-                    case 6:
+                    case 7:
                         textContent = _a.sent();
                         pageText = textContent.items
                             .map(function (item) {
@@ -2608,22 +2943,57 @@ var DocumentParser = /** @class */ (function () {
                         })
                             .join(' ');
                         fullText += pageText + '\n';
-                        _a.label = 7;
-                    case 7:
+                        console.log("Page ".concat(pageNum, " extracted: ").concat(pageText.length, " characters"));
+                        return [3 /*break*/, 9];
+                    case 8:
+                        pageError_1 = _a.sent();
+                        console.error("Error extracting page ".concat(pageNum, ":"), pageError_1);
+                        return [3 /*break*/, 9];
+                    case 9:
                         pageNum++;
                         return [3 /*break*/, 4];
-                    case 8: return [2 /*return*/, {
-                            text: fullText.trim(),
-                            success: true
-                        }];
-                    case 9:
+                    case 10:
+                        extractedText = fullText.trim();
+                        console.log('=== PDF PARSING COMPLETE ===');
+                        console.log('Total text extracted:', extractedText.length, 'characters');
+                        if (extractedText.length === 0) {
+                            console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
+                                }];
+                        }
+                        return [2 /*return*/, {
+                                text: extractedText,
+                                success: true
+                            }];
+                    case 11:
                         error_2 = _a.sent();
+                        console.error('=== PDF PARSING ERROR ===');
+                        console.error('Error details:', error_2);
+                        console.error('Error type:', typeof error_2);
+                        console.error('Error message:', error_2 instanceof Error ? error_2.message : String(error_2));
+                        errorMessage = 'Failed to parse PDF';
+                        if (error_2 instanceof Error) {
+                            errorMessage = error_2.message;
+                            msg = error_2.message.toLowerCase();
+                            if (msg.indexOf('worker') !== -1) {
+                                errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
+                            }
+                            else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
+                            }
+                            else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
+                                errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
+                            }
+                        }
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
-                                error: error_2 instanceof Error ? error_2.message : 'Failed to parse PDF'
+                                error: errorMessage
                             }];
-                    case 10: return [2 /*return*/];
+                    case 12: return [2 /*return*/];
                 }
             });
         });

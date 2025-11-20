@@ -1,4 +1,4 @@
-define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__) => { return /******/ (() => { // webpackBootstrap
+(()=>{ var __RUSHSTACK_CURRENT_SCRIPT__ = document.currentScript; define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -176,6 +176,48 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
 
 /***/ }),
 
+/***/ 880:
+/*!****************************************************************************!*\
+  !*** ./lib/webparts/migration/components/FileUpload/FileUpload.module.css ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_c09eba7f{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_c09eba7f,.overlay_c09eba7f{align-items:center;display:flex;justify-content:center}.modal_c09eba7f{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_c09eba7f{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_c09eba7f{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_c09eba7f{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_c09eba7f{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_c09eba7f{color:#4834d4;display:block;height:64px;width:64px}.hintText_c09eba7f{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_c09eba7f{color:#666;font-size:13px}.browseBtn_c09eba7f{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_c09eba7f{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_c09eba7f{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_c09eba7f{color:#333;font-size:14px;margin-bottom:12px}.processingContainer_c09eba7f{align-items:center;background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;justify-content:center;max-width:96%;padding:48px 32px;text-align:center;width:600px}.processingSpinner_c09eba7f{animation:spin_c09eba7f 1s linear infinite;border:4px solid rgba(72,52,212,.1);border-radius:50%;border-top-color:#4834d4;height:48px;margin-bottom:24px;width:48px}@keyframes spin_c09eba7f{to{transform:rotate(1turn)}}.processingTitle_c09eba7f{color:#1b3752;font-size:20px;font-weight:700;margin:0 0 12px}.processingMessage_c09eba7f{color:#666;font-size:14px;line-height:1.5;margin:0}.errorMessage_c09eba7f{background:#fee;border:1px solid #fcc;border-radius:6px;color:#c33;font-size:13px;margin-top:20px;max-width:100%;padding:12px 16px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0ZpbGVVcGxvYWQvRmlsZVVwbG9hZC5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQkFHRSwwQkFBQSxDQUtBLDRCQUFBLENBTkEsT0FBQSxDQURBLGNBQUEsQ0FNQSxZQUNBLENBR0Ysa0NBTkUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsc0JBY0EsQ0FURixnQkFDRSxjQUFBLENBRUEsa0JBQUEsQ0FHQSxlQUFBLENBREEsYUFBQSxDQUhBLFNBQUEsQ0FFQSxVQUtBLENBR0YscUJBQ0UsZUFBQSxDQUVBLGtCQUFBLENBR0Esc0NBQUEsQ0FEQSxhQUFBLENBSEEsWUFBQSxDQUVBLFdBRUEsQ0FHRixnQkFLRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FIQSxlQUFBLENBS0EsbUJBQUEsQ0FDQSxnQkFBQSxDQUpBLGlCQUlBLENBR0YsbUJBS0Usa0JBQUEsQ0FNQSwwRUFBQSxDQVZBLHFDQUFBLENBQ0Esa0JBQUEsQ0FVQSx5Q0FBQSxDQUhBLGNBQUEsQ0FMQSxZQUFBLENBR0EscUJBQUEsQ0FDQSxRQUFBLENBRkEsc0JBQUEsQ0FIQSxZQUFBLENBVUEsaUJBQUEsQ0FIQSwyRUFHQSxDQUdGLHdCQUVFLDhFQUFBLENBREEsb0JBQUEsQ0FFQSx5Q0FBQSxDQUdGLHFCQUdFLGFBQUEsQ0FDQSxhQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FHRix1QkFFRSxVQUFBLENBREEsY0FDQSxDQUdGLG9CQUNFLHdCQUFBLENBRUEsV0FBQSxDQUVBLGlCQUFBLENBSEEsVUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsaUJBR0EsQ0FHRixpQkFDRSxZQUFBLENBR0EsUUFBQSxDQUZBLHdCQUFBLENBQ0EsZUFDQSxDQUdGLG1CQUNFLGNBQUEsQ0FDQSxxQkFBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FGQSxnQkFFQSxDQUdGLG1CQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsa0JBQUEsQ0FHRiw4QkFTRSxrQkFBQSxDQVJBLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBQ0EsWUFBQSxDQUNBLHFCQUFBLENBRUEsc0JBQUEsQ0FMQSxhQUFBLENBSEEsaUJBQUEsQ0FTQSxpQkFBQSxDQVBBLFdBT0EsQ0FHRiw0QkFNRSwwQ0FBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FEQSx3QkFBQSxDQUZBLFdBQUEsQ0FLQSxrQkFBQSxDQU5BLFVBTUEsQ0FHRix5QkFDRSxHQUNFLHVCQUFBLENBQUEsQ0FJSiwwQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBR0YsNEJBRUUsVUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsUUFDQSxDQUdGLHVCQUdFLGVBQUEsQ0FDQSxxQkFBQSxDQUNBLGlCQUFBLENBQ0EsVUFBQSxDQUNBLGNBQUEsQ0FOQSxlQUFBLENBT0EsY0FBQSxDQU5BLGlCQU1BIiwiZmlsZSI6IkZpbGVVcGxvYWQubW9kdWxlLmNzcyJ9 */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  overlay_c09eba7f: "overlay_c09eba7f",
+  modal_c09eba7f: "modal_c09eba7f",
+  uploadCard_c09eba7f: "uploadCard_c09eba7f",
+  title_c09eba7f: "title_c09eba7f",
+  dropZone_c09eba7f: "dropZone_c09eba7f",
+  dropZoneHover_c09eba7f: "dropZoneHover_c09eba7f",
+  uploadIcon_c09eba7f: "uploadIcon_c09eba7f",
+  hintText_c09eba7f: "hintText_c09eba7f",
+  instructions_c09eba7f: "instructions_c09eba7f",
+  browseBtn_c09eba7f: "browseBtn_c09eba7f",
+  footer_c09eba7f: "footer_c09eba7f",
+  closeBtn_c09eba7f: "closeBtn_c09eba7f",
+  fileName_c09eba7f: "fileName_c09eba7f",
+  processingContainer_c09eba7f: "processingContainer_c09eba7f",
+  processingSpinner_c09eba7f: "processingSpinner_c09eba7f",
+  spin_c09eba7f: "spin_c09eba7f",
+  processingTitle_c09eba7f: "processingTitle_c09eba7f",
+  processingMessage_c09eba7f: "processingMessage_c09eba7f",
+  errorMessage_c09eba7f: "errorMessage_c09eba7f"
+});
+
+
+/***/ }),
+
 /***/ 2256:
 /*!********************************************************************!*\
   !*** ./lib/webparts/migration/components/Footer/Footer.module.css ***!
@@ -234,6 +276,50 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
   searchIcon_e245bf59: "searchIcon_e245bf59",
   searchInput_e245bf59: "searchInput_e245bf59",
   searchInput: "searchInput"
+});
+
+
+/***/ }),
+
+/***/ 8856:
+/*!********************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MetadataForm/MetadataForm.module.css ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_eb48e8e0{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_eb48e8e0{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_eb48e8e0{color:#444;font-size:13px;margin-bottom:6px}.headerBar_eb48e8e0{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_eb48e8e0{background:0 0;padding:16px}.field_eb48e8e0{display:flex;flex-direction:column}.title_eb48e8e0{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_eb48e8e0{align-items:flex-start;display:flex;flex-direction:column}.subtitle_eb48e8e0{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_eb48e8e0{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_eb48e8e0{display:flex;flex-direction:column;grid-column:1/-1}.label_eb48e8e0{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_eb48e8e0{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0::-webkit-scrollbar{width:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_eb48e8e0{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_eb48e8e0{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_eb48e8e0{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_eb48e8e0:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_eb48e8e0{grid-template-columns:1fr}}.formInner_eb48e8e0::-webkit-scrollbar{width:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_eb48e8e0{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  formWrapper_eb48e8e0: "formWrapper_eb48e8e0",
+  formInner_eb48e8e0: "formInner_eb48e8e0",
+  note_eb48e8e0: "note_eb48e8e0",
+  headerBar_eb48e8e0: "headerBar_eb48e8e0",
+  cardMeta_eb48e8e0: "cardMeta_eb48e8e0",
+  field_eb48e8e0: "field_eb48e8e0",
+  title_eb48e8e0: "title_eb48e8e0",
+  titleWrap_eb48e8e0: "titleWrap_eb48e8e0",
+  subtitle_eb48e8e0: "subtitle_eb48e8e0",
+  closeBtn_eb48e8e0: "closeBtn_eb48e8e0",
+  fieldFull_eb48e8e0: "fieldFull_eb48e8e0",
+  label_eb48e8e0: "label_eb48e8e0",
+  input_eb48e8e0: "input_eb48e8e0",
+  input: "input",
+  textarea_eb48e8e0: "textarea_eb48e8e0",
+  textarea: "textarea",
+  textareaScrollable_eb48e8e0: "textareaScrollable_eb48e8e0",
+  textareaScrollable: "textareaScrollable",
+  grid_eb48e8e0: "grid_eb48e8e0",
+  actions_eb48e8e0: "actions_eb48e8e0",
+  submitBtn_eb48e8e0: "submitBtn_eb48e8e0"
 });
 
 
@@ -931,6 +1017,255 @@ var styles = {
 
 /***/ }),
 
+/***/ 6540:
+/*!********************************************************************!*\
+  !*** ./lib/webparts/migration/components/FileUpload/FileUpload.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FileUpload: () => (/* binding */ FileUpload),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
+/* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+// Azure OpenAI Configuration
+// NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
+// Exposing API keys in client-side code is a security risk. Consider using a backend API proxy.
+var AZURE_OPENAI_CONFIG = {
+    apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+    endpoint: 'https://engineeringteamopenai.openai.azure.com',
+    deploymentName: 'gpt-4o'
+};
+var FileUpload = function (props) {
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), dragOver = _a[0], setDragOver = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), uploadedFile = _b[0], setUploadedFile = _b[1];
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isProcessing = _c[0], setIsProcessing = _c[1];
+    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), extractedMetadata = _d[0], setExtractedMetadata = _d[1];
+    var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _e[0], setProcessingError = _e[1];
+    var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    var onBrowse = function () {
+        var _a;
+        (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
+    };
+    var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
+        var file;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    file = f && f.length ? f[0] : undefined;
+                    if (!file) return [3 /*break*/, 2];
+                    setUploadedFile(file);
+                    setProcessingError(null);
+                    setExtractedMetadata(null);
+                    props.onUploaded && props.onUploaded(file);
+                    // Process the file with AI
+                    return [4 /*yield*/, processFileWithAI(file)];
+                case 1:
+                    // Process the file with AI
+                    _a.sent();
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
+            }
+        });
+    }); };
+    var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var parseResult, errorMsg, errorMsg, metadata, error_1, errorMsg;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    console.log('=== STARTING FILE PROCESSING ===');
+                    console.log('File:', file.name);
+                    console.log('File type:', file.type);
+                    console.log('File size:', file.size, 'bytes');
+                    setIsProcessing(true);
+                    setProcessingError(null);
+                    _b.label = 1;
+                case 1:
+                    _b.trys.push([1, 4, 5, 6]);
+                    // Step 1: Parse the document to extract text
+                    console.log('Step 1: Parsing document...');
+                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__.DocumentParser.parseFile(file)];
+                case 2:
+                    parseResult = _b.sent();
+                    console.log('Parse result:', {
+                        success: parseResult.success,
+                        textLength: ((_a = parseResult.text) === null || _a === void 0 ? void 0 : _a.length) || 0,
+                        error: parseResult.error
+                    });
+                    if (!parseResult.success) {
+                        errorMsg = parseResult.error || 'Failed to parse document';
+                        console.error('Document parsing failed:', errorMsg);
+                        setProcessingError(errorMsg);
+                        setIsProcessing(false);
+                        return [2 /*return*/];
+                    }
+                    if (!parseResult.text || parseResult.text.trim().length === 0) {
+                        errorMsg = 'No text content found in the document. The document might be image-based or empty.';
+                        console.error('No text extracted:', errorMsg);
+                        setProcessingError(errorMsg);
+                        setIsProcessing(false);
+                        return [2 /*return*/];
+                    }
+                    // Log parsed text for debugging
+                    console.log('=== FILE PARSED SUCCESSFULLY ===');
+                    console.log('File name:', file.name);
+                    console.log('File size:', file.size, 'bytes');
+                    console.log('Extracted text length:', parseResult.text.length, 'characters');
+                    console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
+                    // Step 2: Extract metadata using Azure OpenAI
+                    console.log('Step 2: Extracting metadata with AI...');
+                    return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
+                case 3:
+                    metadata = _b.sent();
+                    // Step 3: Set the extracted metadata
+                    console.log('Step 3: Setting extracted metadata...');
+                    setExtractedMetadata(metadata);
+                    console.log('=== FILE PROCESSING COMPLETE ===');
+                    return [3 /*break*/, 6];
+                case 4:
+                    error_1 = _b.sent();
+                    console.error('=== ERROR PROCESSING FILE ===');
+                    console.error('Error type:', typeof error_1);
+                    console.error('Error details:', error_1);
+                    console.error('Error message:', error_1 instanceof Error ? error_1.message : String(error_1));
+                    console.error('Error stack:', error_1 instanceof Error ? error_1.stack : 'N/A');
+                    errorMsg = error_1 instanceof Error
+                        ? error_1.message
+                        : 'An error occurred while processing the document. Please fill the form manually.';
+                    setProcessingError(errorMsg);
+                    return [3 /*break*/, 6];
+                case 5:
+                    console.log('Setting isProcessing to false');
+                    setIsProcessing(false);
+                    return [7 /*endfinally*/];
+                case 6: return [2 /*return*/];
+            }
+        });
+    }); };
+    var onDrop = function (e) {
+        e.preventDefault();
+        setDragOver(false);
+        if (e.dataTransfer.files && e.dataTransfer.files.length) {
+            onFileSelected(e.dataTransfer.files);
+        }
+    };
+    var onFormSubmit = function (data) {
+        // data contains form values from MetadataForm
+        // Here you would typically send `data` + `uploadedFile` to backend
+        console.log('Submitting metadata', data, uploadedFile);
+        // close overlay after submit
+        props.onClose && props.onClose();
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].overlay },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadCard },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Upload Document"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "".concat(_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZone, " ").concat(dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZoneHover : ''), onDragOver: function (e) { e.preventDefault(); setDragOver(true); }, onDragLeave: function () { return setDragOver(false); }, onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M19 15v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].hintText }, "Drag & drop files here"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].footer },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingSpinner }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingTitle }, "Analyzing Document..."),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
+            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
+
+
+/***/ }),
+
+/***/ 3908:
+/*!********************************************************************************!*\
+  !*** ./lib/webparts/migration/components/FileUpload/FileUpload.module.scss.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./FileUpload.module.css */ 880);
+var styles = {
+    overlay: 'overlay_c09eba7f',
+    modal: 'modal_c09eba7f',
+    uploadCard: 'uploadCard_c09eba7f',
+    title: 'title_c09eba7f',
+    dropZone: 'dropZone_c09eba7f',
+    dropZoneHover: 'dropZoneHover_c09eba7f',
+    uploadIcon: 'uploadIcon_c09eba7f',
+    hintText: 'hintText_c09eba7f',
+    instructions: 'instructions_c09eba7f',
+    browseBtn: 'browseBtn_c09eba7f',
+    footer: 'footer_c09eba7f',
+    closeBtn: 'closeBtn_c09eba7f',
+    fileName: 'fileName_c09eba7f',
+    processingContainer: 'processingContainer_c09eba7f',
+    processingSpinner: 'processingSpinner_c09eba7f',
+    spin: 'spin_c09eba7f',
+    processingTitle: 'processingTitle_c09eba7f',
+    processingMessage: 'processingMessage_c09eba7f',
+    errorMessage: 'errorMessage_c09eba7f'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
 /***/ 2508:
 /*!************************************************************!*\
   !*** ./lib/webparts/migration/components/Footer/Footer.js ***!
@@ -993,21 +1328,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.module.scss */ 7716);
+/* harmony import */ var _FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FileUpload/FileUpload */ 6540);
+
+
 
 
 var Header = function (props) {
+    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false), showUploader = _a[0], setShowUploader = _a[1];
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].companyName }, "Indegene"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "About Indegene, the services they provide...etc"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Add a file")),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Add a file")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchIcon, width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z", fill: "#666" })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search..." }))))));
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search..." })))),
+        showUploader && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__.FileUpload, { onClose: function () { return setShowUploader(false); } }))));
 };
 
 
@@ -1036,6 +1376,142 @@ var styles = {
     searchContainer: 'searchContainer_e245bf59',
     searchIcon: 'searchIcon_e245bf59',
     searchInput: 'searchInput_e245bf59'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 6732:
+/*!************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MetadataForm/MetadataForm.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MetadataForm: () => (/* binding */ MetadataForm),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MetadataForm.module.scss */ 1527);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+var MetadataForm = function (_a) {
+    var onSubmit = _a.onSubmit, onClose = _a.onClose, initialValues = _a.initialValues;
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(__assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, initialValues)), values = _b[0], setValues = _b[1];
+    // Update values when initialValues change
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (initialValues) {
+            setValues(function (prev) { return (__assign(__assign({}, prev), initialValues)); });
+        }
+    }, [initialValues]);
+    var onChange = function (e) {
+        var _a = e.target, name = _a.name, value = _a.value;
+        setValues(function (v) {
+            var _a;
+            return (__assign(__assign({}, v), (_a = {}, _a[name] = value, _a)));
+        });
+    };
+    var handleSubmit = function (e) {
+        e && e.preventDefault();
+        onSubmit && onSubmit(values);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formWrapper },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerBar },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].titleWrap },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle }, "Add context and tags for better discoverability"))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", "aria-label": "Close", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return onClose && onClose(); }, title: "Close" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M18 6L6 18M6 6l12 12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardMeta },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title" }, "Title"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title", name: "title", placeholder: "Enter document title", value: values.title, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu" }, "Business Unit"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu", name: "bu", placeholder: "Select or type BU", value: values.bu, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department" }, "Department"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department", name: "department", placeholder: "Department", value: values.department, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region" }, "Region"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region", name: "region", placeholder: "Region", value: values.region, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract" }, "Abstract"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails" }, "Emails Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones" }, "Phones Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids" }, "IDs Found"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids", name: "ids", value: values.ids, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing" }, "Pricing / Sensitive Terms"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing", name: "pricing", value: values.pricing, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea }))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { marginTop: 12, display: 'flex', justifyContent: 'flex-end' } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn }, "Submit")))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MetadataForm);
+
+
+/***/ }),
+
+/***/ 1527:
+/*!************************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MetadataForm/MetadataForm.module.scss.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./MetadataForm.module.css */ 8856);
+var styles = {
+    formWrapper: 'formWrapper_eb48e8e0',
+    formInner: 'formInner_eb48e8e0',
+    note: 'note_eb48e8e0',
+    headerBar: 'headerBar_eb48e8e0',
+    cardMeta: 'cardMeta_eb48e8e0',
+    field: 'field_eb48e8e0',
+    title: 'title_eb48e8e0',
+    titleWrap: 'titleWrap_eb48e8e0',
+    subtitle: 'subtitle_eb48e8e0',
+    closeBtn: 'closeBtn_eb48e8e0',
+    fieldFull: 'fieldFull_eb48e8e0',
+    label: 'label_eb48e8e0',
+    input: 'input_eb48e8e0',
+    textarea: 'textarea_eb48e8e0',
+    textareaScrollable: 'textareaScrollable_eb48e8e0',
+    grid: 'grid_eb48e8e0',
+    actions: 'actions_eb48e8e0',
+    submitBtn: 'submitBtn_eb48e8e0'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1660,6 +2136,1104 @@ var styles = {
 
 /***/ }),
 
+/***/ 1651:
+/*!***************************************************************!*\
+  !*** ./lib/webparts/migration/services/AzureOpenAIService.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AzureOpenAIService: () => (/* binding */ AzureOpenAIService)
+/* harmony export */ });
+/* harmony import */ var _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ValidationConstants */ 7595);
+/* harmony import */ var _DataMasking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DataMasking */ 8623);
+/**
+ * Service to interact with Azure OpenAI API
+ */
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+var AzureOpenAIService = /** @class */ (function () {
+    function AzureOpenAIService(config) {
+        this.config = __assign(__assign({}, config), { apiVersion: config.apiVersion || '2024-02-15-preview' });
+    }
+    /**
+     * Extract metadata from document text using GPT-4o
+     * Uses chunked processing for large documents
+     */
+    AzureOpenAIService.prototype.extractMetadata = function (documentText) {
+        return __awaiter(this, void 0, void 0, function () {
+            var emailRegex, foundEmails, chunkSize, chunks, error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        // Log the extracted text for debugging
+                        console.log('=== DOCUMENT TEXT EXTRACTED ===');
+                        console.log('Total length:', documentText.length, 'characters');
+                        console.log('First 1000 chars:', documentText.substring(0, 1000));
+                        console.log('Last 1000 chars:', documentText.substring(Math.max(0, documentText.length - 1000)));
+                        emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+                        foundEmails = documentText.match(emailRegex);
+                        console.log('=== EMAILS FOUND IN RAW TEXT ===');
+                        console.log('Count:', foundEmails ? foundEmails.length : 0);
+                        if (foundEmails) {
+                            console.log('Emails:', foundEmails);
+                        }
+                        chunkSize = 15000;
+                        if (!(documentText.length <= chunkSize)) return [3 /*break*/, 2];
+                        console.log('=== PROCESSING AS SINGLE CHUNK ===');
+                        return [4 /*yield*/, this.processSingleChunk(documentText)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                    case 2:
+                        // Otherwise, use chunked processing
+                        console.log('=== PROCESSING WITH CHUNKED METHOD ===');
+                        console.log('Document length:', documentText.length, 'characters');
+                        console.log('Chunk size:', chunkSize, 'characters');
+                        chunks = this.splitIntoChunks(documentText, chunkSize);
+                        console.log('Number of chunks:', chunks.length);
+                        return [4 /*yield*/, this.processChunks(chunks)];
+                    case 3: return [2 /*return*/, _a.sent()];
+                    case 4:
+                        error_1 = _a.sent();
+                        console.error('Error extracting metadata:', error_1);
+                        throw error_1;
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Build the prompt for metadata extraction
+     */
+    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
+        var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
+        var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
+        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Type of document. Analyze the content structure and format. Examples: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", \"Standard Operating Procedure\", \"Guideline\", \"Manual\", etc. MUST provide a value.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ".concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", \"Latin America\"). ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+    };
+    /**
+     * Sanitize and validate extracted metadata
+     */
+    AzureOpenAIService.prototype.sanitizeMetadata = function (metadata) {
+        var sanitized = {};
+        // Ensure all fields are strings and trim whitespace
+        var fields = [
+            'title', 'documentType', 'bu', 'department', 'region', 'client',
+            'abstract', 'emails', 'phones',
+            'ids', 'pricing'
+        ];
+        for (var _i = 0, fields_1 = fields; _i < fields_1.length; _i++) {
+            var field = fields_1[_i];
+            var value = metadata[field];
+            sanitized[field] = typeof value === 'string' ? value.trim() : '';
+        }
+        // MANDATORY FIELDS - Ensure they are never empty
+        // Title: If empty, use a default or file name
+        if (!sanitized.title || sanitized.title === '') {
+            sanitized.title = 'Untitled Document';
+            console.warn('⚠️ Title was empty, using default');
+        }
+        // DocumentType: If empty, infer from context or use default
+        if (!sanitized.documentType || sanitized.documentType === '') {
+            sanitized.documentType = 'Document';
+            console.warn('⚠️ DocumentType was empty, using default');
+        }
+        // Business Unit: Must always have a value - try to match or use first allowed value as fallback
+        if (!sanitized.bu || sanitized.bu === '') {
+            // Try to infer from other fields or use a default
+            sanitized.bu = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS[0]; // Use first as fallback
+            console.warn('⚠️ Business Unit was empty, using fallback:', sanitized.bu);
+        }
+        else {
+            var matchedBU = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.bu, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS);
+            if (matchedBU) {
+                sanitized.bu = matchedBU;
+            }
+            else {
+                // If no match found, use first allowed value
+                sanitized.bu = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS[0];
+                console.warn('⚠️ Business Unit did not match any allowed value, using fallback');
+            }
+        }
+        // Department: Must always have a value - try to match or use first allowed value as fallback
+        if (!sanitized.department || sanitized.department === '') {
+            sanitized.department = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS[0]; // Use first as fallback
+            console.warn('⚠️ Department was empty, using fallback:', sanitized.department);
+        }
+        else {
+            var matchedDept = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.department, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS);
+            if (matchedDept) {
+                sanitized.department = matchedDept;
+            }
+            else {
+                // If no match found, use first allowed value
+                sanitized.department = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS[0];
+                console.warn('⚠️ Department did not match any allowed value, using fallback');
+            }
+        }
+        // Abstract: Must always have a value
+        if (!sanitized.abstract || sanitized.abstract === '') {
+            sanitized.abstract = 'Document content summary not available.';
+            console.warn('⚠️ Abstract was empty, using default');
+        }
+        // Ensure region is empty if not found (not just whitespace)
+        if (sanitized.region && (sanitized.region.toLowerCase() === 'not found' ||
+            sanitized.region.toLowerCase() === 'n/a' ||
+            sanitized.region.toLowerCase() === 'none' ||
+            sanitized.region.toLowerCase() === 'unknown')) {
+            sanitized.region = '';
+        }
+        // Client field validation - should only contain company names
+        // Remove if it contains person names, generic terms, or invalid content
+        if (sanitized.client) {
+            var clientLower_1 = sanitized.client.toLowerCase();
+            // Remove invalid values
+            if (clientLower_1 === 'not found' ||
+                clientLower_1 === 'n/a' ||
+                clientLower_1 === 'none' ||
+                clientLower_1 === 'unknown' ||
+                clientLower_1 === 'the client' ||
+                clientLower_1 === 'our client' ||
+                clientLower_1 === 'client' ||
+                clientLower_1.indexOf('internal') !== -1 ||
+                clientLower_1.indexOf('team') !== -1) {
+                sanitized.client = '';
+                console.log('⚠️ Client field contained invalid value, cleared');
+            }
+            else {
+                // Check if it looks like a person's name (first name + last name pattern without company indicators)
+                // Company indicators: Inc, LLC, Corp, Ltd, Company, Co, etc.
+                var companyIndicators = ['inc', 'llc', 'corp', 'ltd', 'company', 'co', 'group', 'enterprises', 'solutions', 'systems', 'technologies', 'consulting', 'services'];
+                var hasCompanyIndicator = companyIndicators.some(function (indicator) { return clientLower_1.indexOf(indicator) !== -1; });
+                // If it's just a name without company indicators and doesn't look like a company, clear it
+                if (!hasCompanyIndicator && sanitized.client.split(' ').length <= 3) {
+                    // Might be a person's name - check if it's clearly a company by other means
+                    // If it's just 1-2 words without company indicators, it's likely a person's name
+                    var words = sanitized.client.trim().split(/\s+/);
+                    if (words.length <= 2 && !hasCompanyIndicator) {
+                        sanitized.client = '';
+                        console.log('⚠️ Client field appears to be a person name, not a company, cleared');
+                    }
+                }
+            }
+        }
+        // Mask emails and phones
+        console.log('=== BEFORE MASKING ===');
+        console.log('Raw emails:', sanitized.emails);
+        console.log('Raw phones:', sanitized.phones);
+        if (sanitized.emails) {
+            sanitized.emails = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllEmails)(sanitized.emails);
+        }
+        else {
+            console.log('⚠️ No emails field in extracted metadata!');
+        }
+        if (sanitized.phones) {
+            sanitized.phones = (0,_DataMasking__WEBPACK_IMPORTED_MODULE_1__.maskAllPhones)(sanitized.phones);
+        }
+        else {
+            console.log('⚠️ No phones field in extracted metadata!');
+        }
+        return sanitized;
+    };
+    /**
+     * Split document text into chunks of specified size
+     */
+    AzureOpenAIService.prototype.splitIntoChunks = function (text, chunkSize) {
+        var chunks = [];
+        var start = 0;
+        while (start < text.length) {
+            var end = start + chunkSize;
+            // If not the last chunk, try to break at a word boundary
+            if (end < text.length) {
+                // Look for a good break point (newline, period, space)
+                var breakPoint = Math.max(text.lastIndexOf('\n\n', end), text.lastIndexOf('\n', end), text.lastIndexOf('. ', end), text.lastIndexOf(' ', end));
+                if (breakPoint > start + chunkSize * 0.8) {
+                    // Only use break point if it's not too early (at least 80% of chunk size)
+                    end = breakPoint + 1;
+                }
+            }
+            chunks.push(text.substring(start, end));
+            start = end;
+        }
+        return chunks;
+    };
+    /**
+     * Process a single chunk of text
+     */
+    AzureOpenAIService.prototype.processSingleChunk = function (chunkText) {
+        var _a, _b, _c, _d;
+        return __awaiter(this, void 0, void 0, function () {
+            var prompt, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, sanitized;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        console.log('=== PROCESSING SINGLE CHUNK ===');
+                        console.log('Chunk length:', chunkText.length, 'characters');
+                        prompt = this.buildExtractionPrompt(chunkText);
+                        return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'api-key': this.config.apiKey
+                                },
+                                body: JSON.stringify({
+                                    messages: [
+                                        {
+                                            role: 'system',
+                                            content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
+                                        },
+                                        {
+                                            role: 'user',
+                                            content: prompt
+                                        }
+                                    ],
+                                    temperature: 0.8,
+                                    max_tokens: 2000
+                                })
+                            })];
+                    case 1:
+                        response = _e.sent();
+                        if (!!response.ok) return [3 /*break*/, 3];
+                        return [4 /*yield*/, response.text()];
+                    case 2:
+                        errorText = _e.sent();
+                        errorMessage = "Azure OpenAI API error: ".concat(response.status);
+                        // Handle CORS errors
+                        if (response.status === 0 || response.statusText === '') {
+                            errorMessage = 'CORS error: Unable to connect to Azure OpenAI. The API may need CORS configuration or a backend proxy.';
+                        }
+                        else {
+                            try {
+                                errorJson = JSON.parse(errorText);
+                                errorMessage = ((_a = errorJson.error) === null || _a === void 0 ? void 0 : _a.message) || errorText || errorMessage;
+                            }
+                            catch (_f) {
+                                errorMessage = errorText || errorMessage;
+                            }
+                        }
+                        throw new Error(errorMessage);
+                    case 3: return [4 /*yield*/, response.json()];
+                    case 4:
+                        data = _e.sent();
+                        content = (_d = (_c = (_b = data.choices) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.message) === null || _d === void 0 ? void 0 : _d.content;
+                        if (!content) {
+                            throw new Error('No content returned from Azure OpenAI');
+                        }
+                        console.log('=== AI RESPONSE (RAW) ===');
+                        console.log(content);
+                        jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
+                        jsonText = jsonMatch[1] || content;
+                        console.log('=== PARSED JSON ===');
+                        console.log(jsonText);
+                        extracted = JSON.parse(jsonText.trim());
+                        console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
+                        console.log(JSON.stringify(extracted, null, 2));
+                        console.log('Emails extracted:', extracted.emails);
+                        console.log('Phones extracted:', extracted.phones);
+                        sanitized = this.sanitizeMetadata(extracted);
+                        console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
+                        console.log(JSON.stringify(sanitized, null, 2));
+                        console.log('Emails (masked):', sanitized.emails);
+                        console.log('Phones (masked):', sanitized.phones);
+                        return [2 /*return*/, sanitized];
+                }
+            });
+        });
+    };
+    /**
+     * Process multiple chunks and merge results
+     */
+    AzureOpenAIService.prototype.processChunks = function (chunks) {
+        return __awaiter(this, void 0, void 0, function () {
+            var chunkResults, i, result, error_2, merged, finalResult;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
+                        chunkResults = [];
+                        i = 0;
+                        _a.label = 1;
+                    case 1:
+                        if (!(i < chunks.length)) return [3 /*break*/, 6];
+                        console.log("\n=== PROCESSING CHUNK ".concat(i + 1, "/").concat(chunks.length, " ==="));
+                        _a.label = 2;
+                    case 2:
+                        _a.trys.push([2, 4, , 5]);
+                        return [4 /*yield*/, this.processSingleChunk(chunks[i])];
+                    case 3:
+                        result = _a.sent();
+                        chunkResults.push(result);
+                        console.log("\u2713 Chunk ".concat(i + 1, " processed successfully"));
+                        return [3 /*break*/, 5];
+                    case 4:
+                        error_2 = _a.sent();
+                        console.error("\u2717 Error processing chunk ".concat(i + 1, ":"), error_2);
+                        // Continue with other chunks even if one fails
+                        chunkResults.push({});
+                        return [3 /*break*/, 5];
+                    case 5:
+                        i++;
+                        return [3 /*break*/, 1];
+                    case 6:
+                        console.log('\n=== MERGING CHUNK RESULTS ===');
+                        merged = this.mergeChunkResults(chunkResults);
+                        console.log('=== MERGED RESULT (BEFORE FINAL SANITIZATION) ===');
+                        console.log(JSON.stringify(merged, null, 2));
+                        finalResult = this.sanitizeMetadata(merged);
+                        console.log('=== FINAL MERGED RESULT ===');
+                        console.log(JSON.stringify(finalResult, null, 2));
+                        return [2 /*return*/, finalResult];
+                }
+            });
+        });
+    };
+    /**
+     * Merge results from multiple chunks intelligently
+     */
+    AzureOpenAIService.prototype.mergeChunkResults = function (results) {
+        var _a;
+        var merged = {
+            title: '',
+            documentType: '',
+            bu: '',
+            department: '',
+            region: '',
+            client: '',
+            abstract: '',
+            emails: '',
+            phones: '',
+            ids: '',
+            pricing: ''
+        };
+        // Collect all emails and phones (combine from all chunks)
+        var allEmails = [];
+        var allPhones = [];
+        var allIds = [];
+        var allPricing = [];
+        for (var i = 0; i < results.length; i++) {
+            var result = results[i];
+            // Title: Take from first chunk (most likely to be at the start)
+            if (!merged.title && result.title) {
+                merged.title = result.title;
+            }
+            // DocumentType: Take from first chunk
+            if (!merged.documentType && result.documentType) {
+                merged.documentType = result.documentType;
+            }
+            // BU: Take first non-empty match
+            if (!merged.bu && result.bu) {
+                merged.bu = result.bu;
+            }
+            // Department: Take first non-empty match
+            if (!merged.department && result.department) {
+                merged.department = result.department;
+            }
+            // Region: Take first non-empty match
+            if (!merged.region && result.region) {
+                merged.region = result.region;
+            }
+            // Client: Take first non-empty match
+            if (!merged.client && result.client) {
+                merged.client = result.client;
+            }
+            // Abstract: Take the longest one (most comprehensive)
+            if (result.abstract && result.abstract.length > (((_a = merged.abstract) === null || _a === void 0 ? void 0 : _a.length) || 0)) {
+                merged.abstract = result.abstract;
+            }
+            // Emails: Collect all unique emails
+            if (result.emails) {
+                var emails = result.emails.split(/[,;\n]/).map(function (e) { return e.trim(); }).filter(function (e) { return e.length > 0; });
+                for (var j = 0; j < emails.length; j++) {
+                    var email = emails[j];
+                    // Add if not already in the list (case-insensitive)
+                    if (email && allEmails.indexOf(email.toLowerCase()) === -1) {
+                        allEmails.push(email.toLowerCase());
+                        // Keep original case from first occurrence
+                        var originalEmail = emails[j];
+                        if (allEmails.indexOf(originalEmail.toLowerCase()) === -1) {
+                            allEmails[allEmails.length - 1] = originalEmail;
+                        }
+                    }
+                }
+            }
+            // Phones: Collect all unique phones
+            if (result.phones) {
+                var phones = result.phones.split(/[,;\n]/).map(function (p) { return p.trim(); }).filter(function (p) { return p.length > 0; });
+                for (var j = 0; j < phones.length; j++) {
+                    var phone = phones[j];
+                    // Add if not already in the list
+                    if (phone && allPhones.indexOf(phone) === -1) {
+                        allPhones.push(phone);
+                    }
+                }
+            }
+            // IDs: Collect all
+            if (result.ids) {
+                var ids = result.ids.split(/[,;\n]/).map(function (id) { return id.trim(); }).filter(function (id) { return id.length > 0; });
+                for (var j = 0; j < ids.length; j++) {
+                    var id = ids[j];
+                    if (id && allIds.indexOf(id) === -1) {
+                        allIds.push(id);
+                    }
+                }
+            }
+            // Pricing: Collect all (combine with newlines)
+            if (result.pricing) {
+                allPricing.push(result.pricing);
+            }
+        }
+        // Join collected values
+        merged.emails = allEmails.join(', ');
+        merged.phones = allPhones.join(', ');
+        merged.ids = allIds.join(', ');
+        merged.pricing = allPricing.join('\n\n');
+        console.log('Merged emails count:', allEmails.length);
+        console.log('Merged phones count:', allPhones.length);
+        console.log('Merged IDs count:', allIds.length);
+        return merged;
+    };
+    return AzureOpenAIService;
+}());
+
+
+
+/***/ }),
+
+/***/ 8623:
+/*!********************************************************!*\
+  !*** ./lib/webparts/migration/services/DataMasking.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   maskAllEmails: () => (/* binding */ maskAllEmails),
+/* harmony export */   maskAllPhones: () => (/* binding */ maskAllPhones),
+/* harmony export */   maskEmail: () => (/* binding */ maskEmail),
+/* harmony export */   maskPhone: () => (/* binding */ maskPhone)
+/* harmony export */ });
+/**
+ * Utility functions for masking sensitive data
+ */
+/**
+ * Mask the first 4 characters of an email address
+ * Example: john.doe@example.com -> ****.doe@example.com
+ */
+function maskEmail(email) {
+    if (!email || email.trim() === '') {
+        return '';
+    }
+    var trimmed = email.trim();
+    var atIndex = trimmed.indexOf('@');
+    if (atIndex === -1 || atIndex <= 4) {
+        // If @ is not found or within first 4 chars, mask first 4 chars
+        return '****' + trimmed.substring(4);
+    }
+    // Mask first 4 characters before @
+    return '****' + trimmed.substring(4);
+}
+/**
+ * Mask the first 4 characters of a phone number
+ * Example: +1-555-123-4567 -> ****-123-4567
+ */
+function maskPhone(phone) {
+    if (!phone || phone.trim() === '') {
+        return '';
+    }
+    var trimmed = phone.trim();
+    // Remove common separators for masking, then add them back
+    var cleaned = trimmed.replace(/[\s\-().]/g, '');
+    if (cleaned.length <= 4) {
+        return '****';
+    }
+    // Mask first 4 digits, preserve formatting
+    var masked = '****';
+    var originalIndex = 4;
+    // Preserve separators after the masked portion
+    for (var i = 4; i < trimmed.length; i++) {
+        var char = trimmed[i];
+        if (/[\s\-().]/.test(char)) {
+            masked += char;
+        }
+        else {
+            masked += trimmed[i];
+            originalIndex++;
+        }
+    }
+    return masked;
+}
+/**
+ * Mask all emails in a comma-separated or newline-separated string
+ */
+function maskAllEmails(emailsString) {
+    console.log('=== MASKING EMAILS ===');
+    console.log('Input:', emailsString);
+    if (!emailsString || emailsString.trim() === '') {
+        console.log('No emails to mask (empty input)');
+        return '';
+    }
+    // Split by comma, semicolon, or newline (handle various separators)
+    var emails = emailsString
+        .split(/[,;\n]/)
+        .map(function (e) { return e.trim(); })
+        .filter(function (e) { return e.length > 0; });
+    console.log('Split emails:', emails);
+    console.log('Email count:', emails.length);
+    if (emails.length === 0) {
+        console.log('No valid emails found after splitting');
+        return '';
+    }
+    var masked = emails.map(maskEmail).join(', ');
+    console.log('Masked result:', masked);
+    return masked;
+}
+/**
+ * Mask all phone numbers in a comma-separated or newline-separated string
+ */
+function maskAllPhones(phonesString) {
+    if (!phonesString || phonesString.trim() === '') {
+        return '';
+    }
+    // Split by comma or newline
+    var phones = phonesString
+        .split(/[,\n]/)
+        .map(function (p) { return p.trim(); })
+        .filter(function (p) { return p.length > 0; });
+    return phones.map(maskPhone).join(', ');
+}
+
+
+/***/ }),
+
+/***/ 2969:
+/*!***********************************************************!*\
+  !*** ./lib/webparts/migration/services/DocumentParser.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DocumentParser: () => (/* binding */ DocumentParser)
+/* harmony export */ });
+/**
+ * Service to extract text from various document formats
+ */
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var DocumentParser = /** @class */ (function () {
+    function DocumentParser() {
+    }
+    /**
+     * Extract text from a file based on its type
+     */
+    DocumentParser.parseFile = function (file) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function () {
+            var fileExtension, _b, error_1;
+            return __generator(this, function (_c) {
+                switch (_c.label) {
+                    case 0:
+                        fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
+                        _c.label = 1;
+                    case 1:
+                        _c.trys.push([1, 12, , 13]);
+                        _b = fileExtension;
+                        switch (_b) {
+                            case 'pdf': return [3 /*break*/, 2];
+                            case 'docx': return [3 /*break*/, 4];
+                            case 'doc': return [3 /*break*/, 6];
+                            case 'pptx': return [3 /*break*/, 7];
+                            case 'ppt': return [3 /*break*/, 7];
+                            case 'xlsx': return [3 /*break*/, 8];
+                            case 'xls': return [3 /*break*/, 8];
+                            case 'mpp': return [3 /*break*/, 9];
+                        }
+                        return [3 /*break*/, 10];
+                    case 2: return [4 /*yield*/, this.parsePDF(file)];
+                    case 3: return [2 /*return*/, _c.sent()];
+                    case 4: return [4 /*yield*/, this.parseWord(file)];
+                    case 5: return [2 /*return*/, _c.sent()];
+                    case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
+                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 11: return [3 /*break*/, 13];
+                    case 12:
+                        error_1 = _c.sent();
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
+                            }];
+                    case 13: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from PDF file
+     */
+    DocumentParser.parsePDF = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var pdfjsLib, scripts, basePath, i, src, workerPath, minimalWorker, arrayBuffer, pdf, fullText, numPages, pageNum, page, textContent, pageText, pageError_1, extractedText, error_2, errorMessage, msg;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 11, , 12]);
+                        console.log('=== STARTING PDF PARSING ===');
+                        console.log('File name:', file.name);
+                        console.log('File size:', file.size, 'bytes');
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_pdfjs-dist_build_pdf_mjs").then(__webpack_require__.bind(__webpack_require__, /*! pdfjs-dist */ 1100))];
+                    case 1:
+                        pdfjsLib = _a.sent();
+                        console.log('PDF.js library loaded, version:', pdfjsLib.version);
+                        // For SharePoint Framework with strict CSP, we need to work around restrictions
+                        // Webpack bundles the worker as a chunk file that we can reference
+                        // The CSP is in "report-only" mode, so violations are logged but execution continues
+                        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
+                            try {
+                                scripts = document.getElementsByTagName('script');
+                                basePath = '';
+                                for (i = 0; i < scripts.length; i++) {
+                                    src = scripts[i].src;
+                                    if (src && src.indexOf('migration-web-part') !== -1) {
+                                        basePath = src.substring(0, src.lastIndexOf('/'));
+                                        break;
+                                    }
+                                }
+                                if (basePath) {
+                                    workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+                                    pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
+                                    console.log('PDF.js worker path set to bundled chunk:', workerPath);
+                                }
+                                else {
+                                    // Fallback: Try relative path
+                                    pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+                                    console.log('PDF.js worker path set to relative path (fallback)');
+                                }
+                            }
+                            catch (pathError) {
+                                console.warn('Could not set worker path, using data URL fallback:', pathError);
+                                minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
+                                pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
+                                console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
+                            }
+                        }
+                        console.log('Reading file as ArrayBuffer...');
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _a.sent();
+                        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
+                        console.log('Loading PDF document...');
+                        return [4 /*yield*/, pdfjsLib.getDocument({
+                                data: arrayBuffer,
+                                verbosity: 0,
+                                useWorkerFetch: false,
+                                isEvalSupported: false,
+                                useSystemFonts: true
+                            }).promise];
+                    case 3:
+                        pdf = _a.sent();
+                        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
+                        fullText = '';
+                        numPages = pdf.numPages;
+                        pageNum = 1;
+                        _a.label = 4;
+                    case 4:
+                        if (!(pageNum <= numPages)) return [3 /*break*/, 10];
+                        console.log("Extracting text from page ".concat(pageNum, "/").concat(numPages, "..."));
+                        _a.label = 5;
+                    case 5:
+                        _a.trys.push([5, 8, , 9]);
+                        return [4 /*yield*/, pdf.getPage(pageNum)];
+                    case 6:
+                        page = _a.sent();
+                        return [4 /*yield*/, page.getTextContent()];
+                    case 7:
+                        textContent = _a.sent();
+                        pageText = textContent.items
+                            .map(function (item) {
+                            // Handle both TextItem and TextMarkedContent types
+                            if ('str' in item && item.str) {
+                                return item.str;
+                            }
+                            return '';
+                        })
+                            .join(' ');
+                        fullText += pageText + '\n';
+                        console.log("Page ".concat(pageNum, " extracted: ").concat(pageText.length, " characters"));
+                        return [3 /*break*/, 9];
+                    case 8:
+                        pageError_1 = _a.sent();
+                        console.error("Error extracting page ".concat(pageNum, ":"), pageError_1);
+                        return [3 /*break*/, 9];
+                    case 9:
+                        pageNum++;
+                        return [3 /*break*/, 4];
+                    case 10:
+                        extractedText = fullText.trim();
+                        console.log('=== PDF PARSING COMPLETE ===');
+                        console.log('Total text extracted:', extractedText.length, 'characters');
+                        if (extractedText.length === 0) {
+                            console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
+                                }];
+                        }
+                        return [2 /*return*/, {
+                                text: extractedText,
+                                success: true
+                            }];
+                    case 11:
+                        error_2 = _a.sent();
+                        console.error('=== PDF PARSING ERROR ===');
+                        console.error('Error details:', error_2);
+                        console.error('Error type:', typeof error_2);
+                        console.error('Error message:', error_2 instanceof Error ? error_2.message : String(error_2));
+                        errorMessage = 'Failed to parse PDF';
+                        if (error_2 instanceof Error) {
+                            errorMessage = error_2.message;
+                            msg = error_2.message.toLowerCase();
+                            if (msg.indexOf('worker') !== -1) {
+                                errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
+                            }
+                            else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
+                            }
+                            else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
+                                errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
+                            }
+                        }
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 12: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from Word (.docx) file
+     */
+    DocumentParser.parseWord = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var mammoth, arrayBuffer, result, error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_mammoth_lib_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 845, 19))];
+                    case 1:
+                        mammoth = _a.sent();
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _a.sent();
+                        return [4 /*yield*/, mammoth.extractRawText({ arrayBuffer: arrayBuffer })];
+                    case 3:
+                        result = _a.sent();
+                        return [2 /*return*/, {
+                                text: result.value.trim(),
+                                success: true
+                            }];
+                    case 4:
+                        error_3 = _a.sent();
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: error_3 instanceof Error ? error_3.message : 'Failed to parse Word document'
+                            }];
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    return DocumentParser;
+}());
+
+
+
+/***/ }),
+
+/***/ 7595:
+/*!****************************************************************!*\
+  !*** ./lib/webparts/migration/services/ValidationConstants.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ALLOWED_BUSINESS_UNITS: () => (/* binding */ ALLOWED_BUSINESS_UNITS),
+/* harmony export */   ALLOWED_DEPARTMENTS: () => (/* binding */ ALLOWED_DEPARTMENTS),
+/* harmony export */   findBestMatch: () => (/* binding */ findBestMatch)
+/* harmony export */ });
+/**
+ * Validation constants for Business Units and Departments
+ */
+var ALLOWED_BUSINESS_UNITS = [
+    'Organization Functions',
+    'Chief Technology Office',
+    'Co-Commercialization',
+    'Enterprise Commercial',
+    'Growth Markets',
+    'Enterprise Clinical',
+    'Indegene Japan',
+    'Enterprise Medical',
+    'Medical Devices',
+    'Multi-Channel Marketing',
+    'Strategy and Development',
+    'Enterprise Product Office',
+    'Transformative Software Solutions',
+    'Finance and Legal',
+    'Global Operations',
+    'People Practices & Systems',
+    'Sales Lifesciences'
+];
+var ALLOWED_DEPARTMENTS = [
+    'Leadership & Organization Development',
+    'Chief Technology Office',
+    'Enterprise Informatics',
+    'Enterprise Product Office',
+    'Enterprise Tech Office',
+    'Research & Development',
+    'Co-Commercialization',
+    'Omnichannel Acceleration',
+    'Enterprise Commercial',
+    'Omnichannel Solutions',
+    'Enterprise Commercial Activation and Change Management',
+    'Content Transformation & Solutions',
+    'Enterprise Commercial Delivery Services',
+    'Customer Experience Success Office (CESO)',
+    'Digital Enablement',
+    'Data and Analytics',
+    'Content and Design Solutions',
+    'CXD Content and Experience Design',
+    'Web and Portal Solutions',
+    'Patient Experience',
+    'Customer Advisory and Experience',
+    'Digital Innovation and Transformation',
+    'Campaign and Channel Operations',
+    'ECS Platforms and Technology',
+    'ECS Solutioning Presales and Marketing',
+    'BU Sales',
+    'Campaign Ops',
+    'Growth Markets',
+    'GM - Sales & Solutions',
+    'Enterprise Clinical',
+    'Clinical Data Management',
+    'RWD & Biostats',
+    'Clinical Operations',
+    'Digital Patient Recruitment and Engagement',
+    'Indegene Japan',
+    'Sales - Japan',
+    'Enterprise Medical',
+    'Enterprise Medical Client Partnership and Advisory',
+    'Medical Affairs',
+    'Medical Communication',
+    'Material Review, Operations and Compliance',
+    'Promotional and Medical Review',
+    'Learning & Development Solutions',
+    'Health Care Practitioners (HCP)',
+    'Learning and Development',
+    'Safety',
+    'Pharmacovigilance',
+    'Regulatory Affairs',
+    'Labelling Solutions',
+    'Packaging Artwork and Labelling',
+    'Health Economics & Outcomes Research',
+    'PRMA Common',
+    'Enterprise Medical Platforms and Technology',
+    'Medical Devices',
+    'Device Technology',
+    'Quality and Regulatory',
+    'Solutioning Sales and Marketing',
+    'Medical Content Solutions',
+    'Multi-Channel Marketing',
+    'Medical Engagement Solutions',
+    'Digital Solutions',
+    'Strategy and Development',
+    'Corporate Planning',
+    'Corporate Strategy',
+    'Corporate Development',
+    'Enterprise Product Office',
+    'Product - Medical',
+    'Engineering - Commercial',
+    'Product - Commercial',
+    'Engineering - Medical',
+    'Transformative Software Solutions',
+    'Engineering Office',
+    'Finance and Legal',
+    'Business Finance',
+    'Finance - Controllership',
+    'Legal',
+    'Taxation',
+    'Global Operations',
+    'Knowledge Management',
+    'Risk Audit and Compliance',
+    'Process Design and Automation',
+    'Workforce Management',
+    'Enterprise Program Management Office (EPMO)',
+    'Operational Excellence',
+    'People Practices & Systems',
+    'HR Systems & Technology',
+    'Talent Operations',
+    'Talent Management and Engagement',
+    'Talent Acquisition',
+    'iAcademy',
+    'Campus and Pool',
+    'Organizational Development',
+    'Sales Lifesciences',
+    'Sales China',
+    'Growth and Emerging Accounts',
+    'Sales LifesSciences',
+    'Key Accounts',
+    'CultHealth',
+    'Corporate Planning',
+    'Global Delivery Center',
+    'Emerging Biotech',
+    'mySheets',
+    'Activation Framework',
+    'Amgen C 360',
+    'All',
+    'Indegene Products',
+    'Management',
+    'DT Consulting',
+    'Commercial and Facilities',
+    'Information Technology',
+    'Editorial',
+    'Marketing and Inside Sales'
+];
+/**
+ * Find the best match from allowed values using fuzzy matching
+ * Compatible with ES5 (no Array.find or String.includes)
+ */
+function findBestMatch(value, allowedValues) {
+    if (!value || value.trim() === '') {
+        return '';
+    }
+    var normalizedValue = value.trim().toLowerCase();
+    // Exact match (case-insensitive)
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        if (allowed.toLowerCase() === normalizedValue) {
+            return allowed;
+        }
+    }
+    // Partial match (contains)
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        var allowedLower = allowed.toLowerCase();
+        if (allowedLower.indexOf(normalizedValue) !== -1 || normalizedValue.indexOf(allowedLower) !== -1) {
+            return allowed;
+        }
+    }
+    // Fuzzy match - check if any words match
+    var valueWords = normalizedValue.split(/\s+/);
+    for (var i = 0; i < allowedValues.length; i++) {
+        var allowed = allowedValues[i];
+        var allowedWords = allowed.toLowerCase().split(/\s+/);
+        for (var j = 0; j < valueWords.length; j++) {
+            var word = valueWords[j];
+            for (var k = 0; k < allowedWords.length; k++) {
+                var allowedWord = allowedWords[k];
+                if (allowedWord.indexOf(word) !== -1 || word.indexOf(allowedWord) !== -1) {
+                    return allowed;
+                }
+            }
+        }
+    }
+    // No match found
+    return '';
+}
+
+
+/***/ }),
+
 /***/ 6323:
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js ***!
@@ -2083,11 +3657,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -2102,6 +3679,36 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -2111,6 +3718,28 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "chunk." + chunkId + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -2131,6 +3760,55 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 		
+/******/ 				script.src = url;
+/******/ 				if (script.src.indexOf(window.location.origin + '/') !== 0) {
+/******/ 					script.crossOrigin = "anonymous";
+/******/ 				}
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -2140,6 +3818,102 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8398__;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var _publicPath = __RUSHSTACK_CURRENT_SCRIPT__ ? __RUSHSTACK_CURRENT_SCRIPT__.src : '';
+/******/ 		__webpack_require__.p = _publicPath.slice(0, _publicPath.lastIndexOf('/') + 1);
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"migration-web-part": 0
+/******/ 		};
+/******/ 		
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if(true) { // all chunks have JS
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						}
+/******/ 					}
+/******/ 				}
+/******/ 		};
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 		
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackJsonp_a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0"] = self["webpackJsonp_a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -2240,5 +4014,5 @@ var MigrationWebPart = /** @class */ (function (_super) {
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});;
+});})();;
 //# sourceMappingURL=migration-web-part.js.map

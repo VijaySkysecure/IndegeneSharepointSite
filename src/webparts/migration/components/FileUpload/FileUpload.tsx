@@ -42,21 +42,37 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   };
 
   const processFileWithAI = async (file: File) => {
+    console.log('=== STARTING FILE PROCESSING ===');
+    console.log('File:', file.name);
+    console.log('File type:', file.type);
+    console.log('File size:', file.size, 'bytes');
+    
     setIsProcessing(true);
     setProcessingError(null);
 
     try {
       // Step 1: Parse the document to extract text
+      console.log('Step 1: Parsing document...');
       const parseResult = await DocumentParser.parseFile(file);
       
+      console.log('Parse result:', {
+        success: parseResult.success,
+        textLength: parseResult.text?.length || 0,
+        error: parseResult.error
+      });
+      
       if (!parseResult.success) {
-        setProcessingError(parseResult.error || 'Failed to parse document');
+        const errorMsg = parseResult.error || 'Failed to parse document';
+        console.error('Document parsing failed:', errorMsg);
+        setProcessingError(errorMsg);
         setIsProcessing(false);
         return;
       }
 
       if (!parseResult.text || parseResult.text.trim().length === 0) {
-        setProcessingError('No text content found in the document');
+        const errorMsg = 'No text content found in the document. The document might be image-based or empty.';
+        console.error('No text extracted:', errorMsg);
+        setProcessingError(errorMsg);
         setIsProcessing(false);
         return;
       }
@@ -69,18 +85,27 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
 
       // Step 2: Extract metadata using Azure OpenAI
+      console.log('Step 2: Extracting metadata with AI...');
       const metadata = await openAIService.current.extractMetadata(parseResult.text);
       
       // Step 3: Set the extracted metadata
+      console.log('Step 3: Setting extracted metadata...');
       setExtractedMetadata(metadata);
+      console.log('=== FILE PROCESSING COMPLETE ===');
     } catch (error) {
-      console.error('Error processing file with AI:', error);
-      setProcessingError(
-        error instanceof Error 
-          ? error.message 
-          : 'An error occurred while processing the document. Please fill the form manually.'
-      );
+      console.error('=== ERROR PROCESSING FILE ===');
+      console.error('Error type:', typeof error);
+      console.error('Error details:', error);
+      console.error('Error message:', error instanceof Error ? error.message : String(error));
+      console.error('Error stack:', error instanceof Error ? error.stack : 'N/A');
+      
+      const errorMsg = error instanceof Error 
+        ? error.message 
+        : 'An error occurred while processing the document. Please fill the form manually.';
+      
+      setProcessingError(errorMsg);
     } finally {
+      console.log('Setting isProcessing to false');
       setIsProcessing(false);
     }
   };

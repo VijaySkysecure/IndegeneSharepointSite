@@ -38,6 +38,7 @@ export class AzureOpenAIService {
 
   /**
    * Extract metadata from document text using GPT-4o
+   * Uses chunked processing for large documents
    */
   async extractMetadata(documentText: string): Promise<MetadataExtraction> {
     try {
@@ -56,97 +57,24 @@ export class AzureOpenAIService {
         console.log('Emails:', foundEmails);
       }
 
-      // Truncate text if too long (GPT-4o has token limits)
-      // Increased to 15000 characters to capture more content
-      const maxLength = 15000;
-      const truncatedText = documentText.length > maxLength 
-        ? documentText.substring(0, maxLength) + '\n\n[... document truncated ...]'
-        : documentText;
-
-      console.log('=== TEXT SENT TO AI ===');
-      console.log('Length:', truncatedText.length, 'characters');
-      if (documentText.length > maxLength) {
-        console.warn('⚠️ WARNING: Document was truncated! Some content may be missing.');
+      // Chunk size for processing (15k characters per chunk)
+      const chunkSize = 15000;
+      
+      // If document is small enough, process normally
+      if (documentText.length <= chunkSize) {
+        console.log('=== PROCESSING AS SINGLE CHUNK ===');
+        return await this.processSingleChunk(documentText);
       }
 
-      const prompt = this.buildExtractionPrompt(truncatedText);
-
-      const response = await fetch(
-        `${this.config.endpoint}/openai/deployments/${this.config.deploymentName}/chat/completions?api-version=${this.config.apiVersion}`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'api-key': this.config.apiKey
-          },
-          body: JSON.stringify({
-            messages: [
-              {
-                role: 'system',
-                content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
-              },
-              {
-                role: 'user',
-                content: prompt
-              }
-            ],
-            temperature: 0.8,
-            max_tokens: 2000
-          })
-        }
-      );
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        let errorMessage = `Azure OpenAI API error: ${response.status}`;
-        
-        // Handle CORS errors
-        if (response.status === 0 || response.statusText === '') {
-          errorMessage = 'CORS error: Unable to connect to Azure OpenAI. The API may need CORS configuration or a backend proxy.';
-        } else {
-          try {
-            const errorJson = JSON.parse(errorText);
-            errorMessage = errorJson.error?.message || errorText || errorMessage;
-          } catch {
-            errorMessage = errorText || errorMessage;
-          }
-        }
-        
-        throw new Error(errorMessage);
-      }
-
-      const data = await response.json();
-      const content = data.choices?.[0]?.message?.content;
-
-      if (!content) {
-        throw new Error('No content returned from Azure OpenAI');
-      }
-
-      console.log('=== AI RESPONSE (RAW) ===');
-      console.log(content);
-
-      // Parse JSON response (remove markdown code blocks if present)
-      const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
-      const jsonText = jsonMatch[1] || content;
+      // Otherwise, use chunked processing
+      console.log('=== PROCESSING WITH CHUNKED METHOD ===');
+      console.log('Document length:', documentText.length, 'characters');
+      console.log('Chunk size:', chunkSize, 'characters');
       
-      console.log('=== PARSED JSON ===');
-      console.log(jsonText);
+      const chunks = this.splitIntoChunks(documentText, chunkSize);
+      console.log('Number of chunks:', chunks.length);
       
-      const extracted = JSON.parse(jsonText.trim()) as MetadataExtraction;
-      
-      console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
-      console.log(JSON.stringify(extracted, null, 2));
-      console.log('Emails extracted:', extracted.emails);
-      console.log('Phones extracted:', extracted.phones);
-      
-      const sanitized = this.sanitizeMetadata(extracted);
-      
-      console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
-      console.log(JSON.stringify(sanitized, null, 2));
-      console.log('Emails (masked):', sanitized.emails);
-      console.log('Phones (masked):', sanitized.phones);
-      
-      return sanitized;
+      return await this.processChunks(chunks);
     } catch (error) {
       console.error('Error extracting metadata:', error);
       throw error;
@@ -160,40 +88,59 @@ export class AzureOpenAIService {
     const buList = ALLOWED_BUSINESS_UNITS.join('\n- ');
     const deptList = ALLOWED_DEPARTMENTS.join('\n- ');
 
-    return `Analyze the following document and extract the following information. Return the result as a JSON object with these exact field names.
+    return `You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.
 
-CRITICAL RULES:
-- If a field cannot be found in the document, use an empty string "" (do NOT make up values)
-- For "region" and "client": ONLY fill if explicitly mentioned in the document, otherwise use ""
-- Extract ALL email addresses and phone numbers found (even if there are 100+), separate them with commas
-- Be thorough and extract every single email and phone number you can find
+CRITICAL EXTRACTION RULES:
+
+**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**
+- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic
+- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: "PPTX", "PDF", "Word Document", "Report", "Proposal", "Presentation", "White Paper", "Case Study", "Training Material", etc.
+- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)
+- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)
+- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content
+
+**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**
+- region: ONLY if a geographic region is explicitly mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", etc.)
+- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.
+
+**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**
+- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.
+- phones: Extract EVERY phone number found (even if 100+). Include all formats.
+- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.
+- pricing: Extract all pricing, cost, financial, or monetary information
 
 Fields to extract:
-1. title - The document title or main heading (extract exactly as written)
 
-2. documentType - Type of document (e.g., "PPTX", "Report", "Proposal", "Presentation", "PDF")
+1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.
 
-3. bu - Business Unit. MUST be one of these exact values (match the closest one):
+2. documentType - **MANDATORY**: Type of document. Analyze the content structure and format. Examples: "PPTX", "PDF", "Word Document", "Report", "Proposal", "Presentation", "White Paper", "Case Study", "Training Material", "Standard Operating Procedure", "Guideline", "Manual", etc. MUST provide a value.
+
+3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):
 - ${buList}
-If no Business Unit is mentioned, use ""
+If not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.
 
-4. department - Department. MUST be one of these exact values (match the closest one):
+4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):
 - ${deptList}
-If no Department is mentioned, use ""
+If not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.
 
-5. region - Geographic region mentioned (e.g., "North America", "Europe", "Asia"). ONLY fill if explicitly mentioned, otherwise ""
+5. region - Geographic region mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", "Latin America"). ONLY fill if explicitly mentioned in the document, otherwise use ""
 
-6. client - Client name or organization. ONLY fill if explicitly mentioned, otherwise ""
+6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:
+- Person names (unless it's clearly a company name like "John's Consulting LLC")
+- Internal departments or teams
+- Generic terms like "the client" or "our customer"
+- Project names that aren't company names
+Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find "the client" or similar without a specific company name, leave empty.
 
-7. abstract - A brief summary (1-2 sentences) of the document content
+7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.
 
-10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like "text@domain.com" or "name@company.org". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully. Separate multiple emails with commas. Format: "email1@example.com, email2@example.com, email3@example.com, ..." If you find even one email, include it. If you find none, use empty string "".
+10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like "text@domain.com" or "name@company.org". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: "email1@example.com, email2@example.com, email3@example.com, ..." If you find even one email, include it. If you find none, use empty string "".
 
-11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like "+1-555-123-4567", "(555) 123-4567", "555-123-4567", "555.123.4567", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses). Separate multiple phones with commas. Format: "+1-555-123-4567, 555-987-6543, ..." If you find even one phone, include it. If you find none, use empty string "".
+11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like "+1-555-123-4567", "(555) 123-4567", "555-123-4567", "555.123.4567", "+44 20 1234 5678", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: "+1-555-123-4567, 555-987-6543, ..." If you find even one phone, include it. If you find none, use empty string "".
 
-12. ids - Any ID numbers, reference numbers, or identifiers found (comma-separated if multiple)
+12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)
 
-13. pricing - Any pricing information, costs, or financial terms mentioned
+13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned
 
 Document text:
 ${documentText}
@@ -232,29 +179,98 @@ Return only valid JSON in this format (use empty string "" for fields not found)
       sanitized[field] = typeof value === 'string' ? value.trim() : '';
     }
 
-    // Validate and match Business Unit to allowed values
-    if (sanitized.bu) {
+    // MANDATORY FIELDS - Ensure they are never empty
+    // Title: If empty, use a default or file name
+    if (!sanitized.title || sanitized.title === '') {
+      sanitized.title = 'Untitled Document';
+      console.warn('⚠️ Title was empty, using default');
+    }
+
+    // DocumentType: If empty, infer from context or use default
+    if (!sanitized.documentType || sanitized.documentType === '') {
+      sanitized.documentType = 'Document';
+      console.warn('⚠️ DocumentType was empty, using default');
+    }
+
+    // Business Unit: Must always have a value - try to match or use first allowed value as fallback
+    if (!sanitized.bu || sanitized.bu === '') {
+      // Try to infer from other fields or use a default
+      sanitized.bu = ALLOWED_BUSINESS_UNITS[0]; // Use first as fallback
+      console.warn('⚠️ Business Unit was empty, using fallback:', sanitized.bu);
+    } else {
       const matchedBU = findBestMatch(sanitized.bu, ALLOWED_BUSINESS_UNITS);
-      sanitized.bu = matchedBU;
+      if (matchedBU) {
+        sanitized.bu = matchedBU;
+      } else {
+        // If no match found, use first allowed value
+        sanitized.bu = ALLOWED_BUSINESS_UNITS[0];
+        console.warn('⚠️ Business Unit did not match any allowed value, using fallback');
+      }
     }
 
-    // Validate and match Department to allowed values
-    if (sanitized.department) {
+    // Department: Must always have a value - try to match or use first allowed value as fallback
+    if (!sanitized.department || sanitized.department === '') {
+      sanitized.department = ALLOWED_DEPARTMENTS[0]; // Use first as fallback
+      console.warn('⚠️ Department was empty, using fallback:', sanitized.department);
+    } else {
       const matchedDept = findBestMatch(sanitized.department, ALLOWED_DEPARTMENTS);
-      sanitized.department = matchedDept;
+      if (matchedDept) {
+        sanitized.department = matchedDept;
+      } else {
+        // If no match found, use first allowed value
+        sanitized.department = ALLOWED_DEPARTMENTS[0];
+        console.warn('⚠️ Department did not match any allowed value, using fallback');
+      }
     }
 
-    // Ensure region and client are empty if not found (not just whitespace)
-    if (sanitized.region && sanitized.region.toLowerCase() === 'not found' || 
-        sanitized.region && sanitized.region.toLowerCase() === 'n/a' ||
-        sanitized.region && sanitized.region.toLowerCase() === 'none') {
+    // Abstract: Must always have a value
+    if (!sanitized.abstract || sanitized.abstract === '') {
+      sanitized.abstract = 'Document content summary not available.';
+      console.warn('⚠️ Abstract was empty, using default');
+    }
+
+    // Ensure region is empty if not found (not just whitespace)
+    if (sanitized.region && (sanitized.region.toLowerCase() === 'not found' || 
+        sanitized.region.toLowerCase() === 'n/a' ||
+        sanitized.region.toLowerCase() === 'none' ||
+        sanitized.region.toLowerCase() === 'unknown')) {
       sanitized.region = '';
     }
 
-    if (sanitized.client && sanitized.client.toLowerCase() === 'not found' ||
-        sanitized.client && sanitized.client.toLowerCase() === 'n/a' ||
-        sanitized.client && sanitized.client.toLowerCase() === 'none') {
-      sanitized.client = '';
+    // Client field validation - should only contain company names
+    // Remove if it contains person names, generic terms, or invalid content
+    if (sanitized.client) {
+      const clientLower = sanitized.client.toLowerCase();
+      
+      // Remove invalid values
+      if (clientLower === 'not found' ||
+          clientLower === 'n/a' ||
+          clientLower === 'none' ||
+          clientLower === 'unknown' ||
+          clientLower === 'the client' ||
+          clientLower === 'our client' ||
+          clientLower === 'client' ||
+          clientLower.indexOf('internal') !== -1 ||
+          clientLower.indexOf('team') !== -1) {
+        sanitized.client = '';
+        console.log('⚠️ Client field contained invalid value, cleared');
+      } else {
+        // Check if it looks like a person's name (first name + last name pattern without company indicators)
+        // Company indicators: Inc, LLC, Corp, Ltd, Company, Co, etc.
+        const companyIndicators = ['inc', 'llc', 'corp', 'ltd', 'company', 'co', 'group', 'enterprises', 'solutions', 'systems', 'technologies', 'consulting', 'services'];
+        const hasCompanyIndicator = companyIndicators.some(indicator => clientLower.indexOf(indicator) !== -1);
+        
+        // If it's just a name without company indicators and doesn't look like a company, clear it
+        if (!hasCompanyIndicator && sanitized.client.split(' ').length <= 3) {
+          // Might be a person's name - check if it's clearly a company by other means
+          // If it's just 1-2 words without company indicators, it's likely a person's name
+          const words = sanitized.client.trim().split(/\s+/);
+          if (words.length <= 2 && !hasCompanyIndicator) {
+            sanitized.client = '';
+            console.log('⚠️ Client field appears to be a person name, not a company, cleared');
+          }
+        }
+      }
     }
 
     // Mask emails and phones
@@ -275,6 +291,284 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     }
 
     return sanitized;
+  }
+
+  /**
+   * Split document text into chunks of specified size
+   */
+  private splitIntoChunks(text: string, chunkSize: number): string[] {
+    const chunks: string[] = [];
+    let start = 0;
+
+    while (start < text.length) {
+      let end = start + chunkSize;
+      
+      // If not the last chunk, try to break at a word boundary
+      if (end < text.length) {
+        // Look for a good break point (newline, period, space)
+        const breakPoint = Math.max(
+          text.lastIndexOf('\n\n', end),
+          text.lastIndexOf('\n', end),
+          text.lastIndexOf('. ', end),
+          text.lastIndexOf(' ', end)
+        );
+        
+        if (breakPoint > start + chunkSize * 0.8) {
+          // Only use break point if it's not too early (at least 80% of chunk size)
+          end = breakPoint + 1;
+        }
+      }
+      
+      chunks.push(text.substring(start, end));
+      start = end;
+    }
+
+    return chunks;
+  }
+
+  /**
+   * Process a single chunk of text
+   */
+  private async processSingleChunk(chunkText: string): Promise<MetadataExtraction> {
+    console.log('=== PROCESSING SINGLE CHUNK ===');
+    console.log('Chunk length:', chunkText.length, 'characters');
+
+    const prompt = this.buildExtractionPrompt(chunkText);
+
+    const response = await fetch(
+      `${this.config.endpoint}/openai/deployments/${this.config.deploymentName}/chat/completions?api-version=${this.config.apiVersion}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': this.config.apiKey
+        },
+        body: JSON.stringify({
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          temperature: 0.8,
+          max_tokens: 2000
+        })
+      }
+    );
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      let errorMessage = `Azure OpenAI API error: ${response.status}`;
+      
+      // Handle CORS errors
+      if (response.status === 0 || response.statusText === '') {
+        errorMessage = 'CORS error: Unable to connect to Azure OpenAI. The API may need CORS configuration or a backend proxy.';
+      } else {
+        try {
+          const errorJson = JSON.parse(errorText);
+          errorMessage = errorJson.error?.message || errorText || errorMessage;
+        } catch {
+          errorMessage = errorText || errorMessage;
+        }
+      }
+      
+      throw new Error(errorMessage);
+    }
+
+    const data = await response.json();
+    const content = data.choices?.[0]?.message?.content;
+
+    if (!content) {
+      throw new Error('No content returned from Azure OpenAI');
+    }
+
+    console.log('=== AI RESPONSE (RAW) ===');
+    console.log(content);
+
+    // Parse JSON response (remove markdown code blocks if present)
+    const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
+    const jsonText = jsonMatch[1] || content;
+    
+    console.log('=== PARSED JSON ===');
+    console.log(jsonText);
+    
+    const extracted = JSON.parse(jsonText.trim()) as MetadataExtraction;
+    
+    console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
+    console.log(JSON.stringify(extracted, null, 2));
+    console.log('Emails extracted:', extracted.emails);
+    console.log('Phones extracted:', extracted.phones);
+    
+    const sanitized = this.sanitizeMetadata(extracted);
+    
+    console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
+    console.log(JSON.stringify(sanitized, null, 2));
+    console.log('Emails (masked):', sanitized.emails);
+    console.log('Phones (masked):', sanitized.phones);
+    
+    return sanitized;
+  }
+
+  /**
+   * Process multiple chunks and merge results
+   */
+  private async processChunks(chunks: string[]): Promise<MetadataExtraction> {
+    console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
+    
+    const chunkResults: MetadataExtraction[] = [];
+    
+    // Process chunks sequentially to avoid rate limits
+    for (let i = 0; i < chunks.length; i++) {
+      console.log(`\n=== PROCESSING CHUNK ${i + 1}/${chunks.length} ===`);
+      try {
+        const result = await this.processSingleChunk(chunks[i]);
+        chunkResults.push(result);
+        console.log(`✓ Chunk ${i + 1} processed successfully`);
+      } catch (error) {
+        console.error(`✗ Error processing chunk ${i + 1}:`, error);
+        // Continue with other chunks even if one fails
+        chunkResults.push({} as MetadataExtraction);
+      }
+    }
+
+    console.log('\n=== MERGING CHUNK RESULTS ===');
+    const merged = this.mergeChunkResults(chunkResults);
+    
+    console.log('=== MERGED RESULT (BEFORE FINAL SANITIZATION) ===');
+    console.log(JSON.stringify(merged, null, 2));
+    
+    // Final sanitization (validation, masking, etc.)
+    const finalResult = this.sanitizeMetadata(merged);
+    
+    console.log('=== FINAL MERGED RESULT ===');
+    console.log(JSON.stringify(finalResult, null, 2));
+    
+    return finalResult;
+  }
+
+  /**
+   * Merge results from multiple chunks intelligently
+   */
+  private mergeChunkResults(results: MetadataExtraction[]): MetadataExtraction {
+    const merged: MetadataExtraction = {
+      title: '',
+      documentType: '',
+      bu: '',
+      department: '',
+      region: '',
+      client: '',
+      abstract: '',
+      emails: '',
+      phones: '',
+      ids: '',
+      pricing: ''
+    };
+
+    // Collect all emails and phones (combine from all chunks)
+    const allEmails: string[] = [];
+    const allPhones: string[] = [];
+    const allIds: string[] = [];
+    const allPricing: string[] = [];
+
+    for (let i = 0; i < results.length; i++) {
+      const result = results[i];
+      
+      // Title: Take from first chunk (most likely to be at the start)
+      if (!merged.title && result.title) {
+        merged.title = result.title;
+      }
+
+      // DocumentType: Take from first chunk
+      if (!merged.documentType && result.documentType) {
+        merged.documentType = result.documentType;
+      }
+
+      // BU: Take first non-empty match
+      if (!merged.bu && result.bu) {
+        merged.bu = result.bu;
+      }
+
+      // Department: Take first non-empty match
+      if (!merged.department && result.department) {
+        merged.department = result.department;
+      }
+
+      // Region: Take first non-empty match
+      if (!merged.region && result.region) {
+        merged.region = result.region;
+      }
+
+      // Client: Take first non-empty match
+      if (!merged.client && result.client) {
+        merged.client = result.client;
+      }
+
+      // Abstract: Take the longest one (most comprehensive)
+      if (result.abstract && result.abstract.length > (merged.abstract?.length || 0)) {
+        merged.abstract = result.abstract;
+      }
+
+      // Emails: Collect all unique emails
+      if (result.emails) {
+        const emails = result.emails.split(/[,;\n]/).map(e => e.trim()).filter(e => e.length > 0);
+        for (let j = 0; j < emails.length; j++) {
+          const email = emails[j];
+          // Add if not already in the list (case-insensitive)
+          if (email && allEmails.indexOf(email.toLowerCase()) === -1) {
+            allEmails.push(email.toLowerCase());
+            // Keep original case from first occurrence
+            const originalEmail = emails[j];
+            if (allEmails.indexOf(originalEmail.toLowerCase()) === -1) {
+              allEmails[allEmails.length - 1] = originalEmail;
+            }
+          }
+        }
+      }
+
+      // Phones: Collect all unique phones
+      if (result.phones) {
+        const phones = result.phones.split(/[,;\n]/).map(p => p.trim()).filter(p => p.length > 0);
+        for (let j = 0; j < phones.length; j++) {
+          const phone = phones[j];
+          // Add if not already in the list
+          if (phone && allPhones.indexOf(phone) === -1) {
+            allPhones.push(phone);
+          }
+        }
+      }
+
+      // IDs: Collect all
+      if (result.ids) {
+        const ids = result.ids.split(/[,;\n]/).map(id => id.trim()).filter(id => id.length > 0);
+        for (let j = 0; j < ids.length; j++) {
+          const id = ids[j];
+          if (id && allIds.indexOf(id) === -1) {
+            allIds.push(id);
+          }
+        }
+      }
+
+      // Pricing: Collect all (combine with newlines)
+      if (result.pricing) {
+        allPricing.push(result.pricing);
+      }
+    }
+
+    // Join collected values
+    merged.emails = allEmails.join(', ');
+    merged.phones = allPhones.join(', ');
+    merged.ids = allIds.join(', ');
+    merged.pricing = allPricing.join('\n\n');
+
+    console.log('Merged emails count:', allEmails.length);
+    console.log('Merged phones count:', allPhones.length);
+    console.log('Merged IDs count:', allIds.length);
+
+    return merged;
   }
 }
 
