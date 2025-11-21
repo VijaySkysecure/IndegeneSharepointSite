@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./FileUpload.module.css");
 const styles = {
   overlay: 'overlay_c09eba7f',
@@ -23,3 +23,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

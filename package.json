@@ -2,9 +2,8 @@
   "name": "sharepoint-migration-site",
   "version": "1.0.0",
   "private": true,
-  "main": "lib/index.js",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16.0.0 <17.0.0"
   },
   "scripts": {
     "build": "gulp bundle",
@@ -12,21 +11,21 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@microsoft/sp-core-library": "1.21.1",
-    "@microsoft/sp-lodash-subset": "1.21.1",
-    "@microsoft/sp-office-ui-fabric-core": "1.21.1",
-    "@microsoft/sp-property-pane": "1.21.1",
-    "@microsoft/sp-webpart-base": "1.21.1",
+    "@microsoft/sp-core-library": "1.17.4",
+    "@microsoft/sp-lodash-subset": "1.17.4",
+    "@microsoft/sp-office-ui-fabric-core": "1.17.4",
+    "@microsoft/sp-property-pane": "1.17.4",
+    "@microsoft/sp-webpart-base": "1.17.4",
     "mammoth": "^1.11.0",
-    "pdfjs-dist": "^5.4.394",
+    "pdfjs-dist": "^2.10.377",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-4.5": "0.4.0",
-    "@microsoft/sp-build-web": "1.21.1",
-    "@microsoft/sp-module-interfaces": "1.21.1",
-    "@types/es6-collections": "0.5.37",
+    "@microsoft/sp-build-web": "1.17.4",
+    "@microsoft/sp-module-interfaces": "1.17.4",
+    "@microsoft/sp-tslint-rules": "1.17.4",
     "@types/react": "17.0.8",
     "@types/react-dom": "17.0.5",
     "@types/webpack-env": "1.15.2",

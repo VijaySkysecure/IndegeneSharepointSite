@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./CommunityPage.module.css");
 const styles = {
   communityPage: 'communityPage_01d0c138',
@@ -9,3 +9,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./Footer.module.css");
 const styles = {
   footer: 'footer_49b3a56d',
@@ -9,3 +9,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

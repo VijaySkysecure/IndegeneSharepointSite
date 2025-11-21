@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./BUNavigation.module.css");
 const styles = {
   buNavigation: 'buNavigation_62aa4de0',
@@ -9,3 +9,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./BUContentArea.module.css");
 const styles = {
   contentArea: 'contentArea_bb56a150',
@@ -7,3 +7,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

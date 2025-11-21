@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./ClientTestimonialsPage.module.css");
 const styles = {
   testimonialsPage: 'testimonialsPage_6a9a225d',
@@ -12,3 +12,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

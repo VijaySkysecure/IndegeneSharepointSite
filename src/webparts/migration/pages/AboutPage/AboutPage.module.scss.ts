@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./AboutPage.module.css");
 const styles = {
   aboutPage: 'aboutPage_afa5522c',
@@ -10,3 +10,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

@@ -52,8 +52,9 @@ export class DocumentParser {
       console.log('File name:', file.name);
       console.log('File size:', file.size, 'bytes');
       
-      // Import PDF.js
-      const pdfjsLib = await import('pdfjs-dist');
+      // Import PDF.js - use the legacy ES5-compatible build to avoid modern
+      // syntax (optional chaining) that older webpack configurations can't parse.
+      const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf');
       console.log('PDF.js library loaded, version:', pdfjsLib.version);
       
       // For SharePoint Framework with strict CSP, we need to work around restrictions
@@ -93,12 +94,14 @@ export class DocumentParser {
       
       console.log('Reading file as ArrayBuffer...');
       const arrayBuffer = await file.arrayBuffer();
+      // Convert ArrayBuffer to Uint8Array for libraries that expect TypedArray
+      const uint8ArrayForPdf = new Uint8Array(arrayBuffer);
       console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
       
       console.log('Loading PDF document...');
       // Disable worker explicitly to avoid CSP issues in SharePoint
       const pdf = await pdfjsLib.getDocument({ 
-        data: arrayBuffer,
+        data: uint8ArrayForPdf,
         verbosity: 0, // Reduce console noise
         useWorkerFetch: false,
         isEvalSupported: false,
@@ -186,8 +189,11 @@ export class DocumentParser {
     try {
       const mammoth = await import('mammoth');
       const arrayBuffer = await file.arrayBuffer();
-      
-      const result = await mammoth.extractRawText({ arrayBuffer });
+      // Convert ArrayBuffer to a TypedArray (Uint8Array) because mammoth's
+      // TypeScript definitions accept `TypedArray` but not raw `ArrayBuffer`.
+      const uint8Array = new Uint8Array(arrayBuffer);
+
+      const result = await mammoth.extractRawText({ arrayBuffer: uint8Array });
       
       return {
         text: result.value.trim(),
