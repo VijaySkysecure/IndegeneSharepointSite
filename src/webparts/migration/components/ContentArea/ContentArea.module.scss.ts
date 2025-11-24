@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./ContentArea.module.css");
 const styles = {
   contentArea: 'contentArea_e198527e',
@@ -10,3 +10,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

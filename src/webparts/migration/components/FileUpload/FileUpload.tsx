@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { IFileUploadProps } from './IFileUploadProps';
+import { WebPartContext } from '@microsoft/sp-webpart-base';
+import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import styles from './FileUpload.module.scss';
 import { MetadataForm } from '../MetadataForm/MetadataForm';
 import { DocumentParser } from '../../services/DocumentParser';
@@ -84,6 +86,20 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Extracted text length:', parseResult.text.length, 'characters');
       console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
 
+      // Create audit log entry for this uploaded file (Action = Draft)
+      try {
+        await createAuditLogItem(file);
+      } catch (auditErr) {
+        console.error('Failed to create audit log item:', auditErr);
+      }
+
+      try {
+        await updateKMArtifactsMetadata(file);
+      } catch (e) {
+        console.error("Error creating KMArtifacts entry:", e);
+      }
+
+
       // Step 2: Extract metadata using Azure OpenAI
       console.log('Step 2: Extracting metadata with AI...');
       const metadata = await openAIService.current.extractMetadata(parseResult.text);
@@ -109,6 +125,181 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       setIsProcessing(false);
     }
   };
+
+  /**
+   * Create an Audit Log item in SharePoint list.
+   * Uses the provided list GUID and the internal field names seen in the URLs.
+   */
+  const createAuditLogItem = async (file: File): Promise<number> => {
+    // GUID of the Audit Log list (from the URLs provided by the user)
+    const LIST_GUID = '3635DC85-275A-425E-B71C-75293EE800D8';
+
+    if (!props.context) {
+      throw new Error('SPFx context not provided to FileUpload component.');
+    }
+
+    const webUrl = props.context.pageContext.web.absoluteUrl;
+
+    // Get list entity type name (required for create payload)
+    const listInfoResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/lists(guid'${LIST_GUID}')?$select=ListItemEntityTypeFullName`,
+      SPHttpClient.configurations.v1
+    );
+
+    if (!listInfoResp.ok) {
+      const txt = await listInfoResp.text();
+      throw new Error(`Failed to read list info: ${listInfoResp.status} ${txt}`);
+    }
+
+    const listInfo = await listInfoResp.json();
+    const entityType = listInfo.ListItemEntityTypeFullName;
+
+    // Get current user id
+    const currentUserResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/currentuser`,
+      SPHttpClient.configurations.v1
+    );
+    if (!currentUserResp.ok) {
+      const txt = await currentUserResp.text();
+      throw new Error(`Failed to get current user: ${currentUserResp.status} ${txt}`);
+    }
+    const currentUser = await currentUserResp.json();
+    const userId = currentUser.Id;
+
+    // Build payload. Use the internal field names shown in the URLs.
+    // Many lists have a required `Title` field; include it to avoid create failures.
+    // When using 'odata=nometadata' we must NOT include __metadata in the payload.
+    const body: any = {
+      Title: file.name,
+      FileName: file.name,
+      Action: 'Draft',
+      // For a person field, set the internal field with 'Id' suffix
+      UserId: userId,
+      Performed_x0020_ById: userId,
+      TimeStamp: new Date().toISOString()
+    };
+
+    console.log('Creating audit log item with payload:', body, 'entityType:', entityType);
+
+    const postResp = await props.context.spHttpClient.post(
+      `${webUrl}/_api/web/lists(guid'${LIST_GUID}')/items`,
+      SPHttpClient.configurations.v1,
+      {
+        headers: {
+          'Accept': 'application/json;odata=nometadata',
+          'Content-Type': 'application/json;odata=nometadata'
+        },
+        body: JSON.stringify(body)
+      }
+    );
+
+    const respText = await postResp.text();
+    if (!postResp.ok) {
+      console.error('Create audit item failed. Status:', postResp.status, 'Response:', respText);
+      throw new Error(`Failed to create audit item: ${postResp.status} ${respText}`);
+    }
+
+    // If we get here, the server created the item. Try parsing JSON if returned.
+    let created: any = null;
+    try {
+      created = respText ? JSON.parse(respText) : null;
+    } catch (e) {
+      // If the response isn't JSON (depending on OData settings), log raw text
+      console.warn('Could not parse create response as JSON; raw response:', respText);
+    }
+
+    const createdId = created && created.Id ? created.Id : null;
+    console.log('Audit log item created. ID (if returned):', createdId, 'rawResponse:', respText);
+    return createdId;
+  };
+
+  /**
+   * Create item in KMArtifacts folder inside Document Library
+   */
+  const updateKMArtifactsMetadata = async (file: File) => {
+    const LIBRARY_NAME = "KMArtifacts";
+    const webUrl = props.context.pageContext.web.absoluteUrl;
+
+    // 1️⃣ Upload file
+    const uploadResp = await props.context.spHttpClient.post(
+      `${webUrl}/_api/web/GetFolderByServerRelativeUrl('${LIBRARY_NAME}')/Files/add(url='${file.name}',overwrite=true)`,
+      SPHttpClient.configurations.v1,
+      { body: file }
+    );
+    const uploadJson = await uploadResp.json();
+    const serverRelativeUrl = uploadJson.ServerRelativeUrl;
+
+    // 2️⃣ Wait briefly to ensure ListItem exists
+    await new Promise(r => setTimeout(r, 500));
+
+    // 3️⃣ Get ListItem ID
+    const listItemResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/GetFileByServerRelativeUrl('${serverRelativeUrl}')/ListItemAllFields?$select=Id`,
+      SPHttpClient.configurations.v1
+    );
+    const listItemJson = await listItemResp.json();
+    const itemId = listItemJson.Id;
+
+    // 4️⃣ Get entity type
+    const listInfoResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`,
+      SPHttpClient.configurations.v1
+    );
+    const listInfo = await listInfoResp.json();
+    const entityType = listInfo.ListItemEntityTypeFullName;
+
+    // 5️⃣ Get current user ID
+    const currentUserResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/currentuser`,
+      SPHttpClient.configurations.v1
+    );
+    const currentUser = await currentUserResp.json();
+    const userId = currentUser.Id;
+
+    // 6️⃣ Metadata payload
+    const metadataBody = {
+      Status: "Draft",
+      TitleName: "-",
+      Abstract: "-",
+      BusinessUnit: "-",
+      Department: "-",
+      Region: "-",
+      Client: "-",
+      DocumentType: "-",
+      DiseaseArea: "-",
+      TherapyArea: "-",
+      ComplianceFlag: false,
+      Sanitized: false,
+      PerformedById: userId,
+      TimeStamp: new Date().toISOString()
+    };
+
+
+    // 7️⃣ Update metadata using fetch + MERGE + odata=nometadata
+    const updateResp = await props.context.spHttpClient.fetch(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
+      SPHttpClient.configurations.v1,
+      {
+        method: "POST",
+        headers: {
+          "Accept": "application/json;odata=nometadata",
+          "Content-Type": "application/json;odata=nometadata",
+          "IF-MATCH": "*",
+          "X-HTTP-Method": "MERGE"
+        },
+        body: JSON.stringify(metadataBody) // ✅ NO __metadata
+      }
+    );
+
+    if (!updateResp.ok) {
+      const txt = await updateResp.text();
+      throw new Error("Metadata update failed: " + txt);
+    }
+
+    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+    return itemId;
+  };
+
 
   const onDrop = (e: React.DragEvent) => {
     e.preventDefault();
