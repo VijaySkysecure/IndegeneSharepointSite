@@ -3116,182 +3116,36 @@ var DocumentParser = /** @class */ (function () {
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
                         _c.label = 1;
                     case 1:
-                        _c.trys.push([1, 12, , 13]);
+                        _c.trys.push([1, 11, , 12]);
                         _b = fileExtension;
                         switch (_b) {
                             case 'pdf': return [3 /*break*/, 2];
-                            case 'docx': return [3 /*break*/, 4];
-                            case 'doc': return [3 /*break*/, 6];
-                            case 'pptx': return [3 /*break*/, 7];
-                            case 'ppt': return [3 /*break*/, 7];
-                            case 'xlsx': return [3 /*break*/, 8];
-                            case 'xls': return [3 /*break*/, 8];
-                            case 'mpp': return [3 /*break*/, 9];
+                            case 'docx': return [3 /*break*/, 3];
+                            case 'doc': return [3 /*break*/, 5];
+                            case 'pptx': return [3 /*break*/, 6];
+                            case 'ppt': return [3 /*break*/, 6];
+                            case 'xlsx': return [3 /*break*/, 7];
+                            case 'xls': return [3 /*break*/, 7];
+                            case 'mpp': return [3 /*break*/, 8];
                         }
-                        return [3 /*break*/, 10];
-                    case 2: return [4 /*yield*/, this.parsePDF(file)];
-                    case 3: return [2 /*return*/, _c.sent()];
-                    case 4: return [4 /*yield*/, this.parseWord(file)];
-                    case 5: return [2 /*return*/, _c.sent()];
-                    case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
-                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 11: return [3 /*break*/, 13];
-                    case 12:
+                        return [3 /*break*/, 9];
+                    case 2: 
+                    // return await this.parsePDF(file);
+                    return [2 /*return*/, { text: '', success: false, error: 'PDF parsing is currently disabled. Please convert to Word format.' }];
+                    case 3: return [4 /*yield*/, this.parseWord(file)];
+                    case 4: return [2 /*return*/, _c.sent()];
+                    case 5: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
+                    case 6: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 7: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 8: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 10: return [3 /*break*/, 12];
+                    case 11:
                         error_1 = _c.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
-                            }];
-                    case 13: return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * Extract text from PDF file
-     */
-    DocumentParser.parsePDF = function (file) {
-        return __awaiter(this, void 0, void 0, function () {
-            var pdfjsLib, scripts, basePath, i, src, workerPath, minimalWorker, arrayBuffer, pdf, fullText, numPages, pageNum, page, textContent, pageText, pageError_1, extractedText, error_2, errorMessage, msg;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        _a.trys.push([0, 11, , 12]);
-                        console.log('=== STARTING PDF PARSING ===');
-                        console.log('File name:', file.name);
-                        console.log('File size:', file.size, 'bytes');
-                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_pdfjs-dist_build_pdf_mjs").then(__webpack_require__.bind(__webpack_require__, /*! pdfjs-dist */ 1100))];
-                    case 1:
-                        pdfjsLib = _a.sent();
-                        console.log('PDF.js library loaded, version:', pdfjsLib.version);
-                        // For SharePoint Framework with strict CSP, we need to work around restrictions
-                        // Webpack bundles the worker as a chunk file that we can reference
-                        // The CSP is in "report-only" mode, so violations are logged but execution continues
-                        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
-                            try {
-                                scripts = document.getElementsByTagName('script');
-                                basePath = '';
-                                for (i = 0; i < scripts.length; i++) {
-                                    src = scripts[i].src;
-                                    if (src && src.indexOf('migration-web-part') !== -1) {
-                                        basePath = src.substring(0, src.lastIndexOf('/'));
-                                        break;
-                                    }
-                                }
-                                if (basePath) {
-                                    workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
-                                    pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
-                                    console.log('PDF.js worker path set to bundled chunk:', workerPath);
-                                }
-                                else {
-                                    // Fallback: Try relative path
-                                    pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
-                                    console.log('PDF.js worker path set to relative path (fallback)');
-                                }
-                            }
-                            catch (pathError) {
-                                console.warn('Could not set worker path, using data URL fallback:', pathError);
-                                minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
-                                pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
-                                console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
-                            }
-                        }
-                        console.log('Reading file as ArrayBuffer...');
-                        return [4 /*yield*/, file.arrayBuffer()];
-                    case 2:
-                        arrayBuffer = _a.sent();
-                        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
-                        console.log('Loading PDF document...');
-                        return [4 /*yield*/, pdfjsLib.getDocument({
-                                // pdfjs expects a typed array (e.g. Uint8Array) rather than a raw ArrayBuffer
-                                data: new Uint8Array(arrayBuffer),
-                                verbosity: 0,
-                                useWorkerFetch: false,
-                                isEvalSupported: false,
-                                useSystemFonts: true
-                            }).promise];
-                    case 3:
-                        pdf = _a.sent();
-                        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
-                        fullText = '';
-                        numPages = pdf.numPages;
-                        pageNum = 1;
-                        _a.label = 4;
-                    case 4:
-                        if (!(pageNum <= numPages)) return [3 /*break*/, 10];
-                        console.log("Extracting text from page ".concat(pageNum, "/").concat(numPages, "..."));
-                        _a.label = 5;
-                    case 5:
-                        _a.trys.push([5, 8, , 9]);
-                        return [4 /*yield*/, pdf.getPage(pageNum)];
-                    case 6:
-                        page = _a.sent();
-                        return [4 /*yield*/, page.getTextContent()];
-                    case 7:
-                        textContent = _a.sent();
-                        pageText = textContent.items
-                            .map(function (item) {
-                            // Handle both TextItem and TextMarkedContent types
-                            if ('str' in item && item.str) {
-                                return item.str;
-                            }
-                            return '';
-                        })
-                            .join(' ');
-                        fullText += pageText + '\n';
-                        console.log("Page ".concat(pageNum, " extracted: ").concat(pageText.length, " characters"));
-                        return [3 /*break*/, 9];
-                    case 8:
-                        pageError_1 = _a.sent();
-                        console.error("Error extracting page ".concat(pageNum, ":"), pageError_1);
-                        return [3 /*break*/, 9];
-                    case 9:
-                        pageNum++;
-                        return [3 /*break*/, 4];
-                    case 10:
-                        extractedText = fullText.trim();
-                        console.log('=== PDF PARSING COMPLETE ===');
-                        console.log('Total text extracted:', extractedText.length, 'characters');
-                        if (extractedText.length === 0) {
-                            console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
-                            return [2 /*return*/, {
-                                    text: '',
-                                    success: false,
-                                    error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
-                                }];
-                        }
-                        return [2 /*return*/, {
-                                text: extractedText,
-                                success: true
-                            }];
-                    case 11:
-                        error_2 = _a.sent();
-                        console.error('=== PDF PARSING ERROR ===');
-                        console.error('Error details:', error_2);
-                        console.error('Error type:', typeof error_2);
-                        console.error('Error message:', error_2 instanceof Error ? error_2.message : String(error_2));
-                        errorMessage = 'Failed to parse PDF';
-                        if (error_2 instanceof Error) {
-                            errorMessage = error_2.message;
-                            msg = error_2.message.toLowerCase();
-                            if (msg.indexOf('worker') !== -1) {
-                                errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
-                            }
-                            else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
-                                errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
-                            }
-                            else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
-                                errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
-                            }
-                        }
-                        return [2 /*return*/, {
-                                text: '',
-                                success: false,
-                                error: errorMessage
                             }];
                     case 12: return [2 /*return*/];
                 }
@@ -3299,11 +3153,148 @@ var DocumentParser = /** @class */ (function () {
         });
     };
     /**
+     * Extract text from PDF file
+     * DISABLED: PDF parsing is currently disabled due to missing pdfjs-dist dependency
+     */
+    /* private static async parsePDF(file: File): Promise<DocumentParseResult> {
+      try {
+        console.log('=== STARTING PDF PARSING ===');
+        console.log('File name:', file.name);
+        console.log('File size:', file.size, 'bytes');
+        
+        // Import PDF.js
+        const pdfjsLib = await import('pdfjs-dist');
+        console.log('PDF.js library loaded, version:', pdfjsLib.version);
+        
+        // For SharePoint Framework with strict CSP, we need to work around restrictions
+        // Webpack bundles the worker as a chunk file that we can reference
+        // The CSP is in "report-only" mode, so violations are logged but execution continues
+        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
+          try {
+            // Find the base path where the webpart bundle is loaded from
+            const scripts = document.getElementsByTagName('script');
+            let basePath = '';
+            for (let i = 0; i < scripts.length; i++) {
+              const src = scripts[i].src;
+              if (src && src.indexOf('migration-web-part') !== -1) {
+                basePath = src.substring(0, src.lastIndexOf('/'));
+                break;
+              }
+            }
+            
+            if (basePath) {
+              // Webpack bundles the worker as: chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js
+              const workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+              pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
+              console.log('PDF.js worker path set to bundled chunk:', workerPath);
+            } else {
+              // Fallback: Try relative path
+              pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+              console.log('PDF.js worker path set to relative path (fallback)');
+            }
+          } catch (pathError) {
+            console.warn('Could not set worker path, using data URL fallback:', pathError);
+            // Fallback: Use data URL - CSP is report-only so execution will continue despite warning
+            const minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
+            console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
+          }
+        }
+        
+        console.log('Reading file as ArrayBuffer...');
+        const arrayBuffer = await file.arrayBuffer();
+        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
+        
+        console.log('Loading PDF document...');
+        // Disable worker explicitly to avoid CSP issues in SharePoint
+        const pdf = await pdfjsLib.getDocument({
+          // pdfjs expects a typed array (e.g. Uint8Array) rather than a raw ArrayBuffer
+          data: new Uint8Array(arrayBuffer),
+          verbosity: 0, // Reduce console noise
+          useWorkerFetch: false,
+          isEvalSupported: false,
+          useSystemFonts: true
+        }).promise;
+        
+        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
+        
+        let fullText = '';
+        const numPages = pdf.numPages;
+        
+        // Extract text from each page
+        for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+          console.log(`Extracting text from page ${pageNum}/${numPages}...`);
+          try {
+            const page = await pdf.getPage(pageNum);
+            const textContent = await page.getTextContent();
+            const pageText = textContent.items
+              .map((item) => {
+                // Handle both TextItem and TextMarkedContent types
+                if ('str' in item && item.str) {
+                  return item.str;
+                }
+                return '';
+              })
+              .join(' ');
+            fullText += pageText + '\n';
+            console.log(`Page ${pageNum} extracted: ${pageText.length} characters`);
+          } catch (pageError) {
+            console.error(`Error extracting page ${pageNum}:`, pageError);
+            // Continue with other pages even if one fails
+          }
+        }
+        
+        const extractedText = fullText.trim();
+        console.log('=== PDF PARSING COMPLETE ===');
+        console.log('Total text extracted:', extractedText.length, 'characters');
+        
+        if (extractedText.length === 0) {
+          console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
+          return {
+            text: '',
+            success: false,
+            error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
+          };
+        }
+        
+        return {
+          text: extractedText,
+          success: true
+        };
+      } catch (error) {
+        console.error('=== PDF PARSING ERROR ===');
+        console.error('Error details:', error);
+        console.error('Error type:', typeof error);
+        console.error('Error message:', error instanceof Error ? error.message : String(error));
+        
+        let errorMessage = 'Failed to parse PDF';
+        if (error instanceof Error) {
+          errorMessage = error.message;
+          
+          // Provide more helpful error messages (using indexOf for ES5 compatibility)
+          const msg = error.message.toLowerCase();
+          if (msg.indexOf('worker') !== -1) {
+            errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
+          } else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
+            errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
+          } else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
+            errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
+          }
+        }
+        
+        return {
+          text: '',
+          success: false,
+          error: errorMessage
+        };
+      }
+    } */
+    /**
      * Extract text from Word (.docx) file
      */
     DocumentParser.parseWord = function (file) {
         return __awaiter(this, void 0, void 0, function () {
-            var mammoth, arrayBuffer, result, error_3;
+            var mammoth, arrayBuffer, result, error_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -3322,11 +3313,11 @@ var DocumentParser = /** @class */ (function () {
                                 success: true
                             }];
                     case 4:
-                        error_3 = _a.sent();
+                        error_2 = _a.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
-                                error: error_3 instanceof Error ? error_3.message : 'Failed to parse Word document'
+                                error: error_2 instanceof Error ? error_2.message : 'Failed to parse Word document'
                             }];
                     case 5: return [2 /*return*/];
                 }

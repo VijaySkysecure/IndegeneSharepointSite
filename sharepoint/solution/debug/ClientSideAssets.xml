@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Client Side Assets" Description="A feature that help deploy client side component assets to SharePoint Online." Id="0d2275bb-b874-48be-bf2c-907ae9fe195d" Version="1.0.0.0" Scope="Web" Hidden="FALSE"></Feature>
+=======
+<?xml version="1.0" encoding="utf-8"?><Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Client Side Assets" Description="A feature that help deploy client side component assets to SharePoint Online." Id="19f1866f-1e8a-4f6b-8e08-40998602ce04" Version="1.0.0.0" Scope="Web" Hidden="FALSE"></Feature>
+>>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537

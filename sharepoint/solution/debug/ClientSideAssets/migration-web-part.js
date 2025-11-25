@@ -1143,7 +1143,7 @@ var FileUpload = function (props) {
         });
     }); };
     var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var parseResult, errorMsg, errorMsg, metadata, error_1, errorMsg;
+        var parseResult, errorMsg, errorMsg, auditErr_1, e_1, metadata, error_1, errorMsg;
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
@@ -1156,7 +1156,7 @@ var FileUpload = function (props) {
                     setProcessingError(null);
                     _b.label = 1;
                 case 1:
-                    _b.trys.push([1, 4, 5, 6]);
+                    _b.trys.push([1, 11, 12, 13]);
                     // Step 1: Parse the document to extract text
                     console.log('Step 1: Parsing document...');
                     return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__.DocumentParser.parseFile(file)];
@@ -1187,17 +1187,39 @@ var FileUpload = function (props) {
                     console.log('File size:', file.size, 'bytes');
                     console.log('Extracted text length:', parseResult.text.length, 'characters');
                     console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
+                    _b.label = 3;
+                case 3:
+                    _b.trys.push([3, 5, , 6]);
+                    return [4 /*yield*/, createAuditLogItem(file)];
+                case 4:
+                    _b.sent();
+                    return [3 /*break*/, 6];
+                case 5:
+                    auditErr_1 = _b.sent();
+                    console.error('Failed to create audit log item:', auditErr_1);
+                    return [3 /*break*/, 6];
+                case 6:
+                    _b.trys.push([6, 8, , 9]);
+                    return [4 /*yield*/, updateKMArtifactsMetadata(file)];
+                case 7:
+                    _b.sent();
+                    return [3 /*break*/, 9];
+                case 8:
+                    e_1 = _b.sent();
+                    console.error("Error creating KMArtifacts entry:", e_1);
+                    return [3 /*break*/, 9];
+                case 9:
                     // Step 2: Extract metadata using Azure OpenAI
                     console.log('Step 2: Extracting metadata with AI...');
                     return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
-                case 3:
+                case 10:
                     metadata = _b.sent();
                     // Step 3: Set the extracted metadata
                     console.log('Step 3: Setting extracted metadata...');
                     setExtractedMetadata(metadata);
                     console.log('=== FILE PROCESSING COMPLETE ===');
-                    return [3 /*break*/, 6];
-                case 4:
+                    return [3 /*break*/, 13];
+                case 11:
                     error_1 = _b.sent();
                     console.error('=== ERROR PROCESSING FILE ===');
                     console.error('Error type:', typeof error_1);
@@ -1208,12 +1230,172 @@ var FileUpload = function (props) {
                         ? error_1.message
                         : 'An error occurred while processing the document. Please fill the form manually.';
                     setProcessingError(errorMsg);
-                    return [3 /*break*/, 6];
-                case 5:
+                    return [3 /*break*/, 13];
+                case 12:
                     console.log('Setting isProcessing to false');
                     setIsProcessing(false);
                     return [7 /*endfinally*/];
-                case 6: return [2 /*return*/];
+                case 13: return [2 /*return*/];
+            }
+        });
+    }); };
+    /**
+     * Create an Audit Log item in SharePoint list.
+     * Uses the provided list GUID and the internal field names seen in the URLs.
+     */
+    var createAuditLogItem = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIST_GUID, webUrl, listInfoResp, txt, listInfo, entityType, currentUserResp, txt, currentUser, userId, body, postResp, respText, created, createdId;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    LIST_GUID = '3635DC85-275A-425E-B71C-75293EE800D8';
+                    if (!props.context) {
+                        throw new Error('SPFx context not provided to FileUpload component.');
+                    }
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists(guid'").concat(LIST_GUID, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 1:
+                    listInfoResp = _a.sent();
+                    if (!!listInfoResp.ok) return [3 /*break*/, 3];
+                    return [4 /*yield*/, listInfoResp.text()];
+                case 2:
+                    txt = _a.sent();
+                    throw new Error("Failed to read list info: ".concat(listInfoResp.status, " ").concat(txt));
+                case 3: return [4 /*yield*/, listInfoResp.json()];
+                case 4:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 5:
+                    currentUserResp = _a.sent();
+                    if (!!currentUserResp.ok) return [3 /*break*/, 7];
+                    return [4 /*yield*/, currentUserResp.text()];
+                case 6:
+                    txt = _a.sent();
+                    throw new Error("Failed to get current user: ".concat(currentUserResp.status, " ").concat(txt));
+                case 7: return [4 /*yield*/, currentUserResp.json()];
+                case 8:
+                    currentUser = _a.sent();
+                    userId = currentUser.Id;
+                    body = {
+                        Title: file.name,
+                        FileName: file.name,
+                        Action: 'Draft',
+                        // For a person field, set the internal field with 'Id' suffix
+                        UserId: userId,
+                        Performed_x0020_ById: userId,
+                        TimeStamp: new Date().toISOString()
+                    };
+                    console.log('Creating audit log item with payload:', body, 'entityType:', entityType);
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists(guid'").concat(LIST_GUID, "')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                'Accept': 'application/json;odata=nometadata',
+                                'Content-Type': 'application/json;odata=nometadata'
+                            },
+                            body: JSON.stringify(body)
+                        })];
+                case 9:
+                    postResp = _a.sent();
+                    return [4 /*yield*/, postResp.text()];
+                case 10:
+                    respText = _a.sent();
+                    if (!postResp.ok) {
+                        console.error('Create audit item failed. Status:', postResp.status, 'Response:', respText);
+                        throw new Error("Failed to create audit item: ".concat(postResp.status, " ").concat(respText));
+                    }
+                    created = null;
+                    try {
+                        created = respText ? JSON.parse(respText) : null;
+                    }
+                    catch (e) {
+                        // If the response isn't JSON (depending on OData settings), log raw text
+                        console.warn('Could not parse create response as JSON; raw response:', respText);
+                    }
+                    createdId = created && created.Id ? created.Id : null;
+                    console.log('Audit log item created. ID (if returned):', createdId, 'rawResponse:', respText);
+                    return [2 /*return*/, createdId];
+            }
+        });
+    }); };
+    /**
+     * Create item in KMArtifacts folder inside Document Library
+     */
+    var updateKMArtifactsMetadata = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, uploadResp, uploadJson, serverRelativeUrl, listItemResp, listItemJson, itemId, listInfoResp, listInfo, entityType, currentUserResp, currentUser, userId, metadataBody, updateResp, txt;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    LIBRARY_NAME = "KMArtifacts";
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/GetFolderByServerRelativeUrl('").concat(LIBRARY_NAME, "')/Files/add(url='").concat(file.name, "',overwrite=true)"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, { body: file })];
+                case 1:
+                    uploadResp = _a.sent();
+                    return [4 /*yield*/, uploadResp.json()];
+                case 2:
+                    uploadJson = _a.sent();
+                    serverRelativeUrl = uploadJson.ServerRelativeUrl;
+                    // 2️⃣ Wait briefly to ensure ListItem exists
+                    return [4 /*yield*/, new Promise(function (r) { return setTimeout(r, 500); })];
+                case 3:
+                    // 2️⃣ Wait briefly to ensure ListItem exists
+                    _a.sent();
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(serverRelativeUrl, "')/ListItemAllFields?$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 4:
+                    listItemResp = _a.sent();
+                    return [4 /*yield*/, listItemResp.json()];
+                case 5:
+                    listItemJson = _a.sent();
+                    itemId = listItemJson.Id;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 6:
+                    listInfoResp = _a.sent();
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 7:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 8:
+                    currentUserResp = _a.sent();
+                    return [4 /*yield*/, currentUserResp.json()];
+                case 9:
+                    currentUser = _a.sent();
+                    userId = currentUser.Id;
+                    metadataBody = {
+                        Status: "Draft",
+                        TitleName: "-",
+                        Abstract: "-",
+                        BusinessUnit: "-",
+                        Department: "-",
+                        Region: "-",
+                        Client: "-",
+                        DocumentType: "-",
+                        DiseaseArea: "-",
+                        TherapyArea: "-",
+                        ComplianceFlag: false,
+                        Sanitized: false,
+                        PerformedById: userId,
+                        TimeStamp: new Date().toISOString()
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.fetch("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            method: "POST",
+                            headers: {
+                                "Accept": "application/json;odata=nometadata",
+                                "Content-Type": "application/json;odata=nometadata",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE"
+                            },
+                            body: JSON.stringify(metadataBody) // ✅ NO __metadata
+                        })];
+                case 10:
+                    updateResp = _a.sent();
+                    if (!!updateResp.ok) return [3 /*break*/, 12];
+                    return [4 /*yield*/, updateResp.text()];
+                case 11:
+                    txt = _a.sent();
+                    throw new Error("Metadata update failed: " + txt);
+                case 12:
+                    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+                    return [2 /*return*/, itemId];
             }
         });
     }); };
@@ -1432,6 +1614,7 @@ var FileUpload = function (props) {
             onFileSelected(e.dataTransfer.files);
         }
     };
+<<<<<<< HEAD
     var onFormSubmit = function (data) { return __awaiter(void 0, void 0, void 0, function () {
         var err_2;
         return __generator(this, function (_a) {
@@ -1466,6 +1649,15 @@ var FileUpload = function (props) {
             }
         });
     }); };
+=======
+    var onFormSubmit = function (data) {
+        // data contains form values from MetadataForm
+        // Here you would typically send `data` + `uploadedFile` to backend
+        console.log('Submitting metadata', data, uploadedFile);
+        // close overlay after submit
+        props.onClose && props.onClose();
+    };
+>>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
@@ -3116,36 +3308,38 @@ var DocumentParser = /** @class */ (function () {
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
                         _c.label = 1;
                     case 1:
-                        _c.trys.push([1, 12, , 13]);
+                        _c.trys.push([1, 11, , 12]);
                         _b = fileExtension;
                         switch (_b) {
                             case 'pdf': return [3 /*break*/, 2];
-                            case 'docx': return [3 /*break*/, 4];
-                            case 'doc': return [3 /*break*/, 6];
-                            case 'pptx': return [3 /*break*/, 7];
-                            case 'ppt': return [3 /*break*/, 7];
-                            case 'xlsx': return [3 /*break*/, 8];
-                            case 'xls': return [3 /*break*/, 8];
-                            case 'mpp': return [3 /*break*/, 9];
+                            case 'docx': return [3 /*break*/, 3];
+                            case 'doc': return [3 /*break*/, 5];
+                            case 'pptx': return [3 /*break*/, 6];
+                            case 'ppt': return [3 /*break*/, 6];
+                            case 'xlsx': return [3 /*break*/, 7];
+                            case 'xls': return [3 /*break*/, 7];
+                            case 'mpp': return [3 /*break*/, 8];
                         }
-                        return [3 /*break*/, 10];
-                    case 2: return [4 /*yield*/, this.parsePDF(file)];
-                    case 3: return [2 /*return*/, _c.sent()];
-                    case 4: return [4 /*yield*/, this.parseWord(file)];
-                    case 5: return [2 /*return*/, _c.sent()];
-                    case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
-                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 11: return [3 /*break*/, 13];
-                    case 12:
+                        return [3 /*break*/, 9];
+                    case 2: 
+                    // return await this.parsePDF(file);
+                    return [2 /*return*/, { text: '', success: false, error: 'PDF parsing is currently disabled. Please convert to Word format.' }];
+                    case 3: return [4 /*yield*/, this.parseWord(file)];
+                    case 4: return [2 /*return*/, _c.sent()];
+                    case 5: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
+                    case 6: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 7: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 8: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 10: return [3 /*break*/, 12];
+                    case 11:
                         error_1 = _c.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
+<<<<<<< HEAD
                     case 13: return [2 /*return*/];
                 }
             });
@@ -3293,17 +3487,157 @@ var DocumentParser = /** @class */ (function () {
                                 success: false,
                                 error: errorMessage
                             }];
+=======
+>>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537
                     case 12: return [2 /*return*/];
                 }
             });
         });
     };
     /**
+     * Extract text from PDF file
+     * DISABLED: PDF parsing is currently disabled due to missing pdfjs-dist dependency
+     */
+    /* private static async parsePDF(file: File): Promise<DocumentParseResult> {
+      try {
+        console.log('=== STARTING PDF PARSING ===');
+        console.log('File name:', file.name);
+        console.log('File size:', file.size, 'bytes');
+        
+        // Import PDF.js (use legacy build to avoid modern syntax like optional chaining
+        // which may not be transpiled by the project's bundler)
+        const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf');
+        console.log('PDF.js library loaded, version:', pdfjsLib.version);
+        
+        // For SharePoint Framework with strict CSP, we need to work around restrictions
+        // Webpack bundles the worker as a chunk file that we can reference
+        // The CSP is in "report-only" mode, so violations are logged but execution continues
+        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
+          try {
+            // Find the base path where the webpart bundle is loaded from
+            const scripts = document.getElementsByTagName('script');
+            let basePath = '';
+            for (let i = 0; i < scripts.length; i++) {
+              const src = scripts[i].src;
+              if (src && src.indexOf('migration-web-part') !== -1) {
+                basePath = src.substring(0, src.lastIndexOf('/'));
+                break;
+              }
+            }
+            
+            if (basePath) {
+              // Webpack bundles the worker as: chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js
+              const workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+              pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
+              console.log('PDF.js worker path set to bundled chunk:', workerPath);
+            } else {
+              // Fallback: Try relative path
+              pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
+              console.log('PDF.js worker path set to relative path (fallback)');
+            }
+          } catch (pathError) {
+            console.warn('Could not set worker path, using data URL fallback:', pathError);
+            // Fallback: Use data URL - CSP is report-only so execution will continue despite warning
+            const minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
+            console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
+          }
+        }
+        
+        console.log('Reading file as ArrayBuffer...');
+        const arrayBuffer = await file.arrayBuffer();
+        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
+        
+        console.log('Loading PDF document...');
+        // Disable worker explicitly to avoid CSP issues in SharePoint
+        const pdf = await pdfjsLib.getDocument({
+          // pdfjs expects a typed array (e.g. Uint8Array) rather than a raw ArrayBuffer
+          data: new Uint8Array(arrayBuffer),
+          verbosity: 0, // Reduce console noise
+          useWorkerFetch: false,
+          isEvalSupported: false,
+          useSystemFonts: true
+        }).promise;
+        
+        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
+        
+        let fullText = '';
+        const numPages = pdf.numPages;
+        
+        // Extract text from each page
+        for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+          console.log(`Extracting text from page ${pageNum}/${numPages}...`);
+          try {
+            const page = await pdf.getPage(pageNum);
+            const textContent = await page.getTextContent();
+            const pageText = textContent.items
+              .map((item) => {
+                // Handle both TextItem and TextMarkedContent types
+                if ('str' in item && item.str) {
+                  return item.str;
+                }
+                return '';
+              })
+              .join(' ');
+            fullText += pageText + '\n';
+            console.log(`Page ${pageNum} extracted: ${pageText.length} characters`);
+          } catch (pageError) {
+            console.error(`Error extracting page ${pageNum}:`, pageError);
+            // Continue with other pages even if one fails
+          }
+        }
+        
+        const extractedText = fullText.trim();
+        console.log('=== PDF PARSING COMPLETE ===');
+        console.log('Total text extracted:', extractedText.length, 'characters');
+        
+        if (extractedText.length === 0) {
+          console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
+          return {
+            text: '',
+            success: false,
+            error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
+          };
+        }
+        
+        return {
+          text: extractedText,
+          success: true
+        };
+      } catch (error) {
+        console.error('=== PDF PARSING ERROR ===');
+        console.error('Error details:', error);
+        console.error('Error type:', typeof error);
+        console.error('Error message:', error instanceof Error ? error.message : String(error));
+        
+        let errorMessage = 'Failed to parse PDF';
+        if (error instanceof Error) {
+          errorMessage = error.message;
+          
+          // Provide more helpful error messages (using indexOf for ES5 compatibility)
+          const msg = error.message.toLowerCase();
+          if (msg.indexOf('worker') !== -1) {
+            errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
+          } else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
+            errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
+          } else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
+            errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
+          }
+        }
+        
+        return {
+          text: '',
+          success: false,
+          error: errorMessage
+        };
+      }
+    } */
+    /**
      * Extract text from Word (.docx) file
      */
     DocumentParser.parseWord = function (file) {
         return __awaiter(this, void 0, void 0, function () {
-            var mammoth, arrayBuffer, result, error_3;
+            var mammoth, arrayBuffer, result, error_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -3322,11 +3656,11 @@ var DocumentParser = /** @class */ (function () {
                                 success: true
                             }];
                     case 4:
-                        error_3 = _a.sent();
+                        error_2 = _a.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
-                                error: error_3 instanceof Error ? error_3.message : 'Failed to parse Word document'
+                                error: error_2 instanceof Error ? error_2.message : 'Failed to parse Word document'
                             }];
                     case 5: return [2 /*return*/];
                 }

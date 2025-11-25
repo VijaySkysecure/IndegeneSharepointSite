@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><AppPartConfig xmlns="http://schemas.microsoft.com/sharepoint/2012/app/partconfiguration"><Id>9a24b847-2bd1-49cf-909f-573276a84a36</Id></AppPartConfig>
+=======
+<?xml version="1.0" encoding="utf-8"?><AppPartConfig xmlns="http://schemas.microsoft.com/sharepoint/2012/app/partconfiguration"><Id>9c830a00-b674-4100-9125-7a751cc3243c</Id></AppPartConfig>
+>>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537
