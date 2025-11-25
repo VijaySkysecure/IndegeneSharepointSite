@@ -22,6 +22,9 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [extractedMetadata, setExtractedMetadata] = React.useState<Record<string, any> | null>(null);
   const [processingError, setProcessingError] = React.useState<string | null>(null);
+  const [kmItemId, setKmItemId] = React.useState<number | null>(null);
+  const [showForm, setShowForm] = React.useState(false);
+
 
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
   const openAIService = React.useRef(new AzureOpenAIService(AZURE_OPENAI_CONFIG));
@@ -34,14 +37,32 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     const file = f && f.length ? f[0] : undefined;
     if (file) {
       setUploadedFile(file);
+      setShowForm(false);      // ⛔ hide form initially
+      setIsProcessing(true);   // ⏳ immediately show analyzing UI
       setProcessingError(null);
       setExtractedMetadata(null);
-      props.onUploaded && props.onUploaded(file);
+
+      // Create log + KMArtifacts + run AI
+      await createAuditLogItem(file);
+
+      let itemId = null;
+      try {
+        itemId = await updateKMArtifactsMetadata(file);
+        setKmItemId(itemId);   // only set if success
+      } catch (err) {
+        console.error("KMArtifacts ERROR:", err);
+        setIsProcessing(false);
+        setProcessingError("KMArtifacts item could not be created.");
+        return; // STOP the flow
+      }
       
-      // Process the file with AI
       await processFileWithAI(file);
+
+      // ONLY SHOW FORM AFTER AI FINISHES
+      setShowForm(true);
     }
   };
+
 
   const processFileWithAI = async (file: File) => {
     console.log('=== STARTING FILE PROCESSING ===');
@@ -86,20 +107,6 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Extracted text length:', parseResult.text.length, 'characters');
       console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
 
-      // Create audit log entry for this uploaded file (Action = Draft)
-      try {
-        await createAuditLogItem(file);
-      } catch (auditErr) {
-        console.error('Failed to create audit log item:', auditErr);
-      }
-
-      try {
-        await updateKMArtifactsMetadata(file);
-      } catch (e) {
-        console.error("Error creating KMArtifacts entry:", e);
-      }
-
-
       // Step 2: Extract metadata using Azure OpenAI
       console.log('Step 2: Extracting metadata with AI...');
       const metadata = await openAIService.current.extractMetadata(parseResult.text);
@@ -130,29 +137,13 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
    * Create an Audit Log item in SharePoint list.
    * Uses the provided list GUID and the internal field names seen in the URLs.
    */
-  const createAuditLogItem = async (file: File): Promise<number> => {
-    // GUID of the Audit Log list (from the URLs provided by the user)
-    const LIST_GUID = '3635DC85-275A-425E-B71C-75293EE800D8';
+  const createAuditLogItem = async (file: File, action: "Draft" | "Submitted" = "Draft"): Promise<number> => {
 
     if (!props.context) {
       throw new Error('SPFx context not provided to FileUpload component.');
     }
 
     const webUrl = props.context.pageContext.web.absoluteUrl;
-
-    // Get list entity type name (required for create payload)
-    const listInfoResp = await props.context.spHttpClient.get(
-      `${webUrl}/_api/web/lists(guid'${LIST_GUID}')?$select=ListItemEntityTypeFullName`,
-      SPHttpClient.configurations.v1
-    );
-
-    if (!listInfoResp.ok) {
-      const txt = await listInfoResp.text();
-      throw new Error(`Failed to read list info: ${listInfoResp.status} ${txt}`);
-    }
-
-    const listInfo = await listInfoResp.json();
-    const entityType = listInfo.ListItemEntityTypeFullName;
 
     // Get current user id
     const currentUserResp = await props.context.spHttpClient.get(
@@ -170,24 +161,26 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     // Many lists have a required `Title` field; include it to avoid create failures.
     // When using 'odata=nometadata' we must NOT include __metadata in the payload.
     const body: any = {
+      "__metadata": { "type": "SP.Data.Audit_x0020_LogListItem" },
       Title: file.name,
       FileName: file.name,
-      Action: 'Draft',
+      Action: action,
       // For a person field, set the internal field with 'Id' suffix
       UserId: userId,
       Performed_x0020_ById: userId,
       TimeStamp: new Date().toISOString()
     };
 
-    console.log('Creating audit log item with payload:', body, 'entityType:', entityType);
+    console.log('Creating audit log item with payload:', body);
 
     const postResp = await props.context.spHttpClient.post(
-      `${webUrl}/_api/web/lists(guid'${LIST_GUID}')/items`,
+      `${webUrl}/_api/web/lists/GetByTitle('Audit Log')/items`,
       SPHttpClient.configurations.v1,
       {
-        headers: {
-          'Accept': 'application/json;odata=nometadata',
-          'Content-Type': 'application/json;odata=nometadata'
+       headers: {
+          "Accept": "application/json;odata=verbose",
+          "Content-Type": "application/json;odata=verbose",
+          "odata-version": ""
         },
         body: JSON.stringify(body)
       }
@@ -258,6 +251,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
 
     // 6️⃣ Metadata payload
     const metadataBody = {
+      __metadata: { type: entityType },
       Status: "Draft",
       TitleName: "-",
       Abstract: "-",
@@ -276,29 +270,83 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
 
 
     // 7️⃣ Update metadata using fetch + MERGE + odata=nometadata
-    const updateResp = await props.context.spHttpClient.fetch(
-      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
+    const updateResp = await props.context.spHttpClient.post(
+      `${webUrl}/_api/web/lists/getbytitle('KMArtifacts')/items(${itemId})`,
       SPHttpClient.configurations.v1,
       {
-        method: "POST",
         headers: {
-          "Accept": "application/json;odata=nometadata",
-          "Content-Type": "application/json;odata=nometadata",
+          "Accept": "application/json;odata=verbose",
+          "Content-Type": "application/json;odata=verbose",
           "IF-MATCH": "*",
-          "X-HTTP-Method": "MERGE"
+          "X-HTTP-Method": "MERGE",
+          "odata-version": ""
         },
-        body: JSON.stringify(metadataBody) // ✅ NO __metadata
+        body: JSON.stringify(metadataBody)
       }
     );
 
+
     if (!updateResp.ok) {
       const txt = await updateResp.text();
-      throw new Error("Metadata update failed: " + txt);
+      console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
+      throw new Error(`KMArtifacts update failed: ${updateResp.status} ${txt}`);
     }
 
     console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+    setKmItemId(itemId);   // ⭐ store item id for later updates
     return itemId;
+
   };
+
+  const updateKMArtifactsWithFormData = async (itemId: number, data: any) => {
+  const LIBRARY_NAME = "KMArtifacts";
+  const webUrl = props.context.pageContext.web.absoluteUrl;
+
+  const currentUserResp = await props.context.spHttpClient.get(
+    `${webUrl}/_api/web/currentuser`,
+    SPHttpClient.configurations.v1
+  );
+  const currentUser = await currentUserResp.json();
+  const userId = currentUser.Id;
+
+  const payload = {
+    Status: data.Status || "Submitted",
+    TitleName: data.title || "-",
+    Abstract: data.abstract || "-",
+    BusinessUnit: data.bu || "-",
+    Department: data.department || "-",
+    Region: data.region || "-",
+    Client: data.client || "-",
+    DocumentType: data.documentType || "-",
+    DiseaseArea: data.diseaseArea || "-",
+    TherapyArea: data.therapyArea || "-",
+    ComplianceFlag: data.complianceFlag ?? false,
+    Sanitized: data.sanitized ?? false,
+    PerformedById: userId,
+    TimeStamp: new Date().toISOString()
+  };
+
+  const resp = await props.context.spHttpClient.fetch(
+    `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
+    SPHttpClient.configurations.v1,
+    {
+      method: "POST",
+      headers: {
+        "Accept": "application/json;odata=nometadata",
+        "Content-Type": "application/json;odata=nometadata",
+        "IF-MATCH": "*",
+        "X-HTTP-Method": "MERGE"
+      },
+      body: JSON.stringify(payload)
+    }
+  );
+
+  if (!resp.ok) {
+    throw new Error(await resp.text());
+  }
+
+  console.log("KMArtifacts updated with form data:", itemId);
+};
 
 
   const onDrop = (e: React.DragEvent) => {
@@ -309,13 +357,31 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     }
   };
 
-  const onFormSubmit = (data: any) => {
-    // data contains form values from MetadataForm
-    // Here you would typically send `data` + `uploadedFile` to backend
-    console.log('Submitting metadata', data, uploadedFile);
-    // close overlay after submit
+  const onFormSubmit = async (data: any) => {
+    console.log("Submitting metadata", data);
+
+    if (!kmItemId) {
+      console.error("KMArtifacts item id is missing");
+      return;
+    }
+
+    try {
+
+      // 2️⃣ Create new Audit Log item (Action = Submitted)
+      await createAuditLogItem(uploadedFile!, "Submitted");
+
+      // 1️⃣ Update KMArtifacts row with actual form values
+      await updateKMArtifactsWithFormData(kmItemId, data);
+
+
+    } catch (err) {
+      console.error("Error during form submission:", err);
+    }
+
     props.onClose && props.onClose();
   };
+
+  
 
   return (
     <div className={styles.overlay}>

@@ -2252,9 +2252,6 @@ var MetadataForm = function (_a) {
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title" }, "Title"),
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "title", name: "title", placeholder: "Enter document title", value: values.title, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
-                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu" }, "Business Unit"),
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "bu", name: "bu", placeholder: "Select or type BU", value: values.bu, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
@@ -2266,6 +2263,15 @@ var MetadataForm = function (_a) {
                         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea" }, "Disease Area"),
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "diseaseArea", name: "diseaseArea", placeholder: "Disease Area", value: values.diseaseArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea" }, "Therapy Area"),
+                            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("input", { id: "therapyArea", name: "therapyArea", placeholder: "Therapy Area", value: values.therapyArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract" }, "Abstract"),
                             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
@@ -3787,6 +3793,8 @@ var FileUpload = function (props) {
     var _c = react__WEBPACK_IMPORTED_MODULE_0__["useState"](false), isProcessing = _c[0], setIsProcessing = _c[1];
     var _d = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), extractedMetadata = _d[0], setExtractedMetadata = _d[1];
     var _e = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), processingError = _e[0], setProcessingError = _e[1];
+    var _f = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), kmItemId = _f[0], setKmItemId = _f[1];
+    var _g = react__WEBPACK_IMPORTED_MODULE_0__["useState"](false), showForm = _g[0], setShowForm = _g[1];
     var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](null);
     var openAIService = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__["AzureOpenAIService"](AZURE_OPENAI_CONFIG));
     var onBrowse = function () {
@@ -3794,28 +3802,49 @@ var FileUpload = function (props) {
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var file;
+        var file, itemId, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     file = f && f.length ? f[0] : undefined;
-                    if (!file) return [3 /*break*/, 2];
+                    if (!file) return [3 /*break*/, 7];
                     setUploadedFile(file);
+                    setShowForm(false); // ⛔ hide form initially
+                    setIsProcessing(true); // ⏳ immediately show analyzing UI
                     setProcessingError(null);
                     setExtractedMetadata(null);
-                    props.onUploaded && props.onUploaded(file);
-                    // Process the file with AI
-                    return [4 /*yield*/, processFileWithAI(file)];
+                    // Create log + KMArtifacts + run AI
+                    return [4 /*yield*/, createAuditLogItem(file)];
                 case 1:
-                    // Process the file with AI
+                    // Create log + KMArtifacts + run AI
                     _a.sent();
+                    itemId = null;
                     _a.label = 2;
-                case 2: return [2 /*return*/];
+                case 2:
+                    _a.trys.push([2, 4, , 5]);
+                    return [4 /*yield*/, updateKMArtifactsMetadata(file)];
+                case 3:
+                    itemId = _a.sent();
+                    setKmItemId(itemId); // only set if success
+                    return [3 /*break*/, 5];
+                case 4:
+                    err_1 = _a.sent();
+                    console.error("KMArtifacts ERROR:", err_1);
+                    setIsProcessing(false);
+                    setProcessingError("KMArtifacts item could not be created.");
+                    return [2 /*return*/]; // STOP the flow
+                case 5: return [4 /*yield*/, processFileWithAI(file)];
+                case 6:
+                    _a.sent();
+                    // ONLY SHOW FORM AFTER AI FINISHES
+                    setShowForm(true);
+                    _a.label = 7;
+                case 7: return [2 /*return*/];
             }
         });
     }); };
     var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var parseResult, errorMsg, errorMsg, auditErr_1, e_1, metadata, error_1, errorMsg;
+        var parseResult, errorMsg, errorMsg, metadata, error_1, errorMsg;
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
@@ -3828,7 +3857,7 @@ var FileUpload = function (props) {
                     setProcessingError(null);
                     _b.label = 1;
                 case 1:
-                    _b.trys.push([1, 11, 12, 13]);
+                    _b.trys.push([1, 4, 5, 6]);
                     // Step 1: Parse the document to extract text
                     console.log('Step 1: Parsing document...');
                     return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__["DocumentParser"].parseFile(file)];
@@ -3859,39 +3888,17 @@ var FileUpload = function (props) {
                     console.log('File size:', file.size, 'bytes');
                     console.log('Extracted text length:', parseResult.text.length, 'characters');
                     console.log('Sample text (first 500 chars):', parseResult.text.substring(0, 500));
-                    _b.label = 3;
-                case 3:
-                    _b.trys.push([3, 5, , 6]);
-                    return [4 /*yield*/, createAuditLogItem(file)];
-                case 4:
-                    _b.sent();
-                    return [3 /*break*/, 6];
-                case 5:
-                    auditErr_1 = _b.sent();
-                    console.error('Failed to create audit log item:', auditErr_1);
-                    return [3 /*break*/, 6];
-                case 6:
-                    _b.trys.push([6, 8, , 9]);
-                    return [4 /*yield*/, updateKMArtifactsMetadata(file)];
-                case 7:
-                    _b.sent();
-                    return [3 /*break*/, 9];
-                case 8:
-                    e_1 = _b.sent();
-                    console.error("Error creating KMArtifacts entry:", e_1);
-                    return [3 /*break*/, 9];
-                case 9:
                     // Step 2: Extract metadata using Azure OpenAI
                     console.log('Step 2: Extracting metadata with AI...');
                     return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
-                case 10:
+                case 3:
                     metadata = _b.sent();
                     // Step 3: Set the extracted metadata
                     console.log('Step 3: Setting extracted metadata...');
                     setExtractedMetadata(metadata);
                     console.log('=== FILE PROCESSING COMPLETE ===');
-                    return [3 /*break*/, 13];
-                case 11:
+                    return [3 /*break*/, 6];
+                case 4:
                     error_1 = _b.sent();
                     console.error('=== ERROR PROCESSING FILE ===');
                     console.error('Error type:', typeof error_1);
@@ -3902,12 +3909,12 @@ var FileUpload = function (props) {
                         ? error_1.message
                         : 'An error occurred while processing the document. Please fill the form manually.';
                     setProcessingError(errorMsg);
-                    return [3 /*break*/, 13];
-                case 12:
+                    return [3 /*break*/, 6];
+                case 5:
                     console.log('Setting isProcessing to false');
                     setIsProcessing(false);
                     return [7 /*endfinally*/];
-                case 13: return [2 /*return*/];
+                case 6: return [2 /*return*/];
             }
         });
     }); };
@@ -3915,80 +3922,72 @@ var FileUpload = function (props) {
      * Create an Audit Log item in SharePoint list.
      * Uses the provided list GUID and the internal field names seen in the URLs.
      */
-    var createAuditLogItem = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIST_GUID, webUrl, listInfoResp, txt, listInfo, entityType, currentUserResp, txt, currentUser, userId, body, postResp, respText, created, createdId;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    LIST_GUID = '3635DC85-275A-425E-B71C-75293EE800D8';
-                    if (!props.context) {
-                        throw new Error('SPFx context not provided to FileUpload component.');
-                    }
-                    webUrl = props.context.pageContext.web.absoluteUrl;
-                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists(guid'").concat(LIST_GUID, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1)];
-                case 1:
-                    listInfoResp = _a.sent();
-                    if (!!listInfoResp.ok) return [3 /*break*/, 3];
-                    return [4 /*yield*/, listInfoResp.text()];
-                case 2:
-                    txt = _a.sent();
-                    throw new Error("Failed to read list info: ".concat(listInfoResp.status, " ").concat(txt));
-                case 3: return [4 /*yield*/, listInfoResp.json()];
-                case 4:
-                    listInfo = _a.sent();
-                    entityType = listInfo.ListItemEntityTypeFullName;
-                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1)];
-                case 5:
-                    currentUserResp = _a.sent();
-                    if (!!currentUserResp.ok) return [3 /*break*/, 7];
-                    return [4 /*yield*/, currentUserResp.text()];
-                case 6:
-                    txt = _a.sent();
-                    throw new Error("Failed to get current user: ".concat(currentUserResp.status, " ").concat(txt));
-                case 7: return [4 /*yield*/, currentUserResp.json()];
-                case 8:
-                    currentUser = _a.sent();
-                    userId = currentUser.Id;
-                    body = {
-                        Title: file.name,
-                        FileName: file.name,
-                        Action: 'Draft',
-                        // For a person field, set the internal field with 'Id' suffix
-                        UserId: userId,
-                        Performed_x0020_ById: userId,
-                        TimeStamp: new Date().toISOString()
-                    };
-                    console.log('Creating audit log item with payload:', body, 'entityType:', entityType);
-                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists(guid'").concat(LIST_GUID, "')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1, {
-                            headers: {
-                                'Accept': 'application/json;odata=nometadata',
-                                'Content-Type': 'application/json;odata=nometadata'
-                            },
-                            body: JSON.stringify(body)
-                        })];
-                case 9:
-                    postResp = _a.sent();
-                    return [4 /*yield*/, postResp.text()];
-                case 10:
-                    respText = _a.sent();
-                    if (!postResp.ok) {
-                        console.error('Create audit item failed. Status:', postResp.status, 'Response:', respText);
-                        throw new Error("Failed to create audit item: ".concat(postResp.status, " ").concat(respText));
-                    }
-                    created = null;
-                    try {
-                        created = respText ? JSON.parse(respText) : null;
-                    }
-                    catch (e) {
-                        // If the response isn't JSON (depending on OData settings), log raw text
-                        console.warn('Could not parse create response as JSON; raw response:', respText);
-                    }
-                    createdId = created && created.Id ? created.Id : null;
-                    console.log('Audit log item created. ID (if returned):', createdId, 'rawResponse:', respText);
-                    return [2 /*return*/, createdId];
-            }
+    var createAuditLogItem = function (file, action) {
+        if (action === void 0) { action = "Draft"; }
+        return __awaiter(void 0, void 0, void 0, function () {
+            var webUrl, currentUserResp, txt, currentUser, userId, body, postResp, respText, created, createdId;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!props.context) {
+                            throw new Error('SPFx context not provided to FileUpload component.');
+                        }
+                        webUrl = props.context.pageContext.web.absoluteUrl;
+                        return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1)];
+                    case 1:
+                        currentUserResp = _a.sent();
+                        if (!!currentUserResp.ok) return [3 /*break*/, 3];
+                        return [4 /*yield*/, currentUserResp.text()];
+                    case 2:
+                        txt = _a.sent();
+                        throw new Error("Failed to get current user: ".concat(currentUserResp.status, " ").concat(txt));
+                    case 3: return [4 /*yield*/, currentUserResp.json()];
+                    case 4:
+                        currentUser = _a.sent();
+                        userId = currentUser.Id;
+                        body = {
+                            "__metadata": { "type": "SP.Data.Audit_x0020_LogListItem" },
+                            Title: file.name,
+                            FileName: file.name,
+                            Action: action,
+                            // For a person field, set the internal field with 'Id' suffix
+                            UserId: userId,
+                            Performed_x0020_ById: userId,
+                            TimeStamp: new Date().toISOString()
+                        };
+                        console.log('Creating audit log item with payload:', body);
+                        return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/GetByTitle('Audit Log')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1, {
+                                headers: {
+                                    "Accept": "application/json;odata=verbose",
+                                    "Content-Type": "application/json;odata=verbose",
+                                    "odata-version": ""
+                                },
+                                body: JSON.stringify(body)
+                            })];
+                    case 5:
+                        postResp = _a.sent();
+                        return [4 /*yield*/, postResp.text()];
+                    case 6:
+                        respText = _a.sent();
+                        if (!postResp.ok) {
+                            console.error('Create audit item failed. Status:', postResp.status, 'Response:', respText);
+                            throw new Error("Failed to create audit item: ".concat(postResp.status, " ").concat(respText));
+                        }
+                        created = null;
+                        try {
+                            created = respText ? JSON.parse(respText) : null;
+                        }
+                        catch (e) {
+                            // If the response isn't JSON (depending on OData settings), log raw text
+                            console.warn('Could not parse create response as JSON; raw response:', respText);
+                        }
+                        createdId = created && created.Id ? created.Id : null;
+                        console.log('Audit log item created. ID (if returned):', createdId, 'rawResponse:', respText);
+                        return [2 /*return*/, createdId];
+                }
+            });
         });
-    }); };
+    };
     /**
      * Create item in KMArtifacts folder inside Document Library
      */
@@ -4033,6 +4032,7 @@ var FileUpload = function (props) {
                     currentUser = _a.sent();
                     userId = currentUser.Id;
                     metadataBody = {
+                        __metadata: { type: entityType },
                         Status: "Draft",
                         TitleName: "-",
                         Abstract: "-",
@@ -4048,6 +4048,62 @@ var FileUpload = function (props) {
                         PerformedById: userId,
                         TimeStamp: new Date().toISOString()
                     };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('KMArtifacts')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(metadataBody)
+                        })];
+                case 10:
+                    updateResp = _a.sent();
+                    if (!!updateResp.ok) return [3 /*break*/, 12];
+                    return [4 /*yield*/, updateResp.text()];
+                case 11:
+                    txt = _a.sent();
+                    console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
+                    throw new Error("KMArtifacts update failed: ".concat(updateResp.status, " ").concat(txt));
+                case 12:
+                    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+                    setKmItemId(itemId); // ⭐ store item id for later updates
+                    return [2 /*return*/, itemId];
+            }
+        });
+    }); };
+    var updateKMArtifactsWithFormData = function (itemId, data) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, resp, _a;
+        var _b, _c;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    LIBRARY_NAME = "KMArtifacts";
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1)];
+                case 1:
+                    currentUserResp = _d.sent();
+                    return [4 /*yield*/, currentUserResp.json()];
+                case 2:
+                    currentUser = _d.sent();
+                    userId = currentUser.Id;
+                    payload = {
+                        Status: data.Status || "Submitted",
+                        TitleName: data.title || "-",
+                        Abstract: data.abstract || "-",
+                        BusinessUnit: data.bu || "-",
+                        Department: data.department || "-",
+                        Region: data.region || "-",
+                        Client: data.client || "-",
+                        DocumentType: data.documentType || "-",
+                        DiseaseArea: data.diseaseArea || "-",
+                        TherapyArea: data.therapyArea || "-",
+                        ComplianceFlag: (_b = data.complianceFlag) !== null && _b !== void 0 ? _b : false,
+                        Sanitized: (_c = data.sanitized) !== null && _c !== void 0 ? _c : false,
+                        PerformedById: userId,
+                        TimeStamp: new Date().toISOString()
+                    };
                     return [4 /*yield*/, props.context.spHttpClient.fetch("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__["SPHttpClient"].configurations.v1, {
                             method: "POST",
                             headers: {
@@ -4056,18 +4112,17 @@ var FileUpload = function (props) {
                                 "IF-MATCH": "*",
                                 "X-HTTP-Method": "MERGE"
                             },
-                            body: JSON.stringify(metadataBody) // ✅ NO __metadata
+                            body: JSON.stringify(payload)
                         })];
-                case 10:
-                    updateResp = _a.sent();
-                    if (!!updateResp.ok) return [3 /*break*/, 12];
-                    return [4 /*yield*/, updateResp.text()];
-                case 11:
-                    txt = _a.sent();
-                    throw new Error("Metadata update failed: " + txt);
-                case 12:
-                    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
-                    return [2 /*return*/, itemId];
+                case 3:
+                    resp = _d.sent();
+                    if (!!resp.ok) return [3 /*break*/, 5];
+                    _a = Error.bind;
+                    return [4 /*yield*/, resp.text()];
+                case 4: throw new (_a.apply(Error, [void 0, _d.sent()]))();
+                case 5:
+                    console.log("KMArtifacts updated with form data:", itemId);
+                    return [2 /*return*/];
             }
         });
     }); };
@@ -4078,13 +4133,40 @@ var FileUpload = function (props) {
             onFileSelected(e.dataTransfer.files);
         }
     };
-    var onFormSubmit = function (data) {
-        // data contains form values from MetadataForm
-        // Here you would typically send `data` + `uploadedFile` to backend
-        console.log('Submitting metadata', data, uploadedFile);
-        // close overlay after submit
-        props.onClose && props.onClose();
-    };
+    var onFormSubmit = function (data) { return __awaiter(void 0, void 0, void 0, function () {
+        var err_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    console.log("Submitting metadata", data);
+                    if (!kmItemId) {
+                        console.error("KMArtifacts item id is missing");
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 4, , 5]);
+                    // 2️⃣ Create new Audit Log item (Action = Submitted)
+                    return [4 /*yield*/, createAuditLogItem(uploadedFile, "Submitted")];
+                case 2:
+                    // 2️⃣ Create new Audit Log item (Action = Submitted)
+                    _a.sent();
+                    // 1️⃣ Update KMArtifacts row with actual form values
+                    return [4 /*yield*/, updateKMArtifactsWithFormData(kmItemId, data)];
+                case 3:
+                    // 1️⃣ Update KMArtifacts row with actual form values
+                    _a.sent();
+                    return [3 /*break*/, 5];
+                case 4:
+                    err_2 = _a.sent();
+                    console.error("Error during form submission:", err_2);
+                    return [3 /*break*/, 5];
+                case 5:
+                    props.onClose && props.onClose();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
