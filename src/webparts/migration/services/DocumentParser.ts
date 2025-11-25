@@ -18,7 +18,8 @@ export class DocumentParser {
     try {
       switch (fileExtension) {
         case 'pdf':
-          return await this.parsePDF(file);
+          // return await this.parsePDF(file);
+          return { text: '', success: false, error: 'PDF parsing is currently disabled. Please convert to Word format.' };
         case 'docx':
           return await this.parseWord(file);
         case 'doc':
@@ -45,8 +46,9 @@ export class DocumentParser {
 
   /**
    * Extract text from PDF file
+   * DISABLED: PDF parsing is currently disabled due to missing pdfjs-dist dependency
    */
-  private static async parsePDF(file: File): Promise<DocumentParseResult> {
+  /* private static async parsePDF(file: File): Promise<DocumentParseResult> {
     try {
       console.log('=== STARTING PDF PARSING ===');
       console.log('File name:', file.name);
@@ -179,7 +181,7 @@ export class DocumentParser {
         error: errorMessage
       };
     }
-  }
+  } */
 
   /**
    * Extract text from Word (.docx) file

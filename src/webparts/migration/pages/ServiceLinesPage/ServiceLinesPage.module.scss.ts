@@ -1,4 +1,4 @@
-/* tslint:disable */
+
 require("./ServiceLinesPage.module.css");
 const styles = {
   serviceLinesPage: 'serviceLinesPage_12ef78dc',
@@ -11,4 +11,3 @@ const styles = {
 };
 
 export default styles;
-/* tslint:enable */

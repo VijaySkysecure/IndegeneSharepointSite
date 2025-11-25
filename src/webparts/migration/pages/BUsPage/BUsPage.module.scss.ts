@@ -1,4 +1,4 @@
-/* tslint:disable */
+
 require("./BUsPage.module.css");
 const styles = {
   busPage: 'busPage_fcea57b1',
@@ -11,4 +11,3 @@ const styles = {
 };
 
 export default styles;
-/* tslint:enable */

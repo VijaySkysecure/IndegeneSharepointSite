@@ -1,4 +1,4 @@
-/* tslint:disable */
+
 require("./BUQuestionSection.module.css");
 const styles = {
   questionSection: 'questionSection_6f50e07b',
@@ -10,4 +10,3 @@ const styles = {
 };
 
 export default styles;
-/* tslint:enable */
