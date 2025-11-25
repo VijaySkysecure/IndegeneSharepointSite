@@ -1,4 +1,4 @@
-(()=>{ var __RUSHSTACK_CURRENT_SCRIPT__ = document.currentScript; define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__) => { return /******/ (() => { // webpackBootstrap
+(()=>{ var __RUSHSTACK_CURRENT_SCRIPT__ = document.currentScript; define("a1b2c3d4-e5f6-7890-abcd-ef1234567892_1.0.0", ["react","react-dom","@microsoft/sp-core-library","@microsoft/sp-property-pane","@microsoft/sp-webpart-base","MigrationWebPartStrings","@microsoft/sp-http"], (__WEBPACK_EXTERNAL_MODULE__5959__, __WEBPACK_EXTERNAL_MODULE__8398__, __WEBPACK_EXTERNAL_MODULE__9676__, __WEBPACK_EXTERNAL_MODULE__9877__, __WEBPACK_EXTERNAL_MODULE__6642__, __WEBPACK_EXTERNAL_MODULE__9943__, __WEBPACK_EXTERNAL_MODULE__1909__) => { return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -1030,10 +1030,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
-/* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
-/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
-/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
+/* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1075,6 +1077,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 // Azure OpenAI Configuration
 // NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
 // Exposing API keys in client-side code is a security risk. Consider using a backend API proxy.
@@ -1089,30 +1092,53 @@ var FileUpload = function (props) {
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isProcessing = _c[0], setIsProcessing = _c[1];
     var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), extractedMetadata = _d[0], setExtractedMetadata = _d[1];
     var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _e[0], setProcessingError = _e[1];
+    var _f = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), kmItemId = _f[0], setKmItemId = _f[1];
+    var _g = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showForm = _g[0], setShowForm = _g[1];
     var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     var onBrowse = function () {
         var _a;
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var file;
+        var file, itemId, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     file = f && f.length ? f[0] : undefined;
-                    if (!file) return [3 /*break*/, 2];
+                    if (!file) return [3 /*break*/, 7];
                     setUploadedFile(file);
+                    setShowForm(false); // ⛔ hide form initially
+                    setIsProcessing(true); // ⏳ immediately show analyzing UI
                     setProcessingError(null);
                     setExtractedMetadata(null);
-                    props.onUploaded && props.onUploaded(file);
-                    // Process the file with AI
-                    return [4 /*yield*/, processFileWithAI(file)];
+                    // Create log + KMArtifacts + run AI
+                    return [4 /*yield*/, createAuditLogItem(file)];
                 case 1:
-                    // Process the file with AI
+                    // Create log + KMArtifacts + run AI
                     _a.sent();
+                    itemId = null;
                     _a.label = 2;
-                case 2: return [2 /*return*/];
+                case 2:
+                    _a.trys.push([2, 4, , 5]);
+                    return [4 /*yield*/, updateKMArtifactsMetadata(file)];
+                case 3:
+                    itemId = _a.sent();
+                    setKmItemId(itemId); // only set if success
+                    return [3 /*break*/, 5];
+                case 4:
+                    err_1 = _a.sent();
+                    console.error("KMArtifacts ERROR:", err_1);
+                    setIsProcessing(false);
+                    setProcessingError("KMArtifacts item could not be created.");
+                    return [2 /*return*/]; // STOP the flow
+                case 5: return [4 /*yield*/, processFileWithAI(file)];
+                case 6:
+                    _a.sent();
+                    // ONLY SHOW FORM AFTER AI FINISHES
+                    setShowForm(true);
+                    _a.label = 7;
+                case 7: return [2 /*return*/];
             }
         });
     }); };
@@ -1133,7 +1159,7 @@ var FileUpload = function (props) {
                     _b.trys.push([1, 4, 5, 6]);
                     // Step 1: Parse the document to extract text
                     console.log('Step 1: Parsing document...');
-                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_3__.DocumentParser.parseFile(file)];
+                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__.DocumentParser.parseFile(file)];
                 case 2:
                     parseResult = _b.sent();
                     console.log('Parse result:', {
@@ -1191,6 +1217,214 @@ var FileUpload = function (props) {
             }
         });
     }); };
+    /**
+     * Create an Audit Log item in SharePoint list.
+     * Uses the provided list GUID and the internal field names seen in the URLs.
+     */
+    var createAuditLogItem = function (file, action) {
+        if (action === void 0) { action = "Draft"; }
+        return __awaiter(void 0, void 0, void 0, function () {
+            var webUrl, currentUserResp, txt, currentUser, userId, body, postResp, respText, created, createdId;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!props.context) {
+                            throw new Error('SPFx context not provided to FileUpload component.');
+                        }
+                        webUrl = props.context.pageContext.web.absoluteUrl;
+                        return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                    case 1:
+                        currentUserResp = _a.sent();
+                        if (!!currentUserResp.ok) return [3 /*break*/, 3];
+                        return [4 /*yield*/, currentUserResp.text()];
+                    case 2:
+                        txt = _a.sent();
+                        throw new Error("Failed to get current user: ".concat(currentUserResp.status, " ").concat(txt));
+                    case 3: return [4 /*yield*/, currentUserResp.json()];
+                    case 4:
+                        currentUser = _a.sent();
+                        userId = currentUser.Id;
+                        body = {
+                            "__metadata": { "type": "SP.Data.Audit_x0020_LogListItem" },
+                            Title: file.name,
+                            FileName: file.name,
+                            Action: action,
+                            // For a person field, set the internal field with 'Id' suffix
+                            UserId: userId,
+                            Performed_x0020_ById: userId,
+                            TimeStamp: new Date().toISOString()
+                        };
+                        console.log('Creating audit log item with payload:', body);
+                        return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/GetByTitle('Audit Log')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                                headers: {
+                                    "Accept": "application/json;odata=verbose",
+                                    "Content-Type": "application/json;odata=verbose",
+                                    "odata-version": ""
+                                },
+                                body: JSON.stringify(body)
+                            })];
+                    case 5:
+                        postResp = _a.sent();
+                        return [4 /*yield*/, postResp.text()];
+                    case 6:
+                        respText = _a.sent();
+                        if (!postResp.ok) {
+                            console.error('Create audit item failed. Status:', postResp.status, 'Response:', respText);
+                            throw new Error("Failed to create audit item: ".concat(postResp.status, " ").concat(respText));
+                        }
+                        created = null;
+                        try {
+                            created = respText ? JSON.parse(respText) : null;
+                        }
+                        catch (e) {
+                            // If the response isn't JSON (depending on OData settings), log raw text
+                            console.warn('Could not parse create response as JSON; raw response:', respText);
+                        }
+                        createdId = created && created.Id ? created.Id : null;
+                        console.log('Audit log item created. ID (if returned):', createdId, 'rawResponse:', respText);
+                        return [2 /*return*/, createdId];
+                }
+            });
+        });
+    };
+    /**
+     * Create item in KMArtifacts folder inside Document Library
+     */
+    var updateKMArtifactsMetadata = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, uploadResp, uploadJson, serverRelativeUrl, listItemResp, listItemJson, itemId, listInfoResp, listInfo, entityType, currentUserResp, currentUser, userId, metadataBody, updateResp, txt;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    LIBRARY_NAME = "KMArtifacts";
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/GetFolderByServerRelativeUrl('").concat(LIBRARY_NAME, "')/Files/add(url='").concat(file.name, "',overwrite=true)"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, { body: file })];
+                case 1:
+                    uploadResp = _a.sent();
+                    return [4 /*yield*/, uploadResp.json()];
+                case 2:
+                    uploadJson = _a.sent();
+                    serverRelativeUrl = uploadJson.ServerRelativeUrl;
+                    // 2️⃣ Wait briefly to ensure ListItem exists
+                    return [4 /*yield*/, new Promise(function (r) { return setTimeout(r, 500); })];
+                case 3:
+                    // 2️⃣ Wait briefly to ensure ListItem exists
+                    _a.sent();
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(serverRelativeUrl, "')/ListItemAllFields?$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 4:
+                    listItemResp = _a.sent();
+                    return [4 /*yield*/, listItemResp.json()];
+                case 5:
+                    listItemJson = _a.sent();
+                    itemId = listItemJson.Id;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 6:
+                    listInfoResp = _a.sent();
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 7:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 8:
+                    currentUserResp = _a.sent();
+                    return [4 /*yield*/, currentUserResp.json()];
+                case 9:
+                    currentUser = _a.sent();
+                    userId = currentUser.Id;
+                    metadataBody = {
+                        __metadata: { type: entityType },
+                        Status: "Draft",
+                        TitleName: "-",
+                        Abstract: "-",
+                        BusinessUnit: "-",
+                        Department: "-",
+                        Region: "-",
+                        Client: "-",
+                        DocumentType: "-",
+                        DiseaseArea: "-",
+                        TherapyArea: "-",
+                        ComplianceFlag: false,
+                        Sanitized: false,
+                        PerformedById: userId,
+                        TimeStamp: new Date().toISOString()
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('KMArtifacts')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(metadataBody)
+                        })];
+                case 10:
+                    updateResp = _a.sent();
+                    if (!!updateResp.ok) return [3 /*break*/, 12];
+                    return [4 /*yield*/, updateResp.text()];
+                case 11:
+                    txt = _a.sent();
+                    console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
+                    throw new Error("KMArtifacts update failed: ".concat(updateResp.status, " ").concat(txt));
+                case 12:
+                    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+                    setKmItemId(itemId); // ⭐ store item id for later updates
+                    return [2 /*return*/, itemId];
+            }
+        });
+    }); };
+    var updateKMArtifactsWithFormData = function (itemId, data) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, resp, _a;
+        var _b, _c;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    LIBRARY_NAME = "KMArtifacts";
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 1:
+                    currentUserResp = _d.sent();
+                    return [4 /*yield*/, currentUserResp.json()];
+                case 2:
+                    currentUser = _d.sent();
+                    userId = currentUser.Id;
+                    payload = {
+                        Status: data.Status || "Submitted",
+                        TitleName: data.title || "-",
+                        Abstract: data.abstract || "-",
+                        BusinessUnit: data.bu || "-",
+                        Department: data.department || "-",
+                        Region: data.region || "-",
+                        Client: data.client || "-",
+                        DocumentType: data.documentType || "-",
+                        DiseaseArea: data.diseaseArea || "-",
+                        TherapyArea: data.therapyArea || "-",
+                        ComplianceFlag: (_b = data.complianceFlag) !== null && _b !== void 0 ? _b : false,
+                        Sanitized: (_c = data.sanitized) !== null && _c !== void 0 ? _c : false,
+                        PerformedById: userId,
+                        TimeStamp: new Date().toISOString()
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.fetch("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            method: "POST",
+                            headers: {
+                                "Accept": "application/json;odata=nometadata",
+                                "Content-Type": "application/json;odata=nometadata",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE"
+                            },
+                            body: JSON.stringify(payload)
+                        })];
+                case 3:
+                    resp = _d.sent();
+                    if (!!resp.ok) return [3 /*break*/, 5];
+                    _a = Error.bind;
+                    return [4 /*yield*/, resp.text()];
+                case 4: throw new (_a.apply(Error, [void 0, _d.sent()]))();
+                case 5:
+                    console.log("KMArtifacts updated with form data:", itemId);
+                    return [2 /*return*/];
+            }
+        });
+    }); };
     var onDrop = function (e) {
         e.preventDefault();
         setDragOver(false);
@@ -1198,31 +1432,58 @@ var FileUpload = function (props) {
             onFileSelected(e.dataTransfer.files);
         }
     };
-    var onFormSubmit = function (data) {
-        // data contains form values from MetadataForm
-        // Here you would typically send `data` + `uploadedFile` to backend
-        console.log('Submitting metadata', data, uploadedFile);
-        // close overlay after submit
-        props.onClose && props.onClose();
-    };
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].overlay },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadCard },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Upload Document"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "".concat(_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZone, " ").concat(dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropZoneHover : ''), onDragOver: function (e) { e.preventDefault(); setDragOver(true); }, onDragLeave: function () { return setDragOver(false); }, onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+    var onFormSubmit = function (data) { return __awaiter(void 0, void 0, void 0, function () {
+        var err_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    console.log("Submitting metadata", data);
+                    if (!kmItemId) {
+                        console.error("KMArtifacts item id is missing");
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 4, , 5]);
+                    // 2️⃣ Create new Audit Log item (Action = Submitted)
+                    return [4 /*yield*/, createAuditLogItem(uploadedFile, "Submitted")];
+                case 2:
+                    // 2️⃣ Create new Audit Log item (Action = Submitted)
+                    _a.sent();
+                    // 1️⃣ Update KMArtifacts row with actual form values
+                    return [4 /*yield*/, updateKMArtifactsWithFormData(kmItemId, data)];
+                case 3:
+                    // 1️⃣ Update KMArtifacts row with actual form values
+                    _a.sent();
+                    return [3 /*break*/, 5];
+                case 4:
+                    err_2 = _a.sent();
+                    console.error("Error during form submission:", err_2);
+                    return [3 /*break*/, 5];
+                case 5:
+                    props.onClose && props.onClose();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "".concat(_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZone, " ").concat(dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZoneHover : ''), onDragOver: function (e) { e.preventDefault(); setDragOver(true); }, onDragLeave: function () { return setDragOver(false); }, onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M19 15v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].hintText }, "Drag & drop files here"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start."),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hintText }, "Drag & drop files here"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].footer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingSpinner }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingTitle }, "Analyzing Document..."),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
-            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_2__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, "Analyzing Document..."),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
+            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -1347,7 +1608,7 @@ var Header = function (props) {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchIcon, width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z", fill: "#666" })),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search..." })))),
-        showUploader && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__.FileUpload, { onClose: function () { return setShowUploader(false); } }))));
+        showUploader && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__.FileUpload, { onClose: function () { return setShowUploader(false); }, context: props.context }))));
 };
 
 
@@ -1445,9 +1706,6 @@ var MetadataForm = function (_a) {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title" }, "Title"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title", name: "title", placeholder: "Enter document title", value: values.title, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu" }, "Business Unit"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu", name: "bu", placeholder: "Select or type BU", value: values.bu, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
@@ -1459,6 +1717,15 @@ var MetadataForm = function (_a) {
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea" }, "Disease Area"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "diseaseArea", name: "diseaseArea", placeholder: "Disease Area", value: values.diseaseArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea" }, "Therapy Area"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "therapyArea", name: "therapyArea", placeholder: "Therapy Area", value: values.therapyArea, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract" }, "Abstract"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
@@ -1596,7 +1863,7 @@ var Migration = /** @class */ (function (_super) {
         }
         // Otherwise show main page
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].migration },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.Header, null),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.Header, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__.Navigation, { activePage: this.state.activePage, onNavClick: this.handleNavClick }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_5__.ContentArea, { activePage: this.state.activePage, context: this.props.context, onBUClick: this.handleBUClick }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__.QuestionSection, null),
@@ -2256,7 +2523,10 @@ var AzureOpenAIService = /** @class */ (function () {
     AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
         var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
         var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
-        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Type of document. Analyze the content structure and format. Examples: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", \"Standard Operating Procedure\", \"Guideline\", \"Manual\", etc. MUST provide a value.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ".concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", \"Latin America\"). ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+        var diseaseAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DISEASE_AREAS.join('\n- ');
+        var therapyAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_THERAPY_AREAS.join('\n- ');
+        var documentTypeList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DOCUMENT_TYPES.join('\n- ');
+        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):\n- ".concat(documentTypeList, "\nCarefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = \"Deck\", training content = \"Training\", FAQ format = \"Frequently Asked Questions (FAQs)\", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", \"Latin America\"). ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(diseaseAreaList, "\nCarefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string \"\".\n\n9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(therapyAreaList, "\nCarefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string \"\".\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
     };
     /**
      * Sanitize and validate extracted metadata
@@ -2266,7 +2536,7 @@ var AzureOpenAIService = /** @class */ (function () {
         // Ensure all fields are strings and trim whitespace
         var fields = [
             'title', 'documentType', 'bu', 'department', 'region', 'client',
-            'abstract', 'emails', 'phones',
+            'abstract', 'diseaseArea', 'therapyArea', 'emails', 'phones',
             'ids', 'pricing'
         ];
         for (var _i = 0, fields_1 = fields; _i < fields_1.length; _i++) {
@@ -2280,10 +2550,23 @@ var AzureOpenAIService = /** @class */ (function () {
             sanitized.title = 'Untitled Document';
             console.warn('⚠️ Title was empty, using default');
         }
-        // DocumentType: If empty, infer from context or use default
+        // DocumentType: Must always have a value and match allowed list
         if (!sanitized.documentType || sanitized.documentType === '') {
-            sanitized.documentType = 'Document';
-            console.warn('⚠️ DocumentType was empty, using default');
+            // Use "Others" as fallback since it's in the allowed list
+            sanitized.documentType = 'Others';
+            console.warn('⚠️ DocumentType was empty, using fallback: Others');
+        }
+        else {
+            // Validate and match to allowed values
+            var matchedDocType = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.documentType, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DOCUMENT_TYPES);
+            if (matchedDocType) {
+                sanitized.documentType = matchedDocType;
+            }
+            else {
+                // If no match found, use "Others" as fallback
+                sanitized.documentType = 'Others';
+                console.warn('⚠️ DocumentType did not match any allowed value:', sanitized.documentType, '- using fallback: Others');
+            }
         }
         // Business Unit: Must always have a value - try to match or use first allowed value as fallback
         if (!sanitized.bu || sanitized.bu === '') {
@@ -2329,6 +2612,22 @@ var AzureOpenAIService = /** @class */ (function () {
             sanitized.region.toLowerCase() === 'none' ||
             sanitized.region.toLowerCase() === 'unknown')) {
             sanitized.region = '';
+        }
+        // Disease Area: Validate and match to allowed values
+        if (sanitized.diseaseArea) {
+            var matchedDiseaseArea = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.diseaseArea, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DISEASE_AREAS);
+            sanitized.diseaseArea = matchedDiseaseArea;
+            if (!matchedDiseaseArea) {
+                console.warn('⚠️ Disease Area did not match any allowed value:', sanitized.diseaseArea);
+            }
+        }
+        // Therapy Area: Validate and match to allowed values
+        if (sanitized.therapyArea) {
+            var matchedTherapyArea = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.therapyArea, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_THERAPY_AREAS);
+            sanitized.therapyArea = matchedTherapyArea;
+            if (!matchedTherapyArea) {
+                console.warn('⚠️ Therapy Area did not match any allowed value:', sanitized.therapyArea);
+            }
         }
         // Client field validation - should only contain company names
         // Remove if it contains person names, generic terms, or invalid content
@@ -2908,7 +3207,8 @@ var DocumentParser = /** @class */ (function () {
                         console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
                         console.log('Loading PDF document...');
                         return [4 /*yield*/, pdfjsLib.getDocument({
-                                data: arrayBuffer,
+                                // pdfjs expects a typed array (e.g. Uint8Array) rather than a raw ArrayBuffer
+                                data: new Uint8Array(arrayBuffer),
                                 verbosity: 0,
                                 useWorkerFetch: false,
                                 isEvalSupported: false,
@@ -3050,6 +3350,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ALLOWED_BUSINESS_UNITS: () => (/* binding */ ALLOWED_BUSINESS_UNITS),
 /* harmony export */   ALLOWED_DEPARTMENTS: () => (/* binding */ ALLOWED_DEPARTMENTS),
+/* harmony export */   ALLOWED_DISEASE_AREAS: () => (/* binding */ ALLOWED_DISEASE_AREAS),
+/* harmony export */   ALLOWED_DOCUMENT_TYPES: () => (/* binding */ ALLOWED_DOCUMENT_TYPES),
+/* harmony export */   ALLOWED_THERAPY_AREAS: () => (/* binding */ ALLOWED_THERAPY_AREAS),
 /* harmony export */   findBestMatch: () => (/* binding */ findBestMatch)
 /* harmony export */ });
 /**
@@ -3230,6 +3533,199 @@ function findBestMatch(value, allowedValues) {
     // No match found
     return '';
 }
+var ALLOWED_DISEASE_AREAS = [
+    'Noninfectious Uveitis',
+    'Occular allergy',
+    'Glucoma management',
+    'Dry eye disease',
+    'Diabetes',
+    'Endometrial cancer',
+    'Brain tumors',
+    'Gastrointestinal cancer',
+    'Coronavirus',
+    'Esophageal Cancer',
+    'Prostate Cancer',
+    'Oncogenatic mutation',
+    'Colorectal cancer',
+    'Ovarian cancer',
+    'B cell Acute lymphoblastic leukemia',
+    'Mutiple Myeloma',
+    'Metastatic colo-rectal Cancer',
+    'Breast Cancer',
+    'Gastric Cancer',
+    'Hematology',
+    'Solid Tumors',
+    'Blood Cancers',
+    'Lung Cancer'
+];
+var ALLOWED_THERAPY_AREAS = [
+    'Endocrinology',
+    'Dermatology',
+    'Gastroenterology',
+    'Neurology',
+    'Opthalmology',
+    'Solid Tumors',
+    'Hemet-Onco',
+    'Nephrology',
+    'Respiratory',
+    'Rheumatology',
+    'ENT',
+    'Hepatology',
+    'Gyneacology',
+    'CVD',
+    'Oncology'
+];
+var ALLOWED_DOCUMENT_TYPES = [
+    'Knowledge Fireside Chat',
+    'Style Guide',
+    'Reference',
+    'Submissions',
+    'Regulation',
+    'Guidance',
+    'Use Cases',
+    'Glossary',
+    'Workshop',
+    'Email Template',
+    'Reusable Assets',
+    'News',
+    'Narrative',
+    'One-i Collaterals',
+    'Catalo Connect',
+    'Template',
+    'Banner',
+    'Abstract',
+    'SOW',
+    'Feedback',
+    'Research Articles',
+    'Web Designing',
+    'Technology',
+    'toastmasters',
+    'Library Resource',
+    'Knowledge Transfer',
+    'Deck',
+    'Success Story',
+    'Prompt',
+    'Contact',
+    'Cheat Sheet',
+    'Survey',
+    'Covid Report',
+    'Catalog',
+    'SME Profile',
+    'Handbook',
+    'Governance Deck',
+    'Playbook',
+    'Training',
+    'Updates',
+    'External Link',
+    'Community Page',
+    'Q&A',
+    'E-book',
+    'About',
+    'Story',
+    'Publication',
+    'SRL',
+    'e poster',
+    'Plain language summary',
+    'Marketing Collateral',
+    'Patient story video',
+    'Win',
+    'Logo',
+    'Interactive Poster',
+    'Static Newsletter',
+    'Static Slide deck',
+    'E Module',
+    'Static Infographic',
+    'Interactive Infographic',
+    'Sample Profile',
+    'Sample',
+    'Toolkit',
+    'Code of Conduct',
+    'Proposals & Pitches',
+    'Form',
+    'Profile',
+    'RACI Document',
+    'Plan',
+    'Insight',
+    'Demo',
+    'Battle Card',
+    'Experience Master',
+    'Email',
+    'Leadership Connect',
+    'Article',
+    'Assessment',
+    'Style Code',
+    'Agreement',
+    'Recording',
+    'Overview Deck',
+    'Org Chart',
+    'Discussion',
+    'Calendar',
+    'Fact Sheet',
+    'KS2',
+    'Proactive',
+    'Thought Leadership',
+    'OKR',
+    'Communication',
+    'ESG',
+    'iKnowledge Help',
+    'Frequently Asked Questions (FAQs)',
+    'Concept Note',
+    'Others',
+    'Product',
+    'Ad Collateral',
+    'Analyst Briefing Presentation',
+    'Analyst Report',
+    'Analyst RFIs or RFP',
+    'Best Practice',
+    'Blog',
+    'Brand Resource',
+    'Brochure',
+    'Capability',
+    'Case Study',
+    'Certificate',
+    'Checklist',
+    'Council Asset',
+    'Customer Presentations / Overview',
+    'Customer RFI or RFP',
+    'eBook',
+    'eMagazine',
+    'Email Campaign',
+    'Event Asset',
+    'Expertise Note',
+    'Guidelines',
+    'Image',
+    'Infographic',
+    'Internal Announcement',
+    'Internal Report or Analysis',
+    'Lessons Learned',
+    'Manual',
+    'Marketing Plan',
+    'Newsletter',
+    'Onboarding Package',
+    'Physical Banner',
+    'Pitch Deck',
+    'Podcast',
+    'Policy',
+    'Press Release',
+    'Process',
+    'Proposal',
+    'RFIs/RFP',
+    'Sales Deck',
+    'Social Media Post',
+    'SOP',
+    'Sponsored Content',
+    'Standard',
+    'Technical Document',
+    'Templates / Reports',
+    'Testimonial',
+    'Third Party Report',
+    'Tracker',
+    'Training Document/ onboarding deck',
+    'Video',
+    'Webinar',
+    'Webpage',
+    'White Paper'
+];
 
 
 /***/ }),
@@ -3584,6 +4080,16 @@ function registerStyles(styleArray) {
 /***/ ((module) => {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__9676__;
+
+/***/ }),
+
+/***/ 1909:
+/*!*************************************!*\
+  !*** external "@microsoft/sp-http" ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__1909__;
 
 /***/ }),
 

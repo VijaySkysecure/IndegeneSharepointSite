@@ -52,9 +52,8 @@ export class DocumentParser {
       console.log('File name:', file.name);
       console.log('File size:', file.size, 'bytes');
       
-      // Import PDF.js (use legacy build to avoid modern syntax like optional chaining
-      // which may not be transpiled by the project's bundler)
-      const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf');
+      // Import PDF.js
+      const pdfjsLib = await import('pdfjs-dist');
       console.log('PDF.js library loaded, version:', pdfjsLib.version);
       
       // For SharePoint Framework with strict CSP, we need to work around restrictions
