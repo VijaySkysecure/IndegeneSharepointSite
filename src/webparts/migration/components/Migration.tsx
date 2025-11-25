@@ -68,7 +68,7 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
           context={this.props.context}
           onBUClick={this.handleBUClick}
         />
-        <QuestionSection />
+        <QuestionSection context={this.props.context} />
         <Footer />
       </div>
     );

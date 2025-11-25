@@ -1,19 +1,20 @@
 
 require("./BUHeader.module.css");
 const styles = {
-  buHeader: 'buHeader_a61c6b58',
-  headerContent: 'headerContent_a61c6b58',
-  leftSection: 'leftSection_a61c6b58',
-  backButton: 'backButton_a61c6b58',
-  backArrow: 'backArrow_a61c6b58',
-  buName: 'buName_a61c6b58',
-  description: 'description_a61c6b58',
-  addFileButton: 'addFileButton_a61c6b58',
-  rightSection: 'rightSection_a61c6b58',
-  buHead: 'buHead_a61c6b58',
-  searchContainer: 'searchContainer_a61c6b58',
-  searchIcon: 'searchIcon_a61c6b58',
-  searchInput: 'searchInput_a61c6b58'
+  buHeader: 'buHeader_24c115c0',
+  headerContent: 'headerContent_24c115c0',
+  leftSection: 'leftSection_24c115c0',
+  backButton: 'backButton_24c115c0',
+  backArrow: 'backArrow_24c115c0',
+  buName: 'buName_24c115c0',
+  description: 'description_24c115c0',
+  addFileButton: 'addFileButton_24c115c0',
+  rightSection: 'rightSection_24c115c0',
+  buHead: 'buHead_24c115c0',
+  searchContainer: 'searchContainer_24c115c0',
+  searchIcon: 'searchIcon_24c115c0',
+  searchInput: 'searchInput_24c115c0',
+  dropdownPanel: 'dropdownPanel_24c115c0'
 };
 
 export default styles;
