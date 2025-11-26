@@ -2525,8 +2525,9 @@ var AzureOpenAIService = /** @class */ (function () {
         var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
         var diseaseAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DISEASE_AREAS.join('\n- ');
         var therapyAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_THERAPY_AREAS.join('\n- ');
+        var regionList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_REGIONS.join('\n- ');
         var documentTypeList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DOCUMENT_TYPES.join('\n- ');
-        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):\n- ".concat(documentTypeList, "\nCarefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = \"Deck\", training content = \"Training\", FAQ format = \"Frequently Asked Questions (FAQs)\", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", \"Latin America\"). ONLY fill if explicitly mentioned in the document, otherwise use \"\"\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(diseaseAreaList, "\nCarefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string \"\".\n\n9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(therapyAreaList, "\nCarefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string \"\".\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):\n- ".concat(documentTypeList, "\nCarefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = \"Deck\", training content = \"Training\", FAQ format = \"Frequently Asked Questions (FAQs)\", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):\n- ").concat(regionList, "\nLook for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string \"\".\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(diseaseAreaList, "\nCarefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string \"\".\n\n9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(therapyAreaList, "\nCarefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string \"\".\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
     };
     /**
      * Sanitize and validate extracted metadata
@@ -2627,6 +2628,15 @@ var AzureOpenAIService = /** @class */ (function () {
             sanitized.therapyArea = matchedTherapyArea;
             if (!matchedTherapyArea) {
                 console.warn('⚠️ Therapy Area did not match any allowed value:', sanitized.therapyArea);
+            }
+        }
+        // Region: Validate and match to allowed values (only if region exists)
+        if (sanitized.region) {
+            var matchedRegion = (0,_ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.findBestMatch)(sanitized.region, _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_REGIONS);
+            sanitized.region = matchedRegion;
+            if (!matchedRegion) {
+                console.warn('⚠️ Region did not match any allowed value:', sanitized.region);
+                sanitized.region = ''; // Clear if no match found
             }
         }
         // Client field validation - should only contain company names
@@ -3116,185 +3126,98 @@ var DocumentParser = /** @class */ (function () {
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
                         _c.label = 1;
                     case 1:
-                        _c.trys.push([1, 11, , 12]);
+                        _c.trys.push([1, 12, , 13]);
                         _b = fileExtension;
                         switch (_b) {
                             case 'pdf': return [3 /*break*/, 2];
-                            case 'docx': return [3 /*break*/, 3];
-                            case 'doc': return [3 /*break*/, 5];
-                            case 'pptx': return [3 /*break*/, 6];
-                            case 'ppt': return [3 /*break*/, 6];
-                            case 'xlsx': return [3 /*break*/, 7];
-                            case 'xls': return [3 /*break*/, 7];
-                            case 'mpp': return [3 /*break*/, 8];
+                            case 'docx': return [3 /*break*/, 4];
+                            case 'doc': return [3 /*break*/, 6];
+                            case 'pptx': return [3 /*break*/, 7];
+                            case 'ppt': return [3 /*break*/, 7];
+                            case 'xlsx': return [3 /*break*/, 8];
+                            case 'xls': return [3 /*break*/, 8];
+                            case 'mpp': return [3 /*break*/, 9];
                         }
-                        return [3 /*break*/, 9];
-                    case 2: 
-                    // return await this.parsePDF(file);
-                    return [2 /*return*/, { text: '', success: false, error: 'PDF parsing is currently disabled. Please convert to Word format.' }];
-                    case 3: return [4 /*yield*/, this.parseWord(file)];
-                    case 4: return [2 /*return*/, _c.sent()];
-                    case 5: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
-                    case 6: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 7: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 8: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 9: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 10: return [3 /*break*/, 12];
-                    case 11:
+                        return [3 /*break*/, 10];
+                    case 2: return [4 /*yield*/, this.parsePDF(file)];
+                    case 3: return [2 /*return*/, _c.sent()];
+                    case 4: return [4 /*yield*/, this.parseWord(file)];
+                    case 5: return [2 /*return*/, _c.sent()];
+                    case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
+                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 11: return [3 /*break*/, 13];
+                    case 12:
                         error_1 = _c.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
-                    case 12: return [2 /*return*/];
+                    case 13: return [2 /*return*/];
                 }
             });
         });
     };
     /**
      * Extract text from PDF file
-     * DISABLED: PDF parsing is currently disabled due to missing pdfjs-dist dependency
      */
-    /* private static async parsePDF(file: File): Promise<DocumentParseResult> {
-      try {
-        console.log('=== STARTING PDF PARSING ===');
-        console.log('File name:', file.name);
-        console.log('File size:', file.size, 'bytes');
-        
-        // Import PDF.js
-        const pdfjsLib = await import('pdfjs-dist');
-        console.log('PDF.js library loaded, version:', pdfjsLib.version);
-        
-        // For SharePoint Framework with strict CSP, we need to work around restrictions
-        // Webpack bundles the worker as a chunk file that we can reference
-        // The CSP is in "report-only" mode, so violations are logged but execution continues
-        if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
-          try {
-            // Find the base path where the webpart bundle is loaded from
-            const scripts = document.getElementsByTagName('script');
-            let basePath = '';
-            for (let i = 0; i < scripts.length; i++) {
-              const src = scripts[i].src;
-              if (src && src.indexOf('migration-web-part') !== -1) {
-                basePath = src.substring(0, src.lastIndexOf('/'));
-                break;
-              }
-            }
-            
-            if (basePath) {
-              // Webpack bundles the worker as: chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js
-              const workerPath = basePath + '/chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
-              pdfjsLib.GlobalWorkerOptions.workerSrc = workerPath;
-              console.log('PDF.js worker path set to bundled chunk:', workerPath);
-            } else {
-              // Fallback: Try relative path
-              pdfjsLib.GlobalWorkerOptions.workerSrc = './chunk.vendors-node_modules_pdfjs-dist_build_pdf_worker_min_mjs.js';
-              console.log('PDF.js worker path set to relative path (fallback)');
-            }
-          } catch (pathError) {
-            console.warn('Could not set worker path, using data URL fallback:', pathError);
-            // Fallback: Use data URL - CSP is report-only so execution will continue despite warning
-            const minimalWorker = 'self.onmessage=function(e){self.postMessage(e.data)}';
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 'data:application/javascript;base64,' + btoa(minimalWorker);
-            console.log('PDF.js worker set to data URL (CSP warning expected, report-only mode allows execution)');
-          }
-        }
-        
-        console.log('Reading file as ArrayBuffer...');
-        const arrayBuffer = await file.arrayBuffer();
-        console.log('ArrayBuffer size:', arrayBuffer.byteLength, 'bytes');
-        
-        console.log('Loading PDF document...');
-        // Disable worker explicitly to avoid CSP issues in SharePoint
-        const pdf = await pdfjsLib.getDocument({
-          // pdfjs expects a typed array (e.g. Uint8Array) rather than a raw ArrayBuffer
-          data: new Uint8Array(arrayBuffer),
-          verbosity: 0, // Reduce console noise
-          useWorkerFetch: false,
-          isEvalSupported: false,
-          useSystemFonts: true
-        }).promise;
-        
-        console.log('PDF loaded successfully. Number of pages:', pdf.numPages);
-        
-        let fullText = '';
-        const numPages = pdf.numPages;
-        
-        // Extract text from each page
-        for (let pageNum = 1; pageNum <= numPages; pageNum++) {
-          console.log(`Extracting text from page ${pageNum}/${numPages}...`);
-          try {
-            const page = await pdf.getPage(pageNum);
-            const textContent = await page.getTextContent();
-            const pageText = textContent.items
-              .map((item) => {
-                // Handle both TextItem and TextMarkedContent types
-                if ('str' in item && item.str) {
-                  return item.str;
+    DocumentParser.parsePDF = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var pdfToTextModule, pdfToText, text, error_2, errorMessage, msg;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_react-pdftotext_dist_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! react-pdftotext */ 5715, 23))];
+                    case 1:
+                        pdfToTextModule = _a.sent();
+                        pdfToText = pdfToTextModule.default || pdfToTextModule;
+                        return [4 /*yield*/, pdfToText(file)];
+                    case 2:
+                        text = _a.sent();
+                        if (!text || text.trim().length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
+                                }];
+                        }
+                        return [2 /*return*/, {
+                                text: text.trim(),
+                                success: true
+                            }];
+                    case 3:
+                        error_2 = _a.sent();
+                        errorMessage = 'Failed to parse PDF';
+                        if (error_2 instanceof Error) {
+                            errorMessage = error_2.message;
+                            msg = error_2.message.toLowerCase();
+                            if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
+                            }
+                            else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
+                                errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
+                            }
+                        }
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 4: return [2 /*return*/];
                 }
-                return '';
-              })
-              .join(' ');
-            fullText += pageText + '\n';
-            console.log(`Page ${pageNum} extracted: ${pageText.length} characters`);
-          } catch (pageError) {
-            console.error(`Error extracting page ${pageNum}:`, pageError);
-            // Continue with other pages even if one fails
-          }
-        }
-        
-        const extractedText = fullText.trim();
-        console.log('=== PDF PARSING COMPLETE ===');
-        console.log('Total text extracted:', extractedText.length, 'characters');
-        
-        if (extractedText.length === 0) {
-          console.warn('⚠️ WARNING: No text extracted from PDF. The PDF might be image-based or encrypted.');
-          return {
-            text: '',
-            success: false,
-            error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
-          };
-        }
-        
-        return {
-          text: extractedText,
-          success: true
-        };
-      } catch (error) {
-        console.error('=== PDF PARSING ERROR ===');
-        console.error('Error details:', error);
-        console.error('Error type:', typeof error);
-        console.error('Error message:', error instanceof Error ? error.message : String(error));
-        
-        let errorMessage = 'Failed to parse PDF';
-        if (error instanceof Error) {
-          errorMessage = error.message;
-          
-          // Provide more helpful error messages (using indexOf for ES5 compatibility)
-          const msg = error.message.toLowerCase();
-          if (msg.indexOf('worker') !== -1) {
-            errorMessage = 'PDF.js worker failed to load. Please check your internet connection and try again.';
-          } else if (msg.indexOf('invalid pdf') !== -1 || msg.indexOf('corrupted') !== -1) {
-            errorMessage = 'The PDF file appears to be corrupted or invalid. Please try a different PDF file.';
-          } else if (msg.indexOf('password') !== -1 || msg.indexOf('encrypted') !== -1) {
-            errorMessage = 'The PDF is password-protected or encrypted. Please remove the password and try again.';
-          }
-        }
-        
-        return {
-          text: '',
-          success: false,
-          error: errorMessage
-        };
-      }
-    } */
+            });
+        });
+    };
     /**
      * Extract text from Word (.docx) file
      */
     DocumentParser.parseWord = function (file) {
         return __awaiter(this, void 0, void 0, function () {
-            var mammoth, arrayBuffer, result, error_2;
+            var mammoth, arrayBuffer, result, error_3;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -3313,11 +3236,11 @@ var DocumentParser = /** @class */ (function () {
                                 success: true
                             }];
                     case 4:
-                        error_2 = _a.sent();
+                        error_3 = _a.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
-                                error: error_2 instanceof Error ? error_2.message : 'Failed to parse Word document'
+                                error: error_3 instanceof Error ? error_3.message : 'Failed to parse Word document'
                             }];
                     case 5: return [2 /*return*/];
                 }
@@ -3343,6 +3266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ALLOWED_DEPARTMENTS: () => (/* binding */ ALLOWED_DEPARTMENTS),
 /* harmony export */   ALLOWED_DISEASE_AREAS: () => (/* binding */ ALLOWED_DISEASE_AREAS),
 /* harmony export */   ALLOWED_DOCUMENT_TYPES: () => (/* binding */ ALLOWED_DOCUMENT_TYPES),
+/* harmony export */   ALLOWED_REGIONS: () => (/* binding */ ALLOWED_REGIONS),
 /* harmony export */   ALLOWED_THERAPY_AREAS: () => (/* binding */ ALLOWED_THERAPY_AREAS),
 /* harmony export */   findBestMatch: () => (/* binding */ findBestMatch)
 /* harmony export */ });
@@ -3565,6 +3489,15 @@ var ALLOWED_THERAPY_AREAS = [
     'Gyneacology',
     'CVD',
     'Oncology'
+];
+var ALLOWED_REGIONS = [
+    'UK',
+    'EUCAN',
+    'Global',
+    'APAC',
+    'Australia',
+    'Europe',
+    'US'
 ];
 var ALLOWED_DOCUMENT_TYPES = [
     'Knowledge Fireside Chat',
