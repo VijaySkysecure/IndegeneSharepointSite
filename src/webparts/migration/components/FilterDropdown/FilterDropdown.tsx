@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import styles from "./FilterDropdown.module.scss";
 
@@ -5,46 +6,14 @@ export interface IFilterDropdownProps {
   searchText: string;
 }
 
-// --------------------------------------------
-// Filter Data
-// --------------------------------------------
-const filterData = [
-  {
-    title: "Business Unit",
-    count: 3500,
-    children: [
-      { title: "SL 1", count: 479 },
-      { title: "SL 2", count: 657 },
-      { title: "SL 3", count: 373 },
-    ],
-  },
-  {
-    title: "Document Type",
-    count: 1509,
-    children: [
-      { title: "Type 1", count: 479 },
-      { title: "Type 2", count: 657 },
-      { title: "Type 3", count: 373 },
-    ],
-  },
-  {
-    title: "Client",
-    count: 1200,
-    children: [
-      { title: "Client A", count: 400 },
-      { title: "Client B", count: 500 },
-      { title: "Client C", count: 300 },
-    ],
-  },
-  {
-    title: "Region",
-    count: 800,
-    children: [
-      { title: "Region 1", count: 200 },
-      { title: "Region 2", count: 300 },
-      { title: "Region 3", count: 300 },
-    ],
-  },
+type FilterChild = { title: string; count?: number };
+type FilterGroup = { title: string; count?: number; children?: FilterChild[] };
+
+const filterData: FilterGroup[] = [
+  { title: "Business Unit", count: 3500, children: [{ title: "SL 1" }, { title: "SL 2" }, { title: "SL 3" }] },
+  { title: "Document Type", count: 1509, children: [{ title: "Type 1" }, { title: "Type 2" }, { title: "Type 3" }] },
+  { title: "Client", count: 1200, children: [{ title: "Client A" }, { title: "Client B" }, { title: "Client C" }] },
+  { title: "Region", count: 800, children: [{ title: "Region 1" }, { title: "Region 2" }, { title: "Region 3" }] },
   { title: "Therapy Area" },
   { title: "Disease Area" },
   { title: "File Format" },
@@ -52,86 +21,109 @@ const filterData = [
 
 const FilterDropdown: React.FC<IFilterDropdownProps> = ({ searchText }) => {
   const [openGroup, setOpenGroup] = React.useState<string | null>(null);
+  const [activeTab, setActiveTab] = React.useState<"documents" | "experts">("documents");
 
-  const toggleGroup = (title: string) => {
-    setOpenGroup((prev) => (prev === title ? null : title));
-  };
+  const toggleGroup = (title: string) => setOpenGroup(openGroup === title ? null : title);
 
-  const query = searchText.trim().toLowerCase();
-
-  const filteredData = filterData
-    .map((group) => {
-      const parentMatch = group.title.toLowerCase().includes(query);
-
-      if (!group.children) return parentMatch ? group : null;
-
-      const matchingChildren = group.children.filter((child) =>
-        child.title.toLowerCase().includes(query)
-      );
-
-      if (parentMatch || matchingChildren.length > 0) {
-        return {
-          ...group,
-          count: parentMatch
-            ? group.count
-            : matchingChildren.reduce(
-                (acc, { count }) => acc + (count || 0),
-                0
-              ),
-          children:
-            matchingChildren.length > 0 ? matchingChildren : group.children,
-          autoOpen: query.length > 0,
-        };
-      }
-      return null;
-    })
-    .filter(Boolean);
+  // Demo items (frontend only)
+  const items = Array.from({ length: 6 }).map((_, i) => ({
+    id: i,
+    title: activeTab === "documents" ? `Document ${i + 1}` : `Expert ${i + 1}`,
+    contributor: activeTab === "documents" ? `Contributor ${i + 1}` : `Role ${i + 1}`,
+    updated: "Nov 20, 2025",
+    description: "Short description goes here.",
+  }));
 
   return (
-    <aside className={styles.wrapper}>
-      <h3 className={styles.filterHeader}>Refine using filters by:</h3>
-
-      <nav className={styles.container}>
-        {filteredData.length === 0 ? (
-          <p className={styles.noResults}>No matching filters found.</p>
-        ) : (
-          filteredData.map((group: any) => {
-            const isOpen = group.autoOpen || openGroup === group.title;
-
+    <div className={styles.workspace}>
+      {/* Left Filter Sidebar */}
+      <aside className={styles.wrapper}>
+        <div className={styles.railHeader}>Refine using filters by:</div>
+        <nav className={styles.container}>
+          {filterData.map((group) => {
+            const hasChildren = !!group.children;
+            const isOpen = openGroup === group.title;
             return (
               <div key={group.title}>
-                {group.children ? (
-                  <button
-                    className={styles.parentBtn}
-                    onClick={() => toggleGroup(group.title)}
-                  >
-                    <span>
-                      {group.title} ({group.count})
-                    </span>
-                    <span className={styles.chevron}>
-                      {isOpen ? "▲" : "▼"}
-                    </span>
-                  </button>
-                ) : (
-                  <div className={styles.staticBtn}>{group.title}</div>
-                )}
+                <button
+                  className={`${styles.parentBtn} ${isOpen ? styles.rootBtnOpen : ""}`}
+                  onClick={() => hasChildren && toggleGroup(group.title)}
+                >
+                  <span>{group.title}</span>
+                  {hasChildren && <span className={styles.chevron}>{isOpen ? "▲" : "▼"}</span>}
+                </button>
 
-                {isOpen && group.children && (
+                {isOpen && hasChildren && (
                   <div className={styles.childList}>
-                    {group.children.map((child: any) => (
+                    {group.children!.map((child) => (
                       <button key={child.title} className={styles.childBtn}>
-                        {child.title}{" "}
-                        {child.count ? `(${child.count})` : ""}
+                        {child.title}
                       </button>
                     ))}
                   </div>
                 )}
               </div>
             );
-          })
-        )}
-      </nav>
-    </aside>
+          })}
+        </nav>
+      </aside>
+
+      {/* Main Content */}
+      <main className={styles.main}>
+        {/* Tabs */}
+        <div className={styles.tabs}>
+          <button
+            className={`${styles.tab} ${activeTab === "documents" ? styles.active : ""}`}
+            onClick={() => setActiveTab("documents")}
+          >
+            Documents
+          </button>
+          <button
+            className={`${styles.tab} ${activeTab === "experts" ? styles.active : ""}`}
+            onClick={() => setActiveTab("experts")}
+          >
+            Experts
+          </button>
+        </div>
+
+        {/* Results Grid */}
+        <section className={styles.results}>
+          <div className={styles.grid}>
+            {items.map((item) => (
+              <article key={item.id} className={styles.card}>
+                <h4 className={styles.cardTitle}>{item.title}</h4>
+
+                <div className={styles.cardRow}>
+                  <span className={styles.cardLabel}>Contributor</span>
+                  <span className={styles.cardValue}>{item.contributor}</span>
+                </div>
+
+                <div className={styles.cardRow}>
+                  <span className={styles.cardLabel}>Updated</span>
+                  <span className={styles.cardValue}>{item.updated}</span>
+                </div>
+
+                <div className={styles.cardRow}>
+                  <span className={styles.cardLabel}>Description</span>
+                  <span className={styles.cardValue}>{item.description}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
+
+      {/* Right Quick Links */}
+      <aside className={styles.rightRail}>
+        <h3 className={styles.quickLinksTitle}>Quick Links</h3>
+        <ul className={styles.quickLinksList}>
+          <li>#Upload Guidelines</li>
+          <li>#Metadata Standards</li>
+          <li>#Retention Policy</li>
+          <li>#Help &amp; Support</li>
+        </ul>
+      </aside>
+    </div>
   );
 };
 

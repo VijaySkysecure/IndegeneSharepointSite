@@ -5,6 +5,7 @@
   color: white;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  position: relative; /* anchor for absolute/fixed dropdown */
 }
 
 .headerContent {
@@ -24,7 +25,6 @@
   font-weight: 700;
   margin: 0 0 10px 0;
   color: white;
-  font-family: 'Inter', sans-serif;
 }
 
 .description {
@@ -33,7 +33,6 @@
   color: white;
   opacity: 0.95;
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
 }
 
 .addFileButton {
@@ -45,7 +44,6 @@
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
   transition: background-color 0.3s;
 
   &:hover {
@@ -58,31 +56,29 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 20px;
-  position: relative; /* IMPORTANT — needed for absolute dropdown */
 }
 
 .leadership {
   font-size: 18px;
   color: white;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
 }
 
 .searchContainer {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px 16px;
-  min-width: 300px;
+  min-width: 320px;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .searchIcon {
   width: 18px;
   height: 18px;
   margin-right: 10px;
-  flex-shrink: 0;
 }
 
 .searchInput {
@@ -92,8 +88,6 @@
   font-size: 16px;
   color: #333;
   background: transparent;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
 
   &::placeholder {
     color: #999;
@@ -101,30 +95,77 @@
 }
 
 /* -----------------------------------------------------------
-   ✅ FIXED DROPDOWN PANEL — now outside searchInput
+   ✅ COMPRESSED WIDE DROPDOWN PANEL
 ------------------------------------------------------------ */
 .dropdownPanel {
-  position: absolute;
-  top: 70px; /* adjust based on your header height */
-  right: 0px;
-  width: 420px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  width: min(70vw, 1050px); /* compressed width */
+  z-index: 1000;
+  animation: fadeDown 0.18s ease-out;
+}
 
-  background: white;
-  border-radius: 10px;
+.dropdownInner {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
   padding: 16px;
+  border: 1px solid #e7ebf1;
 
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.18);
-  z-index: 9999;
-  animation: fadeDown 0.16s ease-out;
+  /* compressed height for better fit */
+  max-height: 70vh;
+  overflow: auto;
+}
+
+/* Close button */
+.dropdownClose {
+  position: absolute;
+  top: 8px;
+  right: calc(2.5vw);
+  background: #0b4b93;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdownClose:hover {
+  background: #093f7a;
 }
 
 @keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
+  from { opacity: 0; transform: translate(-50%, -8px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .dropdownPanel {
+    top: 110px;
+    width: 96vw;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 24px;
+  }
+
+  .searchContainer {
+    min-width: 240px;
+  }
+
+  .dropdownPanel {
+    top: 100px;
+    width: 96vw;
+  }
+
+  .dropdownInner {
+    padding: 14px;
+    border-radius: 10px;
   }
 }

@@ -250,20 +250,33 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".wrapper_1a46508b{align-self:flex-start;background:#fff;border-radius:20px;box-shadow:0 6px 16px rgba(0,0,0,.12);box-sizing:border-box;display:flex;flex-direction:column;flex-shrink:0;font-family:Inter,sans-serif;gap:16px;padding:20px;width:280px}.filterHeader_1a46508b{color:#003b75;font-size:18px;font-weight:700;text-align:left}.container_1a46508b{background:#f3f6fa;border:1px solid #dce3ec;border-radius:16px;display:flex;flex-direction:column;gap:14px;padding:14px 16px}.parentBtn_1a46508b{align-items:center;background:#fff;border:1px solid #d7dbe2;border-radius:12px;box-shadow:0 2px 6px rgba(0,63,120,.1);color:#002c5a;cursor:pointer;display:flex;font-size:15px;font-weight:600;justify-content:space-between;padding:12px 16px;transition:all .25s ease;width:100%}.parentBtn_1a46508b:hover{background:#f0f4fa;border-color:#b8c6d7;transform:translateY(-1px)}.staticBtn_1a46508b{background:#e3e7ee;border-radius:12px;color:#4a4f57;font-size:15px;font-weight:600;padding:12px 16px;width:100%}.chevron_1a46508b{color:#002c5a;font-size:13px;font-weight:700}.childList_1a46508b{animation:fadeIn_1a46508b .28s ease forwards;display:flex;flex-direction:column;gap:10px;padding-left:10px;padding-top:6px}@keyframes fadeIn_1a46508b{0%{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}.childBtn_1a46508b{background:#fff;border:1px solid #d7dbe2;border-radius:10px;color:#003567;cursor:pointer;font-size:14px;font-weight:500;padding:10px 14px;text-align:left;transition:all .25s ease;width:94%}.childBtn_1a46508b:hover{background:#e9f1fb;border-color:#a7c2e8;transform:translateX(4px)}.noResults_1a46508b{color:#5a6270;font-size:14px;font-style:italic;padding:12px;text-align:center}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvSlllc2hhcy9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NoYXJlcG9pbnQlMjBtaWdyYXRpb24vSW5kZWdlbmVTaGFyZXBvaW50U2l0ZS9zcmMvd2VicGFydHMvbWlncmF0aW9uL2NvbXBvbmVudHMvRmlsdGVyRHJvcGRvd24vRmlsdGVyRHJvcGRvd24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSUEsa0JBa0JFLHFCQUFBLENBaEJBLGVBQUEsQ0FDQSxrQkFBQSxDQVNBLHFDQUFBLENBUEEscUJBQUEsQ0FHQSxZQUFBLENBQ0EscUJBQUEsQ0FNQSxhQUFBLENBVEEsNEJBQUEsQ0FJQSxRQUFBLENBTkEsWUFBQSxDQUhBLFdBaUJBLENBR0YsdUJBSUUsYUFBQSxDQURBLGNBQUEsQ0FGQSxlQUFBLENBQ0EsZUFFQSxDQUdGLG9CQUNFLGtCQUFBLENBTUEsd0JBQUEsQ0FMQSxrQkFBQSxDQUVBLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxpQkFJQSxDQUlGLG9CQWFFLGtCQUFBLENBWkEsZUFBQSxDQUNBLHdCQUFBLENBQ0Esa0JBQUEsQ0FhQSxzQ0FBQSxDQVRBLGFBQUEsQ0FDQSxjQUFBLENBR0EsWUFBQSxDQUxBLGNBQUEsQ0FEQSxlQUFBLENBT0EsNkJBQUEsQ0FSQSxpQkFBQSxDQVdBLHdCQUFBLENBTkEsVUFPQSxDQUdGLDBCQUNFLGtCQUFBLENBQ0Esb0JBQUEsQ0FDQSwwQkFBQSxDQUdGLG9CQUNFLGtCQUFBLENBQ0Esa0JBQUEsQ0FHQSxhQUFBLENBRUEsY0FBQSxDQUhBLGVBQUEsQ0FEQSxpQkFBQSxDQUdBLFVBQ0EsQ0FHRixrQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQ0EsQ0FJRixvQkFNRSw0Q0FBQSxDQUxBLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLFFBQUEsQ0FDQSxpQkFBQSxDQUNBLGVBQ0EsQ0FHRiwyQkFDRSxHQUFPLFNBQUEsQ0FBWSwwQkFBQSxDQUNuQixHQUFLLFNBQUEsQ0FBWSx1QkFBQSxDQUFBLENBR25CLG1CQUNFLGVBQUEsQ0FDQSx3QkFBQSxDQUNBLGtCQUFBLENBSUEsYUFBQSxDQUNBLGNBQUEsQ0FGQSxjQUFBLENBREEsZUFBQSxDQURBLGlCQUFBLENBTUEsZUFBQSxDQUNBLHdCQUFBLENBRkEsU0FFQSxDQUdGLHlCQUNFLGtCQUFBLENBQ0Esb0JBQUEsQ0FDQSx5QkFBQSxDQUdGLG9CQUdFLGFBQUEsQ0FDQSxjQUFBLENBQ0EsaUJBQUEsQ0FKQSxZQUFBLENBQ0EsaUJBR0EiLCJmaWxlIjoiRmlsdGVyRHJvcGRvd24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".workspace_79fd4d01{align-items:start;display:grid;gap:18px;grid-template-columns:200px 1fr 160px;margin:0 auto;max-width:1300px;padding:18px;width:100%}.wrapper_79fd4d01{background:#fff;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:10px;padding:6px;width:100%}.railHeader_79fd4d01{background:#0b4b93;border-radius:6px;color:#fff;font-size:14px;font-weight:700;padding:5px 10px;text-align:center}.container_79fd4d01{display:flex;flex-direction:column;gap:8px}.parentBtn_79fd4d01{align-items:center;background:#f3f6fa;border:1px solid #d0d3d9;border-radius:8px;color:#1b2a3a;display:flex;font-size:13px;font-weight:600;justify-content:space-between;padding:5px 10px;transition:background .2s ease;width:100%}.parentBtn_79fd4d01:hover{background:#e0e4ea}.rootBtnOpen_79fd4d01{background:#d6dbe3}.chevron_79fd4d01{color:#1b2a3a;font-size:12px;font-weight:700}.childList_79fd4d01{display:flex;flex-direction:column;gap:6px;padding-top:6px}.childBtn_79fd4d01{background:#fff;border:1px solid #d0d3d9;border-radius:6px;color:#1b2a3a;font-weight:500;padding:7px 10px;text-align:left;transition:background .2s ease}.childBtn_79fd4d01:hover{background:#f0f4fa}.main_79fd4d01{display:flex;flex-direction:column;gap:16px;width:100%}.tabs_79fd4d01{display:flex;gap:10px}.tab_79fd4d01{background:#d0d3d9;border:none;border-radius:6px;color:#1b2a3a;cursor:pointer;font-size:14px;font-weight:700;min-width:130px;padding:8px 12px;text-align:center;transition:background .2s ease}.tab_79fd4d01:hover{background:#b8bcc2}.active_79fd4d01{background:#0b4b93;color:#fff}.results_79fd4d01{background:#fff;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08);padding:14px}.grid_79fd4d01{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}.card_79fd4d01{background:#fff;border:1px solid #d0d3d9;border-radius:6px;padding:6px 10px 10px;transition:box-shadow .2s ease}.card_79fd4d01:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}.cardTitle_79fd4d01{color:#1b2a3a;font-size:14px;font-weight:700;margin-bottom:6px}.cardRow_79fd4d01{display:grid;gap:6px;grid-template-columns:90px 1fr;margin:3px 0}.cardLabel_79fd4d01{color:#444b55;font-size:13px;font-weight:600}.cardValue_79fd4d01{color:#1b2a3a;font-size:13px}.rightRail_79fd4d01{background:#0b4b93;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);color:#fff;min-height:260px;padding:12px;width:80%}.quickLinksTitle_79fd4d01{font-size:15px;font-weight:800;margin-bottom:10px;text-align:center}.quickLinksList_79fd4d01{list-style:none;margin:0;padding:0}.quickLinksList_79fd4d01 li{font-size:13px;font-weight:600;margin-bottom:8px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvSlllc2hhcy9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NoYXJlcG9pbnQlMjBtaWdyYXRpb24vSW5kZWdlbmVTaGFyZXBvaW50U2l0ZS9zcmMvd2VicGFydHMvbWlncmF0aW9uL2NvbXBvbmVudHMvRmlsdGVyRHJvcGRvd24vRmlsdGVyRHJvcGRvd24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0Esb0JBUUUsaUJBQUEsQ0FQQSxZQUFBLENBRUEsUUFBQSxDQURBLHFDQUFBLENBS0EsYUFBQSxDQURBLGdCQUFBLENBRkEsWUFBQSxDQUNBLFVBR0EsQ0FJRixrQkFJRSxlQUFBLENBQ0Esa0JBQUEsQ0FFQSxvQ0FBQSxDQU5BLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLFFBQUEsQ0FHQSxXQUFBLENBRUEsVUFBQSxDQUdGLHFCQUNFLGtCQUFBLENBSUEsaUJBQUEsQ0FIQSxVQUFBLENBRUEsY0FBQSxDQURBLGVBQUEsQ0FHQSxnQkFBQSxDQUNBLGlCQUFBLENBR0Ysb0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsT0FBQSxDQUdGLG9CQVdFLGtCQUFBLENBVkEsa0JBQUEsQ0FDQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsYUFBQSxDQUVBLFlBQUEsQ0FIQSxjQUFBLENBREEsZUFBQSxDQUtBLDZCQUFBLENBTkEsZ0JBQUEsQ0FRQSw4QkFBQSxDQUpBLFVBSUEsQ0FHRiwwQkFDRSxrQkFBQSxDQUdGLHNCQUNFLGtCQUFBLENBR0Ysa0JBR0UsYUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUNBLENBR0Ysb0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsT0FBQSxDQUNBLGVBQUEsQ0FHRixtQkFDRSxlQUFBLENBQ0Esd0JBQUEsQ0FDQSxpQkFBQSxDQUlBLGFBQUEsQ0FEQSxlQUFBLENBRkEsZ0JBQUEsQ0FDQSxlQUFBLENBR0EsOEJBQUEsQ0FHRix5QkFDRSxrQkFBQSxDQUlGLGVBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUNBLFVBQUEsQ0FJRixlQUNFLFlBQUEsQ0FDQSxRQUFBLENBR0YsY0FHRSxrQkFBQSxDQUNBLFdBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FHQSxjQUFBLENBREEsY0FBQSxDQURBLGVBQUEsQ0FOQSxlQUFBLENBQ0EsZ0JBQUEsQ0FRQSxpQkFBQSxDQUNBLDhCQUFBLENBR0Ysb0JBQ0Usa0JBQUEsQ0FHRixpQkFDRSxrQkFBQSxDQUNBLFVBQUEsQ0FJRixrQkFDRSxlQUFBLENBQ0EsaUJBQUEsQ0FFQSxxQ0FBQSxDQURBLFlBQ0EsQ0FHRixlQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEseURBQ0EsQ0FHRixlQUlFLGVBQUEsQ0FIQSx3QkFBQSxDQUNBLGlCQUFBLENBQ0EscUJBQUEsQ0FFQSw4QkFBQSxDQUdGLHFCQUNFLG1DQUFBLENBR0Ysb0JBSUUsYUFBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBQ0EsaUJBQ0EsQ0FHRixrQkFDRSxZQUFBLENBRUEsT0FBQSxDQURBLDhCQUFBLENBRUEsWUFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FFQSxjQUFBLENBREEsZUFDQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBSUYsb0JBQ0Usa0JBQUEsQ0FFQSxrQkFBQSxDQUlBLG9DQUFBLENBTEEsVUFBQSxDQUdBLGdCQUFBLENBREEsWUFBQSxDQUVBLFNBQ0EsQ0FHRiwwQkFDRSxjQUFBLENBQ0EsZUFBQSxDQUNBLGtCQUFBLENBQ0EsaUJBQUEsQ0FHRix5QkFDRSxlQUFBLENBRUEsUUFBQSxDQURBLFNBQ0EsQ0FHRiw0QkFHRSxjQUFBLENBREEsZUFBQSxDQURBLGlCQUVBIiwiZmlsZSI6IkZpbHRlckRyb3Bkb3duLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  wrapper_1a46508b: "wrapper_1a46508b",
-  filterHeader_1a46508b: "filterHeader_1a46508b",
-  container_1a46508b: "container_1a46508b",
-  parentBtn_1a46508b: "parentBtn_1a46508b",
-  staticBtn_1a46508b: "staticBtn_1a46508b",
-  chevron_1a46508b: "chevron_1a46508b",
-  childList_1a46508b: "childList_1a46508b",
-  fadeIn_1a46508b: "fadeIn_1a46508b",
-  childBtn_1a46508b: "childBtn_1a46508b",
-  noResults_1a46508b: "noResults_1a46508b"
+  workspace_79fd4d01: "workspace_79fd4d01",
+  wrapper_79fd4d01: "wrapper_79fd4d01",
+  railHeader_79fd4d01: "railHeader_79fd4d01",
+  container_79fd4d01: "container_79fd4d01",
+  parentBtn_79fd4d01: "parentBtn_79fd4d01",
+  rootBtnOpen_79fd4d01: "rootBtnOpen_79fd4d01",
+  chevron_79fd4d01: "chevron_79fd4d01",
+  childList_79fd4d01: "childList_79fd4d01",
+  childBtn_79fd4d01: "childBtn_79fd4d01",
+  main_79fd4d01: "main_79fd4d01",
+  tabs_79fd4d01: "tabs_79fd4d01",
+  tab_79fd4d01: "tab_79fd4d01",
+  active_79fd4d01: "active_79fd4d01",
+  results_79fd4d01: "results_79fd4d01",
+  grid_79fd4d01: "grid_79fd4d01",
+  card_79fd4d01: "card_79fd4d01",
+  cardTitle_79fd4d01: "cardTitle_79fd4d01",
+  cardRow_79fd4d01: "cardRow_79fd4d01",
+  cardLabel_79fd4d01: "cardLabel_79fd4d01",
+  cardValue_79fd4d01: "cardValue_79fd4d01",
+  rightRail_79fd4d01: "rightRail_79fd4d01",
+  quickLinksTitle_79fd4d01: "quickLinksTitle_79fd4d01",
+  quickLinksList_79fd4d01: "quickLinksList_79fd4d01"
 });
 
 
@@ -317,24 +330,26 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_46f893e7{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_46f893e7{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_46f893e7{flex:1}.companyName_46f893e7{color:#fff;font-family:Inter,sans-serif;font-size:48px;font-weight:700;margin:0 0 10px}.description_46f893e7{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_46f893e7,.description_46f893e7{color:#fff;font-family:Inter,sans-serif;font-size:16px}.addFileButton_46f893e7{background-color:#4834d4;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_46f893e7:hover{background-color:#3d2db8}.rightSection_46f893e7{align-items:flex-end;display:flex;flex-direction:column;gap:20px;position:relative}.leadership_46f893e7{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_46f893e7{align-items:center;background-color:#fff;border-radius:4px;cursor:pointer;display:flex;min-width:300px;padding:8px 16px}.searchIcon_46f893e7{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_46f893e7{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_46f893e7:-ms-input-placeholder{color:#999}.searchInput_46f893e7::placeholder{color:#999}.dropdownPanel_46f893e7{animation:fadeDown_46f893e7 .16s ease-out;background:#fff;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.18);padding:16px;position:absolute;right:0;top:70px;width:420px;z-index:9999}@keyframes fadeDown_46f893e7{0%{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvSlllc2hhcy9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NoYXJlcG9pbnQlMjBtaWdyYXRpb24vSW5kZWdlbmVTaGFyZXBvaW50U2l0ZS9zcmMvd2VicGFydHMvbWlncmF0aW9uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFFRSwyRUFBQSxDQUdBLHFCQUFBLENBREEsVUFBQSxDQUVBLDRCQUFBLENBSEEsaUJBQUEsQ0FGQSxVQUtBLENBR0Ysd0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EsNkJBQUEsQ0FHQSxhQUFBLENBREEsZ0JBQ0EsQ0FHRixzQkFDRSxNQUFBLENBR0Ysc0JBSUUsVUFBQSxDQUNBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FDQSxlQUVBLENBR0Ysc0JBS0UsZUFBQSxDQUhBLGVBQUEsQ0FFQSxXQUVBLENBR0YsOENBTkUsVUFBQSxDQUdBLDRCQUFBLENBTEEsY0FrQkEsQ0FWRix3QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FJQSxpQkFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBSkEsaUJBQUEsQ0FNQSwrQkFBQSxDQUVBLDhCQUNFLHdCQUFBLENBSUosdUJBR0Usb0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQUEsQ0FFQSxRQUFBLENBQ0EsaUJBQUEsQ0FHRixxQkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFDQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUdBLGNBQUEsQ0FOQSxZQUFBLENBS0EsZUFBQSxDQURBLGdCQUVBLENBR0YscUJBSUUsYUFBQSxDQUZBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBR0EsQ0FHRixzQkFNRSxjQUFBLENBTEEsV0FBQSxDQUlBLFVBQUEsQ0FGQSxNQUFBLENBSUEsNEJBQUEsQ0FIQSxjQUFBLENBSUEsZUFBQSxDQU5BLFNBTUEsQ0FFQSxtQ0FDRSxVQUFBLENBREYsNENBQ0UsVUFBQSxDQURGLG1DQUNFLFVBQUEsQ0FPSix3QkFZRSx5Q0FBQSxDQU5BLGVBQUEsQ0FDQSxrQkFBQSxDQUdBLHFDQUFBLENBRkEsWUFBQSxDQVBBLGlCQUFBLENBRUEsT0FBQSxDQURBLFFBQUEsQ0FFQSxXQUFBLENBT0EsWUFDQSxDQUdGLDZCQUNFLEdBQ0UsU0FBQSxDQUNBLDBCQUFBLENBRUYsR0FDRSxTQUFBLENBQ0EsdUJBQUEsQ0FBQSIsImZpbGUiOiJIZWFkZXIubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_52468a40{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;position:relative;width:100%}.headerContent_52468a40{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_52468a40{flex:1}.companyName_52468a40{color:#fff;font-size:48px;font-weight:700;margin:0 0 10px}.description_52468a40{color:#fff;font-size:16px;font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_52468a40{background-color:#4834d4;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:16px;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_52468a40:hover{background-color:#3d2db8}.rightSection_52468a40{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_52468a40{color:#fff;font-size:18px;font-weight:500}.searchContainer_52468a40{align-items:center;background-color:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer;display:flex;min-width:320px;padding:8px 16px}.searchIcon_52468a40{height:18px;margin-right:10px;width:18px}.searchInput_52468a40{background:0 0;border:none;color:#333;flex:1;font-size:16px;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_52468a40:-ms-input-placeholder{color:#999}.searchInput_52468a40::placeholder{color:#999}.dropdownPanel_52468a40{animation:fadeDown_52468a40 .18s ease-out;left:50%;position:fixed;top:120px;transform:translateX(-50%);width:min(70vw,1050px);z-index:1000}.dropdownInner_52468a40{background:#fff;border:1px solid #e7ebf1;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.12);max-height:70vh;overflow:auto;padding:16px}.dropdownClose_52468a40{background:#0b4b93;border:none;border-radius:20px;color:#fff;cursor:pointer;font-weight:700;padding:6px 10px;position:absolute;right:2.5vw;top:8px}.dropdownClose_52468a40:hover{background:#093f7a}@keyframes fadeDown_52468a40{0%{opacity:0;transform:translate(-50%,-8px)}to{opacity:1;transform:translate(-50%)}}@media (max-width:1024px){.dropdownPanel_52468a40{top:110px;width:96vw}}@media (max-width:640px){.header_52468a40{padding:24px}.searchContainer_52468a40{min-width:240px}.dropdownPanel_52468a40{top:100px;width:96vw}.dropdownInner_52468a40{border-radius:10px;padding:14px}}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvSlllc2hhcy9PbmVEcml2ZSUyMC0lMjBTS1lTRUNVUkUlMjBURUNITk9MT0dJRVMlMjBQUklWQVRFJTIwTElNSVRFRC9EZXNrdG9wL1NoYXJlcG9pbnQlMjBtaWdyYXRpb24vSW5kZWdlbmVTaGFyZXBvaW50U2l0ZS9zcmMvd2VicGFydHMvbWlncmF0aW9uL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFFRSwyRUFBQSxDQUdBLHFCQUFBLENBREEsVUFBQSxDQUVBLDRCQUFBLENBSEEsaUJBQUEsQ0FJQSxpQkFBQSxDQU5BLFVBTUEsQ0FHRix3QkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSw2QkFBQSxDQUdBLGFBQUEsQ0FEQSxnQkFDQSxDQUdGLHNCQUNFLE1BQUEsQ0FHRixzQkFJRSxVQUFBLENBSEEsY0FBQSxDQUNBLGVBQUEsQ0FDQSxlQUNBLENBR0Ysc0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FJQSxlQUFBLENBSEEsZUFBQSxDQUVBLFdBQ0EsQ0FHRix3QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FJQSxpQkFBQSxDQUxBLFVBQUEsQ0FJQSxjQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FKQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEsOEJBQ0Usd0JBQUEsQ0FJSix1QkFHRSxvQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFBQSxDQUVBLFFBQUEsQ0FHRixxQkFFRSxVQUFBLENBREEsY0FBQSxDQUVBLGVBQUEsQ0FHRiwwQkFFRSxrQkFBQSxDQUNBLHFCQUFBLENBQ0EsaUJBQUEsQ0FJQSxvQ0FBQSxDQURBLGNBQUEsQ0FOQSxZQUFBLENBS0EsZUFBQSxDQURBLGdCQUdBLENBR0YscUJBRUUsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFFQSxDQUdGLHNCQU1FLGNBQUEsQ0FMQSxXQUFBLENBSUEsVUFBQSxDQUZBLE1BQUEsQ0FDQSxjQUFBLENBRkEsU0FJQSxDQUVBLG1DQUNFLFVBQUEsQ0FERiw0Q0FDRSxVQUFBLENBREYsbUNBQ0UsVUFBQSxDQU9KLHdCQU9FLHlDQUFBLENBTEEsUUFBQSxDQURBLGNBQUEsQ0FHQSxTQUFBLENBREEsMEJBQUEsQ0FFQSxzQkFBQSxDQUNBLFlBQ0EsQ0FHRix3QkFDRSxlQUFBLENBSUEsd0JBQUEsQ0FIQSxrQkFBQSxDQUNBLHNDQUFBLENBS0EsZUFBQSxDQUNBLGFBQUEsQ0FMQSxZQUtBLENBSUYsd0JBSUUsa0JBQUEsQ0FFQSxXQUFBLENBQ0Esa0JBQUEsQ0FGQSxVQUFBLENBS0EsY0FBQSxDQURBLGVBQUEsQ0FEQSxnQkFBQSxDQVBBLGlCQUFBLENBRUEsV0FBQSxDQURBLE9BUUEsQ0FHRiw4QkFDRSxrQkFBQSxDQUdGLDZCQUNFLEdBQU8sU0FBQSxDQUFZLDhCQUFBLENBQ25CLEdBQU8sU0FBQSxDQUFZLHlCQUFBLENBQUEsQ0FJckIsMEJBQ0Usd0JBQ0UsU0FBQSxDQUNBLFVBQUEsQ0FBQSxDQUlKLHlCQUNFLGlCQUNFLFlBQUEsQ0FHRiwwQkFDRSxlQUFBLENBR0Ysd0JBQ0UsU0FBQSxDQUNBLFVBQUEsQ0FHRix3QkFFRSxrQkFBQSxDQURBLFlBQ0EsQ0FBQSIsImZpbGUiOiJIZWFkZXIubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  header_46f893e7: "header_46f893e7",
-  headerContent_46f893e7: "headerContent_46f893e7",
-  leftSection_46f893e7: "leftSection_46f893e7",
-  companyName_46f893e7: "companyName_46f893e7",
-  description_46f893e7: "description_46f893e7",
-  addFileButton_46f893e7: "addFileButton_46f893e7",
-  rightSection_46f893e7: "rightSection_46f893e7",
-  leadership_46f893e7: "leadership_46f893e7",
-  searchContainer_46f893e7: "searchContainer_46f893e7",
-  searchIcon_46f893e7: "searchIcon_46f893e7",
-  searchInput_46f893e7: "searchInput_46f893e7",
+  header_52468a40: "header_52468a40",
+  headerContent_52468a40: "headerContent_52468a40",
+  leftSection_52468a40: "leftSection_52468a40",
+  companyName_52468a40: "companyName_52468a40",
+  description_52468a40: "description_52468a40",
+  addFileButton_52468a40: "addFileButton_52468a40",
+  rightSection_52468a40: "rightSection_52468a40",
+  leadership_52468a40: "leadership_52468a40",
+  searchContainer_52468a40: "searchContainer_52468a40",
+  searchIcon_52468a40: "searchIcon_52468a40",
+  searchInput_52468a40: "searchInput_52468a40",
   searchInput: "searchInput",
-  dropdownPanel_46f893e7: "dropdownPanel_46f893e7",
-  fadeDown_46f893e7: "fadeDown_46f893e7"
+  dropdownPanel_52468a40: "dropdownPanel_52468a40",
+  fadeDown_52468a40: "fadeDown_52468a40",
+  dropdownInner_52468a40: "dropdownInner_52468a40",
+  dropdownClose_52468a40: "dropdownClose_52468a40"
 });
 
 
@@ -843,8 +858,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BUHeader.module.scss */ 61566);
-/* harmony import */ var _FilterDropdown_FilterDropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FilterDropdown/FilterDropdown */ 97684);
-
 
 
 var BUHeader = function (props) {
@@ -853,20 +866,7 @@ var BUHeader = function (props) {
             props.onBack();
         }
     };
-    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState(""), searchText = _a[0], setSearchText = _a[1];
-    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isOpen = _b[0], setIsOpen = _b[1];
-    var containerRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    // Close dropdown on outside click
-    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
-        var handleClickOutside = function (event) {
-            if (containerRef.current && !containerRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
-        document.addEventListener("mousedown", handleClickOutside);
-        return function () { return document.removeEventListener("mousedown", handleClickOutside); };
-    }, []);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buHeader, ref: containerRef },
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buHeader },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].backButton, onClick: handleBack },
@@ -877,15 +877,10 @@ var BUHeader = function (props) {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Add a file")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buHead }, "BU Head"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer, onClick: function () { return setIsOpen(true); } },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchIcon, width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z", fill: "#666" })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search...", value: searchText, onChange: function (e) {
-                            setSearchText(e.target.value);
-                            setIsOpen(true);
-                        } })),
-                isOpen && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropdownPanel },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FilterDropdown_FilterDropdown__WEBPACK_IMPORTED_MODULE_2__["default"], { searchText: searchText })))))));
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search..." }))))));
 };
 
 
@@ -1544,59 +1539,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FilterDropdown.module.scss */ 53820);
-var __assign = (undefined && undefined.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 
 
-// --------------------------------------------
-// Filter Data
-// --------------------------------------------
 var filterData = [
-    {
-        title: "Business Unit",
-        count: 3500,
-        children: [
-            { title: "SL 1", count: 479 },
-            { title: "SL 2", count: 657 },
-            { title: "SL 3", count: 373 },
-        ],
-    },
-    {
-        title: "Document Type",
-        count: 1509,
-        children: [
-            { title: "Type 1", count: 479 },
-            { title: "Type 2", count: 657 },
-            { title: "Type 3", count: 373 },
-        ],
-    },
-    {
-        title: "Client",
-        count: 1200,
-        children: [
-            { title: "Client A", count: 400 },
-            { title: "Client B", count: 500 },
-            { title: "Client C", count: 300 },
-        ],
-    },
-    {
-        title: "Region",
-        count: 800,
-        children: [
-            { title: "Region 1", count: 200 },
-            { title: "Region 2", count: 300 },
-            { title: "Region 3", count: 300 },
-        ],
-    },
+    { title: "Business Unit", count: 3500, children: [{ title: "SL 1" }, { title: "SL 2" }, { title: "SL 3" }] },
+    { title: "Document Type", count: 1509, children: [{ title: "Type 1" }, { title: "Type 2" }, { title: "Type 3" }] },
+    { title: "Client", count: 1200, children: [{ title: "Client A" }, { title: "Client B" }, { title: "Client C" }] },
+    { title: "Region", count: 800, children: [{ title: "Region 1" }, { title: "Region 2" }, { title: "Region 3" }] },
     { title: "Therapy Area" },
     { title: "Disease Area" },
     { title: "File Format" },
@@ -1604,46 +1553,51 @@ var filterData = [
 var FilterDropdown = function (_a) {
     var searchText = _a.searchText;
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), openGroup = _b[0], setOpenGroup = _b[1];
-    var toggleGroup = function (title) {
-        setOpenGroup(function (prev) { return (prev === title ? null : title); });
-    };
-    var query = searchText.trim().toLowerCase();
-    var filteredData = filterData
-        .map(function (group) {
-        var parentMatch = group.title.toLowerCase().includes(query);
-        if (!group.children)
-            return parentMatch ? group : null;
-        var matchingChildren = group.children.filter(function (child) {
-            return child.title.toLowerCase().includes(query);
-        });
-        if (parentMatch || matchingChildren.length > 0) {
-            return __assign(__assign({}, group), { count: parentMatch
-                    ? group.count
-                    : matchingChildren.reduce(function (acc, _a) {
-                        var count = _a.count;
-                        return acc + (count || 0);
-                    }, 0), children: matchingChildren.length > 0 ? matchingChildren : group.children, autoOpen: query.length > 0 });
-        }
-        return null;
-    })
-        .filter(Boolean);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].filterHeader }, "Refine using filters by:"),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container }, filteredData.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].noResults }, "No matching filters found.")) : (filteredData.map(function (group) {
-            var isOpen = group.autoOpen || openGroup === group.title;
-            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: group.title },
-                group.children ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].parentBtn, onClick: function () { return toggleGroup(group.title); } },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null,
-                        group.title,
-                        " (",
-                        group.count,
-                        ")"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].chevron }, isOpen ? "▲" : "▼"))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].staticBtn }, group.title)),
-                isOpen && group.children && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childList }, group.children.map(function (child) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childBtn },
-                    child.title,
-                    " ",
-                    child.count ? "(".concat(child.count, ")") : "")); })))));
-        })))));
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState("documents"), activeTab = _c[0], setActiveTab = _c[1];
+    var toggleGroup = function (title) { return setOpenGroup(openGroup === title ? null : title); };
+    // Demo items (frontend only)
+    var items = Array.from({ length: 6 }).map(function (_, i) { return ({
+        id: i,
+        title: activeTab === "documents" ? "Document ".concat(i + 1) : "Expert ".concat(i + 1),
+        contributor: activeTab === "documents" ? "Contributor ".concat(i + 1) : "Role ".concat(i + 1),
+        updated: "Nov 20, 2025",
+        description: "Short description goes here.",
+    }); });
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].workspace },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].railHeader }, "Refine using filters by:"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container }, filterData.map(function (group) {
+                var hasChildren = !!group.children;
+                var isOpen = openGroup === group.title;
+                return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: group.title },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "".concat(_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].parentBtn, " ").concat(isOpen ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rootBtnOpen : ""), onClick: function () { return hasChildren && toggleGroup(group.title); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, group.title),
+                        hasChildren && react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].chevron }, isOpen ? "▲" : "▼")),
+                    isOpen && hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childList }, group.children.map(function (child) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childBtn }, child.title)); })))));
+            }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].main },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tabs },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "".concat(_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tab, " ").concat(activeTab === "documents" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active : ""), onClick: function () { return setActiveTab("documents"); } }, "Documents"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "".concat(_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tab, " ").concat(activeTab === "experts" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active : ""), onClick: function () { return setActiveTab("experts"); } }, "Experts")),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].results },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid }, items.map(function (item) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardTitle }, item.title),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Contributor"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.contributor)),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Updated"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.updated)),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Description"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.description)))); })))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightRail },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].quickLinksTitle }, "Quick Links"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].quickLinksList },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Upload Guidelines"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Metadata Standards"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Retention Policy"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Help & Support")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FilterDropdown);
 
@@ -1662,16 +1616,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FilterDropdown.module.css */ 9328);
 var styles = {
-    wrapper: 'wrapper_1a46508b',
-    filterHeader: 'filterHeader_1a46508b',
-    container: 'container_1a46508b',
-    parentBtn: 'parentBtn_1a46508b',
-    staticBtn: 'staticBtn_1a46508b',
-    chevron: 'chevron_1a46508b',
-    childList: 'childList_1a46508b',
-    fadeIn: 'fadeIn_1a46508b',
-    childBtn: 'childBtn_1a46508b',
-    noResults: 'noResults_1a46508b'
+    workspace: 'workspace_79fd4d01',
+    wrapper: 'wrapper_79fd4d01',
+    railHeader: 'railHeader_79fd4d01',
+    container: 'container_79fd4d01',
+    parentBtn: 'parentBtn_79fd4d01',
+    rootBtnOpen: 'rootBtnOpen_79fd4d01',
+    chevron: 'chevron_79fd4d01',
+    childList: 'childList_79fd4d01',
+    childBtn: 'childBtn_79fd4d01',
+    main: 'main_79fd4d01',
+    tabs: 'tabs_79fd4d01',
+    tab: 'tab_79fd4d01',
+    active: 'active_79fd4d01',
+    results: 'results_79fd4d01',
+    grid: 'grid_79fd4d01',
+    card: 'card_79fd4d01',
+    cardTitle: 'cardTitle_79fd4d01',
+    cardRow: 'cardRow_79fd4d01',
+    cardLabel: 'cardLabel_79fd4d01',
+    cardValue: 'cardValue_79fd4d01',
+    rightRail: 'rightRail_79fd4d01',
+    quickLinksTitle: 'quickLinksTitle_79fd4d01',
+    quickLinksList: 'quickLinksList_79fd4d01'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1816,19 +1783,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./Header.module.css */ 54304);
 var styles = {
-    header: 'header_46f893e7',
-    headerContent: 'headerContent_46f893e7',
-    leftSection: 'leftSection_46f893e7',
-    companyName: 'companyName_46f893e7',
-    description: 'description_46f893e7',
-    addFileButton: 'addFileButton_46f893e7',
-    rightSection: 'rightSection_46f893e7',
-    leadership: 'leadership_46f893e7',
-    searchContainer: 'searchContainer_46f893e7',
-    searchIcon: 'searchIcon_46f893e7',
-    searchInput: 'searchInput_46f893e7',
-    dropdownPanel: 'dropdownPanel_46f893e7',
-    fadeDown: 'fadeDown_46f893e7'
+    header: 'header_52468a40',
+    headerContent: 'headerContent_52468a40',
+    leftSection: 'leftSection_52468a40',
+    companyName: 'companyName_52468a40',
+    description: 'description_52468a40',
+    addFileButton: 'addFileButton_52468a40',
+    rightSection: 'rightSection_52468a40',
+    leadership: 'leadership_52468a40',
+    searchContainer: 'searchContainer_52468a40',
+    searchIcon: 'searchIcon_52468a40',
+    searchInput: 'searchInput_52468a40',
+    dropdownPanel: 'dropdownPanel_52468a40',
+    fadeDown: 'fadeDown_52468a40',
+    dropdownInner: 'dropdownInner_52468a40',
+    dropdownClose: 'dropdownClose_52468a40'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
