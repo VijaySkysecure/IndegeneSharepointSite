@@ -1792,7 +1792,7 @@ var Header = function (props) {
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].companyName }, "Indegene"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "About Indegene, the services they provide...etc"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Add a file")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),

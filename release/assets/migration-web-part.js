@@ -131,16 +131,16 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_6f50e07b{background-color:#1976d2;box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_6f50e07b{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_6f50e07b{flex-shrink:0}.promptText_6f50e07b{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_6f50e07b{flex:1;max-width:600px}.questionInput_6f50e07b{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_6f50e07b:-ms-input-placeholder{color:#999}.questionInput_6f50e07b::placeholder{color:#999}.questionInput_6f50e07b:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVUXVlc3Rpb25TZWN0aW9uL0JVUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBCQUVFLHdCQUFBLENBRUEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBRkEsVUFJQSxDQUdGLDRCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLFFBQUEsQ0FIQSw2QkFBQSxDQUVBLGFBQUEsQ0FEQSxnQkFFQSxDQUdGLHFCQUNFLGFBQUEsQ0FHRixxQkFFRSxVQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLFFBQUEsQ0FHQSxrQkFBQSxDQUdGLHFCQUNFLE1BQUEsQ0FDQSxlQUFBLENBR0Ysd0JBTUUscUJBQUEsQ0FIQSxXQUFBLENBQ0EsaUJBQUEsQ0FNQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQUlBLDRCQUFBLENBTkEsY0FBQSxDQU9BLGVBQUEsQ0FIQSxTQUFBLENBUEEsaUJBQUEsQ0FEQSxVQVdBLENBRUEscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEiLCJmaWxlIjoiQlVRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_b75fb448{background-color:#1976d2;box-sizing:border-box;font-family:Inter,sans-serif;padding:60px 60px 120px;width:100%}.questionContainer_b75fb448{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_b75fb448{flex-shrink:0}.promptText_b75fb448{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_b75fb448{flex:1;max-width:600px}.questionInput_b75fb448{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_b75fb448:-ms-input-placeholder{color:#999}.questionInput_b75fb448::placeholder{color:#999}.questionInput_b75fb448:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVUXVlc3Rpb25TZWN0aW9uL0JVUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBCQUVFLHdCQUFBLENBRUEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLHVCQUFBLENBRkEsVUFJQSxDQUdGLDRCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLFFBQUEsQ0FIQSw2QkFBQSxDQUVBLGFBQUEsQ0FEQSxnQkFFQSxDQUdGLHFCQUNFLGFBQUEsQ0FHRixxQkFFRSxVQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLFFBQUEsQ0FHQSxrQkFBQSxDQUdGLHFCQUNFLE1BQUEsQ0FDQSxlQUFBLENBR0Ysd0JBTUUscUJBQUEsQ0FIQSxXQUFBLENBQ0EsaUJBQUEsQ0FNQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQUlBLDRCQUFBLENBTkEsY0FBQSxDQU9BLGVBQUEsQ0FIQSxTQUFBLENBUEEsaUJBQUEsQ0FEQSxVQVdBLENBRUEscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEiLCJmaWxlIjoiQlVRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_6f50e07b: "questionSection_6f50e07b",
-  questionContainer_6f50e07b: "questionContainer_6f50e07b",
-  leftPrompt_6f50e07b: "leftPrompt_6f50e07b",
-  promptText_6f50e07b: "promptText_6f50e07b",
-  rightInput_6f50e07b: "rightInput_6f50e07b",
-  questionInput_6f50e07b: "questionInput_6f50e07b",
+  questionSection_b75fb448: "questionSection_b75fb448",
+  questionContainer_b75fb448: "questionContainer_b75fb448",
+  leftPrompt_b75fb448: "leftPrompt_b75fb448",
+  promptText_b75fb448: "promptText_b75fb448",
+  rightInput_b75fb448: "rightInput_b75fb448",
+  questionInput_b75fb448: "questionInput_b75fb448",
   questionInput: "questionInput"
 });
 
@@ -390,17 +390,23 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_fc045cad{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.questionContainer_fc045cad{align-items:center;display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:1400px}.leftPrompt_fc045cad{flex-shrink:0}.promptText_fc045cad{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_fc045cad{flex:1;max-width:600px}.questionInput_fc045cad{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px;width:100%}.questionInput:-ms-input-placeholder{color:#999}.questionInput_fc045cad:-ms-input-placeholder{color:#999}.questionInput_fc045cad::placeholder{color:#999}.questionInput_fc045cad:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsNEJBRUUsa0JBQUEsQ0FEQSxZQUFBLENBS0EsUUFBQSxDQUhBLDZCQUFBLENBRUEsYUFBQSxDQURBLGdCQUVBLENBR0YscUJBQ0UsYUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsUUFBQSxDQUdBLGtCQUFBLENBR0YscUJBQ0UsTUFBQSxDQUNBLGVBQUEsQ0FHRix3QkFNRSxxQkFBQSxDQUhBLFdBQUEsQ0FDQSxpQkFBQSxDQU1BLG1DQUFBLENBRkEscUJBQUEsQ0FEQSxVQUFBLENBSUEsNEJBQUEsQ0FOQSxjQUFBLENBT0EsZUFBQSxDQUhBLFNBQUEsQ0FQQSxpQkFBQSxDQURBLFVBV0EsQ0FFQSxxQ0FDRSxVQUFBLENBREYsOENBQ0UsVUFBQSxDQURGLHFDQUNFLFVBQUEsQ0FHRiw4QkFDRSxxQ0FBQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_c6567f2f{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_c6567f2f{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_c6567f2f{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_c6567f2f{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_c6567f2f{font-size:24px;line-height:1}.fileType_c6567f2f{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_c6567f2f{color:#333;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_c6567f2f,.tileTitle_c6567f2f{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_c6567f2f{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_c6567f2f{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_c6567f2f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_c6567f2f svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_c6567f2f:hover:not(:disabled){background-color:#1565c0}.viewButton_c6567f2f:active:not(:disabled){background-color:#0d47a1}.viewButton_c6567f2f:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_c6567f2f{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_c6567f2f svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_c6567f2f:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_c6567f2f:active:not(:disabled){background-color:#e0e0e0}.downloadButton_c6567f2f:disabled{cursor:not-allowed;opacity:.4}.loading_c6567f2f,.noDocuments_c6567f2f{color:#fff;font-family:Inter,sans-serif;font-size:16px;padding:40px;text-align:center}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YseUJBQ0UsWUFBQSxDQUtBLGdCQUFBLENBSkEsUUFBQSxDQUdBLHNCQUFBLENBREEsYUFBQSxDQURBLGdCQUFBLENBSUEsVUFBQSxDQUdGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_fc045cad: "questionSection_fc045cad",
-  questionContainer_fc045cad: "questionContainer_fc045cad",
-  leftPrompt_fc045cad: "leftPrompt_fc045cad",
-  promptText_fc045cad: "promptText_fc045cad",
-  rightInput_fc045cad: "rightInput_fc045cad",
-  questionInput_fc045cad: "questionInput_fc045cad",
-  questionInput: "questionInput"
+  questionSection_c6567f2f: "questionSection_c6567f2f",
+  tilesContainer_c6567f2f: "tilesContainer_c6567f2f",
+  tile_c6567f2f: "tile_c6567f2f",
+  tileHeader_c6567f2f: "tileHeader_c6567f2f",
+  fileTypeIcon_c6567f2f: "fileTypeIcon_c6567f2f",
+  fileType_c6567f2f: "fileType_c6567f2f",
+  tileTitle_c6567f2f: "tileTitle_c6567f2f",
+  tileAbstract_c6567f2f: "tileAbstract_c6567f2f",
+  tileActions_c6567f2f: "tileActions_c6567f2f",
+  viewButton_c6567f2f: "viewButton_c6567f2f",
+  downloadButton_c6567f2f: "downloadButton_c6567f2f",
+  loading_c6567f2f: "loading_c6567f2f",
+  noDocuments_c6567f2f: "noDocuments_c6567f2f"
 });
 
 
@@ -901,12 +907,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var BUQuestionSection = function (props) {
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionSection },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftPrompt },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].promptText }, "Ask your question here")),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightInput },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionInput, placeholder: "Type your question..." })))));
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUQuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionSection }));
 };
 
 
@@ -924,12 +925,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./BUQuestionSection.module.css */ 3116);
 var styles = {
-    questionSection: 'questionSection_6f50e07b',
-    questionContainer: 'questionContainer_6f50e07b',
-    leftPrompt: 'leftPrompt_6f50e07b',
-    promptText: 'promptText_6f50e07b',
-    rightInput: 'rightInput_6f50e07b',
-    questionInput: 'questionInput_6f50e07b'
+    questionSection: 'questionSection_b75fb448',
+    questionContainer: 'questionContainer_b75fb448',
+    leftPrompt: 'leftPrompt_b75fb448',
+    promptText: 'promptText_b75fb448',
+    rightInput: 'rightInput_b75fb448',
+    questionInput: 'questionInput_b75fb448'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1600,7 +1601,7 @@ var Header = function (props) {
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].companyName }, "Indegene"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "About Indegene, the services they provide...etc"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Add a file")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),
@@ -1866,7 +1867,7 @@ var Migration = /** @class */ (function (_super) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.Header, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__.Navigation, { activePage: this.state.activePage, onNavClick: this.handleNavClick }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_5__.ContentArea, { activePage: this.state.activePage, context: this.props.context, onBUClick: this.handleBUClick }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__.QuestionSection, null),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__.QuestionSection, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__.Footer, null)));
     };
     return Migration;
@@ -1964,16 +1965,281 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
 
 
 var QuestionSection = function (props) {
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionSection },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftPrompt },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].promptText }, "Ask your question here")),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightInput },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].questionInput, placeholder: "Type your question..." })))));
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (props.context) {
+            fetchLatestDocuments();
+        }
+    }, [props.context]);
+    var fetchLatestDocuments = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, apiUrl, response, errorText, data, items, formattedItems, error_1;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    if (!props.context) {
+                        setLoading(false);
+                        return [2 /*return*/];
+                    }
+                    _b.label = 1;
+                case 1:
+                    _b.trys.push([1, 6, 7, 8]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    console.log('=== FETCHING DOCUMENTS FROM DOCUMENT LIBRARY ===');
+                    console.log('Current Site URL (auto-detected):', webUrl);
+                    console.log('Target Library:', libraryName);
+                    console.log('Expected Library URL:', "".concat(webUrl, "/KMArtifacts"));
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=3");
+                    console.log('Full API Endpoint:', apiUrl);
+                    console.log('Note: This will work if KMArtifacts library exists on the current site');
+                    return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _b.sent();
+                    console.log('Response status:', response.status);
+                    console.log('Response OK:', response.ok);
+                    if (!!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.text()];
+                case 3:
+                    errorText = _b.sent();
+                    console.error('Error response:', errorText);
+                    throw new Error("Failed to fetch documents: ".concat(response.status, " - ").concat(errorText));
+                case 4: return [4 /*yield*/, response.json()];
+                case 5:
+                    data = _b.sent();
+                    console.log('Response data:', data);
+                    console.log('Items count:', ((_a = data.value) === null || _a === void 0 ? void 0 : _a.length) || 0);
+                    items = data.value || [];
+                    if (items.length > 0) {
+                        console.log('First item sample:', JSON.stringify(items[0], null, 2));
+                    }
+                    formattedItems = items.map(function (item, index) {
+                        var _a, _b, _c;
+                        console.log("Processing item ".concat(index + 1, ":"), item);
+                        console.log("All item keys:", Object.keys(item));
+                        // Get file name from Name column - FileLeafRef is the actual filename in document libraries
+                        // This is what appears in the "Name" column in SharePoint
+                        var fileName = item.FileLeafRef || ((_a = item.File) === null || _a === void 0 ? void 0 : _a.Name) || '';
+                        // Extract file extension from the Name column for the file format display
+                        var fileExtension = ((_b = fileName.split('.').pop()) === null || _b === void 0 ? void 0 : _b.toUpperCase()) || '';
+                        // Use Name column (FileLeafRef) as the tile title
+                        // This matches what the user sees in the "Name" column
+                        var displayName = fileName;
+                        if (!displayName || displayName === '') {
+                            displayName = item.Title || "Document ".concat(item.Id);
+                        }
+                        // Get abstract from Abstract column
+                        var abstract = item.Abstract || '';
+                        if (abstract === '-' || abstract === '') {
+                            abstract = '';
+                        }
+                        // Construct proper server relative URL
+                        // FileRef contains the full server-relative path like: /sites/MigrationTest2/KMArtifacts/filename.pdf
+                        // This is the correct field to use for document libraries
+                        var serverRelativeUrl = item.FileRef || '';
+                        // Ensure it starts with /
+                        if (serverRelativeUrl && !serverRelativeUrl.startsWith('/')) {
+                            serverRelativeUrl = "/".concat(serverRelativeUrl);
+                        }
+                        // If we still don't have a URL, construct it from the library name and filename
+                        if (!serverRelativeUrl && fileName) {
+                            var siteRelativePath = ((_c = props.context) === null || _c === void 0 ? void 0 : _c.pageContext.web.serverRelativeUrl) || '';
+                            serverRelativeUrl = "".concat(siteRelativePath, "/KMArtifacts/").concat(fileName);
+                        }
+                        var formatted = {
+                            id: item.Id,
+                            name: displayName,
+                            abstract: abstract,
+                            fileType: fileExtension,
+                            serverRelativeUrl: serverRelativeUrl,
+                            fileRef: item.FileRef || serverRelativeUrl
+                        };
+                        console.log("Formatted item ".concat(index + 1, ":"), formatted);
+                        return formatted;
+                    });
+                    console.log('Formatted items:', formattedItems);
+                    setDocuments(formattedItems);
+                    return [3 /*break*/, 8];
+                case 6:
+                    error_1 = _b.sent();
+                    console.error('=== ERROR FETCHING DOCUMENTS ===');
+                    console.error('Error type:', typeof error_1);
+                    console.error('Error details:', error_1);
+                    console.error('Error message:', error_1 instanceof Error ? error_1.message : String(error_1));
+                    console.error('Error stack:', error_1 instanceof Error ? error_1.stack : 'N/A');
+                    // Set empty array on error so we still show empty tiles
+                    setDocuments([]);
+                    return [3 /*break*/, 8];
+                case 7:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 8: return [2 /*return*/];
+            }
+        });
+    }); };
+    var getFileTypeIcon = function (fileType) {
+        var type = fileType.toLowerCase();
+        if (type === 'pdf') {
+            return '📄';
+        }
+        else if (type === 'pptx' || type === 'ppt') {
+            return '📊';
+        }
+        else if (type === 'docx' || type === 'doc') {
+            return '📝';
+        }
+        else if (type === 'xlsx' || type === 'xls') {
+            return '📈';
+        }
+        return '📎';
+    };
+    var handleView = function (item) {
+        if (props.context && item.serverRelativeUrl) {
+            var webUrl = props.context.pageContext.web.absoluteUrl;
+            var fileUrl = item.serverRelativeUrl;
+            // Ensure proper URL format
+            if (!fileUrl.startsWith('http')) {
+                if (!fileUrl.startsWith('/')) {
+                    fileUrl = "/".concat(fileUrl);
+                }
+                fileUrl = "".concat(webUrl).concat(fileUrl);
+            }
+            window.open(fileUrl, '_blank');
+        }
+    };
+    var handleDownload = function (item) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_2, fileUrl;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!(props.context && item.serverRelativeUrl)) return [3 /*break*/, 7];
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    serverRelativeUrl = item.serverRelativeUrl;
+                    // Ensure proper server relative URL format
+                    if (!serverRelativeUrl.startsWith('/')) {
+                        serverRelativeUrl = "/".concat(serverRelativeUrl);
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(serverRelativeUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.blob()];
+                case 3:
+                    blob = _a.sent();
+                    url = window.URL.createObjectURL(blob);
+                    link = document.createElement('a');
+                    link.href = url;
+                    link.download = item.name;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                    return [3 /*break*/, 5];
+                case 4:
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    _a.label = 5;
+                case 5: return [3 /*break*/, 7];
+                case 6:
+                    error_2 = _a.sent();
+                    console.error('Download error:', error_2);
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    // Always show 3 tiles, fill with empty placeholders if needed
+    var displayTiles = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(function () {
+        var tiles = [];
+        for (var i = 0; i < 3; i++) {
+            tiles.push(documents[i] || null);
+        }
+        return tiles;
+    }, [documents]);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].questionSection },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].loading }, "Loading...")) : (displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileHeader },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileType }, doc.fileType || 'FILE')),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileTitle }, doc.name),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileActions },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].viewButton, onClick: function () { return handleView(doc); } },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                    "View"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileHeader },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileType }, "---")),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileTitle }, "No document"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileAbstract }, "No document available"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileActions },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].viewButton, disabled: true },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                    "View"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, disabled: true, "aria-label": "Download" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))); })))));
 };
 
 
@@ -1991,12 +2257,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 var styles = {
-    questionSection: 'questionSection_fc045cad',
-    questionContainer: 'questionContainer_fc045cad',
-    leftPrompt: 'leftPrompt_fc045cad',
-    promptText: 'promptText_fc045cad',
-    rightInput: 'rightInput_fc045cad',
-    questionInput: 'questionInput_fc045cad'
+    questionSection: 'questionSection_c6567f2f',
+    tilesContainer: 'tilesContainer_c6567f2f',
+    tile: 'tile_c6567f2f',
+    tileHeader: 'tileHeader_c6567f2f',
+    fileTypeIcon: 'fileTypeIcon_c6567f2f',
+    fileType: 'fileType_c6567f2f',
+    tileTitle: 'tileTitle_c6567f2f',
+    tileAbstract: 'tileAbstract_c6567f2f',
+    tileActions: 'tileActions_c6567f2f',
+    viewButton: 'viewButton_c6567f2f',
+    downloadButton: 'downloadButton_c6567f2f',
+    loading: 'loading_c6567f2f',
+    noDocuments: 'noDocuments_c6567f2f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

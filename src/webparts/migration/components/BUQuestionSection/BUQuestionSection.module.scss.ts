@@ -1,12 +1,12 @@
 
 require("./BUQuestionSection.module.css");
 const styles = {
-  questionSection: 'questionSection_6f50e07b',
-  questionContainer: 'questionContainer_6f50e07b',
-  leftPrompt: 'leftPrompt_6f50e07b',
-  promptText: 'promptText_6f50e07b',
-  rightInput: 'rightInput_6f50e07b',
-  questionInput: 'questionInput_6f50e07b'
+  questionSection: 'questionSection_b75fb448',
+  questionContainer: 'questionContainer_b75fb448',
+  leftPrompt: 'leftPrompt_b75fb448',
+  promptText: 'promptText_b75fb448',
+  rightInput: 'rightInput_b75fb448',
+  questionInput: 'questionInput_b75fb448'
 };
 
 export default styles;
