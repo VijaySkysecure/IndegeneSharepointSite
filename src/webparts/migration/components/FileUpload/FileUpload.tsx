@@ -24,6 +24,10 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   const [processingError, setProcessingError] = React.useState<string | null>(null);
   const [kmItemId, setKmItemId] = React.useState<number | null>(null);
   const [showForm, setShowForm] = React.useState(false);
+  const [kmFileUrl, setKmFileUrl] = React.useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = React.useState<string | null>(null);
+
+
 
 
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
@@ -56,15 +60,17 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         return; // STOP the flow
       }
       
-      await processFileWithAI(file);
+      const processingSuccess = await processFileWithAI(file);
 
-      // ONLY SHOW FORM AFTER AI FINISHES
-      setShowForm(true);
+      // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
+      if (processingSuccess) {
+        setShowForm(true);
+      }
     }
   };
 
 
-  const processFileWithAI = async (file: File) => {
+  const processFileWithAI = async (file: File): Promise<boolean> => {
     console.log('=== STARTING FILE PROCESSING ===');
     console.log('File:', file.name);
     console.log('File type:', file.type);
@@ -89,7 +95,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         console.error('Document parsing failed:', errorMsg);
         setProcessingError(errorMsg);
         setIsProcessing(false);
-        return;
+        return false;
       }
 
       if (!parseResult.text || parseResult.text.trim().length === 0) {
@@ -97,7 +103,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         console.error('No text extracted:', errorMsg);
         setProcessingError(errorMsg);
         setIsProcessing(false);
-        return;
+        return false;
       }
 
       // Log parsed text for debugging
@@ -115,6 +121,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Step 3: Setting extracted metadata...');
       setExtractedMetadata(metadata);
       console.log('=== FILE PROCESSING COMPLETE ===');
+      setIsProcessing(false);
+      return true;
     } catch (error) {
       console.error('=== ERROR PROCESSING FILE ===');
       console.error('Error type:', typeof error);
@@ -127,9 +135,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         : 'An error occurred while processing the document. Please fill the form manually.';
       
       setProcessingError(errorMsg);
-    } finally {
-      console.log('Setting isProcessing to false');
       setIsProcessing(false);
+      return false;
     }
   };
 
@@ -167,7 +174,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       Action: action,
       // For a person field, set the internal field with 'Id' suffix
       UserId: userId,
-      Performed_x0020_ById: userId,
+      PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };
 
@@ -221,6 +228,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     );
     const uploadJson = await uploadResp.json();
     const serverRelativeUrl = uploadJson.ServerRelativeUrl;
+    setKmFileUrl(serverRelativeUrl);
 
     // 2️⃣ Wait briefly to ensure ListItem exists
     await new Promise(r => setTimeout(r, 500));
@@ -299,54 +307,67 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   };
 
   const updateKMArtifactsWithFormData = async (itemId: number, data: any) => {
-  const LIBRARY_NAME = "KMArtifacts";
-  const webUrl = props.context.pageContext.web.absoluteUrl;
+    const LIBRARY_NAME = "KMArtifacts";
+    const webUrl = props.context.pageContext.web.absoluteUrl;
 
-  const currentUserResp = await props.context.spHttpClient.get(
-    `${webUrl}/_api/web/currentuser`,
-    SPHttpClient.configurations.v1
-  );
-  const currentUser = await currentUserResp.json();
-  const userId = currentUser.Id;
+    // 1️⃣ Get current user
+    const currentUserResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/currentuser`,
+      SPHttpClient.configurations.v1
+    );
+    const currentUser = await currentUserResp.json();
+    const userId = currentUser.Id;
 
-  const payload = {
-    Status: data.Status || "Submitted",
-    TitleName: data.title || "-",
-    Abstract: data.abstract || "-",
-    BusinessUnit: data.bu || "-",
-    Department: data.department || "-",
-    Region: data.region || "-",
-    Client: data.client || "-",
-    DocumentType: data.documentType || "-",
-    DiseaseArea: data.diseaseArea || "-",
-    TherapyArea: data.therapyArea || "-",
-    ComplianceFlag: data.complianceFlag ?? false,
-    Sanitized: data.sanitized ?? false,
-    PerformedById: userId,
-    TimeStamp: new Date().toISOString()
+    // 2️⃣ Get ListItemEntityTypeFullName (VERY IMPORTANT FOR MERGE UPDATE)
+    const listInfoResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`,
+      SPHttpClient.configurations.v1
+    );
+    const listInfo = await listInfoResp.json();
+    const entityType = listInfo.ListItemEntityTypeFullName; // example: SP.Data.KMArtifactsListItem
+
+    // 3️⃣ Metadata body (with __metadata.type)
+    const payload = {
+      __metadata: { type: entityType },   // ⭐ REQUIRED FOR MERGE UPDATE
+      Status: data.Status || "Submitted",
+      TitleName: data.title || "-",
+      Abstract: data.abstract || "-",
+      BusinessUnit: data.bu || "-",
+      Department: data.department || "-",
+      Region: data.region || "-",
+      Client: data.client || "-",
+      DocumentType: data.documentType || "-",
+      DiseaseArea: data.diseaseArea || "-",
+      TherapyArea: data.therapyArea || "-",
+      ComplianceFlag: data.complianceFlag ?? false,
+      Sanitized: data.sanitized ?? false,
+      PerformedById: userId,
+      TimeStamp: new Date().toISOString()
+    };
+
+    // 4️⃣ Update item (MERGE)
+    const resp = await props.context.spHttpClient.post(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
+      SPHttpClient.configurations.v1,
+      {
+        headers: {
+          "Accept": "application/json;odata=verbose",
+          "Content-Type": "application/json;odata=verbose",
+          "IF-MATCH": "*",
+          "X-HTTP-Method": "MERGE",
+          "odata-version": ""
+        },
+        body: JSON.stringify(payload)
+      }
+    );
+
+    if (!resp.ok) {
+      throw new Error(await resp.text());
+    }
+
+    console.log("KMArtifacts updated with form data:", itemId);
   };
 
-  const resp = await props.context.spHttpClient.fetch(
-    `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
-    SPHttpClient.configurations.v1,
-    {
-      method: "POST",
-      headers: {
-        "Accept": "application/json;odata=nometadata",
-        "Content-Type": "application/json;odata=nometadata",
-        "IF-MATCH": "*",
-        "X-HTTP-Method": "MERGE"
-      },
-      body: JSON.stringify(payload)
-    }
-  );
-
-  if (!resp.ok) {
-    throw new Error(await resp.text());
-  }
-
-  console.log("KMArtifacts updated with form data:", itemId);
-};
 
 
   const onDrop = (e: React.DragEvent) => {
@@ -371,11 +392,19 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       await createAuditLogItem(uploadedFile!, "Submitted");
 
       // 1️⃣ Update KMArtifacts row with actual form values
-      await updateKMArtifactsWithFormData(kmItemId, data);
+      await updateKMArtifactsWithFormData(kmItemId, { ...data, Status: "Submitted" });
+
+     
+      setSuccessMessage("Your document has been submitted. The KM team will review it shortly.");
+
+
+      // optionally show success to user
+      console.log("Submission complete — KM notified.");
 
 
     } catch (err) {
       console.error("Error during form submission:", err);
+      setProcessingError("Submission failed. Check console for details.");
     }
 
     props.onClose && props.onClose();
@@ -442,6 +471,19 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 initialValues={extractedMetadata || undefined}
               />
             )}
+            {successMessage && (
+              <div style={{
+                backgroundColor: "#d4edda",
+                color: "#155724",
+                padding: "12px",
+                borderRadius: "6px",
+                marginTop: "10px",
+                border: "1px solid #c3e6cb",
+              }}>
+                {successMessage}
+              </div>
+            )}
+
           </>
         )}
       </div>

@@ -12,9 +12,6 @@ interface ChatMessage {
 /* ============================================================
    CONTEXT KNOWLEDGE MAP
 ============================================================ */
-/* ============================================================
-   CONTEXT KNOWLEDGE MAP (CLEANED & COMPRESSED)
-============================================================ */
 const CONTEXT_MAP: Record<string, string[]> = {
   indegene: [
     "Indegene is a digital-first life sciences commercialization company helping pharma, biotech, and medical device organizations launch, market, and optimize therapies.",

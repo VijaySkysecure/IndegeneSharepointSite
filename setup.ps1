@@ -56,7 +56,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "Next steps:" -ForegroundColor Cyan
     Write-Host "1. Build the solution: npm run build" -ForegroundColor White
     Write-Host "2. Serve locally: gulp serve" -ForegroundColor White
-    Write-Host "3. Open the workbench at: https://skysecuretech.sharepoint.com/sites/MigrationTest/_layouts/workbench.aspx" -ForegroundColor White
+    Write-Host "3. Open the workbench at: https://m365x65470037.sharepoint.com/sites/MigrationTest2/_layouts/workbench.aspx" -ForegroundColor White
 } else {
     Write-Host ""
     Write-Host "Setup failed. Please check the error messages above." -ForegroundColor Red

@@ -1296,6 +1296,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 66732);
 /* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/DocumentParser */ 32969);
 /* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 81651);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1354,6 +1365,8 @@ var FileUpload = function (props) {
     var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _e[0], setProcessingError = _e[1];
     var _f = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), kmItemId = _f[0], setKmItemId = _f[1];
     var _g = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showForm = _g[0], setShowForm = _g[1];
+    var _h = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), kmFileUrl = _h[0], setKmFileUrl = _h[1];
+    var _j = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), successMessage = _j[0], setSuccessMessage = _j[1];
     var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     var onBrowse = function () {
@@ -1361,7 +1374,7 @@ var FileUpload = function (props) {
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var file, itemId, err_1;
+        var file, itemId, err_1, processingSuccess;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1394,9 +1407,11 @@ var FileUpload = function (props) {
                     return [2 /*return*/]; // STOP the flow
                 case 5: return [4 /*yield*/, processFileWithAI(file)];
                 case 6:
-                    _a.sent();
-                    // ONLY SHOW FORM AFTER AI FINISHES
-                    setShowForm(true);
+                    processingSuccess = _a.sent();
+                    // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
+                    if (processingSuccess) {
+                        setShowForm(true);
+                    }
                     _a.label = 7;
                 case 7: return [2 /*return*/];
             }
@@ -1416,7 +1431,7 @@ var FileUpload = function (props) {
                     setProcessingError(null);
                     _b.label = 1;
                 case 1:
-                    _b.trys.push([1, 4, 5, 6]);
+                    _b.trys.push([1, 4, , 5]);
                     // Step 1: Parse the document to extract text
                     console.log('Step 1: Parsing document...');
                     return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__.DocumentParser.parseFile(file)];
@@ -1432,14 +1447,14 @@ var FileUpload = function (props) {
                         console.error('Document parsing failed:', errorMsg);
                         setProcessingError(errorMsg);
                         setIsProcessing(false);
-                        return [2 /*return*/];
+                        return [2 /*return*/, false];
                     }
                     if (!parseResult.text || parseResult.text.trim().length === 0) {
                         errorMsg = 'No text content found in the document. The document might be image-based or empty.';
                         console.error('No text extracted:', errorMsg);
                         setProcessingError(errorMsg);
                         setIsProcessing(false);
-                        return [2 /*return*/];
+                        return [2 /*return*/, false];
                     }
                     // Log parsed text for debugging
                     console.log('=== FILE PARSED SUCCESSFULLY ===');
@@ -1456,7 +1471,8 @@ var FileUpload = function (props) {
                     console.log('Step 3: Setting extracted metadata...');
                     setExtractedMetadata(metadata);
                     console.log('=== FILE PROCESSING COMPLETE ===');
-                    return [3 /*break*/, 6];
+                    setIsProcessing(false);
+                    return [2 /*return*/, true];
                 case 4:
                     error_1 = _b.sent();
                     console.error('=== ERROR PROCESSING FILE ===');
@@ -1468,12 +1484,9 @@ var FileUpload = function (props) {
                         ? error_1.message
                         : 'An error occurred while processing the document. Please fill the form manually.';
                     setProcessingError(errorMsg);
-                    return [3 /*break*/, 6];
-                case 5:
-                    console.log('Setting isProcessing to false');
                     setIsProcessing(false);
-                    return [7 /*endfinally*/];
-                case 6: return [2 /*return*/];
+                    return [2 /*return*/, false];
+                case 5: return [2 /*return*/];
             }
         });
     }); };
@@ -1511,7 +1524,7 @@ var FileUpload = function (props) {
                             Action: action,
                             // For a person field, set the internal field with 'Id' suffix
                             UserId: userId,
-                            Performed_x0020_ById: userId,
+                            PerformedById: userId,
                             TimeStamp: new Date().toISOString()
                         };
                         console.log('Creating audit log item with payload:', body);
@@ -1564,6 +1577,7 @@ var FileUpload = function (props) {
                 case 2:
                     uploadJson = _a.sent();
                     serverRelativeUrl = uploadJson.ServerRelativeUrl;
+                    setKmFileUrl(serverRelativeUrl);
                     // 2️⃣ Wait briefly to ensure ListItem exists
                     return [4 /*yield*/, new Promise(function (r) { return setTimeout(r, 500); })];
                 case 3:
@@ -1633,7 +1647,7 @@ var FileUpload = function (props) {
         });
     }); };
     var updateKMArtifactsWithFormData = function (itemId, data) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, resp, _a;
+        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, listInfoResp, listInfo, entityType, payload, resp, _a;
         var _b, _c;
         return __generator(this, function (_d) {
             switch (_d.label) {
@@ -1647,7 +1661,15 @@ var FileUpload = function (props) {
                 case 2:
                     currentUser = _d.sent();
                     userId = currentUser.Id;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 3:
+                    listInfoResp = _d.sent();
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 4:
+                    listInfo = _d.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
                     payload = {
+                        __metadata: { type: entityType },
                         Status: data.Status || "Submitted",
                         TitleName: data.title || "-",
                         Abstract: data.abstract || "-",
@@ -1663,23 +1685,23 @@ var FileUpload = function (props) {
                         PerformedById: userId,
                         TimeStamp: new Date().toISOString()
                     };
-                    return [4 /*yield*/, props.context.spHttpClient.fetch("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
-                            method: "POST",
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
                             headers: {
-                                "Accept": "application/json;odata=nometadata",
-                                "Content-Type": "application/json;odata=nometadata",
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
                                 "IF-MATCH": "*",
-                                "X-HTTP-Method": "MERGE"
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
                             },
                             body: JSON.stringify(payload)
                         })];
-                case 3:
+                case 5:
                     resp = _d.sent();
-                    if (!!resp.ok) return [3 /*break*/, 5];
+                    if (!!resp.ok) return [3 /*break*/, 7];
                     _a = Error.bind;
                     return [4 /*yield*/, resp.text()];
-                case 4: throw new (_a.apply(Error, [void 0, _d.sent()]))();
-                case 5:
+                case 6: throw new (_a.apply(Error, [void 0, _d.sent()]))();
+                case 7:
                     console.log("KMArtifacts updated with form data:", itemId);
                     return [2 /*return*/];
             }
@@ -1711,14 +1733,18 @@ var FileUpload = function (props) {
                     // 2️⃣ Create new Audit Log item (Action = Submitted)
                     _a.sent();
                     // 1️⃣ Update KMArtifacts row with actual form values
-                    return [4 /*yield*/, updateKMArtifactsWithFormData(kmItemId, data)];
+                    return [4 /*yield*/, updateKMArtifactsWithFormData(kmItemId, __assign(__assign({}, data), { Status: "Submitted" }))];
                 case 3:
                     // 1️⃣ Update KMArtifacts row with actual form values
                     _a.sent();
+                    setSuccessMessage("Your document has been submitted. The KM team will review it shortly.");
+                    // optionally show success to user
+                    console.log("Submission complete — KM notified.");
                     return [3 /*break*/, 5];
                 case 4:
                     err_2 = _a.sent();
                     console.error("Error during form submission:", err_2);
+                    setProcessingError("Submission failed. Check console for details.");
                     return [3 /*break*/, 5];
                 case 5:
                     props.onClose && props.onClose();
@@ -1739,11 +1765,20 @@ var FileUpload = function (props) {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, "Analyzing Document..."),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
-            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+            isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, "Analyzing Document..."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
+                processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })),
+            successMessage && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: {
+                    backgroundColor: "#d4edda",
+                    color: "#155724",
+                    padding: "12px",
+                    borderRadius: "6px",
+                    marginTop: "10px",
+                    border: "1px solid #c3e6cb",
+                } }, successMessage)))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -2412,9 +2447,6 @@ var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from
 var chatbotIcon = __webpack_require__(/*! ../../assets/chatbot-icon.png */ 53269);
 /* ============================================================
    CONTEXT KNOWLEDGE MAP
-============================================================ */
-/* ============================================================
-   CONTEXT KNOWLEDGE MAP (CLEANED & COMPRESSED)
 ============================================================ */
 var CONTEXT_MAP = {
     indegene: [
@@ -3865,37 +3897,39 @@ var DocumentParser = /** @class */ (function () {
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
                         _c.label = 1;
                     case 1:
-                        _c.trys.push([1, 12, , 13]);
+                        _c.trys.push([1, 14, , 15]);
                         _b = fileExtension;
                         switch (_b) {
                             case 'pdf': return [3 /*break*/, 2];
                             case 'docx': return [3 /*break*/, 4];
                             case 'doc': return [3 /*break*/, 6];
                             case 'pptx': return [3 /*break*/, 7];
-                            case 'ppt': return [3 /*break*/, 7];
-                            case 'xlsx': return [3 /*break*/, 8];
-                            case 'xls': return [3 /*break*/, 8];
-                            case 'mpp': return [3 /*break*/, 9];
+                            case 'ppt': return [3 /*break*/, 9];
+                            case 'xlsx': return [3 /*break*/, 10];
+                            case 'xls': return [3 /*break*/, 10];
+                            case 'mpp': return [3 /*break*/, 11];
                         }
-                        return [3 /*break*/, 10];
+                        return [3 /*break*/, 12];
                     case 2: return [4 /*yield*/, this.parsePDF(file)];
                     case 3: return [2 /*return*/, _c.sent()];
                     case 4: return [4 /*yield*/, this.parseWord(file)];
                     case 5: return [2 /*return*/, _c.sent()];
                     case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
-                    case 7: return [2 /*return*/, { text: '', success: false, error: 'PowerPoint parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 8: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 9: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 10: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 11: return [3 /*break*/, 13];
-                    case 12:
+                    case 7: return [4 /*yield*/, this.parsePowerPoint(file)];
+                    case 8: return [2 /*return*/, _c.sent()];
+                    case 9: return [2 /*return*/, { text: '', success: false, error: 'Legacy .ppt format not supported. Please convert to .pptx format.' }];
+                    case 10: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 11: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 12: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 13: return [3 /*break*/, 15];
+                    case 14:
                         error_1 = _c.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
-                    case 13: return [2 /*return*/];
+                    case 15: return [2 /*return*/];
                 }
             });
         });
@@ -3961,7 +3995,7 @@ var DocumentParser = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 4, , 5]);
-                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_mammoth_lib_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 40845, 19))];
+                        return [4 /*yield*/, Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_jszip_dist_jszip_min_js"), __webpack_require__.e("vendors-node_modules_mammoth_lib_index_js")]).then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 40845, 19))];
                     case 1:
                         mammoth = _a.sent();
                         return [4 /*yield*/, file.arrayBuffer()];
@@ -3985,6 +4019,220 @@ var DocumentParser = /** @class */ (function () {
                 }
             });
         });
+    };
+    /**
+     * Extract text from PowerPoint (.pptx) file
+     * PPTX files are ZIP archives containing XML files
+     */
+    DocumentParser.parsePowerPoint = function (file) {
+        var _a;
+        return __awaiter(this, void 0, void 0, function () {
+            var JSZipModule, JSZip, arrayBuffer, zip, slideFiles_2, allText, _i, slideFiles_1, slidePath, slideXml, slideText, slideError_1, combinedText, error_4, errorMessage, msg;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _b.trys.push([0, 10, , 11]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_jszip_dist_jszip_min_js").then(__webpack_require__.t.bind(__webpack_require__, /*! jszip */ 24355, 23))];
+                    case 1:
+                        JSZipModule = _b.sent();
+                        JSZip = JSZipModule.default || JSZipModule;
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _b.sent();
+                        return [4 /*yield*/, JSZip.loadAsync(arrayBuffer)];
+                    case 3:
+                        zip = _b.sent();
+                        slideFiles_2 = [];
+                        zip.forEach(function (relativePath) {
+                            if (relativePath.startsWith('ppt/slides/slide') && relativePath.endsWith('.xml')) {
+                                slideFiles_2.push(relativePath);
+                            }
+                        });
+                        // Sort slides by number
+                        slideFiles_2.sort(function (a, b) {
+                            var _a, _b;
+                            var aNum = parseInt(((_a = a.match(/slide(\d+)\.xml/)) === null || _a === void 0 ? void 0 : _a[1]) || '0');
+                            var bNum = parseInt(((_b = b.match(/slide(\d+)\.xml/)) === null || _b === void 0 ? void 0 : _b[1]) || '0');
+                            return aNum - bNum;
+                        });
+                        if (slideFiles_2.length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No slides found in the PowerPoint file.'
+                                }];
+                        }
+                        allText = [];
+                        console.log("Found ".concat(slideFiles_2.length, " slides to process"));
+                        _i = 0, slideFiles_1 = slideFiles_2;
+                        _b.label = 4;
+                    case 4:
+                        if (!(_i < slideFiles_1.length)) return [3 /*break*/, 9];
+                        slidePath = slideFiles_1[_i];
+                        _b.label = 5;
+                    case 5:
+                        _b.trys.push([5, 7, , 8]);
+                        return [4 /*yield*/, ((_a = zip.file(slidePath)) === null || _a === void 0 ? void 0 : _a.async('string'))];
+                    case 6:
+                        slideXml = _b.sent();
+                        if (slideXml) {
+                            console.log("Processing slide: ".concat(slidePath));
+                            slideText = this.extractTextFromSlideXml(slideXml);
+                            console.log("Extracted ".concat(slideText.length, " characters from ").concat(slidePath));
+                            if (slideText.trim()) {
+                                allText.push(slideText);
+                            }
+                            else {
+                                console.warn("No text extracted from ".concat(slidePath));
+                            }
+                        }
+                        else {
+                            console.warn("Slide file ".concat(slidePath, " is null or undefined"));
+                        }
+                        return [3 /*break*/, 8];
+                    case 7:
+                        slideError_1 = _b.sent();
+                        console.warn("Error parsing slide ".concat(slidePath, ":"), slideError_1);
+                        return [3 /*break*/, 8];
+                    case 8:
+                        _i++;
+                        return [3 /*break*/, 4];
+                    case 9:
+                        console.log("Total slides with text: ".concat(allText.length));
+                        combinedText = allText.join('\n\n').trim();
+                        if (!combinedText || combinedText.length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in PowerPoint slides. The slides might be image-based or empty.'
+                                }];
+                        }
+                        return [2 /*return*/, {
+                                text: combinedText,
+                                success: true
+                            }];
+                    case 10:
+                        error_4 = _b.sent();
+                        errorMessage = 'Failed to parse PowerPoint document';
+                        if (error_4 instanceof Error) {
+                            errorMessage = error_4.message;
+                            msg = error_4.message.toLowerCase();
+                            if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The PowerPoint file appears to be corrupted or invalid. Please try a different file.';
+                            }
+                            else if (msg.indexOf('not a zip') !== -1 || msg.indexOf('bad zip') !== -1) {
+                                errorMessage = 'The file does not appear to be a valid PPTX file. PPTX files must be in the Office Open XML format.';
+                            }
+                        }
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 11: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text content from a slide XML string
+     * Looks for text in <a:t> tags (text runs in PowerPoint XML)
+     * Handles various PowerPoint XML structures and namespaces
+     */
+    DocumentParser.extractTextFromSlideXml = function (xml) {
+        var textParts = [];
+        // PowerPoint uses <a:t> tags for text runs (drawingML namespace)
+        // The namespace prefix 'a' refers to drawingML (http://schemas.openxmlformats.org/drawingml/2006/main)
+        // Also handle cases where namespace might be different or missing
+        var textRunPatterns = [
+            /<a:t(?:\s[^>]*)?>([^<]*)<\/a:t>/g,
+            /<t(?:\s[^>]*)?>([^<]*)<\/t>/g,
+            /<p:t(?:\s[^>]*)?>([^<]*)<\/p:t>/g,
+            // Also try with full namespace URLs in case of different XML structure
+            /<[^:>]*:t(?:\s[^>]*)?>([^<]*)<\/[^:>]*:t>/g // Any namespace prefix with 't' tag
+        ];
+        // Extract text using all patterns
+        for (var i = 0; i < textRunPatterns.length; i++) {
+            var pattern = textRunPatterns[i];
+            // Reset regex lastIndex to ensure we check from the beginning
+            pattern.lastIndex = 0;
+            var match = void 0;
+            while ((match = pattern.exec(xml)) !== null) {
+                if (match[1] && match[1].trim()) {
+                    var decoded = this.decodeXmlEntities(match[1]);
+                    if (decoded.trim()) {
+                        textParts.push(decoded);
+                    }
+                }
+            }
+        }
+        // Also extract from text body sections (<p:txBody>, <txBody>, <a:txBody>)
+        var txBodyPatterns = [
+            /<p:txBody[^>]*>([\s\S]*?)<\/p:txBody>/g,
+            /<a:txBody[^>]*>([\s\S]*?)<\/a:txBody>/g,
+            /<txBody[^>]*>([\s\S]*?)<\/txBody>/g
+        ];
+        for (var _i = 0, txBodyPatterns_1 = txBodyPatterns; _i < txBodyPatterns_1.length; _i++) {
+            var pattern = txBodyPatterns_1[_i];
+            pattern.lastIndex = 0; // Reset regex
+            var txBodyMatch = void 0;
+            while ((txBodyMatch = pattern.exec(xml)) !== null) {
+                var bodyContent = txBodyMatch[1];
+                // Extract text from within the text body
+                var bodyTextPatterns = [
+                    /<a:t(?:\s[^>]*)?>([^<]*)<\/a:t>/g,
+                    /<t(?:\s[^>]*)?>([^<]*)<\/t>/g
+                ];
+                for (var _a = 0, bodyTextPatterns_1 = bodyTextPatterns; _a < bodyTextPatterns_1.length; _a++) {
+                    var bodyPattern = bodyTextPatterns_1[_a];
+                    bodyPattern.lastIndex = 0; // Reset regex
+                    var bodyTextMatch = void 0;
+                    while ((bodyTextMatch = bodyPattern.exec(bodyContent)) !== null) {
+                        if (bodyTextMatch[1] && bodyTextMatch[1].trim()) {
+                            var decoded = this.decodeXmlEntities(bodyTextMatch[1]);
+                            if (decoded.trim()) {
+                                textParts.push(decoded);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // If still no text found, try a more aggressive approach - look for any text between tags
+        if (textParts.length === 0) {
+            console.warn('No text found with standard patterns, trying fallback method');
+            // Fallback: extract any text content that's not inside angle brackets
+            var fallbackPattern = />([^<]+)</g;
+            var fallbackMatch = void 0;
+            while ((fallbackMatch = fallbackPattern.exec(xml)) !== null) {
+                var text = fallbackMatch[1].trim();
+                // Filter out very short strings and XML artifacts
+                if (text.length > 2 && !text.match(/^[\s\n\r]*$/)) {
+                    var decoded = this.decodeXmlEntities(text);
+                    if (decoded.trim() && decoded.length > 2) {
+                        textParts.push(decoded);
+                    }
+                }
+            }
+        }
+        // Join all text parts with spaces
+        // Note: We preserve duplicates as they may appear in different contexts
+        var result = textParts.join(' ');
+        console.log("Extracted ".concat(textParts.length, " text fragments, total length: ").concat(result.length));
+        return result;
+    };
+    /**
+     * Decode XML entities to plain text
+     */
+    DocumentParser.decodeXmlEntities = function (text) {
+        return text
+            .replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'")
+            .replace(/&#(\d+);/g, function (_, dec) { return String.fromCharCode(parseInt(dec, 10)); })
+            .replace(/&#x([0-9a-f]+);/gi, function (_, hex) { return String.fromCharCode(parseInt(hex, 16)); });
     };
     return DocumentParser;
 }());
