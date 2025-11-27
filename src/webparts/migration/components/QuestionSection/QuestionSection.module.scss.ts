@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./QuestionSection.module.css");
 const styles = {
   questionSection: 'questionSection_fc045cad',
@@ -10,3 +10,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

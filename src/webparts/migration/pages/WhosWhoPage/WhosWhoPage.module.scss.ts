@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./WhosWhoPage.module.css");
 const styles = {
   whosWhoPage: 'whosWhoPage_e154758d',
@@ -13,3 +13,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */
