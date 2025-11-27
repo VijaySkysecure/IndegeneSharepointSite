@@ -407,7 +407,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 <path d="M12 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className={styles.hintText}>Drag & drop files here</div>
-              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start.</div>
+              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start.</div>
               <button className={styles.browseBtn} onClick={(e) => { e.stopPropagation(); onBrowse(); }}>
                 Browse files
               </button>
@@ -415,7 +415,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 ref={fileInputRef}
                 type="file"
                 style={{ display: 'none' }}
-                accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp"
+                accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml"
                 onChange={(e) => onFileSelected(e.target.files)}
               />
             </div>

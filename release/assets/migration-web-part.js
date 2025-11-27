@@ -1475,9 +1475,9 @@ var FileUpload = function (props) {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hintText }, "Drag & drop files here"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp", onChange: function (e) { return onFileSelected(e.target.files); } })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml", onChange: function (e) { return onFileSelected(e.target.files); } })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
@@ -3117,18 +3117,38 @@ var DocumentParser = /** @class */ (function () {
      * Extract text from a file based on its type
      */
     DocumentParser.parseFile = function (file) {
-        var _a;
+        var _a, _b;
         return __awaiter(this, void 0, void 0, function () {
-            var fileExtension, _b, error_1;
-            return __generator(this, function (_c) {
-                switch (_c.label) {
+            var fileExtension, fileType, fileTypeToParse, _c, error_1;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
                     case 0:
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
-                        _c.label = 1;
+                        fileType = ((_b = file.type) === null || _b === void 0 ? void 0 : _b.toLowerCase()) || '';
+                        console.log('=== FILE PARSING DEBUG ===');
+                        console.log('File name:', file.name);
+                        console.log('File extension:', fileExtension);
+                        console.log('File type (MIME):', fileType);
+                        _d.label = 1;
                     case 1:
-                        _c.trys.push([1, 16, , 17]);
-                        _b = fileExtension;
-                        switch (_b) {
+                        _d.trys.push([1, 20, , 21]);
+                        fileTypeToParse = fileExtension;
+                        // Also check MIME type for MHTML files (Microsoft Edge may not set extension correctly)
+                        if (fileType.indexOf('message/rfc822') !== -1 ||
+                            fileType.indexOf('multipart/related') !== -1 ||
+                            fileType.indexOf('application/x-mimearchive') !== -1 ||
+                            fileType.indexOf('mhtml') !== -1 ||
+                            fileType.indexOf('mht') !== -1) {
+                            fileTypeToParse = 'mhtml';
+                            console.log('Detected MHTML file by MIME type');
+                        }
+                        // Check MIME type for SVG files
+                        if (fileType.indexOf('image/svg+xml') !== -1 || fileType.indexOf('image/svg') !== -1) {
+                            fileTypeToParse = 'svg';
+                            console.log('Detected SVG file by MIME type');
+                        }
+                        _c = fileTypeToParse;
+                        switch (_c) {
                             case 'pdf': return [3 /*break*/, 2];
                             case 'docx': return [3 /*break*/, 4];
                             case 'doc': return [3 /*break*/, 6];
@@ -3136,31 +3156,38 @@ var DocumentParser = /** @class */ (function () {
                             case 'ppt': return [3 /*break*/, 9];
                             case 'xlsx': return [3 /*break*/, 10];
                             case 'xls': return [3 /*break*/, 12];
-                            case 'mpp': return [3 /*break*/, 13];
+                            case 'mhtml': return [3 /*break*/, 13];
+                            case 'mht': return [3 /*break*/, 13];
+                            case 'svg': return [3 /*break*/, 15];
+                            case 'mpp': return [3 /*break*/, 17];
                         }
-                        return [3 /*break*/, 14];
+                        return [3 /*break*/, 18];
                     case 2: return [4 /*yield*/, this.parsePDF(file)];
-                    case 3: return [2 /*return*/, _c.sent()];
+                    case 3: return [2 /*return*/, _d.sent()];
                     case 4: return [4 /*yield*/, this.parseWord(file)];
-                    case 5: return [2 /*return*/, _c.sent()];
+                    case 5: return [2 /*return*/, _d.sent()];
                     case 6: return [2 /*return*/, { text: '', success: false, error: 'Legacy .doc format not supported. Please convert to .docx' }];
                     case 7: return [4 /*yield*/, this.parsePowerPoint(file)];
-                    case 8: return [2 /*return*/, _c.sent()];
+                    case 8: return [2 /*return*/, _d.sent()];
                     case 9: return [2 /*return*/, { text: '', success: false, error: 'Legacy .ppt format not supported. Please convert to .pptx format.' }];
                     case 10: return [4 /*yield*/, this.parseExcel(file)];
-                    case 11: return [2 /*return*/, _c.sent()];
+                    case 11: return [2 /*return*/, _d.sent()];
                     case 12: return [2 /*return*/, { text: '', success: false, error: 'Legacy .xls format not supported. Please convert to .xlsx format.' }];
-                    case 13: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 14: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 15: return [3 /*break*/, 17];
-                    case 16:
-                        error_1 = _c.sent();
+                    case 13: return [4 /*yield*/, this.parseMHTML(file)];
+                    case 14: return [2 /*return*/, _d.sent()];
+                    case 15: return [4 /*yield*/, this.parseSVG(file)];
+                    case 16: return [2 /*return*/, _d.sent()];
+                    case 17: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 18: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension, ". File type: ").concat(fileType || 'unknown') }];
+                    case 19: return [3 /*break*/, 21];
+                    case 20:
+                        error_1 = _d.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
-                    case 17: return [2 /*return*/];
+                    case 21: return [2 /*return*/];
                 }
             });
         });
@@ -3474,6 +3501,319 @@ var DocumentParser = /** @class */ (function () {
                 }
             });
         });
+    };
+    /**
+     * Extract text from SVG (.svg) file
+     * SVG files are XML-based and can contain text elements
+     */
+    DocumentParser.parseSVG = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var fileText, textParts, textElementRegex, tspanRegex, match, titleRegex, descRegex, ariaLabelRegex, titleAttrRegex, parser, doc, parserError, allText, decodedParts, uniqueParts, combinedText, error_6, errorMessage, msg;
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        console.log('=== STARTING SVG PARSING ===');
+                        console.log('File name:', file.name);
+                        console.log('File size:', file.size, 'bytes');
+                        console.log('File type:', file.type);
+                        return [4 /*yield*/, file.text()];
+                    case 1:
+                        fileText = _a.sent();
+                        if (!fileText || fileText.trim().length === 0) {
+                            console.error('SVG file is empty');
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'The SVG file appears to be empty.'
+                                }];
+                        }
+                        console.log('SVG file loaded, total size:', fileText.length, 'characters');
+                        textParts = [];
+                        textElementRegex = /<text[^>]*>([^<]*)<\/text>/gi;
+                        tspanRegex = /<tspan[^>]*>([^<]*)<\/tspan>/gi;
+                        match = void 0;
+                        while ((match = textElementRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        while ((match = tspanRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        titleRegex = /<title[^>]*>([^<]*)<\/title>/gi;
+                        descRegex = /<desc[^>]*>([^<]*)<\/desc>/gi;
+                        while ((match = titleRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        while ((match = descRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        ariaLabelRegex = /aria-label=["']([^"']+)["']/gi;
+                        titleAttrRegex = /title=["']([^"']+)["']/gi;
+                        while ((match = ariaLabelRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        while ((match = titleAttrRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                textParts.push(match[1].trim());
+                            }
+                        }
+                        // Pattern 4: If no text found, try using DOMParser to extract all text content
+                        if (textParts.length === 0) {
+                            console.warn('No text elements found, trying DOMParser fallback');
+                            try {
+                                parser = new DOMParser();
+                                doc = parser.parseFromString(fileText, 'image/svg+xml');
+                                parserError = doc.querySelector('parsererror');
+                                if (parserError) {
+                                    console.warn('SVG parsing error:', parserError.textContent);
+                                }
+                                else {
+                                    allText = doc.documentElement.textContent || doc.documentElement.innerText || '';
+                                    if (allText.trim()) {
+                                        textParts.push(allText.trim());
+                                    }
+                                }
+                            }
+                            catch (parseError) {
+                                console.warn('DOMParser failed for SVG:', parseError);
+                            }
+                        }
+                        decodedParts = textParts.map(function (part) { return _this.decodeXmlEntities(part); });
+                        uniqueParts = Array.from(new Set(decodedParts));
+                        combinedText = uniqueParts.join(' ').trim();
+                        console.log("Extracted ".concat(textParts.length, " text element(s) from SVG"));
+                        console.log('Combined text length:', combinedText.length);
+                        console.log('Sample text (first 500 chars):', combinedText.substring(0, 500));
+                        if (!combinedText || combinedText.length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in SVG file. The SVG might contain only graphics without text elements.'
+                                }];
+                        }
+                        console.log('=== SVG PARSING SUCCESSFUL ===');
+                        return [2 /*return*/, {
+                                text: combinedText,
+                                success: true
+                            }];
+                    case 2:
+                        error_6 = _a.sent();
+                        errorMessage = 'Failed to parse SVG document';
+                        if (error_6 instanceof Error) {
+                            errorMessage = error_6.message;
+                            msg = error_6.message.toLowerCase();
+                            if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The SVG file appears to be corrupted or invalid. Please try a different file.';
+                            }
+                        }
+                        console.error('SVG parsing error:', error_6);
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from Microsoft Edge HTML (.mhtml/.mht) file
+     * MHTML files contain HTML content with embedded resources separated by MIME boundaries
+     */
+    DocumentParser.parseMHTML = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var fileText, htmlParts, htmlContentRegex, match, htmlTagRegex, htmlMatch, parts, i, part, htmlStart, htmlContent, extractedText, allText, i, htmlContent, text, combinedText, error_7, errorMessage, msg;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        console.log('=== STARTING MHTML PARSING ===');
+                        console.log('File name:', file.name);
+                        console.log('File size:', file.size, 'bytes');
+                        console.log('File type:', file.type);
+                        return [4 /*yield*/, file.text()];
+                    case 1:
+                        fileText = _a.sent();
+                        if (!fileText || fileText.trim().length === 0) {
+                            console.error('MHTML file is empty');
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'The MHTML file appears to be empty.'
+                                }];
+                        }
+                        console.log('MHTML file loaded, total size:', fileText.length, 'characters');
+                        console.log('First 500 characters:', fileText.substring(0, 500));
+                        htmlParts = [];
+                        htmlContentRegex = /Content-Type:\s*text\/html[^\r\n]*(?:\r?\n[^\r\n]*)*\r?\n\r?\n([\s\S]*?)(?=\r?\n--|$)/gi;
+                        match = void 0;
+                        while ((match = htmlContentRegex.exec(fileText)) !== null) {
+                            if (match[1] && match[1].trim()) {
+                                htmlParts.push(match[1]);
+                            }
+                        }
+                        // Pattern 2: If no HTML parts found with Content-Type, look for HTML tags directly
+                        // This handles cases where the MIME structure might be different
+                        if (htmlParts.length === 0) {
+                            htmlTagRegex = /<html[\s\S]*?<\/html>/gi;
+                            htmlMatch = void 0;
+                            while ((htmlMatch = htmlTagRegex.exec(fileText)) !== null) {
+                                if (htmlMatch[0] && htmlMatch[0].trim()) {
+                                    htmlParts.push(htmlMatch[0]);
+                                }
+                            }
+                        }
+                        // Pattern 3: Extract any text between MIME boundaries that looks like HTML
+                        if (htmlParts.length === 0) {
+                            parts = fileText.split(/--[^\r\n]+/);
+                            for (i = 0; i < parts.length; i++) {
+                                part = parts[i];
+                                // Check if this part contains HTML-like content
+                                if (part && (part.indexOf('<html') !== -1 || part.indexOf('<!DOCTYPE') !== -1 || part.indexOf('<body') !== -1)) {
+                                    htmlStart = Math.max(part.indexOf('<html'), part.indexOf('<!DOCTYPE'), part.indexOf('<body'));
+                                    if (htmlStart !== -1) {
+                                        htmlContent = part.substring(htmlStart);
+                                        if (htmlContent.trim()) {
+                                            htmlParts.push(htmlContent);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        console.log("Found ".concat(htmlParts.length, " HTML part(s) in MHTML file"));
+                        if (htmlParts.length === 0) {
+                            // Fallback: try to extract any readable text from the file
+                            console.warn('No HTML parts found, attempting to extract text directly');
+                            extractedText = this.extractTextFromHTML(fileText);
+                            if (extractedText && extractedText.trim().length > 0) {
+                                return [2 /*return*/, {
+                                        text: extractedText.trim(),
+                                        success: true
+                                    }];
+                            }
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No HTML content found in the MHTML file. The file might be corrupted or in an unsupported format.'
+                                }];
+                        }
+                        allText = [];
+                        for (i = 0; i < htmlParts.length; i++) {
+                            try {
+                                htmlContent = htmlParts[i];
+                                text = this.extractTextFromHTML(htmlContent);
+                                if (text && text.trim()) {
+                                    allText.push(text);
+                                    console.log("Extracted ".concat(text.length, " characters from HTML part ").concat(i + 1));
+                                }
+                            }
+                            catch (partError) {
+                                console.warn("Error parsing HTML part ".concat(i + 1, ":"), partError);
+                                // Continue with other parts
+                            }
+                        }
+                        combinedText = allText.join('\n\n').trim();
+                        console.log('Combined text length:', combinedText.length);
+                        console.log('Sample of extracted text (first 500 chars):', combinedText.substring(0, 500));
+                        if (!combinedText || combinedText.length === 0) {
+                            console.error('No text content extracted from HTML parts');
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in MHTML file. The HTML might be empty or contain only images.'
+                                }];
+                        }
+                        console.log("=== MHTML PARSING SUCCESSFUL ===");
+                        console.log("Total extracted text length: ".concat(combinedText.length, " characters"));
+                        return [2 /*return*/, {
+                                text: combinedText,
+                                success: true
+                            }];
+                    case 2:
+                        error_7 = _a.sent();
+                        errorMessage = 'Failed to parse MHTML document';
+                        if (error_7 instanceof Error) {
+                            errorMessage = error_7.message;
+                            msg = error_7.message.toLowerCase();
+                            if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The MHTML file appears to be corrupted or invalid. Please try a different file.';
+                            }
+                        }
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract plain text from HTML content
+     * Removes HTML tags, scripts, styles, and extracts readable text
+     */
+    DocumentParser.extractTextFromHTML = function (html) {
+        // Create a temporary DOM element to parse HTML
+        // Since we're in a browser environment, we can use DOMParser
+        try {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(html, 'text/html');
+            // Remove script and style elements
+            var scripts = doc.querySelectorAll('script, style, noscript');
+            for (var i = 0; i < scripts.length; i++) {
+                var element = scripts[i];
+                if (element.parentNode) {
+                    element.parentNode.removeChild(element);
+                }
+            }
+            // Get text content from body, or entire document if no body
+            var body = doc.body || doc.documentElement;
+            if (body) {
+                var text_1 = body.textContent || body.innerText || '';
+                // Clean up whitespace
+                text_1 = text_1.replace(/\s+/g, ' ').trim();
+                return text_1;
+            }
+        }
+        catch (parseError) {
+            console.warn('DOMParser failed, using regex fallback:', parseError);
+        }
+        // Fallback: Use regex to strip HTML tags
+        var text = html
+            // Remove script and style blocks
+            .replace(/<script[\s\S]*?<\/script>/gi, '')
+            .replace(/<style[\s\S]*?<\/style>/gi, '')
+            .replace(/<noscript[\s\S]*?<\/noscript>/gi, '')
+            // Remove HTML comments
+            .replace(/<!--[\s\S]*?-->/g, '')
+            // Remove HTML tags
+            .replace(/<[^>]+>/g, ' ')
+            // Decode HTML entities
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'")
+            .replace(/&#(\d+);/g, function (_, dec) { return String.fromCharCode(parseInt(dec, 10)); })
+            .replace(/&#x([0-9a-f]+);/gi, function (_, hex) { return String.fromCharCode(parseInt(hex, 16)); })
+            // Clean up whitespace
+            .replace(/\s+/g, ' ')
+            .trim();
+        return text;
     };
     /**
      * Extract text content from a slide XML string
