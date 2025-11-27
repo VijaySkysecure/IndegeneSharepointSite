@@ -3126,7 +3126,7 @@ var DocumentParser = /** @class */ (function () {
                         fileExtension = ((_a = file.name.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toLowerCase()) || '';
                         _c.label = 1;
                     case 1:
-                        _c.trys.push([1, 14, , 15]);
+                        _c.trys.push([1, 16, , 17]);
                         _b = fileExtension;
                         switch (_b) {
                             case 'pdf': return [3 /*break*/, 2];
@@ -3135,10 +3135,10 @@ var DocumentParser = /** @class */ (function () {
                             case 'pptx': return [3 /*break*/, 7];
                             case 'ppt': return [3 /*break*/, 9];
                             case 'xlsx': return [3 /*break*/, 10];
-                            case 'xls': return [3 /*break*/, 10];
-                            case 'mpp': return [3 /*break*/, 11];
+                            case 'xls': return [3 /*break*/, 12];
+                            case 'mpp': return [3 /*break*/, 13];
                         }
-                        return [3 /*break*/, 12];
+                        return [3 /*break*/, 14];
                     case 2: return [4 /*yield*/, this.parsePDF(file)];
                     case 3: return [2 /*return*/, _c.sent()];
                     case 4: return [4 /*yield*/, this.parseWord(file)];
@@ -3147,18 +3147,20 @@ var DocumentParser = /** @class */ (function () {
                     case 7: return [4 /*yield*/, this.parsePowerPoint(file)];
                     case 8: return [2 /*return*/, _c.sent()];
                     case 9: return [2 /*return*/, { text: '', success: false, error: 'Legacy .ppt format not supported. Please convert to .pptx format.' }];
-                    case 10: return [2 /*return*/, { text: '', success: false, error: 'Excel parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 11: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
-                    case 12: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
-                    case 13: return [3 /*break*/, 15];
-                    case 14:
+                    case 10: return [4 /*yield*/, this.parseExcel(file)];
+                    case 11: return [2 /*return*/, _c.sent()];
+                    case 12: return [2 /*return*/, { text: '', success: false, error: 'Legacy .xls format not supported. Please convert to .xlsx format.' }];
+                    case 13: return [2 /*return*/, { text: '', success: false, error: 'MS Project parsing not yet implemented. Please convert to PDF or Word format.' }];
+                    case 14: return [2 /*return*/, { text: '', success: false, error: "Unsupported file type: ".concat(fileExtension) }];
+                    case 15: return [3 /*break*/, 17];
+                    case 16:
                         error_1 = _c.sent();
                         return [2 /*return*/, {
                                 text: '',
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
-                    case 15: return [2 /*return*/];
+                    case 17: return [2 /*return*/];
                 }
             });
         });
@@ -3359,6 +3361,116 @@ var DocumentParser = /** @class */ (function () {
                                 error: errorMessage
                             }];
                     case 11: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * Extract text from Excel (.xlsx) file
+     * Reads all sheets and extracts text from all cells
+     */
+    DocumentParser.parseExcel = function (file) {
+        return __awaiter(this, void 0, void 0, function () {
+            var XLSXModule, XLSX, arrayBuffer, workbook, allText, _i, _a, sheetName, worksheet, sheetData, sheetText, i, row, rowText, sheetContent, combinedText, error_5, errorMessage, msg;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _b.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, __webpack_require__.e(/*! import() */ "vendors-node_modules_xlsx_xlsx_mjs").then(__webpack_require__.bind(__webpack_require__, /*! xlsx */ 3959))];
+                    case 1:
+                        XLSXModule = _b.sent();
+                        XLSX = XLSXModule.default || XLSXModule;
+                        return [4 /*yield*/, file.arrayBuffer()];
+                    case 2:
+                        arrayBuffer = _b.sent();
+                        workbook = XLSX.read(arrayBuffer, {
+                            type: 'array',
+                            cellText: false,
+                            cellDates: true,
+                            sheetStubs: false
+                        });
+                        if (!workbook.SheetNames || workbook.SheetNames.length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No sheets found in the Excel file.'
+                                }];
+                        }
+                        console.log("Found ".concat(workbook.SheetNames.length, " sheet(s) in Excel file"));
+                        allText = [];
+                        for (_i = 0, _a = workbook.SheetNames; _i < _a.length; _i++) {
+                            sheetName = _a[_i];
+                            try {
+                                worksheet = workbook.Sheets[sheetName];
+                                if (!worksheet) {
+                                    console.warn("Sheet \"".concat(sheetName, "\" not found in workbook"));
+                                    continue;
+                                }
+                                sheetData = XLSX.utils.sheet_to_json(worksheet, {
+                                    header: 1,
+                                    defval: '',
+                                    raw: false // Convert dates and numbers to strings
+                                });
+                                sheetText = [];
+                                for (i = 0; i < sheetData.length; i++) {
+                                    row = sheetData[i];
+                                    if (Array.isArray(row)) {
+                                        rowText = row
+                                            .filter(function (cell) { return cell !== null && cell !== undefined && cell !== ''; })
+                                            .map(function (cell) { return String(cell).trim(); })
+                                            .filter(function (cell) { return cell.length > 0; })
+                                            .join(' ');
+                                        if (rowText.trim()) {
+                                            sheetText.push(rowText);
+                                        }
+                                    }
+                                }
+                                if (sheetText.length > 0) {
+                                    sheetContent = "Sheet: ".concat(sheetName, "\n").concat(sheetText.join('\n'));
+                                    allText.push(sheetContent);
+                                    console.log("Extracted ".concat(sheetText.length, " rows from sheet \"").concat(sheetName, "\""));
+                                }
+                                else {
+                                    console.warn("No text content found in sheet \"".concat(sheetName, "\""));
+                                }
+                            }
+                            catch (sheetError) {
+                                console.warn("Error parsing sheet \"".concat(sheetName, "\":"), sheetError);
+                                // Continue with other sheets
+                            }
+                        }
+                        combinedText = allText.join('\n\n').trim();
+                        if (!combinedText || combinedText.length === 0) {
+                            return [2 /*return*/, {
+                                    text: '',
+                                    success: false,
+                                    error: 'No text content found in Excel file. The file might be empty or contain only images.'
+                                }];
+                        }
+                        console.log("Total extracted text length: ".concat(combinedText.length, " characters"));
+                        return [2 /*return*/, {
+                                text: combinedText,
+                                success: true
+                            }];
+                    case 3:
+                        error_5 = _b.sent();
+                        errorMessage = 'Failed to parse Excel document';
+                        if (error_5 instanceof Error) {
+                            errorMessage = error_5.message;
+                            msg = error_5.message.toLowerCase();
+                            if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
+                                errorMessage = 'The Excel file appears to be corrupted or invalid. Please try a different file.';
+                            }
+                            else if (msg.indexOf('not supported') !== -1 || msg.indexOf('format') !== -1) {
+                                errorMessage = 'The file format is not supported. Please use .xlsx format.';
+                            }
+                        }
+                        return [2 /*return*/, {
+                                text: '',
+                                success: false,
+                                error: errorMessage
+                            }];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
