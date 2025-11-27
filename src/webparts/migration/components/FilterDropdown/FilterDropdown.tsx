@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import styles from "./FilterDropdown.module.scss";
 
@@ -25,24 +24,39 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({ searchText }) => {
 
   const toggleGroup = (title: string) => setOpenGroup(openGroup === title ? null : title);
 
-  // Demo items (frontend only)
+  // ORIGINAL DEMO ITEMS
   const items = Array.from({ length: 6 }).map((_, i) => ({
     id: i,
     title: activeTab === "documents" ? `Document ${i + 1}` : `Expert ${i + 1}`,
     contributor: activeTab === "documents" ? `Contributor ${i + 1}` : `Role ${i + 1}`,
     updated: "Nov 20, 2025",
-    description: "Short description goes here.",
+    description: "Short description goes here."
   }));
+
+  // ✅ NEW: Dynamic Filtering Logic
+  const filteredItems = React.useMemo(() => {
+    if (!searchText.trim()) return items;
+
+    const keyword = searchText.toLowerCase();
+
+    return items.filter((item) =>
+      item.title.toLowerCase().includes(keyword) ||
+      item.contributor.toLowerCase().includes(keyword) ||
+      item.description.toLowerCase().includes(keyword)
+    );
+  }, [searchText, items]);
 
   return (
     <div className={styles.workspace}>
       {/* Left Filter Sidebar */}
       <aside className={styles.wrapper}>
         <div className={styles.railHeader}>Refine using filters by:</div>
+
         <nav className={styles.container}>
           {filterData.map((group) => {
             const hasChildren = !!group.children;
             const isOpen = openGroup === group.title;
+
             return (
               <div key={group.title}>
                 <button
@@ -86,29 +100,33 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({ searchText }) => {
           </button>
         </div>
 
-        {/* Results Grid */}
+        {/* Results */}
         <section className={styles.results}>
           <div className={styles.grid}>
-            {items.map((item) => (
-              <article key={item.id} className={styles.card}>
-                <h4 className={styles.cardTitle}>{item.title}</h4>
+            {filteredItems.length === 0 ? (
+              <p>No results found.</p>
+            ) : (
+              filteredItems.map((item) => (
+                <article key={item.id} className={styles.card}>
+                  <h4 className={styles.cardTitle}>{item.title}</h4>
 
-                <div className={styles.cardRow}>
-                  <span className={styles.cardLabel}>Contributor</span>
-                  <span className={styles.cardValue}>{item.contributor}</span>
-                </div>
+                  <div className={styles.cardRow}>
+                    <span className={styles.cardLabel}>Contributor</span>
+                    <span className={styles.cardValue}>{item.contributor}</span>
+                  </div>
 
-                <div className={styles.cardRow}>
-                  <span className={styles.cardLabel}>Updated</span>
-                  <span className={styles.cardValue}>{item.updated}</span>
-                </div>
+                  <div className={styles.cardRow}>
+                    <span className={styles.cardLabel}>Updated</span>
+                    <span className={styles.cardValue}>{item.updated}</span>
+                  </div>
 
-                <div className={styles.cardRow}>
-                  <span className={styles.cardLabel}>Description</span>
-                  <span className={styles.cardValue}>{item.description}</span>
-                </div>
-              </article>
-            ))}
+                  <div className={styles.cardRow}>
+                    <span className={styles.cardLabel}>Description</span>
+                    <span className={styles.cardValue}>{item.description}</span>
+                  </div>
+                </article>
+              ))
+            )}
           </div>
         </section>
       </main>

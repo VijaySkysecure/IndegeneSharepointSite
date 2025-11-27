@@ -61,7 +61,7 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
     // Otherwise show main page
     return (
       <div className={styles.migration}>
-        <Header />
+        <Header context={this.props.context} />
         <Navigation activePage={this.state.activePage} onNavClick={this.handleNavClick} />
         <ContentArea 
           activePage={this.state.activePage} 

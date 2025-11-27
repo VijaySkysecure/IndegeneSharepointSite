@@ -85,7 +85,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
       </div>
 
       {showUploader && (
-        <FileUpload onClose={() => setShowUploader(false)} />
+        <FileUpload onClose={() => setShowUploader(false)} context={props.context} />
       )}
     </div>
   );

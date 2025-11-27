@@ -1,5 +1,8 @@
+import { WebPartContext } from '@microsoft/sp-webpart-base';
+
 export interface IHeaderProps {
-  // Add props here if needed in the future
+  /** Pass SPFx context so Header can open FileUpload and that can call SharePoint APIs */
+  context: WebPartContext;
 }
 
 

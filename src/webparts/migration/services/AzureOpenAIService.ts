@@ -2,7 +2,7 @@
  * Service to interact with Azure OpenAI API
  */
 
-import { ALLOWED_BUSINESS_UNITS, ALLOWED_DEPARTMENTS, findBestMatch } from './ValidationConstants';
+import { ALLOWED_BUSINESS_UNITS, ALLOWED_DEPARTMENTS, ALLOWED_DISEASE_AREAS, ALLOWED_THERAPY_AREAS, ALLOWED_REGIONS, ALLOWED_DOCUMENT_TYPES, findBestMatch } from './ValidationConstants';
 import { maskAllEmails, maskAllPhones } from './DataMasking';
 
 export interface MetadataExtraction {
@@ -13,6 +13,8 @@ export interface MetadataExtraction {
   region?: string;
   client?: string;
   abstract?: string;
+  diseaseArea?: string;
+  therapyArea?: string;
   emails?: string;
   phones?: string;
   ids?: string;
@@ -87,6 +89,10 @@ export class AzureOpenAIService {
   private buildExtractionPrompt(documentText: string): string {
     const buList = ALLOWED_BUSINESS_UNITS.join('\n- ');
     const deptList = ALLOWED_DEPARTMENTS.join('\n- ');
+    const diseaseAreaList = ALLOWED_DISEASE_AREAS.join('\n- ');
+    const therapyAreaList = ALLOWED_THERAPY_AREAS.join('\n- ');
+    const regionList = ALLOWED_REGIONS.join('\n- ');
+    const documentTypeList = ALLOWED_DOCUMENT_TYPES.join('\n- ');
 
     return `You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.
 
@@ -113,7 +119,9 @@ Fields to extract:
 
 1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.
 
-2. documentType - **MANDATORY**: Type of document. Analyze the content structure and format. Examples: "PPTX", "PDF", "Word Document", "Report", "Proposal", "Presentation", "White Paper", "Case Study", "Training Material", "Standard Operating Procedure", "Guideline", "Manual", etc. MUST provide a value.
+2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):
+- ${documentTypeList}
+Carefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = "Deck", training content = "Training", FAQ format = "Frequently Asked Questions (FAQs)", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.
 
 3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):
 - ${buList}
@@ -123,7 +131,9 @@ If not explicitly mentioned, analyze the document content, department references
 - ${deptList}
 If not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.
 
-5. region - Geographic region mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", "Latin America"). ONLY fill if explicitly mentioned in the document, otherwise use ""
+5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):
+- ${regionList}
+Look for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string "".
 
 6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:
 - Person names (unless it's clearly a company name like "John's Consulting LLC")
@@ -133,6 +143,14 @@ If not explicitly mentioned, analyze the document content, team names, functiona
 Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find "the client" or similar without a specific company name, leave empty.
 
 7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.
+
+8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):
+- ${diseaseAreaList}
+Carefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string "".
+
+9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):
+- ${therapyAreaList}
+Carefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string "".
 
 10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like "text@domain.com" or "name@company.org". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: "email1@example.com, email2@example.com, email3@example.com, ..." If you find even one email, include it. If you find none, use empty string "".
 
@@ -154,6 +172,8 @@ Return only valid JSON in this format (use empty string "" for fields not found)
   "region": "...",
   "client": "...",
   "abstract": "...",
+  "diseaseArea": "...",
+  "therapyArea": "...",
   "emails": "...",
   "phones": "...",
   "ids": "...",
@@ -170,7 +190,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     // Ensure all fields are strings and trim whitespace
     const fields: (keyof MetadataExtraction)[] = [
       'title', 'documentType', 'bu', 'department', 'region', 'client',
-      'abstract', 'emails', 'phones',
+      'abstract', 'diseaseArea', 'therapyArea', 'emails', 'phones',
       'ids', 'pricing'
     ];
 
@@ -186,10 +206,21 @@ Return only valid JSON in this format (use empty string "" for fields not found)
       console.warn('⚠️ Title was empty, using default');
     }
 
-    // DocumentType: If empty, infer from context or use default
+    // DocumentType: Must always have a value and match allowed list
     if (!sanitized.documentType || sanitized.documentType === '') {
-      sanitized.documentType = 'Document';
-      console.warn('⚠️ DocumentType was empty, using default');
+      // Use "Others" as fallback since it's in the allowed list
+      sanitized.documentType = 'Others';
+      console.warn('⚠️ DocumentType was empty, using fallback: Others');
+    } else {
+      // Validate and match to allowed values
+      const matchedDocType = findBestMatch(sanitized.documentType, ALLOWED_DOCUMENT_TYPES);
+      if (matchedDocType) {
+        sanitized.documentType = matchedDocType;
+      } else {
+        // If no match found, use "Others" as fallback
+        sanitized.documentType = 'Others';
+        console.warn('⚠️ DocumentType did not match any allowed value:', sanitized.documentType, '- using fallback: Others');
+      }
     }
 
     // Business Unit: Must always have a value - try to match or use first allowed value as fallback
@@ -235,6 +266,34 @@ Return only valid JSON in this format (use empty string "" for fields not found)
         sanitized.region.toLowerCase() === 'none' ||
         sanitized.region.toLowerCase() === 'unknown')) {
       sanitized.region = '';
+    }
+
+    // Disease Area: Validate and match to allowed values
+    if (sanitized.diseaseArea) {
+      const matchedDiseaseArea = findBestMatch(sanitized.diseaseArea, ALLOWED_DISEASE_AREAS);
+      sanitized.diseaseArea = matchedDiseaseArea;
+      if (!matchedDiseaseArea) {
+        console.warn('⚠️ Disease Area did not match any allowed value:', sanitized.diseaseArea);
+      }
+    }
+
+    // Therapy Area: Validate and match to allowed values
+    if (sanitized.therapyArea) {
+      const matchedTherapyArea = findBestMatch(sanitized.therapyArea, ALLOWED_THERAPY_AREAS);
+      sanitized.therapyArea = matchedTherapyArea;
+      if (!matchedTherapyArea) {
+        console.warn('⚠️ Therapy Area did not match any allowed value:', sanitized.therapyArea);
+      }
+    }
+
+    // Region: Validate and match to allowed values (only if region exists)
+    if (sanitized.region) {
+      const matchedRegion = findBestMatch(sanitized.region, ALLOWED_REGIONS);
+      sanitized.region = matchedRegion;
+      if (!matchedRegion) {
+        console.warn('⚠️ Region did not match any allowed value:', sanitized.region);
+        sanitized.region = ''; // Clear if no match found
+      }
     }
 
     // Client field validation - should only contain company names

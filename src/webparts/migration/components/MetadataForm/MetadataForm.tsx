@@ -69,11 +69,6 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
                   </div>
 
                   <div className={styles.field}>
-                    <label className={styles.label} htmlFor="documentType">Document Type</label>
-                    <input id="documentType" name="documentType" placeholder="e.g., PPTX, Report" value={values.documentType} onChange={onChange} className={styles.input} />
-                  </div>
-
-                  <div className={styles.field}>
                     <label className={styles.label} htmlFor="bu">Business Unit</label>
                     <input id="bu" name="bu" placeholder="Select or type BU" value={values.bu} onChange={onChange} className={styles.input} />
                   </div>
@@ -91,6 +86,21 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
                   <div className={styles.field}>
                     <label className={styles.label} htmlFor="client">Client</label>
                     <input id="client" name="client" placeholder="Client name" value={values.client} onChange={onChange} className={styles.input} />
+                  </div>
+
+                  <div className={styles.field}>
+                    <label className={styles.label} htmlFor="documentType">Document Type</label>
+                    <input id="documentType" name="documentType" placeholder="e.g., PPTX, Report" value={values.documentType} onChange={onChange} className={styles.input} />
+                  </div>
+
+                  <div className={styles.field}>
+                    <label className={styles.label} htmlFor="diseaseArea">Disease Area</label>
+                    <input id="diseaseArea" name="diseaseArea" placeholder="Disease Area" value={values.diseaseArea} onChange={onChange} className={styles.input} />
+                  </div>
+
+                  <div className={styles.field}>
+                    <label className={styles.label} htmlFor="therapyArea">Therapy Area</label>
+                    <input id="therapyArea" name="therapyArea" placeholder="Therapy Area" value={values.therapyArea} onChange={onChange} className={styles.input} />
                   </div>
 
                   <div className={styles.fieldFull}>
