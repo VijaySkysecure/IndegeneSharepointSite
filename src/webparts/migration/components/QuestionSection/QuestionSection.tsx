@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { IQuestionSectionProps } from './IQuestionSectionProps';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
+import { DocumentDetailPage } from '../../pages/DocumentDetailPage/DocumentDetailPage';
 import styles from './QuestionSection.module.scss';
 
 interface DocumentItem {
@@ -15,6 +16,7 @@ interface DocumentItem {
 export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (props) => {
   const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
+  const [selectedDocumentId, setSelectedDocumentId] = React.useState<number | null>(null);
 
   React.useEffect(() => {
     if (props.context) {
@@ -159,20 +161,14 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
   };
 
   const handleView = (item: DocumentItem) => {
-    if (props.context && item.serverRelativeUrl) {
-      const webUrl = props.context.pageContext.web.absoluteUrl;
-      let fileUrl = item.serverRelativeUrl;
-      
-      // Ensure proper URL format
-      if (!fileUrl.startsWith('http')) {
-        if (!fileUrl.startsWith('/')) {
-          fileUrl = `/${fileUrl}`;
-        }
-        fileUrl = `${webUrl}${fileUrl}`;
-      }
-      
-      window.open(fileUrl, '_blank');
+    if (props.context && item.id) {
+      // Open document detail page in a modal overlay (full-screen)
+      setSelectedDocumentId(item.id);
     }
+  };
+
+  const handleCloseDetail = () => {
+    setSelectedDocumentId(null);
   };
 
   const handleDownload = async (item: DocumentItem) => {
@@ -228,76 +224,88 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
   }, [documents]);
 
   return (
-    <div className={styles.questionSection}>
-      <div className={styles.tilesContainer}>
-        {loading ? (
-          <div className={styles.loading}>Loading...</div>
-        ) : (
-          displayTiles.map((doc, index) => (
-            <div key={doc ? doc.id : `empty-${index}`} className={styles.tile}>
-              {doc ? (
-                <>
-                  <div className={styles.tileHeader}>
-                    <div className={styles.fileTypeIcon}>{getFileTypeIcon(doc.fileType)}</div>
-                    <span className={styles.fileType}>{doc.fileType || 'FILE'}</span>
-                  </div>
-                  <h3 className={styles.tileTitle}>{doc.name}</h3>
-                  <p className={styles.tileAbstract}>{doc.abstract || 'No abstract available'}</p>
-                  <div className={styles.tileActions}>
-                    <button 
-                      className={styles.viewButton}
-                      onClick={() => handleView(doc)}
-                    >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                      View
-                    </button>
-                    <button 
-                      className={styles.downloadButton}
-                      onClick={() => handleDownload(doc)}
-                      aria-label="Download"
-                    >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className={styles.tileHeader}>
-                    <div className={styles.fileTypeIcon}>📎</div>
-                    <span className={styles.fileType}>---</span>
-                  </div>
-                  <h3 className={styles.tileTitle}>No document</h3>
-                  <p className={styles.tileAbstract}>No document available</p>
-                  <div className={styles.tileActions}>
-                    <button className={styles.viewButton} disabled>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                      View
-                    </button>
-                    <button className={styles.downloadButton} disabled aria-label="Download">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                </>
-              )}
-            </div>
-          ))
-        )}
+    <>
+      <div className={styles.questionSection}>
+        <div className={styles.tilesContainer}>
+          {loading ? (
+            <div className={styles.loading}>Loading...</div>
+          ) : (
+            displayTiles.map((doc, index) => (
+              <div key={doc ? doc.id : `empty-${index}`} className={styles.tile}>
+                {doc ? (
+                  <>
+                    <div className={styles.tileHeader}>
+                      <div className={styles.fileTypeIcon}>{getFileTypeIcon(doc.fileType)}</div>
+                      <span className={styles.fileType}>{doc.fileType || 'FILE'}</span>
+                    </div>
+                    <h3 className={styles.tileTitle}>{doc.name}</h3>
+                    <p className={styles.tileAbstract}>{doc.abstract || 'No abstract available'}</p>
+                    <div className={styles.tileActions}>
+                      <button 
+                        className={styles.viewButton}
+                        onClick={() => handleView(doc)}
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        View
+                      </button>
+                      <button 
+                        className={styles.downloadButton}
+                        onClick={() => handleDownload(doc)}
+                        aria-label="Download"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={styles.tileHeader}>
+                      <div className={styles.fileTypeIcon}>📎</div>
+                      <span className={styles.fileType}>---</span>
+                    </div>
+                    <h3 className={styles.tileTitle}>No document</h3>
+                    <p className={styles.tileAbstract}>No document available</p>
+                    <div className={styles.tileActions}>
+                      <button className={styles.viewButton} disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        View
+                      </button>
+                      <button className={styles.downloadButton} disabled aria-label="Download">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))
+          )}
+        </div>
       </div>
-    </div>
+      
+      {selectedDocumentId && props.context && (
+        <div className={styles.detailModal}>
+          <DocumentDetailPage 
+            context={props.context} 
+            documentId={selectedDocumentId}
+            onClose={handleCloseDetail}
+          />
+        </div>
+      )}
+    </>
   );
 };
 

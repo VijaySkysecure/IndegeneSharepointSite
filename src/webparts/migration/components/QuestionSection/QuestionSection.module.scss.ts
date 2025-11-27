@@ -1,19 +1,20 @@
 
 require("./QuestionSection.module.css");
 const styles = {
-  questionSection: 'questionSection_c6567f2f',
-  tilesContainer: 'tilesContainer_c6567f2f',
-  tile: 'tile_c6567f2f',
-  tileHeader: 'tileHeader_c6567f2f',
-  fileTypeIcon: 'fileTypeIcon_c6567f2f',
-  fileType: 'fileType_c6567f2f',
-  tileTitle: 'tileTitle_c6567f2f',
-  tileAbstract: 'tileAbstract_c6567f2f',
-  tileActions: 'tileActions_c6567f2f',
-  viewButton: 'viewButton_c6567f2f',
-  downloadButton: 'downloadButton_c6567f2f',
-  loading: 'loading_c6567f2f',
-  noDocuments: 'noDocuments_c6567f2f'
+  questionSection: 'questionSection_745e26d3',
+  tilesContainer: 'tilesContainer_745e26d3',
+  tile: 'tile_745e26d3',
+  tileHeader: 'tileHeader_745e26d3',
+  fileTypeIcon: 'fileTypeIcon_745e26d3',
+  fileType: 'fileType_745e26d3',
+  tileTitle: 'tileTitle_745e26d3',
+  tileAbstract: 'tileAbstract_745e26d3',
+  tileActions: 'tileActions_745e26d3',
+  viewButton: 'viewButton_745e26d3',
+  downloadButton: 'downloadButton_745e26d3',
+  loading: 'loading_745e26d3',
+  noDocuments: 'noDocuments_745e26d3',
+  detailModal: 'detailModal_745e26d3'
 };
 
 export default styles;
