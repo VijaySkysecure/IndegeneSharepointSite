@@ -56,15 +56,17 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         return; // STOP the flow
       }
       
-      await processFileWithAI(file);
+      const processingSuccess = await processFileWithAI(file);
 
-      // ONLY SHOW FORM AFTER AI FINISHES
-      setShowForm(true);
+      // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
+      if (processingSuccess) {
+        setShowForm(true);
+      }
     }
   };
 
 
-  const processFileWithAI = async (file: File) => {
+  const processFileWithAI = async (file: File): Promise<boolean> => {
     console.log('=== STARTING FILE PROCESSING ===');
     console.log('File:', file.name);
     console.log('File type:', file.type);
@@ -89,7 +91,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         console.error('Document parsing failed:', errorMsg);
         setProcessingError(errorMsg);
         setIsProcessing(false);
-        return;
+        return false;
       }
 
       if (!parseResult.text || parseResult.text.trim().length === 0) {
@@ -97,7 +99,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         console.error('No text extracted:', errorMsg);
         setProcessingError(errorMsg);
         setIsProcessing(false);
-        return;
+        return false;
       }
 
       // Log parsed text for debugging
@@ -115,6 +117,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Step 3: Setting extracted metadata...');
       setExtractedMetadata(metadata);
       console.log('=== FILE PROCESSING COMPLETE ===');
+      setIsProcessing(false);
+      return true;
     } catch (error) {
       console.error('=== ERROR PROCESSING FILE ===');
       console.error('Error type:', typeof error);
@@ -127,9 +131,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         : 'An error occurred while processing the document. Please fill the form manually.';
       
       setProcessingError(errorMsg);
-    } finally {
-      console.log('Setting isProcessing to false');
       setIsProcessing(false);
+      return false;
     }
   };
 
