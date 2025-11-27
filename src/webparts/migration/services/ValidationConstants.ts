@@ -230,6 +230,16 @@ export const ALLOWED_THERAPY_AREAS = [
   'Oncology'
 ];
 
+export const ALLOWED_REGIONS = [
+  'UK',
+  'EUCAN',
+  'Global',
+  'APAC',
+  'Australia',
+  'Europe',
+  'US'
+];
+
 export const ALLOWED_DOCUMENT_TYPES = [
   'Knowledge Fireside Chat',
   'Style Guide',

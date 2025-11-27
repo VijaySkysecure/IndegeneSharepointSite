@@ -2,7 +2,7 @@
  * Service to interact with Azure OpenAI API
  */
 
-import { ALLOWED_BUSINESS_UNITS, ALLOWED_DEPARTMENTS, ALLOWED_DISEASE_AREAS, ALLOWED_THERAPY_AREAS, ALLOWED_DOCUMENT_TYPES, findBestMatch } from './ValidationConstants';
+import { ALLOWED_BUSINESS_UNITS, ALLOWED_DEPARTMENTS, ALLOWED_DISEASE_AREAS, ALLOWED_THERAPY_AREAS, ALLOWED_REGIONS, ALLOWED_DOCUMENT_TYPES, findBestMatch } from './ValidationConstants';
 import { maskAllEmails, maskAllPhones } from './DataMasking';
 
 export interface MetadataExtraction {
@@ -91,6 +91,7 @@ export class AzureOpenAIService {
     const deptList = ALLOWED_DEPARTMENTS.join('\n- ');
     const diseaseAreaList = ALLOWED_DISEASE_AREAS.join('\n- ');
     const therapyAreaList = ALLOWED_THERAPY_AREAS.join('\n- ');
+    const regionList = ALLOWED_REGIONS.join('\n- ');
     const documentTypeList = ALLOWED_DOCUMENT_TYPES.join('\n- ');
 
     return `You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.
@@ -130,7 +131,9 @@ If not explicitly mentioned, analyze the document content, department references
 - ${deptList}
 If not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.
 
-5. region - Geographic region mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", "Latin America"). ONLY fill if explicitly mentioned in the document, otherwise use ""
+5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):
+- ${regionList}
+Look for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string "".
 
 6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:
 - Person names (unless it's clearly a company name like "John's Consulting LLC")
@@ -280,6 +283,16 @@ Return only valid JSON in this format (use empty string "" for fields not found)
       sanitized.therapyArea = matchedTherapyArea;
       if (!matchedTherapyArea) {
         console.warn('⚠️ Therapy Area did not match any allowed value:', sanitized.therapyArea);
+      }
+    }
+
+    // Region: Validate and match to allowed values (only if region exists)
+    if (sanitized.region) {
+      const matchedRegion = findBestMatch(sanitized.region, ALLOWED_REGIONS);
+      sanitized.region = matchedRegion;
+      if (!matchedRegion) {
+        console.warn('⚠️ Region did not match any allowed value:', sanitized.region);
+        sanitized.region = ''; // Clear if no match found
       }
     }
 
