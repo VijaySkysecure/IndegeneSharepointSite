@@ -170,7 +170,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       Action: action,
       // For a person field, set the internal field with 'Id' suffix
       UserId: userId,
-      Performed_x0020_ById: userId,
+      PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };
 

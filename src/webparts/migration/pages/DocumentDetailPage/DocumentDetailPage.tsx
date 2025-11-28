@@ -27,6 +27,15 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
   const [previewUrl, setPreviewUrl] = React.useState<string>('');
   const [previewError, setPreviewError] = React.useState<string>('');
   const iframeRef = React.useRef<HTMLIFrameElement>(null);
+  
+  // Cleanup blob URLs on unmount
+  React.useEffect(() => {
+    return () => {
+      if (previewUrl && previewUrl.startsWith('blob:')) {
+        window.URL.revokeObjectURL(previewUrl);
+      }
+    };
+  }, [previewUrl]);
 
   React.useEffect(() => {
     fetchDocumentDetails();
@@ -125,8 +134,8 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
           const encodedServerUrl = encodeURIComponent(fileUrl);
           setPreviewUrl(`${webUrl}/_layouts/15/WopiFrame.aspx?sourcedoc=${encodedServerUrl}&action=default`);
         } else if (fileExtension.toLowerCase() === 'pdf') {
-          // For PDFs, fetch the file content and create a blob URL for preview
-          // This ensures authentication is handled properly
+          // For PDFs, fetch as blob and create object URL with proper content-type
+          // This prevents download and ensures proper preview
           try {
             const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
             const fileResponse = await props.context.spHttpClient.get(
@@ -136,7 +145,9 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
             
             if (fileResponse.ok) {
               const blob = await fileResponse.blob();
-              const blobUrl = window.URL.createObjectURL(blob);
+              // Ensure blob has correct content-type for PDF
+              const pdfBlob = new Blob([blob], { type: 'application/pdf' });
+              const blobUrl = window.URL.createObjectURL(pdfBlob);
               setPreviewUrl(blobUrl);
             } else {
               // Fallback to direct URL
@@ -144,6 +155,30 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
             }
           } catch (error) {
             console.error('Error fetching PDF for preview:', error);
+            // Fallback to direct URL
+            setPreviewUrl(fullFileUrl);
+          }
+        } else if (fileExtension.toLowerCase() === 'svg') {
+          // For SVG files, fetch as blob to handle authentication properly
+          try {
+            const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
+            const fileResponse = await props.context.spHttpClient.get(
+              downloadUrl,
+              SPHttpClient.configurations.v1
+            );
+            
+            if (fileResponse.ok) {
+              const blob = await fileResponse.blob();
+              // Ensure blob has correct content-type for SVG
+              const svgBlob = new Blob([blob], { type: 'image/svg+xml' });
+              const blobUrl = window.URL.createObjectURL(svgBlob);
+              setPreviewUrl(blobUrl);
+            } else {
+              // Fallback to direct URL
+              setPreviewUrl(fullFileUrl);
+            }
+          } catch (error) {
+            console.error('Error fetching SVG for preview:', error);
             // Fallback to direct URL
             setPreviewUrl(fullFileUrl);
           }
@@ -330,14 +365,44 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
             <h2 className={styles.previewTitle}>Document Preview</h2>
             <div className={styles.previewContainer}>
               {previewUrl ? (
-                <iframe 
-                  ref={iframeRef}
-                  src={previewUrl} 
-                  className={styles.previewFrame}
-                  title="Document Preview"
-                  onError={() => setPreviewError('Failed to load preview')}
-                  onLoad={() => setPreviewError('')}
-                />
+                document.fileType.toLowerCase() === 'pdf' ? (
+                  <embed 
+                    src={previewUrl} 
+                    type="application/pdf"
+                    className={styles.previewFrame}
+                    title="Document Preview"
+                  />
+                ) : document.fileType.toLowerCase() === 'svg' ? (
+                  <object 
+                    data={previewUrl} 
+                    type="image/svg+xml"
+                    className={styles.previewFrame}
+                    title="Document Preview"
+                    onError={(e) => {
+                      console.error('SVG load error:', e);
+                      setPreviewError('Failed to load SVG preview');
+                    }}
+                    onLoad={() => {
+                      setPreviewError('');
+                    }}
+                  >
+                    <img 
+                      src={previewUrl} 
+                      alt="Document Preview"
+                      className={styles.previewFrame}
+                      style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' }}
+                    />
+                  </object>
+                ) : (
+                  <iframe 
+                    ref={iframeRef}
+                    src={previewUrl} 
+                    className={styles.previewFrame}
+                    title="Document Preview"
+                    onError={() => setPreviewError('Failed to load preview')}
+                    onLoad={() => setPreviewError('')}
+                  />
+                )
               ) : (
                 <div className={styles.previewPlaceholder}>Preview not available</div>
               )}
@@ -349,11 +414,8 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
                     className={styles.retryButton}
                     onClick={() => {
                       setPreviewError('');
-                      // Force iframe reload by updating src with timestamp
-                      if (iframeRef.current && previewUrl) {
-                        const separator = previewUrl.includes('?') ? '&' : '?';
-                        iframeRef.current.src = `${previewUrl}${separator}_t=${Date.now()}`;
-                      }
+                      // Retry by re-fetching the document details
+                      fetchDocumentDetails();
                     }}
                   >
                     Retry

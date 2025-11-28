@@ -1302,7 +1302,7 @@ var FileUpload = function (props) {
                             Action: action,
                             // For a person field, set the internal field with 'Id' suffix
                             UserId: userId,
-                            Performed_x0020_ById: userId,
+                            PerformedById: userId,
                             TimeStamp: new Date().toISOString()
                         };
                         console.log('Creating audit log item with payload:', body);
@@ -2604,11 +2604,19 @@ var DocumentDetailPage = function (props) {
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewUrl = _c[0], setPreviewUrl = _c[1];
     var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewError = _d[0], setPreviewError = _d[1];
     var iframeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    // Cleanup blob URLs on unmount
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        return function () {
+            if (previewUrl && previewUrl.startsWith('blob:')) {
+                window.URL.revokeObjectURL(previewUrl);
+            }
+        };
+    }, [previewUrl]);
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         fetchDocumentDetails();
     }, [props.documentId]);
     var fetchDocumentDetails = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, blobUrl, error_1, error_2;
+        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_1, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_2, error_3;
         var _a, _b, _c, _d;
         return __generator(this, function (_e) {
             switch (_e.label) {
@@ -2619,7 +2627,7 @@ var DocumentDetailPage = function (props) {
                     }
                     _e.label = 1;
                 case 1:
-                    _e.trys.push([1, 14, 15, 16]);
+                    _e.trys.push([1, 22, 23, 24]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
                     apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File");
@@ -2672,7 +2680,7 @@ var DocumentDetailPage = function (props) {
                         fileRef: item.FileRef || serverRelativeUrl
                     };
                     setDocument(documentDetail);
-                    if (!serverRelativeUrl) return [3 /*break*/, 13];
+                    if (!serverRelativeUrl) return [3 /*break*/, 21];
                     webUrl_1 = props.context.pageContext.web.absoluteUrl;
                     fileUrl = serverRelativeUrl;
                     // Ensure proper server relative URL format
@@ -2683,7 +2691,7 @@ var DocumentDetailPage = function (props) {
                     if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 4];
                     encodedServerUrl = encodeURIComponent(fileUrl);
                     setPreviewUrl("".concat(webUrl_1, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
-                    return [3 /*break*/, 13];
+                    return [3 /*break*/, 21];
                 case 4:
                     if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 12];
                     _e.label = 5;
@@ -2697,7 +2705,8 @@ var DocumentDetailPage = function (props) {
                     return [4 /*yield*/, fileResponse.blob()];
                 case 7:
                     blob = _e.sent();
-                    blobUrl = window.URL.createObjectURL(blob);
+                    pdfBlob = new Blob([blob], { type: 'application/pdf' });
+                    blobUrl = window.URL.createObjectURL(pdfBlob);
                     setPreviewUrl(blobUrl);
                     return [3 /*break*/, 9];
                 case 8:
@@ -2711,20 +2720,49 @@ var DocumentDetailPage = function (props) {
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
                     return [3 /*break*/, 11];
-                case 11: return [3 /*break*/, 13];
+                case 11: return [3 /*break*/, 21];
                 case 12:
+                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 20];
+                    _e.label = 13;
+                case 13:
+                    _e.trys.push([13, 18, , 19]);
+                    downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 14:
+                    fileResponse = _e.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 16];
+                    return [4 /*yield*/, fileResponse.blob()];
+                case 15:
+                    blob = _e.sent();
+                    svgBlob = new Blob([blob], { type: 'image/svg+xml' });
+                    blobUrl = window.URL.createObjectURL(svgBlob);
+                    setPreviewUrl(blobUrl);
+                    return [3 /*break*/, 17];
+                case 16:
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    _e.label = 17;
+                case 17: return [3 /*break*/, 19];
+                case 18:
+                    error_2 = _e.sent();
+                    console.error('Error fetching SVG for preview:', error_2);
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    return [3 /*break*/, 19];
+                case 19: return [3 /*break*/, 21];
+                case 20:
                     // For other files, try direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 13;
-                case 13: return [3 /*break*/, 16];
-                case 14:
-                    error_2 = _e.sent();
-                    console.error('Error fetching document details:', error_2);
-                    return [3 /*break*/, 16];
-                case 15:
+                    _e.label = 21;
+                case 21: return [3 /*break*/, 24];
+                case 22:
+                    error_3 = _e.sent();
+                    console.error('Error fetching document details:', error_3);
+                    return [3 /*break*/, 24];
+                case 23:
                     setLoading(false);
                     return [7 /*endfinally*/];
-                case 16: return [2 /*return*/];
+                case 24: return [2 /*return*/];
             }
         });
     }); };
@@ -2745,7 +2783,7 @@ var DocumentDetailPage = function (props) {
         return '📎';
     };
     var handleDownload = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_3;
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_4;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -2778,8 +2816,8 @@ var DocumentDetailPage = function (props) {
                     _a.label = 4;
                 case 4: return [3 /*break*/, 6];
                 case 5:
-                    error_3 = _a.sent();
-                    console.error('Download error:', error_3);
+                    error_4 = _a.sent();
+                    console.error('Download error:', error_4);
                     return [3 /*break*/, 6];
                 case 6: return [2 /*return*/];
             }
@@ -2874,17 +2912,20 @@ var DocumentDetailPage = function (props) {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewSection },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewTitle }, "Document Preview"),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewContainer },
-                        previewUrl ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewPlaceholder }, "Preview not available")),
+                        previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: function (e) {
+                                console.error('SVG load error:', e);
+                                setPreviewError('Failed to load SVG preview');
+                            }, onLoad: function () {
+                                setPreviewError('');
+                            } },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewPlaceholder }, "Preview not available")),
                         previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewError },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorIcon }, "\u26A0\uFE0F"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorText }, previewError),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].retryButton, onClick: function () {
                                     setPreviewError('');
-                                    // Force iframe reload by updating src with timestamp
-                                    if (iframeRef.current && previewUrl) {
-                                        var separator = previewUrl.includes('?') ? '&' : '?';
-                                        iframeRef.current.src = "".concat(previewUrl).concat(separator, "_t=").concat(Date.now());
-                                    }
+                                    // Retry by re-fetching the document details
+                                    fetchDocumentDetails();
                                 } }, "Retry")))))))));
 };
 
