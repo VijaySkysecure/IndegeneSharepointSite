@@ -1,4 +1,4 @@
-/* tslint:disable */
+
 require("./Events.module.css");
 const styles = {
   events: 'events_46864d4e',
@@ -9,4 +9,3 @@ const styles = {
 };
 
 export default styles;
-/* tslint:enable */

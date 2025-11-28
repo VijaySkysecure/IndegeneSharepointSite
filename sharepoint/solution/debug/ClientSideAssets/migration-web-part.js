@@ -1614,7 +1614,6 @@ var FileUpload = function (props) {
             onFileSelected(e.dataTransfer.files);
         }
     };
-<<<<<<< HEAD
     var onFormSubmit = function (data) { return __awaiter(void 0, void 0, void 0, function () {
         var err_2;
         return __generator(this, function (_a) {
@@ -1649,7 +1648,6 @@ var FileUpload = function (props) {
             }
         });
     }); };
-=======
     var onFormSubmit = function (data) {
         // data contains form values from MetadataForm
         // Here you would typically send `data` + `uploadedFile` to backend
@@ -1657,7 +1655,6 @@ var FileUpload = function (props) {
         // close overlay after submit
         props.onClose && props.onClose();
     };
->>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
@@ -3339,7 +3336,6 @@ var DocumentParser = /** @class */ (function () {
                                 success: false,
                                 error: error_1 instanceof Error ? error_1.message : 'Unknown error occurred while parsing document'
                             }];
-<<<<<<< HEAD
                     case 13: return [2 /*return*/];
                 }
             });
@@ -3487,8 +3483,6 @@ var DocumentParser = /** @class */ (function () {
                                 success: false,
                                 error: errorMessage
                             }];
-=======
->>>>>>> 590b6c6dcdd987ad2019d7ef64c8fd9e28e72537
                     case 12: return [2 /*return*/];
                 }
             });
