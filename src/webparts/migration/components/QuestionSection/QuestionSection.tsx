@@ -1,8 +1,12 @@
-<<<<<<< HEAD
 import * as React from "react";
 import { IQuestionSectionProps } from "./IQuestionSectionProps";
+import { SPHttpClient } from "@microsoft/sp-http";
+import { DocumentDetailPage } from "../../pages/DocumentDetailPage/DocumentDetailPage";
 import styles from "./QuestionSection.module.scss";
 
+/* ======================================================
+   Chatbot Section
+====================================================== */
 const chatbotIcon: string = require("../../assets/chatbot-icon.png");
 
 interface ChatMessage {
@@ -11,10 +15,7 @@ interface ChatMessage {
 }
 
 /* ============================================================
-   CONTEXT KNOWLEDGE MAP
-============================================================ */
-/* ============================================================
-   CONTEXT KNOWLEDGE MAP (CLEANED & COMPRESSED)
+   CONTEXT KNOWLEDGE MAP  (FULL MAP FROM YOUR FIRST SNIPPET)
 ============================================================ */
 const CONTEXT_MAP: Record<string, string[]> = {
   indegene: [
@@ -230,22 +231,33 @@ const CONTEXT_MAP: Record<string, string[]> = {
   ]
 };
 
-
 /* ============================================================
-   INTERNAL QUERY HANDLER (Time, Date, Day)
+   INTERNAL QUERY HANDLER (Time, Date, Day + basic general)
 ============================================================ */
 const handleInternalQueries = (query: string): string | null => {
   const text = query.toLowerCase().trim();
   const now = new Date();
 
-  if (text.includes("what is the time") || text.includes("current time")) {
+  // Time
+  if (
+    text.includes("what is the time") ||
+    text.includes("current time") ||
+    text.includes("time now") ||
+    (text.includes("time") && !text.includes("life time"))
+  ) {
     return `The current time is ${now.toLocaleTimeString([], {
       hour: "2-digit",
       minute: "2-digit",
     })}.`;
   }
 
-  if (text.includes("what is the date") || text.includes("today's date")) {
+  // Date
+  if (
+    text.includes("what is the date") ||
+    text.includes("today's date") ||
+    text.includes("todays date") ||
+    (text.includes("date") && !text.includes("update"))
+  ) {
     return `Today's date is ${now.toLocaleDateString("en-US", {
       weekday: "long",
       year: "numeric",
@@ -254,7 +266,14 @@ const handleInternalQueries = (query: string): string | null => {
     })}.`;
   }
 
-  if (text.includes("what is the day") || text.includes("today's day")) {
+  // Day
+  if (
+    text.includes("what is the day") ||
+    text.includes("today's day") ||
+    text.includes("todays day") ||
+    text.includes("which day is today") ||
+    text.includes("which day is it today")
+  ) {
     return `Today is ${now.toLocaleDateString("en-US", { weekday: "long" })}.`;
   }
 
@@ -262,36 +281,191 @@ const handleInternalQueries = (query: string): string | null => {
 };
 
 /* ============================================================
-   CONTEXT SEARCH LOGIC
+   GENERAL SMALL-TALK / META QUERIES (who are you, hi, help)
 ============================================================ */
+const handleGeneralQueries = (query: string): string | null => {
+  const text = query.toLowerCase().trim();
+
+  // Greetings
+  if (
+    text === "hi" ||
+    text === "hello" ||
+    text === "hey" ||
+    text.startsWith("hi ") ||
+    text.startsWith("hello ") ||
+    text.startsWith("hey ")
+  ) {
+    return "Hi! I’m your KM Assistant chatbot. Ask me about Indegene, Skysecure, breast cancer modules, PRMA/HEOR, CPC playbooks, and more — or ask for the time, date, or day.";
+  }
+
+  // Who are you?
+  if (text.includes("who are you") || text.includes("what are you")) {
+    return "I’m a lightweight, on-page chatbot built for this KM site. I answer questions from a curated internal knowledge map and can also tell you the current time, date, and day.";
+  }
+
+  // What can you do?
+  if (
+    text.includes("what can you do") ||
+    text.includes("how can you help") ||
+    text.includes("what do you do")
+  ) {
+    return "I can:\n• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n• Share quick overviews from internal knowledge snippets.\n• Tell you the current time, date, and day.\n\nTry asking: \"Tell me about breast cancer\" or \"Explain regulatory intelligence\".";
+  }
+
+  // Help
+  if (text === "help" || text.startsWith("help ")) {
+    return "You can ask me things like:\n• \"What is Indegene?\"\n• \"Tell me about regulatory intelligence\"\n• \"What is breast cancer?\"\n• \"What is the time?\" or \"What's today's date?\"";
+  }
+
+  // How are you
+  if (text.includes("how are you")) {
+    return "I’m just code, but I’m running fine and ready to help you with KM-related questions!";
+  }
+
+  return null;
+};
+
+/* ============================================================
+   CONTEXT SEARCH LOGIC – more robust / semantic-ish
+============================================================ */
+const normalize = (text: string): string =>
+  text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
 const getAnswerFromContext = (query: string): string => {
-  const lower = query.toLowerCase();
+  const normQuery = normalize(query);
 
-  for (const key in CONTEXT_MAP) {
-    if (lower.includes(key)) {
-      const extra = lower.split(key)[1]?.trim() ?? "";
-      const matched = CONTEXT_MAP[key].filter((s) =>
-        s.toLowerCase().includes(extra)
-      );
+  let bestKey: string | null = null;
+  let bestScore = 0;
 
-      return matched.length
-        ? matched.join(" ")
-        : CONTEXT_MAP[key].join(" ");
+  Object.keys(CONTEXT_MAP).forEach((key) => {
+    const normKey = normalize(key);
+    if (!normKey) return;
+
+    let score = 0;
+
+    // Strong match if one contains the other
+    if (normQuery.includes(normKey) || normKey.includes(normQuery)) {
+      score = normKey.length; // longer key → higher score
+    } else {
+      // Softer match: token overlap
+      const keyTokens = new Set(normKey.split(" "));
+      const queryTokens = new Set(normQuery.split(" "));
+      let overlap = 0;
+      keyTokens.forEach((t) => {
+        if (queryTokens.has(t)) overlap++;
+      });
+      score = overlap;
     }
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestKey = key;
+    }
+  });
+
+  if (bestKey && bestScore > 0) {
+    const normKey = normalize(bestKey);
+    const extraPart = normQuery.replace(normKey, "").trim();
+    const entries = CONTEXT_MAP[bestKey];
+
+    // If user asked something *after* the keyword, try to filter lines
+    if (extraPart) {
+      const matched = entries.filter((s) =>
+        normalize(s).includes(extraPart)
+      );
+      if (matched.length) return matched.join(" ");
+    }
+
+    return entries.join(" ");
   }
 
   return "I could not find a relevant match in my stored knowledge.";
 };
 
-/* ============================================================
-   MAIN COMPONENT
-============================================================ */
-export const QuestionSection: React.FC<IQuestionSectionProps> = () => {
+/* ======================================================
+   Document Tile Section
+====================================================== */
+
+interface DocumentItem {
+  id: number;
+  name: string;
+  abstract: string;
+  fileType: string;
+  serverRelativeUrl: string;
+  fileRef: string;
+}
+
+export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
+  /* ---------------------------------------------
+     Chatbot State
+  --------------------------------------------- */
   const [isChatVisible, setChatVisible] = React.useState(false);
   const [messages, setMessages] = React.useState<ChatMessage[]>([]);
   const [input, setInput] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(false);
 
+  /* ---------------------------------------------
+     Document Tiles State
+  --------------------------------------------- */
+  const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
+  const [loading, setLoading] = React.useState<boolean>(true);
+  const [selectedDocumentId, setSelectedDocumentId] =
+    React.useState<number | null>(null);
+
+  React.useEffect(() => {
+    if (props.context) fetchLatestDocuments();
+  }, [props.context]);
+
+  /* ======================================================
+     Fetch Last 3 Documents
+  ====================================================== */
+  const fetchLatestDocuments = async () => {
+    try {
+      const webUrl = props.context.pageContext.web.absoluteUrl;
+      const libraryName = "KMArtifacts";
+
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=3`;
+
+      const response = await props.context.spHttpClient.get(
+        apiUrl,
+        SPHttpClient.configurations.v1
+      );
+
+      if (!response.ok) throw new Error("Failed to load files.");
+
+      const result = await response.json();
+      const items = result.value || [];
+
+      const mapped: DocumentItem[] = items.map((item: any) => {
+        const fileName = item.FileLeafRef || "Untitled";
+        const fileExt = fileName.split(".").pop()?.toUpperCase() || "FILE";
+
+        return {
+          id: item.Id,
+          name: fileName,
+          abstract: item.Abstract || "",
+          fileType: fileExt,
+          serverRelativeUrl: item.FileRef || "",
+          fileRef: item.FileRef || "",
+        };
+      });
+
+      setDocuments(mapped);
+    } catch (err) {
+      console.error("Document load error:", err);
+      setDocuments([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  /* ======================================================
+     Chatbot Handlers
+  ====================================================== */
   const toggleChat = () => setChatVisible((prev) => !prev);
 
   const handleSend = () => {
@@ -304,42 +478,135 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = () => {
 
     setTimeout(() => {
       try {
+        // 1) Internal time/date/day
         const internal = handleInternalQueries(userMsg.text);
-        const reply = internal || getAnswerFromContext(userMsg.text);
+
+        // 2) General questions (hi, who are you, help)
+        const general = internal ? null : handleGeneralQueries(userMsg.text);
+
+        // 3) Context lookup
+        const reply =
+          internal || general || getAnswerFromContext(userMsg.text);
 
         setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
       } finally {
         setIsLoading(false);
       }
-    }, 500);
+    }, 400);
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") handleSend();
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSend();
+    }
   };
 
-  return (
-    <div className={styles.questionSection}>
-      <div className={styles.questionContainer}>
-        <div className={styles.leftPrompt}>
-          <p className={styles.promptText}>Ask your question here</p>
-        </div>
+  /* ======================================================
+     Document Action Handlers
+  ====================================================== */
+  const handleView = (item: DocumentItem) => {
+    setSelectedDocumentId(item.id);
+  };
 
-        <div className={styles.rightInput}>
-          <input
-            className={styles.questionInput}
-            placeholder="Type your question..."
-            readOnly
-          />
-          <img
-            src={chatbotIcon}
-            alt="Chatbot"
-            className={styles.chatbotIcon}
-            onClick={toggleChat}
-          />
+  const handleCloseDetail = () => setSelectedDocumentId(null);
+
+  const handleDownload = async (item: DocumentItem) => {
+    try {
+      const webUrl = props.context.pageContext.web.absoluteUrl;
+      const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${item.serverRelativeUrl}')/$value`;
+
+      const resp = await props.context.spHttpClient.get(
+        downloadUrl,
+        SPHttpClient.configurations.v1
+      );
+
+      if (resp.ok) {
+        const blob = await resp.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+
+        a.href = url;
+        a.download = item.name;
+        document.body.appendChild(a);
+        a.click();
+
+        a.remove();
+        window.URL.revokeObjectURL(url);
+      }
+    } catch (e) {
+      console.error("Download failed:", e);
+    }
+  };
+
+  /* ======================================================
+     File Type Emoji
+  ====================================================== */
+  const getFileTypeIcon = (type: string) => {
+    const t = type.toLowerCase();
+    if (t.includes("pdf")) return "📄";
+    if (t.includes("ppt")) return "📊";
+    if (t.includes("xls")) return "📈";
+    if (t.includes("doc")) return "📝";
+    return "📎";
+  };
+
+  /* ======================================================
+     Render
+  ====================================================== */
+  return (
+    <>
+      {/* ======================= Document Tiles ======================== */}
+      <div className={styles.questionSection}>
+        <div className={styles.tilesContainer}>
+          {loading ? (
+            <div className={styles.loading}>Loading...</div>
+          ) : (
+            documents.map((doc) => (
+              <div key={doc.id} className={styles.tile}>
+                <div className={styles.tileHeader}>
+                  <span className={styles.fileTypeIcon}>
+                    {getFileTypeIcon(doc.fileType)}
+                  </span>
+                  <span className={styles.fileType}>{doc.fileType}</span>
+                </div>
+
+                <h3 className={styles.tileTitle}>{doc.name}</h3>
+                <p className={styles.tileAbstract}>
+                  {doc.abstract || "No abstract available"}
+                </p>
+
+                <div className={styles.tileActions}>
+                  <button
+                    className={styles.viewButton}
+                    onClick={() => handleView(doc)}
+                  >
+                    👁 View
+                  </button>
+                  <button
+                    className={styles.downloadButton}
+                    onClick={() => handleDownload(doc)}
+                  >
+                    ⬇ Download
+                  </button>
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
 
+      {/* ======================= Chatbot Floating Launcher ======================== */}
+      <div className={styles.chatLauncher}>
+        <img
+          src={chatbotIcon}
+          alt="Chatbot"
+          className={styles.chatbotIcon}
+          onClick={toggleChat}
+        />
+      </div>
+
+      {/* ======================= Chatbot Window (with avatar + bubbles) ======================== */}
       {isChatVisible && (
         <div className={styles.chatWindow}>
           <div className={styles.chatHeader}>
@@ -401,7 +668,6 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = () => {
               onKeyDown={handleKeyPress}
               disabled={isLoading}
             />
-
             <button
               className={styles.sendButton}
               onClick={handleSend}
@@ -412,316 +678,17 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = () => {
           </div>
         </div>
       )}
-    </div>
-=======
-import * as React from 'react';
-import { IQuestionSectionProps } from './IQuestionSectionProps';
-import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
-import { DocumentDetailPage } from '../../pages/DocumentDetailPage/DocumentDetailPage';
-import styles from './QuestionSection.module.scss';
 
-interface DocumentItem {
-  id: number;
-  name: string;
-  abstract: string;
-  fileType: string;
-  serverRelativeUrl: string;
-  fileRef: string;
-}
-
-export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (props) => {
-  const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
-  const [loading, setLoading] = React.useState<boolean>(true);
-  const [selectedDocumentId, setSelectedDocumentId] = React.useState<number | null>(null);
-
-  React.useEffect(() => {
-    if (props.context) {
-      fetchLatestDocuments();
-    }
-  }, [props.context]);
-
-  const fetchLatestDocuments = async () => {
-    if (!props.context) {
-      setLoading(false);
-      return;
-    }
-
-    try {
-      // SPFx automatically provides the current SharePoint site URL through context
-      // If web part is on: https://m365x65470037.sharepoint.com/sites/MigrationTest2
-      // Then webUrl will be: https://m365x65470037.sharepoint.com/sites/MigrationTest2
-      // No manual configuration needed - it uses the site where the web part is deployed
-      const webUrl = props.context.pageContext.web.absoluteUrl;
-      const libraryName = 'KMArtifacts';
-      
-      console.log('=== FETCHING DOCUMENTS FROM DOCUMENT LIBRARY ===');
-      console.log('Current Site URL (auto-detected):', webUrl);
-      console.log('Target Library:', libraryName);
-      console.log('Expected Library URL:', `${webUrl}/KMArtifacts`);
-      
-      // SharePoint REST API endpoint structure:
-      // {siteUrl}/_api/web/lists/getbytitle('LibraryName')/items
-      // This works for both lists and document libraries
-      // The API automatically uses the site context from webUrl
-      // Note: ServerRelativeUrl is not available directly on items - use FileRef instead
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=3`;
-      
-      console.log('Full API Endpoint:', apiUrl);
-      console.log('Note: This will work if KMArtifacts library exists on the current site');
-      
-      const response: SPHttpClientResponse = await props.context.spHttpClient.get(
-        apiUrl,
-        SPHttpClient.configurations.v1
-      );
-
-      console.log('Response status:', response.status);
-      console.log('Response OK:', response.ok);
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Error response:', errorText);
-        throw new Error(`Failed to fetch documents: ${response.status} - ${errorText}`);
-      }
-
-      const data = await response.json();
-      console.log('Response data:', data);
-      console.log('Items count:', data.value?.length || 0);
-      
-      const items = data.value || [];
-      
-      if (items.length > 0) {
-        console.log('First item sample:', JSON.stringify(items[0], null, 2));
-      }
-
-      const formattedItems: DocumentItem[] = items.map((item: any, index: number) => {
-        console.log(`Processing item ${index + 1}:`, item);
-        console.log(`All item keys:`, Object.keys(item));
-        
-        // Get file name from Name column - FileLeafRef is the actual filename in document libraries
-        // This is what appears in the "Name" column in SharePoint
-        const fileName = item.FileLeafRef || item.File?.Name || '';
-        
-        // Extract file extension from the Name column for the file format display
-        const fileExtension = fileName.split('.').pop()?.toUpperCase() || '';
-        
-        // Use Name column (FileLeafRef) as the tile title
-        // This matches what the user sees in the "Name" column
-        let displayName = fileName;
-        if (!displayName || displayName === '') {
-          displayName = item.Title || `Document ${item.Id}`;
-        }
-        
-        // Get abstract from Abstract column
-        let abstract = item.Abstract || '';
-        if (abstract === '-' || abstract === '') {
-          abstract = '';
-        }
-        
-        // Construct proper server relative URL
-        // FileRef contains the full server-relative path like: /sites/MigrationTest2/KMArtifacts/filename.pdf
-        // This is the correct field to use for document libraries
-        let serverRelativeUrl = item.FileRef || '';
-        
-        // Ensure it starts with /
-        if (serverRelativeUrl && !serverRelativeUrl.startsWith('/')) {
-          serverRelativeUrl = `/${serverRelativeUrl}`;
-        }
-        
-        // If we still don't have a URL, construct it from the library name and filename
-        if (!serverRelativeUrl && fileName) {
-          const siteRelativePath = props.context?.pageContext.web.serverRelativeUrl || '';
-          serverRelativeUrl = `${siteRelativePath}/KMArtifacts/${fileName}`;
-        }
-        
-        const formatted = {
-          id: item.Id,
-          name: displayName,
-          abstract: abstract,
-          fileType: fileExtension,
-          serverRelativeUrl: serverRelativeUrl,
-          fileRef: item.FileRef || serverRelativeUrl
-        };
-        
-        console.log(`Formatted item ${index + 1}:`, formatted);
-        return formatted;
-      });
-
-      console.log('Formatted items:', formattedItems);
-      setDocuments(formattedItems);
-    } catch (error) {
-      console.error('=== ERROR FETCHING DOCUMENTS ===');
-      console.error('Error type:', typeof error);
-      console.error('Error details:', error);
-      console.error('Error message:', error instanceof Error ? error.message : String(error));
-      console.error('Error stack:', error instanceof Error ? error.stack : 'N/A');
-      
-      // Set empty array on error so we still show empty tiles
-      setDocuments([]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const getFileTypeIcon = (fileType: string): string => {
-    const type = fileType.toLowerCase();
-    if (type === 'pdf') {
-      return '📄';
-    } else if (type === 'pptx' || type === 'ppt') {
-      return '📊';
-    } else if (type === 'docx' || type === 'doc') {
-      return '📝';
-    } else if (type === 'xlsx' || type === 'xls') {
-      return '📈';
-    }
-    return '📎';
-  };
-
-  const handleView = (item: DocumentItem) => {
-    if (props.context && item.id) {
-      // Open document detail page in a modal overlay (full-screen)
-      setSelectedDocumentId(item.id);
-    }
-  };
-
-  const handleCloseDetail = () => {
-    setSelectedDocumentId(null);
-  };
-
-  const handleDownload = async (item: DocumentItem) => {
-    if (props.context && item.serverRelativeUrl) {
-      const webUrl = props.context.pageContext.web.absoluteUrl;
-      let serverRelativeUrl = item.serverRelativeUrl;
-      
-      // Ensure proper server relative URL format
-      if (!serverRelativeUrl.startsWith('/')) {
-        serverRelativeUrl = `/${serverRelativeUrl}`;
-      }
-      
-      // Use SharePoint REST API for authenticated download
-      try {
-        const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(serverRelativeUrl)}')/$value`;
-        
-        const response = await props.context.spHttpClient.get(
-          downloadUrl,
-          SPHttpClient.configurations.v1
-        );
-        
-        if (response.ok) {
-          const blob = await response.blob();
-          const url = window.URL.createObjectURL(blob);
-          const link = document.createElement('a');
-          link.href = url;
-          link.download = item.name;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-          window.URL.revokeObjectURL(url);
-        } else {
-          // Fallback to direct link
-          const fileUrl = `${webUrl}${serverRelativeUrl}`;
-          window.open(fileUrl, '_blank');
-        }
-      } catch (error) {
-        console.error('Download error:', error);
-        // Fallback to direct link
-        const fileUrl = `${webUrl}${serverRelativeUrl}`;
-        window.open(fileUrl, '_blank');
-      }
-    }
-  };
-
-  // Always show 3 tiles, fill with empty placeholders if needed
-  const displayTiles = React.useMemo(() => {
-    const tiles: (DocumentItem | null)[] = [];
-    for (let i = 0; i < 3; i++) {
-      tiles.push(documents[i] || null);
-    }
-    return tiles;
-  }, [documents]);
-
-  return (
-    <>
-      <div className={styles.questionSection}>
-        <div className={styles.tilesContainer}>
-          {loading ? (
-            <div className={styles.loading}>Loading...</div>
-          ) : (
-            displayTiles.map((doc, index) => (
-              <div key={doc ? doc.id : `empty-${index}`} className={styles.tile}>
-                {doc ? (
-                  <>
-                    <div className={styles.tileHeader}>
-                      <div className={styles.fileTypeIcon}>{getFileTypeIcon(doc.fileType)}</div>
-                      <span className={styles.fileType}>{doc.fileType || 'FILE'}</span>
-                    </div>
-                    <h3 className={styles.tileTitle}>{doc.name}</h3>
-                    <p className={styles.tileAbstract}>{doc.abstract || 'No abstract available'}</p>
-                    <div className={styles.tileActions}>
-                      <button 
-                        className={styles.viewButton}
-                        onClick={() => handleView(doc)}
-                      >
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        View
-                      </button>
-                      <button 
-                        className={styles.downloadButton}
-                        onClick={() => handleDownload(doc)}
-                        aria-label="Download"
-                      >
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </button>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className={styles.tileHeader}>
-                      <div className={styles.fileTypeIcon}>📎</div>
-                      <span className={styles.fileType}>---</span>
-                    </div>
-                    <h3 className={styles.tileTitle}>No document</h3>
-                    <p className={styles.tileAbstract}>No document available</p>
-                    <div className={styles.tileActions}>
-                      <button className={styles.viewButton} disabled>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                        View
-                      </button>
-                      <button className={styles.downloadButton} disabled aria-label="Download">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </button>
-                    </div>
-                  </>
-                )}
-              </div>
-            ))
-          )}
-        </div>
-      </div>
-      
+      {/* ======================= Document Detail Page ======================== */}
       {selectedDocumentId && props.context && (
         <div className={styles.detailModal}>
-          <DocumentDetailPage 
-            context={props.context} 
+          <DocumentDetailPage
+            context={props.context}
             documentId={selectedDocumentId}
             onClose={handleCloseDetail}
           />
         </div>
       )}
     </>
->>>>>>> origin/vamshik
   );
 };

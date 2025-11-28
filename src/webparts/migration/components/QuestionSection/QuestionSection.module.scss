@@ -4,12 +4,9 @@
 
 .questionSection {
   width: 100%;
-<<<<<<< HEAD
   padding: 40px 60px;
-=======
   background: linear-gradient(to right, #ff6b9d 0%, #c44569 30%, #6c5ce7 70%, #4834d4 100%);
   padding: 30px 40px;
->>>>>>> origin/vamshik
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #ff6b9d 0%, #c44569 30%, #6c5ce7 70%, #4834d4 100%);
@@ -41,7 +38,6 @@
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .promptText {
   font-size: 20px;
   font-weight: 500;
@@ -247,7 +243,6 @@
   opacity: 0.8;
   transition: opacity 0.2s;
 }
-=======
 .tileHeader {
   display: flex;
   align-items: center;
@@ -394,4 +389,21 @@
   overflow-y: auto;
 }
 
->>>>>>> origin/vamshik
+.chatLauncher {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.chatbotIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.chatbotIcon:hover {
+  transform: scale(1.1);
+}

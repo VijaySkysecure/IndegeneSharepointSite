@@ -52,10 +52,6 @@ export class DocumentParser {
           return await this.parsePowerPoint(file);
         case 'ppt':
           return { text: '', success: false, error: 'Legacy .ppt format not supported. Please convert to .pptx format.' };
-        case 'xlsx':
-          return await this.parseExcel(file);
-        case 'xls':
-          return { text: '', success: false, error: 'Legacy .xls format not supported. Please convert to .xlsx format.' };
         case 'mhtml':
         case 'mht':
           return await this.parseMHTML(file);
@@ -239,119 +235,6 @@ export class DocumentParser {
   }
 
   /**
-   * Extract text from Excel (.xlsx) file
-   * Reads all sheets and extracts text from all cells
-   */
-  private static async parseExcel(file: File): Promise<DocumentParseResult> {
-    try {
-      const XLSXModule = await import('xlsx');
-      // Handle both default export and namespace export
-      const XLSX = (XLSXModule as any).default || XLSXModule;
-      const arrayBuffer = await file.arrayBuffer();
-      
-      // Read the Excel file
-      const workbook = XLSX.read(arrayBuffer, { 
-        type: 'array',
-        cellText: false,
-        cellDates: true,
-        sheetStubs: false
-      });
-      
-      if (!workbook.SheetNames || workbook.SheetNames.length === 0) {
-        return {
-          text: '',
-          success: false,
-          error: 'No sheets found in the Excel file.'
-        };
-      }
-      
-      console.log(`Found ${workbook.SheetNames.length} sheet(s) in Excel file`);
-      
-      // Extract text from all sheets
-      const allText: string[] = [];
-      
-      for (const sheetName of workbook.SheetNames) {
-        try {
-          const worksheet = workbook.Sheets[sheetName];
-          if (!worksheet) {
-            console.warn(`Sheet "${sheetName}" not found in workbook`);
-            continue;
-          }
-          
-          // Convert sheet to JSON to get all cell values
-          const sheetData = XLSX.utils.sheet_to_json(worksheet, { 
-            header: 1, // Use array of arrays format
-            defval: '', // Default value for empty cells
-            raw: false // Convert dates and numbers to strings
-          });
-          
-          // Process each row
-          const sheetText: string[] = [];
-          for (let i = 0; i < sheetData.length; i++) {
-            const row = sheetData[i] as any[];
-            if (Array.isArray(row)) {
-              // Filter out empty cells and join with spaces
-              const rowText = row
-                .filter(cell => cell !== null && cell !== undefined && cell !== '')
-                .map(cell => String(cell).trim())
-                .filter(cell => cell.length > 0)
-                .join(' ');
-              
-              if (rowText.trim()) {
-                sheetText.push(rowText);
-              }
-            }
-          }
-          
-          if (sheetText.length > 0) {
-            const sheetContent = `Sheet: ${sheetName}\n${sheetText.join('\n')}`;
-            allText.push(sheetContent);
-            console.log(`Extracted ${sheetText.length} rows from sheet "${sheetName}"`);
-          } else {
-            console.warn(`No text content found in sheet "${sheetName}"`);
-          }
-        } catch (sheetError) {
-          console.warn(`Error parsing sheet "${sheetName}":`, sheetError);
-          // Continue with other sheets
-        }
-      }
-      
-      const combinedText = allText.join('\n\n').trim();
-      
-      if (!combinedText || combinedText.length === 0) {
-        return {
-          text: '',
-          success: false,
-          error: 'No text content found in Excel file. The file might be empty or contain only images.'
-        };
-      }
-      
-      console.log(`Total extracted text length: ${combinedText.length} characters`);
-      return {
-        text: combinedText,
-        success: true
-      };
-    } catch (error) {
-      let errorMessage = 'Failed to parse Excel document';
-      if (error instanceof Error) {
-        errorMessage = error.message;
-        const msg = error.message.toLowerCase();
-        if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
-          errorMessage = 'The Excel file appears to be corrupted or invalid. Please try a different file.';
-        } else if (msg.indexOf('not supported') !== -1 || msg.indexOf('format') !== -1) {
-          errorMessage = 'The file format is not supported. Please use .xlsx format.';
-        }
-      }
-      
-      return {
-        text: '',
-        success: false,
-        error: errorMessage
-      };
-    }
-  }
-
-  /**
    * Extract text from SVG (.svg) file
    * SVG files are XML-based and can contain text elements
    */
@@ -442,7 +325,7 @@ export class DocumentParser {
             console.warn('SVG parsing error:', parserError.textContent);
           } else {
             // Extract all text content from the SVG
-            const allText = doc.documentElement.textContent || doc.documentElement.innerText || '';
+            const allText = doc.documentElement.textContent || (doc.documentElement as any).innerText || '';
             if (allText.trim()) {
               textParts.push(allText.trim());
             }
@@ -669,7 +552,7 @@ export class DocumentParser {
       // Get text content from body, or entire document if no body
       const body = doc.body || doc.documentElement;
       if (body) {
-        let text = body.textContent || body.innerText || '';
+        let text = body.textContent || (body as any).innerText || '';
         // Clean up whitespace
         text = text.replace(/\s+/g, ' ').trim();
         return text;
