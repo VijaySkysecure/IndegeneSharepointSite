@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./BUHeader.module.css");
 const styles = {
   buHeader: 'buHeader_24c115c0',
@@ -18,3 +18,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

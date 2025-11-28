@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./Navigation.module.css");
 const styles = {
   navigation: 'navigation_e0b26b5e',
@@ -8,3 +8,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

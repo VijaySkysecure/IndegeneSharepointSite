@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./MetadataForm.module.css");
 const styles = {
   formWrapper: 'formWrapper_eb48e8e0',
@@ -22,3 +22,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

@@ -1,4 +1,4 @@
-
+/* tslint:disable */
 require("./Header.module.css");
 const styles = {
   header: 'header_52468a40',
@@ -19,3 +19,4 @@ const styles = {
 };
 
 export default styles;
+/* tslint:enable */

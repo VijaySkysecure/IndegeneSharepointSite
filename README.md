@@ -43,5 +43,5 @@ This is a SharePoint Framework (SPFx) solution built with React for the SharePoi
 
 ## SharePoint Site
 
-Target Site: https://skysecuretech.sharepoint.com/sites/MigrationTest
+Target Site: https://m365x65470037.sharepoint.com/sites/MigrationTest2
 
