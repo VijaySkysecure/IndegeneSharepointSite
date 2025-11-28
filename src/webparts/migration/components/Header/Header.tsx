@@ -13,7 +13,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
         <div className={styles.leftSection}>
           <h1 className={styles.companyName}>Indegene</h1>
           <p className={styles.description}>
-            About Indegene, the services they provide...etc
+            Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises.
           </p>
           <button className={styles.addFileButton} onClick={() => setShowUploader(true)}>Add a file</button>
         </div>

@@ -1,58 +1,180 @@
 .questionSection {
   width: 100%;
   background: linear-gradient(to right, #ff6b9d 0%, #c44569 30%, #6c5ce7 70%, #4834d4 100%);
-  padding: 40px 60px;
+  padding: 30px 40px;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
 
-.questionContainer {
+.tilesContainer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   max-width: 1400px;
   margin: 0 auto;
-  gap: 30px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
-.leftPrompt {
-  flex-shrink: 0;
+.tile {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 16px);
+  min-width: 0;
+  max-width: none;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
 }
 
-.promptText {
-  font-size: 20px;
-  color: white;
-  margin: 0;
+.tileHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.fileTypeIcon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.fileType {
+  font-size: 14px;
+  color: #666;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
+}
+
+.tileTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.rightInput {
-  flex: 1;
-  max-width: 600px;
+.tileAbstract {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  max-height: calc(1.5em * 2);
+  min-height: calc(1.5em * 2);
 }
 
-.questionInput {
-  width: 100%;
-  padding: 16px 20px;
+.tileActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.viewButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #1976d2;
+  color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  background-color: white;
-  color: #333;
-  box-sizing: border-box;
-  outline: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s;
 
-  &::placeholder {
-    color: #999;
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
   }
 
-  &:focus {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  &:hover:not(:disabled) {
+    background-color: #1565c0;
   }
+
+  &:active:not(:disabled) {
+    background-color: #0d47a1;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #666;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  &:active:not(:disabled) {
+    background-color: #e0e0e0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+.loading,
+.noDocuments {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  padding: 40px;
+}
+
+.detailModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: #f5f5f5;
+  overflow-y: auto;
 }
 
