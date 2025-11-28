@@ -1,4 +1,4 @@
-/* tslint:disable */
+
 require("./QuickLinksPage.module.css");
 const styles = {
   quickLinksPage: 'quickLinksPage_19320504',
@@ -11,4 +11,3 @@ const styles = {
 };
 
 export default styles;
-/* tslint:enable */

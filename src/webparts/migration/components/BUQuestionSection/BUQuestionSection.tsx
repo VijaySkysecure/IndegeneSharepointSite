@@ -83,6 +83,7 @@ export const QuestionSection: React.FC<IBUQuestionSectionProps> = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className={styles.questionSection} ref={containerRef}>
 
       {/* -------------------------------- SEARCH + ASK INPUT -------------------------------- */}
@@ -166,6 +167,9 @@ export const QuestionSection: React.FC<IBUQuestionSectionProps> = () => {
           </div>
         </div>
       )}
+=======
+    <div className={styles.questionSection}>
+>>>>>>> origin/vamshik
     </div>
   );
 };

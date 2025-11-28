@@ -144,7 +144,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
    * Create an Audit Log item in SharePoint list.
    * Uses the provided list GUID and the internal field names seen in the URLs.
    */
-  const createAuditLogItem = async (file: File, action: "Draft" | "Submitted" = "Draft"): Promise<number> => {
+  const createAuditLogItem = async (file: File, action: "Draft" | "Unpublished" = "Draft"): Promise<number> => {
 
     if (!props.context) {
       throw new Error('SPFx context not provided to FileUpload component.');
@@ -270,8 +270,6 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       DocumentType: "-",
       DiseaseArea: "-",
       TherapyArea: "-",
-      ComplianceFlag: false,
-      Sanitized: false,
       PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };
@@ -329,7 +327,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     // 3️⃣ Metadata body (with __metadata.type)
     const payload = {
       __metadata: { type: entityType },   // ⭐ REQUIRED FOR MERGE UPDATE
-      Status: data.Status || "Submitted",
+      Status: data.Status || "Unpublished",
       TitleName: data.title || "-",
       Abstract: data.abstract || "-",
       BusinessUnit: data.bu || "-",
@@ -339,8 +337,6 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       DocumentType: data.documentType || "-",
       DiseaseArea: data.diseaseArea || "-",
       TherapyArea: data.therapyArea || "-",
-      ComplianceFlag: data.complianceFlag ?? false,
-      Sanitized: data.sanitized ?? false,
       PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };
@@ -388,11 +384,11 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
 
     try {
 
-      // 2️⃣ Create new Audit Log item (Action = Submitted)
-      await createAuditLogItem(uploadedFile!, "Submitted");
+      // 2️⃣ Create new Audit Log item 
+      await createAuditLogItem(uploadedFile!, "Unpublished");
 
       // 1️⃣ Update KMArtifacts row with actual form values
-      await updateKMArtifactsWithFormData(kmItemId, { ...data, Status: "Submitted" });
+      await updateKMArtifactsWithFormData(kmItemId, { ...data, Status: "Unpublished" });
 
      
       setSuccessMessage("Your document has been submitted. The KM team will review it shortly.");
@@ -433,7 +429,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 <path d="M12 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className={styles.hintText}>Drag & drop files here</div>
-              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MPP. Click browse or drop a file to start.</div>
+              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start.</div>
               <button className={styles.browseBtn} onClick={(e) => { e.stopPropagation(); onBrowse(); }}>
                 Browse files
               </button>
@@ -441,7 +437,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 ref={fileInputRef}
                 type="file"
                 style={{ display: 'none' }}
-                accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mpp"
+                accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml"
                 onChange={(e) => onFileSelected(e.target.files)}
               />
             </div>
