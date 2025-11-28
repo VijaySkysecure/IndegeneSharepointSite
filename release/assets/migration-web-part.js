@@ -390,24 +390,24 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_745e26d3{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_745e26d3{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_745e26d3{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_745e26d3{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_745e26d3{font-size:24px;line-height:1}.fileType_745e26d3{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_745e26d3{color:#333;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_745e26d3,.tileTitle_745e26d3{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_745e26d3{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_745e26d3{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_745e26d3{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_745e26d3 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_745e26d3:hover:not(:disabled){background-color:#1565c0}.viewButton_745e26d3:active:not(:disabled){background-color:#0d47a1}.viewButton_745e26d3:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_745e26d3{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_745e26d3 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_745e26d3:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_745e26d3:active:not(:disabled){background-color:#e0e0e0}.downloadButton_745e26d3:disabled{cursor:not-allowed;opacity:.4}.loading_745e26d3,.noDocuments_745e26d3{color:#fff;font-family:Inter,sans-serif;font-size:16px;padding:40px;text-align:center}.detailModal_745e26d3{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YseUJBQ0UsWUFBQSxDQUtBLGdCQUFBLENBSkEsUUFBQSxDQUdBLHNCQUFBLENBREEsYUFBQSxDQURBLGdCQUFBLENBSUEsVUFBQSxDQUdGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_5e71429f{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_5e71429f{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_5e71429f{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:232px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_5e71429f{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_5e71429f{font-size:20px;line-height:1}.fileType_5e71429f{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_5e71429f{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_5e71429f,.tileTitle_5e71429f{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_5e71429f{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_5e71429f{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_5e71429f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_5e71429f svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_5e71429f:hover:not(:disabled){background-color:#1565c0}.viewButton_5e71429f:active:not(:disabled){background-color:#0d47a1}.viewButton_5e71429f:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_5e71429f{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_5e71429f svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_5e71429f:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_5e71429f:active:not(:disabled){background-color:#e0e0e0}.downloadButton_5e71429f:disabled{cursor:not-allowed;opacity:.4}.loading_5e71429f,.noDocuments_5e71429f{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.detailModal_5e71429f{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YseUJBQ0UsWUFBQSxDQUtBLGdCQUFBLENBSkEsUUFBQSxDQUdBLHNCQUFBLENBREEsYUFBQSxDQURBLGdCQUFBLENBSUEsVUFBQSxDQUdGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_745e26d3: "questionSection_745e26d3",
-  tilesContainer_745e26d3: "tilesContainer_745e26d3",
-  tile_745e26d3: "tile_745e26d3",
-  tileHeader_745e26d3: "tileHeader_745e26d3",
-  fileTypeIcon_745e26d3: "fileTypeIcon_745e26d3",
-  fileType_745e26d3: "fileType_745e26d3",
-  tileTitle_745e26d3: "tileTitle_745e26d3",
-  tileAbstract_745e26d3: "tileAbstract_745e26d3",
-  tileActions_745e26d3: "tileActions_745e26d3",
-  viewButton_745e26d3: "viewButton_745e26d3",
-  downloadButton_745e26d3: "downloadButton_745e26d3",
-  loading_745e26d3: "loading_745e26d3",
-  noDocuments_745e26d3: "noDocuments_745e26d3",
-  detailModal_745e26d3: "detailModal_745e26d3"
+  questionSection_5e71429f: "questionSection_5e71429f",
+  tilesContainer_5e71429f: "tilesContainer_5e71429f",
+  tile_5e71429f: "tile_5e71429f",
+  tileHeader_5e71429f: "tileHeader_5e71429f",
+  fileTypeIcon_5e71429f: "fileTypeIcon_5e71429f",
+  fileType_5e71429f: "fileType_5e71429f",
+  tileTitle_5e71429f: "tileTitle_5e71429f",
+  tileAbstract_5e71429f: "tileAbstract_5e71429f",
+  tileActions_5e71429f: "tileActions_5e71429f",
+  viewButton_5e71429f: "viewButton_5e71429f",
+  downloadButton_5e71429f: "downloadButton_5e71429f",
+  loading_5e71429f: "loading_5e71429f",
+  noDocuments_5e71429f: "noDocuments_5e71429f",
+  detailModal_5e71429f: "detailModal_5e71429f"
 });
 
 
@@ -545,36 +545,39 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_1b6959b6{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;position:relative;width:100%}.header_1b6959b6{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;padding:20px 40px}.backButton_1b6959b6{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_1b6959b6 svg{stroke:currentColor;fill:none}.backButton_1b6959b6:hover{background-color:#f5f5f5}.headerActions_1b6959b6{align-items:center;display:flex;gap:12px}.downloadButton_1b6959b6{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_1b6959b6 svg{stroke:currentColor;fill:none}.downloadButton_1b6959b6:hover{background-color:#1565c0}.shareButton_1b6959b6{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_1b6959b6 svg{stroke:currentColor;fill:none}.shareButton_1b6959b6:hover{background-color:#f5f5f5}.content_1b6959b6{margin:0 auto;max-width:1200px;padding:40px}.mainContent_1b6959b6{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:40px}.fileTypeIndicator_1b6959b6{align-items:center;display:flex;gap:8px;margin-bottom:20px}.fileTypeIcon_1b6959b6{font-size:24px;line-height:1}.fileTypeText_1b6959b6{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.documentTitle_1b6959b6{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px}.documentAbstract_1b6959b6{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px}.metadata_1b6959b6{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_1b6959b6{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_1b6959b6 svg{stroke:currentColor;fill:none}.previewSection_1b6959b6{margin-top:32px}.previewTitle_1b6959b6{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_1b6959b6{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;display:flex;height:700px;justify-content:center;overflow:hidden;position:relative;width:100%}.previewFrame_1b6959b6{border:none;height:100%;width:100%}.previewPlaceholder_1b6959b6{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_1b6959b6,.previewPlaceholder_1b6959b6{align-items:center;display:flex;justify-content:center}.previewError_1b6959b6{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_1b6959b6{font-size:48px;margin-bottom:16px}.errorText_1b6959b6{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_1b6959b6,.retryButton_1b6959b6{font-family:Inter,sans-serif;font-weight:500}.retryButton_1b6959b6{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_1b6959b6:hover{background-color:#1565c0}.error_1b6959b6,.loading_1b6959b6{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9Eb2N1bWVudERldGFpbFBhZ2UvRG9jdW1lbnREZXRhaWxQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZCQUdFLHdCQUFBLENBQ0EsNEJBQUEsQ0FGQSxnQkFBQSxDQUdBLGlCQUFBLENBSkEsVUFJQSxDQUdGLGlCQUdFLGtCQUFBLENBRUEscUJBQUEsQ0FDQSwrQkFBQSxDQUxBLFlBQUEsQ0FDQSw2QkFBQSxDQUVBLGlCQUVBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQU1BLGlCQUFBLENBTEEsVUFBQSxDQUdBLGNBQUEsQ0FSQSxZQUFBLENBT0EsNEJBQUEsQ0FEQSxjQUFBLENBSkEsT0FBQSxDQU9BLGdCQUFBLENBRUEsK0JBQUEsQ0FFQSx5QkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiwyQkFDRSx3QkFBQSxDQUlKLHdCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRix5QkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEsNkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsK0JBQ0Usd0JBQUEsQ0FJSixzQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBR0EsaUJBQUEsQ0FGQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUlBLFlBQUEsQ0FHQSwrQkFBQSxDQUVBLDBCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDRCQUNFLHdCQUFBLENBSUosa0JBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsWUFBQSxDQUdGLHNCQUNFLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQURBLFlBQ0EsQ0FHRiw0QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLHVCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysd0JBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLDJCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLG1CQUtFLCtCQUFBLENBSkEsWUFBQSxDQUNBLFFBQUEsQ0FDQSxrQkFBQSxDQUNBLG1CQUNBLENBR0YsdUJBRUUsa0JBQUEsQ0FHQSxVQUFBLENBSkEsWUFBQSxDQUtBLDRCQUFBLENBRkEsY0FBQSxDQURBLE9BR0EsQ0FFQSwyQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FJSix5QkFDRSxlQUFBLENBR0YsdUJBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUNBLENBR0YsMkJBU0Usa0JBQUEsQ0FIQSx3QkFBQSxDQUhBLHdCQUFBLENBQ0EsaUJBQUEsQ0FJQSxZQUFBLENBTkEsWUFBQSxDQVFBLHNCQUFBLENBTEEsZUFBQSxDQUVBLGlCQUFBLENBTkEsVUFTQSxDQUdGLHVCQUdFLFdBQUEsQ0FEQSxXQUFBLENBREEsVUFFQSxDQUdGLDZCQU1FLFVBQUEsQ0FFQSw0QkFBQSxDQURBLGNBQUEsQ0FMQSxXQUFBLENBREEsVUFPQSxDQUdGLG9EQVBFLGtCQUFBLENBREEsWUFBQSxDQUVBLHNCQWlCQSxDQVhGLHVCQVVFLG9DQUFBLENBTEEsUUFBQSxDQUVBLHFCQUFBLENBSkEsTUFBQSxDQUZBLGlCQUFBLENBR0EsT0FBQSxDQUZBLEtBQUEsQ0FTQSxVQUFBLENBR0Ysb0JBQ0UsY0FBQSxDQUNBLGtCQUFBLENBR0Ysb0JBQ0UsYUFBQSxDQUNBLGNBQUEsQ0FFQSxrQkFBQSxDQUNBLGlCQUNBLENBR0YsMENBSEUsNEJBQUEsQ0FIQSxlQWdCQSxDQVZGLHNCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FIQSxjQUFBLENBREEsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLDRCQUNFLHdCQUFBLENBSUosa0NBR0Usa0JBQUEsQ0FJQSxVQUFBLENBTEEsWUFBQSxDQU1BLDRCQUFBLENBRkEsY0FBQSxDQUZBLHNCQUFBLENBQ0EsZ0JBR0EiLCJmaWxlIjoiRG9jdW1lbnREZXRhaWxQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_185ad09f{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;position:relative;width:100%}.header_185ad09f{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;padding:20px 40px}.backButton_185ad09f{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_185ad09f svg{stroke:currentColor;fill:none}.backButton_185ad09f:hover{background-color:#f5f5f5}.headerActions_185ad09f{align-items:center;display:flex;gap:12px}.downloadButton_185ad09f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_185ad09f svg{stroke:currentColor;fill:none}.downloadButton_185ad09f:hover{background-color:#1565c0}.shareButton_185ad09f{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_185ad09f svg{stroke:currentColor;fill:none}.shareButton_185ad09f:hover{background-color:#f5f5f5}.content_185ad09f{margin:0 auto;max-width:1200px;padding:40px}.headerRow_185ad09f{align-items:flex-end;display:flex;flex-wrap:wrap;gap:20px;margin-bottom:20px}.mainContent_185ad09f{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:40px}.fileTypeIndicator_185ad09f{align-items:flex-end;display:flex;gap:8px}.tagsContainer_185ad09f{align-items:center;display:flex;flex-wrap:wrap;gap:12px}.tag_185ad09f{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;display:inline-block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:6px 12px}.fileTypeIcon_185ad09f{font-size:24px;line-height:1}.fileTypeText_185ad09f{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500;margin-bottom:3px}.documentTitle_185ad09f{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px}.documentAbstract_185ad09f{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px}.metadata_185ad09f{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_185ad09f{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_185ad09f svg{stroke:currentColor;fill:none}.previewSection_185ad09f{margin-top:32px}.previewTitle_185ad09f{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_185ad09f{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;display:flex;height:700px;justify-content:center;overflow:hidden;position:relative;width:100%}.previewFrame_185ad09f{border:none;height:100%;width:100%}.previewPlaceholder_185ad09f{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_185ad09f,.previewPlaceholder_185ad09f{align-items:center;display:flex;justify-content:center}.previewError_185ad09f{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_185ad09f{font-size:48px;margin-bottom:16px}.errorText_185ad09f{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_185ad09f,.retryButton_185ad09f{font-family:Inter,sans-serif;font-weight:500}.retryButton_185ad09f{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_185ad09f:hover{background-color:#1565c0}.error_185ad09f,.loading_185ad09f{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9Eb2N1bWVudERldGFpbFBhZ2UvRG9jdW1lbnREZXRhaWxQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZCQUdFLHdCQUFBLENBQ0EsNEJBQUEsQ0FGQSxnQkFBQSxDQUdBLGlCQUFBLENBSkEsVUFJQSxDQUdGLGlCQUdFLGtCQUFBLENBRUEscUJBQUEsQ0FDQSwrQkFBQSxDQUxBLFlBQUEsQ0FDQSw2QkFBQSxDQUVBLGlCQUVBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQU1BLGlCQUFBLENBTEEsVUFBQSxDQUdBLGNBQUEsQ0FSQSxZQUFBLENBT0EsNEJBQUEsQ0FEQSxjQUFBLENBSkEsT0FBQSxDQU9BLGdCQUFBLENBRUEsK0JBQUEsQ0FFQSx5QkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiwyQkFDRSx3QkFBQSxDQUlKLHdCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRix5QkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEsNkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsK0JBQ0Usd0JBQUEsQ0FJSixzQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBR0EsaUJBQUEsQ0FGQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUlBLFlBQUEsQ0FHQSwrQkFBQSxDQUVBLDBCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDRCQUNFLHdCQUFBLENBSUosa0JBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsWUFBQSxDQUdGLG9CQUVFLG9CQUFBLENBREEsWUFBQSxDQUlBLGNBQUEsQ0FEQSxRQUFBLENBREEsa0JBRUEsQ0FHRixzQkFDRSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FEQSxZQUNBLENBR0YsNEJBRUUsb0JBQUEsQ0FEQSxZQUFBLENBRUEsT0FBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFBQSxDQUdBLGNBQUEsQ0FEQSxRQUNBLENBR0YsY0FHRSx3QkFBQSxDQU1BLHdCQUFBLENBSkEsaUJBQUEsQ0FEQSxVQUFBLENBSEEsb0JBQUEsQ0FPQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBTEEsZ0JBT0EsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLHVCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBRUEsaUJBQUEsQ0FHRix3QkFHRSxVQUFBLENBRUEsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUlBLGVBQUEsQ0FGQSxlQUVBLENBR0YsMkJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUVBLENBR0YsbUJBS0UsK0JBQUEsQ0FKQSxZQUFBLENBQ0EsUUFBQSxDQUNBLGtCQUFBLENBQ0EsbUJBQ0EsQ0FHRix1QkFFRSxrQkFBQSxDQUdBLFVBQUEsQ0FKQSxZQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBREEsT0FHQSxDQUVBLDJCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUlKLHlCQUNFLGVBQUEsQ0FHRix1QkFHRSxVQUFBLENBRUEsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUVBLGVBQ0EsQ0FHRiwyQkFTRSxrQkFBQSxDQUhBLHdCQUFBLENBSEEsd0JBQUEsQ0FDQSxpQkFBQSxDQUlBLFlBQUEsQ0FOQSxZQUFBLENBUUEsc0JBQUEsQ0FMQSxlQUFBLENBRUEsaUJBQUEsQ0FOQSxVQVNBLENBR0YsdUJBR0UsV0FBQSxDQURBLFdBQUEsQ0FEQSxVQUVBLENBR0YsNkJBTUUsVUFBQSxDQUVBLDRCQUFBLENBREEsY0FBQSxDQUxBLFdBQUEsQ0FEQSxVQU9BLENBR0Ysb0RBUEUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsc0JBaUJBLENBWEYsdUJBVUUsb0NBQUEsQ0FMQSxRQUFBLENBRUEscUJBQUEsQ0FKQSxNQUFBLENBRkEsaUJBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQVNBLFVBQUEsQ0FHRixvQkFDRSxjQUFBLENBQ0Esa0JBQUEsQ0FHRixvQkFDRSxhQUFBLENBQ0EsY0FBQSxDQUVBLGtCQUFBLENBQ0EsaUJBQ0EsQ0FHRiwwQ0FIRSw0QkFBQSxDQUhBLGVBZ0JBLENBVkYsc0JBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBT0EsY0FBQSxDQUhBLGNBQUEsQ0FEQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEsNEJBQ0Usd0JBQUEsQ0FJSixrQ0FHRSxrQkFBQSxDQUlBLFVBQUEsQ0FMQSxZQUFBLENBTUEsNEJBQUEsQ0FGQSxjQUFBLENBRkEsc0JBQUEsQ0FDQSxnQkFHQSIsImZpbGUiOiJEb2N1bWVudERldGFpbFBhZ2UubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  documentDetailPage_1b6959b6: "documentDetailPage_1b6959b6",
-  header_1b6959b6: "header_1b6959b6",
-  backButton_1b6959b6: "backButton_1b6959b6",
-  headerActions_1b6959b6: "headerActions_1b6959b6",
-  downloadButton_1b6959b6: "downloadButton_1b6959b6",
-  shareButton_1b6959b6: "shareButton_1b6959b6",
-  content_1b6959b6: "content_1b6959b6",
-  mainContent_1b6959b6: "mainContent_1b6959b6",
-  fileTypeIndicator_1b6959b6: "fileTypeIndicator_1b6959b6",
-  fileTypeIcon_1b6959b6: "fileTypeIcon_1b6959b6",
-  fileTypeText_1b6959b6: "fileTypeText_1b6959b6",
-  documentTitle_1b6959b6: "documentTitle_1b6959b6",
-  documentAbstract_1b6959b6: "documentAbstract_1b6959b6",
-  metadata_1b6959b6: "metadata_1b6959b6",
-  metadataItem_1b6959b6: "metadataItem_1b6959b6",
-  previewSection_1b6959b6: "previewSection_1b6959b6",
-  previewTitle_1b6959b6: "previewTitle_1b6959b6",
-  previewContainer_1b6959b6: "previewContainer_1b6959b6",
-  previewFrame_1b6959b6: "previewFrame_1b6959b6",
-  previewPlaceholder_1b6959b6: "previewPlaceholder_1b6959b6",
-  previewError_1b6959b6: "previewError_1b6959b6",
-  errorIcon_1b6959b6: "errorIcon_1b6959b6",
-  errorText_1b6959b6: "errorText_1b6959b6",
-  retryButton_1b6959b6: "retryButton_1b6959b6",
-  error_1b6959b6: "error_1b6959b6",
-  loading_1b6959b6: "loading_1b6959b6"
+  documentDetailPage_185ad09f: "documentDetailPage_185ad09f",
+  header_185ad09f: "header_185ad09f",
+  backButton_185ad09f: "backButton_185ad09f",
+  headerActions_185ad09f: "headerActions_185ad09f",
+  downloadButton_185ad09f: "downloadButton_185ad09f",
+  shareButton_185ad09f: "shareButton_185ad09f",
+  content_185ad09f: "content_185ad09f",
+  headerRow_185ad09f: "headerRow_185ad09f",
+  mainContent_185ad09f: "mainContent_185ad09f",
+  fileTypeIndicator_185ad09f: "fileTypeIndicator_185ad09f",
+  tagsContainer_185ad09f: "tagsContainer_185ad09f",
+  tag_185ad09f: "tag_185ad09f",
+  fileTypeIcon_185ad09f: "fileTypeIcon_185ad09f",
+  fileTypeText_185ad09f: "fileTypeText_185ad09f",
+  documentTitle_185ad09f: "documentTitle_185ad09f",
+  documentAbstract_185ad09f: "documentAbstract_185ad09f",
+  metadata_185ad09f: "metadata_185ad09f",
+  metadataItem_185ad09f: "metadataItem_185ad09f",
+  previewSection_185ad09f: "previewSection_185ad09f",
+  previewTitle_185ad09f: "previewTitle_185ad09f",
+  previewContainer_185ad09f: "previewContainer_185ad09f",
+  previewFrame_185ad09f: "previewFrame_185ad09f",
+  previewPlaceholder_185ad09f: "previewPlaceholder_185ad09f",
+  previewError_185ad09f: "previewError_185ad09f",
+  errorIcon_185ad09f: "errorIcon_185ad09f",
+  errorText_185ad09f: "errorText_185ad09f",
+  retryButton_185ad09f: "retryButton_185ad09f",
+  error_185ad09f: "error_185ad09f",
+  loading_185ad09f: "loading_185ad09f"
 });
 
 
@@ -2308,20 +2311,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 var styles = {
-    questionSection: 'questionSection_745e26d3',
-    tilesContainer: 'tilesContainer_745e26d3',
-    tile: 'tile_745e26d3',
-    tileHeader: 'tileHeader_745e26d3',
-    fileTypeIcon: 'fileTypeIcon_745e26d3',
-    fileType: 'fileType_745e26d3',
-    tileTitle: 'tileTitle_745e26d3',
-    tileAbstract: 'tileAbstract_745e26d3',
-    tileActions: 'tileActions_745e26d3',
-    viewButton: 'viewButton_745e26d3',
-    downloadButton: 'downloadButton_745e26d3',
-    loading: 'loading_745e26d3',
-    noDocuments: 'noDocuments_745e26d3',
-    detailModal: 'detailModal_745e26d3'
+    questionSection: 'questionSection_5e71429f',
+    tilesContainer: 'tilesContainer_5e71429f',
+    tile: 'tile_5e71429f',
+    tileHeader: 'tileHeader_5e71429f',
+    fileTypeIcon: 'fileTypeIcon_5e71429f',
+    fileType: 'fileType_5e71429f',
+    tileTitle: 'tileTitle_5e71429f',
+    tileAbstract: 'tileAbstract_5e71429f',
+    tileActions: 'tileActions_5e71429f',
+    viewButton: 'viewButton_5e71429f',
+    downloadButton: 'downloadButton_5e71429f',
+    loading: 'loading_5e71429f',
+    noDocuments: 'noDocuments_5e71429f',
+    detailModal: 'detailModal_5e71429f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2558,7 +2561,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DocumentDetailPage.module.scss */ 894);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DocumentDetailPage.module.scss */ 894);
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -2598,12 +2602,21 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
+// Azure OpenAI Configuration
+var AZURE_OPENAI_CONFIG = {
+    apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+    endpoint: 'https://engineeringteamopenai.openai.azure.com',
+    deploymentName: 'gpt-4o'
+};
 var DocumentDetailPage = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), document = _a[0], setDocument = _a[1];
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewUrl = _c[0], setPreviewUrl = _c[1];
     var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewError = _d[0], setPreviewError = _d[1];
+    var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), tags = _e[0], setTags = _e[1];
     var iframeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     // Cleanup blob URLs on unmount
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         return function () {
@@ -2616,7 +2629,7 @@ var DocumentDetailPage = function (props) {
         fetchDocumentDetails();
     }, [props.documentId]);
     var fetchDocumentDetails = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_1, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_2, error_3;
+        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, generatedTags, error_1, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_2, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_3, error_4;
         var _a, _b, _c, _d;
         return __generator(this, function (_e) {
             switch (_e.label) {
@@ -2627,7 +2640,7 @@ var DocumentDetailPage = function (props) {
                     }
                     _e.label = 1;
                 case 1:
-                    _e.trys.push([1, 22, 23, 24]);
+                    _e.trys.push([1, 28, 29, 30]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
                     apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File");
@@ -2680,7 +2693,26 @@ var DocumentDetailPage = function (props) {
                         fileRef: item.FileRef || serverRelativeUrl
                     };
                     setDocument(documentDetail);
-                    if (!serverRelativeUrl) return [3 /*break*/, 21];
+                    if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 8];
+                    _e.label = 4;
+                case 4:
+                    _e.trys.push([4, 6, , 7]);
+                    return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                case 5:
+                    generatedTags = _e.sent();
+                    setTags(generatedTags);
+                    return [3 /*break*/, 7];
+                case 6:
+                    error_1 = _e.sent();
+                    console.error('Error generating tags:', error_1);
+                    setTags([]);
+                    return [3 /*break*/, 7];
+                case 7: return [3 /*break*/, 9];
+                case 8:
+                    setTags([]);
+                    _e.label = 9;
+                case 9:
+                    if (!serverRelativeUrl) return [3 /*break*/, 27];
                     webUrl_1 = props.context.pageContext.web.absoluteUrl;
                     fileUrl = serverRelativeUrl;
                     // Ensure proper server relative URL format
@@ -2688,81 +2720,81 @@ var DocumentDetailPage = function (props) {
                         fileUrl = "/".concat(fileUrl);
                     }
                     fullFileUrl = "".concat(webUrl_1).concat(fileUrl);
-                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 4];
+                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 10];
                     encodedServerUrl = encodeURIComponent(fileUrl);
                     setPreviewUrl("".concat(webUrl_1, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
-                    return [3 /*break*/, 21];
-                case 4:
-                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 12];
-                    _e.label = 5;
-                case 5:
-                    _e.trys.push([5, 10, , 11]);
+                    return [3 /*break*/, 27];
+                case 10:
+                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 18];
+                    _e.label = 11;
+                case 11:
+                    _e.trys.push([11, 16, , 17]);
                     downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 6:
+                case 12:
                     fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 8];
+                    if (!fileResponse.ok) return [3 /*break*/, 14];
                     return [4 /*yield*/, fileResponse.blob()];
-                case 7:
+                case 13:
                     blob = _e.sent();
                     pdfBlob = new Blob([blob], { type: 'application/pdf' });
                     blobUrl = window.URL.createObjectURL(pdfBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 9];
-                case 8:
+                    return [3 /*break*/, 15];
+                case 14:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 9;
-                case 9: return [3 /*break*/, 11];
-                case 10:
-                    error_1 = _e.sent();
-                    console.error('Error fetching PDF for preview:', error_1);
+                    _e.label = 15;
+                case 15: return [3 /*break*/, 17];
+                case 16:
+                    error_2 = _e.sent();
+                    console.error('Error fetching PDF for preview:', error_2);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 11];
-                case 11: return [3 /*break*/, 21];
-                case 12:
-                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 20];
-                    _e.label = 13;
-                case 13:
-                    _e.trys.push([13, 18, , 19]);
+                    return [3 /*break*/, 17];
+                case 17: return [3 /*break*/, 27];
+                case 18:
+                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 26];
+                    _e.label = 19;
+                case 19:
+                    _e.trys.push([19, 24, , 25]);
                     downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 14:
+                case 20:
                     fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 16];
+                    if (!fileResponse.ok) return [3 /*break*/, 22];
                     return [4 /*yield*/, fileResponse.blob()];
-                case 15:
+                case 21:
                     blob = _e.sent();
                     svgBlob = new Blob([blob], { type: 'image/svg+xml' });
                     blobUrl = window.URL.createObjectURL(svgBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 17];
-                case 16:
+                    return [3 /*break*/, 23];
+                case 22:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 17;
-                case 17: return [3 /*break*/, 19];
-                case 18:
-                    error_2 = _e.sent();
-                    console.error('Error fetching SVG for preview:', error_2);
+                    _e.label = 23;
+                case 23: return [3 /*break*/, 25];
+                case 24:
+                    error_3 = _e.sent();
+                    console.error('Error fetching SVG for preview:', error_3);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 19];
-                case 19: return [3 /*break*/, 21];
-                case 20:
+                    return [3 /*break*/, 25];
+                case 25: return [3 /*break*/, 27];
+                case 26:
                     // For other files, try direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 21;
-                case 21: return [3 /*break*/, 24];
-                case 22:
-                    error_3 = _e.sent();
-                    console.error('Error fetching document details:', error_3);
-                    return [3 /*break*/, 24];
-                case 23:
+                    _e.label = 27;
+                case 27: return [3 /*break*/, 30];
+                case 28:
+                    error_4 = _e.sent();
+                    console.error('Error fetching document details:', error_4);
+                    return [3 /*break*/, 30];
+                case 29:
                     setLoading(false);
                     return [7 /*endfinally*/];
-                case 24: return [2 /*return*/];
+                case 30: return [2 /*return*/];
             }
         });
     }); };
@@ -2783,7 +2815,7 @@ var DocumentDetailPage = function (props) {
         return '📎';
     };
     var handleDownload = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_4;
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_5;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -2816,8 +2848,8 @@ var DocumentDetailPage = function (props) {
                     _a.label = 4;
                 case 4: return [3 /*break*/, 6];
                 case 5:
-                    error_4 = _a.sent();
-                    console.error('Download error:', error_4);
+                    error_5 = _a.sent();
+                    console.error('Download error:', error_5);
                     return [3 /*break*/, 6];
                 case 6: return [2 /*return*/];
             }
@@ -2857,72 +2889,74 @@ var DocumentDetailPage = function (props) {
         }
     };
     if (loading) {
-        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentDetailPage },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].loading }, "Loading document...")));
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentDetailPage },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading document...")));
     }
     if (!document) {
-        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentDetailPage },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].error }, "Document not found")));
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentDetailPage },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].error }, "Document not found")));
     }
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentDetailPage },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].backButton, onClick: handleBack },
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentDetailPage },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].backButton, onClick: handleBack },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                 "Back to Library"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerActions },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: handleDownload },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].headerActions },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: handleDownload },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                     "Download"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].shareButton, onClick: handleShare },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].shareButton, onClick: handleShare },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "5", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "6", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "19", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8.59", y1: "13.51", x2: "15.42", y2: "17.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "15.41", y1: "6.51", x2: "8.59", y2: "10.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].content },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].mainContent },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIndicator },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(document.fileType)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeText }, document.fileType)),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentTitle }, document.name),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentAbstract }, document.abstract || 'No description available'),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadata },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].content },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].mainContent },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].headerRow },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIndicator },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(document.fileType)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeText }, document.fileType)),
+                    tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentTitle }, document.name),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentAbstract }, document.abstract || 'No description available'),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadata },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "7", r: "4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.author)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("rect", { x: "3", y: "4", width: "18", height: "18", rx: "2", ry: "2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "16", y1: "2", x2: "16", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8", y1: "2", x2: "8", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "3", y1: "10", x2: "21", y2: "10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.date)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "14 2 14 8 20 8", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.fileSize))),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewSection },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewTitle }, "Document Preview"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewContainer },
-                        previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: function (e) {
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewSection },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewTitle }, "Document Preview"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewContainer },
+                        previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function (e) {
                                 console.error('SVG load error:', e);
                                 setPreviewError('Failed to load SVG preview');
                             }, onLoad: function () {
                                 setPreviewError('');
                             } },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewPlaceholder }, "Preview not available")),
-                        previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewError },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorIcon }, "\u26A0\uFE0F"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorText }, previewError),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].retryButton, onClick: function () {
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewPlaceholder }, "Preview not available")),
+                        previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewError },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorIcon }, "\u26A0\uFE0F"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorText }, previewError),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].retryButton, onClick: function () {
                                     setPreviewError('');
                                     // Retry by re-fetching the document details
                                     fetchDocumentDetails();
@@ -2944,32 +2978,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./DocumentDetailPage.module.css */ 4790);
 var styles = {
-    documentDetailPage: 'documentDetailPage_1b6959b6',
-    header: 'header_1b6959b6',
-    backButton: 'backButton_1b6959b6',
-    headerActions: 'headerActions_1b6959b6',
-    downloadButton: 'downloadButton_1b6959b6',
-    shareButton: 'shareButton_1b6959b6',
-    content: 'content_1b6959b6',
-    mainContent: 'mainContent_1b6959b6',
-    fileTypeIndicator: 'fileTypeIndicator_1b6959b6',
-    fileTypeIcon: 'fileTypeIcon_1b6959b6',
-    fileTypeText: 'fileTypeText_1b6959b6',
-    documentTitle: 'documentTitle_1b6959b6',
-    documentAbstract: 'documentAbstract_1b6959b6',
-    metadata: 'metadata_1b6959b6',
-    metadataItem: 'metadataItem_1b6959b6',
-    previewSection: 'previewSection_1b6959b6',
-    previewTitle: 'previewTitle_1b6959b6',
-    previewContainer: 'previewContainer_1b6959b6',
-    previewFrame: 'previewFrame_1b6959b6',
-    previewPlaceholder: 'previewPlaceholder_1b6959b6',
-    previewError: 'previewError_1b6959b6',
-    errorIcon: 'errorIcon_1b6959b6',
-    errorText: 'errorText_1b6959b6',
-    retryButton: 'retryButton_1b6959b6',
-    loading: 'loading_1b6959b6',
-    error: 'error_1b6959b6'
+    documentDetailPage: 'documentDetailPage_185ad09f',
+    header: 'header_185ad09f',
+    backButton: 'backButton_185ad09f',
+    headerActions: 'headerActions_185ad09f',
+    downloadButton: 'downloadButton_185ad09f',
+    shareButton: 'shareButton_185ad09f',
+    content: 'content_185ad09f',
+    headerRow: 'headerRow_185ad09f',
+    mainContent: 'mainContent_185ad09f',
+    fileTypeIndicator: 'fileTypeIndicator_185ad09f',
+    tagsContainer: 'tagsContainer_185ad09f',
+    tag: 'tag_185ad09f',
+    fileTypeIcon: 'fileTypeIcon_185ad09f',
+    fileTypeText: 'fileTypeText_185ad09f',
+    documentTitle: 'documentTitle_185ad09f',
+    documentAbstract: 'documentAbstract_185ad09f',
+    metadata: 'metadata_185ad09f',
+    metadataItem: 'metadataItem_185ad09f',
+    previewSection: 'previewSection_185ad09f',
+    previewTitle: 'previewTitle_185ad09f',
+    previewContainer: 'previewContainer_185ad09f',
+    previewFrame: 'previewFrame_185ad09f',
+    previewPlaceholder: 'previewPlaceholder_185ad09f',
+    previewError: 'previewError_185ad09f',
+    errorIcon: 'errorIcon_185ad09f',
+    errorText: 'errorText_185ad09f',
+    retryButton: 'retryButton_185ad09f',
+    loading: 'loading_185ad09f',
+    error: 'error_185ad09f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3704,6 +3741,72 @@ var AzureOpenAIService = /** @class */ (function () {
         console.log('Merged phones count:', allPhones.length);
         console.log('Merged IDs count:', allIds.length);
         return merged;
+    };
+    /**
+     * Generate tags from document abstract using AI
+     */
+    AzureOpenAIService.prototype.generateTags = function (abstract) {
+        var _a, _b, _c;
+        return __awaiter(this, void 0, void 0, function () {
+            var prompt_1, response, data, content, jsonMatch, tags, error_3;
+            return __generator(this, function (_d) {
+                switch (_d.label) {
+                    case 0:
+                        if (!abstract || abstract.trim().length === 0) {
+                            return [2 /*return*/, []];
+                        }
+                        _d.label = 1;
+                    case 1:
+                        _d.trys.push([1, 4, , 5]);
+                        prompt_1 = "Analyze the following document abstract and generate exactly 3 relevant tags that categorize this document. Tags should be short (1-2 words), professional, and relevant to the content. Examples: HR, Policies, Security, IT, Guide, Compliance, Training, etc.\n\nAbstract: ".concat(abstract, "\n\nReturn only a JSON array of exactly 3 tag strings, nothing else. Example: [\"HR\", \"Policies\", \"Security\"]");
+                        return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'api-key': this.config.apiKey
+                                },
+                                body: JSON.stringify({
+                                    messages: [
+                                        {
+                                            role: 'system',
+                                            content: 'You are a document categorization expert. Return only valid JSON arrays, no markdown formatting.'
+                                        },
+                                        {
+                                            role: 'user',
+                                            content: prompt_1
+                                        }
+                                    ],
+                                    temperature: 0.7,
+                                    max_tokens: 100
+                                })
+                            })];
+                    case 2:
+                        response = _d.sent();
+                        if (!response.ok) {
+                            console.error('Error generating tags:', response.status);
+                            return [2 /*return*/, []];
+                        }
+                        return [4 /*yield*/, response.json()];
+                    case 3:
+                        data = _d.sent();
+                        content = (_c = (_b = (_a = data.choices) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.message) === null || _c === void 0 ? void 0 : _c.content;
+                        if (!content) {
+                            return [2 /*return*/, []];
+                        }
+                        jsonMatch = content.match(/\[.*?\]/);
+                        if (jsonMatch) {
+                            tags = JSON.parse(jsonMatch[0]);
+                            return [2 /*return*/, Array.isArray(tags) ? tags.slice(0, 3) : []];
+                        }
+                        return [2 /*return*/, []];
+                    case 4:
+                        error_3 = _d.sent();
+                        console.error('Error generating tags:', error_3);
+                        return [2 /*return*/, []];
+                    case 5: return [2 /*return*/];
+                }
+            });
+        });
     };
     return AzureOpenAIService;
 }());

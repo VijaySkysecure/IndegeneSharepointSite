@@ -629,5 +629,71 @@ Return only valid JSON in this format (use empty string "" for fields not found)
 
     return merged;
   }
+
+  /**
+   * Generate tags from document abstract using AI
+   */
+  async generateTags(abstract: string): Promise<string[]> {
+    if (!abstract || abstract.trim().length === 0) {
+      return [];
+    }
+
+    try {
+      const prompt = `Analyze the following document abstract and generate exactly 3 relevant tags that categorize this document. Tags should be short (1-2 words), professional, and relevant to the content. Examples: HR, Policies, Security, IT, Guide, Compliance, Training, etc.
+
+Abstract: ${abstract}
+
+Return only a JSON array of exactly 3 tag strings, nothing else. Example: ["HR", "Policies", "Security"]`;
+
+      const response = await fetch(
+        `${this.config.endpoint}/openai/deployments/${this.config.deploymentName}/chat/completions?api-version=${this.config.apiVersion}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'api-key': this.config.apiKey
+          },
+          body: JSON.stringify({
+            messages: [
+              {
+                role: 'system',
+                content: 'You are a document categorization expert. Return only valid JSON arrays, no markdown formatting.'
+              },
+              {
+                role: 'user',
+                content: prompt
+              }
+            ],
+            temperature: 0.7,
+            max_tokens: 100
+          })
+        }
+      );
+
+      if (!response.ok) {
+        console.error('Error generating tags:', response.status);
+        return [];
+      }
+
+      const data = await response.json();
+      const content = data.choices?.[0]?.message?.content;
+
+      if (!content) {
+        return [];
+      }
+
+      // Parse JSON array from response
+      const jsonMatch = content.match(/\[.*?\]/);
+      if (jsonMatch) {
+        const tags = JSON.parse(jsonMatch[0]);
+        return Array.isArray(tags) ? tags.slice(0, 3) : [];
+      }
+
+      return [];
+    } catch (error) {
+      console.error('Error generating tags:', error);
+      return [];
+    }
+  }
 }
 
