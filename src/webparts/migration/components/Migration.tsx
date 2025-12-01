@@ -62,20 +62,7 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
     this.setState({ selectedBU: null, activePage: 'about' });
   }
 
-  // 🆕 TEMP: Test semantic search + suggestions from this page
-  private handleTestSemanticSearch = async (): Promise<void> => {
-    try {
-      console.log('🔹 Testing getSuggestionsFromSearch("migration")...');
-      const suggestions = await this.azureService.getSuggestionsFromSearch('migration');
-      console.log('Suggestions result:', suggestions);
 
-      console.log('🔹 Testing semanticSearch("migration", {})...');
-      const semanticResult = await this.azureService.semanticSearch('migration', {});
-      console.log('Semantic search result:', semanticResult);
-    } catch (error) {
-      console.error('Error during semantic search test:', error);
-    }
-  }
 
   public render(): React.ReactElement<IMigrationProps> {
     // If a BU is selected, show BU detail page
@@ -94,13 +81,6 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
     // Otherwise show main page
     return (
       <div className={styles.migration}>
-        {/* 🆕 TEMP button just for verifying Step 3 */}
-        <div style={{ padding: '8px 16px' }}>
-          <button onClick={this.handleTestSemanticSearch}>
-            Test Semantic Search
-          </button>
-        </div>
-
         <Header context={this.props.context} />
         <Navigation activePage={this.state.activePage} onNavClick={this.handleNavClick} />
         <ContentArea 

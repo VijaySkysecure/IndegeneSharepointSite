@@ -15,16 +15,520 @@ interface ChatMessage {
 }
 
 /* ============================================================
-   CONTEXT KNOWLEDGE MAP  (FULL MAP FROM YOUR FIRST SNIPPET)
+   CONTEXT KNOWLEDGE MAP
 ============================================================ */
 const CONTEXT_MAP: Record<string, string[]> = {
+  /* =====================================================
+     INDEGENE – COMPANY BASICS
+  ====================================================== */
+
   indegene: [
-    "Indegene is a digital-first life sciences commercialization company helping pharma, biotech, and medical device organizations launch, market, and optimize therapies.",
-    "Provides end-to-end solutions spanning medical affairs, regulatory compliance, omnichannel commercialization, data-driven insights, and technology platforms.",
-    "Serves biopharmaceutical companies, emerging biotech firms, and medical device organizations globally.",
-    "Strategic Focus: 'Future Ready Healthcare' platform for AI-powered engagement and market access.",
-    "Key Differentiators: 25+ years domain expertise, proven ROI, operational resilience, and proprietary AI tools like NEXT Access Document Management."
+    "Indegene is a tech-native, digital-first life sciences commercialization company headquartered in Bengaluru, India.",
+    "It helps biopharma, biotech, and medical device companies bring therapies to market and optimize them using data, technology, and healthcare expertise."
   ],
+
+  "what is indegene": [
+    "Indegene is a specialist partner for life sciences companies.",
+    "It combines medical, regulatory, commercial, and technology capabilities to help pharma, biotech, and medical device organizations launch, promote, and support therapies globally."
+  ],
+
+  "who is indegene": [
+    "Indegene is a global services and solutions company focused on life sciences.",
+    "It works with pharmaceutical, biotech, and medical device companies to support commercialization, medical affairs, clinical, and analytics functions."
+  ],
+
+  "what does indegene do": [
+    "Indegene helps life sciences organizations with:",
+    "• Commercial and marketing operations (omnichannel campaigns, content, field force support).",
+    "• Medical and regulatory operations (medical information, publications, MLR review, safety support).",
+    "• Clinical and evidence services (RWE, analytics, clinical operations support).",
+    "• Data, analytics, and technology solutions to make these processes more efficient and measurable."
+  ],
+
+  "what is indegene company": [
+    "Indegene Limited is a publicly listed, tech-native life sciences commercialization company.",
+    "It provides services across commercial, medical, clinical, and analytics for pharma, biotech, and medical device clients."
+  ],
+
+  "indegene india": [
+    "Indegene is headquartered in Bengaluru, Karnataka, India.",
+    "It has major delivery centers in India and supports global life sciences clients from these locations."
+  ],
+
+  "indegene headquarters": [
+    "Indegene's global headquarters is in Bengaluru, Karnataka, India.",
+    "From there, it coordinates global delivery across multiple regions for life sciences clients."
+  ],
+
+  /* =====================================================
+     FOCUS AREA & CLIENTS
+  ====================================================== */
+
+  "indegene domain": [
+    "Indegene operates in the life sciences and healthcare domain.",
+    "Its core focus is on pharmaceuticals, biotech, and medical devices, supporting commercialization, medical affairs, and clinical operations."
+  ],
+
+  "indegene industry": [
+    "Indegene works in the life sciences and healthcare services industry.",
+    "It sits at the intersection of healthcare, technology, and analytics."
+  ],
+
+  "indegene clients": [
+    "Indegene serves global biopharmaceutical companies, emerging biotechs, and medical device manufacturers.",
+    "Many of its clients are large, multinational pharma organizations that need scalable, compliant, and data-driven operations."
+  ],
+
+  "who are indegene clients": [
+    "Indegene typically works with:",
+    "• Large global pharma companies.",
+    "• Mid-size and emerging biotech organizations.",
+    "• Medical device and diagnostics companies.",
+    "Client names are usually confidential and covered by NDAs."
+  ],
+
+  /* =====================================================
+     SERVICES & SOLUTIONS
+  ====================================================== */
+
+  "indegene services": [
+    "Indegene's key service areas include:",
+    "• Enterprise Commercial Solutions  omnichannel marketing, content operations, marketing analytics, field force support.",
+    "• Enterprise Medical Solutions  medical information, publications, scientific writing, medical review, safety support.",
+    "• Enterprise Clinical / Evidence  RWE, analytics, clinical operations support.",
+    "• Data, AI, and Technology solutions powering these services."
+  ],
+
+  "indegene commercial solutions": [
+    "Indegene's commercial solutions help brands with:",
+    "• Omnichannel HCP engagement.",
+    "• Segmentation and targeting.",
+    "• Content creation and adaptation.",
+    "• Campaign operations and analytics.",
+    "Objective: Improve promotional effectiveness and ROI for life sciences brands."
+  ],
+
+  "indegene medical solutions": [
+    "Indegene's medical solutions support:",
+    "• Medical information and inquiry handling.",
+    "• Publication planning and scientific writing.",
+    "• MLR / medical review support.",
+    "• Safety and pharmacovigilance operations in collaboration with clients."
+  ],
+
+  "indegene clinical solutions": [
+    "Indegene provides clinical and evidence services such as:",
+    "• Real-world evidence (RWE) analytics.",
+    "• Clinical operations support.",
+    "• Data management, dashboards, and insights.",
+    "The goal is to make evidence generation and clinical operations more efficient and data-driven."
+  ],
+
+  "indegene omnichannel": [
+    "Indegene supports omnichannel HCP engagement by:",
+    "• Designing customer journeys.",
+    "• Operating campaigns across email, web, in-person, and remote detailing.",
+    "• Using analytics and AI for next-best-action and channel optimization."
+  ],
+
+  "indegene technology": [
+    "Indegene describes itself as tech-native.",
+    "It uses platforms, automation, and AI on top of CRMs, marketing tools, and analytics stacks to run life sciences workflows at scale.",
+    "The focus is on integrating with client ecosystems like Veeva and marketing automation platforms."
+  ],
+
+  "indegene ai": [
+    "Indegene uses AI/ML for:",
+    "• Next-best-action recommendations for HCP engagement.",
+    "• Segmentation and targeting.",
+    "• Content and channel optimization.",
+    "• Analytics on sales, marketing, and medical activities.",
+    "Some solutions use explainable AI so field teams and stakeholders understand why a recommendation is made."
+  ],
+
+  /* =====================================================
+     COMPANY TYPE, AGE & SCALE
+  ====================================================== */
+
+  "is indegene mnc": [
+    "Yes. Indegene operates as a multinational company (MNC) with global pharma and biotech clients.",
+    "It has offices and delivery centers in India and other regions serving clients across North America, Europe, and Asia."
+  ],
+
+  "is indegene public": [
+    "Indegene Limited is a publicly listed company in India.",
+    "It has a formal board and institutional investors and operates under public company governance."
+  ],
+
+  "when was indegene founded": [
+    "Indegene was founded in 1998 in Bengaluru, India.",
+    "Over time, it has evolved from a healthcare services company into a tech-native life sciences commercialization specialist."
+  ],
+
+  /* =====================================================
+     INDEGENE – LEADERSHIP, FOUNDING, OWNERSHIP
+  ====================================================== */
+
+  "founder of indegene": [
+    "Indegene was founded by Manish Gupta, Rajesh Nair, Sanjay Parikh, Anand Kiran, and Gaurav Kapoor.",
+    "The company was established in 1998 in Bengaluru, India, with the goal of combining healthcare expertise and technology to support life sciences organizations."
+  ],
+
+  "who founded indegene": [
+    "Indegene was founded in 1998 by a team of healthcare and technology experts: Manish Gupta, Rajesh Nair, Sanjay Parikh, Anand Kiran, and Gaurav Kapoor.",
+    "They created the company to support pharmaceutical and medical device organizations using tech-enabled services."
+  ],
+
+  "ceo of indegene": [
+    "The CEO (Chief Executive Officer) of Indegene is Manish Gupta.",
+    "He is also one of the co-founders of the company and leads strategic growth and global operations."
+  ],
+
+  "who is the ceo of indegene": [
+    "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company."
+  ],
+
+  "is manish gupta founder of indegene": [
+    "Yes, Manish Gupta is one of the founding members of Indegene and currently serves as its CEO.",
+    "He played a key role in shaping the companys vision of combining healthcare expertise with digital solutions."
+  ],
+
+  "is indegene public company": [
+    "Yes, Indegene Limited is a publicly listed company in India.",
+    "It operates with public company governance, a board of directors, and institutional investors."
+  ],
+
+  "is indegene publicly listed": [
+    "Yes, Indegene is a publicly listed company in India.",
+    "It was previously known as Indegene Private Limited before becoming Indegene Limited.",
+    "It operates under formal compliance and regulatory standards."
+  ],
+
+  "indegene company type": [
+    "Indegene Limited is a public, tech-native life sciences commercialization company headquartered in Bengaluru, India.",
+    "It operates globally with subsidiaries and delivery centers across multiple regions."
+  ],
+
+  "indegene ownership": [
+    "Indegene Limited is publicly owned by shareholders and institutional investors.",
+    "It follows corporate governance guidelines and regulations applicable to publicly listed companies."
+  ],
+
+  "indegene chairman": [
+    "The Chairman of Indegene is Manish Gupta, who also serves as the CEO and co-founder."
+  ],
+
+  "indegene leaders": [
+    "Key leaders at Indegene include:",
+    "• Manish Gupta  Chairman and CEO (Co-founder)",
+    "• Rajesh Nair  Co-founder and senior executive",
+    "• Sanjay Parikh  Co-founder and business/operations leader",
+    "Other leadership roles include CTO, CFO, and vertical heads based on business units."
+  ],
+
+  /* =====================================================
+     CULTURE, VALUES & WORKPLACE
+  ====================================================== */
+
+  "indegene values": [
+    "Indegene's culture emphasizes:",
+    "• Empathy and trust.",
+    "• Collaboration and ownership.",
+    "• Innovation and being future-ready.",
+    "Employees often work at the intersection of healthcare, technology, and analytics."
+  ],
+
+  "indegene culture": [
+    "Indegene positions itself as a fast-paced, learning-focused organization.",
+    "People work with global pharma clients, exposure to real-world medical and commercial problems, and technology-driven projects.",
+    "Actual experience can vary by team, project, and manager, like most project-based service companies."
+  ],
+
+  "indegene work culture": [
+    "Public employee reviews generally highlight:",
+    "• Strong learning and exposure to global pharma processes.",
+    "• Opportunities to work in cross-functional teams (medical, tech, analytics).",
+    "• Workload and work-life balance varying by account and project.",
+    "Overall sentiment is usually mid-to-positive, with both positives (learning, exposure) and some typical service-industry challenges."
+  ],
+
+  "is indegene a good company to work for": [
+    "Many employees describe Indegene as a good place for learning, especially early in their career or when shifting into life sciences and healthcare-tech.",
+    "Pros commonly mentioned: exposure to global pharma clients, variety of projects, domain learning.",
+    "Challenges mentioned: workload and timelines can be demanding depending on the project.",
+    "As always, experience depends a lot on specific team, role, and manager."
+  ],
+
+  "indegene work from home": [
+    "Indegene has used hybrid and remote models depending on role, project, and time period.",
+    "Policies can change, so exact work-from-home flexibility depends on the business unit, client requirements, and current company policy.",
+    "For the most accurate picture, candidates should check with HR or the hiring manager during the interview process."
+  ],
+
+  "indegene work life balance": [
+    "Work-life balance at Indegene is typically described as manageable to challenging, depending heavily on:",
+    "• Client deadlines.",
+    "• Type of project (operations vs. project-based).",
+    "• Specific team and manager.",
+    "Some roles have more predictable hours, others can be fast-paced with peaks during launches or key milestones."
+  ],
+
+  /* =====================================================
+     CAREERS, ROLES & INTERVIEWS
+  ====================================================== */
+
+  "indegene careers": [
+    "Indegene hires across multiple profiles, including:",
+    "• Medical writers, scientific writers, and medical information specialists.",
+    "• Pharmacovigilance and safety operations specialists.",
+    "• Data analysts, data scientists, and BI/analytics professionals.",
+    "• Software engineers, full-stack developers, and platform engineers.",
+    "• Marketing operations, campaign managers, project/program managers.",
+    "Requirements vary by role, but interest in life sciences and technology is a common theme."
+  ],
+
+  "indegene jobs for freshers": [
+    "For freshers, Indegene may offer entry-level roles in areas like:",
+    "• Medical writing or scientific content (for pharmacy/life sciences grads).",
+    "• Operations/coordination roles in commercial or medical projects.",
+    "• Junior data/analytics or technology roles (for CS/IT/Data backgrounds).",
+    "Actual openings change over time; candidates should check the careers page or job portals for current positions."
+  ],
+
+  "indegene interview process": [
+    "Indegene's interview process depends on the role but usually involves:",
+    "• Resume screening.",
+    "• 1–2 rounds of technical/functional discussion (e.g., medical/clinical, analytics, or development).",
+    "• Managerial or HR discussions on fit, expectations, and compensation.",
+    "Some roles may include written tests or case studies, especially for writing or analytics."
+  ],
+
+  "skills required for indegene": [
+    "Typical skills that help for roles at Indegene include:",
+    "• For medical/writing roles: strong scientific background, good written English, understanding of pharma/clinical concepts.",
+    "• For analytics roles: SQL/Excel, data visualization, statistics, and domain awareness.",
+    "• For tech roles: solid coding fundamentals, web technologies, APIs, cloud concepts, and interest in healthcare use cases.",
+    "Soft skills: communication, client interaction, teamwork, and ability to work in a process-driven environment."
+  ],
+
+  /* =====================================================
+     POSITIONING & PURPOSE
+  ====================================================== */
+
+  "indegene future ready healthcare": [
+    "Future ready healthcare is a core theme at Indegene.",
+    "It means using digital, data, AI, and new operating models to help life sciences companies prepare for how healthcare will work in the future, not just today."
+  ],
+
+  "why do companies work with indegene": [
+    "Life sciences companies work with Indegene because it:",
+    "• Has deep domain knowledge in pharma and healthcare.",
+    "• Combines that with technology, data, and analytics.",
+    "• Offers scalable delivery teams and proven processes.",
+    "• Helps improve speed to market, compliance, and commercial effectiveness."
+  ],
+
+  /* =====================================================
+     INDEGENE – WHO WE ARE / ABOUT US (EXTRA)
+  ====================================================== */
+
+  "indegene who we are": [
+    "Indegene Limited is a tech-native life sciences specialist that orchestrates the path from commercialization strategy through execution.",
+    "It is trusted by many top global biopharmaceutical companies for digital, data, and operations-led transformation."
+  ],
+
+  "indegene about us": [
+    "Indegene positions itself as a digital-first life sciences commercialization company with deep domain expertise and technology capabilities.",
+    "It combines consulting, operations, and platforms to help life sciences organizations become more efficient and future ready."
+  ],
+
+  "indegene our story": [
+    "Indegene began in 1998 when its founders came together in Bengaluru to build a technology-led healthcare solutions company.",
+    "Over more than two decades, it has grown through new capabilities and acquisitions into a global life sciences partner."
+  ],
+
+  "indegene history overview": [
+    "Indegene was founded in 1998 and has expanded via acquisitions in medical education, multichannel marketing, real-world evidence, and consulting.",
+    "It now operates as a global company serving life sciences clients across North America, Europe, and Asia-Pacific."
+  ],
+
+  "indegene global presence": [
+    "Indegene has offices and delivery centers in India, the United States, Europe, and the Asia-Pacific region.",
+    "Its global footprint supports around-the-clock delivery for multinational life sciences companies."
+  ],
+
+  "indegene locations worldwide": [
+    "Key Indegene locations include India (headquarters in Bengaluru) along with offices in the US, EU, and APAC.",
+    "These centers host delivery teams for medical, commercial, technology, and analytics work."
+  ],
+
+  "indegene employees 2024": [
+    "As of around FY24, Indegene employs more than 5,000 people globally across medical, scientific, technology, analytics, and operations roles.",
+    "The workforce spans doctors, pharmacists, scientists, engineers, analysts, and commercial specialists."
+  ],
+
+  /* =====================================================
+     INDEGENE – WHAT WE DO / WHO WE SERVE (EXTRA)
+  ====================================================== */
+
+  "indegene what we do": [
+    "Indegene orchestrates life sciences commercialization from strategy through execution.",
+    "It supports clients with omnichannel commercial operations, medical and regulatory services, clinical and evidence support, and technology solutions."
+  ],
+
+  "indegene who we serve": [
+    "Indegene serves biopharmaceutical companies, emerging biotech firms, and medical device and diagnostics manufacturers.",
+    "It helps these clients scale commercial operations, medical affairs, and evidence functions using digital and data-driven approaches."
+  ],
+
+  "indegene biopharmaceutical focus": [
+    "For biopharmaceutical clients, Indegene focuses on modular content operations, omnichannel campaign management, field force support, medical affairs, and evidence generation.",
+    "The aim is to speed up launches and improve brand performance across markets."
+  ],
+
+  "indegene consulting practice": [
+    "Indegene runs an integrated consulting practice that combines strategy, operating model design, and hands-on transformation execution.",
+    "Consulting engagements often focus on omnichannel, data platforms, GenAI adoption, and operating model redesign in life sciences."
+  ],
+
+  "indegene consulting practice 2025": [
+    "By 2025, Indegene strengthened its consulting practice to accelerate life sciences transformation in areas like commercial, medical, and technology modernization.",
+    "Consultants work closely with operations and technology teams so recommendations can be executed at scale."
+  ],
+
+  /* =====================================================
+     INDEGENE – TECHNOLOGY, PLATFORMS & AI (EXTRA)
+  ====================================================== */
+
+  "indegene technology solutions": [
+    "Indegene offers life sciences technology solutions including AI-first platforms, digital engineering, cloud and data services, and integration with existing client systems.",
+    "It helps clients modernize tech stacks, build data lakes, and implement scalable, compliant solutions."
+  ],
+
+  "indegene life sciences technology solutions": [
+    "Indegene’s technology portfolio spans platform services, data and analytics, product engineering, and managed services tailored for life sciences.",
+    "Solutions are designed to meet regulatory requirements while improving speed, scalability, and automation."
+  ],
+
+  "indegene next platforms": [
+    "NEXT is a suite of Indegene technology platforms that apply AI, NLP, and machine vision to life sciences workflows.",
+    "They support content modularization, customer data unification, journey analytics, next-best-action recommendations, and pharmacovigilance automation."
+  ],
+
+  "indegene next technology platforms": [
+    "NEXT technology platforms help automate repetitive processes like content tagging, channel orchestration, and safety case processing.",
+    "They are built to plug into CRM, marketing automation, and safety systems used by life sciences organizations."
+  ],
+
+  "indegene ai use cases": [
+    "Indegene applies AI and ML to use cases such as HCP engagement recommendations, content modularization, PV signal detection support, demand forecasting, and field force optimization.",
+    "It also uses AI for insight generation from unstructured medical and commercial data."
+  ],
+
+  "indegene genai at work": [
+    "Indegene runs an internal initiative often described as GenAI at work to embed generative AI into day-to-day tasks for employees.",
+    "This includes using GenAI for email drafting, document summarization, scientific content assistance, coding support, and internal knowledge retrieval."
+  ],
+
+  "indegene microsoft copilot": [
+    "Indegene uses Microsoft 365 Copilot to improve productivity in Word, Excel, PowerPoint, Outlook, and Teams.",
+    "Copilot helps teams with summarizing documents, generating content drafts, analyzing data, and speeding up proposal and RFP creation while respecting data privacy controls."
+  ],
+
+  "indegene genai client solutions": [
+    "For clients, Indegene uses GenAI to streamline medical and regulatory submissions, accelerate medico-legal review cycles, and create more personalized omnichannel engagement.",
+    "Its GenAI solutions are designed to be compliant, explainable, and aligned with life sciences quality standards."
+  ],
+
+  "indegene technology stack view": [
+    "Indegene typically works on top of established life sciences platforms such as CRMs, marketing automation tools, and safety systems, adding AI, analytics, and custom workflows.",
+    "Its approach is to integrate with client ecosystems rather than replace core systems entirely."
+  ],
+
+  /* =====================================================
+     INDEGENE – FUTURE READY HEALTHCARE & THOUGHT LEADERSHIP (EXTRA)
+  ====================================================== */
+
+  "indegene future ready healthcare details": [
+    "Future ready healthcare is Indegene’s core purpose and brand positioning.",
+    "It means enabling healthcare organizations to respond better to disruption by using digital, data, AI, and agile operating models across commercial, medical, and clinical functions."
+  ],
+
+  "indegene digital summit": [
+    "Indegene hosts Digital Summit events that bring together leaders from pharma, biotech, and technology to discuss future ready healthcare.",
+    "Topics typically include omnichannel engagement, data and AI in life sciences, GenAI, and evolving commercialization models."
+  ],
+
+  "indegene metaverse": [
+    "Indegene has explored how metaverse-style immersive experiences can be used for medical education, HCP engagement, and patient support.",
+    "Its thought leadership highlights both the opportunities and the practical limitations for metaverse adoption in healthcare."
+  ],
+
+  "indegene thought leadership topics": [
+    "Indegene regularly publishes reports and blogs on topics such as GenAI in life sciences, Customer 360, omnichannel best practices, medical affairs transformation, and future ready healthcare.",
+    "These insights are meant to help pharma and biotech leaders benchmark their capabilities and plan transformation roadmaps."
+  ],
+
+  "indegene customer 360": [
+    "Indegene advocates for a Customer 360 or single HCP view to enable smarter omnichannel marketing.",
+    "By unifying data from CRM, marketing, events, and other touchpoints, companies can deliver more personalized and compliant engagement."
+  ],
+
+  "indegene agentforce starter kit": [
+    "Indegene’s Agentforce-style starter kits describe how life sciences companies can safely deploy AI agents for tasks like content query handling, insights generation, and internal support.",
+    "They focus on governance, data quality, security, and clear business use cases for AI agents."
+  ],
+
+  /* =====================================================
+     INDEGENE – AWARDS, RECOGNITION & ANALYST REPORTS (EXTRA)
+  ====================================================== */
+
+  "indegene awards and recognition": [
+    "Indegene has been recognized by industry analysts and media for its role in life sciences digital services and operations.",
+    "Past recognitions include mentions as a good place to work and as a leader in digital commercialization services."
+  ],
+
+  "indegene isg leader 2025": [
+    "In 2025, Indegene was identified as a Leader in ISG Provider Lens evaluations for life sciences digital services in commercial operations.",
+    "This reflects strong capabilities and client feedback in digital commercial transformation."
+  ],
+
+  /* =====================================================
+     INDEGENE – CAREERS, RECRUITMENT & SECURITY (EXTRA)
+  ====================================================== */
+
+  "indegene careers site": [
+    "The official Indegene careers portal lists current openings across functions like medical, safety, analytics, technology, and operations.",
+    "The site emphasizes that Indegene is a place to work on challenging problems at the intersection of healthcare and technology."
+  ],
+
+  "indegene recruitment fraud warning": [
+    "Indegene warns candidates about recruitment fraud and clearly states that it does not charge any fees for job offers.",
+    "Suspicious emails are to be reported to the official incident response mailbox, and candidates are advised not to pay money or share sensitive data with unofficial contacts."
+  ],
+
+  "indegene security and privacy": [
+    "Indegene highlights data security, patient privacy, and regulatory compliance as core to its solutions.",
+    "This is especially important when working with GenAI, customer data, safety information, and regulated medical content."
+  ],
+
+  /* =====================================================
+     INDEGENE – CONTACT & GENERAL INFO (EXTRA)
+  ====================================================== */
+
+  "indegene contact": [
+    "Indegene’s official website provides contact forms and regional office details for business inquiries, partnerships, and media queries.",
+    "Clients and prospects can reach out via the contact page for commercial, medical, or technology-related discussions."
+  ],
+
+  "indegene tagline summary": [
+    "A simple way to describe Indegene is: a digital-first, tech-native life sciences commercialization partner.",
+    "It helps make pharma, biotech, and medical device companies more data-driven, efficient, and future ready."
+  ],
+
+  /* =====================================================
+     EXISTING SKYSECURE + MEDICAL CONTENT
+  ====================================================== */
 
   skysecure: [
     "Skysecure: 5+ years committed to enhancing digital security & resilience globally.",
@@ -50,7 +554,7 @@ const CONTEXT_MAP: Record<string, string[]> = {
 
   "breast cancer": [
     "Breast cancer: Malignant proliferation of epithelial cells, classified by TNM staging and ER/PR/HER2 status.",
-    "Signs: Lump, nipple inversion, peau d’orange, discharge, pain, axillary nodes.",
+    "Signs: Lump, nipple inversion, peau dorange, discharge, pain, axillary nodes.",
     "Risk Factors: Age, family history, hormones, radiation, lifestyle.",
     "Treatment: Surgery, radiation, chemotherapy, hormone therapy, targeted agents.",
     "Reference: 'Oncology_Breast_cancer__E_Module_V1'."
@@ -153,7 +657,7 @@ const CONTEXT_MAP: Record<string, string[]> = {
   ],
 
   "oncology sales case study": [
-    "Indegene drove incremental sales for breast cancer oncology drug via omnichannel HCP targeting.",
+    "Indegene drove incremental sales for a breast cancer oncology drug via omnichannel HCP targeting.",
     "Solution: Advanced segmentation (13,300 HCPs), repurposed content, multi-channel engagement.",
     "Outcome: $14.2M incremental sales, 936 prescribers activated. Document: 'Oncology_Driving incremental sales for oncology drug _Case study 3_V1'."
   ],
@@ -247,7 +751,7 @@ const handleInternalQueries = (query: string): string | null => {
   ) {
     return `The current time is ${now.toLocaleTimeString([], {
       hour: "2-digit",
-      minute: "2-digit",
+      minute: "2-digit"
     })}.`;
   }
 
@@ -262,7 +766,7 @@ const handleInternalQueries = (query: string): string | null => {
       weekday: "long",
       year: "numeric",
       month: "long",
-      day: "numeric",
+      day: "numeric"
     })}.`;
   }
 
@@ -309,12 +813,24 @@ const handleGeneralQueries = (query: string): string | null => {
     text.includes("how can you help") ||
     text.includes("what do you do")
   ) {
-    return "I can:\n• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n• Share quick overviews from internal knowledge snippets.\n• Tell you the current time, date, and day.\n\nTry asking: \"Tell me about breast cancer\" or \"Explain regulatory intelligence\".";
+    return (
+      "I can:\n" +
+      "• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n" +
+      "• Share quick overviews from internal knowledge snippets.\n" +
+      "• Tell you the current time, date, and day.\n\n" +
+      'Try asking: "Tell me about breast cancer" or "Explain regulatory intelligence".'
+    );
   }
 
   // Help
   if (text === "help" || text.startsWith("help ")) {
-    return "You can ask me things like:\n• \"What is Indegene?\"\n• \"Tell me about regulatory intelligence\"\n• \"What is breast cancer?\"\n• \"What is the time?\" or \"What's today's date?\"";
+    return (
+      "You can ask me things like:\n" +
+      '• "What is Indegene?"\n' +
+      '• "Tell me about regulatory intelligence"\n' +
+      '• "What is breast cancer?"\n' +
+      '• "What is the time?" or "What\'s today\'s date?"'
+    );
   }
 
   // How are you
@@ -326,7 +842,7 @@ const handleGeneralQueries = (query: string): string | null => {
 };
 
 /* ============================================================
-   CONTEXT SEARCH LOGIC – more robust / semantic-ish
+   CONTEXT SEARCH LOGIC – boosted for employees/founder/CEO/HQ
 ============================================================ */
 const normalize = (text: string): string =>
   text
@@ -338,6 +854,31 @@ const normalize = (text: string): string =>
 const getAnswerFromContext = (query: string): string => {
   const normQuery = normalize(query);
 
+  // Intent detection
+  const employeeIntent =
+    normQuery.includes("employees") ||
+    normQuery.includes("employee") ||
+    normQuery.includes("headcount") ||
+    normQuery.includes("people") ||
+    normQuery.includes("staff");
+
+  const founderIntent =
+    normQuery.includes("founder") ||
+    normQuery.includes("founders") ||
+    normQuery.includes("who founded") ||
+    normQuery.includes("founded indegene");
+
+  const ceoIntent =
+    normQuery.includes("ceo") ||
+    normQuery.includes("chief executive");
+
+  const hqIntent =
+    normQuery.includes("headquarters") ||
+    normQuery.includes("head office") ||
+    normQuery.includes("hq") ||
+    normQuery.includes("where is indegene") ||
+    normQuery.includes("location");
+
   let bestKey: string | null = null;
   let bestScore = 0;
 
@@ -345,20 +886,56 @@ const getAnswerFromContext = (query: string): string => {
     const normKey = normalize(key);
     if (!normKey) return;
 
-    let score = 0;
+    const keyTokens = new Set(normKey.split(" "));
+    const queryTokens = new Set(normQuery.split(" "));
 
-    // Strong match if one contains the other
+    // Base: token overlap
+    let overlap = 0;
+    keyTokens.forEach((t) => {
+      if (queryTokens.has(t)) overlap++;
+    });
+
+    let score = overlap;
+
+    // Boost if phrases contain each other (more specific keys win)
     if (normQuery.includes(normKey) || normKey.includes(normQuery)) {
-      score = normKey.length; // longer key → higher score
-    } else {
-      // Softer match: token overlap
-      const keyTokens = new Set(normKey.split(" "));
-      const queryTokens = new Set(normQuery.split(" "));
-      let overlap = 0;
-      keyTokens.forEach((t) => {
-        if (queryTokens.has(t)) overlap++;
-      });
-      score = overlap;
+      score += keyTokens.size;
+    }
+
+    // Domain-specific boosts
+
+    // Employees / headcount
+    if (
+      employeeIntent &&
+      (normKey.includes("employees") ||
+        normKey.includes("employee") ||
+        normKey.includes("headcount") ||
+        normKey.includes("people"))
+    ) {
+      score += 5;
+    }
+
+    // Founders
+    if (
+      founderIntent &&
+      (normKey.includes("founder") || normKey.includes("founded"))
+    ) {
+      score += 5;
+    }
+
+    // CEO
+    if (ceoIntent && normKey.includes("ceo")) {
+      score += 5;
+    }
+
+    // Headquarters / location
+    if (
+      hqIntent &&
+      (normKey.includes("headquarters") ||
+        normKey.includes("india") ||
+        normKey.includes("locations"))
+    ) {
+      score += 3;
     }
 
     if (score > bestScore) {
@@ -372,11 +949,9 @@ const getAnswerFromContext = (query: string): string => {
     const extraPart = normQuery.replace(normKey, "").trim();
     const entries = CONTEXT_MAP[bestKey];
 
-    // If user asked something *after* the keyword, try to filter lines
+    // If user asked something extra after the keyword, try to filter lines
     if (extraPart) {
-      const matched = entries.filter((s) =>
-        normalize(s).includes(extraPart)
-      );
+      const matched = entries.filter((s) => normalize(s).includes(extraPart));
       if (matched.length) return matched.join(" ");
     }
 
@@ -450,7 +1025,7 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
           abstract: item.Abstract || "",
           fileType: fileExt,
           serverRelativeUrl: item.FileRef || "",
-          fileRef: item.FileRef || "",
+          fileRef: item.FileRef || ""
         };
       });
 

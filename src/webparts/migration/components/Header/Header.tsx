@@ -75,14 +75,14 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
             />
           </div>
 
-          {/* DROPDOWN PANEL */}
-          {isOpen && (
+          {/* DROPDOWN PANEL - Only show when user types */}
+          {isOpen && searchText.trim().length > 0 && (
   <div className={styles.dropdownPanel}>
     <FilterDropdown
       searchText={searchText}
       spHttpClient={props.context.spHttpClient}
       siteUrl={props.context.pageContext.web.absoluteUrl}
-      
+      context={props.context}
     />
   </div>
 )}

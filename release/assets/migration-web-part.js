@@ -233,34 +233,48 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".workspace_4ba734b2{align-items:start;display:grid;gap:18px;grid-template-columns:200px 1fr 160px;margin:0 auto;max-width:1300px;padding:18px;width:100%}.wrapper_4ba734b2{background:#fff;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:10px;padding:6px;width:100%}.railHeader_4ba734b2{background:#0b4b93;border-radius:6px;color:#fff;font-size:14px;font-weight:700;padding:5px 10px;text-align:center}.container_4ba734b2{display:flex;flex-direction:column;gap:8px}.parentBtn_4ba734b2{align-items:center;background:#f3f6fa;border:1px solid #d0d3d9;border-radius:8px;color:#1b2a3a;display:flex;font-size:13px;font-weight:600;justify-content:space-between;padding:5px 10px;transition:background .2s ease;width:100%}.parentBtn_4ba734b2:hover{background:#e0e4ea}.rootBtnOpen_4ba734b2{background:#d6dbe3}.chevron_4ba734b2{color:#1b2a3a;font-size:12px;font-weight:700}.childList_4ba734b2{display:flex;flex-direction:column;gap:6px;padding-top:6px}.childBtn_4ba734b2{background:#fff;border:1px solid #d0d3d9;border-radius:6px;color:#1b2a3a;font-weight:500;padding:7px 10px;text-align:left;transition:background .2s ease}.childBtn_4ba734b2:hover{background:#f0f4fa}.main_4ba734b2{display:flex;flex-direction:column;gap:16px;width:100%}.tabs_4ba734b2{display:flex;gap:10px}.tab_4ba734b2{background:#d0d3d9;border:none;border-radius:6px;color:#1b2a3a;cursor:pointer;font-size:14px;font-weight:700;min-width:130px;padding:8px 12px;text-align:center;transition:background .2s ease}.tab_4ba734b2:hover{background:#b8bcc2}.active_4ba734b2{background:#0b4b93;color:#fff}.results_4ba734b2{background:#fff;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08);padding:14px}.grid_4ba734b2{align-items:start;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}.card_4ba734b2{background:#fff;border:1px solid #d0d3d9;border-radius:6px;padding:6px 10px 10px;transition:box-shadow .2s ease}.card_4ba734b2:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}.cardTitle_4ba734b2{color:#1b2a3a;font-size:14px;font-weight:700;margin-bottom:6px}.cardRow_4ba734b2{display:grid;gap:6px;grid-template-columns:90px 1fr;margin:3px 0}.cardLabel_4ba734b2{color:#444b55;font-size:13px;font-weight:600}.cardValue_4ba734b2{color:#1b2a3a;font-size:13px}.rightRail_4ba734b2{background:#0b4b93;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);color:#fff;min-height:260px;padding:12px;width:80%}.quickLinksTitle_4ba734b2{font-size:15px;font-weight:800;margin-bottom:10px;text-align:center}.quickLinksList_4ba734b2{list-style:none;margin:0;padding:0}.quickLinksList_4ba734b2 li{font-size:13px;font-weight:600;margin-bottom:8px}.cardLink_4ba734b2{cursor:pointer;text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWx0ZXJEcm9wZG93bi9GaWx0ZXJEcm9wZG93bi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxvQkFRRSxpQkFBQSxDQVBBLFlBQUEsQ0FFQSxRQUFBLENBREEscUNBQUEsQ0FLQSxhQUFBLENBREEsZ0JBQUEsQ0FGQSxZQUFBLENBQ0EsVUFHQSxDQUlGLGtCQUlFLGVBQUEsQ0FDQSxrQkFBQSxDQUVBLG9DQUFBLENBTkEsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdBLFdBQUEsQ0FFQSxVQUFBLENBR0YscUJBQ0Usa0JBQUEsQ0FJQSxpQkFBQSxDQUhBLFVBQUEsQ0FFQSxjQUFBLENBREEsZUFBQSxDQUdBLGdCQUFBLENBQ0EsaUJBQUEsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBR0Ysb0JBV0Usa0JBQUEsQ0FWQSxrQkFBQSxDQUNBLHdCQUFBLENBQ0EsaUJBQUEsQ0FJQSxhQUFBLENBRUEsWUFBQSxDQUhBLGNBQUEsQ0FEQSxlQUFBLENBS0EsNkJBQUEsQ0FOQSxnQkFBQSxDQVFBLDhCQUFBLENBSkEsVUFJQSxDQUdGLDBCQUNFLGtCQUFBLENBR0Ysc0JBQ0Usa0JBQUEsQ0FHRixrQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBQ0EsZUFBQSxDQUdGLG1CQUNFLGVBQUEsQ0FDQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsYUFBQSxDQURBLGVBQUEsQ0FGQSxnQkFBQSxDQUNBLGVBQUEsQ0FHQSw4QkFBQSxDQUdGLHlCQUNFLGtCQUFBLENBSUYsZUFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxRQUFBLENBQ0EsVUFBQSxDQUlGLGVBQ0UsWUFBQSxDQUNBLFFBQUEsQ0FHRixjQUdFLGtCQUFBLENBQ0EsV0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUdBLGNBQUEsQ0FEQSxjQUFBLENBREEsZUFBQSxDQU5BLGVBQUEsQ0FDQSxnQkFBQSxDQVFBLGlCQUFBLENBQ0EsOEJBQUEsQ0FHRixvQkFDRSxrQkFBQSxDQUdGLGlCQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlGLGtCQUNFLGVBQUEsQ0FDQSxpQkFBQSxDQUVBLHFDQUFBLENBREEsWUFDQSxDQUdGLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsUUFBQSxDQURBLHlEQUVBLENBR0YsZUFJRSxlQUFBLENBSEEsd0JBQUEsQ0FDQSxpQkFBQSxDQUNBLHFCQUFBLENBRUEsOEJBQUEsQ0FHRixxQkFDRSxtQ0FBQSxDQUdGLG9CQUlFLGFBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUNBLENBR0Ysa0JBQ0UsWUFBQSxDQUVBLE9BQUEsQ0FEQSw4QkFBQSxDQUVBLFlBQUEsQ0FHRixvQkFDRSxhQUFBLENBRUEsY0FBQSxDQURBLGVBQ0EsQ0FHRixvQkFDRSxhQUFBLENBQ0EsY0FBQSxDQUlGLG9CQUNFLGtCQUFBLENBRUEsa0JBQUEsQ0FJQSxvQ0FBQSxDQUxBLFVBQUEsQ0FHQSxnQkFBQSxDQURBLFlBQUEsQ0FFQSxTQUNBLENBR0YsMEJBQ0UsY0FBQSxDQUNBLGVBQUEsQ0FDQSxrQkFBQSxDQUNBLGlCQUFBLENBR0YseUJBQ0UsZUFBQSxDQUVBLFFBQUEsQ0FEQSxTQUNBLENBR0YsNEJBR0UsY0FBQSxDQURBLGVBQUEsQ0FEQSxpQkFFQSxDQUVGLG1CQUVFLGNBQUEsQ0FEQSx5QkFDQSIsImZpbGUiOiJGaWx0ZXJEcm9wZG93bi5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".workspace_c846a755{align-items:start;display:grid;gap:18px;grid-template-columns:200px 1fr 160px;margin:0 auto;max-width:1300px;padding:18px;width:100%}.wrapper_c846a755{background:#fff;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:10px;padding:6px;width:100%}.railHeader_c846a755{background:#0b4b93;border-radius:6px;color:#fff;font-size:14px;font-weight:700;padding:5px 10px;text-align:center}.container_c846a755{display:flex;flex-direction:column;gap:8px}.parentBtn_c846a755{align-items:center;background:#f3f6fa;border:1px solid #d0d3d9;border-radius:8px;color:#1b2a3a;display:flex;font-size:13px;font-weight:600;justify-content:space-between;padding:5px 10px;transition:background .2s ease;width:100%}.parentBtn_c846a755:hover{background:#e0e4ea}.rootBtnOpen_c846a755{background:#d6dbe3}.chevron_c846a755{color:#1b2a3a;font-size:12px;font-weight:700}.childList_c846a755{display:flex;flex-direction:column;gap:6px;padding-top:6px}.childBtn_c846a755{background:#fff;border:1px solid #d0d3d9;border-radius:6px;color:#1b2a3a;font-weight:500;padding:7px 10px;text-align:left;transition:background .2s ease}.childBtn_c846a755:hover{background:#f0f4fa}.main_c846a755{display:flex;flex-direction:column;gap:16px;width:100%}.tabs_c846a755{display:flex;gap:10px}.tab_c846a755{background:#d0d3d9;border:none;border-radius:6px;color:#1b2a3a;cursor:pointer;font-size:14px;font-weight:700;min-width:130px;padding:8px 12px;text-align:center;transition:background .2s ease}.tab_c846a755:hover{background:#b8bcc2}.active_c846a755{background:#0b4b93;color:#fff}.results_c846a755{background:#fff;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08);padding:14px}.grid_c846a755{align-items:start;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}.card_c846a755{background:#fff;border:1px solid #d0d3d9;border-radius:6px;padding:6px 10px 10px;transition:box-shadow .2s ease}.card_c846a755:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}.cardTitle_c846a755{color:#1b2a3a;font-size:14px;font-weight:700;margin-bottom:6px}.cardRow_c846a755{display:grid;gap:6px;grid-template-columns:90px 1fr;margin:3px 0}.cardLabel_c846a755{color:#444b55;font-size:13px;font-weight:600}.cardValue_c846a755{color:#1b2a3a;font-size:13px}.rightRail_c846a755{background:#0b4b93;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);color:#fff;min-height:260px;padding:12px;width:80%}.quickLinksTitle_c846a755{font-size:15px;font-weight:800;margin-bottom:10px;text-align:center}.quickLinksList_c846a755{list-style:none;margin:0;padding:0}.quickLinksList_c846a755 li{font-size:13px;font-weight:600;margin-bottom:8px}.cardLink_c846a755{cursor:pointer;text-decoration:underline}.tile_c846a755{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_c846a755{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_c846a755{font-size:24px;line-height:1}.fileType_c846a755{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_c846a755{color:#333;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_c846a755,.tileTitle_c846a755{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_c846a755{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileMeta_c846a755{color:#555;display:flex;font-size:12px;gap:4px;margin-bottom:4px}.metaLabel_c846a755{font-weight:600}.metaValue_c846a755{font-weight:400}.tileActions_c846a755{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_c846a755{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_c846a755 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_c846a755:hover:not(:disabled){background-color:#1565c0}.viewButton_c846a755:active:not(:disabled){background-color:#0d47a1}.viewButton_c846a755:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_c846a755{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_c846a755 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_c846a755:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_c846a755:active:not(:disabled){background-color:#e0e0e0}.downloadButton_c846a755:disabled{cursor:not-allowed;opacity:.4}.detailModal_c846a755{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.scrollContainer_c846a755{max-height:450px;overflow-y:auto;padding-right:5px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWx0ZXJEcm9wZG93bi9GaWx0ZXJEcm9wZG93bi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxvQkFRRSxpQkFBQSxDQVBBLFlBQUEsQ0FFQSxRQUFBLENBREEscUNBQUEsQ0FLQSxhQUFBLENBREEsZ0JBQUEsQ0FGQSxZQUFBLENBQ0EsVUFHQSxDQUlGLGtCQUlFLGVBQUEsQ0FDQSxrQkFBQSxDQUVBLG9DQUFBLENBTkEsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdBLFdBQUEsQ0FFQSxVQUFBLENBR0YscUJBQ0Usa0JBQUEsQ0FJQSxpQkFBQSxDQUhBLFVBQUEsQ0FFQSxjQUFBLENBREEsZUFBQSxDQUdBLGdCQUFBLENBQ0EsaUJBQUEsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBR0Ysb0JBV0Usa0JBQUEsQ0FWQSxrQkFBQSxDQUNBLHdCQUFBLENBQ0EsaUJBQUEsQ0FJQSxhQUFBLENBRUEsWUFBQSxDQUhBLGNBQUEsQ0FEQSxlQUFBLENBS0EsNkJBQUEsQ0FOQSxnQkFBQSxDQVFBLDhCQUFBLENBSkEsVUFJQSxDQUdGLDBCQUNFLGtCQUFBLENBR0Ysc0JBQ0Usa0JBQUEsQ0FHRixrQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBQ0EsZUFBQSxDQUdGLG1CQUNFLGVBQUEsQ0FDQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsYUFBQSxDQURBLGVBQUEsQ0FGQSxnQkFBQSxDQUNBLGVBQUEsQ0FHQSw4QkFBQSxDQUdGLHlCQUNFLGtCQUFBLENBSUYsZUFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxRQUFBLENBQ0EsVUFBQSxDQUlGLGVBQ0UsWUFBQSxDQUNBLFFBQUEsQ0FHRixjQUdFLGtCQUFBLENBQ0EsV0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUdBLGNBQUEsQ0FEQSxjQUFBLENBREEsZUFBQSxDQU5BLGVBQUEsQ0FDQSxnQkFBQSxDQVFBLGlCQUFBLENBQ0EsOEJBQUEsQ0FHRixvQkFDRSxrQkFBQSxDQUdGLGlCQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlGLGtCQUNFLGVBQUEsQ0FDQSxpQkFBQSxDQUVBLHFDQUFBLENBREEsWUFDQSxDQUdGLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsUUFBQSxDQURBLHlEQUVBLENBR0YsZUFJRSxlQUFBLENBSEEsd0JBQUEsQ0FDQSxpQkFBQSxDQUNBLHFCQUFBLENBRUEsOEJBQUEsQ0FHRixxQkFDRSxtQ0FBQSxDQUdGLG9CQUlFLGFBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUNBLENBR0Ysa0JBQ0UsWUFBQSxDQUVBLE9BQUEsQ0FEQSw4QkFBQSxDQUVBLFlBQUEsQ0FHRixvQkFDRSxhQUFBLENBRUEsY0FBQSxDQURBLGVBQ0EsQ0FHRixvQkFDRSxhQUFBLENBQ0EsY0FBQSxDQUlGLG9CQUNFLGtCQUFBLENBRUEsa0JBQUEsQ0FJQSxvQ0FBQSxDQUxBLFVBQUEsQ0FHQSxnQkFBQSxDQURBLFlBQUEsQ0FFQSxTQUNBLENBR0YsMEJBQ0UsY0FBQSxDQUNBLGVBQUEsQ0FDQSxrQkFBQSxDQUNBLGlCQUFBLENBR0YseUJBQ0UsZUFBQSxDQUVBLFFBQUEsQ0FEQSxTQUNBLENBR0YsNEJBR0UsY0FBQSxDQURBLGVBQUEsQ0FEQSxpQkFFQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSx5QkFDQSxDQVVGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUlGLG1CQUdFLFVBQUEsQ0FGQSxZQUFBLENBQ0EsY0FBQSxDQUVBLE9BQUEsQ0FDQSxpQkFBQSxDQUdGLG9CQUNFLGVBQUEsQ0FHRixvQkFDRSxlQUFBLENBSUYsc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBR0osc0JBT0Usd0JBQUEsQ0FGQSxRQUFBLENBS0EsWUFBQSxDQVBBLE1BQUEsQ0FLQSxlQUFBLENBUEEsY0FBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBT0EsV0FBQSxDQUhBLGFBSUEsQ0FFRiwwQkFDRSxnQkFBQSxDQUNBLGVBQUEsQ0FDQSxpQkFBQSIsImZpbGUiOiJGaWx0ZXJEcm9wZG93bi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  workspace_4ba734b2: "workspace_4ba734b2",
-  wrapper_4ba734b2: "wrapper_4ba734b2",
-  railHeader_4ba734b2: "railHeader_4ba734b2",
-  container_4ba734b2: "container_4ba734b2",
-  parentBtn_4ba734b2: "parentBtn_4ba734b2",
-  rootBtnOpen_4ba734b2: "rootBtnOpen_4ba734b2",
-  chevron_4ba734b2: "chevron_4ba734b2",
-  childList_4ba734b2: "childList_4ba734b2",
-  childBtn_4ba734b2: "childBtn_4ba734b2",
-  main_4ba734b2: "main_4ba734b2",
-  tabs_4ba734b2: "tabs_4ba734b2",
-  tab_4ba734b2: "tab_4ba734b2",
-  active_4ba734b2: "active_4ba734b2",
-  results_4ba734b2: "results_4ba734b2",
-  grid_4ba734b2: "grid_4ba734b2",
-  card_4ba734b2: "card_4ba734b2",
-  cardTitle_4ba734b2: "cardTitle_4ba734b2",
-  cardRow_4ba734b2: "cardRow_4ba734b2",
-  cardLabel_4ba734b2: "cardLabel_4ba734b2",
-  cardValue_4ba734b2: "cardValue_4ba734b2",
-  rightRail_4ba734b2: "rightRail_4ba734b2",
-  quickLinksTitle_4ba734b2: "quickLinksTitle_4ba734b2",
-  quickLinksList_4ba734b2: "quickLinksList_4ba734b2",
-  cardLink_4ba734b2: "cardLink_4ba734b2"
+  workspace_c846a755: "workspace_c846a755",
+  wrapper_c846a755: "wrapper_c846a755",
+  railHeader_c846a755: "railHeader_c846a755",
+  container_c846a755: "container_c846a755",
+  parentBtn_c846a755: "parentBtn_c846a755",
+  rootBtnOpen_c846a755: "rootBtnOpen_c846a755",
+  chevron_c846a755: "chevron_c846a755",
+  childList_c846a755: "childList_c846a755",
+  childBtn_c846a755: "childBtn_c846a755",
+  main_c846a755: "main_c846a755",
+  tabs_c846a755: "tabs_c846a755",
+  tab_c846a755: "tab_c846a755",
+  active_c846a755: "active_c846a755",
+  results_c846a755: "results_c846a755",
+  grid_c846a755: "grid_c846a755",
+  card_c846a755: "card_c846a755",
+  cardTitle_c846a755: "cardTitle_c846a755",
+  cardRow_c846a755: "cardRow_c846a755",
+  cardLabel_c846a755: "cardLabel_c846a755",
+  cardValue_c846a755: "cardValue_c846a755",
+  rightRail_c846a755: "rightRail_c846a755",
+  quickLinksTitle_c846a755: "quickLinksTitle_c846a755",
+  quickLinksList_c846a755: "quickLinksList_c846a755",
+  cardLink_c846a755: "cardLink_c846a755",
+  tile_c846a755: "tile_c846a755",
+  tileHeader_c846a755: "tileHeader_c846a755",
+  fileTypeIcon_c846a755: "fileTypeIcon_c846a755",
+  fileType_c846a755: "fileType_c846a755",
+  tileTitle_c846a755: "tileTitle_c846a755",
+  tileAbstract_c846a755: "tileAbstract_c846a755",
+  tileMeta_c846a755: "tileMeta_c846a755",
+  metaLabel_c846a755: "metaLabel_c846a755",
+  metaValue_c846a755: "metaValue_c846a755",
+  tileActions_c846a755: "tileActions_c846a755",
+  viewButton_c846a755: "viewButton_c846a755",
+  downloadButton_c846a755: "downloadButton_c846a755",
+  detailModal_c846a755: "detailModal_c846a755",
+  scrollContainer_c846a755: "scrollContainer_c846a755"
 });
 
 
@@ -448,45 +462,45 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_a79c1e39{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_a79c1e39{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_a79c1e39{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.promptText_a79c1e39{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_a79c1e39{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_a79c1e39{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_a79c1e39:-ms-input-placeholder{color:#999}.questionInput_a79c1e39::placeholder{color:#999}.questionInput_a79c1e39:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_a79c1e39{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_a79c1e39:hover{transform:scale(1.08)}.chatWindow_a79c1e39{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_a79c1e39{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_a79c1e39{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_a79c1e39{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_a79c1e39{justify-content:flex-end}.messageContainerBot_a79c1e39{justify-content:flex-start}.messageAvatar_a79c1e39{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_a79c1e39{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_a79c1e39,.userMsg_a79c1e39{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_a79c1e39{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_a79c1e39.thinking_a79c1e39{animation:pulse_a79c1e39 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_a79c1e39{0%,to{opacity:.7}50%{opacity:1}}.inputRow_a79c1e39{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_a79c1e39{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_a79c1e39:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_a79c1e39{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_a79c1e39:hover{background:#00509e}.sendButton_a79c1e39:active{transform:scale(.96)}.closeButton_a79c1e39{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_a79c1e39{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_a79c1e39{font-size:24px;line-height:1}.fileType_a79c1e39{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_a79c1e39{color:#333;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_a79c1e39,.tileTitle_a79c1e39{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_a79c1e39{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_a79c1e39{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_a79c1e39{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_a79c1e39 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_a79c1e39:hover:not(:disabled){background-color:#1565c0}.viewButton_a79c1e39:active:not(:disabled){background-color:#0d47a1}.viewButton_a79c1e39:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_a79c1e39{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_a79c1e39 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_a79c1e39:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_a79c1e39:active:not(:disabled){background-color:#e0e0e0}.downloadButton_a79c1e39:disabled{cursor:not-allowed;opacity:.4}.loading_a79c1e39,.noDocuments_a79c1e39{color:#fff;font-family:Inter,sans-serif;font-size:16px;padding:40px;text-align:center}.detailModal_a79c1e39{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}.chatLauncher_a79c1e39{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_a79c1e39{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_a79c1e39:hover{transform:scale(1.1)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHlCQUNFLFlBQUEsQ0FLQSxnQkFBQSxDQUpBLFFBQUEsQ0FHQSxzQkFBQSxDQURBLGFBQUEsQ0FEQSxnQkFBQSxDQUlBLFVBQUEsQ0FHRixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSxjQUFBLENBREEsV0FBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxDQUNBLHFCQUFBLENBRkEsWUFBQSxDQUdBLGVBQUEsQ0FQQSxjQUFBLENBRUEsVUFBQSxDQVVBLDhCQUFBLENBVEEsV0FBQSxDQVFBLFlBQ0EsQ0FHRixxQkFFRSxrQkFBQSxDQU1BLGtCQUFBLENBQ0EsbUNBQUEsQ0FGQSxVQUFBLENBTkEsWUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsNkJBQUEsQ0FDQSxpQkFLQSxDQUdGLG1CQU9FLGtCQUFBLENBSEEsWUFBQSxDQUhBLE1BQUEsQ0FJQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxlQUFBLENBREEsWUFLQSxDQUdGLDJCQUVFLHNCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLDhCQUNFLDBCQUFBLENBR0Ysd0JBR0UsaUJBQUEsQ0FHQSxtQ0FBQSxDQURBLGFBQUEsQ0FIQSxXQUFBLENBRUEsZ0JBQUEsQ0FIQSxVQUtBLENBR0Ysa0JBSUUsa0JBQUEsQ0FJQSxtQ0FBQSxDQUhBLFVBSUEsQ0FHRixtQ0FIRSxvQkFBQSxDQU5BLGtCQUFBLENBR0EsZ0JBQUEsQ0FDQSxlQUFBLENBTkEsYUFBQSxDQUNBLGlCQW9CQSxDQVZGLGlCQUlFLGVBQUEsQ0FLQSx3QkFBQSxDQUNBLG9DQUFBLENBTEEsVUFLQSxDQUdGLG1DQUlFLHNDQUFBLENBSEEsa0JBQUEsQ0FFQSw2QkFBQSxDQURBLFVBRUEsQ0FHRiwwQkFDRSxNQUFXLFVBQUEsQ0FDWCxJQUFNLFNBQUEsQ0FBQSxDQUdSLG1CQUVFLGtCQUFBLENBR0EsZUFBQSxDQUNBLHlCQUFBLENBTEEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxZQUVBLENBR0Ysb0JBR0Usd0JBQUEsQ0FDQSxrQkFBQSxDQUhBLE1BQUEsQ0FLQSxjQUFBLENBREEsU0FBQSxDQUhBLGlCQUFBLENBS0EsMENBQUEsQ0FHRiwwQkFDRSxvQkFBQSxDQUNBLHdDQUFBLENBR0YscUJBT0Usa0JBQUEsQ0FKQSxXQUFBLENBREEsa0JBQUEsQ0FNQSxVQUFBLENBRkEsY0FBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSx1Q0FBQSxDQUdGLDJCQUFvQixrQkFBQSxDQUNwQiw0QkFBcUIsb0JBQUEsQ0FFckIsc0JBQ0UsY0FBQSxDQUNBLFdBQUEsQ0FJQSxVQUFBLENBQ0EsY0FBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsVUFBQSxDQUxBLFNBQUEsQ0FNQSxzQkFBQSxDQUVGLHFCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FDQSxrQkFBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsbUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRixvQkFHRSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUtBLGtCQUFBLENBR0YsMkNBUEUsNEJBQUEsQ0FFQSxlQUFBLENBQ0Esc0JBa0JBLENBZEYsdUJBUUUsb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FSQSxVQUFBLENBS0EsbUJBQUEsQ0FOQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQUZBLHFCQUVBLENBR0Ysc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQU9FLHdCQUFBLENBRkEsUUFBQSxDQUZBLE1BQUEsQ0FLQSxlQUFBLENBUEEsY0FBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBSUEsYUFFQSxDQUdGLHVCQUVFLFdBQUEsQ0FHQSxjQUFBLENBSkEsY0FBQSxDQUVBLFVBQUEsQ0FDQSxZQUNBLENBR0Ysc0JBR0UsaUJBQUEsQ0FEQSxXQUFBLENBRUEsb0NBQUEsQ0FIQSxVQUdBLENBR0YsNEJBQ0Usb0JBQUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_5b7924d4{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_5b7924d4{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_5b7924d4{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.promptText_5b7924d4{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_5b7924d4{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_5b7924d4{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_5b7924d4:-ms-input-placeholder{color:#999}.questionInput_5b7924d4::placeholder{color:#999}.questionInput_5b7924d4:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_5b7924d4{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_5b7924d4:hover{transform:scale(1.08)}.chatWindow_5b7924d4{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_5b7924d4{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_5b7924d4{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_5b7924d4{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_5b7924d4{justify-content:flex-end}.messageContainerBot_5b7924d4{justify-content:flex-start}.messageAvatar_5b7924d4{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_5b7924d4{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_5b7924d4,.userMsg_5b7924d4{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_5b7924d4{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_5b7924d4.thinking_5b7924d4{animation:pulse_5b7924d4 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_5b7924d4{0%,to{opacity:.7}50%{opacity:1}}.inputRow_5b7924d4{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_5b7924d4{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_5b7924d4:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_5b7924d4{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_5b7924d4:hover{background:#00509e}.sendButton_5b7924d4:active{transform:scale(.96)}.closeButton_5b7924d4{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_5b7924d4{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_5b7924d4{font-size:24px;line-height:1}.fileType_5b7924d4{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_5b7924d4{color:#333;font-size:18px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_5b7924d4,.tileTitle_5b7924d4{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_5b7924d4{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_5b7924d4{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_5b7924d4{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_5b7924d4 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_5b7924d4:hover:not(:disabled){background-color:#1565c0}.viewButton_5b7924d4:active:not(:disabled){background-color:#0d47a1}.viewButton_5b7924d4:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_5b7924d4{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_5b7924d4 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_5b7924d4:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_5b7924d4:active:not(:disabled){background-color:#e0e0e0}.downloadButton_5b7924d4:disabled{cursor:not-allowed;opacity:.4}.loading_5b7924d4,.noDocuments_5b7924d4{color:#fff;font-family:Inter,sans-serif;font-size:16px;padding:40px;text-align:center}.detailModal_5b7924d4{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.chatLauncher_5b7924d4{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_5b7924d4{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_5b7924d4:hover{transform:scale(1.1)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHlCQUNFLFlBQUEsQ0FLQSxnQkFBQSxDQUpBLFFBQUEsQ0FHQSxzQkFBQSxDQURBLGFBQUEsQ0FEQSxnQkFBQSxDQUlBLFVBQUEsQ0FHRixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSxjQUFBLENBREEsV0FBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxDQUNBLHFCQUFBLENBRkEsWUFBQSxDQUdBLGVBQUEsQ0FQQSxjQUFBLENBRUEsVUFBQSxDQVVBLDhCQUFBLENBVEEsV0FBQSxDQVFBLFlBQ0EsQ0FHRixxQkFFRSxrQkFBQSxDQU1BLGtCQUFBLENBQ0EsbUNBQUEsQ0FGQSxVQUFBLENBTkEsWUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsNkJBQUEsQ0FDQSxpQkFLQSxDQUdGLG1CQU9FLGtCQUFBLENBSEEsWUFBQSxDQUhBLE1BQUEsQ0FJQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxlQUFBLENBREEsWUFLQSxDQUdGLDJCQUVFLHNCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLDhCQUNFLDBCQUFBLENBR0Ysd0JBR0UsaUJBQUEsQ0FHQSxtQ0FBQSxDQURBLGFBQUEsQ0FIQSxXQUFBLENBRUEsZ0JBQUEsQ0FIQSxVQUtBLENBR0Ysa0JBSUUsa0JBQUEsQ0FJQSxtQ0FBQSxDQUhBLFVBSUEsQ0FHRixtQ0FIRSxvQkFBQSxDQU5BLGtCQUFBLENBR0EsZ0JBQUEsQ0FDQSxlQUFBLENBTkEsYUFBQSxDQUNBLGlCQW9CQSxDQVZGLGlCQUlFLGVBQUEsQ0FLQSx3QkFBQSxDQUNBLG9DQUFBLENBTEEsVUFLQSxDQUdGLG1DQUlFLHNDQUFBLENBSEEsa0JBQUEsQ0FFQSw2QkFBQSxDQURBLFVBRUEsQ0FHRiwwQkFDRSxNQUFXLFVBQUEsQ0FDWCxJQUFNLFNBQUEsQ0FBQSxDQUdSLG1CQUVFLGtCQUFBLENBR0EsZUFBQSxDQUNBLHlCQUFBLENBTEEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxZQUVBLENBR0Ysb0JBR0Usd0JBQUEsQ0FDQSxrQkFBQSxDQUhBLE1BQUEsQ0FLQSxjQUFBLENBREEsU0FBQSxDQUhBLGlCQUFBLENBS0EsMENBQUEsQ0FHRiwwQkFDRSxvQkFBQSxDQUNBLHdDQUFBLENBR0YscUJBT0Usa0JBQUEsQ0FKQSxXQUFBLENBREEsa0JBQUEsQ0FNQSxVQUFBLENBRkEsY0FBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSx1Q0FBQSxDQUdGLDJCQUFvQixrQkFBQSxDQUNwQiw0QkFBcUIsb0JBQUEsQ0FFckIsc0JBQ0UsY0FBQSxDQUNBLFdBQUEsQ0FJQSxVQUFBLENBQ0EsY0FBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsVUFBQSxDQUxBLFNBQUEsQ0FNQSxzQkFBQSxDQUVGLHFCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FDQSxrQkFBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsbUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRixvQkFHRSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUtBLGtCQUFBLENBR0YsMkNBUEUsNEJBQUEsQ0FFQSxlQUFBLENBQ0Esc0JBa0JBLENBZEYsdUJBUUUsb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FSQSxVQUFBLENBS0EsbUJBQUEsQ0FOQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQUZBLHFCQUVBLENBR0Ysc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQU9FLHdCQUFBLENBRkEsUUFBQSxDQUtBLFlBQUEsQ0FQQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQU9BLFdBQUEsQ0FIQSxhQUlBLENBR0YsdUJBRUUsV0FBQSxDQUdBLGNBQUEsQ0FKQSxjQUFBLENBRUEsVUFBQSxDQUNBLFlBQ0EsQ0FHRixzQkFHRSxpQkFBQSxDQURBLFdBQUEsQ0FFQSxvQ0FBQSxDQUhBLFVBR0EsQ0FHRiw0QkFDRSxvQkFBQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_a79c1e39: "questionSection_a79c1e39",
-  tilesContainer_a79c1e39: "tilesContainer_a79c1e39",
-  tile_a79c1e39: "tile_a79c1e39",
-  promptText_a79c1e39: "promptText_a79c1e39",
-  rightInput_a79c1e39: "rightInput_a79c1e39",
-  questionInput_a79c1e39: "questionInput_a79c1e39",
+  questionSection_5b7924d4: "questionSection_5b7924d4",
+  tilesContainer_5b7924d4: "tilesContainer_5b7924d4",
+  tile_5b7924d4: "tile_5b7924d4",
+  promptText_5b7924d4: "promptText_5b7924d4",
+  rightInput_5b7924d4: "rightInput_5b7924d4",
+  questionInput_5b7924d4: "questionInput_5b7924d4",
   questionInput: "questionInput",
-  chatbotIcon_a79c1e39: "chatbotIcon_a79c1e39",
-  chatWindow_a79c1e39: "chatWindow_a79c1e39",
-  chatHeader_a79c1e39: "chatHeader_a79c1e39",
-  messages_a79c1e39: "messages_a79c1e39",
-  messageContainer_a79c1e39: "messageContainer_a79c1e39",
-  messageContainerUser_a79c1e39: "messageContainerUser_a79c1e39",
-  messageContainerBot_a79c1e39: "messageContainerBot_a79c1e39",
-  messageAvatar_a79c1e39: "messageAvatar_a79c1e39",
-  userMsg_a79c1e39: "userMsg_a79c1e39",
-  botMsg_a79c1e39: "botMsg_a79c1e39",
-  thinking_a79c1e39: "thinking_a79c1e39",
-  pulse_a79c1e39: "pulse_a79c1e39",
-  inputRow_a79c1e39: "inputRow_a79c1e39",
-  chatInput_a79c1e39: "chatInput_a79c1e39",
-  sendButton_a79c1e39: "sendButton_a79c1e39",
-  closeButton_a79c1e39: "closeButton_a79c1e39",
-  tileHeader_a79c1e39: "tileHeader_a79c1e39",
-  fileTypeIcon_a79c1e39: "fileTypeIcon_a79c1e39",
-  fileType_a79c1e39: "fileType_a79c1e39",
-  tileTitle_a79c1e39: "tileTitle_a79c1e39",
-  tileAbstract_a79c1e39: "tileAbstract_a79c1e39",
-  tileActions_a79c1e39: "tileActions_a79c1e39",
-  viewButton_a79c1e39: "viewButton_a79c1e39",
-  downloadButton_a79c1e39: "downloadButton_a79c1e39",
-  loading_a79c1e39: "loading_a79c1e39",
-  noDocuments_a79c1e39: "noDocuments_a79c1e39",
-  detailModal_a79c1e39: "detailModal_a79c1e39",
-  chatLauncher_a79c1e39: "chatLauncher_a79c1e39"
+  chatbotIcon_5b7924d4: "chatbotIcon_5b7924d4",
+  chatWindow_5b7924d4: "chatWindow_5b7924d4",
+  chatHeader_5b7924d4: "chatHeader_5b7924d4",
+  messages_5b7924d4: "messages_5b7924d4",
+  messageContainer_5b7924d4: "messageContainer_5b7924d4",
+  messageContainerUser_5b7924d4: "messageContainerUser_5b7924d4",
+  messageContainerBot_5b7924d4: "messageContainerBot_5b7924d4",
+  messageAvatar_5b7924d4: "messageAvatar_5b7924d4",
+  userMsg_5b7924d4: "userMsg_5b7924d4",
+  botMsg_5b7924d4: "botMsg_5b7924d4",
+  thinking_5b7924d4: "thinking_5b7924d4",
+  pulse_5b7924d4: "pulse_5b7924d4",
+  inputRow_5b7924d4: "inputRow_5b7924d4",
+  chatInput_5b7924d4: "chatInput_5b7924d4",
+  sendButton_5b7924d4: "sendButton_5b7924d4",
+  closeButton_5b7924d4: "closeButton_5b7924d4",
+  tileHeader_5b7924d4: "tileHeader_5b7924d4",
+  fileTypeIcon_5b7924d4: "fileTypeIcon_5b7924d4",
+  fileType_5b7924d4: "fileType_5b7924d4",
+  tileTitle_5b7924d4: "tileTitle_5b7924d4",
+  tileAbstract_5b7924d4: "tileAbstract_5b7924d4",
+  tileActions_5b7924d4: "tileActions_5b7924d4",
+  viewButton_5b7924d4: "viewButton_5b7924d4",
+  downloadButton_5b7924d4: "downloadButton_5b7924d4",
+  loading_5b7924d4: "loading_5b7924d4",
+  noDocuments_5b7924d4: "noDocuments_5b7924d4",
+  detailModal_5b7924d4: "detailModal_5b7924d4",
+  chatLauncher_5b7924d4: "chatLauncher_5b7924d4"
 });
 
 
@@ -624,36 +638,36 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_1b6959b6{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;position:relative;width:100%}.header_1b6959b6{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;padding:20px 40px}.backButton_1b6959b6{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_1b6959b6 svg{stroke:currentColor;fill:none}.backButton_1b6959b6:hover{background-color:#f5f5f5}.headerActions_1b6959b6{align-items:center;display:flex;gap:12px}.downloadButton_1b6959b6{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_1b6959b6 svg{stroke:currentColor;fill:none}.downloadButton_1b6959b6:hover{background-color:#1565c0}.shareButton_1b6959b6{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_1b6959b6 svg{stroke:currentColor;fill:none}.shareButton_1b6959b6:hover{background-color:#f5f5f5}.content_1b6959b6{margin:0 auto;max-width:1200px;padding:40px}.mainContent_1b6959b6{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:40px}.fileTypeIndicator_1b6959b6{align-items:center;display:flex;gap:8px;margin-bottom:20px}.fileTypeIcon_1b6959b6{font-size:24px;line-height:1}.fileTypeText_1b6959b6{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.documentTitle_1b6959b6{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px}.documentAbstract_1b6959b6{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px}.metadata_1b6959b6{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_1b6959b6{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_1b6959b6 svg{stroke:currentColor;fill:none}.previewSection_1b6959b6{margin-top:32px}.previewTitle_1b6959b6{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_1b6959b6{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;display:flex;height:700px;justify-content:center;overflow:hidden;position:relative;width:100%}.previewFrame_1b6959b6{border:none;height:100%;width:100%}.previewPlaceholder_1b6959b6{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_1b6959b6,.previewPlaceholder_1b6959b6{align-items:center;display:flex;justify-content:center}.previewError_1b6959b6{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_1b6959b6{font-size:48px;margin-bottom:16px}.errorText_1b6959b6{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_1b6959b6,.retryButton_1b6959b6{font-family:Inter,sans-serif;font-weight:500}.retryButton_1b6959b6{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_1b6959b6:hover{background-color:#1565c0}.error_1b6959b6,.loading_1b6959b6{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvRG9jdW1lbnREZXRhaWxQYWdlL0RvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2QkFHRSx3QkFBQSxDQUNBLDRCQUFBLENBRkEsZ0JBQUEsQ0FHQSxpQkFBQSxDQUpBLFVBSUEsQ0FHRixpQkFHRSxrQkFBQSxDQUVBLHFCQUFBLENBQ0EsK0JBQUEsQ0FMQSxZQUFBLENBQ0EsNkJBQUEsQ0FFQSxpQkFFQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FNQSxpQkFBQSxDQUxBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQU9BLDRCQUFBLENBREEsY0FBQSxDQUpBLE9BQUEsQ0FPQSxnQkFBQSxDQUVBLCtCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMkJBQ0Usd0JBQUEsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxRQUFBLENBR0YseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLDZCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLCtCQUNFLHdCQUFBLENBSUosc0JBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FJQSxZQUFBLENBR0EsK0JBQUEsQ0FFQSwwQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiw0QkFDRSx3QkFBQSxDQUlKLGtCQUVFLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFlBQUEsQ0FHRixzQkFDRSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FEQSxZQUNBLENBR0YsNEJBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsT0FBQSxDQUNBLGtCQUFBLENBR0YsdUJBQ0UsY0FBQSxDQUNBLGFBQUEsQ0FHRix1QkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFDQSxDQUdGLHdCQUdFLFVBQUEsQ0FFQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBRUEsQ0FHRiwyQkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBRUEsQ0FHRixtQkFLRSwrQkFBQSxDQUpBLFlBQUEsQ0FDQSxRQUFBLENBQ0Esa0JBQUEsQ0FDQSxtQkFDQSxDQUdGLHVCQUVFLGtCQUFBLENBR0EsVUFBQSxDQUpBLFlBQUEsQ0FLQSw0QkFBQSxDQUZBLGNBQUEsQ0FEQSxPQUdBLENBRUEsMkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBSUoseUJBQ0UsZUFBQSxDQUdGLHVCQUdFLFVBQUEsQ0FFQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBRUEsZUFDQSxDQUdGLDJCQVNFLGtCQUFBLENBSEEsd0JBQUEsQ0FIQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsWUFBQSxDQU5BLFlBQUEsQ0FRQSxzQkFBQSxDQUxBLGVBQUEsQ0FFQSxpQkFBQSxDQU5BLFVBU0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBRUEsa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLDBDQUhFLDRCQUFBLENBSEEsZUFnQkEsQ0FWRixzQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBSEEsY0FBQSxDQURBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw0QkFDRSx3QkFBQSxDQUlKLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_ff450dd4{background-color:#f5f5f5;box-sizing:border-box;font-family:Inter,sans-serif;height:100%;min-height:100vh;position:relative;width:100%}.header_ff450dd4{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;padding:20px 40px}.backButton_ff450dd4{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_ff450dd4 svg{stroke:currentColor;fill:none}.backButton_ff450dd4:hover{background-color:#f5f5f5}.headerActions_ff450dd4{align-items:center;display:flex;gap:12px}.downloadButton_ff450dd4{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_ff450dd4 svg{stroke:currentColor;fill:none}.downloadButton_ff450dd4:hover{background-color:#1565c0}.shareButton_ff450dd4{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_ff450dd4 svg{stroke:currentColor;fill:none}.shareButton_ff450dd4:hover{background-color:#f5f5f5}.content_ff450dd4{margin:0 auto;max-width:1200px}.content_ff450dd4,.mainContent_ff450dd4{box-sizing:border-box;padding:40px;width:100%}.mainContent_ff450dd4{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)}.fileTypeIndicator_ff450dd4{align-items:center;display:flex;gap:8px;margin-bottom:20px}.fileTypeIcon_ff450dd4{font-size:24px;line-height:1}.fileTypeText_ff450dd4{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.documentTitle_ff450dd4{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px}.documentAbstract_ff450dd4{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px}.metadata_ff450dd4{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_ff450dd4{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_ff450dd4 svg{stroke:currentColor;fill:none}.previewSection_ff450dd4{margin-top:32px}.previewTitle_ff450dd4{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_ff450dd4{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;box-sizing:border-box;display:flex;height:700px;justify-content:center;min-height:1000px;overflow:hidden;position:relative;width:100%}.previewFrame_ff450dd4{border:none;height:100%;width:100%}.previewPlaceholder_ff450dd4{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_ff450dd4,.previewPlaceholder_ff450dd4{align-items:center;display:flex;justify-content:center}.previewError_ff450dd4{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_ff450dd4{font-size:48px;margin-bottom:16px}.errorText_ff450dd4{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_ff450dd4,.retryButton_ff450dd4{font-family:Inter,sans-serif;font-weight:500}.retryButton_ff450dd4{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_ff450dd4:hover{background-color:#1565c0}.error_ff450dd4,.loading_ff450dd4{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvRG9jdW1lbnREZXRhaWxQYWdlL0RvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2QkFJRSx3QkFBQSxDQUdBLHFCQUFBLENBRkEsNEJBQUEsQ0FGQSxXQUFBLENBREEsZ0JBQUEsQ0FJQSxpQkFBQSxDQUxBLFVBTUEsQ0FHRixpQkFHRSxrQkFBQSxDQUVBLHFCQUFBLENBQ0EsK0JBQUEsQ0FMQSxZQUFBLENBQ0EsNkJBQUEsQ0FFQSxpQkFFQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FNQSxpQkFBQSxDQUxBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQU9BLDRCQUFBLENBREEsY0FBQSxDQUpBLE9BQUEsQ0FPQSxnQkFBQSxDQUVBLCtCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMkJBQ0Usd0JBQUEsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxRQUFBLENBR0YseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLDZCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLCtCQUNFLHdCQUFBLENBSUosc0JBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FJQSxZQUFBLENBR0EsK0JBQUEsQ0FFQSwwQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiw0QkFDRSx3QkFBQSxDQUlKLGtCQUdFLGFBQUEsQ0FGQSxnQkFJQSxDQUdGLHdDQUhFLHFCQUFBLENBREEsWUFBQSxDQUZBLFVBWUEsQ0FORixzQkFDRSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBRUEsQ0FHRiw0QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLHVCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysd0JBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLDJCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLG1CQUtFLCtCQUFBLENBSkEsWUFBQSxDQUNBLFFBQUEsQ0FDQSxrQkFBQSxDQUNBLG1CQUNBLENBR0YsdUJBRUUsa0JBQUEsQ0FHQSxVQUFBLENBSkEsWUFBQSxDQUtBLDRCQUFBLENBRkEsY0FBQSxDQURBLE9BR0EsQ0FFQSwyQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FJSix5QkFDRSxlQUFBLENBR0YsdUJBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUNBLENBR0YsMkJBVUUsa0JBQUEsQ0FIQSx3QkFBQSxDQUhBLHdCQUFBLENBQ0EsaUJBQUEsQ0FPQSxxQkFBQSxDQUhBLFlBQUEsQ0FQQSxZQUFBLENBU0Esc0JBQUEsQ0FSQSxpQkFBQSxDQUdBLGVBQUEsQ0FFQSxpQkFBQSxDQVBBLFVBV0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBRUEsa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLDBDQUhFLDRCQUFBLENBSEEsZUFnQkEsQ0FWRixzQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBSEEsY0FBQSxDQURBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw0QkFDRSx3QkFBQSxDQUlKLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  documentDetailPage_1b6959b6: "documentDetailPage_1b6959b6",
-  header_1b6959b6: "header_1b6959b6",
-  backButton_1b6959b6: "backButton_1b6959b6",
-  headerActions_1b6959b6: "headerActions_1b6959b6",
-  downloadButton_1b6959b6: "downloadButton_1b6959b6",
-  shareButton_1b6959b6: "shareButton_1b6959b6",
-  content_1b6959b6: "content_1b6959b6",
-  mainContent_1b6959b6: "mainContent_1b6959b6",
-  fileTypeIndicator_1b6959b6: "fileTypeIndicator_1b6959b6",
-  fileTypeIcon_1b6959b6: "fileTypeIcon_1b6959b6",
-  fileTypeText_1b6959b6: "fileTypeText_1b6959b6",
-  documentTitle_1b6959b6: "documentTitle_1b6959b6",
-  documentAbstract_1b6959b6: "documentAbstract_1b6959b6",
-  metadata_1b6959b6: "metadata_1b6959b6",
-  metadataItem_1b6959b6: "metadataItem_1b6959b6",
-  previewSection_1b6959b6: "previewSection_1b6959b6",
-  previewTitle_1b6959b6: "previewTitle_1b6959b6",
-  previewContainer_1b6959b6: "previewContainer_1b6959b6",
-  previewFrame_1b6959b6: "previewFrame_1b6959b6",
-  previewPlaceholder_1b6959b6: "previewPlaceholder_1b6959b6",
-  previewError_1b6959b6: "previewError_1b6959b6",
-  errorIcon_1b6959b6: "errorIcon_1b6959b6",
-  errorText_1b6959b6: "errorText_1b6959b6",
-  retryButton_1b6959b6: "retryButton_1b6959b6",
-  error_1b6959b6: "error_1b6959b6",
-  loading_1b6959b6: "loading_1b6959b6"
+  documentDetailPage_ff450dd4: "documentDetailPage_ff450dd4",
+  header_ff450dd4: "header_ff450dd4",
+  backButton_ff450dd4: "backButton_ff450dd4",
+  headerActions_ff450dd4: "headerActions_ff450dd4",
+  downloadButton_ff450dd4: "downloadButton_ff450dd4",
+  shareButton_ff450dd4: "shareButton_ff450dd4",
+  content_ff450dd4: "content_ff450dd4",
+  mainContent_ff450dd4: "mainContent_ff450dd4",
+  fileTypeIndicator_ff450dd4: "fileTypeIndicator_ff450dd4",
+  fileTypeIcon_ff450dd4: "fileTypeIcon_ff450dd4",
+  fileTypeText_ff450dd4: "fileTypeText_ff450dd4",
+  documentTitle_ff450dd4: "documentTitle_ff450dd4",
+  documentAbstract_ff450dd4: "documentAbstract_ff450dd4",
+  metadata_ff450dd4: "metadata_ff450dd4",
+  metadataItem_ff450dd4: "metadataItem_ff450dd4",
+  previewSection_ff450dd4: "previewSection_ff450dd4",
+  previewTitle_ff450dd4: "previewTitle_ff450dd4",
+  previewContainer_ff450dd4: "previewContainer_ff450dd4",
+  previewFrame_ff450dd4: "previewFrame_ff450dd4",
+  previewPlaceholder_ff450dd4: "previewPlaceholder_ff450dd4",
+  previewError_ff450dd4: "previewError_ff450dd4",
+  errorIcon_ff450dd4: "errorIcon_ff450dd4",
+  errorText_ff450dd4: "errorText_ff450dd4",
+  retryButton_ff450dd4: "retryButton_ff450dd4",
+  error_ff450dd4: "error_ff450dd4",
+  loading_ff450dd4: "loading_ff450dd4"
 });
 
 
@@ -1557,9 +1571,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FilterDropdown.module.scss */ 53820);
-/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @microsoft/sp-http */ 91909);
-/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ 48398);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FilterDropdown.module.scss */ 53820);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @microsoft/sp-http */ 91909);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 62434);
+
+
 
 
 
@@ -1570,25 +1589,72 @@ const filterData = [
     { title: "Region", count: 800, children: [{ title: "Region 1" }, { title: "Region 2" }, { title: "Region 3" }] },
     { title: "Therapy Area" },
     { title: "Disease Area" },
-    { title: "File Format" },
+    {
+        title: "File Format",
+        children: [
+            { title: "PDF" },
+            { title: "DOCX" },
+            { title: "PPTX" },
+            { title: "XLSX" },
+            { title: "MHTML" },
+            { title: "MHT" },
+            { title: "SVG" },
+            { title: "MPP" },
+        ],
+    },
 ];
-const FilterDropdown = ({ searchText, spHttpClient, siteUrl, }) => {
+const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     const [openGroup, setOpenGroup] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const [activeTab, setActiveTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState("documents");
     const [documents, setDocuments] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
-    const [experts] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => 
-    // simple placeholder data for Experts tab
-    Array.from({ length: 6 }).map((_, i) => ({
-        id: `expert-${i}`,
+    const [experts] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => Array.from({ length: 6 }).map((_, i) => ({
+        id: i,
         title: `Expert ${i + 1}`,
         contributor: `Role ${i + 1}`,
         updated: "Nov 20, 2025",
-        description: "Expert profile placeholder."
+        description: "Expert profile placeholder.",
     })));
     const [isLoading, setIsLoading] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
     const [error, setError] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    /* ---------------------------------------------
+       Document Preview State (same as QuestionSection)
+    --------------------------------------------- */
+    const [selectedDocumentId, setSelectedDocumentId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    /* ---------------------------------------------
+       Front-end file format filter state
+    --------------------------------------------- */
+    const [selectedFormat, setSelectedFormat] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const toggleGroup = (title) => setOpenGroup(openGroup === title ? null : title);
-    // 🔹 Load documents from KMArtifacts when “Documents” tab is active
+    const handleFormatClick = (formatTitle) => {
+        const fmt = formatTitle.toLowerCase();
+        setSelectedFormat((prev) => (prev === fmt ? null : fmt)); // toggle
+    };
+    /* ---------- Helpers for file type & icon (for tiles) ---------- */
+    const getFileTypeFromName = (fileName) => {
+        if (!fileName)
+            return "FILE";
+        const parts = fileName.split(".");
+        if (parts.length < 2)
+            return "FILE";
+        return parts.pop().toUpperCase();
+    };
+    const getFileTypeIcon = (type) => {
+        if (!type)
+            return "📎";
+        const t = type.toLowerCase();
+        if (t.includes("pdf"))
+            return "📄";
+        if (t.includes("ppt"))
+            return "📊";
+        if (t.includes("xls"))
+            return "📈";
+        if (t.includes("doc"))
+            return "📝";
+        return "📎";
+    };
+    /* ======================================================
+       Load documents from KMArtifacts LIST (like QuestionSection)
+    ====================================================== */
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         if (activeTab !== "documents")
             return;
@@ -1596,28 +1662,33 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, }) => {
             try {
                 setIsLoading(true);
                 setError(null);
-                // siteUrl = https://m365x65470037.sharepoint.com/sites/MigrationTest2
-                // Library = KMArtifacts at /sites/MigrationTest2/KMArtifacts
-                const apiUrl = `${siteUrl}/_api/web/GetFolderByServerRelativeUrl('KMArtifacts')/Files` +
-                    `?$select=UniqueId,Name,ServerRelativeUrl,TimeLastModified,Author/Title,ListItemAllFields/Description` +
-                    `&$expand=Author,ListItemAllFields`;
-                const response = await spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_2__.SPHttpClient.configurations.v1);
+                const libraryName = "KMArtifacts";
+                const apiUrl = `${siteUrl}/_api/web/lists/getbytitle('${libraryName}')/items` +
+                    `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created` +
+                    `&$expand=Author`;
+                const response = await spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__.SPHttpClient.configurations.v1);
                 if (!response.ok) {
                     throw new Error(`HTTP error ${response.status}`);
                 }
                 const data = await response.json();
-                const docs = (data.value || []).map((file) => {
-                    var _a, _b;
-                    return ({
-                        id: file.UniqueId,
-                        title: file.Name,
-                        contributor: ((_a = file.Author) === null || _a === void 0 ? void 0 : _a.Title) || "Unknown",
-                        updated: file.TimeLastModified
-                            ? new Date(file.TimeLastModified).toLocaleDateString()
+                const docs = (data.value || []).map((item) => {
+                    var _a;
+                    const fileName = item.FileLeafRef || item.Title || "Untitled";
+                    const fileType = getFileTypeFromName(fileName);
+                    return {
+                        id: item.Id,
+                        title: fileName,
+                        contributor: ((_a = item.Author) === null || _a === void 0 ? void 0 : _a.Title) || "Unknown",
+                        updated: item.Created
+                            ? new Date(item.Created).toLocaleString()
                             : "",
-                        description: ((_b = file.ListItemAllFields) === null || _b === void 0 ? void 0 : _b.Description) || "No description",
-                        fileUrl: `${window.location.origin}${file.ServerRelativeUrl}`
-                    });
+                        description: item.Abstract || "No abstract available",
+                        fileUrl: item.FileRef
+                            ? `${window.location.origin}${item.FileRef}`
+                            : undefined,
+                        fileType,
+                        serverRelativeUrl: item.FileRef || "",
+                    };
                 });
                 setDocuments(docs);
             }
@@ -1631,57 +1702,150 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, }) => {
         };
         fetchDocuments();
     }, [activeTab, siteUrl, spHttpClient]);
-    // ✅ Dynamic filtering logic, now based on the active tab
+    /* ======================================================
+       Search + File Format filter
+    ====================================================== */
+    const hasSearch = searchText.trim().length > 0;
+    const hasFormat = !!selectedFormat;
+    const hasSearchOrFormat = hasSearch || hasFormat;
     const filteredItems = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+        if (!hasSearchOrFormat)
+            return []; // empty grid initially
         const baseItems = activeTab === "documents" ? documents : experts;
-        if (!searchText.trim())
-            return baseItems;
         const keyword = searchText.toLowerCase();
-        return baseItems.filter((item) => item.title.toLowerCase().includes(keyword) ||
-            item.contributor.toLowerCase().includes(keyword) ||
-            item.description.toLowerCase().includes(keyword));
-    }, [searchText, documents, experts, activeTab]);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].workspace },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].railHeader }, "Refine using filters by:"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container }, filterData.map((group) => {
-                const hasChildren = !!group.children;
-                const isOpen = openGroup === group.title;
-                return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: group.title },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].parentBtn} ${isOpen ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rootBtnOpen : ""}`, onClick: () => hasChildren && toggleGroup(group.title) },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, group.title),
-                        hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].chevron }, isOpen ? "▲" : "▼"))),
-                    isOpen && hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childList }, group.children.map((child) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].childBtn }, child.title)))))));
-            }))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].main },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tabs },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tab} ${activeTab === "documents" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active : ""}`, onClick: () => setActiveTab("documents") }, "Documents"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tab} ${activeTab === "experts" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active : ""}`, onClick: () => setActiveTab("experts") }, "Experts")),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].results },
-                isLoading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Loading documents\u2026"),
-                error && react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { style: { color: "red" } },
-                    "Error: ",
-                    error),
-                !isLoading && !error && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid }, filteredItems.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No results found.")) : (filteredItems.map((item) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardTitle }, item.title),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Contributor"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.contributor)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Updated"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.updated)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLabel }, "Description"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardValue }, item.description)),
-                    item.fileUrl && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardRow },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: item.fileUrl, target: "_blank", rel: "noopener noreferrer", className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardLink }, "Open document"))))))))))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightRail },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].quickLinksTitle }, "Quick Links"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].quickLinksList },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Upload Guidelines"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Metadata Standards"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Retention Policy"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Help & Support")))));
+        const fmt = selectedFormat;
+        return baseItems.filter((item) => {
+            const textMatch = item.title.toLowerCase().includes(keyword) ||
+                item.contributor.toLowerCase().includes(keyword) ||
+                item.description.toLowerCase().includes(keyword);
+            const matchesSearch = !hasSearch || textMatch;
+            // Only enforce format filter for documents (experts don't have fileType)
+            const matchesFormat = !fmt ||
+                (activeTab === "documents" &&
+                    item.fileType &&
+                    item.fileType.toLowerCase().includes(fmt));
+            return matchesSearch && matchesFormat;
+        });
+    }, [
+        hasSearchOrFormat,
+        hasSearch,
+        searchText,
+        documents,
+        experts,
+        activeTab,
+        selectedFormat,
+    ]);
+    /* ======================================================
+       Document Action Handlers (same as QuestionSection)
+    ====================================================== */
+    const handleView = (item) => {
+        setSelectedDocumentId(item.id);
+    };
+    const handleCloseDetail = () => setSelectedDocumentId(null);
+    /* ======================================================
+       Only show FilterDropdown content when user types
+       OR chooses a file format
+    ====================================================== */
+    if (!hasSearchOrFormat) {
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, selectedDocumentId &&
+            context &&
+            typeof document !== "undefined" &&
+            (0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].detailModal },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_4__.DocumentDetailPage, { context: context, documentId: selectedDocumentId, onClose: handleCloseDetail })), document.body)));
+    }
+    const handleDownload = async (item) => {
+        try {
+            if (!item.serverRelativeUrl)
+                return;
+            const downloadUrl = `${siteUrl}/_api/web/GetFileByServerRelativeUrl('${item.serverRelativeUrl}')/$value`;
+            const resp = await spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__.SPHttpClient.configurations.v1);
+            if (resp.ok) {
+                const blob = await resp.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = item.title || "download";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
+            }
+        }
+        catch (e) {
+            console.error("Download failed:", e);
+        }
+    };
+    /* ======================================================
+       Render
+    ====================================================== */
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].workspace },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrapper },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].railHeader }, "Refine using filters by:"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].container }, filterData.map((group) => {
+                    const hasChildren = !!group.children;
+                    const isOpen = openGroup === group.title;
+                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: group.title },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].parentBtn} ${isOpen ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rootBtnOpen : ""}`, onClick: () => toggleGroup(group.title) },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, group.title),
+                            hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].chevron }, isOpen ? "▲" : "▼"))),
+                        isOpen && hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childList }, group.children.map((child) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childBtn, onClick: () => group.title === "File Format"
+                                ? handleFormatClick(child.title)
+                                : undefined }, child.title)))))));
+                }))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].main },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tabs },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tab} ${activeTab === "documents" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].active : ""}`, onClick: () => setActiveTab("documents") }, "Documents"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tab} ${activeTab === "experts" ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].active : ""}`, onClick: () => setActiveTab("experts") }, "Experts")),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].results },
+                    isLoading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Loading documents\u2026"),
+                    error && react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { style: { color: "red" } },
+                        "Error: ",
+                        error),
+                    !isLoading && !error && (
+                    // 👇 Scrollable container
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].scrollContainer },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid }, filteredItems.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No results found.")) : (filteredItems.map((item) => activeTab === "documents" ? (
+                        /* ================= Document tile ================ */
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tile },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileHeader },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(item.fileType)),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileType }, item.fileType || "FILE")),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileTitle }, item.title),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileAbstract }, item.description || "No abstract available"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Contributor:"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.contributor)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Updated:"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.updated)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileActions },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].viewButton, onClick: () => handleView(item) }, "\uD83D\uDC41 View"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: () => handleDownload(item) }, "\u2B07 Download")))) : (
+                        /* ================= Experts card ================ */
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].card },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardTitle }, item.title),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardRow },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardLabel }, "Role"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardValue }, item.contributor)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardRow },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardLabel }, "Updated"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardValue }, item.updated)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardRow },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardLabel }, "Description"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardValue }, item.description))))))))))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rightRail },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLinksTitle }, "Quick Links"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLinksList },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Upload Guidelines"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Metadata Standards"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Retention Policy"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Help & Support")))),
+        selectedDocumentId &&
+            context &&
+            typeof document !== "undefined" &&
+            (0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].detailModal },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_4__.DocumentDetailPage, { context: context, documentId: selectedDocumentId, onClose: handleCloseDetail })), document.body)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FilterDropdown);
 
@@ -1700,30 +1864,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FilterDropdown.module.css */ 9328);
 const styles = {
-    workspace: 'workspace_4ba734b2',
-    wrapper: 'wrapper_4ba734b2',
-    railHeader: 'railHeader_4ba734b2',
-    container: 'container_4ba734b2',
-    parentBtn: 'parentBtn_4ba734b2',
-    rootBtnOpen: 'rootBtnOpen_4ba734b2',
-    chevron: 'chevron_4ba734b2',
-    childList: 'childList_4ba734b2',
-    childBtn: 'childBtn_4ba734b2',
-    main: 'main_4ba734b2',
-    tabs: 'tabs_4ba734b2',
-    tab: 'tab_4ba734b2',
-    active: 'active_4ba734b2',
-    results: 'results_4ba734b2',
-    grid: 'grid_4ba734b2',
-    card: 'card_4ba734b2',
-    cardTitle: 'cardTitle_4ba734b2',
-    cardRow: 'cardRow_4ba734b2',
-    cardLabel: 'cardLabel_4ba734b2',
-    cardValue: 'cardValue_4ba734b2',
-    rightRail: 'rightRail_4ba734b2',
-    quickLinksTitle: 'quickLinksTitle_4ba734b2',
-    quickLinksList: 'quickLinksList_4ba734b2',
-    cardLink: 'cardLink_4ba734b2'
+    workspace: 'workspace_c846a755',
+    wrapper: 'wrapper_c846a755',
+    railHeader: 'railHeader_c846a755',
+    container: 'container_c846a755',
+    parentBtn: 'parentBtn_c846a755',
+    rootBtnOpen: 'rootBtnOpen_c846a755',
+    chevron: 'chevron_c846a755',
+    childList: 'childList_c846a755',
+    childBtn: 'childBtn_c846a755',
+    main: 'main_c846a755',
+    tabs: 'tabs_c846a755',
+    tab: 'tab_c846a755',
+    active: 'active_c846a755',
+    results: 'results_c846a755',
+    grid: 'grid_c846a755',
+    card: 'card_c846a755',
+    cardTitle: 'cardTitle_c846a755',
+    cardRow: 'cardRow_c846a755',
+    cardLabel: 'cardLabel_c846a755',
+    cardValue: 'cardValue_c846a755',
+    rightRail: 'rightRail_c846a755',
+    quickLinksTitle: 'quickLinksTitle_c846a755',
+    quickLinksList: 'quickLinksList_c846a755',
+    cardLink: 'cardLink_c846a755',
+    tile: 'tile_c846a755',
+    tileHeader: 'tileHeader_c846a755',
+    fileTypeIcon: 'fileTypeIcon_c846a755',
+    fileType: 'fileType_c846a755',
+    tileTitle: 'tileTitle_c846a755',
+    tileAbstract: 'tileAbstract_c846a755',
+    tileMeta: 'tileMeta_c846a755',
+    metaLabel: 'metaLabel_c846a755',
+    metaValue: 'metaValue_c846a755',
+    tileActions: 'tileActions_c846a755',
+    viewButton: 'viewButton_c846a755',
+    downloadButton: 'downloadButton_c846a755',
+    detailModal: 'detailModal_c846a755',
+    scrollContainer: 'scrollContainer_c846a755'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1848,8 +2026,8 @@ const Header = (props) => {
                             setSearchText(e.target.value);
                             setIsOpen(true);
                         } })),
-                isOpen && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropdownPanel },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FilterDropdown_FilterDropdown__WEBPACK_IMPORTED_MODULE_3__["default"], { searchText: searchText, spHttpClient: props.context.spHttpClient, siteUrl: props.context.pageContext.web.absoluteUrl }))))),
+                isOpen && searchText.trim().length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropdownPanel },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FilterDropdown_FilterDropdown__WEBPACK_IMPORTED_MODULE_3__["default"], { searchText: searchText, spHttpClient: props.context.spHttpClient, siteUrl: props.context.pageContext.web.absoluteUrl, context: props.context }))))),
         showUploader && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__.FileUpload, { onClose: () => setShowUploader(false), context: props.context }))));
 };
 
@@ -2060,20 +2238,6 @@ class Migration extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         this.handleBackToMain = () => {
             this.setState({ selectedBU: null, activePage: 'about' });
         };
-        // 🆕 TEMP: Test semantic search + suggestions from this page
-        this.handleTestSemanticSearch = async () => {
-            try {
-                console.log('🔹 Testing getSuggestionsFromSearch("migration")...');
-                const suggestions = await this.azureService.getSuggestionsFromSearch('migration');
-                console.log('Suggestions result:', suggestions);
-                console.log('🔹 Testing semanticSearch("migration", {})...');
-                const semanticResult = await this.azureService.semanticSearch('migration', {});
-                console.log('Semantic search result:', semanticResult);
-            }
-            catch (error) {
-                console.error('Error during semantic search test:', error);
-            }
-        };
         this.state = {
             activePage: 'about',
             selectedBU: null
@@ -2102,8 +2266,6 @@ class Migration extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         }
         // Otherwise show main page
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].migration },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { padding: '8px 16px' } },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { onClick: this.handleTestSemanticSearch }, "Test Semantic Search")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.Header, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__.Navigation, { activePage: this.state.activePage, onNavClick: this.handleNavClick }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_5__.ContentArea, { activePage: this.state.activePage, context: this.props.context, onBUClick: this.handleBUClick }),
@@ -2216,16 +2378,427 @@ __webpack_require__.r(__webpack_exports__);
 ====================================================== */
 const chatbotIcon = __webpack_require__(/*! ../../assets/chatbot-icon.png */ 53269);
 /* ============================================================
-   CONTEXT KNOWLEDGE MAP  (FULL MAP FROM YOUR FIRST SNIPPET)
+   CONTEXT KNOWLEDGE MAP
 ============================================================ */
 const CONTEXT_MAP = {
+    /* =====================================================
+       INDEGENE – COMPANY BASICS
+    ====================================================== */
     indegene: [
-        "Indegene is a digital-first life sciences commercialization company helping pharma, biotech, and medical device organizations launch, market, and optimize therapies.",
-        "Provides end-to-end solutions spanning medical affairs, regulatory compliance, omnichannel commercialization, data-driven insights, and technology platforms.",
-        "Serves biopharmaceutical companies, emerging biotech firms, and medical device organizations globally.",
-        "Strategic Focus: 'Future Ready Healthcare' platform for AI-powered engagement and market access.",
-        "Key Differentiators: 25+ years domain expertise, proven ROI, operational resilience, and proprietary AI tools like NEXT Access Document Management."
+        "Indegene is a tech-native, digital-first life sciences commercialization company headquartered in Bengaluru, India.",
+        "It helps biopharma, biotech, and medical device companies bring therapies to market and optimize them using data, technology, and healthcare expertise."
     ],
+    "what is indegene": [
+        "Indegene is a specialist partner for life sciences companies.",
+        "It combines medical, regulatory, commercial, and technology capabilities to help pharma, biotech, and medical device organizations launch, promote, and support therapies globally."
+    ],
+    "who is indegene": [
+        "Indegene is a global services and solutions company focused on life sciences.",
+        "It works with pharmaceutical, biotech, and medical device companies to support commercialization, medical affairs, clinical, and analytics functions."
+    ],
+    "what does indegene do": [
+        "Indegene helps life sciences organizations with:",
+        "• Commercial and marketing operations (omnichannel campaigns, content, field force support).",
+        "• Medical and regulatory operations (medical information, publications, MLR review, safety support).",
+        "• Clinical and evidence services (RWE, analytics, clinical operations support).",
+        "• Data, analytics, and technology solutions to make these processes more efficient and measurable."
+    ],
+    "what is indegene company": [
+        "Indegene Limited is a publicly listed, tech-native life sciences commercialization company.",
+        "It provides services across commercial, medical, clinical, and analytics for pharma, biotech, and medical device clients."
+    ],
+    "indegene india": [
+        "Indegene is headquartered in Bengaluru, Karnataka, India.",
+        "It has major delivery centers in India and supports global life sciences clients from these locations."
+    ],
+    "indegene headquarters": [
+        "Indegene's global headquarters is in Bengaluru, Karnataka, India.",
+        "From there, it coordinates global delivery across multiple regions for life sciences clients."
+    ],
+    /* =====================================================
+       FOCUS AREA & CLIENTS
+    ====================================================== */
+    "indegene domain": [
+        "Indegene operates in the life sciences and healthcare domain.",
+        "Its core focus is on pharmaceuticals, biotech, and medical devices, supporting commercialization, medical affairs, and clinical operations."
+    ],
+    "indegene industry": [
+        "Indegene works in the life sciences and healthcare services industry.",
+        "It sits at the intersection of healthcare, technology, and analytics."
+    ],
+    "indegene clients": [
+        "Indegene serves global biopharmaceutical companies, emerging biotechs, and medical device manufacturers.",
+        "Many of its clients are large, multinational pharma organizations that need scalable, compliant, and data-driven operations."
+    ],
+    "who are indegene clients": [
+        "Indegene typically works with:",
+        "• Large global pharma companies.",
+        "• Mid-size and emerging biotech organizations.",
+        "• Medical device and diagnostics companies.",
+        "Client names are usually confidential and covered by NDAs."
+    ],
+    /* =====================================================
+       SERVICES & SOLUTIONS
+    ====================================================== */
+    "indegene services": [
+        "Indegene's key service areas include:",
+        "• Enterprise Commercial Solutions  omnichannel marketing, content operations, marketing analytics, field force support.",
+        "• Enterprise Medical Solutions  medical information, publications, scientific writing, medical review, safety support.",
+        "• Enterprise Clinical / Evidence  RWE, analytics, clinical operations support.",
+        "• Data, AI, and Technology solutions powering these services."
+    ],
+    "indegene commercial solutions": [
+        "Indegene's commercial solutions help brands with:",
+        "• Omnichannel HCP engagement.",
+        "• Segmentation and targeting.",
+        "• Content creation and adaptation.",
+        "• Campaign operations and analytics.",
+        "Objective: Improve promotional effectiveness and ROI for life sciences brands."
+    ],
+    "indegene medical solutions": [
+        "Indegene's medical solutions support:",
+        "• Medical information and inquiry handling.",
+        "• Publication planning and scientific writing.",
+        "• MLR / medical review support.",
+        "• Safety and pharmacovigilance operations in collaboration with clients."
+    ],
+    "indegene clinical solutions": [
+        "Indegene provides clinical and evidence services such as:",
+        "• Real-world evidence (RWE) analytics.",
+        "• Clinical operations support.",
+        "• Data management, dashboards, and insights.",
+        "The goal is to make evidence generation and clinical operations more efficient and data-driven."
+    ],
+    "indegene omnichannel": [
+        "Indegene supports omnichannel HCP engagement by:",
+        "• Designing customer journeys.",
+        "• Operating campaigns across email, web, in-person, and remote detailing.",
+        "• Using analytics and AI for next-best-action and channel optimization."
+    ],
+    "indegene technology": [
+        "Indegene describes itself as tech-native.",
+        "It uses platforms, automation, and AI on top of CRMs, marketing tools, and analytics stacks to run life sciences workflows at scale.",
+        "The focus is on integrating with client ecosystems like Veeva and marketing automation platforms."
+    ],
+    "indegene ai": [
+        "Indegene uses AI/ML for:",
+        "• Next-best-action recommendations for HCP engagement.",
+        "• Segmentation and targeting.",
+        "• Content and channel optimization.",
+        "• Analytics on sales, marketing, and medical activities.",
+        "Some solutions use explainable AI so field teams and stakeholders understand why a recommendation is made."
+    ],
+    /* =====================================================
+       COMPANY TYPE, AGE & SCALE
+    ====================================================== */
+    "is indegene mnc": [
+        "Yes. Indegene operates as a multinational company (MNC) with global pharma and biotech clients.",
+        "It has offices and delivery centers in India and other regions serving clients across North America, Europe, and Asia."
+    ],
+    "is indegene public": [
+        "Indegene Limited is a publicly listed company in India.",
+        "It has a formal board and institutional investors and operates under public company governance."
+    ],
+    "when was indegene founded": [
+        "Indegene was founded in 1998 in Bengaluru, India.",
+        "Over time, it has evolved from a healthcare services company into a tech-native life sciences commercialization specialist."
+    ],
+    /* =====================================================
+       INDEGENE – LEADERSHIP, FOUNDING, OWNERSHIP
+    ====================================================== */
+    "founder of indegene": [
+        "Indegene was founded by Manish Gupta, Rajesh Nair, Sanjay Parikh, Anand Kiran, and Gaurav Kapoor.",
+        "The company was established in 1998 in Bengaluru, India, with the goal of combining healthcare expertise and technology to support life sciences organizations."
+    ],
+    "who founded indegene": [
+        "Indegene was founded in 1998 by a team of healthcare and technology experts: Manish Gupta, Rajesh Nair, Sanjay Parikh, Anand Kiran, and Gaurav Kapoor.",
+        "They created the company to support pharmaceutical and medical device organizations using tech-enabled services."
+    ],
+    "ceo of indegene": [
+        "The CEO (Chief Executive Officer) of Indegene is Manish Gupta.",
+        "He is also one of the co-founders of the company and leads strategic growth and global operations."
+    ],
+    "who is the ceo of indegene": [
+        "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company."
+    ],
+    "is manish gupta founder of indegene": [
+        "Yes, Manish Gupta is one of the founding members of Indegene and currently serves as its CEO.",
+        "He played a key role in shaping the companys vision of combining healthcare expertise with digital solutions."
+    ],
+    "is indegene public company": [
+        "Yes, Indegene Limited is a publicly listed company in India.",
+        "It operates with public company governance, a board of directors, and institutional investors."
+    ],
+    "is indegene publicly listed": [
+        "Yes, Indegene is a publicly listed company in India.",
+        "It was previously known as Indegene Private Limited before becoming Indegene Limited.",
+        "It operates under formal compliance and regulatory standards."
+    ],
+    "indegene company type": [
+        "Indegene Limited is a public, tech-native life sciences commercialization company headquartered in Bengaluru, India.",
+        "It operates globally with subsidiaries and delivery centers across multiple regions."
+    ],
+    "indegene ownership": [
+        "Indegene Limited is publicly owned by shareholders and institutional investors.",
+        "It follows corporate governance guidelines and regulations applicable to publicly listed companies."
+    ],
+    "indegene chairman": [
+        "The Chairman of Indegene is Manish Gupta, who also serves as the CEO and co-founder."
+    ],
+    "indegene leaders": [
+        "Key leaders at Indegene include:",
+        "• Manish Gupta  Chairman and CEO (Co-founder)",
+        "• Rajesh Nair  Co-founder and senior executive",
+        "• Sanjay Parikh  Co-founder and business/operations leader",
+        "Other leadership roles include CTO, CFO, and vertical heads based on business units."
+    ],
+    /* =====================================================
+       CULTURE, VALUES & WORKPLACE
+    ====================================================== */
+    "indegene values": [
+        "Indegene's culture emphasizes:",
+        "• Empathy and trust.",
+        "• Collaboration and ownership.",
+        "• Innovation and being future-ready.",
+        "Employees often work at the intersection of healthcare, technology, and analytics."
+    ],
+    "indegene culture": [
+        "Indegene positions itself as a fast-paced, learning-focused organization.",
+        "People work with global pharma clients, exposure to real-world medical and commercial problems, and technology-driven projects.",
+        "Actual experience can vary by team, project, and manager, like most project-based service companies."
+    ],
+    "indegene work culture": [
+        "Public employee reviews generally highlight:",
+        "• Strong learning and exposure to global pharma processes.",
+        "• Opportunities to work in cross-functional teams (medical, tech, analytics).",
+        "• Workload and work-life balance varying by account and project.",
+        "Overall sentiment is usually mid-to-positive, with both positives (learning, exposure) and some typical service-industry challenges."
+    ],
+    "is indegene a good company to work for": [
+        "Many employees describe Indegene as a good place for learning, especially early in their career or when shifting into life sciences and healthcare-tech.",
+        "Pros commonly mentioned: exposure to global pharma clients, variety of projects, domain learning.",
+        "Challenges mentioned: workload and timelines can be demanding depending on the project.",
+        "As always, experience depends a lot on specific team, role, and manager."
+    ],
+    "indegene work from home": [
+        "Indegene has used hybrid and remote models depending on role, project, and time period.",
+        "Policies can change, so exact work-from-home flexibility depends on the business unit, client requirements, and current company policy.",
+        "For the most accurate picture, candidates should check with HR or the hiring manager during the interview process."
+    ],
+    "indegene work life balance": [
+        "Work-life balance at Indegene is typically described as manageable to challenging, depending heavily on:",
+        "• Client deadlines.",
+        "• Type of project (operations vs. project-based).",
+        "• Specific team and manager.",
+        "Some roles have more predictable hours, others can be fast-paced with peaks during launches or key milestones."
+    ],
+    /* =====================================================
+       CAREERS, ROLES & INTERVIEWS
+    ====================================================== */
+    "indegene careers": [
+        "Indegene hires across multiple profiles, including:",
+        "• Medical writers, scientific writers, and medical information specialists.",
+        "• Pharmacovigilance and safety operations specialists.",
+        "• Data analysts, data scientists, and BI/analytics professionals.",
+        "• Software engineers, full-stack developers, and platform engineers.",
+        "• Marketing operations, campaign managers, project/program managers.",
+        "Requirements vary by role, but interest in life sciences and technology is a common theme."
+    ],
+    "indegene jobs for freshers": [
+        "For freshers, Indegene may offer entry-level roles in areas like:",
+        "• Medical writing or scientific content (for pharmacy/life sciences grads).",
+        "• Operations/coordination roles in commercial or medical projects.",
+        "• Junior data/analytics or technology roles (for CS/IT/Data backgrounds).",
+        "Actual openings change over time; candidates should check the careers page or job portals for current positions."
+    ],
+    "indegene interview process": [
+        "Indegene's interview process depends on the role but usually involves:",
+        "• Resume screening.",
+        "• 1–2 rounds of technical/functional discussion (e.g., medical/clinical, analytics, or development).",
+        "• Managerial or HR discussions on fit, expectations, and compensation.",
+        "Some roles may include written tests or case studies, especially for writing or analytics."
+    ],
+    "skills required for indegene": [
+        "Typical skills that help for roles at Indegene include:",
+        "• For medical/writing roles: strong scientific background, good written English, understanding of pharma/clinical concepts.",
+        "• For analytics roles: SQL/Excel, data visualization, statistics, and domain awareness.",
+        "• For tech roles: solid coding fundamentals, web technologies, APIs, cloud concepts, and interest in healthcare use cases.",
+        "Soft skills: communication, client interaction, teamwork, and ability to work in a process-driven environment."
+    ],
+    /* =====================================================
+       POSITIONING & PURPOSE
+    ====================================================== */
+    "indegene future ready healthcare": [
+        "Future ready healthcare is a core theme at Indegene.",
+        "It means using digital, data, AI, and new operating models to help life sciences companies prepare for how healthcare will work in the future, not just today."
+    ],
+    "why do companies work with indegene": [
+        "Life sciences companies work with Indegene because it:",
+        "• Has deep domain knowledge in pharma and healthcare.",
+        "• Combines that with technology, data, and analytics.",
+        "• Offers scalable delivery teams and proven processes.",
+        "• Helps improve speed to market, compliance, and commercial effectiveness."
+    ],
+    /* =====================================================
+       INDEGENE – WHO WE ARE / ABOUT US (EXTRA)
+    ====================================================== */
+    "indegene who we are": [
+        "Indegene Limited is a tech-native life sciences specialist that orchestrates the path from commercialization strategy through execution.",
+        "It is trusted by many top global biopharmaceutical companies for digital, data, and operations-led transformation."
+    ],
+    "indegene about us": [
+        "Indegene positions itself as a digital-first life sciences commercialization company with deep domain expertise and technology capabilities.",
+        "It combines consulting, operations, and platforms to help life sciences organizations become more efficient and future ready."
+    ],
+    "indegene our story": [
+        "Indegene began in 1998 when its founders came together in Bengaluru to build a technology-led healthcare solutions company.",
+        "Over more than two decades, it has grown through new capabilities and acquisitions into a global life sciences partner."
+    ],
+    "indegene history overview": [
+        "Indegene was founded in 1998 and has expanded via acquisitions in medical education, multichannel marketing, real-world evidence, and consulting.",
+        "It now operates as a global company serving life sciences clients across North America, Europe, and Asia-Pacific."
+    ],
+    "indegene global presence": [
+        "Indegene has offices and delivery centers in India, the United States, Europe, and the Asia-Pacific region.",
+        "Its global footprint supports around-the-clock delivery for multinational life sciences companies."
+    ],
+    "indegene locations worldwide": [
+        "Key Indegene locations include India (headquarters in Bengaluru) along with offices in the US, EU, and APAC.",
+        "These centers host delivery teams for medical, commercial, technology, and analytics work."
+    ],
+    "indegene employees 2024": [
+        "As of around FY24, Indegene employs more than 5,000 people globally across medical, scientific, technology, analytics, and operations roles.",
+        "The workforce spans doctors, pharmacists, scientists, engineers, analysts, and commercial specialists."
+    ],
+    /* =====================================================
+       INDEGENE – WHAT WE DO / WHO WE SERVE (EXTRA)
+    ====================================================== */
+    "indegene what we do": [
+        "Indegene orchestrates life sciences commercialization from strategy through execution.",
+        "It supports clients with omnichannel commercial operations, medical and regulatory services, clinical and evidence support, and technology solutions."
+    ],
+    "indegene who we serve": [
+        "Indegene serves biopharmaceutical companies, emerging biotech firms, and medical device and diagnostics manufacturers.",
+        "It helps these clients scale commercial operations, medical affairs, and evidence functions using digital and data-driven approaches."
+    ],
+    "indegene biopharmaceutical focus": [
+        "For biopharmaceutical clients, Indegene focuses on modular content operations, omnichannel campaign management, field force support, medical affairs, and evidence generation.",
+        "The aim is to speed up launches and improve brand performance across markets."
+    ],
+    "indegene consulting practice": [
+        "Indegene runs an integrated consulting practice that combines strategy, operating model design, and hands-on transformation execution.",
+        "Consulting engagements often focus on omnichannel, data platforms, GenAI adoption, and operating model redesign in life sciences."
+    ],
+    "indegene consulting practice 2025": [
+        "By 2025, Indegene strengthened its consulting practice to accelerate life sciences transformation in areas like commercial, medical, and technology modernization.",
+        "Consultants work closely with operations and technology teams so recommendations can be executed at scale."
+    ],
+    /* =====================================================
+       INDEGENE – TECHNOLOGY, PLATFORMS & AI (EXTRA)
+    ====================================================== */
+    "indegene technology solutions": [
+        "Indegene offers life sciences technology solutions including AI-first platforms, digital engineering, cloud and data services, and integration with existing client systems.",
+        "It helps clients modernize tech stacks, build data lakes, and implement scalable, compliant solutions."
+    ],
+    "indegene life sciences technology solutions": [
+        "Indegene’s technology portfolio spans platform services, data and analytics, product engineering, and managed services tailored for life sciences.",
+        "Solutions are designed to meet regulatory requirements while improving speed, scalability, and automation."
+    ],
+    "indegene next platforms": [
+        "NEXT is a suite of Indegene technology platforms that apply AI, NLP, and machine vision to life sciences workflows.",
+        "They support content modularization, customer data unification, journey analytics, next-best-action recommendations, and pharmacovigilance automation."
+    ],
+    "indegene next technology platforms": [
+        "NEXT technology platforms help automate repetitive processes like content tagging, channel orchestration, and safety case processing.",
+        "They are built to plug into CRM, marketing automation, and safety systems used by life sciences organizations."
+    ],
+    "indegene ai use cases": [
+        "Indegene applies AI and ML to use cases such as HCP engagement recommendations, content modularization, PV signal detection support, demand forecasting, and field force optimization.",
+        "It also uses AI for insight generation from unstructured medical and commercial data."
+    ],
+    "indegene genai at work": [
+        "Indegene runs an internal initiative often described as GenAI at work to embed generative AI into day-to-day tasks for employees.",
+        "This includes using GenAI for email drafting, document summarization, scientific content assistance, coding support, and internal knowledge retrieval."
+    ],
+    "indegene microsoft copilot": [
+        "Indegene uses Microsoft 365 Copilot to improve productivity in Word, Excel, PowerPoint, Outlook, and Teams.",
+        "Copilot helps teams with summarizing documents, generating content drafts, analyzing data, and speeding up proposal and RFP creation while respecting data privacy controls."
+    ],
+    "indegene genai client solutions": [
+        "For clients, Indegene uses GenAI to streamline medical and regulatory submissions, accelerate medico-legal review cycles, and create more personalized omnichannel engagement.",
+        "Its GenAI solutions are designed to be compliant, explainable, and aligned with life sciences quality standards."
+    ],
+    "indegene technology stack view": [
+        "Indegene typically works on top of established life sciences platforms such as CRMs, marketing automation tools, and safety systems, adding AI, analytics, and custom workflows.",
+        "Its approach is to integrate with client ecosystems rather than replace core systems entirely."
+    ],
+    /* =====================================================
+       INDEGENE – FUTURE READY HEALTHCARE & THOUGHT LEADERSHIP (EXTRA)
+    ====================================================== */
+    "indegene future ready healthcare details": [
+        "Future ready healthcare is Indegene’s core purpose and brand positioning.",
+        "It means enabling healthcare organizations to respond better to disruption by using digital, data, AI, and agile operating models across commercial, medical, and clinical functions."
+    ],
+    "indegene digital summit": [
+        "Indegene hosts Digital Summit events that bring together leaders from pharma, biotech, and technology to discuss future ready healthcare.",
+        "Topics typically include omnichannel engagement, data and AI in life sciences, GenAI, and evolving commercialization models."
+    ],
+    "indegene metaverse": [
+        "Indegene has explored how metaverse-style immersive experiences can be used for medical education, HCP engagement, and patient support.",
+        "Its thought leadership highlights both the opportunities and the practical limitations for metaverse adoption in healthcare."
+    ],
+    "indegene thought leadership topics": [
+        "Indegene regularly publishes reports and blogs on topics such as GenAI in life sciences, Customer 360, omnichannel best practices, medical affairs transformation, and future ready healthcare.",
+        "These insights are meant to help pharma and biotech leaders benchmark their capabilities and plan transformation roadmaps."
+    ],
+    "indegene customer 360": [
+        "Indegene advocates for a Customer 360 or single HCP view to enable smarter omnichannel marketing.",
+        "By unifying data from CRM, marketing, events, and other touchpoints, companies can deliver more personalized and compliant engagement."
+    ],
+    "indegene agentforce starter kit": [
+        "Indegene’s Agentforce-style starter kits describe how life sciences companies can safely deploy AI agents for tasks like content query handling, insights generation, and internal support.",
+        "They focus on governance, data quality, security, and clear business use cases for AI agents."
+    ],
+    /* =====================================================
+       INDEGENE – AWARDS, RECOGNITION & ANALYST REPORTS (EXTRA)
+    ====================================================== */
+    "indegene awards and recognition": [
+        "Indegene has been recognized by industry analysts and media for its role in life sciences digital services and operations.",
+        "Past recognitions include mentions as a good place to work and as a leader in digital commercialization services."
+    ],
+    "indegene isg leader 2025": [
+        "In 2025, Indegene was identified as a Leader in ISG Provider Lens evaluations for life sciences digital services in commercial operations.",
+        "This reflects strong capabilities and client feedback in digital commercial transformation."
+    ],
+    /* =====================================================
+       INDEGENE – CAREERS, RECRUITMENT & SECURITY (EXTRA)
+    ====================================================== */
+    "indegene careers site": [
+        "The official Indegene careers portal lists current openings across functions like medical, safety, analytics, technology, and operations.",
+        "The site emphasizes that Indegene is a place to work on challenging problems at the intersection of healthcare and technology."
+    ],
+    "indegene recruitment fraud warning": [
+        "Indegene warns candidates about recruitment fraud and clearly states that it does not charge any fees for job offers.",
+        "Suspicious emails are to be reported to the official incident response mailbox, and candidates are advised not to pay money or share sensitive data with unofficial contacts."
+    ],
+    "indegene security and privacy": [
+        "Indegene highlights data security, patient privacy, and regulatory compliance as core to its solutions.",
+        "This is especially important when working with GenAI, customer data, safety information, and regulated medical content."
+    ],
+    /* =====================================================
+       INDEGENE – CONTACT & GENERAL INFO (EXTRA)
+    ====================================================== */
+    "indegene contact": [
+        "Indegene’s official website provides contact forms and regional office details for business inquiries, partnerships, and media queries.",
+        "Clients and prospects can reach out via the contact page for commercial, medical, or technology-related discussions."
+    ],
+    "indegene tagline summary": [
+        "A simple way to describe Indegene is: a digital-first, tech-native life sciences commercialization partner.",
+        "It helps make pharma, biotech, and medical device companies more data-driven, efficient, and future ready."
+    ],
+    /* =====================================================
+       EXISTING SKYSECURE + MEDICAL CONTENT
+    ====================================================== */
     skysecure: [
         "Skysecure: 5+ years committed to enhancing digital security & resilience globally.",
         "Focuses on building a strong digital ecosystem and specialized security solutions.",
@@ -2247,7 +2820,7 @@ const CONTEXT_MAP = {
     ],
     "breast cancer": [
         "Breast cancer: Malignant proliferation of epithelial cells, classified by TNM staging and ER/PR/HER2 status.",
-        "Signs: Lump, nipple inversion, peau d’orange, discharge, pain, axillary nodes.",
+        "Signs: Lump, nipple inversion, peau dorange, discharge, pain, axillary nodes.",
         "Risk Factors: Age, family history, hormones, radiation, lifestyle.",
         "Treatment: Surgery, radiation, chemotherapy, hormone therapy, targeted agents.",
         "Reference: 'Oncology_Breast_cancer__E_Module_V1'."
@@ -2333,7 +2906,7 @@ const CONTEXT_MAP = {
         "Case Study: 'Oncology Med Info Support_case study 1_V1'."
     ],
     "oncology sales case study": [
-        "Indegene drove incremental sales for breast cancer oncology drug via omnichannel HCP targeting.",
+        "Indegene drove incremental sales for a breast cancer oncology drug via omnichannel HCP targeting.",
         "Solution: Advanced segmentation (13,300 HCPs), repurposed content, multi-channel engagement.",
         "Outcome: $14.2M incremental sales, 936 prescribers activated. Document: 'Oncology_Driving incremental sales for oncology drug _Case study 3_V1'."
     ],
@@ -2409,7 +2982,7 @@ const handleInternalQueries = (query) => {
         (text.includes("time") && !text.includes("life time"))) {
         return `The current time is ${now.toLocaleTimeString([], {
             hour: "2-digit",
-            minute: "2-digit",
+            minute: "2-digit"
         })}.`;
     }
     // Date
@@ -2421,7 +2994,7 @@ const handleInternalQueries = (query) => {
             weekday: "long",
             year: "numeric",
             month: "long",
-            day: "numeric",
+            day: "numeric"
         })}.`;
     }
     // Day
@@ -2456,11 +3029,19 @@ const handleGeneralQueries = (query) => {
     if (text.includes("what can you do") ||
         text.includes("how can you help") ||
         text.includes("what do you do")) {
-        return "I can:\n• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n• Share quick overviews from internal knowledge snippets.\n• Tell you the current time, date, and day.\n\nTry asking: \"Tell me about breast cancer\" or \"Explain regulatory intelligence\".";
+        return ("I can:\n" +
+            "• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n" +
+            "• Share quick overviews from internal knowledge snippets.\n" +
+            "• Tell you the current time, date, and day.\n\n" +
+            'Try asking: "Tell me about breast cancer" or "Explain regulatory intelligence".');
     }
     // Help
     if (text === "help" || text.startsWith("help ")) {
-        return "You can ask me things like:\n• \"What is Indegene?\"\n• \"Tell me about regulatory intelligence\"\n• \"What is breast cancer?\"\n• \"What is the time?\" or \"What's today's date?\"";
+        return ("You can ask me things like:\n" +
+            '• "What is Indegene?"\n' +
+            '• "Tell me about regulatory intelligence"\n' +
+            '• "What is breast cancer?"\n' +
+            '• "What is the time?" or "What\'s today\'s date?"');
     }
     // How are you
     if (text.includes("how are you")) {
@@ -2469,7 +3050,7 @@ const handleGeneralQueries = (query) => {
     return null;
 };
 /* ============================================================
-   CONTEXT SEARCH LOGIC – more robust / semantic-ish
+   CONTEXT SEARCH LOGIC – boosted for employees/founder/CEO/HQ
 ============================================================ */
 const normalize = (text) => text
     .toLowerCase()
@@ -2478,27 +3059,66 @@ const normalize = (text) => text
     .trim();
 const getAnswerFromContext = (query) => {
     const normQuery = normalize(query);
+    // Intent detection
+    const employeeIntent = normQuery.includes("employees") ||
+        normQuery.includes("employee") ||
+        normQuery.includes("headcount") ||
+        normQuery.includes("people") ||
+        normQuery.includes("staff");
+    const founderIntent = normQuery.includes("founder") ||
+        normQuery.includes("founders") ||
+        normQuery.includes("who founded") ||
+        normQuery.includes("founded indegene");
+    const ceoIntent = normQuery.includes("ceo") ||
+        normQuery.includes("chief executive");
+    const hqIntent = normQuery.includes("headquarters") ||
+        normQuery.includes("head office") ||
+        normQuery.includes("hq") ||
+        normQuery.includes("where is indegene") ||
+        normQuery.includes("location");
     let bestKey = null;
     let bestScore = 0;
     Object.keys(CONTEXT_MAP).forEach((key) => {
         const normKey = normalize(key);
         if (!normKey)
             return;
-        let score = 0;
-        // Strong match if one contains the other
+        const keyTokens = new Set(normKey.split(" "));
+        const queryTokens = new Set(normQuery.split(" "));
+        // Base: token overlap
+        let overlap = 0;
+        keyTokens.forEach((t) => {
+            if (queryTokens.has(t))
+                overlap++;
+        });
+        let score = overlap;
+        // Boost if phrases contain each other (more specific keys win)
         if (normQuery.includes(normKey) || normKey.includes(normQuery)) {
-            score = normKey.length; // longer key → higher score
+            score += keyTokens.size;
         }
-        else {
-            // Softer match: token overlap
-            const keyTokens = new Set(normKey.split(" "));
-            const queryTokens = new Set(normQuery.split(" "));
-            let overlap = 0;
-            keyTokens.forEach((t) => {
-                if (queryTokens.has(t))
-                    overlap++;
-            });
-            score = overlap;
+        // Domain-specific boosts
+        // Employees / headcount
+        if (employeeIntent &&
+            (normKey.includes("employees") ||
+                normKey.includes("employee") ||
+                normKey.includes("headcount") ||
+                normKey.includes("people"))) {
+            score += 5;
+        }
+        // Founders
+        if (founderIntent &&
+            (normKey.includes("founder") || normKey.includes("founded"))) {
+            score += 5;
+        }
+        // CEO
+        if (ceoIntent && normKey.includes("ceo")) {
+            score += 5;
+        }
+        // Headquarters / location
+        if (hqIntent &&
+            (normKey.includes("headquarters") ||
+                normKey.includes("india") ||
+                normKey.includes("locations"))) {
+            score += 3;
         }
         if (score > bestScore) {
             bestScore = score;
@@ -2509,7 +3129,7 @@ const getAnswerFromContext = (query) => {
         const normKey = normalize(bestKey);
         const extraPart = normQuery.replace(normKey, "").trim();
         const entries = CONTEXT_MAP[bestKey];
-        // If user asked something *after* the keyword, try to filter lines
+        // If user asked something extra after the keyword, try to filter lines
         if (extraPart) {
             const matched = entries.filter((s) => normalize(s).includes(extraPart));
             if (matched.length)
@@ -2560,7 +3180,7 @@ const QuestionSection = (props) => {
                     abstract: item.Abstract || "",
                     fileType: fileExt,
                     serverRelativeUrl: item.FileRef || "",
-                    fileRef: item.FileRef || "",
+                    fileRef: item.FileRef || ""
                 };
             });
             setDocuments(mapped);
@@ -2699,40 +3319,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 22408);
 const styles = {
-    questionSection: 'questionSection_a79c1e39',
-    tilesContainer: 'tilesContainer_a79c1e39',
-    tile: 'tile_a79c1e39',
-    promptText: 'promptText_a79c1e39',
-    rightInput: 'rightInput_a79c1e39',
-    questionInput: 'questionInput_a79c1e39',
-    chatbotIcon: 'chatbotIcon_a79c1e39',
-    chatWindow: 'chatWindow_a79c1e39',
-    chatHeader: 'chatHeader_a79c1e39',
-    messages: 'messages_a79c1e39',
-    messageContainer: 'messageContainer_a79c1e39',
-    messageContainerUser: 'messageContainerUser_a79c1e39',
-    messageContainerBot: 'messageContainerBot_a79c1e39',
-    messageAvatar: 'messageAvatar_a79c1e39',
-    userMsg: 'userMsg_a79c1e39',
-    botMsg: 'botMsg_a79c1e39',
-    thinking: 'thinking_a79c1e39',
-    pulse: 'pulse_a79c1e39',
-    inputRow: 'inputRow_a79c1e39',
-    chatInput: 'chatInput_a79c1e39',
-    sendButton: 'sendButton_a79c1e39',
-    closeButton: 'closeButton_a79c1e39',
-    tileHeader: 'tileHeader_a79c1e39',
-    fileTypeIcon: 'fileTypeIcon_a79c1e39',
-    fileType: 'fileType_a79c1e39',
-    tileTitle: 'tileTitle_a79c1e39',
-    tileAbstract: 'tileAbstract_a79c1e39',
-    tileActions: 'tileActions_a79c1e39',
-    viewButton: 'viewButton_a79c1e39',
-    downloadButton: 'downloadButton_a79c1e39',
-    loading: 'loading_a79c1e39',
-    noDocuments: 'noDocuments_a79c1e39',
-    detailModal: 'detailModal_a79c1e39',
-    chatLauncher: 'chatLauncher_a79c1e39'
+    questionSection: 'questionSection_5b7924d4',
+    tilesContainer: 'tilesContainer_5b7924d4',
+    tile: 'tile_5b7924d4',
+    promptText: 'promptText_5b7924d4',
+    rightInput: 'rightInput_5b7924d4',
+    questionInput: 'questionInput_5b7924d4',
+    chatbotIcon: 'chatbotIcon_5b7924d4',
+    chatWindow: 'chatWindow_5b7924d4',
+    chatHeader: 'chatHeader_5b7924d4',
+    messages: 'messages_5b7924d4',
+    messageContainer: 'messageContainer_5b7924d4',
+    messageContainerUser: 'messageContainerUser_5b7924d4',
+    messageContainerBot: 'messageContainerBot_5b7924d4',
+    messageAvatar: 'messageAvatar_5b7924d4',
+    userMsg: 'userMsg_5b7924d4',
+    botMsg: 'botMsg_5b7924d4',
+    thinking: 'thinking_5b7924d4',
+    pulse: 'pulse_5b7924d4',
+    inputRow: 'inputRow_5b7924d4',
+    chatInput: 'chatInput_5b7924d4',
+    sendButton: 'sendButton_5b7924d4',
+    closeButton: 'closeButton_5b7924d4',
+    tileHeader: 'tileHeader_5b7924d4',
+    fileTypeIcon: 'fileTypeIcon_5b7924d4',
+    fileType: 'fileType_5b7924d4',
+    tileTitle: 'tileTitle_5b7924d4',
+    tileAbstract: 'tileAbstract_5b7924d4',
+    tileActions: 'tileActions_5b7924d4',
+    viewButton: 'viewButton_5b7924d4',
+    downloadButton: 'downloadButton_5b7924d4',
+    loading: 'loading_5b7924d4',
+    noDocuments: 'noDocuments_5b7924d4',
+    detailModal: 'detailModal_5b7924d4',
+    chatLauncher: 'chatLauncher_5b7924d4'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3291,32 +3911,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./DocumentDetailPage.module.css */ 64790);
 const styles = {
-    documentDetailPage: 'documentDetailPage_1b6959b6',
-    header: 'header_1b6959b6',
-    backButton: 'backButton_1b6959b6',
-    headerActions: 'headerActions_1b6959b6',
-    downloadButton: 'downloadButton_1b6959b6',
-    shareButton: 'shareButton_1b6959b6',
-    content: 'content_1b6959b6',
-    mainContent: 'mainContent_1b6959b6',
-    fileTypeIndicator: 'fileTypeIndicator_1b6959b6',
-    fileTypeIcon: 'fileTypeIcon_1b6959b6',
-    fileTypeText: 'fileTypeText_1b6959b6',
-    documentTitle: 'documentTitle_1b6959b6',
-    documentAbstract: 'documentAbstract_1b6959b6',
-    metadata: 'metadata_1b6959b6',
-    metadataItem: 'metadataItem_1b6959b6',
-    previewSection: 'previewSection_1b6959b6',
-    previewTitle: 'previewTitle_1b6959b6',
-    previewContainer: 'previewContainer_1b6959b6',
-    previewFrame: 'previewFrame_1b6959b6',
-    previewPlaceholder: 'previewPlaceholder_1b6959b6',
-    previewError: 'previewError_1b6959b6',
-    errorIcon: 'errorIcon_1b6959b6',
-    errorText: 'errorText_1b6959b6',
-    retryButton: 'retryButton_1b6959b6',
-    loading: 'loading_1b6959b6',
-    error: 'error_1b6959b6'
+    documentDetailPage: 'documentDetailPage_ff450dd4',
+    header: 'header_ff450dd4',
+    backButton: 'backButton_ff450dd4',
+    headerActions: 'headerActions_ff450dd4',
+    downloadButton: 'downloadButton_ff450dd4',
+    shareButton: 'shareButton_ff450dd4',
+    content: 'content_ff450dd4',
+    mainContent: 'mainContent_ff450dd4',
+    fileTypeIndicator: 'fileTypeIndicator_ff450dd4',
+    fileTypeIcon: 'fileTypeIcon_ff450dd4',
+    fileTypeText: 'fileTypeText_ff450dd4',
+    documentTitle: 'documentTitle_ff450dd4',
+    documentAbstract: 'documentAbstract_ff450dd4',
+    metadata: 'metadata_ff450dd4',
+    metadataItem: 'metadataItem_ff450dd4',
+    previewSection: 'previewSection_ff450dd4',
+    previewTitle: 'previewTitle_ff450dd4',
+    previewContainer: 'previewContainer_ff450dd4',
+    previewFrame: 'previewFrame_ff450dd4',
+    previewPlaceholder: 'previewPlaceholder_ff450dd4',
+    previewError: 'previewError_ff450dd4',
+    errorIcon: 'errorIcon_ff450dd4',
+    errorText: 'errorText_ff450dd4',
+    retryButton: 'retryButton_ff450dd4',
+    loading: 'loading_ff450dd4',
+    error: 'error_ff450dd4'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
