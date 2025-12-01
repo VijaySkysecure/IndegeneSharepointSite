@@ -24,7 +24,7 @@
   flex: 1 1 calc(33.333% - 16px);
   min-width: 0;
   max-width: none;
-  height: 230px;
+  height: 232px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -40,19 +40,19 @@
 }
 
 .fileTypeIcon {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
 }
 
 .fileType {
-  font-size: 14px;
+  font-size: 10px;
   color: #666;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
 }
 
 .tileTitle {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
   margin: 0 0 12px 0;
@@ -64,7 +64,7 @@
 }
 
 .tileAbstract {
-  font-size: 14px;
+  font-size: 12px;
   color: #666;
   margin: 0 0 20px 0;
   font-family: 'Inter', sans-serif;
@@ -96,7 +96,7 @@
   border: none;
   border-radius: 4px;
   padding: 10px 16px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
@@ -162,7 +162,7 @@
 .noDocuments {
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Inter', sans-serif;
   padding: 40px;
 }
