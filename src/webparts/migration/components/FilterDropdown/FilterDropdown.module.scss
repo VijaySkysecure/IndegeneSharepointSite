@@ -136,8 +136,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));  /* Show more cards per row */
+  gap: 12px;  /* Reduce spacing between cards */
+  align-items: start;
 }
 
 .card {
@@ -205,4 +206,11 @@
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 13px;
+}
+.cardLink {
+  text-decoration: underline;
+  cursor: pointer;
+  /* optional: adjust color/weight */
+  // color: #005a9e;
+  // font-weight: 500;
 }

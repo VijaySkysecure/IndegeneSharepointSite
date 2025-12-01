@@ -77,10 +77,16 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
           {/* DROPDOWN PANEL */}
           {isOpen && (
-            <div className={styles.dropdownPanel}>
-              <FilterDropdown searchText={searchText} />
-            </div>
-          )}
+  <div className={styles.dropdownPanel}>
+    <FilterDropdown
+      searchText={searchText}
+      spHttpClient={props.context.spHttpClient}
+      siteUrl={props.context.pageContext.web.absoluteUrl}
+      
+    />
+  </div>
+)}
+          
         </div>
       </div>
 
