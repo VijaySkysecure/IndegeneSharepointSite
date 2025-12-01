@@ -1,7 +1,15 @@
 import * as React from 'react';
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
+import { AzureOpenAIService } from '../../services/AzureOpenAIService';
 import styles from './DocumentDetailPage.module.scss';
+
+// Azure OpenAI Configuration
+const AZURE_OPENAI_CONFIG = {
+  apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+  endpoint: 'https://engineeringteamopenai.openai.azure.com',
+  deploymentName: 'gpt-4o'
+};
 
 interface IDocumentDetailPageProps {
   context: WebPartContext;
@@ -26,7 +34,9 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
   const [loading, setLoading] = React.useState<boolean>(true);
   const [previewUrl, setPreviewUrl] = React.useState<string>('');
   const [previewError, setPreviewError] = React.useState<string>('');
+  const [tags, setTags] = React.useState<string[]>([]);
   const iframeRef = React.useRef<HTMLIFrameElement>(null);
+  const openAIService = React.useRef<AzureOpenAIService>(new AzureOpenAIService(AZURE_OPENAI_CONFIG));
   
   // Cleanup blob URLs on unmount
   React.useEffect(() => {
@@ -113,6 +123,19 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
       };
       
       setDocument(documentDetail);
+      
+      // Generate tags from abstract using AI
+      if (abstract && abstract.trim().length > 0) {
+        try {
+          const generatedTags = await openAIService.current.generateTags(abstract);
+          setTags(generatedTags);
+        } catch (error) {
+          console.error('Error generating tags:', error);
+          setTags([]);
+        }
+      } else {
+        setTags([]);
+      }
       
       // Generate preview URL using SharePoint's preview mechanism
       if (serverRelativeUrl) {
@@ -326,9 +349,20 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
 
       <div className={styles.content}>
         <div className={styles.mainContent}>
-          <div className={styles.fileTypeIndicator}>
-            <span className={styles.fileTypeIcon}>{getFileTypeIcon(document.fileType)}</span>
-            <span className={styles.fileTypeText}>{document.fileType}</span>
+          <div className={styles.headerRow}>
+            <div className={styles.fileTypeIndicator}>
+              <span className={styles.fileTypeIcon}>{getFileTypeIcon(document.fileType)}</span>
+              <span className={styles.fileTypeText}>{document.fileType}</span>
+            </div>
+            {tags.length > 0 && (
+              <div className={styles.tagsContainer}>
+                {tags.map((tag, index) => (
+                  <span key={index} className={styles.tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
 
           <h1 className={styles.documentTitle}>{document.name}</h1>

@@ -16,7 +16,8 @@ type FilterGroup = { title: string; count?: number; children?: FilterChild[] };
 
 type ResultItem = {
   id: number;              // list item Id
-  title: string;
+  title: string;            // Document Title (from SharePoint Title field)
+  fileName: string;         // Actual filename (FileLeafRef)
   contributor: string;
   updated: string;
   description: string;     // Abstract
@@ -62,6 +63,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
     Array.from({ length: 6 }).map((_, i) => ({
       id: i,
       title: `Expert ${i + 1}`,
+      fileName: `expert-${i + 1}.pdf`,
       contributor: `Role ${i + 1}`,
       updated: "Nov 20, 2025",
       description: "Expert profile placeholder.",
@@ -139,12 +141,17 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
         const data = await response.json();
 
         const docs: ResultItem[] = (data.value || []).map((item: any) => {
-          const fileName = item.FileLeafRef || item.Title || "Untitled";
+          // Extract just the filename from FileLeafRef (which might include path)
+          const fileLeafRef = item.FileLeafRef || "";
+          const fileName = fileLeafRef.split('/').pop() || fileLeafRef || "Untitled";
           const fileType = getFileTypeFromName(fileName);
+          // Always use Title field as document title, fallback to filename if Title is empty
+          const documentTitle = item.Title && item.Title.trim() ? item.Title.trim() : fileName;
 
           return {
             id: item.Id,
-            title: fileName,
+            title: documentTitle, // Document Title (from SharePoint Title field) - always shown
+            fileName: fileName,   // Actual filename (extracted from FileLeafRef) - always shown
             contributor: item.Author?.Title || "Unknown",
             updated: item.Created
               ? new Date(item.Created).toLocaleString()
@@ -376,7 +383,8 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
                             </span>
                           </div>
 
-                          <h3 className={styles.tileTitle}>{item.title}</h3>
+                          <h3 className={styles.tileTitle}>{item.title || "Untitled Document"}</h3>
+                          <div className={styles.fileName}>{item.fileName || "No filename"}</div>
                           <p className={styles.tileAbstract}>
                             {item.description || "No abstract available"}
                           </p>

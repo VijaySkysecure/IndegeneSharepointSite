@@ -842,7 +842,7 @@ const handleGeneralQueries = (query: string): string | null => {
 };
 
 /* ============================================================
-   CONTEXT SEARCH LOGIC – boosted for employees/founder/CEO/HQ
+   CONTEXT SEARCH LOGIC – boosted, with Skysecure fix
 ============================================================ */
 const normalize = (text: string): string =>
   text
@@ -853,6 +853,18 @@ const normalize = (text: string): string =>
 
 const getAnswerFromContext = (query: string): string => {
   const normQuery = normalize(query);
+
+  // 0) Direct exact-key hit (after normalization)
+  if (CONTEXT_MAP[normQuery]) {
+    return CONTEXT_MAP[normQuery].join(" ");
+  }
+
+  const queryTokens = new Set(normQuery.split(" "));
+
+  // 0.5) Hard override for skysecure keyword to avoid tie with "what is indegene"
+  if (queryTokens.has("skysecure") && CONTEXT_MAP["skysecure"]) {
+    return CONTEXT_MAP["skysecure"].join(" ");
+  }
 
   // Intent detection
   const employeeIntent =
@@ -869,8 +881,7 @@ const getAnswerFromContext = (query: string): string => {
     normQuery.includes("founded indegene");
 
   const ceoIntent =
-    normQuery.includes("ceo") ||
-    normQuery.includes("chief executive");
+    normQuery.includes("ceo") || normQuery.includes("chief executive");
 
   const hqIntent =
     normQuery.includes("headquarters") ||
@@ -887,7 +898,6 @@ const getAnswerFromContext = (query: string): string => {
     if (!normKey) return;
 
     const keyTokens = new Set(normKey.split(" "));
-    const queryTokens = new Set(normQuery.split(" "));
 
     // Base: token overlap
     let overlap = 0;
@@ -900,6 +910,16 @@ const getAnswerFromContext = (query: string): string => {
     // Boost if phrases contain each other (more specific keys win)
     if (normQuery.includes(normKey) || normKey.includes(normQuery)) {
       score += keyTokens.size;
+    }
+
+    // NEW: boost when all key tokens appear in query (subset match)
+    let allTokensPresent = true;
+    keyTokens.forEach((t) => {
+      if (!queryTokens.has(t)) allTokensPresent = false;
+    });
+    if (allTokensPresent) {
+      // Strong preference for keys like "skysecure" in "what is skysecure"
+      score += keyTokens.size + 1;
     }
 
     // Domain-specific boosts
@@ -951,7 +971,9 @@ const getAnswerFromContext = (query: string): string => {
 
     // If user asked something extra after the keyword, try to filter lines
     if (extraPart) {
-      const matched = entries.filter((s) => normalize(s).includes(extraPart));
+      const matched = entries.filter((s) =>
+        normalize(s).includes(extraPart)
+      );
       if (matched.length) return matched.join(" ");
     }
 
