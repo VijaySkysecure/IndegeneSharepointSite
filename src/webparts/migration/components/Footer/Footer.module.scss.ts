@@ -1,11 +1,10 @@
 
 require("./Footer.module.css");
 const styles = {
-  footer: 'footer_49b3a56d',
-  footerContainer: 'footerContainer_49b3a56d',
-  logoContainer: 'logoContainer_49b3a56d',
-  logoSquare: 'logoSquare_49b3a56d',
-  logoText: 'logoText_49b3a56d'
+  footer: 'footer_a8d32ee6',
+  footerContainer: 'footerContainer_a8d32ee6',
+  logoContainer: 'logoContainer_a8d32ee6',
+  logoSquare: 'logoSquare_a8d32ee6'
 };
 
 export default styles;

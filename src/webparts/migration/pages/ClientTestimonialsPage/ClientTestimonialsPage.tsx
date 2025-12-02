@@ -3,7 +3,7 @@ import { IClientTestimonialsPageProps } from './IClientTestimonialsPageProps';
 import styles from './ClientTestimonialsPage.module.scss';
 
 export const ClientTestimonialsPage: React.FunctionComponent<IClientTestimonialsPageProps> = (props) => {
-  const testimonials = [1, 2, 3, 4, 5];
+  const testimonials = [1, 2, 3];
 
   return (
     <div className={styles.testimonialsPage}>
@@ -14,11 +14,6 @@ export const ClientTestimonialsPage: React.FunctionComponent<IClientTestimonials
               <p className={styles.testimonialText}>Client Feedback or testimonials.</p>
             </div>
           ))}
-        </div>
-        <div className={styles.carouselIndicators}>
-          <span className={styles.dot}></span>
-          <span className={`${styles.dot} ${styles.active}`}></span>
-          <span className={styles.dot}></span>
         </div>
       </div>
     </div>

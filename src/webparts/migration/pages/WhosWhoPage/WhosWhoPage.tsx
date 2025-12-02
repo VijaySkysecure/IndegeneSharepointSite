@@ -23,11 +23,6 @@ export const WhosWhoPage: React.FunctionComponent<IWhosWhoPageProps> = (props) =
         <div className={styles.mainContentBlock}>
           <p className={styles.contentText}>BU Head | SL 1 | SL 2 | SL 3 | SL 4 | SL 5</p>
         </div>
-        <div className={styles.carouselIndicators}>
-          <span className={styles.dot}></span>
-          <span className={`${styles.dot} ${styles.active}`}></span>
-          <span className={styles.dot}></span>
-        </div>
       </div>
     </div>
   );

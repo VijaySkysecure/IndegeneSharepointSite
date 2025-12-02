@@ -3,7 +3,6 @@ import { IMigrationProps } from './IMigrationProps';
 import { Header } from './Header/Header';
 import { Navigation } from './Navigation/Navigation';
 import { QuestionSection } from './QuestionSection/QuestionSection';
-import { Footer } from './Footer/Footer';
 import { ContentArea } from './ContentArea/ContentArea';
 import { BUDetailPage } from './BUDetailPage/BUDetailPage';
 import styles from './Migration.module.scss';
@@ -69,7 +68,6 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
           onBUClick={this.handleBUClick}
         />
         <QuestionSection context={this.props.context} />
-        <Footer />
       </div>
     );
   }

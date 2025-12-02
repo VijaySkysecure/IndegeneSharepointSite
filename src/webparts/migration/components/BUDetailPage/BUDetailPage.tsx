@@ -4,7 +4,6 @@ import { BUHeader } from '../BUHeader/BUHeader';
 import { BUNavigation } from '../BUNavigation/BUNavigation';
 import { BUContentArea } from '../BUContentArea/BUContentArea';
 import { BUQuestionSection } from '../BUQuestionSection/BUQuestionSection';
-import { Footer } from '../Footer/Footer';
 import styles from './BUDetailPage.module.scss';
 
 export const BUDetailPage: React.FunctionComponent<IBUDetailPageProps> = (props) => {
@@ -20,7 +19,6 @@ export const BUDetailPage: React.FunctionComponent<IBUDetailPageProps> = (props)
       <BUNavigation activePage={activePage} onNavClick={handleNavClick} />
       <BUContentArea activePage={activePage} context={props.context} />
       <BUQuestionSection />
-      <Footer />
     </div>
   );
 };

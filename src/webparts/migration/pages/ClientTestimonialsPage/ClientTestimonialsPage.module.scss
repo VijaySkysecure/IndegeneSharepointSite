@@ -20,15 +20,10 @@
 
 .testimonialsGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
   box-sizing: border-box;
-
-  @media (max-width: 1400px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -41,7 +36,7 @@
 
 .testimonialCard {
   background-color: #64b5f6;
-  padding: 30px 15px;
+  padding: 40px 30px;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -55,9 +50,9 @@
 }
 
 .testimonialText {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Inter', sans-serif;
   margin: 0;
   line-height: 1.5;
@@ -65,30 +60,4 @@
   overflow-wrap: break-word;
 }
 
-.carouselIndicators {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #90caf9;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-
-  &:hover {
-    transform: scale(1.2);
-    background-color: #64b5f6;
-  }
-
-  &.active {
-    background-color: #1976d2;
-    width: 14px;
-    height: 14px;
-  }
-}
 
