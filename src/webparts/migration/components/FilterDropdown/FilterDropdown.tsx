@@ -3,6 +3,13 @@ import { createPortal } from "react-dom";
 import styles from "./FilterDropdown.module.scss";
 import { SPHttpClient, SPHttpClientResponse } from "@microsoft/sp-http";
 import { DocumentDetailPage } from "../../pages/DocumentDetailPage/DocumentDetailPage";
+import { AzureOpenAIService, ISearchFilters } from "../../services/AzureOpenAIService";
+import {
+  AZURE_OPENAI_ENDPOINT,
+  AZURE_OPENAI_API_KEY,
+  AZURE_OPENAI_DEPLOYMENT,
+} from "../../services/SearchConfig";
+import { DocumentParser } from "../../services/DocumentParser";
 
 export interface IFilterDropdownProps {
   searchText: string;
@@ -65,6 +72,10 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
     React.useState<"documents" | "experts">("documents");
 
   const [documents, setDocuments] = React.useState<ResultItem[]>([]);
+  const [semanticSearchResults, setSemanticSearchResults] = React.useState<ResultItem[]>([]);
+  // Cache for document content to avoid re-extracting on every search
+  const documentContentCache = React.useRef<Map<number, string>>(new Map());
+  
   const [experts] = React.useState<ResultItem[]>(() =>
     Array.from({ length: 6 }).map((_, i) => ({
       id: i,
@@ -78,6 +89,21 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [error, setError] = React.useState<string | null>(null);
+
+  /* ---------------------------------------------
+     Semantic Search Service Instance
+  --------------------------------------------- */
+  const openAIServiceRef = React.useRef<AzureOpenAIService | null>(null);
+  
+  React.useEffect(() => {
+    if (!openAIServiceRef.current) {
+      openAIServiceRef.current = new AzureOpenAIService({
+        apiKey: AZURE_OPENAI_API_KEY,
+        endpoint: AZURE_OPENAI_ENDPOINT,
+        deploymentName: AZURE_OPENAI_DEPLOYMENT,
+      });
+    }
+  }, []);
 
   /* ---------------------------------------------
      Document Preview State (same as QuestionSection)
@@ -233,9 +259,211 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
   const hasAnyFilter = hasSearch || hasFormat || hasBusinessUnit || hasDocumentType || 
                        hasClient || hasRegion || hasTherapyArea || hasDiseaseArea;
 
+  /* ======================================================
+     Semantic Search Integration on KMArtifacts Documents
+     Uses Azure OpenAI embeddings to search through:
+     - File name
+     - Abstract (description)
+     - Author (contributor)
+     - Title
+  ====================================================== */
+  React.useEffect(() => {
+    // Only perform semantic search for documents tab when there's a search query
+    if (activeTab !== "documents" || !hasSearch || !openAIServiceRef.current || documents.length === 0) {
+      // For non-search filters or experts tab, use client-side filtering
+      setSemanticSearchResults([]);
+      return;
+    }
+
+    const performSemanticSearch = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+
+        // First, apply server-side filters to reduce the document set
+        let filteredDocs = documents;
+
+        // Apply Business Unit filter
+        if (selectedBusinessUnit) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.businessUnit && doc.businessUnit.trim() === selectedBusinessUnit.trim()
+          );
+        }
+
+        // Apply Document Type filter
+        if (selectedDocumentType) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.documentType && doc.documentType.trim() === selectedDocumentType.trim()
+          );
+        }
+
+        // Apply Client filter
+        if (selectedClient) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.client && doc.client.trim() === selectedClient.trim()
+          );
+        }
+
+        // Apply Region filter
+        if (selectedRegion) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.region && doc.region.trim() === selectedRegion.trim()
+          );
+        }
+
+        // Apply File Format filter
+        if (selectedFormat) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.fileType && doc.fileType.toLowerCase() === selectedFormat.toLowerCase()
+          );
+        }
+
+        // Apply Therapy Area filter
+        if (selectedTherapyArea) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.therapyArea && doc.therapyArea.trim() === selectedTherapyArea.trim()
+          );
+        }
+
+        // Apply Disease Area filter
+        if (selectedDiseaseArea) {
+          filteredDocs = filteredDocs.filter(
+            (doc) => doc.diseaseArea && doc.diseaseArea.trim() === selectedDiseaseArea.trim()
+          );
+        }
+
+        // If no documents after filtering, return empty
+        if (filteredDocs.length === 0) {
+          setSemanticSearchResults([]);
+          setIsLoading(false);
+          return;
+        }
+
+        // Extract content for ALL documents to ensure complete search coverage
+        // This ensures words in document content (but not in abstract) are found
+        // Process in batches to avoid overwhelming the browser
+        const batchSize = 10; // Process 10 documents at a time
+        const allDocsWithContent: Array<{
+          id: number;
+          title: string;
+          fileName: string;
+          description: string;
+          contributor: string;
+          documentContent: string;
+          [key: string]: any;
+        }> = [];
+
+        // Process documents in batches
+        for (let i = 0; i < filteredDocs.length; i += batchSize) {
+          const batch = filteredDocs.slice(i, i + batchSize);
+          
+          const batchResults = await Promise.all(
+            batch.map(async (doc) => {
+              let documentContent = documentContentCache.current.get(doc.id);
+              
+              // If content not cached, try to extract it (only for supported file types)
+              if (!documentContent && doc.serverRelativeUrl && doc.fileType) {
+                const supportedTypes = ['PDF', 'DOCX', 'PPTX', 'MHTML', 'MHT', 'SVG'];
+                if (supportedTypes.includes(doc.fileType.toUpperCase())) {
+                  try {
+                    // Download file from SharePoint
+                    const fileUrl = `${siteUrl}/_api/web/GetFileByServerRelativeUrl('${doc.serverRelativeUrl}')/$value`;
+                    const fileResponse = await spHttpClient.get(
+                      fileUrl,
+                      SPHttpClient.configurations.v1
+                    );
+                    
+                    if (fileResponse.ok) {
+                      const blob = await fileResponse.blob();
+                      const file = new File([blob], doc.fileName, { type: blob.type });
+                      
+                      // Extract text content
+                      const parseResult = await DocumentParser.parseFile(file);
+                      if (parseResult.success && parseResult.text) {
+                        // Use first 15000 characters for comprehensive search
+                        documentContent = parseResult.text.substring(0, 15000);
+                        documentContentCache.current.set(doc.id, documentContent);
+                      }
+                    }
+                  } catch (err) {
+                    console.warn(`Could not extract content for document ${doc.id}:`, err);
+                    // Continue without content - will use metadata only
+                  }
+                }
+              }
+              
+              return {
+                id: doc.id,
+                title: doc.title,
+                fileName: doc.fileName,
+                description: doc.description, // abstract
+                contributor: doc.contributor, // author
+                documentContent: documentContent || '', // actual document content (may be empty if extraction failed)
+                // Include all other fields for the result
+                ...doc,
+              };
+            })
+          );
+          
+          allDocsWithContent.push(...batchResults);
+        }
+
+        // Perform semantic search on filtered KMArtifacts documents
+        // This searches through: title, fileName, description (abstract), contributor (author), AND document content
+        // Increase topK to ensure we get all matches, including those only in document content
+        const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(
+          searchText,
+          allDocsWithContent,
+          100 // Get top 100 results to ensure we don't miss documents with matches only in content
+        );
+
+        // Map semantic search results back to ResultItem format
+        const mappedResults: ResultItem[] = semanticResults.map((result) => result.document);
+
+        setSemanticSearchResults(mappedResults);
+      } catch (err: any) {
+        console.error("Semantic search error:", err);
+        // On error, fall back to text-based search on KMArtifacts files
+        setSemanticSearchResults([]);
+        // Will fall back to SharePoint documents (KMArtifacts) in filteredItems useMemo
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    // Debounce search to avoid too many API calls
+    const timeoutId = setTimeout(performSemanticSearch, 800);
+    return () => clearTimeout(timeoutId);
+  }, [
+    searchText,
+    hasSearch,
+    activeTab,
+    documents, // Include documents in dependencies
+    selectedBusinessUnit,
+    selectedDocumentType,
+    selectedClient,
+    selectedRegion,
+    selectedFormat,
+    selectedTherapyArea,
+    selectedDiseaseArea,
+  ]);
+
+  /* ======================================================
+     Client-side filtering - Always searches KMArtifacts files
+  ====================================================== */
   const filteredItems = React.useMemo(() => {
     if (!hasAnyFilter) return []; // empty grid initially
 
+    // If we have semantic search results from Azure (search query exists), use those
+    // Note: semanticSearchResults will be empty array if Azure search fails or returns no results,
+    // in which case we fall back to KMArtifacts files below
+    if (hasSearch && activeTab === "documents" && semanticSearchResults.length > 0) {
+      return semanticSearchResults;
+    }
+
+    // Otherwise, search KMArtifacts files from SharePoint (always available)
+    // This includes: no search query, or semantic search returned no results
+    // The 'documents' state contains all files from KMArtifacts list
     const baseItems = activeTab === "documents" ? documents : experts;
     const keyword = searchText.toLowerCase();
     const fmt = selectedFormat;
@@ -316,6 +544,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
     selectedRegion,
     selectedTherapyArea,
     selectedDiseaseArea,
+    semanticSearchResults,
   ]);
 
   /* ======================================================

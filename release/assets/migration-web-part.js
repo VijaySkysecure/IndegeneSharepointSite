@@ -1585,6 +1585,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @microsoft/sp-http */ 91909);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 62434);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 81651);
+/* harmony import */ var _services_SearchConfig__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/SearchConfig */ 37837);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../services/DocumentParser */ 32969);
+
+
+
 
 
 
@@ -1615,6 +1621,9 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     const [openGroup, setOpenGroup] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const [activeTab, setActiveTab] = react__WEBPACK_IMPORTED_MODULE_0__.useState("documents");
     const [documents, setDocuments] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
+    const [semanticSearchResults, setSemanticSearchResults] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
+    // Cache for document content to avoid re-extracting on every search
+    const documentContentCache = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new Map());
     const [experts] = react__WEBPACK_IMPORTED_MODULE_0__.useState(() => Array.from({ length: 6 }).map((_, i) => ({
         id: i,
         title: `Expert ${i + 1}`,
@@ -1625,6 +1634,19 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     })));
     const [isLoading, setIsLoading] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
     const [error, setError] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    /* ---------------------------------------------
+       Semantic Search Service Instance
+    --------------------------------------------- */
+    const openAIServiceRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        if (!openAIServiceRef.current) {
+            openAIServiceRef.current = new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__.AzureOpenAIService({
+                apiKey: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_6__.AZURE_OPENAI_API_KEY,
+                endpoint: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_6__.AZURE_OPENAI_ENDPOINT,
+                deploymentName: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_6__.AZURE_OPENAI_DEPLOYMENT,
+            });
+        }
+    }, []);
     /* ---------------------------------------------
        Document Preview State (same as QuestionSection)
     --------------------------------------------- */
@@ -1763,9 +1785,151 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     const hasDiseaseArea = !!selectedDiseaseArea;
     const hasAnyFilter = hasSearch || hasFormat || hasBusinessUnit || hasDocumentType ||
         hasClient || hasRegion || hasTherapyArea || hasDiseaseArea;
+    /* ======================================================
+       Semantic Search Integration on KMArtifacts Documents
+       Uses Azure OpenAI embeddings to search through:
+       - File name
+       - Abstract (description)
+       - Author (contributor)
+       - Title
+    ====================================================== */
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        // Only perform semantic search for documents tab when there's a search query
+        if (activeTab !== "documents" || !hasSearch || !openAIServiceRef.current || documents.length === 0) {
+            // For non-search filters or experts tab, use client-side filtering
+            setSemanticSearchResults([]);
+            return;
+        }
+        const performSemanticSearch = async () => {
+            try {
+                setIsLoading(true);
+                setError(null);
+                // First, apply server-side filters to reduce the document set
+                let filteredDocs = documents;
+                // Apply Business Unit filter
+                if (selectedBusinessUnit) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.businessUnit && doc.businessUnit.trim() === selectedBusinessUnit.trim());
+                }
+                // Apply Document Type filter
+                if (selectedDocumentType) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.documentType && doc.documentType.trim() === selectedDocumentType.trim());
+                }
+                // Apply Client filter
+                if (selectedClient) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.client && doc.client.trim() === selectedClient.trim());
+                }
+                // Apply Region filter
+                if (selectedRegion) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.region && doc.region.trim() === selectedRegion.trim());
+                }
+                // Apply File Format filter
+                if (selectedFormat) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.fileType && doc.fileType.toLowerCase() === selectedFormat.toLowerCase());
+                }
+                // Apply Therapy Area filter
+                if (selectedTherapyArea) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.therapyArea && doc.therapyArea.trim() === selectedTherapyArea.trim());
+                }
+                // Apply Disease Area filter
+                if (selectedDiseaseArea) {
+                    filteredDocs = filteredDocs.filter((doc) => doc.diseaseArea && doc.diseaseArea.trim() === selectedDiseaseArea.trim());
+                }
+                // If no documents after filtering, return empty
+                if (filteredDocs.length === 0) {
+                    setSemanticSearchResults([]);
+                    setIsLoading(false);
+                    return;
+                }
+                // Extract content for ALL documents to ensure complete search coverage
+                // This ensures words in document content (but not in abstract) are found
+                // Process in batches to avoid overwhelming the browser
+                const batchSize = 10; // Process 10 documents at a time
+                const allDocsWithContent = [];
+                // Process documents in batches
+                for (let i = 0; i < filteredDocs.length; i += batchSize) {
+                    const batch = filteredDocs.slice(i, i + batchSize);
+                    const batchResults = await Promise.all(batch.map(async (doc) => {
+                        let documentContent = documentContentCache.current.get(doc.id);
+                        // If content not cached, try to extract it (only for supported file types)
+                        if (!documentContent && doc.serverRelativeUrl && doc.fileType) {
+                            const supportedTypes = ['PDF', 'DOCX', 'PPTX', 'MHTML', 'MHT', 'SVG'];
+                            if (supportedTypes.includes(doc.fileType.toUpperCase())) {
+                                try {
+                                    // Download file from SharePoint
+                                    const fileUrl = `${siteUrl}/_api/web/GetFileByServerRelativeUrl('${doc.serverRelativeUrl}')/$value`;
+                                    const fileResponse = await spHttpClient.get(fileUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__.SPHttpClient.configurations.v1);
+                                    if (fileResponse.ok) {
+                                        const blob = await fileResponse.blob();
+                                        const file = new File([blob], doc.fileName, { type: blob.type });
+                                        // Extract text content
+                                        const parseResult = await _services_DocumentParser__WEBPACK_IMPORTED_MODULE_7__.DocumentParser.parseFile(file);
+                                        if (parseResult.success && parseResult.text) {
+                                            // Use first 15000 characters for comprehensive search
+                                            documentContent = parseResult.text.substring(0, 15000);
+                                            documentContentCache.current.set(doc.id, documentContent);
+                                        }
+                                    }
+                                }
+                                catch (err) {
+                                    console.warn(`Could not extract content for document ${doc.id}:`, err);
+                                    // Continue without content - will use metadata only
+                                }
+                            }
+                        }
+                        return Object.assign({ id: doc.id, title: doc.title, fileName: doc.fileName, description: doc.description, contributor: doc.contributor, documentContent: documentContent || '' }, doc);
+                    }));
+                    allDocsWithContent.push(...batchResults);
+                }
+                // Perform semantic search on filtered KMArtifacts documents
+                // This searches through: title, fileName, description (abstract), contributor (author), AND document content
+                // Increase topK to ensure we get all matches, including those only in document content
+                const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(searchText, allDocsWithContent, 100 // Get top 100 results to ensure we don't miss documents with matches only in content
+                );
+                // Map semantic search results back to ResultItem format
+                const mappedResults = semanticResults.map((result) => result.document);
+                setSemanticSearchResults(mappedResults);
+            }
+            catch (err) {
+                console.error("Semantic search error:", err);
+                // On error, fall back to text-based search on KMArtifacts files
+                setSemanticSearchResults([]);
+                // Will fall back to SharePoint documents (KMArtifacts) in filteredItems useMemo
+            }
+            finally {
+                setIsLoading(false);
+            }
+        };
+        // Debounce search to avoid too many API calls
+        const timeoutId = setTimeout(performSemanticSearch, 800);
+        return () => clearTimeout(timeoutId);
+    }, [
+        searchText,
+        hasSearch,
+        activeTab,
+        documents,
+        selectedBusinessUnit,
+        selectedDocumentType,
+        selectedClient,
+        selectedRegion,
+        selectedFormat,
+        selectedTherapyArea,
+        selectedDiseaseArea,
+    ]);
+    /* ======================================================
+       Client-side filtering - Always searches KMArtifacts files
+    ====================================================== */
     const filteredItems = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
         if (!hasAnyFilter)
             return []; // empty grid initially
+        // If we have semantic search results from Azure (search query exists), use those
+        // Note: semanticSearchResults will be empty array if Azure search fails or returns no results,
+        // in which case we fall back to KMArtifacts files below
+        if (hasSearch && activeTab === "documents" && semanticSearchResults.length > 0) {
+            return semanticSearchResults;
+        }
+        // Otherwise, search KMArtifacts files from SharePoint (always available)
+        // This includes: no search query, or semantic search returned no results
+        // The 'documents' state contains all files from KMArtifacts list
         const baseItems = activeTab === "documents" ? documents : experts;
         const keyword = searchText.toLowerCase();
         const fmt = selectedFormat;
@@ -1828,6 +1992,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
         selectedRegion,
         selectedTherapyArea,
         selectedDiseaseArea,
+        semanticSearchResults,
     ]);
     /* ======================================================
        Document Action Handlers (same as QuestionSection)
@@ -4612,6 +4777,195 @@ class AzureOpenAIService {
             client: facetJson.client ? mapFacetArray(facetJson.client) : undefined,
             region: facetJson.region ? mapFacetArray(facetJson.region) : undefined
         };
+    }
+    /**
+     * Generate embedding vector for text using Azure OpenAI
+     */
+    async generateEmbedding(text) {
+        var _a, _b;
+        if (!text || !text.trim()) {
+            throw new Error('Text cannot be empty for embedding generation');
+        }
+        try {
+            // Ensure endpoint doesn't have trailing slash, then add path
+            const baseEndpoint = _SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_ENDPOINT.endsWith('/')
+                ? _SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_ENDPOINT.slice(0, -1)
+                : _SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_ENDPOINT;
+            const url = `${baseEndpoint}/openai/deployments/${_SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_EMBEDDING_MODEL}/embeddings?api-version=${_SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_API_VERSION}`;
+            const res = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'api-key': _SearchConfig__WEBPACK_IMPORTED_MODULE_0__.AZURE_OPENAI_API_KEY
+                },
+                body: JSON.stringify({
+                    input: text.trim()
+                })
+            });
+            if (!res.ok) {
+                const errorText = await res.text();
+                console.error('Embedding API failed:', res.status, errorText);
+                throw new Error(`Embedding generation failed: ${res.status}`);
+            }
+            const json = await res.json();
+            return ((_b = (_a = json.data) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.embedding) || [];
+        }
+        catch (error) {
+            console.error('Error generating embedding:', error);
+            throw error;
+        }
+    }
+    /**
+     * Calculate cosine similarity between two vectors
+     */
+    cosineSimilarity(vecA, vecB) {
+        if (vecA.length !== vecB.length) {
+            return 0;
+        }
+        let dotProduct = 0;
+        let normA = 0;
+        let normB = 0;
+        for (let i = 0; i < vecA.length; i++) {
+            dotProduct += vecA[i] * vecB[i];
+            normA += vecA[i] * vecA[i];
+            normB += vecB[i] * vecB[i];
+        }
+        const denominator = Math.sqrt(normA) * Math.sqrt(normB);
+        return denominator === 0 ? 0 : dotProduct / denominator;
+    }
+    /**
+     * Perform semantic search on local documents using embeddings
+     * Searches through title, filename, abstract, author, AND document content
+     * Also includes exact keyword matching for documents that contain the search term
+     */
+    async semanticSearchLocalDocuments(query, documents, topK = 10) {
+        if (!query || !query.trim() || documents.length === 0) {
+            return [];
+        }
+        try {
+            const queryLower = query.toLowerCase().trim();
+            // First, do exact keyword matching to find ALL documents containing the word
+            // This ensures we don't miss documents with exact matches
+            const exactMatches = [];
+            const nonExactMatches = [];
+            documents.forEach((doc) => {
+                // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+                const titleLower = (doc.title || '').toLowerCase();
+                const fileNameLower = (doc.fileName || '').toLowerCase();
+                const descriptionLower = (doc.description || '').toLowerCase();
+                const contributorLower = (doc.contributor || '').toLowerCase();
+                const documentContentLower = (doc.documentContent || '').toLowerCase();
+                // Check if word appears in ANY field (especially documentContent)
+                const inTitle = titleLower.includes(queryLower);
+                const inFileName = fileNameLower.includes(queryLower);
+                const inDescription = descriptionLower.includes(queryLower);
+                const inContributor = contributorLower.includes(queryLower);
+                const inDocumentContent = documentContentLower.includes(queryLower);
+                // Document matches if word appears in ANY field, especially documentContent
+                if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
+                    // Combine all fields for counting total occurrences
+                    const searchableText = [
+                        doc.title || '',
+                        doc.fileName || '',
+                        doc.description || '',
+                        doc.contributor || '',
+                        doc.documentContent || ''
+                    ].filter(Boolean).join(' ').toLowerCase();
+                    // Count total occurrences
+                    const matches = (searchableText.match(new RegExp(queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi')) || []).length;
+                    // Calculate relevance score
+                    let score = matches;
+                    // Boost scores based on where word appears
+                    if (inTitle)
+                        score += 10;
+                    if (inFileName)
+                        score += 5;
+                    if (inDescription)
+                        score += 3;
+                    if (inContributor)
+                        score += 2;
+                    if (inDocumentContent)
+                        score += 4; // Important: boost for document content matches
+                    // Additional boost if found as whole word
+                    const wordBoundaryRegex = new RegExp(`\\b${queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+                    if (wordBoundaryRegex.test(searchableText))
+                        score += 2;
+                    // Ensure documents with matches ONLY in documentContent still get a minimum score
+                    if (inDocumentContent && !inTitle && !inFileName && !inDescription && !inContributor) {
+                        score = Math.max(score, 5); // Minimum score for content-only matches
+                    }
+                    exactMatches.push({ document: doc, similarity: score });
+                }
+                else {
+                    nonExactMatches.push(doc);
+                }
+            });
+            // Sort exact matches by relevance (higher score = more relevant)
+            exactMatches.sort((a, b) => b.similarity - a.similarity);
+            // IMPORTANT: Return ALL exact matches, not just topK
+            // This ensures documents with matches only in content are included
+            // We'll limit later if needed, but prioritize getting all exact matches first
+            if (exactMatches.length > 0) {
+                // Return all exact matches (they're already sorted by relevance)
+                // If we have more than topK, we'll still return all, but user will see most relevant first
+                return exactMatches;
+            }
+            // Otherwise, supplement with semantic search on non-matching documents
+            // Generate embedding for the search query
+            const queryEmbedding = await this.generateEmbedding(query);
+            // Generate embeddings for documents that didn't have exact matches
+            const documentEmbeddings = await Promise.all(nonExactMatches.map(async (doc) => {
+                // Combine all searchable fields including document content
+                const searchableText = [
+                    doc.title || '',
+                    doc.fileName || '',
+                    doc.description || '',
+                    doc.contributor || '',
+                    doc.documentContent || '' // actual document content (first 5000 chars)
+                ].filter(Boolean).join(' ');
+                // Limit total text to ~8000 chars to keep embedding API calls reasonable
+                const truncatedText = searchableText.length > 8000
+                    ? searchableText.substring(0, 8000)
+                    : searchableText;
+                try {
+                    const embedding = await this.generateEmbedding(truncatedText);
+                    return { doc, embedding };
+                }
+                catch (error) {
+                    console.error(`Error generating embedding for doc ${doc.id}:`, error);
+                    return { doc, embedding: null };
+                }
+            }));
+            // Calculate similarities for semantic matches
+            const semanticResults = documentEmbeddings
+                .filter((item) => item.embedding !== null)
+                .map((item) => ({
+                document: item.doc,
+                similarity: this.cosineSimilarity(queryEmbedding, item.embedding)
+            }))
+                .filter((item) => item.similarity > 0.3) // Only include reasonably similar results
+                .sort((a, b) => b.similarity - a.similarity);
+            // Combine exact matches (first) with semantic matches (second)
+            // Exact matches are prioritized and ALL are included
+            const allResults = [
+                ...exactMatches,
+                ...semanticResults.map((item) => ({
+                    document: item.document,
+                    similarity: item.similarity * 0.5 // Reduce semantic match scores so exact matches rank higher
+                }))
+            ];
+            // Sort all results by similarity (exact matches will be first due to higher scores)
+            allResults.sort((a, b) => b.similarity - a.similarity);
+            // Return top results, but ensure ALL exact matches are included
+            // If we have many exact matches, return them all (up to reasonable limit)
+            const exactMatchCount = exactMatches.length;
+            const maxResults = Math.max(topK, exactMatchCount); // Return at least all exact matches
+            return allResults.slice(0, Math.min(maxResults, 200)); // Cap at 200 to avoid performance issues
+        }
+        catch (error) {
+            console.error('Error in semanticSearchLocalDocuments:', error);
+            return [];
+        }
     }
     /**
      * Use GPT-4o to generate an AI summary of the top document preview

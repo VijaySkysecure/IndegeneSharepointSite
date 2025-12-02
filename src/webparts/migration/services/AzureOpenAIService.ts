@@ -299,6 +299,231 @@ export class AzureOpenAIService {
   }
 
   /**
+   * Generate embedding vector for text using Azure OpenAI
+   */
+  async generateEmbedding(text: string): Promise<number[]> {
+    if (!text || !text.trim()) {
+      throw new Error('Text cannot be empty for embedding generation');
+    }
+
+    try {
+      // Ensure endpoint doesn't have trailing slash, then add path
+      const baseEndpoint = AZURE_OPENAI_ENDPOINT.endsWith('/') 
+        ? AZURE_OPENAI_ENDPOINT.slice(0, -1) 
+        : AZURE_OPENAI_ENDPOINT;
+      
+      const url = `${baseEndpoint}/openai/deployments/${AZURE_OPENAI_EMBEDDING_MODEL}/embeddings?api-version=${AZURE_OPENAI_API_VERSION}`;
+
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': AZURE_OPENAI_API_KEY
+        },
+        body: JSON.stringify({
+          input: text.trim()
+        })
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('Embedding API failed:', res.status, errorText);
+        throw new Error(`Embedding generation failed: ${res.status}`);
+      }
+
+      const json = await res.json();
+      return json.data?.[0]?.embedding || [];
+    } catch (error) {
+      console.error('Error generating embedding:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Calculate cosine similarity between two vectors
+   */
+  private cosineSimilarity(vecA: number[], vecB: number[]): number {
+    if (vecA.length !== vecB.length) {
+      return 0;
+    }
+
+    let dotProduct = 0;
+    let normA = 0;
+    let normB = 0;
+
+    for (let i = 0; i < vecA.length; i++) {
+      dotProduct += vecA[i] * vecB[i];
+      normA += vecA[i] * vecA[i];
+      normB += vecB[i] * vecB[i];
+    }
+
+    const denominator = Math.sqrt(normA) * Math.sqrt(normB);
+    return denominator === 0 ? 0 : dotProduct / denominator;
+  }
+
+  /**
+   * Perform semantic search on local documents using embeddings
+   * Searches through title, filename, abstract, author, AND document content
+   * Also includes exact keyword matching for documents that contain the search term
+   */
+  async semanticSearchLocalDocuments(
+    query: string,
+    documents: Array<{
+      id: number;
+      title: string;
+      fileName: string;
+      description: string; // abstract
+      contributor: string; // author
+      documentContent?: string; // actual document content (extracted from file)
+      [key: string]: any;
+    }>,
+    topK: number = 10
+  ): Promise<Array<{ document: any; similarity: number }>> {
+    if (!query || !query.trim() || documents.length === 0) {
+      return [];
+    }
+
+    try {
+      const queryLower = query.toLowerCase().trim();
+      
+      // First, do exact keyword matching to find ALL documents containing the word
+      // This ensures we don't miss documents with exact matches
+      const exactMatches: Array<{ document: any; similarity: number }> = [];
+      const nonExactMatches: any[] = [];
+      
+      documents.forEach((doc) => {
+        // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+        const titleLower = (doc.title || '').toLowerCase();
+        const fileNameLower = (doc.fileName || '').toLowerCase();
+        const descriptionLower = (doc.description || '').toLowerCase();
+        const contributorLower = (doc.contributor || '').toLowerCase();
+        const documentContentLower = (doc.documentContent || '').toLowerCase();
+        
+        // Check if word appears in ANY field (especially documentContent)
+        const inTitle = titleLower.includes(queryLower);
+        const inFileName = fileNameLower.includes(queryLower);
+        const inDescription = descriptionLower.includes(queryLower);
+        const inContributor = contributorLower.includes(queryLower);
+        const inDocumentContent = documentContentLower.includes(queryLower);
+        
+        // Document matches if word appears in ANY field, especially documentContent
+        if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
+          // Combine all fields for counting total occurrences
+          const searchableText = [
+            doc.title || '',
+            doc.fileName || '',
+            doc.description || '',
+            doc.contributor || '',
+            doc.documentContent || ''
+          ].filter(Boolean).join(' ').toLowerCase();
+          
+          // Count total occurrences
+          const matches = (searchableText.match(new RegExp(queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi')) || []).length;
+          
+          // Calculate relevance score
+          let score = matches;
+          
+          // Boost scores based on where word appears
+          if (inTitle) score += 10;
+          if (inFileName) score += 5;
+          if (inDescription) score += 3;
+          if (inContributor) score += 2;
+          if (inDocumentContent) score += 4; // Important: boost for document content matches
+          
+          // Additional boost if found as whole word
+          const wordBoundaryRegex = new RegExp(`\\b${queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+          if (wordBoundaryRegex.test(searchableText)) score += 2;
+          
+          // Ensure documents with matches ONLY in documentContent still get a minimum score
+          if (inDocumentContent && !inTitle && !inFileName && !inDescription && !inContributor) {
+            score = Math.max(score, 5); // Minimum score for content-only matches
+          }
+          
+          exactMatches.push({ document: doc, similarity: score });
+        } else {
+          nonExactMatches.push(doc);
+        }
+      });
+      
+      // Sort exact matches by relevance (higher score = more relevant)
+      exactMatches.sort((a, b) => b.similarity - a.similarity);
+      
+      // IMPORTANT: Return ALL exact matches, not just topK
+      // This ensures documents with matches only in content are included
+      // We'll limit later if needed, but prioritize getting all exact matches first
+      if (exactMatches.length > 0) {
+        // Return all exact matches (they're already sorted by relevance)
+        // If we have more than topK, we'll still return all, but user will see most relevant first
+        return exactMatches;
+      }
+      
+      // Otherwise, supplement with semantic search on non-matching documents
+      // Generate embedding for the search query
+      const queryEmbedding = await this.generateEmbedding(query);
+
+      // Generate embeddings for documents that didn't have exact matches
+      const documentEmbeddings = await Promise.all(
+        nonExactMatches.map(async (doc) => {
+          // Combine all searchable fields including document content
+          const searchableText = [
+            doc.title || '',
+            doc.fileName || '',
+            doc.description || '', // abstract
+            doc.contributor || '', // author
+            doc.documentContent || '' // actual document content (first 5000 chars)
+          ].filter(Boolean).join(' ');
+
+          // Limit total text to ~8000 chars to keep embedding API calls reasonable
+          const truncatedText = searchableText.length > 8000 
+            ? searchableText.substring(0, 8000) 
+            : searchableText;
+
+          try {
+            const embedding = await this.generateEmbedding(truncatedText);
+            return { doc, embedding };
+          } catch (error) {
+            console.error(`Error generating embedding for doc ${doc.id}:`, error);
+            return { doc, embedding: null };
+          }
+        })
+      );
+
+      // Calculate similarities for semantic matches
+      const semanticResults = documentEmbeddings
+        .filter((item) => item.embedding !== null)
+        .map((item) => ({
+          document: item.doc,
+          similarity: this.cosineSimilarity(queryEmbedding, item.embedding!)
+        }))
+        .filter((item) => item.similarity > 0.3) // Only include reasonably similar results
+        .sort((a, b) => b.similarity - a.similarity);
+
+      // Combine exact matches (first) with semantic matches (second)
+      // Exact matches are prioritized and ALL are included
+      const allResults = [
+        ...exactMatches, // ALL exact matches included (already sorted by relevance)
+        ...semanticResults.map((item) => ({
+          document: item.document,
+          similarity: item.similarity * 0.5 // Reduce semantic match scores so exact matches rank higher
+        }))
+      ];
+      
+      // Sort all results by similarity (exact matches will be first due to higher scores)
+      allResults.sort((a, b) => b.similarity - a.similarity);
+      
+      // Return top results, but ensure ALL exact matches are included
+      // If we have many exact matches, return them all (up to reasonable limit)
+      const exactMatchCount = exactMatches.length;
+      const maxResults = Math.max(topK, exactMatchCount); // Return at least all exact matches
+      
+      return allResults.slice(0, Math.min(maxResults, 200)); // Cap at 200 to avoid performance issues
+    } catch (error) {
+      console.error('Error in semanticSearchLocalDocuments:', error);
+      return [];
+    }
+  }
+
+  /**
    * Use GPT-4o to generate an AI summary of the top document preview
    */
   private async generateAISummary(query: string, content: string): Promise<string> {
