@@ -24,6 +24,12 @@ type ResultItem = {
   fileUrl?: string;
   fileType?: string;
   serverRelativeUrl?: string; // FileRef for download API
+  businessUnit?: string;   // Business Unit from SharePoint
+  documentType?: string;   // Document Type from SharePoint
+  client?: string;         // Client from SharePoint
+  region?: string;         // Region from SharePoint
+  therapyArea?: string;    // Therapy Area from SharePoint
+  diseaseArea?: string;    // Disease Area from SharePoint
 };
 
 const filterData: FilterGroup[] = [
@@ -80,9 +86,15 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
     React.useState<number | null>(null);
 
   /* ---------------------------------------------
-     Front-end file format filter state
+     Front-end filter states
   --------------------------------------------- */
   const [selectedFormat, setSelectedFormat] = React.useState<string | null>(null);
+  const [selectedBusinessUnit, setSelectedBusinessUnit] = React.useState<string | null>(null);
+  const [selectedDocumentType, setSelectedDocumentType] = React.useState<string | null>(null);
+  const [selectedClient, setSelectedClient] = React.useState<string | null>(null);
+  const [selectedRegion, setSelectedRegion] = React.useState<string | null>(null);
+  const [selectedTherapyArea, setSelectedTherapyArea] = React.useState<string | null>(null);
+  const [selectedDiseaseArea, setSelectedDiseaseArea] = React.useState<string | null>(null);
 
   const toggleGroup = (title: string) =>
     setOpenGroup(openGroup === title ? null : title);
@@ -90,6 +102,29 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
   const handleFormatClick = (formatTitle: string) => {
     const fmt = formatTitle.toLowerCase();
     setSelectedFormat((prev) => (prev === fmt ? null : fmt)); // toggle
+  };
+
+  const handleFilterClick = (filterType: string, value: string) => {
+    switch (filterType) {
+      case "Business Unit":
+        setSelectedBusinessUnit((prev) => (prev === value ? null : value));
+        break;
+      case "Document Type":
+        setSelectedDocumentType((prev) => (prev === value ? null : value));
+        break;
+      case "Client":
+        setSelectedClient((prev) => (prev === value ? null : value));
+        break;
+      case "Region":
+        setSelectedRegion((prev) => (prev === value ? null : value));
+        break;
+      case "Therapy Area":
+        setSelectedTherapyArea((prev) => (prev === value ? null : value));
+        break;
+      case "Disease Area":
+        setSelectedDiseaseArea((prev) => (prev === value ? null : value));
+        break;
+    }
   };
 
   /* ---------- Helpers for file type & icon (for tiles) ---------- */
@@ -126,7 +161,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
         const apiUrl =
           `${siteUrl}/_api/web/lists/getbytitle('${libraryName}')/items` +
-          `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created` +
+          `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea` +
           `&$expand=Author`;
 
         const response: SPHttpClientResponse = await spHttpClient.get(
@@ -162,6 +197,12 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
               : undefined,
             fileType,
             serverRelativeUrl: item.FileRef || "",
+            businessUnit: item.BusinessUnit || undefined,
+            documentType: item.DocumentType || undefined,
+            client: item.Client || undefined,
+            region: item.Region || undefined,
+            therapyArea: item.TherapyArea || undefined,
+            diseaseArea: item.DiseaseArea || undefined,
           };
         });
 
@@ -178,14 +219,22 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
   }, [activeTab, siteUrl, spHttpClient]);
 
   /* ======================================================
-     Search + File Format filter
+     Search + All Filters
   ====================================================== */
   const hasSearch = searchText.trim().length > 0;
   const hasFormat = !!selectedFormat;
-  const hasSearchOrFormat = hasSearch || hasFormat;
+  const hasBusinessUnit = !!selectedBusinessUnit;
+  const hasDocumentType = !!selectedDocumentType;
+  const hasClient = !!selectedClient;
+  const hasRegion = !!selectedRegion;
+  const hasTherapyArea = !!selectedTherapyArea;
+  const hasDiseaseArea = !!selectedDiseaseArea;
+  
+  const hasAnyFilter = hasSearch || hasFormat || hasBusinessUnit || hasDocumentType || 
+                       hasClient || hasRegion || hasTherapyArea || hasDiseaseArea;
 
   const filteredItems = React.useMemo(() => {
-    if (!hasSearchOrFormat) return []; // empty grid initially
+    if (!hasAnyFilter) return []; // empty grid initially
 
     const baseItems = activeTab === "documents" ? documents : experts;
     const keyword = searchText.toLowerCase();
@@ -200,22 +249,73 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
       const matchesSearch = !hasSearch || textMatch;
 
       // Only enforce format filter for documents (experts don't have fileType)
+      // Use exact match to prevent "mht" from matching "mhtml" and vice versa
       const matchesFormat =
         !fmt ||
         (activeTab === "documents" &&
           item.fileType &&
-          item.fileType.toLowerCase().includes(fmt));
+          item.fileType.toLowerCase() === fmt);
 
-      return matchesSearch && matchesFormat;
+      // Business Unit filter - exact match
+      const matchesBusinessUnit =
+        !selectedBusinessUnit ||
+        (activeTab === "documents" &&
+          item.businessUnit &&
+          item.businessUnit.trim() === selectedBusinessUnit.trim());
+
+      // Document Type filter - exact match
+      const matchesDocumentType =
+        !selectedDocumentType ||
+        (activeTab === "documents" &&
+          item.documentType &&
+          item.documentType.trim() === selectedDocumentType.trim());
+
+      // Client filter - exact match
+      const matchesClient =
+        !selectedClient ||
+        (activeTab === "documents" &&
+          item.client &&
+          item.client.trim() === selectedClient.trim());
+
+      // Region filter - exact match
+      const matchesRegion =
+        !selectedRegion ||
+        (activeTab === "documents" &&
+          item.region &&
+          item.region.trim() === selectedRegion.trim());
+
+      // Therapy Area filter - exact match
+      const matchesTherapyArea =
+        !selectedTherapyArea ||
+        (activeTab === "documents" &&
+          item.therapyArea &&
+          item.therapyArea.trim() === selectedTherapyArea.trim());
+
+      // Disease Area filter - exact match
+      const matchesDiseaseArea =
+        !selectedDiseaseArea ||
+        (activeTab === "documents" &&
+          item.diseaseArea &&
+          item.diseaseArea.trim() === selectedDiseaseArea.trim());
+
+      return matchesSearch && matchesFormat && matchesBusinessUnit && 
+             matchesDocumentType && matchesClient && matchesRegion && 
+             matchesTherapyArea && matchesDiseaseArea;
     });
   }, [
-    hasSearchOrFormat,
+    hasAnyFilter,
     hasSearch,
     searchText,
     documents,
     experts,
     activeTab,
     selectedFormat,
+    selectedBusinessUnit,
+    selectedDocumentType,
+    selectedClient,
+    selectedRegion,
+    selectedTherapyArea,
+    selectedDiseaseArea,
   ]);
 
   /* ======================================================
@@ -229,9 +329,9 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
   /* ======================================================
      Only show FilterDropdown content when user types
-     OR chooses a file format
+     OR chooses any filter
   ====================================================== */
-  if (!hasSearchOrFormat) {
+  if (!hasAnyFilter) {
     return (
       <>
         {/* Show nothing until user types or picks a format */}
@@ -315,19 +415,33 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
                   {isOpen && hasChildren && (
                     <div className={styles.childList}>
-                      {group.children!.map((child) => (
-                        <button
-                          key={child.title}
-                          className={styles.childBtn}
-                          onClick={() =>
-                            group.title === "File Format"
-                              ? handleFormatClick(child.title)
-                              : undefined
-                          }
-                        >
-                          {child.title}
-                        </button>
-                      ))}
+                      {group.children!.map((child) => {
+                        // Determine if this filter option is active
+                        const isActive = 
+                          (group.title === "File Format" && selectedFormat === child.title.toLowerCase()) ||
+                          (group.title === "Business Unit" && selectedBusinessUnit === child.title) ||
+                          (group.title === "Document Type" && selectedDocumentType === child.title) ||
+                          (group.title === "Client" && selectedClient === child.title) ||
+                          (group.title === "Region" && selectedRegion === child.title) ||
+                          (group.title === "Therapy Area" && selectedTherapyArea === child.title) ||
+                          (group.title === "Disease Area" && selectedDiseaseArea === child.title);
+
+                        return (
+                          <button
+                            key={child.title}
+                            className={`${styles.childBtn} ${isActive ? styles.childBtnActive : ""}`}
+                            onClick={() => {
+                              if (group.title === "File Format") {
+                                handleFormatClick(child.title);
+                              } else {
+                                handleFilterClick(group.title, child.title);
+                              }
+                            }}
+                          >
+                            {child.title}
+                          </button>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
@@ -366,7 +480,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
             {!isLoading && !error && (
               // 👇 Scrollable container
               <div className={styles.scrollContainer}>
-                <div className={styles.grid}>
+                <div className={styles.list}>
                   {filteredItems.length === 0 ? (
                     <p>No results found.</p>
                   ) : (
@@ -383,26 +497,28 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
                             </span>
                           </div>
 
-                          <h3 className={styles.tileTitle}>{item.title || "Untitled Document"}</h3>
-                          <div className={styles.fileName}>{item.fileName || "No filename"}</div>
-                          <p className={styles.tileAbstract}>
-                            {item.description || "No abstract available"}
-                          </p>
+                          <div className={styles.tileContent}>
+                            <h3 className={styles.tileTitle}>{item.title || "Untitled Document"}</h3>
+                            <div className={styles.fileName}>{item.fileName || "No filename"}</div>
+                            <p className={styles.tileAbstract}>
+                              {item.description || "No abstract available"}
+                            </p>
 
-                          <div className={styles.tileMeta}>
-                            <span className={styles.metaLabel}>
-                              Contributor:
-                            </span>
-                            <span className={styles.metaValue}>
-                              {item.contributor}
-                            </span>
-                          </div>
+                            <div className={styles.tileMeta}>
+                              <span className={styles.metaLabel}>
+                                Contributor:
+                              </span>
+                              <span className={styles.metaValue}>
+                                {item.contributor}
+                              </span>
+                            </div>
 
-                          <div className={styles.tileMeta}>
-                            <span className={styles.metaLabel}>Updated:</span>
-                            <span className={styles.metaValue}>
-                              {item.updated}
-                            </span>
+                            <div className={styles.tileMeta}>
+                              <span className={styles.metaLabel}>Updated:</span>
+                              <span className={styles.metaValue}>
+                                {item.updated}
+                              </span>
+                            </div>
                           </div>
 
                           <div className={styles.tileActions}>
@@ -410,13 +526,22 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
                               className={styles.viewButton}
                               onClick={() => handleView(item)}
                             >
-                              👁 View
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                              View
                             </button>
                             <button
                               className={styles.downloadButton}
                               onClick={() => handleDownload(item)}
                             >
-                              ⬇ Download
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                              </svg>
+                              Download
                             </button>
                           </div>
                         </div>
@@ -461,10 +586,46 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
         <aside className={styles.rightRail}>
           <h3 className={styles.quickLinksTitle}>Quick Links</h3>
           <ul className={styles.quickLinksList}>
-            <li>#Upload Guidelines</li>
-            <li>#Metadata Standards</li>
-            <li>#Retention Policy</li>
-            <li>#Help &amp; Support</li>
+            <li>
+              <a 
+                href="https://www.indegene.com/who-we-are/about-us" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.quickLink}
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.quickLink}
+              >
+                Retention Policy
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.indegene.com/privacy-policy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.quickLink}
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.indegene.com/contact-us" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.quickLink}
+              >
+                Contact Us
+              </a>
+            </li>
           </ul>
         </aside>
       </div>

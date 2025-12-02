@@ -233,49 +233,52 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".workspace_9269f393{align-items:start;display:grid;gap:18px;grid-template-columns:200px 1fr 160px;margin:0 auto;max-width:1300px;padding:18px;width:100%}.wrapper_9269f393{background:#fff;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:10px;padding:6px;width:100%}.railHeader_9269f393{background:#0b4b93;border-radius:6px;color:#fff;font-size:14px;font-weight:700;padding:5px 10px;text-align:center}.container_9269f393{display:flex;flex-direction:column;gap:8px}.parentBtn_9269f393{align-items:center;background:#f3f6fa;border:1px solid #d0d3d9;border-radius:8px;color:#1b2a3a;display:flex;font-size:13px;font-weight:600;justify-content:space-between;padding:5px 10px;transition:background .2s ease;width:100%}.parentBtn_9269f393:hover{background:#e0e4ea}.rootBtnOpen_9269f393{background:#d6dbe3}.chevron_9269f393{color:#1b2a3a;font-size:12px;font-weight:700}.childList_9269f393{display:flex;flex-direction:column;gap:6px;padding-top:6px}.childBtn_9269f393{background:#fff;border:1px solid #d0d3d9;border-radius:6px;color:#1b2a3a;font-weight:500;padding:7px 10px;text-align:left;transition:background .2s ease}.childBtn_9269f393:hover{background:#f0f4fa}.main_9269f393{display:flex;flex-direction:column;gap:16px;width:100%}.tabs_9269f393{display:flex;gap:10px}.tab_9269f393{background:#d0d3d9;border:none;border-radius:6px;color:#1b2a3a;cursor:pointer;font-size:14px;font-weight:700;min-width:130px;padding:8px 12px;text-align:center;transition:background .2s ease}.tab_9269f393:hover{background:#b8bcc2}.active_9269f393{background:#0b4b93;color:#fff}.results_9269f393{background:#fff;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08);padding:14px}.grid_9269f393{align-items:start;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}.card_9269f393{background:#fff;border:1px solid #d0d3d9;border-radius:6px;padding:6px 10px 10px;transition:box-shadow .2s ease}.card_9269f393:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}.cardTitle_9269f393{color:#1b2a3a;font-size:14px;font-weight:700;margin-bottom:6px}.cardRow_9269f393{display:grid;gap:6px;grid-template-columns:90px 1fr;margin:3px 0}.cardLabel_9269f393{color:#444b55;font-size:13px;font-weight:600}.cardValue_9269f393{color:#1b2a3a;font-size:13px}.rightRail_9269f393{background:#0b4b93;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);color:#fff;min-height:260px;padding:12px;width:80%}.quickLinksTitle_9269f393{font-size:15px;font-weight:800;margin-bottom:10px;text-align:center}.quickLinksList_9269f393{list-style:none;margin:0;padding:0}.quickLinksList_9269f393 li{font-size:13px;font-weight:600;margin-bottom:8px}.cardLink_9269f393{cursor:pointer;text-decoration:underline}.tile_9269f393{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:230px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_9269f393{align-items:center;display:flex;gap:8px;margin-bottom:12px}.fileTypeIcon_9269f393{font-size:24px;line-height:1}.fileType_9269f393{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500}.tileTitle_9269f393{color:#333;font-size:18px;font-weight:600;margin:0 0 6px;min-height:24px}.fileName_9269f393,.tileTitle_9269f393{display:block;font-family:Inter,sans-serif;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fileName_9269f393{color:#666;font-size:13px;font-style:italic;margin:0 0 12px;min-height:18px;padding-left:0}.tileAbstract_9269f393{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-family:Inter,sans-serif;font-size:14px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;overflow:hidden;text-overflow:ellipsis;word-break:break-word}.tileMeta_9269f393{color:#555;display:flex;font-size:12px;gap:4px;margin-bottom:4px}.metaLabel_9269f393{font-weight:600}.metaValue_9269f393{font-weight:400}.tileActions_9269f393{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_9269f393{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_9269f393 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_9269f393:hover:not(:disabled){background-color:#1565c0}.viewButton_9269f393:active:not(:disabled){background-color:#0d47a1}.viewButton_9269f393:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_9269f393{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_9269f393 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_9269f393:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_9269f393:active:not(:disabled){background-color:#e0e0e0}.downloadButton_9269f393:disabled{cursor:not-allowed;opacity:.4}.detailModal_9269f393{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.scrollContainer_9269f393{max-height:450px;overflow-y:auto;padding-right:5px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWx0ZXJEcm9wZG93bi9GaWx0ZXJEcm9wZG93bi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxvQkFRRSxpQkFBQSxDQVBBLFlBQUEsQ0FFQSxRQUFBLENBREEscUNBQUEsQ0FLQSxhQUFBLENBREEsZ0JBQUEsQ0FGQSxZQUFBLENBQ0EsVUFHQSxDQUlGLGtCQUlFLGVBQUEsQ0FDQSxrQkFBQSxDQUVBLG9DQUFBLENBTkEsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdBLFdBQUEsQ0FFQSxVQUFBLENBR0YscUJBQ0Usa0JBQUEsQ0FJQSxpQkFBQSxDQUhBLFVBQUEsQ0FFQSxjQUFBLENBREEsZUFBQSxDQUdBLGdCQUFBLENBQ0EsaUJBQUEsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBR0Ysb0JBV0Usa0JBQUEsQ0FWQSxrQkFBQSxDQUNBLHdCQUFBLENBQ0EsaUJBQUEsQ0FJQSxhQUFBLENBRUEsWUFBQSxDQUhBLGNBQUEsQ0FEQSxlQUFBLENBS0EsNkJBQUEsQ0FOQSxnQkFBQSxDQVFBLDhCQUFBLENBSkEsVUFJQSxDQUdGLDBCQUNFLGtCQUFBLENBR0Ysc0JBQ0Usa0JBQUEsQ0FHRixrQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBQ0EsZUFBQSxDQUdGLG1CQUNFLGVBQUEsQ0FDQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsYUFBQSxDQURBLGVBQUEsQ0FGQSxnQkFBQSxDQUNBLGVBQUEsQ0FHQSw4QkFBQSxDQUdGLHlCQUNFLGtCQUFBLENBSUYsZUFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxRQUFBLENBQ0EsVUFBQSxDQUlGLGVBQ0UsWUFBQSxDQUNBLFFBQUEsQ0FHRixjQUdFLGtCQUFBLENBQ0EsV0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUdBLGNBQUEsQ0FEQSxjQUFBLENBREEsZUFBQSxDQU5BLGVBQUEsQ0FDQSxnQkFBQSxDQVFBLGlCQUFBLENBQ0EsOEJBQUEsQ0FHRixvQkFDRSxrQkFBQSxDQUdGLGlCQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlGLGtCQUNFLGVBQUEsQ0FDQSxpQkFBQSxDQUVBLHFDQUFBLENBREEsWUFDQSxDQUdGLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsUUFBQSxDQURBLHlEQUVBLENBR0YsZUFJRSxlQUFBLENBSEEsd0JBQUEsQ0FDQSxpQkFBQSxDQUNBLHFCQUFBLENBRUEsOEJBQUEsQ0FHRixxQkFDRSxtQ0FBQSxDQUdGLG9CQUlFLGFBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUNBLENBR0Ysa0JBQ0UsWUFBQSxDQUVBLE9BQUEsQ0FEQSw4QkFBQSxDQUVBLFlBQUEsQ0FHRixvQkFDRSxhQUFBLENBRUEsY0FBQSxDQURBLGVBQ0EsQ0FHRixvQkFDRSxhQUFBLENBQ0EsY0FBQSxDQUlGLG9CQUNFLGtCQUFBLENBRUEsa0JBQUEsQ0FJQSxvQ0FBQSxDQUxBLFVBQUEsQ0FHQSxnQkFBQSxDQURBLFlBQUEsQ0FFQSxTQUNBLENBR0YsMEJBQ0UsY0FBQSxDQUNBLGVBQUEsQ0FDQSxrQkFBQSxDQUNBLGlCQUFBLENBR0YseUJBQ0UsZUFBQSxDQUVBLFFBQUEsQ0FEQSxTQUNBLENBR0YsNEJBR0UsY0FBQSxDQURBLGVBQUEsQ0FEQSxpQkFFQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSx5QkFDQSxDQVVGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsY0FBQSxDQU9BLGVBQUEsQ0FHRix1Q0FKRSxhQUFBLENBTEEsNEJBQUEsQ0FDQSxlQUFBLENBQ0EsZUFBQSxDQUNBLHNCQUFBLENBQ0Esa0JBaUJBLENBWkYsbUJBRUUsVUFBQSxDQURBLGNBQUEsQ0FTQSxpQkFBQSxDQVBBLGVBQUEsQ0FTQSxlQUFBLENBUkEsY0FRQSxDQUdGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBSEEsNEJBQUEsQ0FIQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQVJBLGVBQUEsQ0FLQSxzQkFBQSxDQUNBLHFCQUVBLENBSUYsbUJBR0UsVUFBQSxDQUZBLFlBQUEsQ0FDQSxjQUFBLENBRUEsT0FBQSxDQUNBLGlCQUFBLENBR0Ysb0JBQ0UsZUFBQSxDQUdGLG9CQUNFLGVBQUEsQ0FJRixzQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxRQUFBLENBQ0EsZUFBQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsd0JBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBT0EsY0FBQSxDQVhBLFlBQUEsQ0FVQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUEEsT0FBQSxDQUtBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSx5QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDBDQUNFLHdCQUFBLENBR0YsMkNBQ0Usd0JBQUEsQ0FHRiw4QkFDRSxxQkFBQSxDQUNBLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHlCQUVFLGtCQUFBLENBRUEsNEJBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBSUEsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLFlBQUEsQ0FFQSx5Q0FBQSxDQUVBLDZCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsOENBQ0Usd0JBQUEsQ0FDQSxVQUFBLENBR0YsK0NBQ0Usd0JBQUEsQ0FHRixrQ0FDRSxrQkFBQSxDQUNBLFVBQUEsQ0FHSixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FLQSxZQUFBLENBUEEsTUFBQSxDQUtBLGVBQUEsQ0FQQSxjQUFBLENBR0EsT0FBQSxDQUZBLEtBQUEsQ0FPQSxXQUFBLENBSEEsYUFJQSxDQUVGLDBCQUNFLGdCQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBIiwiZmlsZSI6IkZpbHRlckRyb3Bkb3duLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".workspace_0a92ea9b{align-items:start;display:grid;gap:18px;grid-template-columns:200px 1fr 160px;margin:0 auto;max-width:1300px;padding:18px;width:100%}.wrapper_0a92ea9b{background:#fff;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);display:flex;flex-direction:column;gap:10px;padding:6px;width:100%}.railHeader_0a92ea9b{background:#0b4b93;border-radius:6px;color:#fff;font-size:14px;font-weight:700;padding:5px 10px;text-align:center}.container_0a92ea9b{display:flex;flex-direction:column;gap:8px}.parentBtn_0a92ea9b{align-items:center;background:#f3f6fa;border:1px solid #d0d3d9;border-radius:8px;color:#1b2a3a;display:flex;font-size:13px;font-weight:600;justify-content:space-between;padding:5px 10px;transition:background .2s ease;width:100%}.parentBtn_0a92ea9b:hover{background:#e0e4ea}.rootBtnOpen_0a92ea9b{background:#d6dbe3}.chevron_0a92ea9b{color:#1b2a3a;font-size:12px;font-weight:700}.childList_0a92ea9b{display:flex;flex-direction:column;gap:6px;padding-top:6px}.childBtn_0a92ea9b{background:#fff;border:1px solid #d0d3d9;border-radius:6px;color:#1b2a3a;font-weight:500;padding:7px 10px;text-align:left;transition:background .2s ease}.childBtn_0a92ea9b:hover{background:#f0f4fa}.childBtnActive_0a92ea9b{background:#0b4b93!important;border-color:#0b4b93!important;color:#fff!important}.main_0a92ea9b{display:flex;flex-direction:column;gap:16px;width:100%}.tabs_0a92ea9b{display:flex;gap:10px}.tab_0a92ea9b{background:#d0d3d9;border:none;border-radius:6px;color:#1b2a3a;cursor:pointer;font-size:14px;font-weight:700;min-width:130px;padding:8px 12px;text-align:center;transition:background .2s ease}.tab_0a92ea9b:hover{background:#b8bcc2}.active_0a92ea9b{background:#0b4b93;color:#fff}.results_0a92ea9b{background:#fff;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08);max-width:700px;min-width:700px;padding:14px;width:700px}.list_0a92ea9b{display:flex;flex-direction:column;gap:6px;width:100%}.card_0a92ea9b{background:#fff;border:1px solid #d0d3d9;border-radius:6px;padding:6px 10px 10px;transition:box-shadow .2s ease}.card_0a92ea9b:hover{box-shadow:0 2px 8px rgba(0,0,0,.1)}.cardTitle_0a92ea9b{color:#1b2a3a;font-size:14px;font-weight:700;margin-bottom:6px}.cardRow_0a92ea9b{display:grid;gap:6px;grid-template-columns:90px 1fr;margin:3px 0}.cardLabel_0a92ea9b{color:#444b55;font-size:13px;font-weight:600}.cardValue_0a92ea9b{color:#1b2a3a;font-size:13px}.rightRail_0a92ea9b{background:#0b4b93;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);color:#fff;min-height:260px;padding:12px;width:80%}.quickLinksTitle_0a92ea9b{font-size:15px;font-weight:800;margin-bottom:10px;text-align:center}.quickLinksList_0a92ea9b{list-style:none;margin:0;padding:0}.quickLinksList_0a92ea9b li{font-size:13px;font-weight:600;margin-bottom:8px}.quickLink_0a92ea9b{color:#fff;cursor:pointer;text-decoration:none;transition:opacity .2s ease}.quickLink_0a92ea9b:hover{opacity:.8;text-decoration:underline}.cardLink_0a92ea9b{cursor:pointer;text-decoration:underline}.tile_0a92ea9b{align-items:center;background-color:#fff;border:1px solid #e0e0e0;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.08);box-sizing:border-box;display:flex;flex-direction:row;gap:10px;padding:8px 12px;transition:box-shadow .2s ease}.tile_0a92ea9b:hover{box-shadow:0 2px 6px rgba(0,0,0,.12)}.tileHeader_0a92ea9b{align-items:center;display:flex;flex-direction:column;flex-shrink:0;gap:2px;min-width:50px}.fileTypeIcon_0a92ea9b{font-size:18px;line-height:1}.fileType_0a92ea9b{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileContent_0a92ea9b{display:flex;flex:1;flex-direction:column;gap:2px;min-width:0;overflow:hidden}.tileTitle_0a92ea9b{color:#333;font-size:14px;font-weight:600}.fileName_0a92ea9b,.tileTitle_0a92ea9b{display:block;font-family:Inter,sans-serif;line-height:1.2;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fileName_0a92ea9b{color:#666;font-size:11px;font-style:italic;padding-left:0}.tileAbstract_0a92ea9b{-webkit-line-clamp:1;-webkit-box-orient:vertical;line-clamp:1;color:#666;display:-webkit-box;font-family:Inter,sans-serif;font-size:11px;line-height:1.3;margin:0;overflow:hidden;text-overflow:ellipsis;word-break:break-word}.tileMeta_0a92ea9b{color:#555;display:flex;font-size:10px;gap:4px;margin:0}.metaLabel_0a92ea9b{font-weight:600}.metaValue_0a92ea9b{font-weight:400}.tileActions_0a92ea9b{align-items:center;display:flex;flex-shrink:0;gap:6px;margin-left:auto}.viewButton_0a92ea9b{align-items:center;background-color:#1976d2;border:none;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:11px;font-weight:500;gap:4px;padding:5px 10px;transition:background-color .2s}.viewButton_0a92ea9b svg{stroke:currentColor;fill:none;height:12px;width:12px}.viewButton_0a92ea9b:hover:not(:disabled){background-color:#1565c0}.viewButton_0a92ea9b:active:not(:disabled){background-color:#0d47a1}.viewButton_0a92ea9b:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_0a92ea9b{align-items:center;background-color:transparent;border:none;border-radius:3px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:5px;transition:background-color .2s,color .2s}.downloadButton_0a92ea9b svg{stroke:currentColor;fill:none;height:12px;width:12px}.downloadButton_0a92ea9b:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_0a92ea9b:active:not(:disabled){background-color:#e0e0e0}.downloadButton_0a92ea9b:disabled{cursor:not-allowed;opacity:.4}.detailModal_0a92ea9b{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.scrollContainer_0a92ea9b{max-height:200px;overflow-y:auto;padding-right:5px;scrollbar-color:silver #f0f0f0;scrollbar-width:thin}.scrollContainer_0a92ea9b::-webkit-scrollbar{width:8px}.scrollContainer_0a92ea9b::-webkit-scrollbar-track{background:#f0f0f0;border-radius:4px}.scrollContainer_0a92ea9b::-webkit-scrollbar-thumb{background:silver;border-radius:4px}.scrollContainer_0a92ea9b::-webkit-scrollbar-thumb:hover{background:#a0a0a0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWx0ZXJEcm9wZG93bi9GaWx0ZXJEcm9wZG93bi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxvQkFRRSxpQkFBQSxDQVBBLFlBQUEsQ0FFQSxRQUFBLENBREEscUNBQUEsQ0FLQSxhQUFBLENBREEsZ0JBQUEsQ0FGQSxZQUFBLENBQ0EsVUFHQSxDQUlGLGtCQUlFLGVBQUEsQ0FDQSxrQkFBQSxDQUVBLG9DQUFBLENBTkEsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdBLFdBQUEsQ0FFQSxVQUFBLENBR0YscUJBQ0Usa0JBQUEsQ0FJQSxpQkFBQSxDQUhBLFVBQUEsQ0FFQSxjQUFBLENBREEsZUFBQSxDQUdBLGdCQUFBLENBQ0EsaUJBQUEsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBR0Ysb0JBV0Usa0JBQUEsQ0FWQSxrQkFBQSxDQUNBLHdCQUFBLENBQ0EsaUJBQUEsQ0FJQSxhQUFBLENBRUEsWUFBQSxDQUhBLGNBQUEsQ0FEQSxlQUFBLENBS0EsNkJBQUEsQ0FOQSxnQkFBQSxDQVFBLDhCQUFBLENBSkEsVUFJQSxDQUdGLDBCQUNFLGtCQUFBLENBR0Ysc0JBQ0Usa0JBQUEsQ0FHRixrQkFHRSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FDQSxPQUFBLENBQ0EsZUFBQSxDQUdGLG1CQUNFLGVBQUEsQ0FDQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsYUFBQSxDQURBLGVBQUEsQ0FGQSxnQkFBQSxDQUNBLGVBQUEsQ0FHQSw4QkFBQSxDQUdGLHlCQUNFLGtCQUFBLENBR0YseUJBQ0UsNEJBQUEsQ0FFQSw4QkFBQSxDQURBLG9CQUNBLENBSUYsZUFDRSxZQUFBLENBQ0EscUJBQUEs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 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  workspace_9269f393: "workspace_9269f393",
-  wrapper_9269f393: "wrapper_9269f393",
-  railHeader_9269f393: "railHeader_9269f393",
-  container_9269f393: "container_9269f393",
-  parentBtn_9269f393: "parentBtn_9269f393",
-  rootBtnOpen_9269f393: "rootBtnOpen_9269f393",
-  chevron_9269f393: "chevron_9269f393",
-  childList_9269f393: "childList_9269f393",
-  childBtn_9269f393: "childBtn_9269f393",
-  main_9269f393: "main_9269f393",
-  tabs_9269f393: "tabs_9269f393",
-  tab_9269f393: "tab_9269f393",
-  active_9269f393: "active_9269f393",
-  results_9269f393: "results_9269f393",
-  grid_9269f393: "grid_9269f393",
-  card_9269f393: "card_9269f393",
-  cardTitle_9269f393: "cardTitle_9269f393",
-  cardRow_9269f393: "cardRow_9269f393",
-  cardLabel_9269f393: "cardLabel_9269f393",
-  cardValue_9269f393: "cardValue_9269f393",
-  rightRail_9269f393: "rightRail_9269f393",
-  quickLinksTitle_9269f393: "quickLinksTitle_9269f393",
-  quickLinksList_9269f393: "quickLinksList_9269f393",
-  cardLink_9269f393: "cardLink_9269f393",
-  tile_9269f393: "tile_9269f393",
-  tileHeader_9269f393: "tileHeader_9269f393",
-  fileTypeIcon_9269f393: "fileTypeIcon_9269f393",
-  fileType_9269f393: "fileType_9269f393",
-  tileTitle_9269f393: "tileTitle_9269f393",
-  fileName_9269f393: "fileName_9269f393",
-  tileAbstract_9269f393: "tileAbstract_9269f393",
-  tileMeta_9269f393: "tileMeta_9269f393",
-  metaLabel_9269f393: "metaLabel_9269f393",
-  metaValue_9269f393: "metaValue_9269f393",
-  tileActions_9269f393: "tileActions_9269f393",
-  viewButton_9269f393: "viewButton_9269f393",
-  downloadButton_9269f393: "downloadButton_9269f393",
-  detailModal_9269f393: "detailModal_9269f393",
-  scrollContainer_9269f393: "scrollContainer_9269f393"
+  workspace_0a92ea9b: "workspace_0a92ea9b",
+  wrapper_0a92ea9b: "wrapper_0a92ea9b",
+  railHeader_0a92ea9b: "railHeader_0a92ea9b",
+  container_0a92ea9b: "container_0a92ea9b",
+  parentBtn_0a92ea9b: "parentBtn_0a92ea9b",
+  rootBtnOpen_0a92ea9b: "rootBtnOpen_0a92ea9b",
+  chevron_0a92ea9b: "chevron_0a92ea9b",
+  childList_0a92ea9b: "childList_0a92ea9b",
+  childBtn_0a92ea9b: "childBtn_0a92ea9b",
+  childBtnActive_0a92ea9b: "childBtnActive_0a92ea9b",
+  main_0a92ea9b: "main_0a92ea9b",
+  tabs_0a92ea9b: "tabs_0a92ea9b",
+  tab_0a92ea9b: "tab_0a92ea9b",
+  active_0a92ea9b: "active_0a92ea9b",
+  results_0a92ea9b: "results_0a92ea9b",
+  list_0a92ea9b: "list_0a92ea9b",
+  card_0a92ea9b: "card_0a92ea9b",
+  cardTitle_0a92ea9b: "cardTitle_0a92ea9b",
+  cardRow_0a92ea9b: "cardRow_0a92ea9b",
+  cardLabel_0a92ea9b: "cardLabel_0a92ea9b",
+  cardValue_0a92ea9b: "cardValue_0a92ea9b",
+  rightRail_0a92ea9b: "rightRail_0a92ea9b",
+  quickLinksTitle_0a92ea9b: "quickLinksTitle_0a92ea9b",
+  quickLinksList_0a92ea9b: "quickLinksList_0a92ea9b",
+  quickLink_0a92ea9b: "quickLink_0a92ea9b",
+  cardLink_0a92ea9b: "cardLink_0a92ea9b",
+  tile_0a92ea9b: "tile_0a92ea9b",
+  tileHeader_0a92ea9b: "tileHeader_0a92ea9b",
+  fileTypeIcon_0a92ea9b: "fileTypeIcon_0a92ea9b",
+  fileType_0a92ea9b: "fileType_0a92ea9b",
+  tileContent_0a92ea9b: "tileContent_0a92ea9b",
+  tileTitle_0a92ea9b: "tileTitle_0a92ea9b",
+  fileName_0a92ea9b: "fileName_0a92ea9b",
+  tileAbstract_0a92ea9b: "tileAbstract_0a92ea9b",
+  tileMeta_0a92ea9b: "tileMeta_0a92ea9b",
+  metaLabel_0a92ea9b: "metaLabel_0a92ea9b",
+  metaValue_0a92ea9b: "metaValue_0a92ea9b",
+  tileActions_0a92ea9b: "tileActions_0a92ea9b",
+  viewButton_0a92ea9b: "viewButton_0a92ea9b",
+  downloadButton_0a92ea9b: "downloadButton_0a92ea9b",
+  detailModal_0a92ea9b: "detailModal_0a92ea9b",
+  scrollContainer_0a92ea9b: "scrollContainer_0a92ea9b"
 });
 
 
@@ -329,26 +332,26 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_52468a40{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;position:relative;width:100%}.headerContent_52468a40{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_52468a40{flex:1}.companyName_52468a40{color:#fff;font-size:48px;font-weight:700;margin:0 0 10px}.description_52468a40{color:#fff;font-size:16px;font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_52468a40{background-color:#4834d4;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:16px;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_52468a40:hover{background-color:#3d2db8}.rightSection_52468a40{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_52468a40{color:#fff;font-size:18px;font-weight:500}.searchContainer_52468a40{align-items:center;background-color:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer;display:flex;min-width:320px;padding:8px 16px}.searchIcon_52468a40{height:18px;margin-right:10px;width:18px}.searchInput_52468a40{background:0 0;border:none;color:#333;flex:1;font-size:16px;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_52468a40:-ms-input-placeholder{color:#999}.searchInput_52468a40::placeholder{color:#999}.dropdownPanel_52468a40{animation:fadeDown_52468a40 .18s ease-out;left:50%;position:fixed;top:120px;transform:translateX(-50%);width:min(70vw,1050px);z-index:1000}.dropdownInner_52468a40{background:#fff;border:1px solid #e7ebf1;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.12);max-height:70vh;overflow:auto;padding:16px}.dropdownClose_52468a40{background:#0b4b93;border:none;border-radius:20px;color:#fff;cursor:pointer;font-weight:700;padding:6px 10px;position:absolute;right:2.5vw;top:8px}.dropdownClose_52468a40:hover{background:#093f7a}@keyframes fadeDown_52468a40{0%{opacity:0;transform:translate(-50%,-8px)}to{opacity:1;transform:translate(-50%)}}@media (max-width:1024px){.dropdownPanel_52468a40{top:110px;width:96vw}}@media (max-width:640px){.header_52468a40{padding:24px}.searchContainer_52468a40{min-width:240px}.dropdownPanel_52468a40{top:100px;width:96vw}.dropdownInner_52468a40{border-radius:10px;padding:14px}}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9IZWFkZXIvSGVhZGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUVFLDJFQUFBLENBR0EscUJBQUEsQ0FEQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUlBLGlCQUFBLENBTkEsVUFNQSxDQUdGLHdCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLDZCQUFBLENBR0EsYUFBQSxDQURBLGdCQUNBLENBR0Ysc0JBQ0UsTUFBQSxDQUdGLHNCQUlFLFVBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGVBQ0EsQ0FHRixzQkFHRSxVQUFBLENBRkEsY0FBQSxDQUlBLGVBQUEsQ0FIQSxlQUFBLENBRUEsV0FDQSxDQUdGLHdCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUlBLGlCQUFBLENBTEEsVUFBQSxDQUlBLGNBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQUpBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw4QkFDRSx3QkFBQSxDQUlKLHVCQUdFLG9CQUFBLENBRkEsWUFBQSxDQUNBLHFCQUFBLENBRUEsUUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUlBLG9DQUFBLENBREEsY0FBQSxDQU5BLFlBQUEsQ0FLQSxlQUFBLENBREEsZ0JBR0EsQ0FHRixxQkFFRSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUVBLENBR0Ysc0JBTUUsY0FBQSxDQUxBLFdBQUEsQ0FJQSxVQUFBLENBRkEsTUFBQSxDQUNBLGNBQUEsQ0FGQSxTQUlBLENBRUEsbUNBQ0UsVUFBQSxDQURGLDRDQUNFLFVBQUEsQ0FERixtQ0FDRSxVQUFBLENBT0osd0JBT0UseUNBQUEsQ0FMQSxRQUFBLENBREEsY0FBQSxDQUdBLFNBQUEsQ0FEQSwwQkFBQSxDQUVBLHNCQUFBLENBQ0EsWUFDQSxDQUdGLHdCQUNFLGVBQUEsQ0FJQSx3QkFBQSxDQUhBLGtCQUFBLENBQ0Esc0NBQUEsQ0FLQSxlQUFBLENBQ0EsYUFBQSxDQUxBLFlBS0EsQ0FJRix3QkFJRSxrQkFBQSxDQUVBLFdBQUEsQ0FDQSxrQkFBQSxDQUZBLFVBQUEsQ0FLQSxjQUFBLENBREEsZUFBQSxDQURBLGdCQUFBLENBUEEsaUJBQUEsQ0FFQSxXQUFBLENBREEsT0FRQSxDQUdGLDhCQUNFLGtCQUFBLENBR0YsNkJBQ0UsR0FBTyxTQUFBLENBQVksOEJBQUEsQ0FDbkIsR0FBTyxTQUFBLENBQVkseUJBQUEsQ0FBQSxDQUlyQiwwQkFDRSx3QkFDRSxTQUFBLENBQ0EsVUFBQSxDQUFBLENBSUoseUJBQ0UsaUJBQ0UsWUFBQSxDQUdGLDBCQUNFLGVBQUEsQ0FHRix3QkFDRSxTQUFBLENBQ0EsVUFBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFDQSxDQUFBIiwiZmlsZSI6IkhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_7a58796d{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;position:relative;width:100%}.headerContent_7a58796d{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_7a58796d{flex:1}.companyName_7a58796d{color:#fff;font-size:48px;font-weight:700;margin:0 0 10px}.description_7a58796d{color:#fff;font-size:16px;font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_7a58796d{background-color:#4834d4;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:16px;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_7a58796d:hover{background-color:#3d2db8}.rightSection_7a58796d{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_7a58796d{color:#fff;font-size:18px;font-weight:500}.searchContainer_7a58796d{align-items:center;background-color:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer;display:flex;min-width:320px;padding:8px 16px}.searchIcon_7a58796d{height:18px;margin-right:10px;width:18px}.searchInput_7a58796d{background:0 0;border:none;color:#333;flex:1;font-size:16px;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_7a58796d:-ms-input-placeholder{color:#999}.searchInput_7a58796d::placeholder{color:#999}.dropdownPanel_7a58796d{animation:fadeDown_7a58796d .18s ease-out;position:fixed;width:min(70vw,1050px);z-index:1000}.dropdownInner_7a58796d{background:#fff;border:1px solid #e7ebf1;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.12);max-height:70vh;overflow:auto;padding:16px}.dropdownClose_7a58796d{background:#0b4b93;border:none;border-radius:20px;color:#fff;cursor:pointer;font-weight:700;padding:6px 10px;position:absolute;right:2.5vw;top:8px}.dropdownClose_7a58796d:hover{background:#093f7a}@keyframes fadeDown_7a58796d{0%{opacity:0;transform:translate(-55%,-8px)}to{opacity:1;transform:translate(-55%)}}@media (max-width:1024px){.dropdownPanel_7a58796d{width:96vw}}@media (max-width:640px){.header_7a58796d{padding:24px}.searchContainer_7a58796d{min-width:240px}.dropdownPanel_7a58796d{width:96vw}.dropdownInner_7a58796d{border-radius:10px;padding:14px}}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9IZWFkZXIvSGVhZGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUVFLDJFQUFBLENBR0EscUJBQUEsQ0FEQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUlBLGlCQUFBLENBTkEsVUFNQSxDQUdGLHdCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLDZCQUFBLENBR0EsYUFBQSxDQURBLGdCQUNBLENBR0Ysc0JBQ0UsTUFBQSxDQUdGLHNCQUlFLFVBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGVBQ0EsQ0FHRixzQkFHRSxVQUFBLENBRkEsY0FBQSxDQUlBLGVBQUEsQ0FIQSxlQUFBLENBRUEsV0FDQSxDQUdGLHdCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUlBLGlCQUFBLENBTEEsVUFBQSxDQUlBLGNBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQUpBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw4QkFDRSx3QkFBQSxDQUlKLHVCQUdFLG9CQUFBLENBRkEsWUFBQSxDQUNBLHFCQUFBLENBRUEsUUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUlBLG9DQUFBLENBREEsY0FBQSxDQU5BLFlBQUEsQ0FLQSxlQUFBLENBREEsZ0JBR0EsQ0FHRixxQkFFRSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUVBLENBR0Ysc0JBTUUsY0FBQSxDQUxBLFdBQUEsQ0FJQSxVQUFBLENBRkEsTUFBQSxDQUNBLGNBQUEsQ0FGQSxTQUlBLENBRUEsbUNBQ0UsVUFBQSxDQURGLDRDQUNFLFVBQUEsQ0FERixtQ0FDRSxVQUFBLENBT0osd0JBS0UseUNBQUEsQ0FKQSxjQUFBLENBRUEsc0JBQUEsQ0FDQSxZQUNBLENBR0Ysd0JBQ0UsZUFBQSxDQUlBLHdCQUFBLENBSEEsa0JBQUEsQ0FDQSxzQ0FBQSxDQUtBLGVBQUEsQ0FDQSxhQUFBLENBTEEsWUFLQSxDQUlGLHdCQUlFLGtCQUFBLENBRUEsV0FBQSxDQUNBLGtCQUFBLENBRkEsVUFBQSxDQUtBLGNBQUEsQ0FEQSxlQUFBLENBREEsZ0JBQUEsQ0FQQSxpQkFBQSxDQUVBLFdBQUEsQ0FEQSxPQVFBLENBR0YsOEJBQ0Usa0JBQUEsQ0FHRiw2QkFDRSxHQUFPLFNBQUEsQ0FBWSw4QkFBQSxDQUNuQixHQUFPLFNBQUEsQ0FBWSx5QkFBQSxDQUFBLENBSXJCLDBCQUNFLHdCQUNFLFVBQUEsQ0FBQSxDQUlKLHlCQUNFLGlCQUNFLFlBQUEsQ0FHRiwwQkFDRSxlQUFBLENBR0Ysd0JBQ0UsVUFBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFDQSxDQUFBIiwiZmlsZSI6IkhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  header_52468a40: "header_52468a40",
-  headerContent_52468a40: "headerContent_52468a40",
-  leftSection_52468a40: "leftSection_52468a40",
-  companyName_52468a40: "companyName_52468a40",
-  description_52468a40: "description_52468a40",
-  addFileButton_52468a40: "addFileButton_52468a40",
-  rightSection_52468a40: "rightSection_52468a40",
-  leadership_52468a40: "leadership_52468a40",
-  searchContainer_52468a40: "searchContainer_52468a40",
-  searchIcon_52468a40: "searchIcon_52468a40",
-  searchInput_52468a40: "searchInput_52468a40",
+  header_7a58796d: "header_7a58796d",
+  headerContent_7a58796d: "headerContent_7a58796d",
+  leftSection_7a58796d: "leftSection_7a58796d",
+  companyName_7a58796d: "companyName_7a58796d",
+  description_7a58796d: "description_7a58796d",
+  addFileButton_7a58796d: "addFileButton_7a58796d",
+  rightSection_7a58796d: "rightSection_7a58796d",
+  leadership_7a58796d: "leadership_7a58796d",
+  searchContainer_7a58796d: "searchContainer_7a58796d",
+  searchIcon_7a58796d: "searchIcon_7a58796d",
+  searchInput_7a58796d: "searchInput_7a58796d",
   searchInput: "searchInput",
-  dropdownPanel_52468a40: "dropdownPanel_52468a40",
-  fadeDown_52468a40: "fadeDown_52468a40",
-  dropdownInner_52468a40: "dropdownInner_52468a40",
-  dropdownClose_52468a40: "dropdownClose_52468a40"
+  dropdownPanel_7a58796d: "dropdownPanel_7a58796d",
+  fadeDown_7a58796d: "fadeDown_7a58796d",
+  dropdownInner_7a58796d: "dropdownInner_7a58796d",
+  dropdownClose_7a58796d: "dropdownClose_7a58796d"
 });
 
 
@@ -463,45 +466,46 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_da1a1f17{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_da1a1f17{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_da1a1f17{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:232px;max-width:none;min-width:0;overflow:hidden;padding:24px}.promptText_da1a1f17{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_da1a1f17{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_da1a1f17{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_da1a1f17:-ms-input-placeholder{color:#999}.questionInput_da1a1f17::placeholder{color:#999}.questionInput_da1a1f17:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_da1a1f17{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_da1a1f17:hover{transform:scale(1.08)}.chatWindow_da1a1f17{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_da1a1f17{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_da1a1f17{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_da1a1f17{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_da1a1f17{justify-content:flex-end}.messageContainerBot_da1a1f17{justify-content:flex-start}.messageAvatar_da1a1f17{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_da1a1f17{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_da1a1f17,.userMsg_da1a1f17{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_da1a1f17{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_da1a1f17.thinking_da1a1f17{animation:pulse_da1a1f17 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_da1a1f17{0%,to{opacity:.7}50%{opacity:1}}.inputRow_da1a1f17{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_da1a1f17{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_da1a1f17:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_da1a1f17{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_da1a1f17:hover{background:#00509e}.sendButton_da1a1f17:active{transform:scale(.96)}.closeButton_da1a1f17{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_da1a1f17{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_da1a1f17{font-size:20px;line-height:1}.fileType_da1a1f17{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_da1a1f17{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_da1a1f17,.tileTitle_da1a1f17{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_da1a1f17{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_da1a1f17{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_da1a1f17{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_da1a1f17 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_da1a1f17:hover:not(:disabled){background-color:#1565c0}.viewButton_da1a1f17:active:not(:disabled){background-color:#0d47a1}.viewButton_da1a1f17:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_da1a1f17{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_da1a1f17 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_da1a1f17:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_da1a1f17:active:not(:disabled){background-color:#e0e0e0}.downloadButton_da1a1f17:disabled{cursor:not-allowed;opacity:.4}.loading_da1a1f17,.noDocuments_da1a1f17{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.detailModal_da1a1f17{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.chatLauncher_da1a1f17{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_da1a1f17{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_da1a1f17:hover{transform:scale(1.1)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHlCQUNFLFlBQUEsQ0FLQSxnQkFBQSxDQUpBLFFBQUEsQ0FHQSxzQkFBQSxDQURBLGFBQUEsQ0FEQSxnQkFBQSxDQUlBLFVBQUEsQ0FHRixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSxjQUFBLENBREEsV0FBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxD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QUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQU9FLHdCQUFBLENBRkEsUUFBQSxDQUtBLFlBQUEsQ0FQQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQU9BLFdBQUEsQ0FIQSxhQUlBLENBR0YsdUJBRUUsV0FBQSxDQUdBLGNBQUEsQ0FKQSxjQUFBLENBRUEsVUFBQSxDQUNBLFlBQ0EsQ0FHRixzQkFHRSxpQkFBQSxDQURBLFdBQUEsQ0FFQSxvQ0FBQSxDQUhBLFVBR0EsQ0FHRiw0QkFDRSxvQkFBQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_3654171e{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_3654171e{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_3654171e{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:232px;max-width:none;min-width:0;overflow:hidden;padding:24px}.promptText_3654171e{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_3654171e{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_3654171e{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_3654171e:-ms-input-placeholder{color:#999}.questionInput_3654171e::placeholder{color:#999}.questionInput_3654171e:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_3654171e{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_3654171e:hover{transform:scale(1.08)}.chatWindow_3654171e{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_3654171e{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_3654171e{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_3654171e{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_3654171e{justify-content:flex-end}.messageContainerBot_3654171e{justify-content:flex-start}.messageAvatar_3654171e{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_3654171e{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_3654171e,.userMsg_3654171e{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_3654171e{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_3654171e.thinking_3654171e{animation:pulse_3654171e 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_3654171e{0%,to{opacity:.7}50%{opacity:1}}.inputRow_3654171e{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_3654171e{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_3654171e:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_3654171e{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_3654171e:hover{background:#00509e}.sendButton_3654171e:active{transform:scale(.96)}.closeButton_3654171e{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_3654171e{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_3654171e{font-size:20px;line-height:1}.fileType_3654171e{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_3654171e{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_3654171e,.tileTitle_3654171e{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_3654171e{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_3654171e{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_3654171e{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_3654171e svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_3654171e:hover:not(:disabled){background-color:#1565c0}.viewButton_3654171e:active:not(:disabled){background-color:#0d47a1}.viewButton_3654171e:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_3654171e{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_3654171e svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_3654171e:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_3654171e:active:not(:disabled){background-color:#e0e0e0}.downloadButton_3654171e:disabled{cursor:not-allowed;opacity:.4}.loading_3654171e,.noDocuments_3654171e{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.detailModal_3654171e{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.chatLauncher_3654171e{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_3654171e{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_3654171e:hover{transform:scale(1.1)}.botLink_3654171e{cursor:pointer;display:inline-block;margin-top:6px;text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHlCQUNFLFlBQUEsQ0FLQSxnQkFBQSxDQUpBLFFBQUEsQ0FHQSxzQkFBQSxDQURBLGFBQUEsQ0FEQSxnQkFBQSxDQUlBLFVBQUEsQ0FHRixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSxjQUFBLENBREEsV0FBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxD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QUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQU9FLHdCQUFBLENBRkEsUUFBQSxDQUtBLFlBQUEsQ0FQQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQU9BLFdBQUEsQ0FIQSxhQUlBLENBR0YsdUJBRUUsV0FBQSxDQUdBLGNBQUEsQ0FKQSxjQUFBLENBRUEsVUFBQSxDQUNBLFlBQ0EsQ0FHRixzQkFHRSxpQkFBQSxDQURBLFdBQUEsQ0FFQSxvQ0FBQSxDQUhBLFVBR0EsQ0FHRiw0QkFDRSxvQkFBQSxDQUVGLGtCQUlFLGNBQUEsQ0FIQSxvQkFBQSxDQUNBLGNBQUEsQ0FDQSx5QkFDQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_da1a1f17: "questionSection_da1a1f17",
-  tilesContainer_da1a1f17: "tilesContainer_da1a1f17",
-  tile_da1a1f17: "tile_da1a1f17",
-  promptText_da1a1f17: "promptText_da1a1f17",
-  rightInput_da1a1f17: "rightInput_da1a1f17",
-  questionInput_da1a1f17: "questionInput_da1a1f17",
+  questionSection_3654171e: "questionSection_3654171e",
+  tilesContainer_3654171e: "tilesContainer_3654171e",
+  tile_3654171e: "tile_3654171e",
+  promptText_3654171e: "promptText_3654171e",
+  rightInput_3654171e: "rightInput_3654171e",
+  questionInput_3654171e: "questionInput_3654171e",
   questionInput: "questionInput",
-  chatbotIcon_da1a1f17: "chatbotIcon_da1a1f17",
-  chatWindow_da1a1f17: "chatWindow_da1a1f17",
-  chatHeader_da1a1f17: "chatHeader_da1a1f17",
-  messages_da1a1f17: "messages_da1a1f17",
-  messageContainer_da1a1f17: "messageContainer_da1a1f17",
-  messageContainerUser_da1a1f17: "messageContainerUser_da1a1f17",
-  messageContainerBot_da1a1f17: "messageContainerBot_da1a1f17",
-  messageAvatar_da1a1f17: "messageAvatar_da1a1f17",
-  userMsg_da1a1f17: "userMsg_da1a1f17",
-  botMsg_da1a1f17: "botMsg_da1a1f17",
-  thinking_da1a1f17: "thinking_da1a1f17",
-  pulse_da1a1f17: "pulse_da1a1f17",
-  inputRow_da1a1f17: "inputRow_da1a1f17",
-  chatInput_da1a1f17: "chatInput_da1a1f17",
-  sendButton_da1a1f17: "sendButton_da1a1f17",
-  closeButton_da1a1f17: "closeButton_da1a1f17",
-  tileHeader_da1a1f17: "tileHeader_da1a1f17",
-  fileTypeIcon_da1a1f17: "fileTypeIcon_da1a1f17",
-  fileType_da1a1f17: "fileType_da1a1f17",
-  tileTitle_da1a1f17: "tileTitle_da1a1f17",
-  tileAbstract_da1a1f17: "tileAbstract_da1a1f17",
-  tileActions_da1a1f17: "tileActions_da1a1f17",
-  viewButton_da1a1f17: "viewButton_da1a1f17",
-  downloadButton_da1a1f17: "downloadButton_da1a1f17",
-  loading_da1a1f17: "loading_da1a1f17",
-  noDocuments_da1a1f17: "noDocuments_da1a1f17",
-  detailModal_da1a1f17: "detailModal_da1a1f17",
-  chatLauncher_da1a1f17: "chatLauncher_da1a1f17"
+  chatbotIcon_3654171e: "chatbotIcon_3654171e",
+  chatWindow_3654171e: "chatWindow_3654171e",
+  chatHeader_3654171e: "chatHeader_3654171e",
+  messages_3654171e: "messages_3654171e",
+  messageContainer_3654171e: "messageContainer_3654171e",
+  messageContainerUser_3654171e: "messageContainerUser_3654171e",
+  messageContainerBot_3654171e: "messageContainerBot_3654171e",
+  messageAvatar_3654171e: "messageAvatar_3654171e",
+  userMsg_3654171e: "userMsg_3654171e",
+  botMsg_3654171e: "botMsg_3654171e",
+  thinking_3654171e: "thinking_3654171e",
+  pulse_3654171e: "pulse_3654171e",
+  inputRow_3654171e: "inputRow_3654171e",
+  chatInput_3654171e: "chatInput_3654171e",
+  sendButton_3654171e: "sendButton_3654171e",
+  closeButton_3654171e: "closeButton_3654171e",
+  tileHeader_3654171e: "tileHeader_3654171e",
+  fileTypeIcon_3654171e: "fileTypeIcon_3654171e",
+  fileType_3654171e: "fileType_3654171e",
+  tileTitle_3654171e: "tileTitle_3654171e",
+  tileAbstract_3654171e: "tileAbstract_3654171e",
+  tileActions_3654171e: "tileActions_3654171e",
+  viewButton_3654171e: "viewButton_3654171e",
+  downloadButton_3654171e: "downloadButton_3654171e",
+  loading_3654171e: "loading_3654171e",
+  noDocuments_3654171e: "noDocuments_3654171e",
+  detailModal_3654171e: "detailModal_3654171e",
+  chatLauncher_3654171e: "chatLauncher_3654171e",
+  botLink_3654171e: "botLink_3654171e"
 });
 
 
@@ -1626,13 +1630,41 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     --------------------------------------------- */
     const [selectedDocumentId, setSelectedDocumentId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     /* ---------------------------------------------
-       Front-end file format filter state
+       Front-end filter states
     --------------------------------------------- */
     const [selectedFormat, setSelectedFormat] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedBusinessUnit, setSelectedBusinessUnit] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedDocumentType, setSelectedDocumentType] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedClient, setSelectedClient] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedRegion, setSelectedRegion] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedTherapyArea, setSelectedTherapyArea] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [selectedDiseaseArea, setSelectedDiseaseArea] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const toggleGroup = (title) => setOpenGroup(openGroup === title ? null : title);
     const handleFormatClick = (formatTitle) => {
         const fmt = formatTitle.toLowerCase();
         setSelectedFormat((prev) => (prev === fmt ? null : fmt)); // toggle
+    };
+    const handleFilterClick = (filterType, value) => {
+        switch (filterType) {
+            case "Business Unit":
+                setSelectedBusinessUnit((prev) => (prev === value ? null : value));
+                break;
+            case "Document Type":
+                setSelectedDocumentType((prev) => (prev === value ? null : value));
+                break;
+            case "Client":
+                setSelectedClient((prev) => (prev === value ? null : value));
+                break;
+            case "Region":
+                setSelectedRegion((prev) => (prev === value ? null : value));
+                break;
+            case "Therapy Area":
+                setSelectedTherapyArea((prev) => (prev === value ? null : value));
+                break;
+            case "Disease Area":
+                setSelectedDiseaseArea((prev) => (prev === value ? null : value));
+                break;
+        }
     };
     /* ---------- Helpers for file type & icon (for tiles) ---------- */
     const getFileTypeFromName = (fileName) => {
@@ -1669,7 +1701,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 setError(null);
                 const libraryName = "KMArtifacts";
                 const apiUrl = `${siteUrl}/_api/web/lists/getbytitle('${libraryName}')/items` +
-                    `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created` +
+                    `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea` +
                     `&$expand=Author`;
                 const response = await spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__.SPHttpClient.configurations.v1);
                 if (!response.ok) {
@@ -1698,6 +1730,12 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                             : undefined,
                         fileType,
                         serverRelativeUrl: item.FileRef || "",
+                        businessUnit: item.BusinessUnit || undefined,
+                        documentType: item.DocumentType || undefined,
+                        client: item.Client || undefined,
+                        region: item.Region || undefined,
+                        therapyArea: item.TherapyArea || undefined,
+                        diseaseArea: item.DiseaseArea || undefined,
                     };
                 });
                 setDocuments(docs);
@@ -1713,13 +1751,20 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
         fetchDocuments();
     }, [activeTab, siteUrl, spHttpClient]);
     /* ======================================================
-       Search + File Format filter
+       Search + All Filters
     ====================================================== */
     const hasSearch = searchText.trim().length > 0;
     const hasFormat = !!selectedFormat;
-    const hasSearchOrFormat = hasSearch || hasFormat;
+    const hasBusinessUnit = !!selectedBusinessUnit;
+    const hasDocumentType = !!selectedDocumentType;
+    const hasClient = !!selectedClient;
+    const hasRegion = !!selectedRegion;
+    const hasTherapyArea = !!selectedTherapyArea;
+    const hasDiseaseArea = !!selectedDiseaseArea;
+    const hasAnyFilter = hasSearch || hasFormat || hasBusinessUnit || hasDocumentType ||
+        hasClient || hasRegion || hasTherapyArea || hasDiseaseArea;
     const filteredItems = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-        if (!hasSearchOrFormat)
+        if (!hasAnyFilter)
             return []; // empty grid initially
         const baseItems = activeTab === "documents" ? documents : experts;
         const keyword = searchText.toLowerCase();
@@ -1730,20 +1775,59 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 item.description.toLowerCase().includes(keyword);
             const matchesSearch = !hasSearch || textMatch;
             // Only enforce format filter for documents (experts don't have fileType)
+            // Use exact match to prevent "mht" from matching "mhtml" and vice versa
             const matchesFormat = !fmt ||
                 (activeTab === "documents" &&
                     item.fileType &&
-                    item.fileType.toLowerCase().includes(fmt));
-            return matchesSearch && matchesFormat;
+                    item.fileType.toLowerCase() === fmt);
+            // Business Unit filter - exact match
+            const matchesBusinessUnit = !selectedBusinessUnit ||
+                (activeTab === "documents" &&
+                    item.businessUnit &&
+                    item.businessUnit.trim() === selectedBusinessUnit.trim());
+            // Document Type filter - exact match
+            const matchesDocumentType = !selectedDocumentType ||
+                (activeTab === "documents" &&
+                    item.documentType &&
+                    item.documentType.trim() === selectedDocumentType.trim());
+            // Client filter - exact match
+            const matchesClient = !selectedClient ||
+                (activeTab === "documents" &&
+                    item.client &&
+                    item.client.trim() === selectedClient.trim());
+            // Region filter - exact match
+            const matchesRegion = !selectedRegion ||
+                (activeTab === "documents" &&
+                    item.region &&
+                    item.region.trim() === selectedRegion.trim());
+            // Therapy Area filter - exact match
+            const matchesTherapyArea = !selectedTherapyArea ||
+                (activeTab === "documents" &&
+                    item.therapyArea &&
+                    item.therapyArea.trim() === selectedTherapyArea.trim());
+            // Disease Area filter - exact match
+            const matchesDiseaseArea = !selectedDiseaseArea ||
+                (activeTab === "documents" &&
+                    item.diseaseArea &&
+                    item.diseaseArea.trim() === selectedDiseaseArea.trim());
+            return matchesSearch && matchesFormat && matchesBusinessUnit &&
+                matchesDocumentType && matchesClient && matchesRegion &&
+                matchesTherapyArea && matchesDiseaseArea;
         });
     }, [
-        hasSearchOrFormat,
+        hasAnyFilter,
         hasSearch,
         searchText,
         documents,
         experts,
         activeTab,
         selectedFormat,
+        selectedBusinessUnit,
+        selectedDocumentType,
+        selectedClient,
+        selectedRegion,
+        selectedTherapyArea,
+        selectedDiseaseArea,
     ]);
     /* ======================================================
        Document Action Handlers (same as QuestionSection)
@@ -1754,9 +1838,9 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     const handleCloseDetail = () => setSelectedDocumentId(null);
     /* ======================================================
        Only show FilterDropdown content when user types
-       OR chooses a file format
+       OR chooses any filter
     ====================================================== */
-    if (!hasSearchOrFormat) {
+    if (!hasAnyFilter) {
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, selectedDocumentId &&
             context &&
             typeof document !== "undefined" &&
@@ -1799,9 +1883,24 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].parentBtn} ${isOpen ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rootBtnOpen : ""}`, onClick: () => toggleGroup(group.title) },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, group.title),
                             hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].chevron }, isOpen ? "▲" : "▼"))),
-                        isOpen && hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childList }, group.children.map((child) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childBtn, onClick: () => group.title === "File Format"
-                                ? handleFormatClick(child.title)
-                                : undefined }, child.title)))))));
+                        isOpen && hasChildren && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childList }, group.children.map((child) => {
+                            // Determine if this filter option is active
+                            const isActive = (group.title === "File Format" && selectedFormat === child.title.toLowerCase()) ||
+                                (group.title === "Business Unit" && selectedBusinessUnit === child.title) ||
+                                (group.title === "Document Type" && selectedDocumentType === child.title) ||
+                                (group.title === "Client" && selectedClient === child.title) ||
+                                (group.title === "Region" && selectedRegion === child.title) ||
+                                (group.title === "Therapy Area" && selectedTherapyArea === child.title) ||
+                                (group.title === "Disease Area" && selectedDiseaseArea === child.title);
+                            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: child.title, className: `${_FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childBtn} ${isActive ? _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].childBtnActive : ""}`, onClick: () => {
+                                    if (group.title === "File Format") {
+                                        handleFormatClick(child.title);
+                                    }
+                                    else {
+                                        handleFilterClick(group.title, child.title);
+                                    }
+                                } }, child.title));
+                        })))));
                 }))),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].main },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tabs },
@@ -1815,24 +1914,34 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                     !isLoading && !error && (
                     // 👇 Scrollable container
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].scrollContainer },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid }, filteredItems.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No results found.")) : (filteredItems.map((item) => activeTab === "documents" ? (
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].list }, filteredItems.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No results found.")) : (filteredItems.map((item) => activeTab === "documents" ? (
                         /* ================= Document tile ================ */
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tile },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileHeader },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(item.fileType)),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileType }, item.fileType || "FILE")),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileTitle }, item.title || "Untitled Document"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileName }, item.fileName || "No filename"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileAbstract }, item.description || "No abstract available"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Contributor:"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.contributor)),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Updated:"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.updated)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileContent },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileTitle }, item.title || "Untitled Document"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileName }, item.fileName || "No filename"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileAbstract }, item.description || "No abstract available"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Contributor:"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.contributor)),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileMeta },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaLabel }, "Updated:"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metaValue }, item.updated))),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tileActions },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].viewButton, onClick: () => handleView(item) }, "\uD83D\uDC41 View"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: () => handleDownload(item) }, "\u2B07 Download")))) : (
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].viewButton, onClick: () => handleView(item) },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": "true" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                                    "View"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: () => handleDownload(item) },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": "true" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                                    "Download")))) : (
                         /* ================= Experts card ================ */
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", { key: item.id, className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].card },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cardTitle }, item.title),
@@ -1848,10 +1957,14 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rightRail },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLinksTitle }, "Quick Links"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLinksList },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Upload Guidelines"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Metadata Standards"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Retention Policy"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "#Help & Support")))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: "https://www.indegene.com/who-we-are/about-us", target: "_blank", rel: "noopener noreferrer", className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLink }, "About Us")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf", target: "_blank", rel: "noopener noreferrer", className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLink }, "Retention Policy")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: "https://www.indegene.com/privacy-policy", target: "_blank", rel: "noopener noreferrer", className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLink }, "Privacy Policy")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: "https://www.indegene.com/contact-us", target: "_blank", rel: "noopener noreferrer", className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].quickLink }, "Contact Us"))))),
         selectedDocumentId &&
             context &&
             typeof document !== "undefined" &&
@@ -1875,45 +1988,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FilterDropdown.module.css */ 9328);
 const styles = {
-    workspace: 'workspace_9269f393',
-    wrapper: 'wrapper_9269f393',
-    railHeader: 'railHeader_9269f393',
-    container: 'container_9269f393',
-    parentBtn: 'parentBtn_9269f393',
-    rootBtnOpen: 'rootBtnOpen_9269f393',
-    chevron: 'chevron_9269f393',
-    childList: 'childList_9269f393',
-    childBtn: 'childBtn_9269f393',
-    main: 'main_9269f393',
-    tabs: 'tabs_9269f393',
-    tab: 'tab_9269f393',
-    active: 'active_9269f393',
-    results: 'results_9269f393',
-    grid: 'grid_9269f393',
-    card: 'card_9269f393',
-    cardTitle: 'cardTitle_9269f393',
-    cardRow: 'cardRow_9269f393',
-    cardLabel: 'cardLabel_9269f393',
-    cardValue: 'cardValue_9269f393',
-    rightRail: 'rightRail_9269f393',
-    quickLinksTitle: 'quickLinksTitle_9269f393',
-    quickLinksList: 'quickLinksList_9269f393',
-    cardLink: 'cardLink_9269f393',
-    tile: 'tile_9269f393',
-    tileHeader: 'tileHeader_9269f393',
-    fileTypeIcon: 'fileTypeIcon_9269f393',
-    fileType: 'fileType_9269f393',
-    tileTitle: 'tileTitle_9269f393',
-    fileName: 'fileName_9269f393',
-    tileAbstract: 'tileAbstract_9269f393',
-    tileMeta: 'tileMeta_9269f393',
-    metaLabel: 'metaLabel_9269f393',
-    metaValue: 'metaValue_9269f393',
-    tileActions: 'tileActions_9269f393',
-    viewButton: 'viewButton_9269f393',
-    downloadButton: 'downloadButton_9269f393',
-    detailModal: 'detailModal_9269f393',
-    scrollContainer: 'scrollContainer_9269f393'
+    workspace: 'workspace_0a92ea9b',
+    wrapper: 'wrapper_0a92ea9b',
+    railHeader: 'railHeader_0a92ea9b',
+    container: 'container_0a92ea9b',
+    parentBtn: 'parentBtn_0a92ea9b',
+    rootBtnOpen: 'rootBtnOpen_0a92ea9b',
+    chevron: 'chevron_0a92ea9b',
+    childList: 'childList_0a92ea9b',
+    childBtn: 'childBtn_0a92ea9b',
+    childBtnActive: 'childBtnActive_0a92ea9b',
+    main: 'main_0a92ea9b',
+    tabs: 'tabs_0a92ea9b',
+    tab: 'tab_0a92ea9b',
+    active: 'active_0a92ea9b',
+    results: 'results_0a92ea9b',
+    list: 'list_0a92ea9b',
+    card: 'card_0a92ea9b',
+    cardTitle: 'cardTitle_0a92ea9b',
+    cardRow: 'cardRow_0a92ea9b',
+    cardLabel: 'cardLabel_0a92ea9b',
+    cardValue: 'cardValue_0a92ea9b',
+    rightRail: 'rightRail_0a92ea9b',
+    quickLinksTitle: 'quickLinksTitle_0a92ea9b',
+    quickLinksList: 'quickLinksList_0a92ea9b',
+    quickLink: 'quickLink_0a92ea9b',
+    cardLink: 'cardLink_0a92ea9b',
+    tile: 'tile_0a92ea9b',
+    tileHeader: 'tileHeader_0a92ea9b',
+    fileTypeIcon: 'fileTypeIcon_0a92ea9b',
+    fileType: 'fileType_0a92ea9b',
+    tileContent: 'tileContent_0a92ea9b',
+    tileTitle: 'tileTitle_0a92ea9b',
+    fileName: 'fileName_0a92ea9b',
+    tileAbstract: 'tileAbstract_0a92ea9b',
+    tileMeta: 'tileMeta_0a92ea9b',
+    metaLabel: 'metaLabel_0a92ea9b',
+    metaValue: 'metaValue_0a92ea9b',
+    tileActions: 'tileActions_0a92ea9b',
+    viewButton: 'viewButton_0a92ea9b',
+    downloadButton: 'downloadButton_0a92ea9b',
+    detailModal: 'detailModal_0a92ea9b',
+    scrollContainer: 'scrollContainer_0a92ea9b'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2013,6 +2129,29 @@ const Header = (props) => {
     const [isOpen, setIsOpen] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
     const [searchText, setSearchText] = react__WEBPACK_IMPORTED_MODULE_0__.useState("");
     const containerRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    const searchContainerRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    const dropdownPanelRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    // Position dropdown below search bar
+    const updateDropdownPosition = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
+        if (isOpen && searchContainerRef.current && dropdownPanelRef.current) {
+            const searchRect = searchContainerRef.current.getBoundingClientRect();
+            const dropdown = dropdownPanelRef.current;
+            dropdown.style.top = `${searchRect.bottom + 8}px`; // 8px gap below search bar
+            // Position dropdown slightly to the left
+            dropdown.style.left = '50%';
+            dropdown.style.transform = 'translateX(-55%)'; // -55% moves it left from center
+        }
+    }, [isOpen]);
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        updateDropdownPosition();
+        // Update position on window resize
+        window.addEventListener('resize', updateDropdownPosition);
+        window.addEventListener('scroll', updateDropdownPosition);
+        return () => {
+            window.removeEventListener('resize', updateDropdownPosition);
+            window.removeEventListener('scroll', updateDropdownPosition);
+        };
+    }, [isOpen, searchText, updateDropdownPosition]);
     // Close dropdown when clicking outside
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         const handleClickOutside = (event) => {
@@ -2031,14 +2170,14 @@ const Header = (props) => {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: () => setShowUploader(true) }, "Add a file")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer, onClick: () => setIsOpen(true) },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: searchContainerRef, className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer, onClick: () => setIsOpen(true) },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchIcon, width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z", fill: "#666" })),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchInput, placeholder: "Search...", value: searchText, onChange: (e) => {
                             setSearchText(e.target.value);
                             setIsOpen(true);
                         } })),
-                isOpen && searchText.trim().length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropdownPanel },
+                isOpen && searchText.trim().length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: dropdownPanelRef, className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dropdownPanel },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FilterDropdown_FilterDropdown__WEBPACK_IMPORTED_MODULE_3__["default"], { searchText: searchText, spHttpClient: props.context.spHttpClient, siteUrl: props.context.pageContext.web.absoluteUrl, context: props.context }))))),
         showUploader && (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FileUpload_FileUpload__WEBPACK_IMPORTED_MODULE_2__.FileUpload, { onClose: () => setShowUploader(false), context: props.context }))));
 };
@@ -2058,21 +2197,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./Header.module.css */ 54304);
 const styles = {
-    header: 'header_52468a40',
-    headerContent: 'headerContent_52468a40',
-    leftSection: 'leftSection_52468a40',
-    companyName: 'companyName_52468a40',
-    description: 'description_52468a40',
-    addFileButton: 'addFileButton_52468a40',
-    rightSection: 'rightSection_52468a40',
-    leadership: 'leadership_52468a40',
-    searchContainer: 'searchContainer_52468a40',
-    searchIcon: 'searchIcon_52468a40',
-    searchInput: 'searchInput_52468a40',
-    dropdownPanel: 'dropdownPanel_52468a40',
-    fadeDown: 'fadeDown_52468a40',
-    dropdownInner: 'dropdownInner_52468a40',
-    dropdownClose: 'dropdownClose_52468a40'
+    header: 'header_7a58796d',
+    headerContent: 'headerContent_7a58796d',
+    leftSection: 'leftSection_7a58796d',
+    companyName: 'companyName_7a58796d',
+    description: 'description_7a58796d',
+    addFileButton: 'addFileButton_7a58796d',
+    rightSection: 'rightSection_7a58796d',
+    leadership: 'leadership_7a58796d',
+    searchContainer: 'searchContainer_7a58796d',
+    searchIcon: 'searchIcon_7a58796d',
+    searchInput: 'searchInput_7a58796d',
+    dropdownPanel: 'dropdownPanel_7a58796d',
+    fadeDown: 'fadeDown_7a58796d',
+    dropdownInner: 'dropdownInner_7a58796d',
+    dropdownClose: 'dropdownClose_7a58796d'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2389,9 +2528,69 @@ __webpack_require__.r(__webpack_exports__);
    Chatbot Section
 ====================================================== */
 const chatbotIcon = __webpack_require__(/*! ../../assets/chatbot-icon.png */ 53269);
-/* ============================================================
+/* =========================================================
+   QUICK LINKS MAP (used to return clickable links for queries)
+========================================================= */
+const QUICK_LINKS_MAP = {
+    home: { title: "Indegene Home", url: "https://www.indegene.com/" },
+    careers: { title: "Careers", url: "https://careers.indegene.com/" },
+    "case studies": {
+        title: "Case Studies & Insights",
+        url: "https://www.indegene.com/what-we-think/case-studies"
+    },
+    casestudies: {
+        title: "Case Studies & Insights",
+        url: "https://www.indegene.com/what-we-think/case-studies"
+    },
+    contact: { title: "Contact Us", url: "https://www.indegene.com/contact-us" },
+    investor: { title: "Investor Relations", url: "https://ir.indegene.com/" },
+    investors: { title: "Investor Relations", url: "https://ir.indegene.com/" },
+    csr: {
+        title: "CSR Policy (PDF)",
+        url: "https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf"
+    },
+    "csr policy": {
+        title: "CSR Policy (PDF)",
+        url: "https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf"
+    },
+    leadership: {
+        title: "Leadership / Who We Are",
+        url: "https://www.indegene.com/who-we-are/leadership"
+    },
+    "next platforms": {
+        title: "NEXT Platforms",
+        url: "https://www.indegene.com/what-we-do/next-platforms"
+    },
+    privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" }
+};
+/* helper: return a matching quick link for the user query (or null) */
+const getLinkForQuery = (query) => {
+    const q = query.toLowerCase();
+    // check for multi-word synonyms first
+    const phraseChecks = [
+        { keys: ["case study", "case studies"], mapKey: "case studies" },
+        { keys: ["csr policy", "csr"], mapKey: "csr" },
+        { keys: ["next platforms", "next platform"], mapKey: "next platforms" }
+    ];
+    for (const p of phraseChecks) {
+        for (const k of p.keys) {
+            if (q.includes(k))
+                return QUICK_LINKS_MAP[p.mapKey];
+        }
+    }
+    // token-level matching
+    const tokens = q.split(/\s+/);
+    for (const t of tokens) {
+        if (QUICK_LINKS_MAP[t])
+            return QUICK_LINKS_MAP[t];
+    }
+    // no link found
+    return null;
+};
+/* =========================================================
    CONTEXT KNOWLEDGE MAP
-============================================================ */
+   (this is the full map used by the chatbot to answer queries)
+========================================================= */
 const CONTEXT_MAP = {
     /* =====================================================
        INDEGENE – COMPANY BASICS
@@ -2809,6 +3008,20 @@ const CONTEXT_MAP = {
         "It helps make pharma, biotech, and medical device companies more data-driven, efficient, and future ready."
     ],
     /* =====================================================
+       QUICK LINKS
+    ====================================================== */
+    "quick links": [
+        "Indegene Home — https://www.indegene.com/",
+        "Careers — https://careers.indegene.com/",
+        "Case Studies & Insights — https://www.indegene.com/what-we-think/case-studies",
+        "Contact Us — https://www.indegene.com/contact-us",
+        "Investor Relations (IR) — https://ir.indegene.com/",
+        "Corporate Social Responsibility (CSR) Policy — https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf",
+        "Leadership / Who We Are — https://www.indegene.com/who-we-are/leadership",
+        "NEXT Platforms (technology) — https://www.indegene.com/what-we-do/next-platforms",
+        "Privacy & Security — https://www.indegene.com/privacy-policy"
+    ],
+    /* =====================================================
        EXISTING SKYSECURE + MEDICAL CONTENT
     ====================================================== */
     skysecure: [
@@ -2981,9 +3194,9 @@ const CONTEXT_MAP = {
         "Endocrinology resources: TA Profile Chaitra Gopinath (US), PV Line Listing Best Practices, Manolo Beelke TA profile."
     ]
 };
-/* ============================================================
+/* =========================================================
    INTERNAL QUERY HANDLER (Time, Date, Day + basic general)
-============================================================ */
+======================================================== */
 const handleInternalQueries = (query) => {
     const text = query.toLowerCase().trim();
     const now = new Date();
@@ -3019,9 +3232,9 @@ const handleInternalQueries = (query) => {
     }
     return null;
 };
-/* ============================================================
+/* =========================================================
    GENERAL SMALL-TALK / META QUERIES (who are you, hi, help)
-============================================================ */
+======================================================== */
 const handleGeneralQueries = (query) => {
     const text = query.toLowerCase().trim();
     // Greetings
@@ -3061,9 +3274,9 @@ const handleGeneralQueries = (query) => {
     }
     return null;
 };
-/* ============================================================
+/* =========================================================
    CONTEXT SEARCH LOGIC – boosted, with Skysecure fix
-============================================================ */
+======================================================== */
 const normalize = (text) => text
     .toLowerCase()
     .replace(/[^a-z0-9\s]/gi, " ")
@@ -3121,7 +3334,6 @@ const getAnswerFromContext = (query) => {
                 allTokensPresent = false;
         });
         if (allTokensPresent) {
-            // Strong preference for keys like "skysecure" in "what is skysecure"
             score += keyTokens.size + 1;
         }
         // Domain-specific boosts
@@ -3168,6 +3380,9 @@ const getAnswerFromContext = (query) => {
     }
     return "I could not find a relevant match in my stored knowledge.";
 };
+/* ======================================================
+   Main Component
+====================================================== */
 const QuestionSection = (props) => {
     /* ---------------------------------------------
        Chatbot State
@@ -3241,7 +3456,18 @@ const QuestionSection = (props) => {
                 const general = internal ? null : handleGeneralQueries(userMsg.text);
                 // 3) Context lookup
                 const reply = internal || general || getAnswerFromContext(userMsg.text);
-                setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+                // 4) Quick links detection
+                const link = getLinkForQuery(userMsg.text);
+                if (link) {
+                    // push a single bot message that contains text + link metadata
+                    setMessages((prev) => [
+                        ...prev,
+                        { sender: "bot", text: reply, title: link.title, url: link.url }
+                    ]);
+                }
+                else {
+                    setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+                }
             }
             finally {
                 setIsLoading(false);
@@ -3322,7 +3548,12 @@ const QuestionSection = (props) => {
                         ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageContainerUser
                         : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageContainerBot}` },
                     msg.sender === "bot" && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageAvatar })),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: msg.sender === "user" ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].userMsg : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].botMsg }, msg.text)))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: msg.sender === "user" ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].userMsg : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].botMsg },
+                        msg.text,
+                        msg.sender === "bot" && msg.url && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { marginTop: 8 } },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: msg.url, target: "_blank", rel: "noopener noreferrer", 
+                                // use a safe cast because your CSS module may not include botLink yet
+                                className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].botLink }, msg.title ? msg.title : msg.url))))))),
                 isLoading && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageContainer} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageContainerBot}` },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].messageAvatar }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].botMsg} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].thinking}` }, "...Thinking...")))),
@@ -3348,40 +3579,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 22408);
 const styles = {
-    questionSection: 'questionSection_da1a1f17',
-    tilesContainer: 'tilesContainer_da1a1f17',
-    tile: 'tile_da1a1f17',
-    promptText: 'promptText_da1a1f17',
-    rightInput: 'rightInput_da1a1f17',
-    questionInput: 'questionInput_da1a1f17',
-    chatbotIcon: 'chatbotIcon_da1a1f17',
-    chatWindow: 'chatWindow_da1a1f17',
-    chatHeader: 'chatHeader_da1a1f17',
-    messages: 'messages_da1a1f17',
-    messageContainer: 'messageContainer_da1a1f17',
-    messageContainerUser: 'messageContainerUser_da1a1f17',
-    messageContainerBot: 'messageContainerBot_da1a1f17',
-    messageAvatar: 'messageAvatar_da1a1f17',
-    userMsg: 'userMsg_da1a1f17',
-    botMsg: 'botMsg_da1a1f17',
-    thinking: 'thinking_da1a1f17',
-    pulse: 'pulse_da1a1f17',
-    inputRow: 'inputRow_da1a1f17',
-    chatInput: 'chatInput_da1a1f17',
-    sendButton: 'sendButton_da1a1f17',
-    closeButton: 'closeButton_da1a1f17',
-    tileHeader: 'tileHeader_da1a1f17',
-    fileTypeIcon: 'fileTypeIcon_da1a1f17',
-    fileType: 'fileType_da1a1f17',
-    tileTitle: 'tileTitle_da1a1f17',
-    tileAbstract: 'tileAbstract_da1a1f17',
-    tileActions: 'tileActions_da1a1f17',
-    viewButton: 'viewButton_da1a1f17',
-    downloadButton: 'downloadButton_da1a1f17',
-    loading: 'loading_da1a1f17',
-    noDocuments: 'noDocuments_da1a1f17',
-    detailModal: 'detailModal_da1a1f17',
-    chatLauncher: 'chatLauncher_da1a1f17'
+    questionSection: 'questionSection_3654171e',
+    tilesContainer: 'tilesContainer_3654171e',
+    tile: 'tile_3654171e',
+    promptText: 'promptText_3654171e',
+    rightInput: 'rightInput_3654171e',
+    questionInput: 'questionInput_3654171e',
+    chatbotIcon: 'chatbotIcon_3654171e',
+    chatWindow: 'chatWindow_3654171e',
+    chatHeader: 'chatHeader_3654171e',
+    messages: 'messages_3654171e',
+    messageContainer: 'messageContainer_3654171e',
+    messageContainerUser: 'messageContainerUser_3654171e',
+    messageContainerBot: 'messageContainerBot_3654171e',
+    messageAvatar: 'messageAvatar_3654171e',
+    userMsg: 'userMsg_3654171e',
+    botMsg: 'botMsg_3654171e',
+    thinking: 'thinking_3654171e',
+    pulse: 'pulse_3654171e',
+    inputRow: 'inputRow_3654171e',
+    chatInput: 'chatInput_3654171e',
+    sendButton: 'sendButton_3654171e',
+    closeButton: 'closeButton_3654171e',
+    tileHeader: 'tileHeader_3654171e',
+    fileTypeIcon: 'fileTypeIcon_3654171e',
+    fileType: 'fileType_3654171e',
+    tileTitle: 'tileTitle_3654171e',
+    tileAbstract: 'tileAbstract_3654171e',
+    tileActions: 'tileActions_3654171e',
+    viewButton: 'viewButton_3654171e',
+    downloadButton: 'downloadButton_3654171e',
+    loading: 'loading_3654171e',
+    noDocuments: 'noDocuments_3654171e',
+    detailModal: 'detailModal_3654171e',
+    chatLauncher: 'chatLauncher_3654171e',
+    botLink: 'botLink_3654171e'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

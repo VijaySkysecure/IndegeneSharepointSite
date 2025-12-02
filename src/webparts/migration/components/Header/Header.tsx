@@ -11,6 +11,33 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   const [searchText, setSearchText] = React.useState("");
 
   const containerRef = React.useRef<HTMLDivElement>(null);
+  const searchContainerRef = React.useRef<HTMLDivElement>(null);
+  const dropdownPanelRef = React.useRef<HTMLDivElement>(null);
+
+  // Position dropdown below search bar
+  const updateDropdownPosition = React.useCallback(() => {
+    if (isOpen && searchContainerRef.current && dropdownPanelRef.current) {
+      const searchRect = searchContainerRef.current.getBoundingClientRect();
+      const dropdown = dropdownPanelRef.current;
+      dropdown.style.top = `${searchRect.bottom + 8}px`; // 8px gap below search bar
+      // Position dropdown slightly to the left
+      dropdown.style.left = '50%';
+      dropdown.style.transform = 'translateX(-55%)'; // -55% moves it left from center
+    }
+  }, [isOpen]);
+
+  React.useEffect(() => {
+    updateDropdownPosition();
+    
+    // Update position on window resize
+    window.addEventListener('resize', updateDropdownPosition);
+    window.addEventListener('scroll', updateDropdownPosition);
+    
+    return () => {
+      window.removeEventListener('resize', updateDropdownPosition);
+      window.removeEventListener('scroll', updateDropdownPosition);
+    };
+  }, [isOpen, searchText, updateDropdownPosition]);
 
   // Close dropdown when clicking outside
   React.useEffect(() => {
@@ -46,6 +73,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
           {/* SEARCH BAR */}
           <div
+            ref={searchContainerRef}
             className={styles.searchContainer}
             onClick={() => setIsOpen(true)} 
           >
@@ -77,7 +105,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
           {/* DROPDOWN PANEL - Only show when user types */}
           {isOpen && searchText.trim().length > 0 && (
-  <div className={styles.dropdownPanel}>
+  <div ref={dropdownPanelRef} className={styles.dropdownPanel}>
     <FilterDropdown
       searchText={searchText}
       spHttpClient={props.context.spHttpClient}

@@ -12,11 +12,76 @@ const chatbotIcon: string = require("../../assets/chatbot-icon.png");
 interface ChatMessage {
   sender: "user" | "bot";
   text: string;
+  // optional link metadata: when present, UI will render an anchor
+  title?: string;
+  url?: string;
 }
 
-/* ============================================================
+/* =========================================================
+   QUICK LINKS MAP (used to return clickable links for queries)
+========================================================= */
+const QUICK_LINKS_MAP: Record<string, { title: string; url: string }> = {
+  home: { title: "Indegene Home", url: "https://www.indegene.com/" },
+  careers: { title: "Careers", url: "https://careers.indegene.com/" },
+  "case studies": {
+    title: "Case Studies & Insights",
+    url: "https://www.indegene.com/what-we-think/case-studies"
+  },
+  casestudies: {
+    title: "Case Studies & Insights",
+    url: "https://www.indegene.com/what-we-think/case-studies"
+  },
+  contact: { title: "Contact Us", url: "https://www.indegene.com/contact-us" },
+  investor: { title: "Investor Relations", url: "https://ir.indegene.com/" },
+  investors: { title: "Investor Relations", url: "https://ir.indegene.com/" },
+  csr: {
+    title: "CSR Policy (PDF)",
+    url: "https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf"
+  },
+  "csr policy": {
+    title: "CSR Policy (PDF)",
+    url: "https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf"
+  },
+  leadership: {
+    title: "Leadership / Who We Are",
+    url: "https://www.indegene.com/who-we-are/leadership"
+  },
+  "next platforms": {
+    title: "NEXT Platforms",
+    url: "https://www.indegene.com/what-we-do/next-platforms"
+  },
+  privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" }
+};
+
+/* helper: return a matching quick link for the user query (or null) */
+const getLinkForQuery = (query: string) => {
+  const q = query.toLowerCase();
+  // check for multi-word synonyms first
+  const phraseChecks = [
+    { keys: ["case study", "case studies"], mapKey: "case studies" },
+    { keys: ["csr policy", "csr"], mapKey: "csr" },
+    { keys: ["next platforms", "next platform"], mapKey: "next platforms" }
+  ];
+  for (const p of phraseChecks) {
+    for (const k of p.keys) {
+      if (q.includes(k)) return QUICK_LINKS_MAP[p.mapKey];
+    }
+  }
+
+  // token-level matching
+  const tokens = q.split(/\s+/);
+  for (const t of tokens) {
+    if (QUICK_LINKS_MAP[t]) return QUICK_LINKS_MAP[t];
+  }
+
+  // no link found
+  return null;
+};
+
+/* =========================================================
    CONTEXT KNOWLEDGE MAP
-============================================================ */
+   (this is the full map used by the chatbot to answer queries)
+========================================================= */
 const CONTEXT_MAP: Record<string, string[]> = {
   /* =====================================================
      INDEGENE – COMPANY BASICS
@@ -527,6 +592,22 @@ const CONTEXT_MAP: Record<string, string[]> = {
   ],
 
   /* =====================================================
+     QUICK LINKS
+  ====================================================== */
+
+  "quick links": [
+    "Indegene Home — https://www.indegene.com/",
+    "Careers — https://careers.indegene.com/",
+    "Case Studies & Insights — https://www.indegene.com/what-we-think/case-studies",
+    "Contact Us — https://www.indegene.com/contact-us",
+    "Investor Relations (IR) — https://ir.indegene.com/",
+    "Corporate Social Responsibility (CSR) Policy — https://resources.indegene.com/indegene/pdf/policies/corporate-social-responsibility-policy.pdf",
+    "Leadership / Who We Are — https://www.indegene.com/who-we-are/leadership",
+    "NEXT Platforms (technology) — https://www.indegene.com/what-we-do/next-platforms",
+    "Privacy & Security — https://www.indegene.com/privacy-policy"
+  ],
+
+  /* =====================================================
      EXISTING SKYSECURE + MEDICAL CONTENT
   ====================================================== */
 
@@ -735,9 +816,9 @@ const CONTEXT_MAP: Record<string, string[]> = {
   ]
 };
 
-/* ============================================================
+/* =========================================================
    INTERNAL QUERY HANDLER (Time, Date, Day + basic general)
-============================================================ */
+======================================================== */
 const handleInternalQueries = (query: string): string | null => {
   const text = query.toLowerCase().trim();
   const now = new Date();
@@ -784,9 +865,9 @@ const handleInternalQueries = (query: string): string | null => {
   return null;
 };
 
-/* ============================================================
+/* =========================================================
    GENERAL SMALL-TALK / META QUERIES (who are you, hi, help)
-============================================================ */
+======================================================== */
 const handleGeneralQueries = (query: string): string | null => {
   const text = query.toLowerCase().trim();
 
@@ -841,9 +922,9 @@ const handleGeneralQueries = (query: string): string | null => {
   return null;
 };
 
-/* ============================================================
+/* =========================================================
    CONTEXT SEARCH LOGIC – boosted, with Skysecure fix
-============================================================ */
+======================================================== */
 const normalize = (text: string): string =>
   text
     .toLowerCase()
@@ -918,7 +999,6 @@ const getAnswerFromContext = (query: string): string => {
       if (!queryTokens.has(t)) allTokensPresent = false;
     });
     if (allTokensPresent) {
-      // Strong preference for keys like "skysecure" in "what is skysecure"
       score += keyTokens.size + 1;
     }
 
@@ -984,7 +1064,7 @@ const getAnswerFromContext = (query: string): string => {
 };
 
 /* ======================================================
-   Document Tile Section
+   Document Tile Section types
 ====================================================== */
 
 interface DocumentItem {
@@ -996,6 +1076,9 @@ interface DocumentItem {
   fileRef: string;
 }
 
+/* ======================================================
+   Main Component
+====================================================== */
 export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
   /* ---------------------------------------------
      Chatbot State
@@ -1085,7 +1168,18 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
         const reply =
           internal || general || getAnswerFromContext(userMsg.text);
 
-        setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+        // 4) Quick links detection
+        const link = getLinkForQuery(userMsg.text);
+
+        if (link) {
+          // push a single bot message that contains text + link metadata
+          setMessages((prev) => [
+            ...prev,
+            { sender: "bot", text: reply, title: link.title, url: link.url }
+          ]);
+        } else {
+          setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+        }
       } finally {
         setIsLoading(false);
       }
@@ -1231,11 +1325,23 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
                   />
                 )}
                 <div
-                  className={
-                    msg.sender === "user" ? styles.userMsg : styles.botMsg
-                  }
+                  className={msg.sender === "user" ? styles.userMsg : styles.botMsg}
                 >
                   {msg.text}
+                  {/* if the bot message has a link, render it as a clickable anchor below the text */}
+                  {msg.sender === "bot" && msg.url && (
+                    <div style={{ marginTop: 8 }}>
+                      <a
+                        href={msg.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        // use a safe cast because your CSS module may not include botLink yet
+                        className={(styles as any).botLink}
+                      >
+                        {msg.title ? msg.title : msg.url}
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

@@ -1,21 +1,21 @@
 
 require("./Header.module.css");
 const styles = {
-  header: 'header_52468a40',
-  headerContent: 'headerContent_52468a40',
-  leftSection: 'leftSection_52468a40',
-  companyName: 'companyName_52468a40',
-  description: 'description_52468a40',
-  addFileButton: 'addFileButton_52468a40',
-  rightSection: 'rightSection_52468a40',
-  leadership: 'leadership_52468a40',
-  searchContainer: 'searchContainer_52468a40',
-  searchIcon: 'searchIcon_52468a40',
-  searchInput: 'searchInput_52468a40',
-  dropdownPanel: 'dropdownPanel_52468a40',
-  fadeDown: 'fadeDown_52468a40',
-  dropdownInner: 'dropdownInner_52468a40',
-  dropdownClose: 'dropdownClose_52468a40'
+  header: 'header_7a58796d',
+  headerContent: 'headerContent_7a58796d',
+  leftSection: 'leftSection_7a58796d',
+  companyName: 'companyName_7a58796d',
+  description: 'description_7a58796d',
+  addFileButton: 'addFileButton_7a58796d',
+  rightSection: 'rightSection_7a58796d',
+  leadership: 'leadership_7a58796d',
+  searchContainer: 'searchContainer_7a58796d',
+  searchIcon: 'searchIcon_7a58796d',
+  searchInput: 'searchInput_7a58796d',
+  dropdownPanel: 'dropdownPanel_7a58796d',
+  fadeDown: 'fadeDown_7a58796d',
+  dropdownInner: 'dropdownInner_7a58796d',
+  dropdownClose: 'dropdownClose_7a58796d'
 };
 
 export default styles;

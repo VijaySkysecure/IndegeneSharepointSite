@@ -409,3 +409,9 @@
 .chatbotIcon:hover {
   transform: scale(1.1);
 }
+.botLink {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: underline;
+  cursor: pointer;
+}
