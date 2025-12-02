@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import { AzureOpenAIService } from '../../services/AzureOpenAIService';
+import { IDocumentDetailPageProps } from './IDocumentDetailPageProps';
 import styles from './DocumentDetailPage.module.scss';
 
 // Azure OpenAI Configuration
@@ -10,12 +10,6 @@ const AZURE_OPENAI_CONFIG = {
   endpoint: 'https://engineeringteamopenai.openai.azure.com',
   deploymentName: 'gpt-4o'
 };
-
-interface IDocumentDetailPageProps {
-  context: WebPartContext;
-  documentId: number;
-  onClose?: () => void;
-}
 
 interface DocumentDetail {
   id: number;
@@ -124,8 +118,10 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
       
       setDocument(documentDetail);
       
-      // Generate tags from abstract using AI
-      if (abstract && abstract.trim().length > 0) {
+      // Use passed tags if available, otherwise generate tags from abstract using AI
+      if (props.tags && props.tags.length > 0) {
+        setTags(props.tags);
+      } else if (abstract && abstract.trim().length > 0) {
         try {
           const generatedTags = await openAIService.current.generateTags(abstract);
           setTags(generatedTags);
@@ -294,12 +290,14 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
   };
 
   const handleBack = () => {
-    if (props.onClose) {
+    if (props.backTo === 'library' && props.onBackToLibrary) {
+      props.onBackToLibrary();
+    } else if (props.onClose) {
       props.onClose();
-    } else {
-      window.close();
     }
   };
+
+  const backButtonText = props.backTo === 'library' ? 'Back to Library' : 'Back to Home';
 
   if (loading) {
     return (
@@ -324,7 +322,7 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Back to Library
+          {backButtonText}
         </button>
         <div className={styles.headerActions}>
           <button className={styles.downloadButton} onClick={handleDownload}>

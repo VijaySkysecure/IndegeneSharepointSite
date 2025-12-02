@@ -1,23 +1,24 @@
 
 require("./QuestionSection.module.css");
 const styles = {
-  questionSection: 'questionSection_d0575249',
-  sectionTitle: 'sectionTitle_d0575249',
-  tilesContainer: 'tilesContainer_d0575249',
-  tile: 'tile_d0575249',
-  tileHeader: 'tileHeader_d0575249',
-  fileTypeIcon: 'fileTypeIcon_d0575249',
-  fileType: 'fileType_d0575249',
-  tileTitle: 'tileTitle_d0575249',
-  tileAbstract: 'tileAbstract_d0575249',
-  tileActions: 'tileActions_d0575249',
-  viewButton: 'viewButton_d0575249',
-  downloadButton: 'downloadButton_d0575249',
-  loading: 'loading_d0575249',
-  noDocuments: 'noDocuments_d0575249',
-  viewAllTile: 'viewAllTile_d0575249',
-  viewAllText: 'viewAllText_d0575249',
-  detailModal: 'detailModal_d0575249'
+  questionSection: 'questionSection_0c085da0',
+  sectionTitle: 'sectionTitle_0c085da0',
+  tilesContainer: 'tilesContainer_0c085da0',
+  tile: 'tile_0c085da0',
+  tileHeader: 'tileHeader_0c085da0',
+  fileTypeIcon: 'fileTypeIcon_0c085da0',
+  fileType: 'fileType_0c085da0',
+  tileTitle: 'tileTitle_0c085da0',
+  tileAbstract: 'tileAbstract_0c085da0',
+  tileActions: 'tileActions_0c085da0',
+  viewButton: 'viewButton_0c085da0',
+  downloadButton: 'downloadButton_0c085da0',
+  loading: 'loading_0c085da0',
+  noDocuments: 'noDocuments_0c085da0',
+  viewAllTile: 'viewAllTile_0c085da0',
+  viewAllText: 'viewAllText_0c085da0',
+  viewAllModal: 'viewAllModal_0c085da0',
+  detailModal: 'detailModal_0c085da0'
 };
 
 export default styles;

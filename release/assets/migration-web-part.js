@@ -390,27 +390,28 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_d0575249{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_d0575249{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_d0575249::-webkit-scrollbar{height:8px}.tilesContainer_d0575249::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_d0575249::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_d0575249::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_d0575249{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.tileHeader_d0575249{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_d0575249{font-size:20px;line-height:1}.fileType_d0575249{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_d0575249{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_d0575249,.tileTitle_d0575249{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_d0575249{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_d0575249{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_d0575249{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_d0575249 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_d0575249:hover:not(:disabled){background-color:#1565c0}.viewButton_d0575249:active:not(:disabled){background-color:#0d47a1}.viewButton_d0575249:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_d0575249{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_d0575249 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_d0575249:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_d0575249:active:not(:disabled){background-color:#e0e0e0}.downloadButton_d0575249:disabled{cursor:not-allowed;opacity:.4}.loading_d0575249,.noDocuments_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_d0575249{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_d0575249:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_d0575249:active{transform:translateY(0)}.viewAllText_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_d0575249{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSw4QkFBQSxDQURBLDhCQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFVRSxrQkFBQSxDQUtBLDBCQUFBLENBZEEsbUNBQUEsQ0FDQSxvQ0FBQSxDQUNBLGlCQUFBLENBU0EscUJBQUEsQ0FDQSxjQUFBLENBSkEsWUFBQSxDQUpBLDZCQUFBLENBR0EsWUFBQSxDQUdBLHNCQUFBLENBSkEsOEJBQUEsQ0FEQSw4QkFBQSxDQUZBLFlBQUEsQ0FVQSx1QkFDQSxDQUVBLDRCQUNFLG1DQUFBLENBQ0EsK0JBQUEsQ0FHRiw2QkFDRSx1QkFBQSxDQUlKLHNCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsaUJBQUEsQ0FHRixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_0c085da0{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_0c085da0{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_0c085da0::-webkit-scrollbar{height:8px}.tilesContainer_0c085da0::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_0c085da0::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_0c085da0::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_0c085da0{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.tileHeader_0c085da0{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_0c085da0{font-size:20px;line-height:1}.fileType_0c085da0{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_0c085da0{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_0c085da0,.tileTitle_0c085da0{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_0c085da0{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_0c085da0{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_0c085da0{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_0c085da0 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_0c085da0:hover:not(:disabled){background-color:#1565c0}.viewButton_0c085da0:active:not(:disabled){background-color:#0d47a1}.viewButton_0c085da0:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_0c085da0{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_0c085da0 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_0c085da0:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_0c085da0:active:not(:disabled){background-color:#e0e0e0}.downloadButton_0c085da0:disabled{cursor:not-allowed;opacity:.4}.loading_0c085da0,.noDocuments_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_0c085da0{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_0c085da0:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_0c085da0:active{transform:translateY(0)}.viewAllText_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_0c085da0,.viewAllModal_0c085da0{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSw4QkFBQSxDQURBLDhCQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFVRSxrQkFBQSxDQUtBLDBCQUFBLENBZEEsbUNBQUEsQ0FDQSxvQ0FBQSxDQUNBLGlCQUFBLENBU0EscUJBQUEsQ0FDQSxjQUFBLENBSkEsWUFBQSxDQUpBLDZCQUFBLENBR0EsWUFBQSxDQUdBLHNCQUFBLENBSkEsOEJBQUEsQ0FEQSw4QkFBQSxDQUZBLFlBQUEsQ0FVQSx1QkFDQSxDQUVBLDRCQUNFLG1DQUFBLENBQ0EsK0JBQUEsQ0FHRiw2QkFDRSx1QkFBQSxDQUlKLHNCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsaUJBQUEsQ0FjRiw2Q0FPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_d0575249: "questionSection_d0575249",
-  sectionTitle_d0575249: "sectionTitle_d0575249",
-  tilesContainer_d0575249: "tilesContainer_d0575249",
-  tile_d0575249: "tile_d0575249",
-  tileHeader_d0575249: "tileHeader_d0575249",
-  fileTypeIcon_d0575249: "fileTypeIcon_d0575249",
-  fileType_d0575249: "fileType_d0575249",
-  tileTitle_d0575249: "tileTitle_d0575249",
-  tileAbstract_d0575249: "tileAbstract_d0575249",
-  tileActions_d0575249: "tileActions_d0575249",
-  viewButton_d0575249: "viewButton_d0575249",
-  downloadButton_d0575249: "downloadButton_d0575249",
-  loading_d0575249: "loading_d0575249",
-  noDocuments_d0575249: "noDocuments_d0575249",
-  viewAllTile_d0575249: "viewAllTile_d0575249",
-  viewAllText_d0575249: "viewAllText_d0575249",
-  detailModal_d0575249: "detailModal_d0575249"
+  questionSection_0c085da0: "questionSection_0c085da0",
+  sectionTitle_0c085da0: "sectionTitle_0c085da0",
+  tilesContainer_0c085da0: "tilesContainer_0c085da0",
+  tile_0c085da0: "tile_0c085da0",
+  tileHeader_0c085da0: "tileHeader_0c085da0",
+  fileTypeIcon_0c085da0: "fileTypeIcon_0c085da0",
+  fileType_0c085da0: "fileType_0c085da0",
+  tileTitle_0c085da0: "tileTitle_0c085da0",
+  tileAbstract_0c085da0: "tileAbstract_0c085da0",
+  tileActions_0c085da0: "tileActions_0c085da0",
+  viewButton_0c085da0: "viewButton_0c085da0",
+  downloadButton_0c085da0: "downloadButton_0c085da0",
+  loading_0c085da0: "loading_0c085da0",
+  noDocuments_0c085da0: "noDocuments_0c085da0",
+  viewAllTile_0c085da0: "viewAllTile_0c085da0",
+  viewAllText_0c085da0: "viewAllText_0c085da0",
+  viewAllModal_0c085da0: "viewAllModal_0c085da0",
+  detailModal_0c085da0: "detailModal_0c085da0"
 });
 
 
@@ -641,6 +642,53 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
   carouselIndicators_12ef78dc: "carouselIndicators_12ef78dc",
   dot_12ef78dc: "dot_12ef78dc",
   active_12ef78dc: "active_12ef78dc"
+});
+
+
+/***/ }),
+
+/***/ 1174:
+/*!*******************************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.module.css ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".viewAllPage_e114a41f{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;width:100%}.header_e114a41f{background-color:#fff;border-bottom:1px solid #e0e0e0;box-shadow:0 2px 4px rgba(0,0,0,.05);padding:20px 40px}.backButton_e114a41f{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_e114a41f svg{stroke:currentColor;fill:none}.backButton_e114a41f:hover{background-color:#f5f5f5}.content_e114a41f{margin:0 auto;max-width:1400px;padding:40px}.loading_e114a41f,.noDocuments_e114a41f{color:#666;font-family:Inter,sans-serif;font-size:16px;padding:60px 20px;text-align:center}.documentsList_e114a41f{background-color:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden}.documentRow_e114a41f{align-items:flex-start;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;gap:24px;padding:24px 32px;transition:background-color .2s}.documentRow_e114a41f:last-child{border-bottom:none}.documentRow_e114a41f:hover{background-color:#fafafa}.leftSection_e114a41f{align-items:center;display:flex;flex-direction:column;flex-shrink:0;gap:8px;width:80px}.fileTypeIcon_e114a41f{color:#6c5ce7;font-size:32px;line-height:1}.fileTypeLabel_e114a41f{background-color:#e0e0e0;border-radius:16px;color:#fff;font-family:Inter,sans-serif;font-size:11px;font-weight:600;letter-spacing:.5px;padding:4px 12px;text-transform:uppercase;white-space:nowrap}.middleSection_e114a41f{display:flex;flex:1;flex-direction:column;gap:12px;min-width:0}.contentRow_e114a41f{align-items:flex-start;display:flex;gap:24px;margin-top:4px}.textContent_e114a41f{display:flex;flex:1;flex-direction:column;gap:12px;min-width:0}.documentTitle_e114a41f{color:#333;font-family:Inter,sans-serif;font-size:18px;font-weight:600;line-height:1.4;margin:0}.documentAbstract_e114a41f{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-family:Inter,sans-serif;font-size:14px;line-height:1.5;margin:0;max-width:600px;overflow:hidden;text-overflow:ellipsis;word-break:break-word}.tagsContainer_e114a41f{align-items:center;display:flex;flex-wrap:wrap;gap:8px}.tag_e114a41f{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:4px 10px}.rightSection_e114a41f{align-items:flex-end;gap:0;justify-content:center;min-width:180px}.metadata_e114a41f,.rightSection_e114a41f{display:flex;flex-direction:column;flex-shrink:0}.metadata_e114a41f{align-items:flex-start;gap:4px;min-width:150px;text-align:left}.metadataItem_e114a41f{color:#666;font-family:Inter,sans-serif;font-size:13px;line-height:1.4}.actionButtons_e114a41f{align-items:center;display:flex;flex-wrap:nowrap;gap:12px;justify-content:flex-end;margin-top:50px}.viewButton_e114a41f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:13px;font-weight:500;gap:6px;padding:10px 20px;transition:background-color .2s}.viewButton_e114a41f svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_e114a41f:hover{background-color:#1565c0}.viewButton_e114a41f:active{background-color:#0d47a1}.downloadButton_e114a41f{align-items:center;background-color:#f5f5f5;border:1px solid #e0e0e0;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s,border-color .2s}.downloadButton_e114a41f svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_e114a41f:hover{background-color:#e0e0e0;border-color:#ccc;color:#333}.downloadButton_e114a41f:active{background-color:#d0d0d0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9WaWV3QWxsRG9jdW1lbnRzUGFnZS9WaWV3QWxsRG9jdW1lbnRzUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFHRSx3QkFBQSxDQUNBLDRCQUFBLENBRkEsZ0JBQUEsQ0FEQSxVQUdBLENBR0YsaUJBQ0UscUJBQUEsQ0FFQSwrQkFBQSxDQUNBLG9DQUFBLENBRkEsaUJBRUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBTUEsaUJBQUEsQ0FMQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FPQSw0QkFBQSxDQURBLGNBQUEsQ0FKQSxPQUFBLENBT0EsZ0JBQUEsQ0FFQSwrQkFBQSxDQUVBLHlCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDJCQUNFLHdCQUFBLENBSUosa0JBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsWUFBQSxDQUdGLHdDQUlFLFVBQUEsQ0FFQSw0QkFBQSxDQURBLGNBQUEsQ0FGQSxpQkFBQSxDQURBLGlCQUlBLENBR0Ysd0JBQ0Usd0JBQUEsQ0FHQSx3QkFBQSxDQUZBLGlCQUFBLENBQ0EsZUFDQSxDQUdGLHNCQUVFLHNCQUFBLENBQ0EscUJBQUEsQ0FFQSwrQkFBQSxDQUpBLFlBQUEsQ0FLQSxRQUFBLENBRkEsaUJBQUEsQ0FHQSwrQkFBQSxDQUVBLGlDQUNFLGtCQUFBLENBR0YsNEJBQ0Usd0JBQUEsQ0FJSixzQkFHRSxrQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFBQSxDQUdBLGFBQUEsQ0FEQSxPQUFBLENBRUEsVUFBQSxDQUdGLHVCQUdFLGFBQUEsQ0FGQSxjQUFBLENBQ0EsYUFDQSxDQUdGLHdCQUNFLHdCQUFBLENBR0Esa0JBQUEsQ0FGQSxVQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUdBLG1CQUFBLENBTkEsZ0JBQUEsQ0FLQSx3QkFBQSxDQUVBLGtCQUFBLENBR0Ysd0JBR0UsWUFBQSxDQUZBLE1BQUEsQ0FHQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxXQUdBLENBR0YscUJBRUUsc0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGNBQUEsQ0FHRixzQkFHRSxZQUFBLENBRkEsTUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUhBLFdBR0EsQ0FHRix3QkFHRSxVQUFBLENBRUEsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUlBLGVBQUEsQ0FGQSxRQUVBLENBR0YsMkJBU0Usb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FUQSxVQUFBLENBTUEsbUJBQUEsQ0FKQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsUUFBQSxDQUdBLGVBQUEsQ0FDQSxlQUFBLENBS0Esc0JBQUEsQ0FDQSxxQkFBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFBQSxDQUdBLGNBQUEsQ0FEQSxPQUNBLENBR0YsY0FDRSx3QkFBQSxDQU9BLHdCQUFBLENBSkEsaUJBQUEsQ0FGQSxVQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUhBLGdCQUtBLENBR0YsdUJBR0Usb0JBQUEsQ0FFQSxLQUFBLENBREEsc0JBQUEsQ0FHQSxlQUFBLENBR0YsMENBVEUsWUFBQSxDQUNBLHFCQUFBLENBSUEsYUFXQSxDQVBGLG1CQUdFLHNCQUFBLENBQ0EsT0FBQSxDQUdBLGVBQUEsQ0FGQSxlQUVBLENBR0YsdUJBRUUsVUFBQSxDQUNBLDRCQUFBLENBRkEsY0FBQSxDQUdBLGVBQUEsQ0FHRix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FJQSxnQkFBQSxDQURBLFFBQUEsQ0FEQSx3QkFBQSxDQUdBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwyQkFDRSx3QkFBQSxDQUdGLDRCQUNFLHdCQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLHdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBSUEsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLFlBQUEsQ0FFQSwwREFBQSxDQUVBLDZCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsK0JBQ0Usd0JBQUEsQ0FFQSxpQkFBQSxDQURBLFVBQ0EsQ0FHRixnQ0FDRSx3QkFBQSIsImZpbGUiOiJWaWV3QWxsRG9jdW1lbnRzUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  viewAllPage_e114a41f: "viewAllPage_e114a41f",
+  header_e114a41f: "header_e114a41f",
+  backButton_e114a41f: "backButton_e114a41f",
+  content_e114a41f: "content_e114a41f",
+  loading_e114a41f: "loading_e114a41f",
+  noDocuments_e114a41f: "noDocuments_e114a41f",
+  documentsList_e114a41f: "documentsList_e114a41f",
+  documentRow_e114a41f: "documentRow_e114a41f",
+  leftSection_e114a41f: "leftSection_e114a41f",
+  fileTypeIcon_e114a41f: "fileTypeIcon_e114a41f",
+  fileTypeLabel_e114a41f: "fileTypeLabel_e114a41f",
+  middleSection_e114a41f: "middleSection_e114a41f",
+  contentRow_e114a41f: "contentRow_e114a41f",
+  textContent_e114a41f: "textContent_e114a41f",
+  documentTitle_e114a41f: "documentTitle_e114a41f",
+  documentAbstract_e114a41f: "documentAbstract_e114a41f",
+  tagsContainer_e114a41f: "tagsContainer_e114a41f",
+  tag_e114a41f: "tag_e114a41f",
+  rightSection_e114a41f: "rightSection_e114a41f",
+  metadata_e114a41f: "metadata_e114a41f",
+  metadataItem_e114a41f: "metadataItem_e114a41f",
+  actionButtons_e114a41f: "actionButtons_e114a41f",
+  viewButton_e114a41f: "viewButton_e114a41f",
+  downloadButton_e114a41f: "downloadButton_e114a41f"
 });
 
 
@@ -2024,7 +2072,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 2434);
-/* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
+/* harmony import */ var _pages_ViewAllDocumentsPage_ViewAllDocumentsPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage */ 4994);
+/* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -2065,10 +2114,12 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var QuestionSection = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), selectedDocumentId = _c[0], setSelectedDocumentId = _c[1];
+    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showViewAll = _d[0], setShowViewAll = _d[1];
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         if (props.context) {
             fetchLatestDocuments();
@@ -2200,6 +2251,8 @@ var QuestionSection = function (props) {
         if (props.context && item.id) {
             // Open document detail page in a modal overlay (full-screen)
             setSelectedDocumentId(item.id);
+            // Mark that we're coming from home (tiles)
+            sessionStorage.setItem("documentBackTo_".concat(item.id), 'home');
         }
     };
     var handleCloseDetail = function () {
@@ -2261,50 +2314,84 @@ var QuestionSection = function (props) {
         return tiles;
     }, [documents]);
     var handleViewAll = function () {
-        // TODO: Implement view all functionality
-        console.log('View All clicked');
+        setShowViewAll(true);
+    };
+    var handleCloseViewAll = function () {
+        setShowViewAll(false);
+    };
+    var handleViewDocumentFromList = function (documentId, tags) {
+        setShowViewAll(false);
+        setSelectedDocumentId(documentId);
+        // Store tags temporarily to pass to DocumentDetailPage
+        if (tags) {
+            sessionStorage.setItem("documentTags_".concat(documentId), JSON.stringify(tags));
+        }
+        // Mark that we're coming from library (ViewAllDocumentsPage)
+        sessionStorage.setItem("documentBackTo_".concat(documentId), 'library');
+    };
+    var handleBackToLibrary = function () {
+        setSelectedDocumentId(null);
+        setShowViewAll(true);
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].questionSection },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sectionTitle }, "Recently Published"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading...")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-                displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, doc.fileType || 'FILE')),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, doc.name),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, onClick: function () { return handleView(doc); } },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].questionSection },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].sectionTitle }, "Recently Published"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].loading }, "Loading...")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileType }, doc.fileType || 'FILE')),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileTitle }, doc.name),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewButton, onClick: function () { return handleView(doc); } },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                             "View"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, "---")),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, "No document"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, "No document available"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, disabled: true },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileType }, "---")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileTitle }, "No document"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileAbstract }, "No document available"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewButton, disabled: true },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                             "View"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, disabled: true, "aria-label": "Download" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].downloadButton, disabled: true, "aria-label": "Download" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))); }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllTile, onClick: handleViewAll },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllText }, "View All")))))),
-        selectedDocumentId && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].detailModal },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__.DocumentDetailPage, { context: props.context, documentId: selectedDocumentId, onClose: handleCloseDetail })))));
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllTile, onClick: handleViewAll },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllText }, "View All")))))),
+        showViewAll && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllModal },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_ViewAllDocumentsPage_ViewAllDocumentsPage__WEBPACK_IMPORTED_MODULE_3__.ViewAllDocumentsPage, { context: props.context, onClose: handleCloseViewAll, onViewDocument: handleViewDocumentFromList }))),
+        selectedDocumentId && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].detailModal },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__.DocumentDetailPage, { context: props.context, documentId: selectedDocumentId, onClose: handleCloseDetail, tags: (function () {
+                    // Retrieve tags from sessionStorage if available
+                    var storedTags = sessionStorage.getItem("documentTags_".concat(selectedDocumentId));
+                    if (storedTags) {
+                        try {
+                            return JSON.parse(storedTags);
+                        }
+                        catch (e) {
+                            return undefined;
+                        }
+                    }
+                    return undefined;
+                })(), backTo: (function () {
+                    // Retrieve backTo from sessionStorage if available
+                    var storedBackTo = sessionStorage.getItem("documentBackTo_".concat(selectedDocumentId));
+                    return storedBackTo === 'library' ? 'library' : 'home';
+                })(), onBackToLibrary: handleBackToLibrary })))));
 };
 
 
@@ -2322,23 +2409,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 var styles = {
-    questionSection: 'questionSection_d0575249',
-    sectionTitle: 'sectionTitle_d0575249',
-    tilesContainer: 'tilesContainer_d0575249',
-    tile: 'tile_d0575249',
-    tileHeader: 'tileHeader_d0575249',
-    fileTypeIcon: 'fileTypeIcon_d0575249',
-    fileType: 'fileType_d0575249',
-    tileTitle: 'tileTitle_d0575249',
-    tileAbstract: 'tileAbstract_d0575249',
-    tileActions: 'tileActions_d0575249',
-    viewButton: 'viewButton_d0575249',
-    downloadButton: 'downloadButton_d0575249',
-    loading: 'loading_d0575249',
-    noDocuments: 'noDocuments_d0575249',
-    viewAllTile: 'viewAllTile_d0575249',
-    viewAllText: 'viewAllText_d0575249',
-    detailModal: 'detailModal_d0575249'
+    questionSection: 'questionSection_0c085da0',
+    sectionTitle: 'sectionTitle_0c085da0',
+    tilesContainer: 'tilesContainer_0c085da0',
+    tile: 'tile_0c085da0',
+    tileHeader: 'tileHeader_0c085da0',
+    fileTypeIcon: 'fileTypeIcon_0c085da0',
+    fileType: 'fileType_0c085da0',
+    tileTitle: 'tileTitle_0c085da0',
+    tileAbstract: 'tileAbstract_0c085da0',
+    tileActions: 'tileActions_0c085da0',
+    viewButton: 'viewButton_0c085da0',
+    downloadButton: 'downloadButton_0c085da0',
+    loading: 'loading_0c085da0',
+    noDocuments: 'noDocuments_0c085da0',
+    viewAllTile: 'viewAllTile_0c085da0',
+    viewAllText: 'viewAllText_0c085da0',
+    viewAllModal: 'viewAllModal_0c085da0',
+    detailModal: 'detailModal_0c085da0'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2654,7 +2742,7 @@ var DocumentDetailPage = function (props) {
                     }
                     _e.label = 1;
                 case 1:
-                    _e.trys.push([1, 28, 29, 30]);
+                    _e.trys.push([1, 29, 30, 31]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
                     apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File");
@@ -2707,26 +2795,30 @@ var DocumentDetailPage = function (props) {
                         fileRef: item.FileRef || serverRelativeUrl
                     };
                     setDocument(documentDetail);
-                    if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 8];
-                    _e.label = 4;
+                    if (!(props.tags && props.tags.length > 0)) return [3 /*break*/, 4];
+                    setTags(props.tags);
+                    return [3 /*break*/, 10];
                 case 4:
-                    _e.trys.push([4, 6, , 7]);
-                    return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                    if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 9];
+                    _e.label = 5;
                 case 5:
+                    _e.trys.push([5, 7, , 8]);
+                    return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                case 6:
                     generatedTags = _e.sent();
                     setTags(generatedTags);
-                    return [3 /*break*/, 7];
-                case 6:
+                    return [3 /*break*/, 8];
+                case 7:
                     error_1 = _e.sent();
                     console.error('Error generating tags:', error_1);
                     setTags([]);
-                    return [3 /*break*/, 7];
-                case 7: return [3 /*break*/, 9];
-                case 8:
-                    setTags([]);
-                    _e.label = 9;
+                    return [3 /*break*/, 8];
+                case 8: return [3 /*break*/, 10];
                 case 9:
-                    if (!serverRelativeUrl) return [3 /*break*/, 27];
+                    setTags([]);
+                    _e.label = 10;
+                case 10:
+                    if (!serverRelativeUrl) return [3 /*break*/, 28];
                     webUrl_1 = props.context.pageContext.web.absoluteUrl;
                     fileUrl = serverRelativeUrl;
                     // Ensure proper server relative URL format
@@ -2734,81 +2826,81 @@ var DocumentDetailPage = function (props) {
                         fileUrl = "/".concat(fileUrl);
                     }
                     fullFileUrl = "".concat(webUrl_1).concat(fileUrl);
-                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 10];
+                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 11];
                     encodedServerUrl = encodeURIComponent(fileUrl);
                     setPreviewUrl("".concat(webUrl_1, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
-                    return [3 /*break*/, 27];
-                case 10:
-                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 18];
-                    _e.label = 11;
+                    return [3 /*break*/, 28];
                 case 11:
-                    _e.trys.push([11, 16, , 17]);
+                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 19];
+                    _e.label = 12;
+                case 12:
+                    _e.trys.push([12, 17, , 18]);
                     downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 12:
-                    fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 14];
-                    return [4 /*yield*/, fileResponse.blob()];
                 case 13:
+                    fileResponse = _e.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 15];
+                    return [4 /*yield*/, fileResponse.blob()];
+                case 14:
                     blob = _e.sent();
                     pdfBlob = new Blob([blob], { type: 'application/pdf' });
                     blobUrl = window.URL.createObjectURL(pdfBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 15];
-                case 14:
+                    return [3 /*break*/, 16];
+                case 15:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 15;
-                case 15: return [3 /*break*/, 17];
-                case 16:
+                    _e.label = 16;
+                case 16: return [3 /*break*/, 18];
+                case 17:
                     error_2 = _e.sent();
                     console.error('Error fetching PDF for preview:', error_2);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 17];
-                case 17: return [3 /*break*/, 27];
-                case 18:
-                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 26];
-                    _e.label = 19;
+                    return [3 /*break*/, 18];
+                case 18: return [3 /*break*/, 28];
                 case 19:
-                    _e.trys.push([19, 24, , 25]);
+                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 27];
+                    _e.label = 20;
+                case 20:
+                    _e.trys.push([20, 25, , 26]);
                     downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 20:
-                    fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 22];
-                    return [4 /*yield*/, fileResponse.blob()];
                 case 21:
+                    fileResponse = _e.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 23];
+                    return [4 /*yield*/, fileResponse.blob()];
+                case 22:
                     blob = _e.sent();
                     svgBlob = new Blob([blob], { type: 'image/svg+xml' });
                     blobUrl = window.URL.createObjectURL(svgBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 23];
-                case 22:
+                    return [3 /*break*/, 24];
+                case 23:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 23;
-                case 23: return [3 /*break*/, 25];
-                case 24:
+                    _e.label = 24;
+                case 24: return [3 /*break*/, 26];
+                case 25:
                     error_3 = _e.sent();
                     console.error('Error fetching SVG for preview:', error_3);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 25];
-                case 25: return [3 /*break*/, 27];
-                case 26:
+                    return [3 /*break*/, 26];
+                case 26: return [3 /*break*/, 28];
+                case 27:
                     // For other files, try direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 27;
-                case 27: return [3 /*break*/, 30];
-                case 28:
+                    _e.label = 28;
+                case 28: return [3 /*break*/, 31];
+                case 29:
                     error_4 = _e.sent();
                     console.error('Error fetching document details:', error_4);
-                    return [3 /*break*/, 30];
-                case 29:
+                    return [3 /*break*/, 31];
+                case 30:
                     setLoading(false);
                     return [7 /*endfinally*/];
-                case 30: return [2 /*return*/];
+                case 31: return [2 /*return*/];
             }
         });
     }); };
@@ -2895,13 +2987,14 @@ var DocumentDetailPage = function (props) {
         }
     };
     var handleBack = function () {
-        if (props.onClose) {
+        if (props.backTo === 'library' && props.onBackToLibrary) {
+            props.onBackToLibrary();
+        }
+        else if (props.onClose) {
             props.onClose();
         }
-        else {
-            window.close();
-        }
     };
+    var backButtonText = props.backTo === 'library' ? 'Back to Library' : 'Back to Home';
     if (loading) {
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentDetailPage },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading document...")));
@@ -2915,7 +3008,7 @@ var DocumentDetailPage = function (props) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].backButton, onClick: handleBack },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                "Back to Library"),
+                backButtonText),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].headerActions },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: handleDownload },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
@@ -3146,6 +3239,325 @@ var styles = {
     carouselIndicators: 'carouselIndicators_12ef78dc',
     dot: 'dot_12ef78dc',
     active: 'active_12ef78dc'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 4994:
+/*!***********************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ViewAllDocumentsPage: () => (/* binding */ ViewAllDocumentsPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ViewAllDocumentsPage.module.scss */ 9902);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+// Azure OpenAI Configuration
+var AZURE_OPENAI_CONFIG = {
+    apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+    endpoint: 'https://engineeringteamopenai.openai.azure.com',
+    deploymentName: 'gpt-4o'
+};
+var ViewAllDocumentsPage = function (props) {
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (props.context) {
+            fetchAllDocuments();
+        }
+    }, [props.context]);
+    var fetchAllDocuments = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, apiUrl, response, data, items, processedDocuments, error_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context) {
+                        setLoading(false);
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, 6, 7]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File&$orderby=Created desc");
+                    return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch documents: ".concat(response.status));
+                    }
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    data = _a.sent();
+                    items = data.value || [];
+                    return [4 /*yield*/, Promise.all(items.map(function (item) { return __awaiter(void 0, void 0, void 0, function () {
+                            var fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, tags, error_2;
+                            var _a, _b, _c, _d;
+                            return __generator(this, function (_e) {
+                                switch (_e.label) {
+                                    case 0:
+                                        fileName = item.FileLeafRef || item.TitleName || item.Title || '';
+                                        fileExtension = ((_a = fileName.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toUpperCase()) || '';
+                                        displayName = fileName || item.Title || "Document ".concat(item.Id);
+                                        abstract = item.Abstract || '';
+                                        author = ((_b = item.PerformedBy) === null || _b === void 0 ? void 0 : _b.Title) || ((_c = item.PerformedBy) === null || _c === void 0 ? void 0 : _c.Name) || item.PerformedBy || 'Unknown';
+                                        formattedDate = '';
+                                        if (item.TimeStamp) {
+                                            date = new Date(item.TimeStamp);
+                                            formattedDate = date.toLocaleDateString('en-GB', {
+                                                day: '2-digit',
+                                                month: '2-digit',
+                                                year: 'numeric'
+                                            });
+                                        }
+                                        fileSize = '';
+                                        if (item.File && item.File.Length) {
+                                            bytes = item.File.Length;
+                                            if (bytes < 1024) {
+                                                fileSize = "".concat(bytes, " B");
+                                            }
+                                            else if (bytes < 1024 * 1024) {
+                                                fileSize = "".concat((bytes / 1024).toFixed(1), " KB");
+                                            }
+                                            else {
+                                                fileSize = "".concat((bytes / (1024 * 1024)).toFixed(1), " MB");
+                                            }
+                                        }
+                                        serverRelativeUrl = item.FileRef || ((_d = item.File) === null || _d === void 0 ? void 0 : _d.ServerRelativeUrl) || '';
+                                        tags = [];
+                                        if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 4];
+                                        _e.label = 1;
+                                    case 1:
+                                        _e.trys.push([1, 3, , 4]);
+                                        return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                                    case 2:
+                                        tags = _e.sent();
+                                        return [3 /*break*/, 4];
+                                    case 3:
+                                        error_2 = _e.sent();
+                                        console.error('Error generating tags:', error_2);
+                                        tags = [];
+                                        return [3 /*break*/, 4];
+                                    case 4: return [2 /*return*/, {
+                                            id: item.Id,
+                                            name: displayName,
+                                            abstract: abstract,
+                                            fileType: fileExtension,
+                                            author: author,
+                                            date: formattedDate,
+                                            fileSize: fileSize,
+                                            serverRelativeUrl: serverRelativeUrl,
+                                            fileRef: item.FileRef || serverRelativeUrl,
+                                            tags: tags
+                                        }];
+                                }
+                            });
+                        }); }))];
+                case 4:
+                    processedDocuments = _a.sent();
+                    setDocuments(processedDocuments);
+                    return [3 /*break*/, 7];
+                case 5:
+                    error_1 = _a.sent();
+                    console.error('Error fetching documents:', error_1);
+                    setDocuments([]);
+                    return [3 /*break*/, 7];
+                case 6:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    var getFileTypeIcon = function (fileType) {
+        var type = fileType.toLowerCase();
+        if (type === 'pdf') {
+            return '📄';
+        }
+        else if (type === 'pptx' || type === 'ppt') {
+            return '📊';
+        }
+        else if (type === 'docx' || type === 'doc') {
+            return '📝';
+        }
+        else if (type === 'xlsx' || type === 'xls') {
+            return '📈';
+        }
+        return '📎';
+    };
+    var handleView = function (documentId, tags) {
+        props.onViewDocument(documentId, tags);
+    };
+    var handleDownload = function (item) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_3, fileUrl;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!(props.context && item.serverRelativeUrl)) return [3 /*break*/, 7];
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    serverRelativeUrl = item.serverRelativeUrl;
+                    if (!serverRelativeUrl.startsWith('/')) {
+                        serverRelativeUrl = "/".concat(serverRelativeUrl);
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(serverRelativeUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.blob()];
+                case 3:
+                    blob = _a.sent();
+                    url = window.URL.createObjectURL(blob);
+                    link = document.createElement('a');
+                    link.href = url;
+                    link.download = item.name;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                    return [3 /*break*/, 5];
+                case 4:
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    _a.label = 5;
+                case 5: return [3 /*break*/, 7];
+                case 6:
+                    error_3 = _a.sent();
+                    console.error('Download error:', error_3);
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllPage },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].backButton, onClick: props.onClose },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                "Back to Home")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].content }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading documents...")) : documents.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].noDocuments }, "No documents found")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentsList }, documents.map(function (doc) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc.id, className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentRow },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].leftSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeLabel }, doc.fileType || 'FILE')),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].middleSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentTitle }, doc.name),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].contentRow },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].textContent },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentAbstract }, doc.abstract || 'No abstract available'),
+                        doc.tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, doc.tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadata },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.author),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.date),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.fileSize)))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].rightSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].actionButtons },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, onClick: function () { return handleView(doc.id, doc.tags); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                        "View"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))))); }))))));
+};
+
+
+/***/ }),
+
+/***/ 9902:
+/*!***********************************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.module.scss.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./ViewAllDocumentsPage.module.css */ 1174);
+var styles = {
+    viewAllPage: 'viewAllPage_e114a41f',
+    header: 'header_e114a41f',
+    backButton: 'backButton_e114a41f',
+    content: 'content_e114a41f',
+    loading: 'loading_e114a41f',
+    noDocuments: 'noDocuments_e114a41f',
+    documentsList: 'documentsList_e114a41f',
+    documentRow: 'documentRow_e114a41f',
+    leftSection: 'leftSection_e114a41f',
+    fileTypeIcon: 'fileTypeIcon_e114a41f',
+    fileTypeLabel: 'fileTypeLabel_e114a41f',
+    middleSection: 'middleSection_e114a41f',
+    contentRow: 'contentRow_e114a41f',
+    textContent: 'textContent_e114a41f',
+    documentTitle: 'documentTitle_e114a41f',
+    documentAbstract: 'documentAbstract_e114a41f',
+    tagsContainer: 'tagsContainer_e114a41f',
+    tag: 'tag_e114a41f',
+    rightSection: 'rightSection_e114a41f',
+    metadata: 'metadata_e114a41f',
+    metadataItem: 'metadataItem_e114a41f',
+    actionButtons: 'actionButtons_e114a41f',
+    viewButton: 'viewButton_e114a41f',
+    downloadButton: 'downloadButton_e114a41f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

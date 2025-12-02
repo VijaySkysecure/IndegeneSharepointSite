@@ -2,6 +2,7 @@ import * as React from 'react';
 import { IQuestionSectionProps } from './IQuestionSectionProps';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import { DocumentDetailPage } from '../../pages/DocumentDetailPage/DocumentDetailPage';
+import { ViewAllDocumentsPage } from '../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage';
 import styles from './QuestionSection.module.scss';
 
 interface DocumentItem {
@@ -17,6 +18,7 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
   const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
   const [selectedDocumentId, setSelectedDocumentId] = React.useState<number | null>(null);
+  const [showViewAll, setShowViewAll] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     if (props.context) {
@@ -164,6 +166,8 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
     if (props.context && item.id) {
       // Open document detail page in a modal overlay (full-screen)
       setSelectedDocumentId(item.id);
+      // Mark that we're coming from home (tiles)
+      sessionStorage.setItem(`documentBackTo_${item.id}`, 'home');
     }
   };
 
@@ -224,8 +228,27 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
   }, [documents]);
 
   const handleViewAll = () => {
-    // TODO: Implement view all functionality
-    console.log('View All clicked');
+    setShowViewAll(true);
+  };
+
+  const handleCloseViewAll = () => {
+    setShowViewAll(false);
+  };
+
+  const handleViewDocumentFromList = (documentId: number, tags?: string[]) => {
+    setShowViewAll(false);
+    setSelectedDocumentId(documentId);
+    // Store tags temporarily to pass to DocumentDetailPage
+    if (tags) {
+      sessionStorage.setItem(`documentTags_${documentId}`, JSON.stringify(tags));
+    }
+    // Mark that we're coming from library (ViewAllDocumentsPage)
+    sessionStorage.setItem(`documentBackTo_${documentId}`, 'library');
+  };
+
+  const handleBackToLibrary = () => {
+    setSelectedDocumentId(null);
+    setShowViewAll(true);
   };
 
   return (
@@ -307,12 +330,40 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
         </div>
       </div>
       
+      {showViewAll && props.context && (
+        <div className={styles.viewAllModal}>
+          <ViewAllDocumentsPage 
+            context={props.context}
+            onClose={handleCloseViewAll}
+            onViewDocument={handleViewDocumentFromList}
+          />
+        </div>
+      )}
+      
       {selectedDocumentId && props.context && (
         <div className={styles.detailModal}>
           <DocumentDetailPage 
             context={props.context} 
             documentId={selectedDocumentId}
             onClose={handleCloseDetail}
+            tags={(() => {
+              // Retrieve tags from sessionStorage if available
+              const storedTags = sessionStorage.getItem(`documentTags_${selectedDocumentId}`);
+              if (storedTags) {
+                try {
+                  return JSON.parse(storedTags);
+                } catch (e) {
+                  return undefined;
+                }
+              }
+              return undefined;
+            })()}
+            backTo={(() => {
+              // Retrieve backTo from sessionStorage if available
+              const storedBackTo = sessionStorage.getItem(`documentBackTo_${selectedDocumentId}`);
+              return storedBackTo === 'library' ? 'library' : 'home';
+            })()}
+            onBackToLibrary={handleBackToLibrary}
           />
         </div>
       )}

@@ -1,0 +1,269 @@
+.viewAllPage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.loading,
+.noDocuments {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.documentsList {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.documentRow {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 24px 32px;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 24px;
+  transition: background-color 0.2s;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: #fafafa;
+  }
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.fileTypeIcon {
+  font-size: 32px;
+  line-height: 1;
+  color: #6c5ce7;
+}
+
+.fileTypeLabel {
+  background-color: #e0e0e0;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.middleSection {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contentRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 4px;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.documentTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+.documentAbstract {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  max-width: 600px; /* Reduce abstract width to make space for metadata */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.tagsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #d0d0d0;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  flex-shrink: 0;
+  min-width: 150px;
+}
+
+.metadataItem {
+  font-size: 13px;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.viewButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    background-color: #1565c0;
+  }
+
+  &:active {
+    background-color: #0d47a1;
+  }
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  color: #666;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    border-color: #ccc;
+  }
+
+  &:active {
+    background-color: #d0d0d0;
+  }
+}
+
