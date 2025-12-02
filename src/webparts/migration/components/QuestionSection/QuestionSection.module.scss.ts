@@ -1,20 +1,23 @@
 
 require("./QuestionSection.module.css");
 const styles = {
-  questionSection: 'questionSection_5e71429f',
-  tilesContainer: 'tilesContainer_5e71429f',
-  tile: 'tile_5e71429f',
-  tileHeader: 'tileHeader_5e71429f',
-  fileTypeIcon: 'fileTypeIcon_5e71429f',
-  fileType: 'fileType_5e71429f',
-  tileTitle: 'tileTitle_5e71429f',
-  tileAbstract: 'tileAbstract_5e71429f',
-  tileActions: 'tileActions_5e71429f',
-  viewButton: 'viewButton_5e71429f',
-  downloadButton: 'downloadButton_5e71429f',
-  loading: 'loading_5e71429f',
-  noDocuments: 'noDocuments_5e71429f',
-  detailModal: 'detailModal_5e71429f'
+  questionSection: 'questionSection_d0575249',
+  sectionTitle: 'sectionTitle_d0575249',
+  tilesContainer: 'tilesContainer_d0575249',
+  tile: 'tile_d0575249',
+  tileHeader: 'tileHeader_d0575249',
+  fileTypeIcon: 'fileTypeIcon_d0575249',
+  fileType: 'fileType_d0575249',
+  tileTitle: 'tileTitle_d0575249',
+  tileAbstract: 'tileAbstract_d0575249',
+  tileActions: 'tileActions_d0575249',
+  viewButton: 'viewButton_d0575249',
+  downloadButton: 'downloadButton_d0575249',
+  loading: 'loading_d0575249',
+  noDocuments: 'noDocuments_d0575249',
+  viewAllTile: 'viewAllTile_d0575249',
+  viewAllText: 'viewAllText_d0575249',
+  detailModal: 'detailModal_d0575249'
 };
 
 export default styles;

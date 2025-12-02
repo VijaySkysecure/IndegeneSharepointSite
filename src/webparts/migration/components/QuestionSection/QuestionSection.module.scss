@@ -6,14 +6,51 @@
   font-family: 'Inter', sans-serif;
 }
 
+.sectionTitle {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  margin: 0 0 20px 0;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tilesContainer {
   display: flex;
   gap: 24px;
   max-width: 1400px;
   margin: 0 auto;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
 }
 
 .tile {
@@ -21,10 +58,10 @@
   border-radius: 8px;
   padding: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33.333% - 16px);
-  min-width: 0;
-  max-width: none;
-  height: 232px;
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+  height: 212px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -95,7 +132,7 @@
   color: white;
   border: none;
   border-radius: 4px;
-  padding: 10px 16px;
+  padding: 10px 30px;
   font-size: 12px;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
@@ -165,6 +202,41 @@
   font-size: 12px;
   font-family: 'Inter', sans-serif;
   padding: 40px;
+}
+
+.viewAllTile {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 24px;
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+  height: 212px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.viewAllText {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
 }
 
 .detailModal {

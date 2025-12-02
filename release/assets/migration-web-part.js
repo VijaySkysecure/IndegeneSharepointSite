@@ -390,24 +390,27 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_5e71429f{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_5e71429f{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_5e71429f{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:232px;max-width:none;min-width:0;overflow:hidden;padding:24px}.tileHeader_5e71429f{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_5e71429f{font-size:20px;line-height:1}.fileType_5e71429f{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_5e71429f{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_5e71429f,.tileTitle_5e71429f{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_5e71429f{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_5e71429f{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_5e71429f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_5e71429f svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_5e71429f:hover:not(:disabled){background-color:#1565c0}.viewButton_5e71429f:active:not(:disabled){background-color:#0d47a1}.viewButton_5e71429f:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_5e71429f{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_5e71429f svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_5e71429f:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_5e71429f:active:not(:disabled){background-color:#e0e0e0}.downloadButton_5e71429f:disabled{cursor:not-allowed;opacity:.4}.loading_5e71429f,.noDocuments_5e71429f{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.detailModal_5e71429f{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YseUJBQ0UsWUFBQSxDQUtBLGdCQUFBLENBSkEsUUFBQSxDQUdBLHNCQUFBLENBREEsYUFBQSxDQURBLGdCQUFBLENBSUEsVUFBQSxDQUdGLGVBQ0UscUJBQUEsQ0FXQSx3QkFBQSxDQVZBLGlCQUFBLENBRUEsbUNBQUEsQ0FPQSxxQkFBQSxDQUZBLFlBQUEsQ0FKQSw2QkFBQSxDQUtBLHFCQUFBLENBRkEsWUFBQSxDQURBLGNBQUEsQ0FEQSxXQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_d0575249{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_d0575249{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_d0575249::-webkit-scrollbar{height:8px}.tilesContainer_d0575249::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_d0575249::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_d0575249::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_d0575249{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.tileHeader_d0575249{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_d0575249{font-size:20px;line-height:1}.fileType_d0575249{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_d0575249{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_d0575249,.tileTitle_d0575249{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_d0575249{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_d0575249{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_d0575249{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_d0575249 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_d0575249:hover:not(:disabled){background-color:#1565c0}.viewButton_d0575249:active:not(:disabled){background-color:#0d47a1}.viewButton_d0575249:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_d0575249{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_d0575249 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_d0575249:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_d0575249:active:not(:disabled){background-color:#e0e0e0}.downloadButton_d0575249:disabled{cursor:not-allowed;opacity:.4}.loading_d0575249,.noDocuments_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_d0575249{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_d0575249:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_d0575249:active{transform:translateY(0)}.viewAllText_d0575249{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_d0575249{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSw4QkFBQSxDQURBLDhCQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFVRSxrQkFBQSxDQUtBLDBCQUFBLENBZEEsbUNBQUEsQ0FDQSxvQ0FBQSxDQUNBLGlCQUFBLENBU0EscUJBQUEsQ0FDQSxjQUFBLENBSkEsWUFBQSxDQUpBLDZCQUFBLENBR0EsWUFBQSxDQUdBLHNCQUFBLENBSkEsOEJBQUEsQ0FEQSw4QkFBQSxDQUZBLFlBQUEsQ0FVQSx1QkFDQSxDQUVBLDRCQUNFLG1DQUFBLENBQ0EsK0JBQUEsQ0FHRiw2QkFDRSx1QkFBQSxDQUlKLHNCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsaUJBQUEsQ0FHRixzQkFPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_5e71429f: "questionSection_5e71429f",
-  tilesContainer_5e71429f: "tilesContainer_5e71429f",
-  tile_5e71429f: "tile_5e71429f",
-  tileHeader_5e71429f: "tileHeader_5e71429f",
-  fileTypeIcon_5e71429f: "fileTypeIcon_5e71429f",
-  fileType_5e71429f: "fileType_5e71429f",
-  tileTitle_5e71429f: "tileTitle_5e71429f",
-  tileAbstract_5e71429f: "tileAbstract_5e71429f",
-  tileActions_5e71429f: "tileActions_5e71429f",
-  viewButton_5e71429f: "viewButton_5e71429f",
-  downloadButton_5e71429f: "downloadButton_5e71429f",
-  loading_5e71429f: "loading_5e71429f",
-  noDocuments_5e71429f: "noDocuments_5e71429f",
-  detailModal_5e71429f: "detailModal_5e71429f"
+  questionSection_d0575249: "questionSection_d0575249",
+  sectionTitle_d0575249: "sectionTitle_d0575249",
+  tilesContainer_d0575249: "tilesContainer_d0575249",
+  tile_d0575249: "tile_d0575249",
+  tileHeader_d0575249: "tileHeader_d0575249",
+  fileTypeIcon_d0575249: "fileTypeIcon_d0575249",
+  fileType_d0575249: "fileType_d0575249",
+  tileTitle_d0575249: "tileTitle_d0575249",
+  tileAbstract_d0575249: "tileAbstract_d0575249",
+  tileActions_d0575249: "tileActions_d0575249",
+  viewButton_d0575249: "viewButton_d0575249",
+  downloadButton_d0575249: "downloadButton_d0575249",
+  loading_d0575249: "loading_d0575249",
+  noDocuments_d0575249: "noDocuments_d0575249",
+  viewAllTile_d0575249: "viewAllTile_d0575249",
+  viewAllText_d0575249: "viewAllText_d0575249",
+  detailModal_d0575249: "detailModal_d0575249"
 });
 
 
@@ -2090,7 +2093,7 @@ var QuestionSection = function (props) {
                     console.log('Current Site URL (auto-detected):', webUrl);
                     console.log('Target Library:', libraryName);
                     console.log('Expected Library URL:', "".concat(webUrl, "/KMArtifacts"));
-                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=3");
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=5");
                     console.log('Full API Endpoint:', apiUrl);
                     console.log('Note: This will work if KMArtifacts library exists on the current site');
                     return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
@@ -2249,49 +2252,57 @@ var QuestionSection = function (props) {
             }
         });
     }); };
-    // Always show 3 tiles, fill with empty placeholders if needed
+    // Always show 5 tiles + 1 "View All" button, fill with empty placeholders if needed
     var displayTiles = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(function () {
         var tiles = [];
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 5; i++) {
             tiles.push(documents[i] || null);
         }
         return tiles;
     }, [documents]);
+    var handleViewAll = function () {
+        // TODO: Implement view all functionality
+        console.log('View All clicked');
+    };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].questionSection },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading...")) : (displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, doc.fileType || 'FILE')),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, doc.name),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, onClick: function () { return handleView(doc); } },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                        "View"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, "---")),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, "No document"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, "No document available"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, disabled: true },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                        "View"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, disabled: true, "aria-label": "Download" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))); })))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sectionTitle }, "Recently Published"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading...")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, doc.fileType || 'FILE')),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, doc.name),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, onClick: function () { return handleView(doc); } },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            "View"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileType }, "---")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileTitle }, "No document"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileAbstract }, "No document available"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, disabled: true },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            "View"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, disabled: true, "aria-label": "Download" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))); }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllTile, onClick: handleViewAll },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllText }, "View All")))))),
         selectedDocumentId && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].detailModal },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__.DocumentDetailPage, { context: props.context, documentId: selectedDocumentId, onClose: handleCloseDetail })))));
 };
@@ -2311,20 +2322,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 var styles = {
-    questionSection: 'questionSection_5e71429f',
-    tilesContainer: 'tilesContainer_5e71429f',
-    tile: 'tile_5e71429f',
-    tileHeader: 'tileHeader_5e71429f',
-    fileTypeIcon: 'fileTypeIcon_5e71429f',
-    fileType: 'fileType_5e71429f',
-    tileTitle: 'tileTitle_5e71429f',
-    tileAbstract: 'tileAbstract_5e71429f',
-    tileActions: 'tileActions_5e71429f',
-    viewButton: 'viewButton_5e71429f',
-    downloadButton: 'downloadButton_5e71429f',
-    loading: 'loading_5e71429f',
-    noDocuments: 'noDocuments_5e71429f',
-    detailModal: 'detailModal_5e71429f'
+    questionSection: 'questionSection_d0575249',
+    sectionTitle: 'sectionTitle_d0575249',
+    tilesContainer: 'tilesContainer_d0575249',
+    tile: 'tile_d0575249',
+    tileHeader: 'tileHeader_d0575249',
+    fileTypeIcon: 'fileTypeIcon_d0575249',
+    fileType: 'fileType_d0575249',
+    tileTitle: 'tileTitle_d0575249',
+    tileAbstract: 'tileAbstract_d0575249',
+    tileActions: 'tileActions_d0575249',
+    viewButton: 'viewButton_d0575249',
+    downloadButton: 'downloadButton_d0575249',
+    loading: 'loading_d0575249',
+    noDocuments: 'noDocuments_d0575249',
+    viewAllTile: 'viewAllTile_d0575249',
+    viewAllText: 'viewAllText_d0575249',
+    detailModal: 'detailModal_d0575249'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
