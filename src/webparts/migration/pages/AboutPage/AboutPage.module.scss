@@ -17,36 +17,11 @@
 }
 
 .contentText {
-  font-size: 24px;
+  font-size: 14px;
   color: #424242;
-  margin: 0 0 30px 0;
+  margin: 0;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
-}
-
-.carouselIndicators {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #90caf9;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-
-  &:hover {
-    transform: scale(1.2);
-    background-color: #64b5f6;
-  }
-
-  &.active {
-    background-color: #1976d2;
-  }
 }
 
 

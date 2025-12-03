@@ -2,6 +2,7 @@
 require("./QuestionSection.module.css");
 const styles = {
   questionSection: 'questionSection_3654171e',
+  sectionTitle: 'sectionTitle_3654171e',
   tilesContainer: 'tilesContainer_3654171e',
   tile: 'tile_3654171e',
   promptText: 'promptText_3654171e',
@@ -33,6 +34,9 @@ const styles = {
   downloadButton: 'downloadButton_3654171e',
   loading: 'loading_3654171e',
   noDocuments: 'noDocuments_3654171e',
+  viewAllTile: 'viewAllTile_3654171e',
+  viewAllText: 'viewAllText_3654171e',
+  viewAllModal: 'viewAllModal_3654171e',
   detailModal: 'detailModal_3654171e',
   chatLauncher: 'chatLauncher_3654171e',
   botLink: 'botLink_3654171e'

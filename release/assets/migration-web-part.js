@@ -16,13 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_bb56a150{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_bb56a150{margin:0 auto;max-width:1400px;text-align:center}.contentText_bb56a150{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9CVUNvbnRlbnRBcmVhL0JVQ29udGVudEFyZWEubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBR0UsYUFBQSxDQURBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixzQkFFRSxhQUFBLENBR0EsNEJBQUEsQ0FKQSxjQUFBLENBR0EsZUFBQSxDQURBLGVBRUEiLCJmaWxlIjoiQlVDb250ZW50QXJlYS5tb2R1bGUuY3NzIn0= */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".contentArea_8084b345{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:300px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_8084b345{margin:0 auto;max-width:1400px;text-align:center}.contentText_8084b345{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0JVQ29udGVudEFyZWEvQlVDb250ZW50QXJlYS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsZUFFQSIsImZpbGUiOiJCVUNvbnRlbnRBcmVhLm1vZHVsZS5jc3MifQ== */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  contentArea_bb56a150: "contentArea_bb56a150",
-  contentContainer_bb56a150: "contentContainer_bb56a150",
-  contentText_bb56a150: "contentText_bb56a150"
+  contentArea_8084b345: "contentArea_8084b345",
+  contentContainer_8084b345: "contentContainer_8084b345",
+  contentText_8084b345: "contentText_8084b345"
 });
 
 
@@ -219,6 +223,7 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 9328:
 /*!************************************************************************************!*\
   !*** ./lib/webparts/migration/components/FilterDropdown/FilterDropdown.module.css ***!
@@ -319,6 +324,9 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
 /***/ }),
 
 /***/ 54304:
+=======
+/***/ 4304:
+>>>>>>> origin/master
 /*!********************************************************************!*\
   !*** ./lib/webparts/migration/components/Header/Header.module.css ***!
   \********************************************************************/
@@ -332,6 +340,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_7a58796d{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;position:relative;width:100%}.headerContent_7a58796d{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_7a58796d{flex:1}.companyName_7a58796d{color:#fff;font-size:48px;font-weight:700;margin:0 0 10px}.description_7a58796d{color:#fff;font-size:16px;font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_7a58796d{background-color:#4834d4;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:16px;font-weight:500;padding:12px 24px;transition:background-color .3s}.addFileButton_7a58796d:hover{background-color:#3d2db8}.rightSection_7a58796d{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_7a58796d{color:#fff;font-size:18px;font-weight:500}.searchContainer_7a58796d{align-items:center;background-color:#fff;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.12);cursor:pointer;display:flex;min-width:320px;padding:8px 16px}.searchIcon_7a58796d{height:18px;margin-right:10px;width:18px}.searchInput_7a58796d{background:0 0;border:none;color:#333;flex:1;font-size:16px;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_7a58796d:-ms-input-placeholder{color:#999}.searchInput_7a58796d::placeholder{color:#999}.dropdownPanel_7a58796d{animation:fadeDown_7a58796d .18s ease-out;position:fixed;width:min(70vw,1050px);z-index:1000}.dropdownInner_7a58796d{background:#fff;border:1px solid #e7ebf1;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.12);max-height:70vh;overflow:auto;padding:16px}.dropdownClose_7a58796d{background:#0b4b93;border:none;border-radius:20px;color:#fff;cursor:pointer;font-weight:700;padding:6px 10px;position:absolute;right:2.5vw;top:8px}.dropdownClose_7a58796d:hover{background:#093f7a}@keyframes fadeDown_7a58796d{0%{opacity:0;transform:translate(-55%,-8px)}to{opacity:1;transform:translate(-55%)}}@media (max-width:1024px){.dropdownPanel_7a58796d{width:96vw}}@media (max-width:640px){.header_7a58796d{padding:24px}.searchContainer_7a58796d{min-width:240px}.dropdownPanel_7a58796d{width:96vw}.dropdownInner_7a58796d{border-radius:10px;padding:14px}}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9IZWFkZXIvSGVhZGVyLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGlCQUVFLDJFQUFBLENBR0EscUJBQUEsQ0FEQSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxpQkFBQSxDQUlBLGlCQUFBLENBTkEsVUFNQSxDQUdGLHdCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLDZCQUFBLENBR0EsYUFBQSxDQURBLGdCQUNBLENBR0Ysc0JBQ0UsTUFBQSxDQUdGLHNCQUlFLFVBQUEsQ0FIQSxjQUFBLENBQ0EsZUFBQSxDQUNBLGVBQ0EsQ0FHRixzQkFHRSxVQUFBLENBRkEsY0FBQSxDQUlBLGVBQUEsQ0FIQSxlQUFBLENBRUEsV0FDQSxDQUdGLHdCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUlBLGlCQUFBLENBTEEsVUFBQSxDQUlBLGNBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQUpBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw4QkFDRSx3QkFBQSxDQUlKLHVCQUdFLG9CQUFBLENBRkEsWUFBQSxDQUNBLHFCQUFBLENBRUEsUUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUdGLDBCQUVFLGtCQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUlBLG9DQUFBLENBREEsY0FBQSxDQU5BLFlBQUEsQ0FLQSxlQUFBLENBREEsZ0JBR0EsQ0FHRixxQkFFRSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUVBLENBR0Ysc0JBTUUsY0FBQSxDQUxBLFdBQUEsQ0FJQSxVQUFBLENBRkEsTUFBQSxDQUNBLGNBQUEsQ0FGQSxTQUlBLENBRUEsbUNBQ0UsVUFBQSxDQURGLDRDQUNFLFVBQUEsQ0FERixtQ0FDRSxVQUFBLENBT0osd0JBS0UseUNBQUEsQ0FKQSxjQUFBLENBRUEsc0JBQUEsQ0FDQSxZQUNBLENBR0Ysd0JBQ0UsZUFBQSxDQUlBLHdCQUFBLENBSEEsa0JBQUEsQ0FDQSxzQ0FBQSxDQUtBLGVBQUEsQ0FDQSxhQUFBLENBTEEsWUFLQSxDQUlGLHdCQUlFLGtCQUFBLENBRUEsV0FBQSxDQUNBLGtCQUFBLENBRkEsVUFBQSxDQUtBLGNBQUEsQ0FEQSxlQUFBLENBREEsZ0JBQUEsQ0FQQSxpQkFBQSxDQUVBLFdBQUEsQ0FEQSxPQVFBLENBR0YsOEJBQ0Usa0JBQUEsQ0FHRiw2QkFDRSxHQUFPLFNBQUEsQ0FBWSw4QkFBQSxDQUNuQixHQUFPLFNBQUEsQ0FBWSx5QkFBQSxDQUFBLENBSXJCLDBCQUNFLHdCQUNFLFVBQUEsQ0FBQSxDQUlKLHlCQUNFLGlCQUNFLFlBQUEsQ0FHRiwwQkFDRSxlQUFBLENBR0Ysd0JBQ0UsVUFBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFDQSxDQUFBIiwiZmlsZSI6IkhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
@@ -352,6 +361,24 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
   fadeDown_7a58796d: "fadeDown_7a58796d",
   dropdownInner_7a58796d: "dropdownInner_7a58796d",
   dropdownClose_7a58796d: "dropdownClose_7a58796d"
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".header_f75697fe{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;color:#fff;font-family:Inter,sans-serif;padding:40px 60px;width:100%}.headerContent_f75697fe{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;max-width:1400px}.leftSection_f75697fe{flex:1}.companyName_f75697fe{color:#fff;font-family:Inter,sans-serif;font-size:40px;font-weight:600;margin:0 0 10px}.description_f75697fe{font-weight:400;margin:0 0 20px;opacity:.95}.addFileButton_f75697fe,.description_f75697fe{color:#fff;font-family:Inter,sans-serif;font-size:14px}.addFileButton_f75697fe{background-color:#4834d4;border:none;border-radius:4px;cursor:pointer;font-weight:500;padding:10px 26px;transition:background-color .3s}.addFileButton_f75697fe:hover{background-color:#3d2db8}.rightSection_f75697fe{align-items:flex-end;display:flex;flex-direction:column;gap:20px}.leadership_f75697fe{color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500}.searchContainer_f75697fe{align-items:center;background-color:#fff;border-radius:4px;display:flex;min-width:300px;padding:8px 16px}.searchIcon_f75697fe{flex-shrink:0;height:18px;margin-right:10px;width:18px}.searchInput_f75697fe{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0}.searchInput:-ms-input-placeholder{color:#999}.searchInput_f75697fe:-ms-input-placeholder{color:#999}.searchInput_f75697fe::placeholder{color:#999}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL0hlYWRlci9IZWFkZXIubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBRUUsMkVBQUEsQ0FHQSxxQkFBQSxDQURBLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGlCQUFBLENBRkEsVUFLQSxDQUdGLHdCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLDZCQUFBLENBR0EsYUFBQSxDQURBLGdCQUNBLENBR0Ysc0JBQ0UsTUFBQSxDQUdGLHNCQUlFLFVBQUEsQ0FDQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBQ0EsZUFFQSxDQUdGLHNCQUtFLGVBQUEsQ0FIQSxlQUFBLENBRUEsV0FFQSxDQUdGLDhDQU5FLFVBQUEsQ0FHQSw0QkFBQSxDQUxBLGNBa0JBLENBVkYsd0JBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBSUEsaUJBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUpBLGlCQUFBLENBTUEsK0JBQUEsQ0FFQSw4QkFDRSx3QkFBQSxDQUlKLHVCQUdFLG9CQUFBLENBRkEsWUFBQSxDQUNBLHFCQUFBLENBRUEsUUFBQSxDQUdGLHFCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0YsMEJBRUUsa0JBQUEsQ0FDQSxxQkFBQSxDQUNBLGlCQUFBLENBSEEsWUFBQSxDQUtBLGVBQUEsQ0FEQSxnQkFDQSxDQUdGLHFCQUlFLGFBQUEsQ0FGQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUdBLENBR0Ysc0JBTUUsY0FBQSxDQUxBLFdBQUEsQ0FJQSxVQUFBLENBRkEsTUFBQSxDQUlBLDRCQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FOQSxTQU1BLENBRUEsbUNBQ0UsVUFBQSxDQURGLDRDQUNFLFVBQUEsQ0FERixtQ0FDRSxVQUFBIiwiZmlsZSI6IkhlYWRlci5tb2R1bGUuY3NzIn0= */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  header_f75697fe: "header_f75697fe",
+  headerContent_f75697fe: "headerContent_f75697fe",
+  leftSection_f75697fe: "leftSection_f75697fe",
+  companyName_f75697fe: "companyName_f75697fe",
+  description_f75697fe: "description_f75697fe",
+  addFileButton_f75697fe: "addFileButton_f75697fe",
+  rightSection_f75697fe: "rightSection_f75697fe",
+  leadership_f75697fe: "leadership_f75697fe",
+  searchContainer_f75697fe: "searchContainer_f75697fe",
+  searchIcon_f75697fe: "searchIcon_f75697fe",
+  searchInput_f75697fe: "searchInput_f75697fe",
+  searchInput: "searchInput"
+>>>>>>> origin/master
 });
 
 
@@ -439,14 +466,18 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_e0b26b5e{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_e0b26b5e{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_e0b26b5e{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:16px 24px;text-decoration:none;transition:background-color .3s}.navItem_e0b26b5e:hover{background-color:hsla(0,0%,100%,.5)}.navItem_e0b26b5e.active_e0b26b5e{background-color:#81d4fa;border-bottom:3px solid #1976d2;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9OYXZpZ2F0aW9uL05hdmlnYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEscUJBRUUsd0JBQUEsQ0FFQSxtQ0FBQSxDQUNBLDRCQUFBLENBRkEsU0FBQSxDQUZBLFVBSUEsQ0FHRix1QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FLQSxLQUFBLENBRkEsYUFBQSxDQURBLGdCQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQUNBLG9CQUFBLENBS0EsK0JBQ0EsQ0FFQSx3QkFDRSxtQ0FBQSxDQUdGLGtDQUNFLHdCQUFBLENBRUEsK0JBQUEsQ0FEQSxhQUNBIiwiZmlsZSI6Ik5hdmlnYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_72dd57cd{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_72dd57cd{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_72dd57cd{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_72dd57cd.active_72dd57cd{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLEtBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxjQUNBLENBR0Ysa0JBUUUsbUNBQUEsQ0FMQSxhQUFBLENBR0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUpBLGlCQUFBLENBUUEsaUJBQUEsQ0FQQSxvQkFBQSxDQUtBLCtCQUVBLENBR0Esa0NBRUUsK0JBQUEsQ0FEQSxhQUNBIiwiZmlsZSI6Ik5hdmlnYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  navigation_e0b26b5e: "navigation_e0b26b5e",
-  navContainer_e0b26b5e: "navContainer_e0b26b5e",
-  navItem_e0b26b5e: "navItem_e0b26b5e",
-  active_e0b26b5e: "active_e0b26b5e"
+  navigation_72dd57cd: "navigation_72dd57cd",
+  navContainer_72dd57cd: "navContainer_72dd57cd",
+  navItem_72dd57cd: "navItem_72dd57cd",
+  active_72dd57cd: "active_72dd57cd"
 });
 
 
@@ -466,6 +497,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_3654171e{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.tilesContainer_3654171e{display:flex;flex-wrap:nowrap;gap:24px;justify-content:center;margin:0 auto;max-width:1400px;width:100%}.tile_3654171e{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:1 1 calc(33.333% - 16px);flex-direction:column;height:232px;max-width:none;min-width:0;overflow:hidden;padding:24px}.promptText_3654171e{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_3654171e{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_3654171e{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_3654171e:-ms-input-placeholder{color:#999}.questionInput_3654171e::placeholder{color:#999}.questionInput_3654171e:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_3654171e{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_3654171e:hover{transform:scale(1.08)}.chatWindow_3654171e{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_3654171e{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_3654171e{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_3654171e{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_3654171e{justify-content:flex-end}.messageContainerBot_3654171e{justify-content:flex-start}.messageAvatar_3654171e{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_3654171e{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_3654171e,.userMsg_3654171e{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_3654171e{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_3654171e.thinking_3654171e{animation:pulse_3654171e 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_3654171e{0%,to{opacity:.7}50%{opacity:1}}.inputRow_3654171e{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_3654171e{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_3654171e:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_3654171e{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_3654171e:hover{background:#00509e}.sendButton_3654171e:active{transform:scale(.96)}.closeButton_3654171e{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_3654171e{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_3654171e{font-size:20px;line-height:1}.fileType_3654171e{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_3654171e{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_3654171e,.tileTitle_3654171e{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_3654171e{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_3654171e{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_3654171e{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 16px;transition:background-color .2s}.viewButton_3654171e svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_3654171e:hover:not(:disabled){background-color:#1565c0}.viewButton_3654171e:active:not(:disabled){background-color:#0d47a1}.viewButton_3654171e:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_3654171e{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_3654171e svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_3654171e:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_3654171e:active:not(:disabled){background-color:#e0e0e0}.downloadButton_3654171e:disabled{cursor:not-allowed;opacity:.4}.loading_3654171e,.noDocuments_3654171e{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.detailModal_3654171e{background-color:#f5f5f5;bottom:0;height:100vh;left:0;overflow-y:auto;position:fixed;right:0;top:0;width:100vw;z-index:10000}.chatLauncher_3654171e{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_3654171e{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_3654171e:hover{transform:scale(1.1)}.botLink_3654171e{cursor:pointer;display:inline-block;margin-top:6px;text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHlCQUNFLFlBQUEsQ0FLQSxnQkFBQSxDQUpBLFFBQUEsQ0FHQSxzQkFBQSxDQURBLGFBQUEsQ0FEQSxnQkFBQSxDQUlBLFVBQUEsQ0FHRixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSxjQUFBLENBREEsV0FBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxDQUNBLHFCQUFBLENBRkEsWUFBQSxDQUdBLGVBQUEsQ0FQQSxjQUFBLENBRUEsVUFBQSxDQVVBLDhCQUFBLENBVEEsV0FBQSxDQVFBLFlBQ0EsQ0FHRixxQkFFRSxrQkFBQSxDQU1BLGtCQUFBLENBQ0EsbUNBQUEsQ0FGQSxVQUFBLENBTkEsWUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsNkJBQUEsQ0FDQSxpQkFLQSxDQUdGLG1CQU9FLGtCQUFBLENBSEEsWUFBQSxDQUhBLE1BQUEsQ0FJQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxlQUFBLENBREEsWUFLQSxDQUdGLDJCQUVFLHNCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLDhCQUNFLDBCQUFBLENBR0Ysd0JBR0UsaUJBQUEsQ0FHQSxtQ0FBQSxDQURBLGFBQUEsQ0FIQSxXQUFBLENBRUEsZ0JBQUEsQ0FIQSxVQUtBLENBR0Ysa0JBSUUsa0JBQUEsQ0FJQSxtQ0FBQSxDQUhBLFVBSUEsQ0FHRixtQ0FIRSxvQkFBQSxDQU5BLGtCQUFBLENBR0EsZ0JBQUEsQ0FDQSxlQUFBLENBTkEsYUFBQSxDQUNBLGlCQW9CQSxDQVZGLGlCQUlFLGVBQUEsQ0FLQSx3QkFBQSxDQUNBLG9DQUFBLENBTEEsVUFLQSxDQUdGLG1DQUlFLHNDQUFBLENBSEEsa0JBQUEsQ0FFQSw2QkFBQSxDQURBLFVBRUEsQ0FHRiwwQkFDRSxNQUFXLFVBQUEsQ0FDWCxJQUFNLFNBQUEsQ0FBQSxDQUdSLG1CQUVFLGtCQUFBLENBR0EsZUFBQSxDQUNBLHlCQUFBLENBTEEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxZQUVBLENBR0Ysb0JBR0Usd0JBQUEsQ0FDQSxrQkFBQSxDQUhBLE1BQUEsQ0FLQSxjQUFBLENBREEsU0FBQSxDQUhBLGlCQUFBLENBS0EsMENBQUEsQ0FHRiwwQkFDRSxvQkFBQSxDQUNBLHdDQUFBLENBR0YscUJBT0Usa0JBQUEsQ0FKQSxXQUFBLENBREEsa0JBQUEsQ0FNQSxVQUFBLENBRkEsY0FBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSx1Q0FBQSxDQUdGLDJCQUFvQixrQkFBQSxDQUNwQiw0QkFBcUIsb0JBQUEsQ0FFckIsc0JBQ0UsY0FBQSxDQUNBLFdBQUEsQ0FJQSxVQUFBLENBQ0EsY0FBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsVUFBQSxDQUxBLFNBQUEsQ0FNQSxzQkFBQSxDQUVGLHFCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FDQSxrQkFBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsbUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRixvQkFHRSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUtBLGtCQUFBLENBR0YsMkNBUEUsNEJBQUEsQ0FFQSxlQUFBLENBQ0Esc0JBa0JBLENBZEYsdUJBUUUsb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FSQSxVQUFBLENBS0EsbUJBQUEsQ0FOQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQUZBLHFCQUVBLENBR0Ysc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQU9FLHdCQUFBLENBRkEsUUFBQSxDQUtBLFlBQUEsQ0FQQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQU9BLFdBQUEsQ0FIQSxhQUlBLENBR0YsdUJBRUUsV0FBQSxDQUdBLGNBQUEsQ0FKQSxjQUFBLENBRUEsVUFBQSxDQUNBLFlBQ0EsQ0FHRixzQkFHRSxpQkFBQSxDQURBLFdBQUEsQ0FFQSxvQ0FBQSxDQUhBLFVBR0EsQ0FHRiw0QkFDRSxvQkFBQSxDQUVGLGtCQUlFLGNBQUEsQ0FIQSxvQkFBQSxDQUNBLGNBQUEsQ0FDQSx5QkFDQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
@@ -506,6 +538,30 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
   detailModal_3654171e: "detailModal_3654171e",
   chatLauncher_3654171e: "chatLauncher_3654171e",
   botLink_3654171e: "botLink_3654171e"
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_0c085da0{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_0c085da0{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_0c085da0::-webkit-scrollbar{height:8px}.tilesContainer_0c085da0::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_0c085da0::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_0c085da0::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_0c085da0{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.tileHeader_0c085da0{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_0c085da0{font-size:20px;line-height:1}.fileType_0c085da0{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_0c085da0{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_0c085da0,.tileTitle_0c085da0{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_0c085da0{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_0c085da0{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_0c085da0{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_0c085da0 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_0c085da0:hover:not(:disabled){background-color:#1565c0}.viewButton_0c085da0:active:not(:disabled){background-color:#0d47a1}.viewButton_0c085da0:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_0c085da0{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_0c085da0 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_0c085da0:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_0c085da0:active:not(:disabled){background-color:#e0e0e0}.downloadButton_0c085da0:disabled{cursor:not-allowed;opacity:.4}.loading_0c085da0,.noDocuments_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_0c085da0{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_0c085da0:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_0c085da0:active{transform:translateY(0)}.viewAllText_0c085da0{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_0c085da0,.viewAllModal_0c085da0{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSw4QkFBQSxDQURBLDhCQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxlQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLHlCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsMENBQ0Usd0JBQUEsQ0FHRiwyQ0FDRSx3QkFBQSxDQUdGLDhCQUNFLHFCQUFBLENBQ0Esa0JBQUEsQ0FDQSxVQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSw0QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FJQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBS0EsWUFBQSxDQUVBLHlDQUFBLENBRUEsNkJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiw4Q0FDRSx3QkFBQSxDQUNBLFVBQUEsQ0FHRiwrQ0FDRSx3QkFBQSxDQUdGLGtDQUNFLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHdDQUVFLFVBQUEsQ0FHQSw0QkFBQSxDQURBLGNBQUEsQ0FFQSxZQUFBLENBSEEsaUJBR0EsQ0FHRixzQkFVRSxrQkFBQSxDQUtBLDBCQUFBLENBZEEsbUNBQUEsQ0FDQSxvQ0FBQSxDQUNBLGlCQUFBLENBU0EscUJBQUEsQ0FDQSxjQUFBLENBSkEsWUFBQSxDQUpBLDZCQUFBLENBR0EsWUFBQSxDQUdBLHNCQUFBLENBSkEsOEJBQUEsQ0FEQSw4QkFBQSxDQUZBLFlBQUEsQ0FVQSx1QkFDQSxDQUVBLDRCQUNFLG1DQUFBLENBQ0EsK0JBQUEsQ0FHRiw2QkFDRSx1QkFBQSxDQUlKLHNCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsaUJBQUEsQ0FjRiw2Q0FPRSx3QkFBQSxDQUZBLFFBQUEsQ0FGQSxNQUFBLENBS0EsZUFBQSxDQVBBLGNBQUEsQ0FHQSxPQUFBLENBRkEsS0FBQSxDQUlBLGFBRUEiLCJmaWxlIjoiUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  questionSection_0c085da0: "questionSection_0c085da0",
+  sectionTitle_0c085da0: "sectionTitle_0c085da0",
+  tilesContainer_0c085da0: "tilesContainer_0c085da0",
+  tile_0c085da0: "tile_0c085da0",
+  tileHeader_0c085da0: "tileHeader_0c085da0",
+  fileTypeIcon_0c085da0: "fileTypeIcon_0c085da0",
+  fileType_0c085da0: "fileType_0c085da0",
+  tileTitle_0c085da0: "tileTitle_0c085da0",
+  tileAbstract_0c085da0: "tileAbstract_0c085da0",
+  tileActions_0c085da0: "tileActions_0c085da0",
+  viewButton_0c085da0: "viewButton_0c085da0",
+  downloadButton_0c085da0: "downloadButton_0c085da0",
+  loading_0c085da0: "loading_0c085da0",
+  noDocuments_0c085da0: "noDocuments_0c085da0",
+  viewAllTile_0c085da0: "viewAllTile_0c085da0",
+  viewAllText_0c085da0: "viewAllText_0c085da0",
+  viewAllModal_0c085da0: "viewAllModal_0c085da0",
+  detailModal_0c085da0: "detailModal_0c085da0"
+>>>>>>> origin/master
 });
 
 
@@ -525,16 +581,17 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_afa5522c{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_afa5522c{margin:0 auto;max-width:1400px;text-align:center}.contentText_afa5522c{color:#424242;font-family:Inter,sans-serif;font-size:24px;font-weight:400;margin:0 0 30px}.carouselIndicators_afa5522c{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_afa5522c{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_afa5522c:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_afa5522c.active_afa5522c{background-color:#1976d2}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQWJvdXRQYWdlL0Fib3V0UGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsZUFFQSxDQUdGLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEiLCJmaWxlIjoiQWJvdXRQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_3c557e40{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_3c557e40{margin:0 auto;max-width:1400px;text-align:center}.contentText_3c557e40{color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:400;margin:0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9BYm91dFBhZ2UvQWJvdXRQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG9CQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUdFLGFBQUEsQ0FEQSxnQkFBQSxDQURBLGlCQUVBLENBR0Ysc0JBRUUsYUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxRQUVBIiwiZmlsZSI6IkFib3V0UGFnZS5tb2R1bGUuY3NzIn0= */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  aboutPage_afa5522c: "aboutPage_afa5522c",
-  contentContainer_afa5522c: "contentContainer_afa5522c",
-  contentText_afa5522c: "contentText_afa5522c",
-  carouselIndicators_afa5522c: "carouselIndicators_afa5522c",
-  dot_afa5522c: "dot_afa5522c",
-  active_afa5522c: "active_afa5522c"
+  aboutPage_3c557e40: "aboutPage_3c557e40",
+  contentContainer_3c557e40: "contentContainer_3c557e40",
+  contentText_3c557e40: "contentText_3c557e40"
 });
 
 
@@ -554,17 +611,18 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".busPage_fcea57b1{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_fcea57b1{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_fcea57b1{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_fcea57b1 :nth-child(6){grid-column:2}.buttonsGrid_fcea57b1 :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_fcea57b1{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_fcea57b1 :nth-child(6),.buttonsGrid_fcea57b1 :nth-child(7){grid-column:auto}}.buButton_fcea57b1{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.buButton_fcea57b1:hover{background-color:#1565c0;transform:translateY(-2px)}.buButton_fcea57b1:active{transform:translateY(0)}.carouselIndicators_fcea57b1{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_fcea57b1{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_fcea57b1:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_fcea57b1.active_fcea57b1{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQlVzUGFnZS9CVXNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGtCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUVFLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQUEsQ0FHRixzQkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FFQSxnQkFBQSxDQUNBLGlCQUFBLENBRkEsZ0JBRUEsQ0FHQSxvQ0FDRSxhQUFBLENBR0Ysb0NBQ0UsYUFBQSxDQUlGLDBCQW5CRixzQkFvQkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUlKLHlCQTdCRixzQkE4QkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUtOLG1CQWFFLGtCQUFBLENBWkEsd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUdBLFlBQUEsQ0FMQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUUEsc0JBQUEsQ0FIQSxlQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FJQSxDQUVBLHlCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRiwwQkFDRSx1QkFBQSxDQUlKLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBREEsVUFDQSIsImZpbGUiOiJCVXNQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".busPage_4c1f6e41{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_4c1f6e41{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_4c1f6e41{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_4c1f6e41 :nth-child(6){grid-column:2}.buttonsGrid_4c1f6e41 :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_4c1f6e41{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_4c1f6e41 :nth-child(6),.buttonsGrid_4c1f6e41 :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_4c1f6e41{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_4c1f6e41 :nth-child(6),.buttonsGrid_4c1f6e41 :nth-child(7){grid-column:auto}}.buButton_4c1f6e41{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.buButton_4c1f6e41:hover{background-color:#1565c0;transform:translateY(-2px)}.buButton_4c1f6e41:active{transform:translateY(0)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9CVXNQYWdlL0JVc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsVUFBQSxDQUdGLHNCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxrQkFBQSxDQUVBLGdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxnQkFFQSxDQUdBLG9DQUNFLGFBQUEsQ0FHRixvQ0FDRSxhQUFBLENBSUYsMEJBbkJGLHNCQW9CSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBSUoseUJBN0JGLHNCQThCSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBS04sbUJBYUUsa0JBQUEsQ0FaQSx3QkFBQSxDQUVBLFdBQUEsQ0FLQSxpQkFBQSxDQU5BLFVBQUEsQ0FPQSxjQUFBLENBR0EsWUFBQSxDQUxBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FRQSxzQkFBQSxDQUhBLGVBQUEsQ0FQQSxpQkFBQSxDQU1BLDZDQUlBLENBRUEseUJBQ0Usd0JBQUEsQ0FDQSwwQkFBQSxDQUdGLDBCQUNFLHVCQUFBIiwiZmlsZSI6IkJVc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  busPage_fcea57b1: "busPage_fcea57b1",
-  contentContainer_fcea57b1: "contentContainer_fcea57b1",
-  buttonsGrid_fcea57b1: "buttonsGrid_fcea57b1",
-  buButton_fcea57b1: "buButton_fcea57b1",
-  carouselIndicators_fcea57b1: "carouselIndicators_fcea57b1",
-  dot_fcea57b1: "dot_fcea57b1",
-  active_fcea57b1: "active_fcea57b1"
+  busPage_4c1f6e41: "busPage_4c1f6e41",
+  contentContainer_4c1f6e41: "contentContainer_4c1f6e41",
+  buttonsGrid_4c1f6e41: "buttonsGrid_4c1f6e41",
+  buButton_4c1f6e41: "buButton_4c1f6e41"
 });
 
 
@@ -584,18 +642,19 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".testimonialsPage_6a9a225d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;overflow-x:hidden;padding:40px 60px;width:100%}.contentContainer_6a9a225d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.testimonialsGrid_6a9a225d{box-sizing:border-box;display:grid;gap:15px;grid-template-columns:repeat(5,1fr);margin-bottom:20px;width:100%}@media (max-width:1400px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(3,1fr)}}@media (max-width:768px){.testimonialsGrid_6a9a225d{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.testimonialsGrid_6a9a225d{grid-template-columns:1fr}}.testimonialCard_6a9a225d{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:30px 15px;text-align:center;width:100%}.testimonialText_6a9a225d{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:400;line-height:1.5;margin:0;overflow-wrap:break-word}.carouselIndicators_6a9a225d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_6a9a225d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_6a9a225d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_6a9a225d.active_6a9a225d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQ2xpZW50VGVzdGltb25pYWxzUGFnZS9DbGllbnRUZXN0aW1vbmlhbHNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUVBLGlCQUFBLENBUEEsaUJBQUEsQ0FGQSxVQVNBLENBR0YsMkJBSUUscUJBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxVQUNBLENBR0YsMkJBTUUscUJBQUEsQ0FMQSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FDQSxVQUNBLENBRUEsMEJBUkYsMkJBU0ksbUNBQUEsQ0FBQSxDQUdGLHlCQVpGLDJCQWFJLG1DQUFBLENBQUEsQ0FHRix5QkFoQkYsMkJBaUJJLHlCQUFBLENBQUEsQ0FJSiwwQkFLRSxrQkFBQSxDQUpBLHdCQUFBLENBRUEsaUJBQUEsQ0FNQSxxQkFBQSxDQUxBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLGNBQUEsQ0FKQSxnQkFBQSxDQUtBLGVBQUEsQ0FWQSxpQkFBQSxDQU1BLGlCQUFBLENBRUEsVUFFQSxDQUdGLDBCQU9FLG9CQUFBLENBTEEsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FHQSxlQUFBLENBREEsUUFBQSxDQUdBLHdCQUFBLENBR0YsNkJBQ0UsWUFBQSxDQUVBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixjQUlFLHdCQUFBLENBREEsaUJBQUEsQ0FFQSxjQUFBLENBSEEsV0FBQSxDQUlBLDZDQUFBLENBTEEsVUFLQSxDQUVBLG9CQUVFLHdCQUFBLENBREEsb0JBQ0EsQ0FHRiw4QkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FEQSxVQUNBIiwiZmlsZSI6IkNsaWVudFRlc3RpbW9uaWFsc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".testimonialsPage_c06036de{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;overflow-x:hidden;padding:40px 60px;width:100%}.contentContainer_c06036de{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.testimonialsGrid_c06036de{box-sizing:border-box;display:grid;gap:20px;grid-template-columns:repeat(3,1fr);width:100%}@media (max-width:768px){.testimonialsGrid_c06036de{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.testimonialsGrid_c06036de{grid-template-columns:1fr}}.testimonialCard_c06036de{align-items:center;background-color:#64b5f6;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;max-width:100%;min-height:150px;overflow:hidden;padding:40px 30px;text-align:center;width:100%}.testimonialText_c06036de{word-wrap:break-word;color:#fff;font-family:Inter,sans-serif;font-size:18px;font-weight:500;line-height:1.5;margin:0;overflow-wrap:break-word}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9DbGllbnRUZXN0aW1vbmlhbHNQYWdlL0NsaWVudFRlc3RpbW9uaWFsc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkJBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBRUEsaUJBQUEsQ0FQQSxpQkFBQSxDQUZBLFVBU0EsQ0FHRiwyQkFJRSxxQkFBQSxDQUZBLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQ0EsQ0FHRiwyQkFLRSxxQkFBQSxDQUpBLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxVQUNBLENBRUEseUJBUEYsMkJBUUksbUNBQUEsQ0FBQSxDQUdGLHlCQVhGLDJCQVlJLHlCQUFBLENBQUEsQ0FJSiwwQkFLRSxrQkFBQSxDQUpBLHdCQUFBLENBRUEsaUJBQUEsQ0FNQSxxQkFBQSxDQUxBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLGNBQUEsQ0FKQSxnQkFBQSxDQUtBLGVBQUEsQ0FWQSxpQkFBQSxDQU1BLGlCQUFBLENBRUEsVUFFQSxDQUdGLDBCQU9FLG9CQUFBLENBTEEsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FHQSxlQUFBLENBREEsUUFBQSxDQUdBLHdCQUFBIiwiZmlsZSI6IkNsaWVudFRlc3RpbW9uaWFsc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  testimonialsPage_6a9a225d: "testimonialsPage_6a9a225d",
-  contentContainer_6a9a225d: "contentContainer_6a9a225d",
-  testimonialsGrid_6a9a225d: "testimonialsGrid_6a9a225d",
-  testimonialCard_6a9a225d: "testimonialCard_6a9a225d",
-  testimonialText_6a9a225d: "testimonialText_6a9a225d",
-  carouselIndicators_6a9a225d: "carouselIndicators_6a9a225d",
-  dot_6a9a225d: "dot_6a9a225d",
-  active_6a9a225d: "active_6a9a225d"
+  testimonialsPage_c06036de: "testimonialsPage_c06036de",
+  contentContainer_c06036de: "contentContainer_c06036de",
+  testimonialsGrid_c06036de: "testimonialsGrid_c06036de",
+  testimonialCard_c06036de: "testimonialCard_c06036de",
+  testimonialText_c06036de: "testimonialText_c06036de"
 });
 
 
@@ -725,17 +784,65 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".serviceLinesPage_12ef78dc{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_12ef78dc{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_12ef78dc{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_12ef78dc :nth-child(6){grid-column:2}.buttonsGrid_12ef78dc :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_12ef78dc{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_12ef78dc :nth-child(6),.buttonsGrid_12ef78dc :nth-child(7){grid-column:auto}}.slButton_12ef78dc{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.slButton_12ef78dc:hover{background-color:#1565c0;transform:translateY(-2px)}.slButton_12ef78dc:active{transform:translateY(0)}.carouselIndicators_12ef78dc{display:flex;gap:12px;justify-content:center;margin-top:15px}.dot_12ef78dc{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_12ef78dc:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_12ef78dc.active_12ef78dc{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvU2VydmljZUxpbmVzUGFnZS9TZXJ2aWNlTGluZXNQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJCQU9FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxxQkFBQSxDQUVBLFlBQUEsQ0FHQSw0QkFBQSxDQUpBLFlBQUEsQ0FHQSxzQkFBQSxDQUxBLGlCQUFBLENBRkEsVUFRQSxDQUdGLDJCQUVFLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQUEsQ0FHRixzQkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLG1DQUFBLENBRUEsa0JBQUEsQ0FFQSxnQkFBQSxDQUNBLGlCQUFBLENBRkEsZ0JBRUEsQ0FHQSxvQ0FDRSxhQUFBLENBR0Ysb0NBQ0UsYUFBQSxDQUlGLDBCQW5CRixzQkFvQkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUlKLHlCQTdCRixzQkE4QkksbUNBQUEsQ0FDQSxlQUFBLENBRUEsd0VBRUUsZ0JBQUEsQ0FBQSxDQUtOLG1CQWFFLGtCQUFBLENBWkEsd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUdBLFlBQUEsQ0FMQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUUEsc0JBQUEsQ0FIQSxlQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FJQSxDQUVBLHlCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRiwwQkFDRSx1QkFBQSxDQUlKLDZCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsc0JBQUEsQ0FFQSxlQUFBLENBR0YsY0FJRSx3QkFBQSxDQURBLGlCQUFBLENBRUEsY0FBQSxDQUhBLFdBQUEsQ0FJQSw2Q0FBQSxDQUxBLFVBS0EsQ0FFQSxvQkFFRSx3QkFBQSxDQURBLG9CQUNBLENBR0YsOEJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBREEsVUFDQSIsImZpbGUiOiJTZXJ2aWNlTGluZXNQYWdlLm1vZHVsZS5jc3MifQ== */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".serviceLinesPage_41b599ab{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_41b599ab{margin:0 auto;max-width:1400px;width:100%}.buttonsGrid_41b599ab{display:grid;gap:20px;grid-template-columns:repeat(5,1fr);margin-bottom:15px;margin-left:auto;margin-right:auto;max-width:1000px}.buttonsGrid_41b599ab :nth-child(6){grid-column:2}.buttonsGrid_41b599ab :nth-child(7){grid-column:3}@media (max-width:1200px){.buttonsGrid_41b599ab{grid-template-columns:repeat(3,1fr);max-width:600px}.buttonsGrid_41b599ab :nth-child(6),.buttonsGrid_41b599ab :nth-child(7){grid-column:auto}}@media (max-width:768px){.buttonsGrid_41b599ab{grid-template-columns:repeat(2,1fr);max-width:400px}.buttonsGrid_41b599ab :nth-child(6),.buttonsGrid_41b599ab :nth-child(7){grid-column:auto}}.slButton_41b599ab{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:18px;font-weight:500;justify-content:center;min-height:60px;padding:20px 30px;transition:background-color .3s,transform .2s}.slButton_41b599ab:hover{background-color:#1565c0;transform:translateY(-2px)}.slButton_41b599ab:active{transform:translateY(0)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9TZXJ2aWNlTGluZXNQYWdlL1NlcnZpY2VMaW5lc1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMkJBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsVUFBQSxDQUdGLHNCQUNFLFlBQUEsQ0FFQSxRQUFBLENBREEsbUNBQUEsQ0FFQSxrQkFBQSxDQUVBLGdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxnQkFFQSxDQUdBLG9DQUNFLGFBQUEsQ0FHRixvQ0FDRSxhQUFBLENBSUYsMEJBbkJGLHNCQW9CSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBSUoseUJBN0JGLHNCQThCSSxtQ0FBQSxDQUNBLGVBQUEsQ0FFQSx3RUFFRSxnQkFBQSxDQUFBLENBS04sbUJBYUUsa0JBQUEsQ0FaQSx3QkFBQSxDQUVBLFdBQUEsQ0FLQSxpQkFBQSxDQU5BLFVBQUEsQ0FPQSxjQUFBLENBR0EsWUFBQSxDQUxBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FRQSxzQkFBQSxDQUhBLGVBQUEsQ0FQQSxpQkFBQSxDQU1BLDZDQUlBLENBRUEseUJBQ0Usd0JBQUEsQ0FDQSwwQkFBQSxDQUdGLDBCQUNFLHVCQUFBIiwiZmlsZSI6IlNlcnZpY2VMaW5lc1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  serviceLinesPage_12ef78dc: "serviceLinesPage_12ef78dc",
-  contentContainer_12ef78dc: "contentContainer_12ef78dc",
-  buttonsGrid_12ef78dc: "buttonsGrid_12ef78dc",
-  slButton_12ef78dc: "slButton_12ef78dc",
-  carouselIndicators_12ef78dc: "carouselIndicators_12ef78dc",
-  dot_12ef78dc: "dot_12ef78dc",
-  active_12ef78dc: "active_12ef78dc"
+  serviceLinesPage_41b599ab: "serviceLinesPage_41b599ab",
+  contentContainer_41b599ab: "contentContainer_41b599ab",
+  buttonsGrid_41b599ab: "buttonsGrid_41b599ab",
+  slButton_41b599ab: "slButton_41b599ab"
+});
+
+
+/***/ }),
+
+/***/ 1174:
+/*!*******************************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.module.css ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".viewAllPage_e114a41f{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;width:100%}.header_e114a41f{background-color:#fff;border-bottom:1px solid #e0e0e0;box-shadow:0 2px 4px rgba(0,0,0,.05);padding:20px 40px}.backButton_e114a41f{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_e114a41f svg{stroke:currentColor;fill:none}.backButton_e114a41f:hover{background-color:#f5f5f5}.content_e114a41f{margin:0 auto;max-width:1400px;padding:40px}.loading_e114a41f,.noDocuments_e114a41f{color:#666;font-family:Inter,sans-serif;font-size:16px;padding:60px 20px;text-align:center}.documentsList_e114a41f{background-color:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden}.documentRow_e114a41f{align-items:flex-start;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;gap:24px;padding:24px 32px;transition:background-color .2s}.documentRow_e114a41f:last-child{border-bottom:none}.documentRow_e114a41f:hover{background-color:#fafafa}.leftSection_e114a41f{align-items:center;display:flex;flex-direction:column;flex-shrink:0;gap:8px;width:80px}.fileTypeIcon_e114a41f{color:#6c5ce7;font-size:32px;line-height:1}.fileTypeLabel_e114a41f{background-color:#e0e0e0;border-radius:16px;color:#fff;font-family:Inter,sans-serif;font-size:11px;font-weight:600;letter-spacing:.5px;padding:4px 12px;text-transform:uppercase;white-space:nowrap}.middleSection_e114a41f{display:flex;flex:1;flex-direction:column;gap:12px;min-width:0}.contentRow_e114a41f{align-items:flex-start;display:flex;gap:24px;margin-top:4px}.textContent_e114a41f{display:flex;flex:1;flex-direction:column;gap:12px;min-width:0}.documentTitle_e114a41f{color:#333;font-family:Inter,sans-serif;font-size:18px;font-weight:600;line-height:1.4;margin:0}.documentAbstract_e114a41f{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-family:Inter,sans-serif;font-size:14px;line-height:1.5;margin:0;max-width:600px;overflow:hidden;text-overflow:ellipsis;word-break:break-word}.tagsContainer_e114a41f{align-items:center;display:flex;flex-wrap:wrap;gap:8px}.tag_e114a41f{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:4px 10px}.rightSection_e114a41f{align-items:flex-end;gap:0;justify-content:center;min-width:180px}.metadata_e114a41f,.rightSection_e114a41f{display:flex;flex-direction:column;flex-shrink:0}.metadata_e114a41f{align-items:flex-start;gap:4px;min-width:150px;text-align:left}.metadataItem_e114a41f{color:#666;font-family:Inter,sans-serif;font-size:13px;line-height:1.4}.actionButtons_e114a41f{align-items:center;display:flex;flex-wrap:nowrap;gap:12px;justify-content:flex-end;margin-top:50px}.viewButton_e114a41f{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:13px;font-weight:500;gap:6px;padding:10px 20px;transition:background-color .2s}.viewButton_e114a41f svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_e114a41f:hover{background-color:#1565c0}.viewButton_e114a41f:active{background-color:#0d47a1}.downloadButton_e114a41f{align-items:center;background-color:#f5f5f5;border:1px solid #e0e0e0;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s,border-color .2s}.downloadButton_e114a41f svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_e114a41f:hover{background-color:#e0e0e0;border-color:#ccc;color:#333}.downloadButton_e114a41f:active{background-color:#d0d0d0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9WaWV3QWxsRG9jdW1lbnRzUGFnZS9WaWV3QWxsRG9jdW1lbnRzUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFHRSx3QkFBQSxDQUNBLDRCQUFBLENBRkEsZ0JBQUEsQ0FEQSxVQUdBLENBR0YsaUJBQ0UscUJBQUEsQ0FFQSwrQkFBQSxDQUNBLG9DQUFBLENBRkEsaUJBRUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBTUEsaUJBQUEsQ0FMQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FPQSw0QkFBQSxDQURBLGNBQUEsQ0FKQSxPQUFBLENBT0EsZ0JBQUEsQ0FFQSwrQkFBQSxDQUVBLHlCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDJCQUNFLHdCQUFBLENBSUosa0JBRUUsYUFBQSxDQURBLGdCQUFBLENBRUEsWUFBQSxDQUdGLHdDQUlFLFVBQUEsQ0FFQSw0QkFBQSxDQURBLGNBQUEsQ0FGQSxpQkFBQSxDQURBLGlCQUlBLENBR0Ysd0JBQ0Usd0JBQUEsQ0FHQSx3QkFBQSxDQUZBLGlCQUFBLENBQ0EsZUFDQSxDQUdGLHNCQUVFLHNCQUFBLENBQ0EscUJBQUEsQ0FFQSwrQkFBQSxDQUpBLFlBQUEsQ0FLQSxRQUFBLENBRkEsaUJBQUEsQ0FHQSwrQkFBQSxDQUVBLGlDQUNFLGtCQUFBLENBR0YsNEJBQ0Usd0JBQUEsQ0FJSixzQkFHRSxrQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFBQSxDQUdBLGFBQUEsQ0FEQSxPQUFBLENBRUEsVUFBQSxDQUdGLHVCQUdFLGFBQUEsQ0FGQSxjQUFBLENBQ0EsYUFDQSxDQUdGLHdCQUNFLHdCQUFBLENBR0Esa0JBQUEsQ0FGQSxVQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUdBLG1CQUFBLENBTkEsZ0JBQUEsQ0FLQSx3QkFBQSxDQUVBLGtCQUFBLENBR0Ysd0JBR0UsWUFBQSxDQUZBLE1BQUEsQ0FHQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxXQUdBLENBR0YscUJBRUUsc0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGNBQUEsQ0FHRixzQkFHRSxZQUFBLENBRkEsTUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUhBLFdBR0EsQ0FHRix3QkFHRSxVQUFBLENBRUEsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUlBLGVBQUEsQ0FGQSxRQUVBLENBR0YsMkJBU0Usb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FUQSxVQUFBLENBTUEsbUJBQUEsQ0FKQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsUUFBQSxDQUdBLGVBQUEsQ0FDQSxlQUFBLENBS0Esc0JBQUEsQ0FDQSxxQkFBQSxDQUdGLHdCQUVFLGtCQUFBLENBREEsWUFBQSxDQUdBLGNBQUEsQ0FEQSxPQUNBLENBR0YsY0FDRSx3QkFBQSxDQU9BLHdCQUFBLENBSkEsaUJBQUEsQ0FGQSxVQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUhBLGdCQUtBLENBR0YsdUJBR0Usb0JBQUEsQ0FFQSxLQUFBLENBREEsc0JBQUEsQ0FHQSxlQUFBLENBR0YsMENBVEUsWUFBQSxDQUNBLHFCQUFBLENBSUEsYUFXQSxDQVBGLG1CQUdFLHNCQUFBLENBQ0EsT0FBQSxDQUdBLGVBQUEsQ0FGQSxlQUVBLENBR0YsdUJBRUUsVUFBQSxDQUNBLDRCQUFBLENBRkEsY0FBQSxDQUdBLGVBQUEsQ0FHRix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FJQSxnQkFBQSxDQURBLFFBQUEsQ0FEQSx3QkFBQSxDQUdBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwyQkFDRSx3QkFBQSxDQUdGLDRCQUNFLHdCQUFBLENBSUoseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLHdCQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBSUEsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLFlBQUEsQ0FFQSwwREFBQSxDQUVBLDZCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsK0JBQ0Usd0JBQUEsQ0FFQSxpQkFBQSxDQURBLFVBQ0EsQ0FHRixnQ0FDRSx3QkFBQSIsImZpbGUiOiJWaWV3QWxsRG9jdW1lbnRzUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  viewAllPage_e114a41f: "viewAllPage_e114a41f",
+  header_e114a41f: "header_e114a41f",
+  backButton_e114a41f: "backButton_e114a41f",
+  content_e114a41f: "content_e114a41f",
+  loading_e114a41f: "loading_e114a41f",
+  noDocuments_e114a41f: "noDocuments_e114a41f",
+  documentsList_e114a41f: "documentsList_e114a41f",
+  documentRow_e114a41f: "documentRow_e114a41f",
+  leftSection_e114a41f: "leftSection_e114a41f",
+  fileTypeIcon_e114a41f: "fileTypeIcon_e114a41f",
+  fileTypeLabel_e114a41f: "fileTypeLabel_e114a41f",
+  middleSection_e114a41f: "middleSection_e114a41f",
+  contentRow_e114a41f: "contentRow_e114a41f",
+  textContent_e114a41f: "textContent_e114a41f",
+  documentTitle_e114a41f: "documentTitle_e114a41f",
+  documentAbstract_e114a41f: "documentAbstract_e114a41f",
+  tagsContainer_e114a41f: "tagsContainer_e114a41f",
+  tag_e114a41f: "tag_e114a41f",
+  rightSection_e114a41f: "rightSection_e114a41f",
+  metadata_e114a41f: "metadata_e114a41f",
+  metadataItem_e114a41f: "metadataItem_e114a41f",
+  actionButtons_e114a41f: "actionButtons_e114a41f",
+  viewButton_e114a41f: "viewButton_e114a41f",
+  downloadButton_e114a41f: "downloadButton_e114a41f"
 });
 
 
@@ -755,19 +862,21 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
+<<<<<<< HEAD
 _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".whosWhoPage_e154758d{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_e154758d{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.buFilters_e154758d{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-bottom:20px}.buFilterButton_e154758d{background-color:#90caf9;border:none;border-radius:4px;color:#fff;cursor:pointer;font-family:Inter,sans-serif;font-size:16px;font-weight:500;min-width:80px;padding:12px 24px;transition:background-color .3s,transform .2s}.buFilterButton_e154758d:hover{background-color:#64b5f6;transform:translateY(-2px)}.buFilterButton_e154758d:active{transform:translateY(0)}.buFilterButton_e154758d.active_e154758d{background-color:#1976d2;font-weight:600}.mainContentBlock_e154758d{align-items:center;background-color:#1976d2;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;margin-bottom:20px;min-height:200px;padding:60px 40px}.contentText_e154758d{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;letter-spacing:.5px;margin:0;text-align:center}.carouselIndicators_e154758d{display:flex;gap:12px;justify-content:center;margin-top:20px}.dot_e154758d{background-color:#90caf9;border-radius:50%;cursor:pointer;height:12px;transition:transform .3s,background-color .3s;width:12px}.dot_e154758d:hover{background-color:#64b5f6;transform:scale(1.2)}.dot_e154758d.active_e154758d{background-color:#1976d2;height:14px;width:14px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvV2hvc1dob1BhZ2UvV2hvc1dob1BhZ2UubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBT0Usa0JBQUEsQ0FMQSx3QkFBQSxDQUVBLHFCQUFBLENBRUEsWUFBQSxDQUdBLDRCQUFBLENBSkEsWUFBQSxDQUdBLHNCQUFBLENBTEEsaUJBQUEsQ0FGQSxVQVFBLENBR0YsMkJBSUUscUJBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxVQUNBLENBR0Ysb0JBQ0UsWUFBQSxDQUlBLGNBQUEsQ0FIQSxRQUFBLENBRUEsc0JBQUEsQ0FEQSxrQkFFQSxDQUdGLHlCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUtBLGlCQUFBLENBTkEsVUFBQSxDQU9BLGNBQUEsQ0FGQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsY0FBQSxDQVBBLGlCQUFBLENBTUEsNkNBQ0EsQ0FFQSwrQkFDRSx3QkFBQSxDQUNBLDBCQUFBLENBR0YsZ0NBQ0UsdUJBQUEsQ0FHRix5Q0FDRSx3QkFBQSxDQUNBLGVBQUEsQ0FJSiwyQkFNRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEsaUJBQUEsQ0FNQSxxQkFBQSxDQUpBLFlBQUEsQ0FFQSxzQkFBQSxDQUhBLGtCQUFBLENBSUEsZ0JBQUEsQ0FOQSxpQkFPQSxDQUdGLHNCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSUEsbUJBQUEsQ0FGQSxRQUFBLENBQ0EsaUJBQ0EsQ0FHRiw2QkFDRSxZQUFBLENBRUEsUUFBQSxDQURBLHNCQUFBLENBRUEsZUFBQSxDQUdGLGNBSUUsd0JBQUEsQ0FEQSxpQkFBQSxDQUVBLGNBQUEsQ0FIQSxXQUFBLENBSUEsNkNBQUEsQ0FMQSxVQUtBLENBRUEsb0JBRUUsd0JBQUEsQ0FEQSxvQkFDQSxDQUdGLDhCQUNFLHdCQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EiLCJmaWxlIjoiV2hvc1dob1BhZ2UubW9kdWxlLmNzcyJ9 */", true);
+=======
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".whosWhoPage_cbde8418{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_cbde8418{box-sizing:border-box;margin:0 auto;max-width:1400px;width:100%}.buFilters_cbde8418{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-bottom:20px}.buFilterButton_cbde8418{background-color:#90caf9;border:none;border-radius:4px;color:#fff;cursor:pointer;font-family:Inter,sans-serif;font-size:16px;font-weight:500;min-width:80px;padding:12px 24px;transition:background-color .3s,transform .2s}.buFilterButton_cbde8418:hover{background-color:#64b5f6;transform:translateY(-2px)}.buFilterButton_cbde8418:active{transform:translateY(0)}.buFilterButton_cbde8418.active_cbde8418{background-color:#1976d2;font-weight:600}.mainContentBlock_cbde8418{align-items:center;background-color:#1976d2;border-radius:6px;box-sizing:border-box;display:flex;justify-content:center;margin-bottom:20px;min-height:200px;padding:60px 40px}.contentText_cbde8418{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:500;letter-spacing:.5px;margin:0;text-align:center}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9XaG9zV2hvUGFnZS9XaG9zV2hvUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFJRSxxQkFBQSxDQUZBLGFBQUEsQ0FEQSxnQkFBQSxDQUVBLFVBQ0EsQ0FHRixvQkFDRSxZQUFBLENBSUEsY0FBQSxDQUhBLFFBQUEsQ0FFQSxzQkFBQSxDQURBLGtCQUVBLENBR0YseUJBQ0Usd0JBQUEsQ0FFQSxXQUFBLENBS0EsaUJBQUEsQ0FOQSxVQUFBLENBT0EsY0FBQSxDQUZBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FLQSxjQUFBLENBUEEsaUJBQUEsQ0FNQSw2Q0FDQSxDQUVBLCtCQUNFLHdCQUFBLENBQ0EsMEJBQUEsQ0FHRixnQ0FDRSx1QkFBQSxDQUdGLHlDQUNFLHdCQUFBLENBQ0EsZUFBQSxDQUlKLDJCQU1FLGtCQUFBLENBTEEsd0JBQUEsQ0FFQSxpQkFBQSxDQU1BLHFCQUFBLENBSkEsWUFBQSxDQUVBLHNCQUFBLENBSEEsa0JBQUEsQ0FJQSxnQkFBQSxDQU5BLGlCQU9BLENBR0Ysc0JBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FJQSxtQkFBQSxDQUZBLFFBQUEsQ0FDQSxpQkFDQSIsImZpbGUiOiJXaG9zV2hvUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+>>>>>>> origin/master
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  whosWhoPage_e154758d: "whosWhoPage_e154758d",
-  contentContainer_e154758d: "contentContainer_e154758d",
-  buFilters_e154758d: "buFilters_e154758d",
-  buFilterButton_e154758d: "buFilterButton_e154758d",
-  active_e154758d: "active_e154758d",
-  mainContentBlock_e154758d: "mainContentBlock_e154758d",
-  contentText_e154758d: "contentText_e154758d",
-  carouselIndicators_e154758d: "carouselIndicators_e154758d",
-  dot_e154758d: "dot_e154758d"
+  whosWhoPage_cbde8418: "whosWhoPage_cbde8418",
+  contentContainer_cbde8418: "contentContainer_cbde8418",
+  buFilters_cbde8418: "buFilters_cbde8418",
+  buFilterButton_cbde8418: "buFilterButton_cbde8418",
+  active_cbde8418: "active_cbde8418",
+  mainContentBlock_cbde8418: "mainContentBlock_cbde8418",
+  contentText_cbde8418: "contentText_cbde8418"
 });
 
 
@@ -840,11 +949,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./BUContentArea.module.css */ 48048);
 const styles = {
     contentArea: 'contentArea_bb56a150',
     contentContainer: 'contentContainer_bb56a150',
     contentText: 'contentText_bb56a150'
+=======
+__webpack_require__(/*! ./BUContentArea.module.css */ 8048);
+var styles = {
+    contentArea: 'contentArea_8084b345',
+    contentContainer: 'contentContainer_8084b345',
+    contentText: 'contentText_8084b345'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -866,10 +983,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BUHeader_BUHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../BUHeader/BUHeader */ 55042);
 /* harmony import */ var _BUNavigation_BUNavigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../BUNavigation/BUNavigation */ 25292);
 /* harmony import */ var _BUContentArea_BUContentArea__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../BUContentArea/BUContentArea */ 236);
+<<<<<<< HEAD
 /* harmony import */ var _BUQuestionSection_BUQuestionSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../BUQuestionSection/BUQuestionSection */ 21992);
 /* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Footer/Footer */ 82508);
 /* harmony import */ var _BUDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./BUDetailPage.module.scss */ 27108);
 
+=======
+/* harmony import */ var _BUQuestionSection_BUQuestionSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../BUQuestionSection/BUQuestionSection */ 1992);
+/* harmony import */ var _BUDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BUDetailPage.module.scss */ 7108);
+>>>>>>> origin/master
 
 
 
@@ -881,12 +1003,11 @@ const BUDetailPage = (props) => {
     const handleNavClick = (page) => {
         setActivePage(page);
     };
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].buDetailPage },
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].buDetailPage },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUHeader_BUHeader__WEBPACK_IMPORTED_MODULE_1__.BUHeader, { buName: props.buName, onBack: props.onBack }),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUNavigation_BUNavigation__WEBPACK_IMPORTED_MODULE_2__.BUNavigation, { activePage: activePage, onNavClick: handleNavClick }),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUContentArea_BUContentArea__WEBPACK_IMPORTED_MODULE_3__.BUContentArea, { activePage: activePage, context: props.context }),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUQuestionSection_BUQuestionSection__WEBPACK_IMPORTED_MODULE_4__.BUQuestionSection, null),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__.Footer, null)));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUQuestionSection_BUQuestionSection__WEBPACK_IMPORTED_MODULE_4__.BUQuestionSection, null)));
 };
 
 
@@ -940,7 +1061,7 @@ const BUHeader = (props) => {
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z", fill: "white" }))),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buName }, props.buName),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "About the business unit, the services they provide...etc"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Add a file")),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Upload File")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buHead }, "BU Head"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer },
@@ -1567,6 +1688,7 @@ const styles = {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 97684:
 /*!****************************************************************************!*\
   !*** ./lib/webparts/migration/components/FilterDropdown/FilterDropdown.js ***!
@@ -2270,6 +2392,9 @@ const styles = {
 /***/ }),
 
 /***/ 22300:
+=======
+/***/ 2300:
+>>>>>>> origin/master
 /*!************************************************************!*\
   !*** ./lib/webparts/migration/components/Header/Header.js ***!
   \************************************************************/
@@ -2331,8 +2456,13 @@ const Header = (props) => {
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].companyName }, "Indegene"),
+<<<<<<< HEAD
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: () => setShowUploader(true) }, "Add a file")),
+=======
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "Trusted partner of healthcare organizations."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Upload File")),
+>>>>>>> origin/master
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: searchContainerRef, className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer, onClick: () => setIsOpen(true) },
@@ -2360,6 +2490,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./Header.module.css */ 54304);
 const styles = {
     header: 'header_7a58796d',
@@ -2377,6 +2508,21 @@ const styles = {
     fadeDown: 'fadeDown_7a58796d',
     dropdownInner: 'dropdownInner_7a58796d',
     dropdownClose: 'dropdownClose_7a58796d'
+=======
+__webpack_require__(/*! ./Header.module.css */ 4304);
+var styles = {
+    header: 'header_f75697fe',
+    headerContent: 'headerContent_f75697fe',
+    leftSection: 'leftSection_f75697fe',
+    companyName: 'companyName_f75697fe',
+    description: 'description_f75697fe',
+    addFileButton: 'addFileButton_f75697fe',
+    rightSection: 'rightSection_f75697fe',
+    leadership: 'leadership_f75697fe',
+    searchContainer: 'searchContainer_f75697fe',
+    searchIcon: 'searchIcon_f75697fe',
+    searchInput: 'searchInput_f75697fe'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2522,6 +2668,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 85959);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ 22300);
 /* harmony import */ var _Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation/Navigation */ 73154);
 /* harmony import */ var _QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionSection/QuestionSection */ 95332);
@@ -2531,6 +2678,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Migration_module_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Migration.module.scss */ 94199);
 /* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../services/AzureOpenAIService */ 81651);
 /* harmony import */ var _services_SearchConfig__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../services/SearchConfig */ 37837);
+=======
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ 2300);
+/* harmony import */ var _Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation/Navigation */ 3154);
+/* harmony import */ var _QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionSection/QuestionSection */ 5332);
+/* harmony import */ var _ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContentArea/ContentArea */ 1384);
+/* harmony import */ var _BUDetailPage_BUDetailPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BUDetailPage/BUDetailPage */ 7100);
+/* harmony import */ var _Migration_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Migration.module.scss */ 4199);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+>>>>>>> origin/master
 
 
 
@@ -2538,6 +2708,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+<<<<<<< HEAD
 
 // 🆕 Import AzureOpenAIService + config
 
@@ -2547,6 +2718,14 @@ class Migration extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         super(props);
         this.handleNavClick = (page) => {
             this.setState({ activePage: page });
+=======
+var Migration = /** @class */ (function (_super) {
+    __extends(Migration, _super);
+    function Migration(props) {
+        var _this = _super.call(this, props) || this;
+        _this.handleNavClick = function (page) {
+            _this.setState({ activePage: page });
+>>>>>>> origin/master
         };
         this.handleBUClick = (buName) => {
             this.setState({ selectedBU: buName, activePage: 'about' });
@@ -2577,18 +2756,27 @@ class Migration extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     render() {
         // If a BU is selected, show BU detail page
         if (this.state.selectedBU) {
-            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].migration },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUDetailPage_BUDetailPage__WEBPACK_IMPORTED_MODULE_6__.BUDetailPage, { buName: this.state.selectedBU, context: this.props.context, onBack: this.handleBackToMain })));
+            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].migration },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_BUDetailPage_BUDetailPage__WEBPACK_IMPORTED_MODULE_5__.BUDetailPage, { buName: this.state.selectedBU, context: this.props.context, onBack: this.handleBackToMain })));
         }
         // Otherwise show main page
-        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_7__["default"].migration },
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Migration_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].migration },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.Header, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navigation_Navigation__WEBPACK_IMPORTED_MODULE_2__.Navigation, { activePage: this.state.activePage, onNavClick: this.handleNavClick }),
+<<<<<<< HEAD
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_5__.ContentArea, { activePage: this.state.activePage, context: this.props.context, onBUClick: this.handleBUClick }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__.QuestionSection, { context: this.props.context }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__.Footer, null)));
     }
 }
+=======
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ContentArea_ContentArea__WEBPACK_IMPORTED_MODULE_4__.ContentArea, { activePage: this.state.activePage, context: this.props.context, onBUClick: this.handleBUClick }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuestionSection_QuestionSection__WEBPACK_IMPORTED_MODULE_3__.QuestionSection, { context: this.props.context })));
+    };
+    return Migration;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Migration);
+>>>>>>> origin/master
 
 
 /***/ }),
@@ -2657,12 +2845,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./Navigation.module.css */ 74538);
 const styles = {
     navigation: 'navigation_e0b26b5e',
     navContainer: 'navContainer_e0b26b5e',
     navItem: 'navItem_e0b26b5e',
     active: 'active_e0b26b5e'
+=======
+__webpack_require__(/*! ./Navigation.module.css */ 4538);
+var styles = {
+    navigation: 'navigation_72dd57cd',
+    navContainer: 'navContainer_72dd57cd',
+    navItem: 'navItem_72dd57cd',
+    active: 'active_72dd57cd'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2683,6 +2880,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 91909);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD
 /* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 62434);
 /* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 33356);
 
@@ -2727,6 +2925,19 @@ const QUICK_LINKS_MAP = {
         url: "https://www.indegene.com/what-we-do/next-platforms"
     },
     privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" }
+=======
+/* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 2434);
+/* harmony import */ var _pages_ViewAllDocumentsPage_ViewAllDocumentsPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage */ 4994);
+/* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+>>>>>>> origin/master
 };
 /* helper: return a matching quick link for the user query (or null) */
 const getLinkForQuery = (query) => {
@@ -2752,6 +2963,7 @@ const getLinkForQuery = (query) => {
     // no link found
     return null;
 };
+<<<<<<< HEAD
 /* =========================================================
    CONTEXT KNOWLEDGE MAP
    (this is the full map used by the chatbot to answer queries)
@@ -3564,8 +3776,23 @@ const QuestionSection = (props) => {
     const [selectedDocumentId, setSelectedDocumentId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         if (props.context)
+=======
+
+
+
+
+
+var QuestionSection = function (props) {
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), selectedDocumentId = _c[0], setSelectedDocumentId = _c[1];
+    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showViewAll = _d[0], setShowViewAll = _d[1];
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (props.context) {
+>>>>>>> origin/master
             fetchLatestDocuments();
     }, [props.context]);
+<<<<<<< HEAD
     /* ======================================================
        Fetch Last 3 Documents
     ====================================================== */
@@ -3727,6 +3954,275 @@ const QuestionSection = (props) => {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sendButton, onClick: handleSend, disabled: isLoading || !input.trim() }, isLoading ? "Sending..." : "Send")))),
         selectedDocumentId && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].detailModal },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__.DocumentDetailPage, { context: props.context, documentId: selectedDocumentId, onClose: handleCloseDetail })))));
+=======
+    var fetchLatestDocuments = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, apiUrl, response, errorText, data, items, formattedItems, error_1;
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    if (!props.context) {
+                        setLoading(false);
+                        return [2 /*return*/];
+                    }
+                    _b.label = 1;
+                case 1:
+                    _b.trys.push([1, 6, 7, 8]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    console.log('=== FETCHING DOCUMENTS FROM DOCUMENT LIBRARY ===');
+                    console.log('Current Site URL (auto-detected):', webUrl);
+                    console.log('Target Library:', libraryName);
+                    console.log('Expected Library URL:', "".concat(webUrl, "/KMArtifacts"));
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=5");
+                    console.log('Full API Endpoint:', apiUrl);
+                    console.log('Note: This will work if KMArtifacts library exists on the current site');
+                    return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _b.sent();
+                    console.log('Response status:', response.status);
+                    console.log('Response OK:', response.ok);
+                    if (!!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.text()];
+                case 3:
+                    errorText = _b.sent();
+                    console.error('Error response:', errorText);
+                    throw new Error("Failed to fetch documents: ".concat(response.status, " - ").concat(errorText));
+                case 4: return [4 /*yield*/, response.json()];
+                case 5:
+                    data = _b.sent();
+                    console.log('Response data:', data);
+                    console.log('Items count:', ((_a = data.value) === null || _a === void 0 ? void 0 : _a.length) || 0);
+                    items = data.value || [];
+                    if (items.length > 0) {
+                        console.log('First item sample:', JSON.stringify(items[0], null, 2));
+                    }
+                    formattedItems = items.map(function (item, index) {
+                        var _a, _b, _c;
+                        console.log("Processing item ".concat(index + 1, ":"), item);
+                        console.log("All item keys:", Object.keys(item));
+                        // Get file name from Name column - FileLeafRef is the actual filename in document libraries
+                        // This is what appears in the "Name" column in SharePoint
+                        var fileName = item.FileLeafRef || ((_a = item.File) === null || _a === void 0 ? void 0 : _a.Name) || '';
+                        // Extract file extension from the Name column for the file format display
+                        var fileExtension = ((_b = fileName.split('.').pop()) === null || _b === void 0 ? void 0 : _b.toUpperCase()) || '';
+                        // Use Name column (FileLeafRef) as the tile title
+                        // This matches what the user sees in the "Name" column
+                        var displayName = fileName;
+                        if (!displayName || displayName === '') {
+                            displayName = item.Title || "Document ".concat(item.Id);
+                        }
+                        // Get abstract from Abstract column
+                        var abstract = item.Abstract || '';
+                        if (abstract === '-' || abstract === '') {
+                            abstract = '';
+                        }
+                        // Construct proper server relative URL
+                        // FileRef contains the full server-relative path like: /sites/MigrationTest2/KMArtifacts/filename.pdf
+                        // This is the correct field to use for document libraries
+                        var serverRelativeUrl = item.FileRef || '';
+                        // Ensure it starts with /
+                        if (serverRelativeUrl && !serverRelativeUrl.startsWith('/')) {
+                            serverRelativeUrl = "/".concat(serverRelativeUrl);
+                        }
+                        // If we still don't have a URL, construct it from the library name and filename
+                        if (!serverRelativeUrl && fileName) {
+                            var siteRelativePath = ((_c = props.context) === null || _c === void 0 ? void 0 : _c.pageContext.web.serverRelativeUrl) || '';
+                            serverRelativeUrl = "".concat(siteRelativePath, "/KMArtifacts/").concat(fileName);
+                        }
+                        var formatted = {
+                            id: item.Id,
+                            name: displayName,
+                            abstract: abstract,
+                            fileType: fileExtension,
+                            serverRelativeUrl: serverRelativeUrl,
+                            fileRef: item.FileRef || serverRelativeUrl
+                        };
+                        console.log("Formatted item ".concat(index + 1, ":"), formatted);
+                        return formatted;
+                    });
+                    console.log('Formatted items:', formattedItems);
+                    setDocuments(formattedItems);
+                    return [3 /*break*/, 8];
+                case 6:
+                    error_1 = _b.sent();
+                    console.error('=== ERROR FETCHING DOCUMENTS ===');
+                    console.error('Error type:', typeof error_1);
+                    console.error('Error details:', error_1);
+                    console.error('Error message:', error_1 instanceof Error ? error_1.message : String(error_1));
+                    console.error('Error stack:', error_1 instanceof Error ? error_1.stack : 'N/A');
+                    // Set empty array on error so we still show empty tiles
+                    setDocuments([]);
+                    return [3 /*break*/, 8];
+                case 7:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 8: return [2 /*return*/];
+            }
+        });
+    }); };
+    var getFileTypeIcon = function (fileType) {
+        var type = fileType.toLowerCase();
+        if (type === 'pdf') {
+            return '📄';
+        }
+        else if (type === 'pptx' || type === 'ppt') {
+            return '📊';
+        }
+        else if (type === 'docx' || type === 'doc') {
+            return '📝';
+        }
+        else if (type === 'xlsx' || type === 'xls') {
+            return '📈';
+        }
+        return '📎';
+    };
+    var handleView = function (item) {
+        if (props.context && item.id) {
+            // Open document detail page in a modal overlay (full-screen)
+            setSelectedDocumentId(item.id);
+            // Mark that we're coming from home (tiles)
+            sessionStorage.setItem("documentBackTo_".concat(item.id), 'home');
+        }
+    };
+    var handleCloseDetail = function () {
+        setSelectedDocumentId(null);
+    };
+    var handleDownload = function (item) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_2, fileUrl;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!(props.context && item.serverRelativeUrl)) return [3 /*break*/, 7];
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    serverRelativeUrl = item.serverRelativeUrl;
+                    // Ensure proper server relative URL format
+                    if (!serverRelativeUrl.startsWith('/')) {
+                        serverRelativeUrl = "/".concat(serverRelativeUrl);
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(serverRelativeUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.blob()];
+                case 3:
+                    blob = _a.sent();
+                    url = window.URL.createObjectURL(blob);
+                    link = document.createElement('a');
+                    link.href = url;
+                    link.download = item.name;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                    return [3 /*break*/, 5];
+                case 4:
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    _a.label = 5;
+                case 5: return [3 /*break*/, 7];
+                case 6:
+                    error_2 = _a.sent();
+                    console.error('Download error:', error_2);
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    // Always show 5 tiles + 1 "View All" button, fill with empty placeholders if needed
+    var displayTiles = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(function () {
+        var tiles = [];
+        for (var i = 0; i < 5; i++) {
+            tiles.push(documents[i] || null);
+        }
+        return tiles;
+    }, [documents]);
+    var handleViewAll = function () {
+        setShowViewAll(true);
+    };
+    var handleCloseViewAll = function () {
+        setShowViewAll(false);
+    };
+    var handleViewDocumentFromList = function (documentId, tags) {
+        setShowViewAll(false);
+        setSelectedDocumentId(documentId);
+        // Store tags temporarily to pass to DocumentDetailPage
+        if (tags) {
+            sessionStorage.setItem("documentTags_".concat(documentId), JSON.stringify(tags));
+        }
+        // Mark that we're coming from library (ViewAllDocumentsPage)
+        sessionStorage.setItem("documentBackTo_".concat(documentId), 'library');
+    };
+    var handleBackToLibrary = function () {
+        setSelectedDocumentId(null);
+        setShowViewAll(true);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].questionSection },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].sectionTitle }, "Recently Published"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tilesContainer }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].loading }, "Loading...")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                displayTiles.map(function (doc, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc ? doc.id : "empty-".concat(index), className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tile }, doc ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileType }, doc.fileType || 'FILE')),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileTitle }, doc.name),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileAbstract }, doc.abstract || 'No abstract available'),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewButton, onClick: function () { return handleView(doc); } },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            "View"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileHeader },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileTypeIcon }, "\uD83D\uDCCE"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].fileType }, "---")),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileTitle }, "No document"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileAbstract }, "No document available"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].tileActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewButton, disabled: true },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            "View"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].downloadButton, disabled: true, "aria-label": "Download" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))); }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllTile, onClick: handleViewAll },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllText }, "View All")))))),
+        showViewAll && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].viewAllModal },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_ViewAllDocumentsPage_ViewAllDocumentsPage__WEBPACK_IMPORTED_MODULE_3__.ViewAllDocumentsPage, { context: props.context, onClose: handleCloseViewAll, onViewDocument: handleViewDocumentFromList }))),
+        selectedDocumentId && props.context && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].detailModal },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__.DocumentDetailPage, { context: props.context, documentId: selectedDocumentId, onClose: handleCloseDetail, tags: (function () {
+                    // Retrieve tags from sessionStorage if available
+                    var storedTags = sessionStorage.getItem("documentTags_".concat(selectedDocumentId));
+                    if (storedTags) {
+                        try {
+                            return JSON.parse(storedTags);
+                        }
+                        catch (e) {
+                            return undefined;
+                        }
+                    }
+                    return undefined;
+                })(), backTo: (function () {
+                    // Retrieve backTo from sessionStorage if available
+                    var storedBackTo = sessionStorage.getItem("documentBackTo_".concat(selectedDocumentId));
+                    return storedBackTo === 'library' ? 'library' : 'home';
+                })(), onBackToLibrary: handleBackToLibrary })))));
+>>>>>>> origin/master
 };
 
 
@@ -3742,6 +4238,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./QuestionSection.module.css */ 22408);
 const styles = {
     questionSection: 'questionSection_3654171e',
@@ -3779,6 +4276,28 @@ const styles = {
     detailModal: 'detailModal_3654171e',
     chatLauncher: 'chatLauncher_3654171e',
     botLink: 'botLink_3654171e'
+=======
+__webpack_require__(/*! ./QuestionSection.module.css */ 2408);
+var styles = {
+    questionSection: 'questionSection_0c085da0',
+    sectionTitle: 'sectionTitle_0c085da0',
+    tilesContainer: 'tilesContainer_0c085da0',
+    tile: 'tile_0c085da0',
+    tileHeader: 'tileHeader_0c085da0',
+    fileTypeIcon: 'fileTypeIcon_0c085da0',
+    fileType: 'fileType_0c085da0',
+    tileTitle: 'tileTitle_0c085da0',
+    tileAbstract: 'tileAbstract_0c085da0',
+    tileActions: 'tileActions_0c085da0',
+    viewButton: 'viewButton_0c085da0',
+    downloadButton: 'downloadButton_0c085da0',
+    loading: 'loading_0c085da0',
+    noDocuments: 'noDocuments_0c085da0',
+    viewAllTile: 'viewAllTile_0c085da0',
+    viewAllText: 'viewAllText_0c085da0',
+    viewAllModal: 'viewAllModal_0c085da0',
+    detailModal: 'detailModal_0c085da0'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3803,11 +4322,15 @@ __webpack_require__.r(__webpack_exports__);
 const AboutPage = (props) => {
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+<<<<<<< HEAD
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "A detailed writeup on BU, their service offerings, the clients etc."),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: `${_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot} ${_AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active}` }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot })))));
+=======
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies.  Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency.."))));
+>>>>>>> origin/master
 };
 
 
@@ -3823,6 +4346,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./AboutPage.module.css */ 26122);
 const styles = {
     aboutPage: 'aboutPage_afa5522c',
@@ -3831,6 +4355,13 @@ const styles = {
     carouselIndicators: 'carouselIndicators_afa5522c',
     dot: 'dot_afa5522c',
     active: 'active_afa5522c'
+=======
+__webpack_require__(/*! ./AboutPage.module.css */ 6122);
+var styles = {
+    aboutPage: 'aboutPage_3c557e40',
+    contentContainer: 'contentContainer_3c557e40',
+    contentText: 'contentText_3c557e40'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3861,11 +4392,15 @@ const BUsPage = (props) => {
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].busPage },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+<<<<<<< HEAD
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buttonsGrid }, buButtons.map((bu, index) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: index, className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buButton, onClick: () => handleBUClick(bu) }, bu)))),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: `${_BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot} ${_BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active}` }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot })))));
+=======
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buttonsGrid }, buButtons.map(function (bu, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: index, className: _BUsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buButton, onClick: function () { return handleBUClick(bu); } }, bu)); })))));
+>>>>>>> origin/master
 };
 
 
@@ -3881,6 +4416,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./BUsPage.module.css */ 76130);
 const styles = {
     busPage: 'busPage_fcea57b1',
@@ -3890,6 +4426,14 @@ const styles = {
     carouselIndicators: 'carouselIndicators_fcea57b1',
     dot: 'dot_fcea57b1',
     active: 'active_fcea57b1'
+=======
+__webpack_require__(/*! ./BUsPage.module.css */ 6130);
+var styles = {
+    busPage: 'busPage_4c1f6e41',
+    contentContainer: 'contentContainer_4c1f6e41',
+    buttonsGrid: 'buttonsGrid_4c1f6e41',
+    buButton: 'buButton_4c1f6e41'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3911,6 +4455,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClientTestimonialsPage.module.scss */ 36024);
 
 
+<<<<<<< HEAD
 const ClientTestimonialsPage = (props) => {
     const testimonials = [1, 2, 3, 4, 5];
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].testimonialsPage },
@@ -3921,6 +4466,14 @@ const ClientTestimonialsPage = (props) => {
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: `${_ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot} ${_ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active}` }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot })))));
+=======
+var ClientTestimonialsPage = function (props) {
+    var testimonials = [1, 2, 3];
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].testimonialsPage },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].testimonialsGrid }, testimonials.map(function (index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: index, className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].testimonialCard },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _ClientTestimonialsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].testimonialText }, "Client Feedback or testimonials."))); })))));
+>>>>>>> origin/master
 };
 
 
@@ -3936,6 +4489,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./ClientTestimonialsPage.module.css */ 62936);
 const styles = {
     testimonialsPage: 'testimonialsPage_6a9a225d',
@@ -3946,6 +4500,15 @@ const styles = {
     carouselIndicators: 'carouselIndicators_6a9a225d',
     dot: 'dot_6a9a225d',
     active: 'active_6a9a225d'
+=======
+__webpack_require__(/*! ./ClientTestimonialsPage.module.css */ 2936);
+var styles = {
+    testimonialsPage: 'testimonialsPage_c06036de',
+    contentContainer: 'contentContainer_c06036de',
+    testimonialsGrid: 'testimonialsGrid_c06036de',
+    testimonialCard: 'testimonialCard_c06036de',
+    testimonialText: 'testimonialText_c06036de'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -4048,6 +4611,7 @@ const DocumentDetailPage = (props) => {
     }, [props.documentId]);
     const fetchDocumentDetails = async () => {
         var _a, _b, _c, _d;
+<<<<<<< HEAD
         if (!props.context) {
             setLoading(false);
             return;
@@ -4149,12 +4713,59 @@ const DocumentDetailPage = (props) => {
                             const pdfBlob = new Blob([blob], { type: 'application/pdf' });
                             const blobUrl = window.URL.createObjectURL(pdfBlob);
                             setPreviewUrl(blobUrl);
+=======
+        return __generator(this, function (_e) {
+            switch (_e.label) {
+                case 0:
+                    if (!props.context) {
+                        setLoading(false);
+                        return [2 /*return*/];
+                    }
+                    _e.label = 1;
+                case 1:
+                    _e.trys.push([1, 29, 30, 31]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File");
+                    return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _e.sent();
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch document: ".concat(response.status));
+                    }
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    item = _e.sent();
+                    fileName = item.FileLeafRef || item.TitleName || item.Title || '';
+                    fileExtension = ((_a = fileName.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toUpperCase()) || '';
+                    displayName = fileName || item.Title || "Document ".concat(item.Id);
+                    abstract = item.Abstract || '';
+                    author = ((_b = item.PerformedBy) === null || _b === void 0 ? void 0 : _b.Title) || ((_c = item.PerformedBy) === null || _c === void 0 ? void 0 : _c.Name) || item.PerformedBy || 'Unknown';
+                    formattedDate = '';
+                    if (item.TimeStamp) {
+                        date = new Date(item.TimeStamp);
+                        formattedDate = date.toLocaleDateString('en-GB', {
+                            day: '2-digit',
+                            month: '2-digit',
+                            year: 'numeric'
+                        });
+                    }
+                    fileSize = '';
+                    if (item.File && item.File.Length) {
+                        bytes = item.File.Length;
+                        if (bytes < 1024) {
+                            fileSize = "".concat(bytes, " B");
+                        }
+                        else if (bytes < 1024 * 1024) {
+                            fileSize = "".concat((bytes / 1024).toFixed(1), " KB");
+>>>>>>> origin/master
                         }
                         else {
                             // Fallback to direct URL
                             setPreviewUrl(fullFileUrl);
                         }
                     }
+<<<<<<< HEAD
                     catch (error) {
                         console.error('Error fetching PDF for preview:', error);
                         // Fallback to direct URL
@@ -4188,6 +4799,127 @@ const DocumentDetailPage = (props) => {
                     // For other files, try direct URL
                     setPreviewUrl(fullFileUrl);
                 }
+=======
+                    serverRelativeUrl = item.FileRef || ((_d = item.File) === null || _d === void 0 ? void 0 : _d.ServerRelativeUrl) || '';
+                    documentDetail = {
+                        id: item.Id,
+                        name: displayName,
+                        abstract: abstract,
+                        fileType: fileExtension,
+                        author: author,
+                        date: formattedDate,
+                        fileSize: fileSize,
+                        serverRelativeUrl: serverRelativeUrl,
+                        fileRef: item.FileRef || serverRelativeUrl
+                    };
+                    setDocument(documentDetail);
+                    if (!(props.tags && props.tags.length > 0)) return [3 /*break*/, 4];
+                    setTags(props.tags);
+                    return [3 /*break*/, 10];
+                case 4:
+                    if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 9];
+                    _e.label = 5;
+                case 5:
+                    _e.trys.push([5, 7, , 8]);
+                    return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                case 6:
+                    generatedTags = _e.sent();
+                    setTags(generatedTags);
+                    return [3 /*break*/, 8];
+                case 7:
+                    error_1 = _e.sent();
+                    console.error('Error generating tags:', error_1);
+                    setTags([]);
+                    return [3 /*break*/, 8];
+                case 8: return [3 /*break*/, 10];
+                case 9:
+                    setTags([]);
+                    _e.label = 10;
+                case 10:
+                    if (!serverRelativeUrl) return [3 /*break*/, 28];
+                    webUrl_1 = props.context.pageContext.web.absoluteUrl;
+                    fileUrl = serverRelativeUrl;
+                    // Ensure proper server relative URL format
+                    if (!fileUrl.startsWith('/')) {
+                        fileUrl = "/".concat(fileUrl);
+                    }
+                    fullFileUrl = "".concat(webUrl_1).concat(fileUrl);
+                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 11];
+                    encodedServerUrl = encodeURIComponent(fileUrl);
+                    setPreviewUrl("".concat(webUrl_1, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
+                    return [3 /*break*/, 28];
+                case 11:
+                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 19];
+                    _e.label = 12;
+                case 12:
+                    _e.trys.push([12, 17, , 18]);
+                    downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 13:
+                    fileResponse = _e.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 15];
+                    return [4 /*yield*/, fileResponse.blob()];
+                case 14:
+                    blob = _e.sent();
+                    pdfBlob = new Blob([blob], { type: 'application/pdf' });
+                    blobUrl = window.URL.createObjectURL(pdfBlob);
+                    setPreviewUrl(blobUrl);
+                    return [3 /*break*/, 16];
+                case 15:
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    _e.label = 16;
+                case 16: return [3 /*break*/, 18];
+                case 17:
+                    error_2 = _e.sent();
+                    console.error('Error fetching PDF for preview:', error_2);
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    return [3 /*break*/, 18];
+                case 18: return [3 /*break*/, 28];
+                case 19:
+                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 27];
+                    _e.label = 20;
+                case 20:
+                    _e.trys.push([20, 25, , 26]);
+                    downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 21:
+                    fileResponse = _e.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 23];
+                    return [4 /*yield*/, fileResponse.blob()];
+                case 22:
+                    blob = _e.sent();
+                    svgBlob = new Blob([blob], { type: 'image/svg+xml' });
+                    blobUrl = window.URL.createObjectURL(svgBlob);
+                    setPreviewUrl(blobUrl);
+                    return [3 /*break*/, 24];
+                case 23:
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    _e.label = 24;
+                case 24: return [3 /*break*/, 26];
+                case 25:
+                    error_3 = _e.sent();
+                    console.error('Error fetching SVG for preview:', error_3);
+                    // Fallback to direct URL
+                    setPreviewUrl(fullFileUrl);
+                    return [3 /*break*/, 26];
+                case 26: return [3 /*break*/, 28];
+                case 27:
+                    // For other files, try direct URL
+                    setPreviewUrl(fullFileUrl);
+                    _e.label = 28;
+                case 28: return [3 /*break*/, 31];
+                case 29:
+                    error_4 = _e.sent();
+                    console.error('Error fetching document details:', error_4);
+                    return [3 /*break*/, 31];
+                case 30:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 31: return [2 /*return*/];
+>>>>>>> origin/master
             }
         }
         catch (error) {
@@ -4265,14 +4997,20 @@ const DocumentDetailPage = (props) => {
             }).catch(err => console.log('Error copying:', err));
         }
     };
+<<<<<<< HEAD
     const handleBack = () => {
         if (props.onClose) {
+=======
+    var handleBack = function () {
+        if (props.backTo === 'library' && props.onBackToLibrary) {
+            props.onBackToLibrary();
+        }
+        else if (props.onClose) {
+>>>>>>> origin/master
             props.onClose();
         }
-        else {
-            window.close();
-        }
     };
+    var backButtonText = props.backTo === 'library' ? 'Back to Library' : 'Back to Home';
     if (loading) {
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentDetailPage },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].loading }, "Loading document...")));
@@ -4286,9 +5024,15 @@ const DocumentDetailPage = (props) => {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].backButton, onClick: handleBack },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+<<<<<<< HEAD
                 "Back to Library"),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerActions },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: handleDownload },
+=======
+                backButtonText),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].headerActions },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: handleDownload },
+>>>>>>> origin/master
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
@@ -4488,11 +5232,15 @@ const ServiceLinesPage = (props) => {
     const serviceLines = ['SL 1', 'SL 2', 'SL 3', 'SL 4', 'SL 5', 'SL 6', 'SL 7'];
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].serviceLinesPage },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+<<<<<<< HEAD
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buttonsGrid }, serviceLines.map((sl, index) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: index, className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].slButton }, sl)))),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: `${_ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot} ${_ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active}` }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot })))));
+=======
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buttonsGrid }, serviceLines.map(function (sl, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: index, className: _ServiceLinesPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].slButton }, sl)); })))));
+>>>>>>> origin/master
 };
 
 
@@ -4509,6 +5257,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 __webpack_require__(/*! ./ServiceLinesPage.module.css */ 2110);
+<<<<<<< HEAD
 const styles = {
     serviceLinesPage: 'serviceLinesPage_12ef78dc',
     contentContainer: 'contentContainer_12ef78dc',
@@ -4517,6 +5266,332 @@ const styles = {
     carouselIndicators: 'carouselIndicators_12ef78dc',
     dot: 'dot_12ef78dc',
     active: 'active_12ef78dc'
+=======
+var styles = {
+    serviceLinesPage: 'serviceLinesPage_41b599ab',
+    contentContainer: 'contentContainer_41b599ab',
+    buttonsGrid: 'buttonsGrid_41b599ab',
+    slButton: 'slButton_41b599ab'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
+/***/ 4994:
+/*!***********************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ViewAllDocumentsPage: () => (/* binding */ ViewAllDocumentsPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @microsoft/sp-http */ 1909);
+/* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ViewAllDocumentsPage.module.scss */ 9902);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+// Azure OpenAI Configuration
+var AZURE_OPENAI_CONFIG = {
+    apiKey: '2Hcf7EkLSg88ySVEjrapikrQjIFA4F4BGgshU8Gwci15RkklqgGDJQQJ99BIACYeBjFXJ3w3AAABACOGHLjU',
+    endpoint: 'https://engineeringteamopenai.openai.azure.com',
+    deploymentName: 'gpt-4o'
+};
+var ViewAllDocumentsPage = function (props) {
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (props.context) {
+            fetchAllDocuments();
+        }
+    }, [props.context]);
+    var fetchAllDocuments = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, apiUrl, response, data, items, processedDocuments, error_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context) {
+                        setLoading(false);
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, 6, 7]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File&$orderby=Created desc");
+                    return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch documents: ".concat(response.status));
+                    }
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    data = _a.sent();
+                    items = data.value || [];
+                    return [4 /*yield*/, Promise.all(items.map(function (item) { return __awaiter(void 0, void 0, void 0, function () {
+                            var fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, tags, error_2;
+                            var _a, _b, _c, _d;
+                            return __generator(this, function (_e) {
+                                switch (_e.label) {
+                                    case 0:
+                                        fileName = item.FileLeafRef || item.TitleName || item.Title || '';
+                                        fileExtension = ((_a = fileName.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toUpperCase()) || '';
+                                        displayName = fileName || item.Title || "Document ".concat(item.Id);
+                                        abstract = item.Abstract || '';
+                                        author = ((_b = item.PerformedBy) === null || _b === void 0 ? void 0 : _b.Title) || ((_c = item.PerformedBy) === null || _c === void 0 ? void 0 : _c.Name) || item.PerformedBy || 'Unknown';
+                                        formattedDate = '';
+                                        if (item.TimeStamp) {
+                                            date = new Date(item.TimeStamp);
+                                            formattedDate = date.toLocaleDateString('en-GB', {
+                                                day: '2-digit',
+                                                month: '2-digit',
+                                                year: 'numeric'
+                                            });
+                                        }
+                                        fileSize = '';
+                                        if (item.File && item.File.Length) {
+                                            bytes = item.File.Length;
+                                            if (bytes < 1024) {
+                                                fileSize = "".concat(bytes, " B");
+                                            }
+                                            else if (bytes < 1024 * 1024) {
+                                                fileSize = "".concat((bytes / 1024).toFixed(1), " KB");
+                                            }
+                                            else {
+                                                fileSize = "".concat((bytes / (1024 * 1024)).toFixed(1), " MB");
+                                            }
+                                        }
+                                        serverRelativeUrl = item.FileRef || ((_d = item.File) === null || _d === void 0 ? void 0 : _d.ServerRelativeUrl) || '';
+                                        tags = [];
+                                        if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 4];
+                                        _e.label = 1;
+                                    case 1:
+                                        _e.trys.push([1, 3, , 4]);
+                                        return [4 /*yield*/, openAIService.current.generateTags(abstract)];
+                                    case 2:
+                                        tags = _e.sent();
+                                        return [3 /*break*/, 4];
+                                    case 3:
+                                        error_2 = _e.sent();
+                                        console.error('Error generating tags:', error_2);
+                                        tags = [];
+                                        return [3 /*break*/, 4];
+                                    case 4: return [2 /*return*/, {
+                                            id: item.Id,
+                                            name: displayName,
+                                            abstract: abstract,
+                                            fileType: fileExtension,
+                                            author: author,
+                                            date: formattedDate,
+                                            fileSize: fileSize,
+                                            serverRelativeUrl: serverRelativeUrl,
+                                            fileRef: item.FileRef || serverRelativeUrl,
+                                            tags: tags
+                                        }];
+                                }
+                            });
+                        }); }))];
+                case 4:
+                    processedDocuments = _a.sent();
+                    setDocuments(processedDocuments);
+                    return [3 /*break*/, 7];
+                case 5:
+                    error_1 = _a.sent();
+                    console.error('Error fetching documents:', error_1);
+                    setDocuments([]);
+                    return [3 /*break*/, 7];
+                case 6:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    var getFileTypeIcon = function (fileType) {
+        var type = fileType.toLowerCase();
+        if (type === 'pdf') {
+            return '📄';
+        }
+        else if (type === 'pptx' || type === 'ppt') {
+            return '📊';
+        }
+        else if (type === 'docx' || type === 'doc') {
+            return '📝';
+        }
+        else if (type === 'xlsx' || type === 'xls') {
+            return '📈';
+        }
+        return '📎';
+    };
+    var handleView = function (documentId, tags) {
+        props.onViewDocument(documentId, tags);
+    };
+    var handleDownload = function (item) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_3, fileUrl;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!(props.context && item.serverRelativeUrl)) return [3 /*break*/, 7];
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    serverRelativeUrl = item.serverRelativeUrl;
+                    if (!serverRelativeUrl.startsWith('/')) {
+                        serverRelativeUrl = "/".concat(serverRelativeUrl);
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(serverRelativeUrl), "')/$value");
+                    return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.blob()];
+                case 3:
+                    blob = _a.sent();
+                    url = window.URL.createObjectURL(blob);
+                    link = document.createElement('a');
+                    link.href = url;
+                    link.download = item.name;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
+                    return [3 /*break*/, 5];
+                case 4:
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    _a.label = 5;
+                case 5: return [3 /*break*/, 7];
+                case 6:
+                    error_3 = _a.sent();
+                    console.error('Download error:', error_3);
+                    fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
+                    window.open(fileUrl, '_blank');
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewAllPage },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].backButton, onClick: props.onClose },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                "Back to Home")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].content }, loading ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].loading }, "Loading documents...")) : documents.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].noDocuments }, "No documents found")) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentsList }, documents.map(function (doc) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: doc.id, className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentRow },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].leftSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeIcon }, getFileTypeIcon(doc.fileType)),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].fileTypeLabel }, doc.fileType || 'FILE')),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].middleSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentTitle }, doc.name),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].contentRow },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].textContent },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentAbstract }, doc.abstract || 'No abstract available'),
+                        doc.tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, doc.tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadata },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.author),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.date),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadataItem }, doc.fileSize)))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].rightSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].actionButtons },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].viewButton, onClick: function () { return handleView(doc.id, doc.tags); } },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                        "View"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].downloadButton, onClick: function () { return handleDownload(doc); }, "aria-label": "Download" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))))); }))))));
+};
+
+
+/***/ }),
+
+/***/ 9902:
+/*!***********************************************************************************************!*\
+  !*** ./lib/webparts/migration/pages/ViewAllDocumentsPage/ViewAllDocumentsPage.module.scss.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./ViewAllDocumentsPage.module.css */ 1174);
+var styles = {
+    viewAllPage: 'viewAllPage_e114a41f',
+    header: 'header_e114a41f',
+    backButton: 'backButton_e114a41f',
+    content: 'content_e114a41f',
+    loading: 'loading_e114a41f',
+    noDocuments: 'noDocuments_e114a41f',
+    documentsList: 'documentsList_e114a41f',
+    documentRow: 'documentRow_e114a41f',
+    leftSection: 'leftSection_e114a41f',
+    fileTypeIcon: 'fileTypeIcon_e114a41f',
+    fileTypeLabel: 'fileTypeLabel_e114a41f',
+    middleSection: 'middleSection_e114a41f',
+    contentRow: 'contentRow_e114a41f',
+    textContent: 'textContent_e114a41f',
+    documentTitle: 'documentTitle_e114a41f',
+    documentAbstract: 'documentAbstract_e114a41f',
+    tagsContainer: 'tagsContainer_e114a41f',
+    tag: 'tag_e114a41f',
+    rightSection: 'rightSection_e114a41f',
+    metadata: 'metadata_e114a41f',
+    metadataItem: 'metadataItem_e114a41f',
+    actionButtons: 'actionButtons_e114a41f',
+    viewButton: 'viewButton_e114a41f',
+    downloadButton: 'downloadButton_e114a41f'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -4545,11 +5620,15 @@ const WhosWhoPage = (props) => {
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buFilters }, buButtons.map((bu) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { key: bu, onClick: () => setActiveBU(bu), className: `${_WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buFilterButton} ${activeBU === bu ? _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active : ''}` }, bu)))),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].mainContentBlock },
+<<<<<<< HEAD
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "BU Head | SL 1 | SL 2 | SL 3 | SL 4 | SL 5")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: `${_WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot} ${_WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active}` }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot })))));
+=======
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _WhosWhoPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "BU Head | SL 1 | SL 2 | SL 3 | SL 4 | SL 5")))));
+>>>>>>> origin/master
 };
 
 
@@ -4565,6 +5644,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 __webpack_require__(/*! ./WhosWhoPage.module.css */ 62278);
 const styles = {
     whosWhoPage: 'whosWhoPage_e154758d',
@@ -4576,6 +5656,17 @@ const styles = {
     contentText: 'contentText_e154758d',
     carouselIndicators: 'carouselIndicators_e154758d',
     dot: 'dot_e154758d'
+=======
+__webpack_require__(/*! ./WhosWhoPage.module.css */ 2278);
+var styles = {
+    whosWhoPage: 'whosWhoPage_cbde8418',
+    contentContainer: 'contentContainer_cbde8418',
+    buFilters: 'buFilters_cbde8418',
+    buFilterButton: 'buFilterButton_cbde8418',
+    active: 'active_cbde8418',
+    mainContentBlock: 'mainContentBlock_cbde8418',
+    contentText: 'contentText_cbde8418'
+>>>>>>> origin/master
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

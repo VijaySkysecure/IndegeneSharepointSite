@@ -1,7 +1,8 @@
 import * as React from "react";
 import { IQuestionSectionProps } from "./IQuestionSectionProps";
-import { SPHttpClient } from "@microsoft/sp-http";
+import { SPHttpClient, SPHttpClientResponse } from "@microsoft/sp-http";
 import { DocumentDetailPage } from "../../pages/DocumentDetailPage/DocumentDetailPage";
+import { ViewAllDocumentsPage } from "../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage";
 import styles from "./QuestionSection.module.scss";
 
 /* ======================================================
@@ -1093,24 +1094,24 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
   --------------------------------------------- */
   const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
-  const [selectedDocumentId, setSelectedDocumentId] =
-    React.useState<number | null>(null);
+  const [selectedDocumentId, setSelectedDocumentId] = React.useState<number | null>(null);
+  const [showViewAll, setShowViewAll] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     if (props.context) fetchLatestDocuments();
   }, [props.context]);
 
   /* ======================================================
-     Fetch Last 3 Documents
+     Fetch Last 5 Documents
   ====================================================== */
   const fetchLatestDocuments = async () => {
     try {
       const webUrl = props.context.pageContext.web.absoluteUrl;
       const libraryName = "KMArtifacts";
 
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=3`;
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=5`;
 
-      const response = await props.context.spHttpClient.get(
+      const response: SPHttpClientResponse = await props.context.spHttpClient.get(
         apiUrl,
         SPHttpClient.configurations.v1
       );
@@ -1197,7 +1198,12 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
      Document Action Handlers
   ====================================================== */
   const handleView = (item: DocumentItem) => {
-    setSelectedDocumentId(item.id);
+    if (props.context && item.id) {
+      // Open document detail page in a modal overlay (full-screen)
+      setSelectedDocumentId(item.id);
+      // Mark that we're coming from home (tiles)
+      sessionStorage.setItem(`documentBackTo_${item.id}`, 'home');
+    }
   };
 
   const handleCloseDetail = () => setSelectedDocumentId(null);
@@ -1242,6 +1248,39 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
     return "📎";
   };
 
+  // Always show 5 tiles + 1 "View All" button, fill with empty placeholders if needed
+  const displayTiles = React.useMemo(() => {
+    const tiles: (DocumentItem | null)[] = [];
+    for (let i = 0; i < 5; i++) {
+      tiles.push(documents[i] || null);
+    }
+    return tiles;
+  }, [documents]);
+
+  const handleViewAll = () => {
+    setShowViewAll(true);
+  };
+
+  const handleCloseViewAll = () => {
+    setShowViewAll(false);
+  };
+
+  const handleViewDocumentFromList = (documentId: number, tags?: string[]) => {
+    setShowViewAll(false);
+    setSelectedDocumentId(documentId);
+    // Store tags temporarily to pass to DocumentDetailPage
+    if (tags) {
+      sessionStorage.setItem(`documentTags_${documentId}`, JSON.stringify(tags));
+    }
+    // Mark that we're coming from library (ViewAllDocumentsPage)
+    sessionStorage.setItem(`documentBackTo_${documentId}`, 'library');
+  };
+
+  const handleBackToLibrary = () => {
+    setSelectedDocumentId(null);
+    setShowViewAll(true);
+  };
+
   /* ======================================================
      Render
   ====================================================== */
@@ -1249,40 +1288,78 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
     <>
       {/* ======================= Document Tiles ======================== */}
       <div className={styles.questionSection}>
+        <h2 className={styles.sectionTitle}>Recently Published</h2>
         <div className={styles.tilesContainer}>
           {loading ? (
             <div className={styles.loading}>Loading...</div>
           ) : (
-            documents.map((doc) => (
-              <div key={doc.id} className={styles.tile}>
-                <div className={styles.tileHeader}>
-                  <span className={styles.fileTypeIcon}>
-                    {getFileTypeIcon(doc.fileType)}
-                  </span>
-                  <span className={styles.fileType}>{doc.fileType}</span>
+            <>
+              {displayTiles.map((doc, index) => (
+                <div key={doc ? doc.id : `empty-${index}`} className={styles.tile}>
+                  {doc ? (
+                    <>
+                      <div className={styles.tileHeader}>
+                        <div className={styles.fileTypeIcon}>{getFileTypeIcon(doc.fileType)}</div>
+                        <span className={styles.fileType}>{doc.fileType || 'FILE'}</span>
+                      </div>
+                      <h3 className={styles.tileTitle}>{doc.name}</h3>
+                      <p className={styles.tileAbstract}>{doc.abstract || 'No abstract available'}</p>
+                      <div className={styles.tileActions}>
+                        <button 
+                          className={styles.viewButton}
+                          onClick={() => handleView(doc)}
+                        >
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                          View
+                        </button>
+                        <button 
+                          className={styles.downloadButton}
+                          onClick={() => handleDownload(doc)}
+                          aria-label="Download"
+                        >
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className={styles.tileHeader}>
+                        <div className={styles.fileTypeIcon}>📎</div>
+                        <span className={styles.fileType}>---</span>
+                      </div>
+                      <h3 className={styles.tileTitle}>No document</h3>
+                      <p className={styles.tileAbstract}>No document available</p>
+                      <div className={styles.tileActions}>
+                        <button className={styles.viewButton} disabled>
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                          View
+                        </button>
+                        <button className={styles.downloadButton} disabled aria-label="Download">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </>
+                  )}
                 </div>
-
-                <h3 className={styles.tileTitle}>{doc.name}</h3>
-                <p className={styles.tileAbstract}>
-                  {doc.abstract || "No abstract available"}
-                </p>
-
-                <div className={styles.tileActions}>
-                  <button
-                    className={styles.viewButton}
-                    onClick={() => handleView(doc)}
-                  >
-                    👁 View
-                  </button>
-                  <button
-                    className={styles.downloadButton}
-                    onClick={() => handleDownload(doc)}
-                  >
-                    ⬇ Download
-                  </button>
-                </div>
-              </div>
-            ))
+              ))}
+              <button className={styles.viewAllTile} onClick={handleViewAll}>
+                <span className={styles.viewAllText}>View All</span>
+              </button>
+            </>
           )}
         </div>
       </div>
@@ -1382,6 +1459,17 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
         </div>
       )}
 
+      {/* ======================= View All Documents Modal ======================== */}
+      {showViewAll && props.context && (
+        <div className={styles.viewAllModal}>
+          <ViewAllDocumentsPage 
+            context={props.context}
+            onClose={handleCloseViewAll}
+            onViewDocument={handleViewDocumentFromList}
+          />
+        </div>
+      )}
+
       {/* ======================= Document Detail Page ======================== */}
       {selectedDocumentId && props.context && (
         <div className={styles.detailModal}>
@@ -1389,6 +1477,24 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
             context={props.context}
             documentId={selectedDocumentId}
             onClose={handleCloseDetail}
+            tags={(() => {
+              // Retrieve tags from sessionStorage if available
+              const storedTags = sessionStorage.getItem(`documentTags_${selectedDocumentId}`);
+              if (storedTags) {
+                try {
+                  return JSON.parse(storedTags);
+                } catch (e) {
+                  return undefined;
+                }
+              }
+              return undefined;
+            })()}
+            backTo={(() => {
+              // Retrieve backTo from sessionStorage if available
+              const storedBackTo = sessionStorage.getItem(`documentBackTo_${selectedDocumentId}`);
+              return storedBackTo === 'library' ? 'library' : 'home';
+            })()}
+            onBackToLibrary={handleBackToLibrary}
           />
         </div>
       )}

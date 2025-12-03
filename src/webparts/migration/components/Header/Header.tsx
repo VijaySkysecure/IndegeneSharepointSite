@@ -58,7 +58,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
         <div className={styles.leftSection}>
           <h1 className={styles.companyName}>Indegene</h1>
           <p className={styles.description}>
-            Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises.
+            Trusted partner of healthcare organizations.
           </p>
           <button
             className={styles.addFileButton}
