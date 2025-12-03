@@ -614,9 +614,11 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
      Render
   ====================================================== */
 
+  const workspaceRef = React.useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <div className={styles.workspace}>
+      <div className={styles.workspace} ref={workspaceRef}>
         {/* Left Filter Sidebar */}
         <aside className={styles.wrapper}>
           <div className={styles.railHeader}>Refine using filters by:</div>

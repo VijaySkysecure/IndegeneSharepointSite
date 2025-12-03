@@ -4,6 +4,12 @@ import { SPHttpClient, SPHttpClientResponse } from "@microsoft/sp-http";
 import { DocumentDetailPage } from "../../pages/DocumentDetailPage/DocumentDetailPage";
 import { ViewAllDocumentsPage } from "../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage";
 import styles from "./QuestionSection.module.scss";
+import { 
+  AZURE_OPENAI_ENDPOINT, 
+  AZURE_OPENAI_API_KEY, 
+  AZURE_OPENAI_DEPLOYMENT, 
+  AZURE_OPENAI_API_VERSION 
+} from "../../services/SearchConfig";
 
 /* ======================================================
    Chatbot Section
@@ -814,6 +820,520 @@ const CONTEXT_MAP: Record<string, string[]> = {
 
   "endocrinology documents": [
     "Endocrinology resources: TA Profile Chaitra Gopinath (US), PV Line Listing Best Practices, Manolo Beelke TA profile."
+  ],
+
+  /* =====================================================
+     INDEGENE – STRATEGIC PARTNERSHIPS & COLLABORATIONS
+  ====================================================== */
+
+  "indegene microsoft partnership": [
+    "In July 2024, Indegene announced a strategic collaboration with Microsoft to help life sciences companies scale up the adoption of Generative AI.",
+    "This partnership aims to drive faster innovation at scale and accelerate business impact for pharmaceutical and biotech organizations.",
+    "The collaboration focuses on leveraging Microsoft's AI capabilities combined with Indegene's life sciences domain expertise."
+  ],
+
+  "indegene microsoft collaboration": [
+    "Indegene and Microsoft have partnered to enable life sciences companies to adopt Generative AI solutions more effectively.",
+    "The partnership combines Microsoft's cloud and AI infrastructure with Indegene's commercialization expertise.",
+    "This helps pharma companies accelerate digital transformation and improve operational efficiency."
+  ],
+
+  "indegene strategic partnerships": [
+    "Indegene has formed strategic alliances to enhance its service offerings and technology capabilities.",
+    "Key partnerships include collaborations with Microsoft for GenAI adoption, technology platform providers, and industry leaders.",
+    "These partnerships help Indegene deliver integrated solutions that combine domain expertise with cutting-edge technology."
+  ],
+
+  /* =====================================================
+     INDEGENE – ACQUISITIONS & GROWTH
+  ====================================================== */
+
+  "indegene acquisitions": [
+    "Indegene has expanded its capabilities through strategic acquisitions over the years.",
+    "In October 2025, Indegene acquired BioPharm Communications, a specialized marketing services agency, to strengthen its commercialization portfolio with AdTech solutions.",
+    "Other acquisitions have included companies in medical education, multichannel marketing, real-world evidence, and consulting to build comprehensive life sciences capabilities."
+  ],
+
+  "indegene biopharm communications": [
+    "Indegene acquired BioPharm Communications in October 2025 to enhance its commercialization services.",
+    "This acquisition added AdTech (Advertising Technology) solutions to Indegene's portfolio.",
+    "BioPharm Communications specialized in marketing services for life sciences companies, complementing Indegene's existing commercial operations."
+  ],
+
+  "indegene growth strategy": [
+    "Indegene's growth strategy focuses on organic expansion and strategic acquisitions.",
+    "The company has expanded through acquisitions in medical education, multichannel marketing, RWE, consulting, and AdTech.",
+    "This approach allows Indegene to rapidly build comprehensive capabilities across the life sciences value chain."
+  ],
+
+  /* =====================================================
+     INDEGENE – GLOBAL PRESENCE & OFFICES
+  ====================================================== */
+
+  "indegene offices": [
+    "Indegene has offices and delivery centers across key healthcare markets globally.",
+    "Locations include: United States, United Kingdom, China, India (headquarters in Bengaluru), Australia, and other regions in North America, Latin America, Europe, and Asia-Pacific.",
+    "These offices support around-the-clock delivery for multinational life sciences companies."
+  ],
+
+  "indegene locations": [
+    "Indegene operates globally with presence in:",
+    "• North America: United States (multiple locations)",
+    "• Europe: United Kingdom and other European countries",
+    "• Asia-Pacific: India (Bengaluru headquarters), China, Australia",
+    "• Latin America: Regional presence",
+    "This global footprint enables 24/7 delivery and support for international clients."
+  ],
+
+  "indegene bangalore": [
+    "Indegene's global headquarters is located in Bengaluru (Bangalore), Karnataka, India.",
+    "Bengaluru serves as the primary hub for technology, operations, and strategic leadership.",
+    "The city's tech ecosystem and talent pool support Indegene's digital-first approach to life sciences."
+  ],
+
+  "indegene us offices": [
+    "Indegene has multiple offices in the United States to serve North American clients.",
+    "US locations support commercial operations, medical affairs, clinical services, and client engagement.",
+    "These offices work closely with the India delivery centers to provide seamless global service delivery."
+  ],
+
+  /* =====================================================
+     INDEGENE – COMPREHENSIVE SERVICE PORTFOLIO
+  ====================================================== */
+
+  "indegene service portfolio": [
+    "Indegene's comprehensive service portfolio includes:",
+    "• Medical and Regulatory Solutions: Medical information, publications, regulatory affairs, pharmacovigilance",
+    "• Commercial Solutions: Omnichannel marketing, content operations, field force support, marketing analytics",
+    "• Clinical and Evidence Services: Real-world evidence, clinical operations, data analytics",
+    "• Technology Solutions: AI platforms, digital engineering, cloud services, data management",
+    "• Training Services: Medical education, HCP training, compliance training",
+    "• Competitive and Business Intelligence: Market research, competitive analysis, business insights"
+  ],
+
+  "indegene medical regulatory solutions": [
+    "Indegene's medical and regulatory solutions encompass:",
+    "• Medical Information: Inquiry handling, response management, medical content development",
+    "• Publications: Scientific writing, publication planning, manuscript development",
+    "• Regulatory Affairs: Regulatory intelligence, submission support, compliance",
+    "• Pharmacovigilance: Safety operations, adverse event monitoring, signal detection",
+    "• Medical Review: MLR support, medical-legal review, content approval workflows"
+  ],
+
+  "indegene training services": [
+    "Indegene provides comprehensive training services including:",
+    "• Medical Education: HCP training programs, scientific education, therapeutic area training",
+    "• Compliance Training: Regulatory compliance, good practices training, quality standards",
+    "• Commercial Training: Product training, sales force training, marketing education",
+    "• Digital Training: E-learning modules, virtual training platforms, interactive content"
+  ],
+
+  "indegene competitive intelligence": [
+    "Indegene offers competitive and business intelligence services:",
+    "• Market Research: Industry analysis, market sizing, trend identification",
+    "• Competitive Analysis: Competitor profiling, market positioning, strategy assessment",
+    "• Business Intelligence: Data analytics, insights generation, strategic recommendations",
+    "• Market Monitoring: Real-time tracking, alert systems, competitive landscape updates"
+  ],
+
+  /* =====================================================
+     INDEGENE – TECHNOLOGY & DIGITAL TRANSFORMATION
+  ====================================================== */
+
+  "indegene digital transformation": [
+    "Indegene helps life sciences companies with digital transformation by:",
+    "• Modernizing technology stacks and integrating legacy systems",
+    "• Implementing AI and automation to improve efficiency",
+    "• Building data platforms and analytics capabilities",
+    "• Creating digital-first operating models",
+    "• Enabling cloud-based solutions for scalability and compliance"
+  ],
+
+  "indegene cloud services": [
+    "Indegene provides cloud and data services including:",
+    "• Cloud infrastructure setup and migration",
+    "• Data lake and data warehouse implementation",
+    "• Cloud-based analytics platforms",
+    "• Secure, compliant cloud solutions for life sciences",
+    "• Integration with existing client systems and platforms"
+  ],
+
+  "indegene data analytics": [
+    "Indegene's data analytics capabilities include:",
+    "• Real-world evidence (RWE) generation and analysis",
+    "• Commercial analytics: Sales, marketing, and HCP engagement analytics",
+    "• Clinical analytics: Trial data analysis, outcomes research",
+    "• Predictive analytics: Forecasting, demand planning, risk assessment",
+    "• Business intelligence dashboards and reporting"
+  ],
+
+  "indegene automation": [
+    "Indegene leverages automation across multiple areas:",
+    "• Content automation: Modular content creation, tagging, and management",
+    "• Process automation: Workflow automation, approval processes, routine tasks",
+    "• AI-powered automation: Intelligent document processing, data extraction, insights generation",
+    "• Marketing automation: Campaign orchestration, channel optimization, personalization",
+    "• Safety automation: Case processing, signal detection, reporting"
+  ],
+
+  /* =====================================================
+     INDEGENE – NEXT PLATFORMS DETAILED
+  ====================================================== */
+
+  "indegene next platform suite": [
+    "NEXT is Indegene's comprehensive suite of AI-powered technology platforms:",
+    "• NEXT Content: Content modularization and management",
+    "• NEXT Customer: Customer data unification and 360-degree view",
+    "• NEXT Journey: Customer journey analytics and optimization",
+    "• NEXT Action: Next-best-action recommendations for HCP engagement",
+    "• NEXT Safety: Pharmacovigilance automation and signal detection",
+    "These platforms integrate with existing CRM, marketing, and safety systems."
+  ],
+
+  "indegene next content": [
+    "NEXT Content platform enables:",
+    "• Content modularization: Break down content into reusable components",
+    "• Automated tagging: AI-powered content categorization and metadata",
+    "• Multi-channel adaptation: Adapt content for different channels and formats",
+    "• Version control: Track content versions and approvals",
+    "• Compliance management: Ensure content meets regulatory requirements"
+  ],
+
+  "indegene next customer": [
+    "NEXT Customer platform provides:",
+    "• Customer 360: Unified view of HCPs across all touchpoints",
+    "• Data unification: Integrate data from CRM, marketing, events, and other sources",
+    "• Segmentation: Advanced HCP segmentation and targeting",
+    "• Profile management: Comprehensive HCP profiles and preferences",
+    "• Data quality: Clean, deduplicated, and enriched customer data"
+  ],
+
+  "indegene next journey": [
+    "NEXT Journey platform offers:",
+    "• Journey mapping: Visualize and analyze customer journeys",
+    "• Journey analytics: Track engagement across touchpoints",
+    "• Channel optimization: Identify most effective channels and timing",
+    "• Journey orchestration: Coordinate multi-channel interactions",
+    "• Performance measurement: Measure journey effectiveness and ROI"
+  ],
+
+  "indegene next action": [
+    "NEXT Action platform provides:",
+    "• Next-best-action recommendations: AI-powered suggestions for HCP engagement",
+    "• Explainable AI: Transparent reasoning using SHAP values",
+    "• Contextual recommendations: Personalized based on HCP profile and history",
+    "• Integration: Works with Veeva CRM and other platforms",
+    "• Impact: 10-15% increase in leads, 70% rep adoption, 15-20% reduction in manual validation"
+  ],
+
+  "indegene next safety": [
+    "NEXT Safety platform enables:",
+    "• Automated case processing: Streamline adverse event case handling",
+    "• Signal detection: AI-powered identification of safety signals",
+    "• Compliance automation: Automated regulatory reporting",
+    "• Quality checks: Built-in validation and quality assurance",
+    "• Integration: Connects with safety databases and systems"
+  ],
+
+  /* =====================================================
+     INDEGENE – GENAI & AI CAPABILITIES
+  ====================================================== */
+
+  "indegene generative ai": [
+    "Indegene's Generative AI capabilities include:",
+    "• Content generation: Draft medical content, summaries, and communications",
+    "• Document processing: Extract insights from unstructured documents",
+    "• Query handling: Intelligent responses to medical information queries",
+    "• Personalization: Generate personalized content for HCPs",
+    "• Compliance: GenAI solutions designed to meet life sciences quality standards"
+  ],
+
+  "indegene genai adoption": [
+    "Indegene helps life sciences companies adopt GenAI by:",
+    "• Providing GenAI starter kits and frameworks",
+    "• Ensuring compliance and explainability",
+    "• Integrating GenAI into existing workflows",
+    "• Training teams on GenAI tools and best practices",
+    "• Measuring impact and ROI of GenAI implementations"
+  ],
+
+  "indegene ai platforms": [
+    "Indegene offers AI-first platforms that include:",
+    "• Machine learning models for HCP engagement",
+    "• Natural language processing for document analysis",
+    "• Computer vision for image and document processing",
+    "• Predictive analytics for forecasting and planning",
+    "• Explainable AI for transparent decision-making"
+  ],
+
+  "indegene machine learning": [
+    "Indegene applies machine learning across multiple use cases:",
+    "• HCP engagement recommendations with explainable AI",
+    "• Content optimization and personalization",
+    "• Demand forecasting and planning",
+    "• Safety signal detection",
+    "• Customer segmentation and targeting",
+    "• Predictive analytics for commercial and clinical outcomes"
+  ],
+
+  /* =====================================================
+     INDEGENE – SUSTAINABILITY & CSR
+  ====================================================== */
+
+  "indegene sustainability": [
+    "Indegene is committed to sustainability and corporate social responsibility.",
+    "The company publishes annual sustainability reports covering environmental, social, and governance (ESG) initiatives.",
+    "Key focus areas include: environmental impact reduction, employee well-being, community engagement, and ethical business practices.",
+    "Indegene integrates sustainability into its operations and client solutions."
+  ],
+
+  "indegene csr initiatives": [
+    "Indegene's Corporate Social Responsibility initiatives include:",
+    "• Community health programs and medical education",
+    "• Environmental sustainability efforts",
+    "• Employee development and well-being programs",
+    "• Ethical business practices and governance",
+    "• Support for healthcare access and education",
+    "Details are available in the CSR Policy document."
+  ],
+
+  "indegene esg": [
+    "Indegene focuses on Environmental, Social, and Governance (ESG) factors:",
+    "• Environmental: Reducing carbon footprint, sustainable operations",
+    "• Social: Employee welfare, community engagement, diversity and inclusion",
+    "• Governance: Ethical practices, transparency, compliance",
+    "The company publishes annual sustainability reports detailing ESG performance and initiatives."
+  ],
+
+  /* =====================================================
+     INDEGENE – INDUSTRY RECOGNITION & AWARDS
+  ====================================================== */
+
+  "indegene industry recognition": [
+    "Indegene has received recognition from industry analysts and organizations:",
+    "• ISG Provider Lens Leader (2025) for life sciences digital services in commercial operations",
+    "• Recognized as a leader in digital commercialization services",
+    "• Acknowledged for innovation in life sciences technology and operations",
+    "• Recognized workplace culture and employee engagement"
+  ],
+
+  "indegene isg recognition": [
+    "In 2025, Indegene was identified as a Leader in ISG Provider Lens evaluations.",
+    "The recognition was specifically for life sciences digital services in commercial operations.",
+    "This reflects strong capabilities, client feedback, and proven results in digital commercial transformation.",
+    "ISG Provider Lens is a respected industry evaluation framework for technology and service providers."
+  ],
+
+  "indegene awards": [
+    "Indegene has received various awards and recognitions including:",
+    "• Industry analyst recognition for digital services leadership",
+    "• Workplace culture and employee engagement awards",
+    "• Innovation awards for technology solutions",
+    "• Client satisfaction and partnership awards",
+    "These recognitions validate Indegene's position as a trusted partner in life sciences."
+  ],
+
+  /* =====================================================
+     INDEGENE – THERAPEUTIC AREAS & EXPERTISE
+  ====================================================== */
+
+  "indegene therapeutic areas": [
+    "Indegene has expertise across multiple therapeutic areas:",
+    "• Oncology: Cancer treatments, supportive care, clinical trials",
+    "• Cardiovascular: Heart disease, hypertension, cardiac care",
+    "• Endocrinology: Diabetes, metabolic disorders, hormone therapies",
+    "• Neurology: Neurological disorders, CNS conditions",
+    "• Ophthalmology: Eye diseases, vision care",
+    "• Dermatology: Skin conditions, dermatological treatments",
+    "• Rare Diseases: Orphan drugs, specialized treatments"
+  ],
+
+  "indegene oncology expertise": [
+    "Indegene has deep expertise in oncology including:",
+    "• Medical communications: Publications, abstracts, MSL decks",
+    "• Commercial support: Sales enablement, HCP engagement",
+    "• Clinical support: Trial operations, data management",
+    "• Case studies demonstrate success in driving incremental sales and improving medical information support",
+    "• Experience across various cancer types: breast cancer, hematological malignancies, solid tumors"
+  ],
+
+  "indegene cardiovascular expertise": [
+    "Indegene provides services in cardiovascular therapeutic areas:",
+    "• Medical affairs support for cardiovascular drugs",
+    "• Clinical evidence generation and RWE studies",
+    "• Commercial operations for cardiovascular brands",
+    "• Expertise in adult congenital heart disease, hypertension, heart failure, and other CV conditions"
+  ],
+
+  /* =====================================================
+     INDEGENE – CLIENT SUCCESS & CASE STUDIES
+  ====================================================== */
+
+  "indegene client success": [
+    "Indegene has delivered measurable results for clients:",
+    "• >30% faster turnaround times in medical communications",
+    "• >80% first submission acceptance rates",
+    "• $14.2M incremental sales for oncology brands",
+    "• 10-15% increase in leads through AI-powered recommendations",
+    "• 70% rep adoption of AI recommendations",
+    "• 15-20% reduction in manual validation efforts",
+    "• Average CSAT scores of 4.0+ across multiple engagements"
+  ],
+
+  "indegene case studies": [
+    "Indegene has published numerous case studies demonstrating success:",
+    "• Oncology: Medical communications support, incremental sales growth",
+    "• Hemato-oncology: End-to-end medical communications across US, Europe, APAC",
+    "• Commercial: Omnichannel HCP engagement and sales growth",
+    "• Technology: AI-powered recommendation engines and automation",
+    "Case studies are available on the Indegene website and in the knowledge management system."
+  ],
+
+  "indegene roi": [
+    "Indegene delivers measurable ROI for clients through:",
+    "• Faster time-to-market for products and campaigns",
+    "• Increased sales and market share",
+    "• Reduced operational costs through automation",
+    "• Improved compliance and quality",
+    "• Enhanced HCP engagement and satisfaction",
+    "• Better resource utilization and efficiency"
+  ],
+
+  /* =====================================================
+     INDEGENE – COMPLIANCE & QUALITY
+  ====================================================== */
+
+  "indegene compliance": [
+    "Indegene maintains strict compliance standards:",
+    "• Regulatory compliance: FDA, EMA, and other health authority requirements",
+    "• Quality certifications: CMMI, ISO standards, industry best practices",
+    "• Data security: HIPAA, GDPR, and other data protection regulations",
+    "• Medical-legal review: MLR processes and approval workflows",
+    "• Audit readiness: Continuous monitoring and quality assurance"
+  ],
+
+  "indegene quality standards": [
+    "Indegene adheres to high quality standards:",
+    "• CMMI certification for process maturity",
+    "• ISO standards for quality management",
+    "• Industry best practices: GPP4, ICMJE guidelines for publications",
+    "• Quality metrics tracking and reporting",
+    "• Continuous improvement processes",
+    "• Quality assurance at every stage of service delivery"
+  ],
+
+  "indegene data security": [
+    "Indegene prioritizes data security and privacy:",
+    "• HIPAA compliance for healthcare data",
+    "• GDPR compliance for European data",
+    "• SOC 2 and other security certifications",
+    "• Secure cloud infrastructure",
+    "• Data encryption and access controls",
+    "• Regular security audits and assessments",
+    "• Patient privacy protection in all operations"
+  ],
+
+  /* =====================================================
+     INDEGENE – CAREER DEVELOPMENT & BENEFITS
+  ====================================================== */
+
+  "indegene career development": [
+    "Indegene offers career development opportunities:",
+    "• Learning and development programs",
+    "• Cross-functional project exposure",
+    "• Global client engagement",
+    "• Technology and domain skill building",
+    "• Mentorship and coaching",
+    "• Internal mobility and growth paths",
+    "• Certification and training support"
+  ],
+
+  "indegene employee benefits": [
+    "Indegene provides comprehensive employee benefits:",
+    "• Competitive compensation packages",
+    "• Health and wellness programs",
+    "• Flexible work arrangements (varies by role and project)",
+    "• Learning and development opportunities",
+    "• Global exposure and diverse projects",
+    "• Collaborative work environment",
+    "• Recognition and rewards programs"
+  ],
+
+  "indegene hiring process": [
+    "Indegene's hiring process typically includes:",
+    "• Resume screening and initial review",
+    "• Technical/functional assessment (role-dependent)",
+    "• Interviews with hiring managers and team members",
+    "• HR discussion on fit, expectations, and compensation",
+    "• Some roles may include case studies or written tests",
+    "• Background verification and offer process",
+    "The process is designed to assess both technical skills and cultural fit."
+  ],
+
+  /* =====================================================
+     INDEGENE – CONTACT & BUSINESS INQUIRIES
+  ====================================================== */
+
+  "how to contact indegene": [
+    "You can contact Indegene through:",
+    "• Official website contact forms: https://www.indegene.com/contact-us",
+    "• Regional office contacts (available on website)",
+    "• Business inquiries: Commercial, medical, or technology-related discussions",
+    "• Partnership inquiries: Strategic partnerships and collaborations",
+    "• Media queries: Press and media relations",
+    "• Career inquiries: Visit https://careers.indegene.com/"
+  ],
+
+  "indegene business inquiry": [
+    "For business inquiries, Indegene can be reached:",
+    "• Through the contact form on the official website",
+    "• Via regional office contacts",
+    "• For commercial services: Commercial operations and marketing",
+    "• For medical services: Medical affairs and regulatory",
+    "• For technology services: Digital transformation and platforms",
+    "• For consulting: Strategic consulting and transformation"
+  ],
+
+  "indegene partnership": [
+    "Indegene welcomes partnership opportunities:",
+    "• Technology partnerships: Platform integrations, co-development",
+    "• Service partnerships: Complementary service providers",
+    "• Strategic alliances: Long-term collaborative relationships",
+    "• Channel partnerships: Distribution and go-to-market partnerships",
+    "Partnership inquiries can be made through the contact page on the Indegene website."
+  ],
+
+  /* =====================================================
+     INDEGENE – INVESTOR RELATIONS
+  ====================================================== */
+
+  "indegene investor relations": [
+    "Indegene Limited is a publicly listed company with active investor relations:",
+    "• Investor relations website: https://ir.indegene.com/",
+    "• Financial reports and earnings releases",
+    "• Annual reports and corporate governance documents",
+    "• Stock information and trading details",
+    "• Investor presentations and webcasts",
+    "• Contact information for investor inquiries"
+  ],
+
+  "indegene stock": [
+    "Indegene Limited is publicly traded:",
+    "• Listed on Indian stock exchanges",
+    "• Stock information available on the investor relations website",
+    "• Financial performance and quarterly results published regularly",
+    "• Corporate governance and compliance information available",
+    "For detailed stock information, visit https://ir.indegene.com/"
+  ],
+
+  "indegene financial performance": [
+    "Indegene publishes financial performance regularly:",
+    "• Quarterly earnings reports",
+    "• Annual financial statements",
+    "• Revenue growth and profitability metrics",
+    "• Business segment performance",
+    "• Strategic initiatives and investments",
+    "All financial information is available on the investor relations website."
   ]
 };
 
@@ -886,7 +1406,7 @@ const handleGeneralQueries = (query: string): string | null => {
 
   // Who are you?
   if (text.includes("who are you") || text.includes("what are you")) {
-    return "I’m a lightweight, on-page chatbot built for this KM site. I answer questions from a curated internal knowledge map and can also tell you the current time, date, and day.";
+    return "I'm your KM Assistant chatbot powered by AI. I can answer questions about Indegene using real-time information from the company website, combined with our internal knowledge base. I can also tell you the current time, date, and day.";
   }
 
   // What can you do?
@@ -896,22 +1416,30 @@ const handleGeneralQueries = (query: string): string | null => {
     text.includes("what do you do")
   ) {
     return (
-      "I can:\n" +
-      "• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n" +
-      "• Share quick overviews from internal knowledge snippets.\n" +
-      "• Tell you the current time, date, and day.\n\n" +
-      'Try asking: "Tell me about breast cancer" or "Explain regulatory intelligence".'
+      "I can help you with:\n" +
+      "• Questions about Indegene - services, solutions, technology, partnerships, careers, and more (using real-time website information)\n" +
+      "• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n" +
+      "• General queries - current time, date, day, and quick links\n\n" +
+      "Try asking: \"What services does Indegene offer?\" or \"Tell me about Indegene's NEXT platforms\" or \"Explain regulatory intelligence\"."
     );
   }
 
   // Help
   if (text === "help" || text.startsWith("help ")) {
     return (
-      "You can ask me things like:\n" +
-      '• "What is Indegene?"\n' +
-      '• "Tell me about regulatory intelligence"\n' +
-      '• "What is breast cancer?"\n' +
-      '• "What is the time?" or "What\'s today\'s date?"'
+      "I can answer questions about:\n\n" +
+      "📊 Indegene Company:\n" +
+      "• \"What services does Indegene offer?\"\n" +
+      "• \"Tell me about Indegene's NEXT platforms\"\n" +
+      "• \"What is Indegene's partnership with Microsoft?\"\n" +
+      "• \"Where are Indegene offices located?\"\n\n" +
+      "📚 Internal Knowledge:\n" +
+      "• \"Tell me about regulatory intelligence\"\n" +
+      "• \"What is breast cancer?\"\n" +
+      "• \"Explain PRMA & HEOR services\"\n\n" +
+      "⏰ General:\n" +
+      "• \"What is the time?\" or \"What's today's date?\"\n" +
+      "• \"Show me quick links\""
     );
   }
 
@@ -1064,6 +1592,160 @@ const getAnswerFromContext = (query: string): string => {
   return "I could not find a relevant match in my stored knowledge.";
 };
 
+/* =========================================================
+   DYNAMIC AI-BASED ANSWER GENERATION FROM WEBSITE
+======================================================== */
+
+/**
+ * Enhanced dynamic AI answer generation with better prompts and context
+ * This function uses Azure OpenAI to generate comprehensive answers based on Indegene website
+ */
+const getDynamicAnswerFromWebsite = async (
+  query: string, 
+  contextMapAnswer?: string
+): Promise<string | null> => {
+  try {
+    const endpoint = AZURE_OPENAI_ENDPOINT.endsWith('/') 
+      ? AZURE_OPENAI_ENDPOINT.slice(0, -1) 
+      : AZURE_OPENAI_ENDPOINT;
+    
+    const url = `${endpoint}/openai/deployments/${AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${AZURE_OPENAI_API_VERSION}`;
+
+    // Enhanced system prompt with more context
+    const systemPrompt = `You are an expert assistant specializing in Indegene, a leading tech-native, digital-first life sciences commercialization company.
+
+COMPANY OVERVIEW:
+- Founded: 1998 in Bengaluru, India
+- Headquarters: Bengaluru, Karnataka, India
+- Type: Publicly listed company (Indegene Limited)
+- Focus: Life sciences commercialization, medical affairs, clinical operations, and technology solutions
+- Key Services: Commercial solutions, medical solutions, clinical/evidence services, technology platforms
+- Technology: NEXT platform suite, AI/ML solutions, GenAI capabilities
+- Partnerships: Microsoft (GenAI collaboration), strategic alliances
+- Global Presence: Offices in US, UK, China, India, Australia, and other regions
+
+YOUR ROLE:
+- Provide accurate, detailed, and helpful answers about Indegene
+- Use information from the Indegene website (https://www.indegene.com/) and public sources
+- Be conversational, professional, and informative
+- Structure answers clearly with bullet points when listing multiple items
+- Include specific details like platform names, service areas, and capabilities
+- If uncertain, acknowledge it rather than speculating
+- Keep answers comprehensive but concise (3-6 sentences or structured bullet points)`;
+
+    // Enhanced user prompt with context from concept map if available
+    let userPrompt = `Based on information from the Indegene website (https://www.indegene.com/) and public sources, please provide a comprehensive answer to this question:
+
+Question: ${query}`;
+
+    // If we have context map answer, use it to enhance the AI response
+    if (contextMapAnswer && contextMapAnswer !== "I could not find a relevant match in my stored knowledge.") {
+      userPrompt += `\n\nAdditional context from internal knowledge base:\n${contextMapAnswer}\n\nPlease enhance and expand upon this information with details from the Indegene website. Provide a comprehensive, well-structured answer that combines both sources.`;
+    } else {
+      userPrompt += `\n\nProvide a detailed, accurate answer based on the company's website and public information. Include specific details about services, solutions, technology, partnerships, or operations when relevant.`;
+    }
+
+    // Create a timeout promise
+    const timeoutPromise = new Promise<never>((_, reject) => {
+      setTimeout(() => reject(new Error('Request timeout')), 10000); // 10 second timeout
+    });
+
+    // Race between fetch and timeout
+    const fetchPromise = fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'api-key': AZURE_OPENAI_API_KEY
+      },
+      body: JSON.stringify({
+        messages: [
+          {
+            role: 'system',
+            content: systemPrompt
+          },
+          {
+            role: 'user',
+            content: userPrompt
+          }
+        ],
+        temperature: 0.7,
+        max_tokens: 800, // Increased for more comprehensive answers
+        top_p: 0.9,
+        frequency_penalty: 0.3,
+        presence_penalty: 0.3
+      })
+    });
+
+    const response = await Promise.race([fetchPromise, timeoutPromise]);
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Azure OpenAI API error:', response.status, errorText);
+      return null;
+    }
+
+    const data = await response.json();
+    const answer = data.choices?.[0]?.message?.content;
+
+    if (answer && answer.trim().length > 0) {
+      // Clean and format the answer
+      let formattedAnswer = answer.trim();
+      
+      // Remove markdown code blocks if present
+      formattedAnswer = formattedAnswer.replace(/```[\s\S]*?```/g, '');
+      
+      // Ensure proper spacing
+      formattedAnswer = formattedAnswer.replace(/\n{3,}/g, '\n\n');
+      
+      return formattedAnswer;
+    }
+
+    return null;
+  } catch (error) {
+    if (error instanceof Error && error.message === 'Request timeout') {
+      console.warn('AI request timed out, using fallback');
+    } else {
+      console.error('Error getting dynamic answer from website:', error);
+    }
+    return null;
+  }
+};
+
+/**
+ * Enhance AI answer with concept map context for more comprehensive responses
+ */
+const enhanceAnswerWithContext = (aiAnswer: string, contextAnswer: string): string => {
+  // If context answer is just "not found", return AI answer as-is
+  if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+    return aiAnswer;
+  }
+
+  // If both answers are similar, return the more comprehensive one
+  const aiLower = aiAnswer.toLowerCase();
+  const contextLower = contextAnswer.toLowerCase();
+  
+  // Check if they're very similar (one contains most of the other)
+  if (aiLower.includes(contextLower.substring(0, 50)) || 
+      contextLower.includes(aiLower.substring(0, 50))) {
+    // Return the longer, more comprehensive answer
+    return aiAnswer.length > contextAnswer.length ? aiAnswer : contextAnswer;
+  }
+
+  // If they're different, combine them intelligently
+  // Check if context has unique information
+  const contextWords = new Set(contextLower.split(/\s+/));
+  const aiWords = new Set(aiLower.split(/\s+/));
+  const uniqueContextWords = Array.from(contextWords).filter(w => !aiWords.has(w) && w.length > 3);
+  
+  if (uniqueContextWords.length > 5) {
+    // Context has significant unique information, combine them
+    return `${aiAnswer}\n\nAdditional Information:\n${contextAnswer}`;
+  }
+
+  // Otherwise, prefer AI answer as it's more dynamic
+  return aiAnswer;
+};
+
 /* ======================================================
    Document Tile Section types
 ====================================================== */
@@ -1100,6 +1782,26 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
   React.useEffect(() => {
     if (props.context) fetchLatestDocuments();
   }, [props.context]);
+
+  /* ======================================================
+     Welcome Message on Chat Open
+  ====================================================== */
+  React.useEffect(() => {
+    // Show welcome message when chat is opened for the first time (no messages yet)
+    if (isChatVisible && messages.length === 0) {
+      const welcomeMessage: ChatMessage = {
+        sender: "bot",
+        text: "Hello! 👋 Welcome to Indegene's Knowledge Management Assistant.\n\nFeel free to ask me anything about Indegene or browse our knowledge resources. How can I assist you today?"
+      };
+      // Small delay to make it feel natural
+      const timer = setTimeout(() => {
+        setMessages([welcomeMessage]);
+      }, 300);
+      
+      // Cleanup timer if component unmounts or chat closes
+      return () => clearTimeout(timer);
+    }
+  }, [isChatVisible, messages.length]);
 
   /* ======================================================
      Fetch Last 5 Documents
@@ -1149,7 +1851,7 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
   ====================================================== */
   const toggleChat = () => setChatVisible((prev) => !prev);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
     const userMsg: ChatMessage = { sender: "user", text: input };
@@ -1157,34 +1859,65 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
     setInput("");
     setIsLoading(true);
 
-    setTimeout(() => {
-      try {
-        // 1) Internal time/date/day
-        const internal = handleInternalQueries(userMsg.text);
-
-        // 2) General questions (hi, who are you, help)
-        const general = internal ? null : handleGeneralQueries(userMsg.text);
-
-        // 3) Context lookup
-        const reply =
-          internal || general || getAnswerFromContext(userMsg.text);
-
-        // 4) Quick links detection
-        const link = getLinkForQuery(userMsg.text);
-
-        if (link) {
-          // push a single bot message that contains text + link metadata
-          setMessages((prev) => [
-            ...prev,
-            { sender: "bot", text: reply, title: link.title, url: link.url }
-          ]);
-        } else {
-          setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
-        }
-      } finally {
+    try {
+      // 1) Internal time/date/day (fast, no API call needed)
+      const internal = handleInternalQueries(userMsg.text);
+      if (internal) {
+        setMessages((prev) => [...prev, { sender: "bot", text: internal }]);
         setIsLoading(false);
+        return;
       }
-    }, 400);
+
+      // 2) General questions (hi, who are you, help) - fast, no API call
+      const general = handleGeneralQueries(userMsg.text);
+      if (general) {
+        setMessages((prev) => [...prev, { sender: "bot", text: general }]);
+        setIsLoading(false);
+        return;
+      }
+
+      // 3) Get concept map answer first (for context enhancement)
+      const contextAnswer = getAnswerFromContext(userMsg.text);
+      
+      // 4) Try dynamic AI-based answer from website
+      // This uses Azure OpenAI to generate answers based on the Indegene website
+      let reply: string;
+      try {
+        const dynamicAnswer = await getDynamicAnswerFromWebsite(userMsg.text, contextAnswer);
+        
+        if (dynamicAnswer) {
+          // Enhance AI answer with context map if it has unique information
+          reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer);
+        } else {
+          // Fallback to concept map if AI fails
+          reply = contextAnswer;
+        }
+      } catch (error) {
+        console.error('Error in dynamic answer generation, using fallback:', error);
+        // Fallback to concept map on error
+        reply = contextAnswer;
+      }
+
+      // 5) Quick links detection
+      const link = getLinkForQuery(userMsg.text);
+
+      if (link) {
+        // push a single bot message that contains text + link metadata
+        setMessages((prev) => [
+          ...prev,
+          { sender: "bot", text: reply, title: link.title, url: link.url }
+        ]);
+      } else {
+        setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+      }
+    } catch (error) {
+      console.error('Error in handleSend:', error);
+      // Final fallback to concept map
+      const fallbackReply = getAnswerFromContext(userMsg.text);
+      setMessages((prev) => [...prev, { sender: "bot", text: fallbackReply }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {

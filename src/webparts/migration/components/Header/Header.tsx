@@ -42,13 +42,24 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   // Close dropdown when clicking outside
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      
+      // Check if click is outside both the search container and the dropdown panel
+      const isOutsideSearch = searchContainerRef.current && !searchContainerRef.current.contains(target);
+      const isOutsideDropdown = dropdownPanelRef.current && !dropdownPanelRef.current.contains(target);
+      
+      // Close if click is outside both elements (but keep search text)
+      if (isOutsideSearch && isOutsideDropdown) {
         setIsOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    
+    // Only add listener when dropdown is open
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [isOpen]);
 
   return (
     <div className={styles.header} ref={containerRef}>
@@ -105,15 +116,15 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
           {/* DROPDOWN PANEL - Only show when user types */}
           {isOpen && searchText.trim().length > 0 && (
-  <div ref={dropdownPanelRef} className={styles.dropdownPanel}>
-    <FilterDropdown
-      searchText={searchText}
-      spHttpClient={props.context.spHttpClient}
-      siteUrl={props.context.pageContext.web.absoluteUrl}
-      context={props.context}
-    />
-  </div>
-)}
+            <div ref={dropdownPanelRef} className={styles.dropdownPanel}>
+              <FilterDropdown
+                searchText={searchText}
+                spHttpClient={props.context.spHttpClient}
+                siteUrl={props.context.pageContext.web.absoluteUrl}
+                context={props.context}
+              />
+            </div>
+          )}
           
         </div>
       </div>
