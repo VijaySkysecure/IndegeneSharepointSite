@@ -4,8 +4,10 @@ import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import styles from './FileUpload.module.scss';
 import { MetadataForm } from '../MetadataForm/MetadataForm';
+import { MultiMetadataForm } from '../MultiMetadataForm/MultiMetadataForm';
 import { DocumentParser } from '../../services/DocumentParser';
 import { AzureOpenAIService } from '../../services/AzureOpenAIService';
+import { FileData } from '../MultiMetadataForm/IMultiMetadataFormProps';
 
 // Azure OpenAI Configuration
 // NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
@@ -16,64 +18,82 @@ const AZURE_OPENAI_CONFIG = {
   deploymentName: 'gpt-4o'
 };
 
+const MAX_FILES = 5;
+
 export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   const [dragOver, setDragOver] = React.useState(false);
-  const [uploadedFile, setUploadedFile] = React.useState<File | null>(null);
+  const [uploadedFiles, setUploadedFiles] = React.useState<File[]>([]);
   const [isProcessing, setIsProcessing] = React.useState(false);
-  const [extractedMetadata, setExtractedMetadata] = React.useState<Record<string, any> | null>(null);
+  const [processingProgress, setProcessingProgress] = React.useState<string>('');
+  const [filesData, setFilesData] = React.useState<FileData[]>([]);
   const [processingError, setProcessingError] = React.useState<string | null>(null);
-  const [kmItemId, setKmItemId] = React.useState<number | null>(null);
   const [showForm, setShowForm] = React.useState(false);
-
 
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
   const openAIService = React.useRef(new AzureOpenAIService(AZURE_OPENAI_CONFIG));
+  const isSubmittingRef = React.useRef(false);
 
   const onBrowse = () => {
     fileInputRef.current?.click();
   };
 
   const onFileSelected = async (f?: FileList | null) => {
-    const file = f && f.length ? f[0] : undefined;
-    if (file) {
-      setUploadedFile(file);
-      setShowForm(false);      // ⛔ hide form initially
-      setIsProcessing(true);   // ⏳ immediately show analyzing UI
-      setProcessingError(null);
-      setExtractedMetadata(null);
+    if (!f || f.length === 0) return;
 
-      // Create log + KMArtifacts + run AI
-      await createAuditLogItem(file);
+    // Limit to MAX_FILES
+    const filesArray = Array.from(f).slice(0, MAX_FILES);
+    
+    if (f.length > MAX_FILES) {
+      alert(`Maximum ${MAX_FILES} files allowed. Only the first ${MAX_FILES} files will be processed.`);
+    }
 
-      let itemId = null;
-      try {
-        itemId = await updateKMArtifactsMetadata(file);
-        setKmItemId(itemId);   // only set if success
-      } catch (err) {
-        console.error("KMArtifacts ERROR:", err);
-        setIsProcessing(false);
-        setProcessingError("KMArtifacts item could not be created.");
-        return; // STOP the flow
+    setUploadedFiles(filesArray);
+    setShowForm(false);
+    setIsProcessing(true);
+    setProcessingError(null);
+    setFilesData([]);
+    setProcessingProgress('');
+
+    try {
+      // Process all files with AI only (no SharePoint upload yet)
+      const processedFilesData: FileData[] = [];
+
+      for (let i = 0; i < filesArray.length; i++) {
+        const file = filesArray[i];
+        setProcessingProgress(`Processing file ${i + 1} of ${filesArray.length}: ${file.name}`);
+
+        // Process file with AI (no SharePoint upload at this stage)
+        const metadata = await processFileWithAI(file);
+        
+        // Add file to processed data (itemId will be set on submit)
+        processedFilesData.push({
+          file: file,
+          itemId: -1, // Placeholder - will be set when uploaded to SharePoint on submit
+          metadata: metadata || {}
+        });
       }
+
+      setFilesData(processedFilesData);
+      setIsProcessing(false);
       
-      const processingSuccess = await processFileWithAI(file);
-
-      // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
-      if (processingSuccess) {
+      if (processedFilesData.length > 0) {
         setShowForm(true);
+      } else {
+        setProcessingError('No files were successfully processed.');
       }
+    } catch (error) {
+      console.error('Error processing files:', error);
+      setProcessingError(error instanceof Error ? error.message : 'An error occurred while processing files.');
+      setIsProcessing(false);
     }
   };
 
 
-  const processFileWithAI = async (file: File): Promise<boolean> => {
+  const processFileWithAI = async (file: File): Promise<Record<string, any> | null> => {
     console.log('=== STARTING FILE PROCESSING ===');
     console.log('File:', file.name);
     console.log('File type:', file.type);
     console.log('File size:', file.size, 'bytes');
-    
-    setIsProcessing(true);
-    setProcessingError(null);
 
     try {
       // Step 1: Parse the document to extract text
@@ -89,17 +109,12 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       if (!parseResult.success) {
         const errorMsg = parseResult.error || 'Failed to parse document';
         console.error('Document parsing failed:', errorMsg);
-        setProcessingError(errorMsg);
-        setIsProcessing(false);
-        return false;
+        return null;
       }
 
       if (!parseResult.text || parseResult.text.trim().length === 0) {
-        const errorMsg = 'No text content found in the document. The document might be image-based or empty.';
-        console.error('No text extracted:', errorMsg);
-        setProcessingError(errorMsg);
-        setIsProcessing(false);
-        return false;
+        console.warn('No text content found in the document. The document might be image-based or empty.');
+        return null;
       }
 
       // Log parsed text for debugging
@@ -113,12 +128,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.log('Step 2: Extracting metadata with AI...');
       const metadata = await openAIService.current.extractMetadata(parseResult.text);
       
-      // Step 3: Set the extracted metadata
-      console.log('Step 3: Setting extracted metadata...');
-      setExtractedMetadata(metadata);
       console.log('=== FILE PROCESSING COMPLETE ===');
-      setIsProcessing(false);
-      return true;
+      return metadata;
     } catch (error) {
       console.error('=== ERROR PROCESSING FILE ===');
       console.error('Error type:', typeof error);
@@ -126,13 +137,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       console.error('Error message:', error instanceof Error ? error.message : String(error));
       console.error('Error stack:', error instanceof Error ? error.stack : 'N/A');
       
-      const errorMsg = error instanceof Error 
-        ? error.message 
-        : 'An error occurred while processing the document. Please fill the form manually.';
-      
-      setProcessingError(errorMsg);
-      setIsProcessing(false);
-      return false;
+      return null;
     }
   };
 
@@ -252,10 +257,10 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     const currentUser = await currentUserResp.json();
     const userId = currentUser.Id;
 
-    // 6️⃣ Metadata payload
+    // 6️⃣ Metadata payload (initial values, will be updated with form data)
     const metadataBody = {
       __metadata: { type: entityType },
-      Status: "Draft",
+      Status: "Submitted", // Will be updated with form data, but set to Submitted as default
       TitleName: "-",
       Abstract: "-",
       BusinessUnit: "-",
@@ -296,7 +301,6 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     }
 
     console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
-    setKmItemId(itemId);   // ⭐ store item id for later updates
     return itemId;
 
   };
@@ -329,23 +333,38 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     TimeStamp: new Date().toISOString()
   };
 
-  const resp = await props.context.spHttpClient.fetch(
+  // Get entity type for the update
+  const listInfoResp = await props.context.spHttpClient.get(
+    `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`,
+    SPHttpClient.configurations.v1
+  );
+  const listInfo = await listInfoResp.json();
+  const entityType = listInfo.ListItemEntityTypeFullName;
+
+  // Add __metadata to payload
+  const payloadWithMetadata = {
+    __metadata: { type: entityType },
+    ...payload
+  };
+
+  const resp = await props.context.spHttpClient.post(
     `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
     SPHttpClient.configurations.v1,
     {
-      method: "POST",
       headers: {
-        "Accept": "application/json;odata=nometadata",
-        "Content-Type": "application/json;odata=nometadata",
+        "Accept": "application/json;odata=verbose",
+        "Content-Type": "application/json;odata=verbose",
         "IF-MATCH": "*",
-        "X-HTTP-Method": "MERGE"
+        "X-HTTP-Method": "MERGE",
+        "odata-version": ""
       },
-      body: JSON.stringify(payload)
+      body: JSON.stringify(payloadWithMetadata)
     }
   );
 
   if (!resp.ok) {
-    throw new Error(await resp.text());
+    const errorText = await resp.text();
+    throw new Error(`Failed to update metadata: ${resp.status} ${errorText}`);
   }
 
   console.log("KMArtifacts updated with form data:", itemId);
@@ -360,28 +379,75 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     }
   };
 
-  const onFormSubmit = async (data: any) => {
-    console.log("Submitting metadata", data);
+  const onFormSubmit = async (allFilesData: FileData[]) => {
+    console.log("Submitting metadata for all files", allFilesData);
 
-    if (!kmItemId) {
-      console.error("KMArtifacts item id is missing");
-      return;
-    }
+    isSubmittingRef.current = true;
+    setIsProcessing(true);
+    setProcessingError(null);
+    setProcessingProgress('Uploading files to SharePoint...');
 
     try {
+      // Process each file - upload to SharePoint and create items
+      for (let i = 0; i < allFilesData.length; i++) {
+        const fileData = allFilesData[i];
+        setProcessingProgress(`Uploading file ${i + 1} of ${allFilesData.length}: ${fileData.file.name}`);
 
-      // 2️⃣ Create new Audit Log item (Action = Submitted)
-      await createAuditLogItem(uploadedFile!, "Submitted");
+        // 1. Upload file and create KMArtifacts item
+        let itemId: number;
+        try {
+          itemId = await updateKMArtifactsMetadata(fileData.file);
+        } catch (err) {
+          console.error(`KMArtifacts ERROR for ${fileData.file.name}:`, err);
+          setProcessingError(`Failed to upload ${fileData.file.name} to SharePoint. Please try again.`);
+          isSubmittingRef.current = false;
+          setIsProcessing(false);
+          return; // Stop processing on error
+        }
 
-      // 1️⃣ Update KMArtifacts row with actual form values
-      await updateKMArtifactsWithFormData(kmItemId, data);
+        // 2. Create audit log item (Action = Submitted)
+        try {
+          await createAuditLogItem(fileData.file, "Submitted");
+        } catch (err) {
+          console.warn(`Audit log creation failed for ${fileData.file.name}:`, err);
+          // Continue even if audit log fails
+        }
 
+        // 3. Update KMArtifacts row with actual form values
+        try {
+          await updateKMArtifactsWithFormData(itemId, fileData.metadata);
+        } catch (err) {
+          console.error(`Failed to update metadata for ${fileData.file.name}:`, err);
+          setProcessingError(`Failed to update metadata for ${fileData.file.name}. File uploaded but metadata may be incomplete.`);
+          isSubmittingRef.current = false;
+          setIsProcessing(false);
+          return; // Stop processing on error
+        }
+      }
 
+      console.log(`Successfully submitted ${allFilesData.length} file(s)`);
+      
+      // Reset all state immediately to prevent form from showing
+      // Reset in order: filesData first (used in render condition), then others
+      setFilesData([]);
+      setUploadedFiles([]);
+      setShowForm(false);
+      setProcessingError(null);
+      setProcessingProgress('');
+      isSubmittingRef.current = false;
+      setIsProcessing(false);
+      
+      // Close the modal immediately
+      // Use requestAnimationFrame to ensure state updates are processed
+      requestAnimationFrame(() => {
+        props.onClose && props.onClose();
+      });
     } catch (err) {
       console.error("Error during form submission:", err);
+      setProcessingError(err instanceof Error ? err.message : 'Error submitting files');
+      isSubmittingRef.current = false;
+      setIsProcessing(false);
     }
-
-    props.onClose && props.onClose();
   };
 
   
@@ -389,7 +455,7 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   return (
     <div className={styles.overlay}>
       <div className={styles.modal} role="dialog" aria-modal="true">
-        {!uploadedFile ? (
+        {uploadedFiles.length === 0 ? (
           <div className={styles.uploadCard}>
             <h3 className={styles.title}>Upload Document</h3>
             <div
@@ -407,13 +473,14 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 <path d="M12 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className={styles.hintText}>Drag & drop files here</div>
-              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start.</div>
+              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. You can upload up to {MAX_FILES} files at once. Click browse or drop files to start.</div>
               <button className={styles.browseBtn} onClick={(e) => { e.stopPropagation(); onBrowse(); }}>
                 Browse files
               </button>
               <input
                 ref={fileInputRef}
                 type="file"
+                multiple
                 style={{ display: 'none' }}
                 accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml"
                 onChange={(e) => onFileSelected(e.target.files)}
@@ -428,9 +495,11 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
             {isProcessing ? (
               <div className={styles.processingContainer}>
                 <div className={styles.processingSpinner}></div>
-                <h3 className={styles.processingTitle}>Analyzing Document...</h3>
+                <h3 className={styles.processingTitle}>
+                  {processingProgress && processingProgress.includes('Uploading') ? 'Uploading Files...' : 'Analyzing Documents...'}
+                </h3>
                 <p className={styles.processingMessage}>
-                  Reading your document and extracting information. This may take a moment.
+                  {processingProgress || 'Reading your documents and extracting information. This may take a moment.'}
                 </p>
                 {processingError && (
                   <div className={styles.errorMessage}>
@@ -438,13 +507,31 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                   </div>
                 )}
               </div>
-            ) : (
-              <MetadataForm 
+            ) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length > 1 ? (
+              <MultiMetadataForm 
                 onSubmit={onFormSubmit} 
-                onClose={() => props.onClose && props.onClose()}
-                initialValues={extractedMetadata || undefined}
+                onClose={() => {
+                  setUploadedFiles([]);
+                  setFilesData([]);
+                  setShowForm(false);
+                  isSubmittingRef.current = false;
+                  props.onClose && props.onClose();
+                }}
+                filesData={filesData}
               />
-            )}
+            ) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length === 1 ? (
+              <MetadataForm 
+                onSubmit={(data) => onFormSubmit([{ file: filesData[0].file, itemId: filesData[0].itemId, metadata: data }])} 
+                onClose={() => {
+                  setUploadedFiles([]);
+                  setFilesData([]);
+                  setShowForm(false);
+                  isSubmittingRef.current = false;
+                  props.onClose && props.onClose();
+                }}
+                initialValues={filesData[0].metadata || undefined}
+              />
+            ) : null}
           </>
         )}
       </div>
@@ -453,3 +540,5 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
 };
 
 export default FileUpload;
+
+

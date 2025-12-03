@@ -267,31 +267,31 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_eb48e8e0{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_eb48e8e0{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_eb48e8e0{color:#444;font-size:13px;margin-bottom:6px}.headerBar_eb48e8e0{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_eb48e8e0{background:0 0;padding:16px}.field_eb48e8e0{display:flex;flex-direction:column}.title_eb48e8e0{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_eb48e8e0{align-items:flex-start;display:flex;flex-direction:column}.subtitle_eb48e8e0{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_eb48e8e0{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_eb48e8e0{display:flex;flex-direction:column;grid-column:1/-1}.label_eb48e8e0{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_eb48e8e0{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0::-webkit-scrollbar{width:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_eb48e8e0{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_eb48e8e0{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_eb48e8e0{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_eb48e8e0:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_eb48e8e0{grid-template-columns:1fr}}.formInner_eb48e8e0::-webkit-scrollbar{width:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_eb48e8e0{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_923aff4f{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_923aff4f{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_923aff4f{color:#444;font-size:13px;margin-bottom:6px}.headerBar_923aff4f{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_923aff4f{background:0 0;padding:16px}.field_923aff4f{display:flex;flex-direction:column}.title_923aff4f{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_923aff4f{align-items:flex-start;display:flex;flex-direction:column}.subtitle_923aff4f{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_923aff4f{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_923aff4f{display:flex;flex-direction:column;grid-column:1/-1}.label_923aff4f{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_923aff4f{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_923aff4f:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_923aff4f::placeholder{color:#9ca3af;opacity:1}.input_923aff4f:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_923aff4f{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_923aff4f:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_923aff4f::placeholder{color:#9ca3af;opacity:1}.textarea_923aff4f:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_923aff4f{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_923aff4f:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_923aff4f::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_923aff4f:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_923aff4f::-webkit-scrollbar{width:8px}.textareaScrollable_923aff4f::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_923aff4f::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_923aff4f::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_923aff4f{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_923aff4f{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_923aff4f{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:12px 20px}.submitBtn_923aff4f:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_923aff4f{grid-template-columns:1fr}}.formInner_923aff4f::-webkit-scrollbar{width:8px}.formInner_923aff4f::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_923aff4f::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_923aff4f::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_923aff4f{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBS0osdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FJRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_eb48e8e0: "formWrapper_eb48e8e0",
-  formInner_eb48e8e0: "formInner_eb48e8e0",
-  note_eb48e8e0: "note_eb48e8e0",
-  headerBar_eb48e8e0: "headerBar_eb48e8e0",
-  cardMeta_eb48e8e0: "cardMeta_eb48e8e0",
-  field_eb48e8e0: "field_eb48e8e0",
-  title_eb48e8e0: "title_eb48e8e0",
-  titleWrap_eb48e8e0: "titleWrap_eb48e8e0",
-  subtitle_eb48e8e0: "subtitle_eb48e8e0",
-  closeBtn_eb48e8e0: "closeBtn_eb48e8e0",
-  fieldFull_eb48e8e0: "fieldFull_eb48e8e0",
-  label_eb48e8e0: "label_eb48e8e0",
-  input_eb48e8e0: "input_eb48e8e0",
+  formWrapper_923aff4f: "formWrapper_923aff4f",
+  formInner_923aff4f: "formInner_923aff4f",
+  note_923aff4f: "note_923aff4f",
+  headerBar_923aff4f: "headerBar_923aff4f",
+  cardMeta_923aff4f: "cardMeta_923aff4f",
+  field_923aff4f: "field_923aff4f",
+  title_923aff4f: "title_923aff4f",
+  titleWrap_923aff4f: "titleWrap_923aff4f",
+  subtitle_923aff4f: "subtitle_923aff4f",
+  closeBtn_923aff4f: "closeBtn_923aff4f",
+  fieldFull_923aff4f: "fieldFull_923aff4f",
+  label_923aff4f: "label_923aff4f",
+  input_923aff4f: "input_923aff4f",
   input: "input",
-  textarea_eb48e8e0: "textarea_eb48e8e0",
+  textarea_923aff4f: "textarea_923aff4f",
   textarea: "textarea",
-  textareaScrollable_eb48e8e0: "textareaScrollable_eb48e8e0",
+  textareaScrollable_923aff4f: "textareaScrollable_923aff4f",
   textareaScrollable: "textareaScrollable",
-  grid_eb48e8e0: "grid_eb48e8e0",
-  actions_eb48e8e0: "actions_eb48e8e0",
-  submitBtn_eb48e8e0: "submitBtn_eb48e8e0"
+  grid_923aff4f: "grid_923aff4f",
+  actions_923aff4f: "actions_923aff4f",
+  submitBtn_923aff4f: "submitBtn_923aff4f"
 });
 
 
@@ -321,6 +321,51 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
 
 /***/ }),
 
+/***/ 5124:
+/*!******************************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.module.css ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_3edb5c13{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_3edb5c13{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_3edb5c13{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_3edb5c13{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_3edb5c13{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_3edb5c13{align-items:flex-start;display:flex;flex-direction:column}.subtitle_3edb5c13{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_3edb5c13{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_3edb5c13{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);margin-bottom:24px;padding:24px}.fileFormTitle_3edb5c13{border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 20px;padding-bottom:12px}.fieldFull_3edb5c13,.field_3edb5c13{display:flex;flex-direction:column}.fieldFull_3edb5c13{grid-column:1/-1}.label_3edb5c13{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_3edb5c13{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_3edb5c13:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_3edb5c13::placeholder{color:#9ca3af;opacity:1}.input_3edb5c13:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_3edb5c13{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_3edb5c13:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_3edb5c13::placeholder{color:#9ca3af;opacity:1}.textarea_3edb5c13:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_3edb5c13{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_3edb5c13:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_3edb5c13::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_3edb5c13:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_3edb5c13::-webkit-scrollbar{width:8px}.textareaScrollable_3edb5c13::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_3edb5c13::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_3edb5c13::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_3edb5c13{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_3edb5c13{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_3edb5c13{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:12px 20px}.submitBtn_3edb5c13:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_3edb5c13{grid-template-columns:1fr}}.formInner_3edb5c13::-webkit-scrollbar{width:8px}.formInner_3edb5c13::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_3edb5c13::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_3edb5c13::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_3edb5c13{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBREEsa0JBQUEsQ0FEQSxZQUVBLENBR0Ysd0JBTUUsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBQ0EsbUJBQ0EsQ0FRRixvQ0FKRSxZQUFBLENBQ0EscUJBTUEsQ0FIRixvQkFDRSxnQkFFQSxDQUdGLGdCQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGlCQUNBLENBR0YsZ0JBS0UsZUFBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FFQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxpQkFBQSxDQU9BLDJEQUFBLENBRUEsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixzQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0Ysc0JBQ0UsZ0NBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FDQSwwQkFBQSxDQUlKLG1CQUtFLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxnQkFBQSxDQURBLFlBQUEsQ0FHQSxlQUlBLENBRUEsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRix5Q0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YseUJBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FJSiw2QkFPRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUVBLGlDQUFBLENBUEEsY0FBQSxDQU1BLGVBQUEsQ0FFQSxlQUFBLENBVEEsZ0JBQUEsQ0FEQSxnQkFBQSxDQUlBLGVBQUEsQ0FMQSxZQUFBLENBSUEsV0FPQSxDQUVBLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsbURBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLG1DQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBR0YsZ0RBQ0UsU0FBQSxDQUdGLHNEQUNFLCtCQUFBLENBQ0EsaUJBQUEsQ0FHRiw0REFDRSwrQkFBQSxDQUdGLHNEQUNFLDZCQUFBLENBSUosZUFJRSxpQkFBQSxDQUhBLFlBQUEsQ0FFQSxhQUFBLENBREEsNkJBRUEsQ0FHRiwwQkFRRSwyREFBQSxDQUhBLHVDQUFBLENBRUEsUUFBQSxDQU5BLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGVBQUEsQ0FDQSxnQkFBQSxDQUVBLGVBQUEsQ0FHQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0Esa0JBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUVBLDBCQUNFLDBCQUFBLENBSUoseUJBQ0UsZUFDRSx5QkFBQSxDQUFBLENBSUosdUNBQ0UsU0FBQSxDQUVGLDZDQUdFLHlCQUFBLENBRkEsK0JBQUEsQ0FDQSxpQkFDQSxDQUVGLG1EQUNFLCtCQUFBLENBRUYsNkNBQ0UsNkJBQUEsQ0FHRixvQkFDRSx1REFBQSxDQUNBLG9CQUFBIiwiZmlsZSI6Ik11bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5jc3MifQ== */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  formWrapper_3edb5c13: "formWrapper_3edb5c13",
+  formInner_3edb5c13: "formInner_3edb5c13",
+  headerBar_3edb5c13: "headerBar_3edb5c13",
+  cardMeta_3edb5c13: "cardMeta_3edb5c13",
+  title_3edb5c13: "title_3edb5c13",
+  titleWrap_3edb5c13: "titleWrap_3edb5c13",
+  subtitle_3edb5c13: "subtitle_3edb5c13",
+  closeBtn_3edb5c13: "closeBtn_3edb5c13",
+  singleFormContainer_3edb5c13: "singleFormContainer_3edb5c13",
+  fileFormTitle_3edb5c13: "fileFormTitle_3edb5c13",
+  field_3edb5c13: "field_3edb5c13",
+  fieldFull_3edb5c13: "fieldFull_3edb5c13",
+  label_3edb5c13: "label_3edb5c13",
+  input_3edb5c13: "input_3edb5c13",
+  input: "input",
+  textarea_3edb5c13: "textarea_3edb5c13",
+  textarea: "textarea",
+  textareaScrollable_3edb5c13: "textareaScrollable_3edb5c13",
+  textareaScrollable: "textareaScrollable",
+  grid_3edb5c13: "grid_3edb5c13",
+  submitContainer_3edb5c13: "submitContainer_3edb5c13",
+  submitBtn_3edb5c13: "submitBtn_3edb5c13"
+});
+
+
+/***/ }),
+
 /***/ 4538:
 /*!****************************************************************************!*\
   !*** ./lib/webparts/migration/components/Navigation/Navigation.module.css ***!
@@ -335,14 +380,14 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_72dd57cd{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_72dd57cd{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_72dd57cd{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_72dd57cd.active_72dd57cd{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLEtBQUEsQ0FGQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxjQUNBLENBR0Ysa0JBUUUsbUNBQUEsQ0FMQSxhQUFBLENBR0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUpBLGlCQUFBLENBUUEsaUJBQUEsQ0FQQSxvQkFBQSxDQUtBLCtCQUVBLENBR0Esa0NBRUUsK0JBQUEsQ0FEQSxhQUNBIiwiZmlsZSI6Ik5hdmlnYXRpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_44847384{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_44847384{align-items:center;display:flex;gap:0;margin:0 auto;max-width:92%;padding:0 60px}.navItem_44847384{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_44847384.active_44847384{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQUtBLEtBQUEsQ0FGQSxhQUFBLENBREEsYUFBQSxDQUVBLGNBQ0EsQ0FHRixrQkFRRSxtQ0FBQSxDQUxBLGFBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSxpQkFBQSxDQVBBLG9CQUFBLENBS0EsK0JBRUEsQ0FHQSxrQ0FFRSwrQkFBQSxDQURBLGFBQ0EiLCJmaWxlIjoiTmF2aWdhdGlvbi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  navigation_72dd57cd: "navigation_72dd57cd",
-  navContainer_72dd57cd: "navContainer_72dd57cd",
-  navItem_72dd57cd: "navItem_72dd57cd",
-  active_72dd57cd: "active_72dd57cd"
+  navigation_44847384: "navigation_44847384",
+  navContainer_44847384: "navContainer_44847384",
+  navItem_44847384: "navItem_44847384",
+  active_44847384: "active_44847384"
 });
 
 
@@ -1094,8 +1139,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
 /* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
-/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
-/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _MultiMetadataForm_MultiMetadataForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../MultiMetadataForm/MultiMetadataForm */ 4760);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1138,6 +1195,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 // Azure OpenAI Configuration
 // NOTE: In production, API keys should be stored securely (e.g., Azure Key Vault, environment variables, or backend proxy)
 // Exposing API keys in client-side code is a security risk. Consider using a backend API proxy.
@@ -1146,66 +1204,84 @@ var AZURE_OPENAI_CONFIG = {
     endpoint: 'https://engineeringteamopenai.openai.azure.com',
     deploymentName: 'gpt-4o'
 };
+var MAX_FILES = 5;
 var FileUpload = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), dragOver = _a[0], setDragOver = _a[1];
-    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), uploadedFile = _b[0], setUploadedFile = _b[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), uploadedFiles = _b[0], setUploadedFiles = _b[1];
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isProcessing = _c[0], setIsProcessing = _c[1];
-    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), extractedMetadata = _d[0], setExtractedMetadata = _d[1];
-    var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _e[0], setProcessingError = _e[1];
-    var _f = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), kmItemId = _f[0], setKmItemId = _f[1];
+    var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), processingProgress = _d[0], setProcessingProgress = _d[1];
+    var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), filesData = _e[0], setFilesData = _e[1];
+    var _f = react__WEBPACK_IMPORTED_MODULE_0__.useState(null), processingError = _f[0], setProcessingError = _f[1];
     var _g = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showForm = _g[0], setShowForm = _g[1];
     var fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_6__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    var isSubmittingRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
     var onBrowse = function () {
         var _a;
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var file, itemId, err_1, processingSuccess;
+        var filesArray, processedFilesData, i, file, metadata, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    file = f && f.length ? f[0] : undefined;
-                    if (!file) return [3 /*break*/, 7];
-                    setUploadedFile(file);
-                    setShowForm(false); // ⛔ hide form initially
-                    setIsProcessing(true); // ⏳ immediately show analyzing UI
+                    if (!f || f.length === 0)
+                        return [2 /*return*/];
+                    filesArray = Array.from(f).slice(0, MAX_FILES);
+                    if (f.length > MAX_FILES) {
+                        alert("Maximum ".concat(MAX_FILES, " files allowed. Only the first ").concat(MAX_FILES, " files will be processed."));
+                    }
+                    setUploadedFiles(filesArray);
+                    setShowForm(false);
+                    setIsProcessing(true);
                     setProcessingError(null);
-                    setExtractedMetadata(null);
-                    // Create log + KMArtifacts + run AI
-                    return [4 /*yield*/, createAuditLogItem(file)];
+                    setFilesData([]);
+                    setProcessingProgress('');
+                    _a.label = 1;
                 case 1:
-                    // Create log + KMArtifacts + run AI
-                    _a.sent();
-                    itemId = null;
+                    _a.trys.push([1, 6, , 7]);
+                    processedFilesData = [];
+                    i = 0;
                     _a.label = 2;
                 case 2:
-                    _a.trys.push([2, 4, , 5]);
-                    return [4 /*yield*/, updateKMArtifactsMetadata(file)];
+                    if (!(i < filesArray.length)) return [3 /*break*/, 5];
+                    file = filesArray[i];
+                    setProcessingProgress("Processing file ".concat(i + 1, " of ").concat(filesArray.length, ": ").concat(file.name));
+                    return [4 /*yield*/, processFileWithAI(file)];
                 case 3:
-                    itemId = _a.sent();
-                    setKmItemId(itemId); // only set if success
-                    return [3 /*break*/, 5];
+                    metadata = _a.sent();
+                    // Add file to processed data (itemId will be set on submit)
+                    processedFilesData.push({
+                        file: file,
+                        itemId: -1,
+                        metadata: metadata || {}
+                    });
+                    _a.label = 4;
                 case 4:
-                    err_1 = _a.sent();
-                    console.error("KMArtifacts ERROR:", err_1);
+                    i++;
+                    return [3 /*break*/, 2];
+                case 5:
+                    setFilesData(processedFilesData);
                     setIsProcessing(false);
-                    setProcessingError("KMArtifacts item could not be created.");
-                    return [2 /*return*/]; // STOP the flow
-                case 5: return [4 /*yield*/, processFileWithAI(file)];
-                case 6:
-                    processingSuccess = _a.sent();
-                    // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
-                    if (processingSuccess) {
+                    if (processedFilesData.length > 0) {
                         setShowForm(true);
                     }
-                    _a.label = 7;
+                    else {
+                        setProcessingError('No files were successfully processed.');
+                    }
+                    return [3 /*break*/, 7];
+                case 6:
+                    error_1 = _a.sent();
+                    console.error('Error processing files:', error_1);
+                    setProcessingError(error_1 instanceof Error ? error_1.message : 'An error occurred while processing files.');
+                    setIsProcessing(false);
+                    return [3 /*break*/, 7];
                 case 7: return [2 /*return*/];
             }
         });
     }); };
     var processFileWithAI = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var parseResult, errorMsg, errorMsg, metadata, error_1, errorMsg;
+        var parseResult, errorMsg, metadata, error_2;
         var _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
@@ -1214,14 +1290,12 @@ var FileUpload = function (props) {
                     console.log('File:', file.name);
                     console.log('File type:', file.type);
                     console.log('File size:', file.size, 'bytes');
-                    setIsProcessing(true);
-                    setProcessingError(null);
                     _b.label = 1;
                 case 1:
                     _b.trys.push([1, 4, , 5]);
                     // Step 1: Parse the document to extract text
                     console.log('Step 1: Parsing document...');
-                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_4__.DocumentParser.parseFile(file)];
+                    return [4 /*yield*/, _services_DocumentParser__WEBPACK_IMPORTED_MODULE_5__.DocumentParser.parseFile(file)];
                 case 2:
                     parseResult = _b.sent();
                     console.log('Parse result:', {
@@ -1232,16 +1306,11 @@ var FileUpload = function (props) {
                     if (!parseResult.success) {
                         errorMsg = parseResult.error || 'Failed to parse document';
                         console.error('Document parsing failed:', errorMsg);
-                        setProcessingError(errorMsg);
-                        setIsProcessing(false);
-                        return [2 /*return*/, false];
+                        return [2 /*return*/, null];
                     }
                     if (!parseResult.text || parseResult.text.trim().length === 0) {
-                        errorMsg = 'No text content found in the document. The document might be image-based or empty.';
-                        console.error('No text extracted:', errorMsg);
-                        setProcessingError(errorMsg);
-                        setIsProcessing(false);
-                        return [2 /*return*/, false];
+                        console.warn('No text content found in the document. The document might be image-based or empty.');
+                        return [2 /*return*/, null];
                     }
                     // Log parsed text for debugging
                     console.log('=== FILE PARSED SUCCESSFULLY ===');
@@ -1254,25 +1323,16 @@ var FileUpload = function (props) {
                     return [4 /*yield*/, openAIService.current.extractMetadata(parseResult.text)];
                 case 3:
                     metadata = _b.sent();
-                    // Step 3: Set the extracted metadata
-                    console.log('Step 3: Setting extracted metadata...');
-                    setExtractedMetadata(metadata);
                     console.log('=== FILE PROCESSING COMPLETE ===');
-                    setIsProcessing(false);
-                    return [2 /*return*/, true];
+                    return [2 /*return*/, metadata];
                 case 4:
-                    error_1 = _b.sent();
+                    error_2 = _b.sent();
                     console.error('=== ERROR PROCESSING FILE ===');
-                    console.error('Error type:', typeof error_1);
-                    console.error('Error details:', error_1);
-                    console.error('Error message:', error_1 instanceof Error ? error_1.message : String(error_1));
-                    console.error('Error stack:', error_1 instanceof Error ? error_1.stack : 'N/A');
-                    errorMsg = error_1 instanceof Error
-                        ? error_1.message
-                        : 'An error occurred while processing the document. Please fill the form manually.';
-                    setProcessingError(errorMsg);
-                    setIsProcessing(false);
-                    return [2 /*return*/, false];
+                    console.error('Error type:', typeof error_2);
+                    console.error('Error details:', error_2);
+                    console.error('Error message:', error_2 instanceof Error ? error_2.message : String(error_2));
+                    console.error('Error stack:', error_2 instanceof Error ? error_2.stack : 'N/A');
+                    return [2 /*return*/, null];
                 case 5: return [2 /*return*/];
             }
         });
@@ -1392,7 +1452,7 @@ var FileUpload = function (props) {
                     userId = currentUser.Id;
                     metadataBody = {
                         __metadata: { type: entityType },
-                        Status: "Draft",
+                        Status: "Submitted",
                         TitleName: "-",
                         Abstract: "-",
                         BusinessUnit: "-",
@@ -1427,25 +1487,24 @@ var FileUpload = function (props) {
                     throw new Error("KMArtifacts update failed: ".concat(updateResp.status, " ").concat(txt));
                 case 12:
                     console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
-                    setKmItemId(itemId); // ⭐ store item id for later updates
                     return [2 /*return*/, itemId];
             }
         });
     }); };
     var updateKMArtifactsWithFormData = function (itemId, data) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, resp, _a;
-        var _b, _c;
-        return __generator(this, function (_d) {
-            switch (_d.label) {
+        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, listInfoResp, listInfo, entityType, payloadWithMetadata, resp, errorText;
+        var _a, _b;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
                 case 0:
                     LIBRARY_NAME = "KMArtifacts";
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 1:
-                    currentUserResp = _d.sent();
+                    currentUserResp = _c.sent();
                     return [4 /*yield*/, currentUserResp.json()];
                 case 2:
-                    currentUser = _d.sent();
+                    currentUser = _c.sent();
                     userId = currentUser.Id;
                     payload = {
                         Status: data.Status || "Submitted",
@@ -1458,28 +1517,37 @@ var FileUpload = function (props) {
                         DocumentType: data.documentType || "-",
                         DiseaseArea: data.diseaseArea || "-",
                         TherapyArea: data.therapyArea || "-",
-                        ComplianceFlag: (_b = data.complianceFlag) !== null && _b !== void 0 ? _b : false,
-                        Sanitized: (_c = data.sanitized) !== null && _c !== void 0 ? _c : false,
+                        ComplianceFlag: (_a = data.complianceFlag) !== null && _a !== void 0 ? _a : false,
+                        Sanitized: (_b = data.sanitized) !== null && _b !== void 0 ? _b : false,
                         PerformedById: userId,
                         TimeStamp: new Date().toISOString()
                     };
-                    return [4 /*yield*/, props.context.spHttpClient.fetch("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
-                            method: "POST",
-                            headers: {
-                                "Accept": "application/json;odata=nometadata",
-                                "Content-Type": "application/json;odata=nometadata",
-                                "IF-MATCH": "*",
-                                "X-HTTP-Method": "MERGE"
-                            },
-                            body: JSON.stringify(payload)
-                        })];
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 3:
-                    resp = _d.sent();
-                    if (!!resp.ok) return [3 /*break*/, 5];
-                    _a = Error.bind;
-                    return [4 /*yield*/, resp.text()];
-                case 4: throw new (_a.apply(Error, [void 0, _d.sent()]))();
+                    listInfoResp = _c.sent();
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 4:
+                    listInfo = _c.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    payloadWithMetadata = __assign({ __metadata: { type: entityType } }, payload);
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(payloadWithMetadata)
+                        })];
                 case 5:
+                    resp = _c.sent();
+                    if (!!resp.ok) return [3 /*break*/, 7];
+                    return [4 /*yield*/, resp.text()];
+                case 6:
+                    errorText = _c.sent();
+                    throw new Error("Failed to update metadata: ".concat(resp.status, " ").concat(errorText));
+                case 7:
                     console.log("KMArtifacts updated with form data:", itemId);
                     return [2 /*return*/];
             }
@@ -1492,42 +1560,96 @@ var FileUpload = function (props) {
             onFileSelected(e.dataTransfer.files);
         }
     };
-    var onFormSubmit = function (data) { return __awaiter(void 0, void 0, void 0, function () {
-        var err_2;
+    var onFormSubmit = function (allFilesData) { return __awaiter(void 0, void 0, void 0, function () {
+        var i, fileData, itemId, err_1, err_2, err_3, err_4;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    console.log("Submitting metadata", data);
-                    if (!kmItemId) {
-                        console.error("KMArtifacts item id is missing");
-                        return [2 /*return*/];
-                    }
+                    console.log("Submitting metadata for all files", allFilesData);
+                    isSubmittingRef.current = true;
+                    setIsProcessing(true);
+                    setProcessingError(null);
+                    setProcessingProgress('Uploading files to SharePoint...');
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 4, , 5]);
-                    // 2️⃣ Create new Audit Log item (Action = Submitted)
-                    return [4 /*yield*/, createAuditLogItem(uploadedFile, "Submitted")];
+                    _a.trys.push([1, 14, , 15]);
+                    i = 0;
+                    _a.label = 2;
                 case 2:
-                    // 2️⃣ Create new Audit Log item (Action = Submitted)
-                    _a.sent();
-                    // 1️⃣ Update KMArtifacts row with actual form values
-                    return [4 /*yield*/, updateKMArtifactsWithFormData(kmItemId, data)];
+                    if (!(i < allFilesData.length)) return [3 /*break*/, 13];
+                    fileData = allFilesData[i];
+                    setProcessingProgress("Uploading file ".concat(i + 1, " of ").concat(allFilesData.length, ": ").concat(fileData.file.name));
+                    itemId = void 0;
+                    _a.label = 3;
                 case 3:
-                    // 1️⃣ Update KMArtifacts row with actual form values
-                    _a.sent();
-                    return [3 /*break*/, 5];
+                    _a.trys.push([3, 5, , 6]);
+                    return [4 /*yield*/, updateKMArtifactsMetadata(fileData.file)];
                 case 4:
-                    err_2 = _a.sent();
-                    console.error("Error during form submission:", err_2);
-                    return [3 /*break*/, 5];
+                    itemId = _a.sent();
+                    return [3 /*break*/, 6];
                 case 5:
-                    props.onClose && props.onClose();
-                    return [2 /*return*/];
+                    err_1 = _a.sent();
+                    console.error("KMArtifacts ERROR for ".concat(fileData.file.name, ":"), err_1);
+                    setProcessingError("Failed to upload ".concat(fileData.file.name, " to SharePoint. Please try again."));
+                    isSubmittingRef.current = false;
+                    setIsProcessing(false);
+                    return [2 /*return*/]; // Stop processing on error
+                case 6:
+                    _a.trys.push([6, 8, , 9]);
+                    return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
+                case 7:
+                    _a.sent();
+                    return [3 /*break*/, 9];
+                case 8:
+                    err_2 = _a.sent();
+                    console.warn("Audit log creation failed for ".concat(fileData.file.name, ":"), err_2);
+                    return [3 /*break*/, 9];
+                case 9:
+                    _a.trys.push([9, 11, , 12]);
+                    return [4 /*yield*/, updateKMArtifactsWithFormData(itemId, fileData.metadata)];
+                case 10:
+                    _a.sent();
+                    return [3 /*break*/, 12];
+                case 11:
+                    err_3 = _a.sent();
+                    console.error("Failed to update metadata for ".concat(fileData.file.name, ":"), err_3);
+                    setProcessingError("Failed to update metadata for ".concat(fileData.file.name, ". File uploaded but metadata may be incomplete."));
+                    isSubmittingRef.current = false;
+                    setIsProcessing(false);
+                    return [2 /*return*/]; // Stop processing on error
+                case 12:
+                    i++;
+                    return [3 /*break*/, 2];
+                case 13:
+                    console.log("Successfully submitted ".concat(allFilesData.length, " file(s)"));
+                    // Reset all state immediately to prevent form from showing
+                    // Reset in order: filesData first (used in render condition), then others
+                    setFilesData([]);
+                    setUploadedFiles([]);
+                    setShowForm(false);
+                    setProcessingError(null);
+                    setProcessingProgress('');
+                    isSubmittingRef.current = false;
+                    setIsProcessing(false);
+                    // Close the modal immediately
+                    // Use requestAnimationFrame to ensure state updates are processed
+                    requestAnimationFrame(function () {
+                        props.onClose && props.onClose();
+                    });
+                    return [3 /*break*/, 15];
+                case 14:
+                    err_4 = _a.sent();
+                    console.error("Error during form submission:", err_4);
+                    setProcessingError(err_4 instanceof Error ? err_4.message : 'Error submitting files');
+                    isSubmittingRef.current = false;
+                    setIsProcessing(false);
+                    return [3 /*break*/, 15];
+                case 15: return [2 /*return*/];
             }
         });
     }); };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, uploadedFiles.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "".concat(_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZone, " ").concat(dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZoneHover : ''), onDragOver: function (e) { e.preventDefault(); setDragOver(true); }, onDragLeave: function () { return setDragOver(false); }, onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
@@ -1535,15 +1657,30 @@ var FileUpload = function (props) {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hintText }, "Drag & drop files here"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions },
+                    "Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. You can upload up to ",
+                    MAX_FILES,
+                    " files at once. Click browse or drop files to start."),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: function (e) { e.stopPropagation(); onBrowse(); } }, "Browse files"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml", onChange: function (e) { return onFileSelected(e.target.files); } })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", multiple: true, style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml", onChange: function (e) { return onFileSelected(e.target.files); } })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, "Analyzing Document..."),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
-            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: onFormSubmit, onClose: function () { return props.onClose && props.onClose(); }, initialValues: extractedMetadata || undefined })))))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, processingProgress && processingProgress.includes('Uploading') ? 'Uploading Files...' : 'Analyzing Documents...'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, processingProgress || 'Reading your documents and extracting information. This may take a moment.'),
+            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length > 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MultiMetadataForm_MultiMetadataForm__WEBPACK_IMPORTED_MODULE_4__.MultiMetadataForm, { onSubmit: onFormSubmit, onClose: function () {
+                setUploadedFiles([]);
+                setFilesData([]);
+                setShowForm(false);
+                isSubmittingRef.current = false;
+                props.onClose && props.onClose();
+            }, filesData: filesData })) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length === 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: function (data) { return onFormSubmit([{ file: filesData[0].file, itemId: filesData[0].itemId, metadata: data }]); }, onClose: function () {
+                setUploadedFiles([]);
+                setFilesData([]);
+                setShowForm(false);
+                isSubmittingRef.current = false;
+                props.onClose && props.onClose();
+            }, initialValues: filesData[0].metadata || undefined })) : null)))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -1772,24 +1909,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MetadataForm.module.css */ 8856);
 var styles = {
-    formWrapper: 'formWrapper_eb48e8e0',
-    formInner: 'formInner_eb48e8e0',
-    note: 'note_eb48e8e0',
-    headerBar: 'headerBar_eb48e8e0',
-    cardMeta: 'cardMeta_eb48e8e0',
-    field: 'field_eb48e8e0',
-    title: 'title_eb48e8e0',
-    titleWrap: 'titleWrap_eb48e8e0',
-    subtitle: 'subtitle_eb48e8e0',
-    closeBtn: 'closeBtn_eb48e8e0',
-    fieldFull: 'fieldFull_eb48e8e0',
-    label: 'label_eb48e8e0',
-    input: 'input_eb48e8e0',
-    textarea: 'textarea_eb48e8e0',
-    textareaScrollable: 'textareaScrollable_eb48e8e0',
-    grid: 'grid_eb48e8e0',
-    actions: 'actions_eb48e8e0',
-    submitBtn: 'submitBtn_eb48e8e0'
+    formWrapper: 'formWrapper_923aff4f',
+    formInner: 'formInner_923aff4f',
+    note: 'note_923aff4f',
+    headerBar: 'headerBar_923aff4f',
+    cardMeta: 'cardMeta_923aff4f',
+    field: 'field_923aff4f',
+    title: 'title_923aff4f',
+    titleWrap: 'titleWrap_923aff4f',
+    subtitle: 'subtitle_923aff4f',
+    closeBtn: 'closeBtn_923aff4f',
+    fieldFull: 'fieldFull_923aff4f',
+    label: 'label_923aff4f',
+    input: 'input_923aff4f',
+    textarea: 'textarea_923aff4f',
+    textareaScrollable: 'textareaScrollable_923aff4f',
+    grid: 'grid_923aff4f',
+    actions: 'actions_923aff4f',
+    submitBtn: 'submitBtn_923aff4f'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1903,6 +2040,173 @@ var styles = {
 
 /***/ }),
 
+/***/ 4760:
+/*!**********************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MultiMetadataForm: () => (/* binding */ MultiMetadataForm),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MultiMetadataForm.module.scss */ 5632);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+
+var MultiMetadataForm = function (_a) {
+    var onSubmit = _a.onSubmit, onClose = _a.onClose, filesData = _a.filesData;
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState({}), formsData = _b[0], setFormsData = _b[1];
+    // Initialize forms data from filesData
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        var initialData = {};
+        filesData.forEach(function (fileData, index) {
+            initialData[index] = __assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, fileData.metadata);
+        });
+        setFormsData(initialData);
+    }, [filesData]);
+    var handleFieldChange = function (fileIndex, fieldName, value) {
+        setFormsData(function (prev) {
+            var _a, _b;
+            return (__assign(__assign({}, prev), (_a = {}, _a[fileIndex] = __assign(__assign({}, prev[fileIndex]), (_b = {}, _b[fieldName] = value, _b)), _a)));
+        });
+    };
+    var handleSubmit = function (e) {
+        e && e.preventDefault();
+        // Convert formsData to array format expected by parent
+        var allFormsData = filesData.map(function (_, index) { return ({
+            file: filesData[index].file,
+            itemId: filesData[index].itemId,
+            metadata: formsData[index] || {}
+        }); });
+        onSubmit && onSubmit(allFormsData);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formWrapper },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerBar },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].titleWrap },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle },
+                    filesData.length,
+                    " file",
+                    filesData.length > 1 ? 's' : '',
+                    " uploaded. Review and submit metadata for all files."))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", "aria-label": "Close", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return onClose && onClose(); }, title: "Close" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M18 6L6 18M6 6l12 12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardMeta },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner }, filesData.map(function (fileData, index) {
+                    var formData = formsData[index] || {};
+                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: index, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].singleFormContainer },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fileFormTitle },
+                            "File ",
+                            index + 1,
+                            " - ",
+                            fileData.file.name),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title-".concat(index) }, "Title"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title-".concat(index), name: "title", placeholder: "Enter document title", value: formData.title || '', onChange: function (e) { return handleFieldChange(index, 'title', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu-".concat(index) }, "Business Unit"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu-".concat(index), name: "bu", placeholder: "Select or type BU", value: formData.bu || '', onChange: function (e) { return handleFieldChange(index, 'bu', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department-".concat(index) }, "Department"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department-".concat(index), name: "department", placeholder: "Department", value: formData.department || '', onChange: function (e) { return handleFieldChange(index, 'department', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region-".concat(index) }, "Region"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region-".concat(index), name: "region", placeholder: "Region", value: formData.region || '', onChange: function (e) { return handleFieldChange(index, 'region', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client-".concat(index) }, "Client"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client-".concat(index), name: "client", placeholder: "Client name", value: formData.client || '', onChange: function (e) { return handleFieldChange(index, 'client', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType-".concat(index) }, "Document Type"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType-".concat(index), name: "documentType", placeholder: "e.g., PPTX, Report", value: formData.documentType || '', onChange: function (e) { return handleFieldChange(index, 'documentType', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea-".concat(index) }, "Disease Area"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "diseaseArea-".concat(index), name: "diseaseArea", placeholder: "Disease Area", value: formData.diseaseArea || '', onChange: function (e) { return handleFieldChange(index, 'diseaseArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea-".concat(index) }, "Therapy Area"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "therapyArea-".concat(index), name: "therapyArea", placeholder: "Therapy Area", value: formData.therapyArea || '', onChange: function (e) { return handleFieldChange(index, 'therapyArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract-".concat(index) }, "Abstract"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract-".concat(index), name: "abstract", placeholder: "Short summary (1-2 lines)", value: formData.abstract || '', onChange: function (e) { return handleFieldChange(index, 'abstract', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails-".concat(index) }, "Emails Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails-".concat(index), name: "emails", value: formData.emails || '', onChange: function (e) { return handleFieldChange(index, 'emails', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones-".concat(index) }, "Phones Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones-".concat(index), name: "phones", value: formData.phones || '', onChange: function (e) { return handleFieldChange(index, 'phones', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids-".concat(index) }, "IDs Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids-".concat(index), name: "ids", value: formData.ids || '', onChange: function (e) { return handleFieldChange(index, 'ids', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing-".concat(index) }, "Pricing / Sensitive Terms"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing-".concat(index), name: "pricing", value: formData.pricing || '', onChange: function (e) { return handleFieldChange(index, 'pricing', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })))));
+                })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitContainer },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn },
+                        "Submit All (",
+                        filesData.length,
+                        " file",
+                        filesData.length > 1 ? 's' : '',
+                        ")"))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MultiMetadataForm);
+
+
+/***/ }),
+
+/***/ 5632:
+/*!**********************************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.module.scss.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./MultiMetadataForm.module.css */ 5124);
+var styles = {
+    formWrapper: 'formWrapper_3edb5c13',
+    formInner: 'formInner_3edb5c13',
+    headerBar: 'headerBar_3edb5c13',
+    cardMeta: 'cardMeta_3edb5c13',
+    title: 'title_3edb5c13',
+    titleWrap: 'titleWrap_3edb5c13',
+    subtitle: 'subtitle_3edb5c13',
+    closeBtn: 'closeBtn_3edb5c13',
+    singleFormContainer: 'singleFormContainer_3edb5c13',
+    fileFormTitle: 'fileFormTitle_3edb5c13',
+    field: 'field_3edb5c13',
+    fieldFull: 'fieldFull_3edb5c13',
+    label: 'label_3edb5c13',
+    input: 'input_3edb5c13',
+    textarea: 'textarea_3edb5c13',
+    textareaScrollable: 'textareaScrollable_3edb5c13',
+    grid: 'grid_3edb5c13',
+    submitContainer: 'submitContainer_3edb5c13',
+    submitBtn: 'submitBtn_3edb5c13'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
 /***/ 3154:
 /*!********************************************************************!*\
   !*** ./lib/webparts/migration/components/Navigation/Navigation.js ***!
@@ -1950,10 +2254,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./Navigation.module.css */ 4538);
 var styles = {
-    navigation: 'navigation_72dd57cd',
-    navContainer: 'navContainer_72dd57cd',
-    navItem: 'navItem_72dd57cd',
-    active: 'active_72dd57cd'
+    navigation: 'navigation_44847384',
+    navContainer: 'navContainer_44847384',
+    navItem: 'navItem_44847384',
+    active: 'active_44847384'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2354,7 +2658,7 @@ __webpack_require__.r(__webpack_exports__);
 var AboutPage = function (props) {
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies.  Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency.."))));
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies.  Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency."))));
 };
 
 
