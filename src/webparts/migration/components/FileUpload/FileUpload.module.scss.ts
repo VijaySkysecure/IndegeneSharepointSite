@@ -1,25 +1,25 @@
 
 require("./FileUpload.module.css");
 const styles = {
-  overlay: 'overlay_c09eba7f',
-  modal: 'modal_c09eba7f',
-  uploadCard: 'uploadCard_c09eba7f',
-  title: 'title_c09eba7f',
-  dropZone: 'dropZone_c09eba7f',
-  dropZoneHover: 'dropZoneHover_c09eba7f',
-  uploadIcon: 'uploadIcon_c09eba7f',
-  hintText: 'hintText_c09eba7f',
-  instructions: 'instructions_c09eba7f',
-  browseBtn: 'browseBtn_c09eba7f',
-  footer: 'footer_c09eba7f',
-  closeBtn: 'closeBtn_c09eba7f',
-  fileName: 'fileName_c09eba7f',
-  processingContainer: 'processingContainer_c09eba7f',
-  processingSpinner: 'processingSpinner_c09eba7f',
-  spin: 'spin_c09eba7f',
-  processingTitle: 'processingTitle_c09eba7f',
-  processingMessage: 'processingMessage_c09eba7f',
-  errorMessage: 'errorMessage_c09eba7f'
+  overlay: 'overlay_ba2477f0',
+  modal: 'modal_ba2477f0',
+  uploadCard: 'uploadCard_ba2477f0',
+  title: 'title_ba2477f0',
+  dropZone: 'dropZone_ba2477f0',
+  dropZoneHover: 'dropZoneHover_ba2477f0',
+  uploadIcon: 'uploadIcon_ba2477f0',
+  hintText: 'hintText_ba2477f0',
+  instructions: 'instructions_ba2477f0',
+  browseBtn: 'browseBtn_ba2477f0',
+  footer: 'footer_ba2477f0',
+  closeBtn: 'closeBtn_ba2477f0',
+  fileName: 'fileName_ba2477f0',
+  processingContainer: 'processingContainer_ba2477f0',
+  processingSpinner: 'processingSpinner_ba2477f0',
+  spin: 'spin_ba2477f0',
+  processingTitle: 'processingTitle_ba2477f0',
+  processingMessage: 'processingMessage_ba2477f0',
+  errorMessage: 'errorMessage_ba2477f0'
 };
 
 export default styles;

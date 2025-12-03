@@ -473,9 +473,9 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                 <path d="M12 4v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <div className={styles.hintText}>Drag & drop files here</div>
-              <div className={styles.instructions}>Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. You can upload up to {MAX_FILES} files at once. Click browse or drop files to start.</div>
+              <div className={styles.instructions}>Word, Ppt, Excel, PDF, MHTML, SVG. You can upload up to {MAX_FILES} files at once.</div>
               <button className={styles.browseBtn} onClick={(e) => { e.stopPropagation(); onBrowse(); }}>
-                Browse files
+                Browse Files
               </button>
               <input
                 ref={fileInputRef}
