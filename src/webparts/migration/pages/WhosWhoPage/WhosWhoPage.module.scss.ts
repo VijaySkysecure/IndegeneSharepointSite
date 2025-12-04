@@ -1,15 +1,13 @@
 
 require("./WhosWhoPage.module.css");
 const styles = {
-  whosWhoPage: 'whosWhoPage_e154758d',
-  contentContainer: 'contentContainer_e154758d',
-  buFilters: 'buFilters_e154758d',
-  buFilterButton: 'buFilterButton_e154758d',
-  active: 'active_e154758d',
-  mainContentBlock: 'mainContentBlock_e154758d',
-  contentText: 'contentText_e154758d',
-  carouselIndicators: 'carouselIndicators_e154758d',
-  dot: 'dot_e154758d'
+  whosWhoPage: 'whosWhoPage_cbde8418',
+  contentContainer: 'contentContainer_cbde8418',
+  buFilters: 'buFilters_cbde8418',
+  buFilterButton: 'buFilterButton_cbde8418',
+  active: 'active_cbde8418',
+  mainContentBlock: 'mainContentBlock_cbde8418',
+  contentText: 'contentText_cbde8418'
 };
 
 export default styles;

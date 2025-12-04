@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import { AzureOpenAIService } from '../../services/AzureOpenAIService';
+import { IDocumentDetailPageProps } from './IDocumentDetailPageProps';
 import styles from './DocumentDetailPage.module.scss';
 
 // Azure OpenAI Configuration
@@ -10,12 +10,6 @@ const AZURE_OPENAI_CONFIG = {
   endpoint: 'https://engineeringteamopenai.openai.azure.com',
   deploymentName: 'gpt-4o'
 };
-
-interface IDocumentDetailPageProps {
-  context: WebPartContext;
-  documentId: number;
-  onClose?: () => void;
-}
 
 interface DocumentDetail {
   id: number;
@@ -124,8 +118,10 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
       
       setDocument(documentDetail);
       
-      // Generate tags from abstract using AI
-      if (abstract && abstract.trim().length > 0) {
+      // Use passed tags if available, otherwise generate tags from abstract using AI
+      if (props.tags && props.tags.length > 0) {
+        setTags(props.tags);
+      } else if (abstract && abstract.trim().length > 0) {
         try {
           const generatedTags = await openAIService.current.generateTags(abstract);
           setTags(generatedTags);
@@ -294,12 +290,14 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
   };
 
   const handleBack = () => {
-    if (props.onClose) {
+    if (props.backTo === 'library' && props.onBackToLibrary) {
+      props.onBackToLibrary();
+    } else if (props.onClose) {
       props.onClose();
-    } else {
-      window.close();
     }
   };
+
+  const backButtonText = props.backTo === 'library' ? 'Back to Library' : 'Back to Home';
 
   if (loading) {
     return (
@@ -324,138 +322,167 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Back to Library
+          {backButtonText}
         </button>
-        <div className={styles.headerActions}>
-          <button className={styles.downloadButton} onClick={handleDownload}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            Download
-          </button>
-          <button className={styles.shareButton} onClick={handleShare}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="18" cy="5" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="6" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="18" cy="19" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
-        </div>
       </div>
 
       <div className={styles.content}>
-        <div className={styles.mainContent}>
-          <div className={styles.headerRow}>
-            <div className={styles.fileTypeIndicator}>
-              <span className={styles.fileTypeIcon}>{getFileTypeIcon(document.fileType)}</span>
-              <span className={styles.fileTypeText}>{document.fileType}</span>
+        <div className={styles.titleSection}>
+          <div className={styles.titleContent}>
+            <div className={styles.headerRow}>
+              <div className={styles.fileTypeIndicator}>
+                <span className={styles.fileTypeIcon}>{getFileTypeIcon(document.fileType)}</span>
+                <span className={styles.fileTypeText}>{document.fileType}</span>
+              </div>
+              <div className={styles.actionButtons}>
+                <button className={styles.downloadButton} onClick={handleDownload}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <polyline points="7 10 12 15 17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Download
+                </button>
+                <button className={styles.shareButton} onClick={handleShare}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="5" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="6" cy="12" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="18" cy="19" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              </div>
             </div>
+
+            <h1 className={styles.documentTitle}>{document.name}</h1>
+            
+            <p className={styles.documentAbstract}>{document.abstract || 'No description available'}</p>
+
+            <div className={styles.metadata}>
+              <div className={styles.metadataItem}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>{document.author}</span>
+              </div>
+              <div className={styles.metadataItem}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>{document.date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentWrapper}>
+          <div className={styles.mainContent}>
+            <div className={styles.previewSection}>
+              <h2 className={styles.previewTitle}>Document Preview</h2>
+              <div className={styles.previewContainer}>
+                {previewUrl ? (
+                  document.fileType.toLowerCase() === 'pdf' ? (
+                    <embed 
+                      src={previewUrl} 
+                      type="application/pdf"
+                      className={styles.previewFrame}
+                      title="Document Preview"
+                    />
+                  ) : document.fileType.toLowerCase() === 'svg' ? (
+                    <object 
+                      data={previewUrl} 
+                      type="image/svg+xml"
+                      className={styles.previewFrame}
+                      title="Document Preview"
+                      onError={(e) => {
+                        console.error('SVG load error:', e);
+                        setPreviewError('Failed to load SVG preview');
+                      }}
+                      onLoad={() => {
+                        setPreviewError('');
+                      }}
+                    >
+                      <img 
+                        src={previewUrl} 
+                        alt="Document Preview"
+                        className={styles.previewFrame}
+                        style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' }}
+                      />
+                    </object>
+                  ) : (
+                    <iframe 
+                      ref={iframeRef}
+                      src={previewUrl} 
+                      className={styles.previewFrame}
+                      title="Document Preview"
+                      onError={() => setPreviewError('Failed to load preview')}
+                      onLoad={() => setPreviewError('')}
+                    />
+                  )
+                ) : (
+                  <div className={styles.previewPlaceholder}>Preview not available</div>
+                )}
+                {previewError && (
+                  <div className={styles.previewError}>
+                    <div className={styles.errorIcon}>⚠️</div>
+                    <div className={styles.errorText}>{previewError}</div>
+                    <button 
+                      className={styles.retryButton}
+                      onClick={() => {
+                        setPreviewError('');
+                        // Retry by re-fetching the document details
+                        fetchDocumentDetails();
+                      }}
+                    >
+                      Retry
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.sidebar}>
             {tags.length > 0 && (
-              <div className={styles.tagsContainer}>
-                {tags.map((tag, index) => (
-                  <span key={index} className={styles.tag}>
-                    {tag}
-                  </span>
-                ))}
+              <div className={styles.sidebarSection}>
+                <h3 className={styles.sidebarTitle}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <line x1="7" y1="7" x2="7.01" y2="7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Tags
+                </h3>
+                <div className={styles.tagsContainer}>
+                  {tags.map((tag, index) => (
+                    <span key={index} className={styles.tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             )}
-          </div>
 
-          <h1 className={styles.documentTitle}>{document.name}</h1>
-          
-          <p className={styles.documentAbstract}>{document.abstract || 'No description available'}</p>
-
-          <div className={styles.metadata}>
-            <div className={styles.metadataItem}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span>{document.author}</span>
-            </div>
-            <div className={styles.metadataItem}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span>{document.date}</span>
-            </div>
-            <div className={styles.metadataItem}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <polyline points="14 2 14 8 20 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span>{document.fileSize}</span>
-            </div>
-          </div>
-
-          <div className={styles.previewSection}>
-            <h2 className={styles.previewTitle}>Document Preview</h2>
-            <div className={styles.previewContainer}>
-              {previewUrl ? (
-                document.fileType.toLowerCase() === 'pdf' ? (
-                  <embed 
-                    src={previewUrl} 
-                    type="application/pdf"
-                    className={styles.previewFrame}
-                    title="Document Preview"
-                  />
-                ) : document.fileType.toLowerCase() === 'svg' ? (
-                  <object 
-                    data={previewUrl} 
-                    type="image/svg+xml"
-                    className={styles.previewFrame}
-                    title="Document Preview"
-                    onError={(e) => {
-                      console.error('SVG load error:', e);
-                      setPreviewError('Failed to load SVG preview');
-                    }}
-                    onLoad={() => {
-                      setPreviewError('');
-                    }}
-                  >
-                    <img 
-                      src={previewUrl} 
-                      alt="Document Preview"
-                      className={styles.previewFrame}
-                      style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' }}
-                    />
-                  </object>
-                ) : (
-                  <iframe 
-                    ref={iframeRef}
-                    src={previewUrl} 
-                    className={styles.previewFrame}
-                    title="Document Preview"
-                    onError={() => setPreviewError('Failed to load preview')}
-                    onLoad={() => setPreviewError('')}
-                  />
-                )
-              ) : (
-                <div className={styles.previewPlaceholder}>Preview not available</div>
-              )}
-              {previewError && (
-                <div className={styles.previewError}>
-                  <div className={styles.errorIcon}>⚠️</div>
-                  <div className={styles.errorText}>{previewError}</div>
-                  <button 
-                    className={styles.retryButton}
-                    onClick={() => {
-                      setPreviewError('');
-                      // Retry by re-fetching the document details
-                      fetchDocumentDetails();
-                    }}
-                  >
-                    Retry
-                  </button>
+            <div className={styles.sidebarSection}>
+              <h3 className={styles.sidebarTitle}>Document Information</h3>
+              <div className={styles.infoList}>
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>Category</span>
+                  <span className={styles.infoValue}>{tags.length >= 2 ? tags[1] : 'N/A'}</span>
                 </div>
-              )}
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>File Type</span>
+                  <span className={styles.infoValue}>{document.fileType}</span>
+                </div>
+                <div className={styles.infoItem}>
+                  <span className={styles.infoLabel}>File Size</span>
+                  <span className={styles.infoValue}>{document.fileSize}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

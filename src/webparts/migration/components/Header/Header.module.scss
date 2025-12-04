@@ -21,14 +21,14 @@
 }
 
 .companyName {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   margin: 0 0 10px 0;
   color: white;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 20px 0;
   color: white;
   opacity: 0.95;
@@ -39,8 +39,8 @@
   background-color: #4834d4;
   color: white;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 10px 26px;
+  font-size: 14px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
@@ -99,9 +99,7 @@
 ------------------------------------------------------------ */
 .dropdownPanel {
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 120px;
+  /* top is set dynamically via JavaScript */
   width: min(70vw, 1050px); /* compressed width */
   z-index: 1000;
   animation: fadeDown 0.18s ease-out;
@@ -138,14 +136,13 @@
 }
 
 @keyframes fadeDown {
-  from { opacity: 0; transform: translate(-50%, -8px); }
-  to   { opacity: 1; transform: translate(-50%, 0); }
+  from { opacity: 0; transform: translate(-55%, -8px); }
+  to   { opacity: 1; transform: translate(-55%, 0); }
 }
 
 /* Responsive tweaks */
 @media (max-width: 1024px) {
   .dropdownPanel {
-    top: 110px;
     width: 96vw;
   }
 }
@@ -160,7 +157,6 @@
   }
 
   .dropdownPanel {
-    top: 100px;
     width: 96vw;
   }
 

@@ -25,11 +25,6 @@ export const BUsPage: React.FunctionComponent<IBUsPageProps> = (props) => {
             </button>
           ))}
         </div>
-        <div className={styles.carouselIndicators}>
-          <span className={`${styles.dot} ${styles.active}`}></span>
-          <span className={styles.dot}></span>
-          <span className={styles.dot}></span>
-        </div>
       </div>
     </div>
   );

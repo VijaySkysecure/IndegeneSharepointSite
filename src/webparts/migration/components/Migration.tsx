@@ -3,10 +3,17 @@ import { IMigrationProps } from './IMigrationProps';
 import { Header } from './Header/Header';
 import { Navigation } from './Navigation/Navigation';
 import { QuestionSection } from './QuestionSection/QuestionSection';
-import { Footer } from './Footer/Footer';
 import { ContentArea } from './ContentArea/ContentArea';
 import { BUDetailPage } from './BUDetailPage/BUDetailPage';
 import styles from './Migration.module.scss';
+
+// 🆕 Import AzureOpenAIService + config
+import { AzureOpenAIService } from '../services/AzureOpenAIService';
+import {
+  AZURE_OPENAI_API_KEY,
+  AZURE_OPENAI_ENDPOINT,
+  AZURE_OPENAI_DEPLOYMENT
+} from '../services/SearchConfig';
 
 interface IMigrationState {
   activePage: string;
@@ -14,12 +21,22 @@ interface IMigrationState {
 }
 
 export default class Migration extends React.Component<IMigrationProps, IMigrationState> {
+  // 🆕 Single instance of the service for this component
+  private azureService: AzureOpenAIService;
+
   constructor(props: IMigrationProps) {
     super(props);
     this.state = {
       activePage: 'about',
       selectedBU: null
     };
+
+    // 🆕 Initialize AzureOpenAIService
+    this.azureService = new AzureOpenAIService({
+      apiKey: AZURE_OPENAI_API_KEY,
+      endpoint: AZURE_OPENAI_ENDPOINT,
+      deploymentName: AZURE_OPENAI_DEPLOYMENT
+    });
   }
 
   public componentDidMount(): void {
@@ -43,6 +60,8 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
   private handleBackToMain = (): void => {
     this.setState({ selectedBU: null, activePage: 'about' });
   }
+
+
 
   public render(): React.ReactElement<IMigrationProps> {
     // If a BU is selected, show BU detail page
@@ -69,9 +88,7 @@ export default class Migration extends React.Component<IMigrationProps, IMigrati
           onBUClick={this.handleBUClick}
         />
         <QuestionSection context={this.props.context} />
-        <Footer />
       </div>
     );
   }
 }
-

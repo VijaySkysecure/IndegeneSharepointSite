@@ -11,17 +11,55 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   const [searchText, setSearchText] = React.useState("");
 
   const containerRef = React.useRef<HTMLDivElement>(null);
+  const searchContainerRef = React.useRef<HTMLDivElement>(null);
+  const dropdownPanelRef = React.useRef<HTMLDivElement>(null);
+
+  // Position dropdown below search bar
+  const updateDropdownPosition = React.useCallback(() => {
+    if (isOpen && searchContainerRef.current && dropdownPanelRef.current) {
+      const searchRect = searchContainerRef.current.getBoundingClientRect();
+      const dropdown = dropdownPanelRef.current;
+      dropdown.style.top = `${searchRect.bottom + 8}px`; // 8px gap below search bar
+      // Position dropdown slightly to the left
+      dropdown.style.left = '50%';
+      dropdown.style.transform = 'translateX(-55%)'; // -55% moves it left from center
+    }
+  }, [isOpen]);
+
+  React.useEffect(() => {
+    updateDropdownPosition();
+    
+    // Update position on window resize
+    window.addEventListener('resize', updateDropdownPosition);
+    window.addEventListener('scroll', updateDropdownPosition);
+    
+    return () => {
+      window.removeEventListener('resize', updateDropdownPosition);
+      window.removeEventListener('scroll', updateDropdownPosition);
+    };
+  }, [isOpen, searchText, updateDropdownPosition]);
 
   // Close dropdown when clicking outside
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      
+      // Check if click is outside both the search container and the dropdown panel
+      const isOutsideSearch = searchContainerRef.current && !searchContainerRef.current.contains(target);
+      const isOutsideDropdown = dropdownPanelRef.current && !dropdownPanelRef.current.contains(target);
+      
+      // Close if click is outside both elements (but keep search text)
+      if (isOutsideSearch && isOutsideDropdown) {
         setIsOpen(false);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    
+    // Only add listener when dropdown is open
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [isOpen]);
 
   return (
     <div className={styles.header} ref={containerRef}>
@@ -31,7 +69,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
         <div className={styles.leftSection}>
           <h1 className={styles.companyName}>Indegene</h1>
           <p className={styles.description}>
-            Indegene provides research and commercialization services to biopharmaceutical and healthcare enterprises.
+            Trusted partner of healthcare organizations.
           </p>
           <button
             className={styles.addFileButton}
@@ -46,6 +84,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
           {/* SEARCH BAR */}
           <div
+            ref={searchContainerRef}
             className={styles.searchContainer}
             onClick={() => setIsOpen(true)} 
           >
@@ -75,12 +114,18 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
             />
           </div>
 
-          {/* DROPDOWN PANEL */}
-          {isOpen && (
-            <div className={styles.dropdownPanel}>
-              <FilterDropdown searchText={searchText} />
+          {/* DROPDOWN PANEL - Only show when user types */}
+          {isOpen && searchText.trim().length > 0 && (
+            <div ref={dropdownPanelRef} className={styles.dropdownPanel}>
+              <FilterDropdown
+                searchText={searchText}
+                spHttpClient={props.context.spHttpClient}
+                siteUrl={props.context.pageContext.web.absoluteUrl}
+                context={props.context}
+              />
             </div>
           )}
+          
         </div>
       </div>
 

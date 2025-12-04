@@ -52,10 +52,6 @@ export class DocumentParser {
           return await this.parsePowerPoint(file);
         case 'ppt':
           return { text: '', success: false, error: 'Legacy .ppt format not supported. Please convert to .pptx format.' };
-        case 'xlsx':
-          return await this.parseExcel(file);
-        case 'xls':
-          return { text: '', success: false, error: 'Legacy .xls format not supported. Please convert to .xlsx format.' };
         case 'mhtml':
         case 'mht':
           return await this.parseMHTML(file);
@@ -77,12 +73,20 @@ export class DocumentParser {
 
   /**
    * Extract text from PDF file
+   * Extracts ALL text including headers, footers, and body content from every page
+   * react-pdftotext extracts all visible text from the PDF by default
    */
   private static async parsePDF(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING PDF TEXT (including headers/footers) ===');
       const pdfToTextModule = await import('react-pdftotext');
       const pdfToText = (pdfToTextModule as any).default || pdfToTextModule;
+      
+      // Extract all text from PDF - this includes headers, footers, and body content
+      // react-pdftotext extracts all visible text from all pages by default
       const text = await pdfToText(file);
+      
+      console.log(`Extracted ${text?.length || 0} characters from PDF (includes headers/footers)`);
       
       if (!text || text.trim().length === 0) {
         return {
@@ -92,6 +96,7 @@ export class DocumentParser {
         };
       }
       
+      // Return all extracted text (headers, footers, and body content are all included)
       return {
         text: text.trim(),
         success: true
@@ -118,16 +123,44 @@ export class DocumentParser {
 
   /**
    * Extract text from Word (.docx) file
+   * Extracts text from document body, headers, and footers
+   * Uses mammoth to extract all readable text content
    */
   private static async parseWord(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING WORD DOCUMENT TEXT (including headers/footers) ===');
       const mammoth = await import('mammoth');
       const arrayBuffer = await file.arrayBuffer();
       
+      // Extract raw text - this includes body text
+      // Note: mammoth.extractRawText extracts body text, but headers/footers in Word
+      // are in separate document parts. We'll try to get as much as possible.
       const result = await mammoth.extractRawText({ arrayBuffer });
       
+      // Also try to extract from HTML conversion which may include more content
+      // including headers/footers if they're in the main document flow
+      let additionalText = '';
+      try {
+        const htmlResult = await mammoth.convertToHtml({ arrayBuffer });
+        if (htmlResult.value) {
+          // Extract text from HTML (this may include headers/footers if present)
+          additionalText = this.extractTextFromHTML(htmlResult.value);
+        }
+      } catch (htmlError) {
+        console.warn('Could not extract additional text from HTML conversion:', htmlError);
+      }
+      
+      // Combine body text with any additional text found
+      const combinedText = result.value.trim();
+      const allText = additionalText && additionalText.trim() 
+        ? `${combinedText}\n${additionalText.trim()}` 
+        : combinedText;
+      
+      console.log(`Extracted ${allText.length} characters from Word document`);
+      console.log(`Body text: ${combinedText.length} chars, Additional: ${additionalText.length} chars`);
+      
       return {
-        text: result.value.trim(),
+        text: allText.trim(),
         success: true
       };
     } catch (error) {
@@ -142,9 +175,11 @@ export class DocumentParser {
   /**
    * Extract text from PowerPoint (.pptx) file
    * PPTX files are ZIP archives containing XML files
+   * Extracts text from slides, notes, and headers/footers
    */
   private static async parsePowerPoint(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING POWERPOINT TEXT (including notes/headers/footers) ===');
       const JSZipModule = await import('jszip');
       // Handle both default export and namespace export
       const JSZip = (JSZipModule as any).default || JSZipModule;
@@ -155,9 +190,16 @@ export class DocumentParser {
       
       // Get all slide files (ppt/slides/slide*.xml)
       const slideFiles: string[] = [];
+      // Get all notes files (ppt/notesSlides/notesSlide*.xml) - these contain speaker notes
+      const notesFiles: string[] = [];
+      
       zip.forEach((relativePath) => {
         if (relativePath.startsWith('ppt/slides/slide') && relativePath.endsWith('.xml')) {
           slideFiles.push(relativePath);
+        }
+        // Also extract from notes slides which may contain additional content
+        if (relativePath.startsWith('ppt/notesSlides/notesSlide') && relativePath.endsWith('.xml')) {
+          notesFiles.push(relativePath);
         }
       });
       
@@ -165,6 +207,13 @@ export class DocumentParser {
       slideFiles.sort((a, b) => {
         const aNum = parseInt(a.match(/slide(\d+)\.xml/)?.[1] || '0');
         const bNum = parseInt(b.match(/slide(\d+)\.xml/)?.[1] || '0');
+        return aNum - bNum;
+      });
+      
+      // Sort notes by number
+      notesFiles.sort((a, b) => {
+        const aNum = parseInt(a.match(/notesSlide(\d+)\.xml/)?.[1] || '0');
+        const bNum = parseInt(b.match(/notesSlide(\d+)\.xml/)?.[1] || '0');
         return aNum - bNum;
       });
       
@@ -176,11 +225,12 @@ export class DocumentParser {
         };
       }
       
-      // Extract text from each slide
+      // Extract text from each slide (includes headers/footers if present in slide content)
       const allText: string[] = [];
       
-      console.log(`Found ${slideFiles.length} slides to process`);
+      console.log(`Found ${slideFiles.length} slides and ${notesFiles.length} notes slides to process`);
       
+      // Extract text from slides
       for (const slidePath of slideFiles) {
         try {
           const slideXml = await zip.file(slidePath)?.async('string');
@@ -202,7 +252,25 @@ export class DocumentParser {
         }
       }
       
-      console.log(`Total slides with text: ${allText.length}`);
+      // Extract text from notes slides (speaker notes)
+      for (const notesPath of notesFiles) {
+        try {
+          const notesXml = await zip.file(notesPath)?.async('string');
+          if (notesXml) {
+            console.log(`Processing notes: ${notesPath}`);
+            const notesText = this.extractTextFromSlideXml(notesXml);
+            if (notesText.trim()) {
+              allText.push(`[Notes] ${notesText}`);
+              console.log(`Extracted ${notesText.length} characters from notes ${notesPath}`);
+            }
+          }
+        } catch (notesError) {
+          console.warn(`Error parsing notes ${notesPath}:`, notesError);
+          // Continue with other notes
+        }
+      }
+      
+      console.log(`Total slides with text: ${slideFiles.length}, Notes extracted: ${notesFiles.length}`);
       
       const combinedText = allText.join('\n\n').trim();
       
@@ -213,6 +281,8 @@ export class DocumentParser {
           error: 'No text content found in PowerPoint slides. The slides might be image-based or empty.'
         };
       }
+      
+      console.log(`Total extracted text: ${combinedText.length} characters (includes slides, notes, headers/footers)`);
       
       return {
         text: combinedText,
@@ -227,119 +297,6 @@ export class DocumentParser {
           errorMessage = 'The PowerPoint file appears to be corrupted or invalid. Please try a different file.';
         } else if (msg.indexOf('not a zip') !== -1 || msg.indexOf('bad zip') !== -1) {
           errorMessage = 'The file does not appear to be a valid PPTX file. PPTX files must be in the Office Open XML format.';
-        }
-      }
-      
-      return {
-        text: '',
-        success: false,
-        error: errorMessage
-      };
-    }
-  }
-
-  /**
-   * Extract text from Excel (.xlsx) file
-   * Reads all sheets and extracts text from all cells
-   */
-  private static async parseExcel(file: File): Promise<DocumentParseResult> {
-    try {
-      const XLSXModule = await import('xlsx');
-      // Handle both default export and namespace export
-      const XLSX = (XLSXModule as any).default || XLSXModule;
-      const arrayBuffer = await file.arrayBuffer();
-      
-      // Read the Excel file
-      const workbook = XLSX.read(arrayBuffer, { 
-        type: 'array',
-        cellText: false,
-        cellDates: true,
-        sheetStubs: false
-      });
-      
-      if (!workbook.SheetNames || workbook.SheetNames.length === 0) {
-        return {
-          text: '',
-          success: false,
-          error: 'No sheets found in the Excel file.'
-        };
-      }
-      
-      console.log(`Found ${workbook.SheetNames.length} sheet(s) in Excel file`);
-      
-      // Extract text from all sheets
-      const allText: string[] = [];
-      
-      for (const sheetName of workbook.SheetNames) {
-        try {
-          const worksheet = workbook.Sheets[sheetName];
-          if (!worksheet) {
-            console.warn(`Sheet "${sheetName}" not found in workbook`);
-            continue;
-          }
-          
-          // Convert sheet to JSON to get all cell values
-          const sheetData = XLSX.utils.sheet_to_json(worksheet, { 
-            header: 1, // Use array of arrays format
-            defval: '', // Default value for empty cells
-            raw: false // Convert dates and numbers to strings
-          });
-          
-          // Process each row
-          const sheetText: string[] = [];
-          for (let i = 0; i < sheetData.length; i++) {
-            const row = sheetData[i] as any[];
-            if (Array.isArray(row)) {
-              // Filter out empty cells and join with spaces
-              const rowText = row
-                .filter(cell => cell !== null && cell !== undefined && cell !== '')
-                .map(cell => String(cell).trim())
-                .filter(cell => cell.length > 0)
-                .join(' ');
-              
-              if (rowText.trim()) {
-                sheetText.push(rowText);
-              }
-            }
-          }
-          
-          if (sheetText.length > 0) {
-            const sheetContent = `Sheet: ${sheetName}\n${sheetText.join('\n')}`;
-            allText.push(sheetContent);
-            console.log(`Extracted ${sheetText.length} rows from sheet "${sheetName}"`);
-          } else {
-            console.warn(`No text content found in sheet "${sheetName}"`);
-          }
-        } catch (sheetError) {
-          console.warn(`Error parsing sheet "${sheetName}":`, sheetError);
-          // Continue with other sheets
-        }
-      }
-      
-      const combinedText = allText.join('\n\n').trim();
-      
-      if (!combinedText || combinedText.length === 0) {
-        return {
-          text: '',
-          success: false,
-          error: 'No text content found in Excel file. The file might be empty or contain only images.'
-        };
-      }
-      
-      console.log(`Total extracted text length: ${combinedText.length} characters`);
-      return {
-        text: combinedText,
-        success: true
-      };
-    } catch (error) {
-      let errorMessage = 'Failed to parse Excel document';
-      if (error instanceof Error) {
-        errorMessage = error.message;
-        const msg = error.message.toLowerCase();
-        if (msg.indexOf('invalid') !== -1 || msg.indexOf('corrupted') !== -1) {
-          errorMessage = 'The Excel file appears to be corrupted or invalid. Please try a different file.';
-        } else if (msg.indexOf('not supported') !== -1 || msg.indexOf('format') !== -1) {
-          errorMessage = 'The file format is not supported. Please use .xlsx format.';
         }
       }
       
@@ -442,7 +399,7 @@ export class DocumentParser {
             console.warn('SVG parsing error:', parserError.textContent);
           } else {
             // Extract all text content from the SVG
-            const allText = doc.documentElement.textContent || doc.documentElement.innerText || '';
+            const allText = doc.documentElement.textContent || (doc.documentElement as any).innerText || '';
             if (allText.trim()) {
               textParts.push(allText.trim());
             }
@@ -669,7 +626,7 @@ export class DocumentParser {
       // Get text content from body, or entire document if no body
       const body = doc.body || doc.documentElement;
       if (body) {
-        let text = body.textContent || body.innerText || '';
+        let text = body.textContent || (body as any).innerText || '';
         // Clean up whitespace
         text = text.replace(/\s+/g, ' ').trim();
         return text;

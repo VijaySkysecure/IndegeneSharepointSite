@@ -5,6 +5,21 @@
 import { ALLOWED_BUSINESS_UNITS, ALLOWED_DEPARTMENTS, ALLOWED_DISEASE_AREAS, ALLOWED_THERAPY_AREAS, ALLOWED_REGIONS, ALLOWED_DOCUMENT_TYPES, findBestMatch } from './ValidationConstants';
 import { maskAllEmails, maskAllPhones } from './DataMasking';
 
+// 🆕 Azure config imports
+import {
+  AZURE_OPENAI_ENDPOINT,
+  AZURE_OPENAI_API_KEY,
+  AZURE_OPENAI_DEPLOYMENT,
+  AZURE_OPENAI_API_VERSION,
+  AZURE_OPENAI_EMBEDDING_MODEL,
+  AZURE_SEARCH_ENDPOINT,
+  AZURE_SEARCH_INDEX,
+  AZURE_SEARCH_API_VERSION,
+  AZURE_SEARCH_KEY,
+  AZURE_SEARCH_SEMANTIC_CONFIG,
+  AZURE_SEARCH_SUGGESTER_NAME
+} from './SearchConfig';
+
 export interface MetadataExtraction {
   title?: string;
   documentType?: string;
@@ -19,6 +34,56 @@ export interface MetadataExtraction {
   phones?: string;
   ids?: string;
   pricing?: string;
+}
+
+/**
+ * 🔍 NEW: Interfaces for semantic search + suggestions
+ */
+export interface IDocumentMetadata {
+  id: string;
+  title: string;
+  url?: string;
+  author?: string;
+  publishedDate?: string;
+  preview?: string;
+  businessUnit?: string;
+  documentType?: string;
+  client?: string;
+  region?: string;
+  therapyArea?: string;
+  diseaseArea?: string;
+  fileFormat?: string;
+}
+
+export interface IFacetItem {
+  value: string;
+  count: number;
+}
+
+export interface IFacetResult {
+  businessUnit?: IFacetItem[];
+  documentType?: IFacetItem[];
+  client?: IFacetItem[];
+  region?: IFacetItem[];
+}
+
+export interface ISemanticSearchResult {
+  query: string;
+  summary: string;
+  documents: IDocumentMetadata[];
+  facets: IFacetResult;
+}
+
+export interface ISearchFilters {
+  businessUnit?: string[];
+  documentType?: string[];
+  client?: string[];
+  region?: string[];
+}
+
+export interface ISuggestion {
+  text: string;
+  docId?: string;
 }
 
 interface AzureOpenAIConfig {
@@ -38,6 +103,479 @@ export class AzureOpenAIService {
     };
   }
 
+  // ========================================================================
+  // 🔹 PART 1: SEMANTIC SEARCH + SUGGESTIONS
+  // ========================================================================
+
+  /**
+   * Get search suggestions from Azure Cognitive Search
+   * Used by the SearchBox while the user types.
+   */
+  async getSuggestionsFromSearch(query: string): Promise<ISuggestion[]> {
+    if (!query.trim()) return [];
+
+    try {
+      const url =
+        `${AZURE_SEARCH_ENDPOINT}` +
+        `/indexes/${AZURE_SEARCH_INDEX}/docs/suggest` +
+        `?api-version=${AZURE_SEARCH_API_VERSION}` +
+        `&search=${encodeURIComponent(query)}` +
+        `&suggesterName=${AZURE_SEARCH_SUGGESTER_NAME}` +
+        `&top=5`;
+
+      const res = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': AZURE_SEARCH_KEY
+        }
+      });
+
+      if (!res.ok) {
+        console.error('Suggest API failed:', res.status, await res.text());
+        return [];
+      }
+
+      const data = await res.json();
+      const suggestions: ISuggestion[] = (data.value || []).map((item: any) => ({
+        text: item['@search.text'] || item.title || '',
+        docId: item.id
+      }));
+
+      return suggestions;
+    } catch (error) {
+      console.error('Error in getSuggestionsFromSearch:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Semantic search using Azure Cognitive Search + AI summary via GPT-4o
+   * Triggered when user clicks a suggestion or submits a search.
+   */
+  async semanticSearch(query: string, filters: ISearchFilters): Promise<ISemanticSearchResult> {
+    const filterQuery = this.buildFilterQuery(filters);
+
+    const body: any = {
+      search: query,
+      queryType: 'semantic',
+      semanticConfiguration: AZURE_SEARCH_SEMANTIC_CONFIG,
+      top: 5,
+      select:
+        'id,title,author,content,url,publishedDate,businessUnit,documentType,client,region,therapyArea,diseaseArea,fileFormat',
+      facets: [
+        'businessUnit,count:10',
+        'documentType,count:10',
+        'client,count:10',
+        'region,count:10'
+      ]
+    };
+
+    if (filterQuery) {
+      body.filter = filterQuery;
+    }
+
+    try {
+      const url = `${AZURE_SEARCH_ENDPOINT}/indexes/${AZURE_SEARCH_INDEX}/docs/search?api-version=${AZURE_SEARCH_API_VERSION}`;
+
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': AZURE_SEARCH_KEY
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('Search API failed:', res.status, errorText);
+        return {
+          query,
+          summary: 'Search failed.',
+          documents: [],
+          facets: {}
+        };
+      }
+
+      const json = await res.json();
+
+      const documents: IDocumentMetadata[] = (json.value || []).map((item: any) => ({
+        id: item.id,
+        title: item.title,
+        url: item.url,
+        author: item.author,
+        publishedDate: item.publishedDate,
+        preview: item.content ? String(item.content).slice(0, 500) : '',
+        businessUnit: item.businessUnit,
+        documentType: item.documentType,
+        client: item.client,
+        region: item.region,
+        therapyArea: item.therapyArea,
+        diseaseArea: item.diseaseArea,
+        fileFormat: item.fileFormat
+      }));
+
+      const facets = this.mapFacets(json['@search.facets']);
+      const topPreview = documents[0]?.preview || '';
+
+      const summary = await this.generateAISummary(query, topPreview);
+
+      return {
+        query,
+        summary,
+        documents,
+        facets
+      };
+    } catch (error) {
+      console.error('Error in semanticSearch:', error);
+      return {
+        query,
+        summary: 'Semantic search failed.',
+        documents: [],
+        facets: {}
+      };
+    }
+  }
+
+  /**
+   * Build OData `$filter` expression from chosen filters
+   * Make sure the field names (businessUnit, documentType, client, region)
+   * match your Azure Search index schema.
+   */
+  private buildFilterQuery(filters: ISearchFilters): string | undefined {
+    const clauses: string[] = [];
+
+    if (filters.businessUnit?.length) {
+      const buClause = filters.businessUnit
+        .map((bu) => `businessUnit eq '${bu.replace(/'/g, "''")}'`)
+        .join(' or ');
+      clauses.push(`(${buClause})`);
+    }
+
+    if (filters.documentType?.length) {
+      const dtClause = filters.documentType
+        .map((dt) => `documentType eq '${dt.replace(/'/g, "''")}'`)
+        .join(' or ');
+      clauses.push(`(${dtClause})`);
+    }
+
+    if (filters.client?.length) {
+      const clClause = filters.client
+        .map((cl) => `client eq '${cl.replace(/'/g, "''")}'`)
+        .join(' or ');
+      clauses.push(`(${clClause})`);
+    }
+
+    if (filters.region?.length) {
+      const regClause = filters.region
+        .map((r) => `region eq '${r.replace(/'/g, "''")}'`)
+        .join(' or ');
+      clauses.push(`(${regClause})`);
+    }
+
+    if (!clauses.length) return undefined;
+    return clauses.join(' and ');
+  }
+
+  /**
+   * Map Azure Search facets JSON into typed structure
+   */
+  private mapFacets(facetJson: any): IFacetResult {
+    if (!facetJson) return {};
+
+    const mapFacetArray = (arr: any[]): IFacetItem[] =>
+      (arr || []).map((f: any) => ({
+        value: f.value,
+        count: f.count
+      }));
+
+    return {
+      businessUnit: facetJson.businessUnit ? mapFacetArray(facetJson.businessUnit) : undefined,
+      documentType: facetJson.documentType ? mapFacetArray(facetJson.documentType) : undefined,
+      client: facetJson.client ? mapFacetArray(facetJson.client) : undefined,
+      region: facetJson.region ? mapFacetArray(facetJson.region) : undefined
+    };
+  }
+
+  /**
+   * Generate embedding vector for text using Azure OpenAI
+   */
+  async generateEmbedding(text: string): Promise<number[]> {
+    if (!text || !text.trim()) {
+      throw new Error('Text cannot be empty for embedding generation');
+    }
+
+    try {
+      // Ensure endpoint doesn't have trailing slash, then add path
+      const baseEndpoint = AZURE_OPENAI_ENDPOINT.endsWith('/') 
+        ? AZURE_OPENAI_ENDPOINT.slice(0, -1) 
+        : AZURE_OPENAI_ENDPOINT;
+      
+      const url = `${baseEndpoint}/openai/deployments/${AZURE_OPENAI_EMBEDDING_MODEL}/embeddings?api-version=${AZURE_OPENAI_API_VERSION}`;
+
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': AZURE_OPENAI_API_KEY
+        },
+        body: JSON.stringify({
+          input: text.trim()
+        })
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error('Embedding API failed:', res.status, errorText);
+        throw new Error(`Embedding generation failed: ${res.status}`);
+      }
+
+      const json = await res.json();
+      return json.data?.[0]?.embedding || [];
+    } catch (error) {
+      console.error('Error generating embedding:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Calculate cosine similarity between two vectors
+   */
+  private cosineSimilarity(vecA: number[], vecB: number[]): number {
+    if (vecA.length !== vecB.length) {
+      return 0;
+    }
+
+    let dotProduct = 0;
+    let normA = 0;
+    let normB = 0;
+
+    for (let i = 0; i < vecA.length; i++) {
+      dotProduct += vecA[i] * vecB[i];
+      normA += vecA[i] * vecA[i];
+      normB += vecB[i] * vecB[i];
+    }
+
+    const denominator = Math.sqrt(normA) * Math.sqrt(normB);
+    return denominator === 0 ? 0 : dotProduct / denominator;
+  }
+
+  /**
+   * Perform semantic search on local documents using embeddings
+   * Searches through title, filename, abstract, author, AND document content
+   * Also includes exact keyword matching for documents that contain the search term
+   */
+  async semanticSearchLocalDocuments(
+    query: string,
+    documents: Array<{
+      id: number;
+      title: string;
+      fileName: string;
+      description: string; // abstract
+      contributor: string; // author
+      documentContent?: string; // actual document content (extracted from file)
+      [key: string]: any;
+    }>,
+    topK: number = 10
+  ): Promise<Array<{ document: any; similarity: number }>> {
+    if (!query || !query.trim() || documents.length === 0) {
+      return [];
+    }
+
+    try {
+      const queryLower = query.toLowerCase().trim();
+      
+      // First, do exact keyword matching to find ALL documents containing the word
+      // This ensures we don't miss documents with exact matches
+      const exactMatches: Array<{ document: any; similarity: number }> = [];
+      const nonExactMatches: any[] = [];
+      
+      documents.forEach((doc) => {
+        // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+        // documentContent includes: body text, headers, footers (e.g., "© 2025 Skysecure Technologies")
+        const titleLower = (doc.title || '').toLowerCase();
+        const fileNameLower = (doc.fileName || '').toLowerCase();
+        const descriptionLower = (doc.description || '').toLowerCase();
+        const contributorLower = (doc.contributor || '').toLowerCase();
+        const documentContentLower = (doc.documentContent || '').toLowerCase(); // Includes headers/footers from all pages
+        
+        // Check if word appears in ANY field (especially documentContent which includes footers)
+        const inTitle = titleLower.includes(queryLower);
+        const inFileName = fileNameLower.includes(queryLower);
+        const inDescription = descriptionLower.includes(queryLower);
+        const inContributor = contributorLower.includes(queryLower);
+        const inDocumentContent = documentContentLower.includes(queryLower); // Searches footer content too
+        
+        // Document matches if word appears in ANY field, especially documentContent
+        if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
+          // Combine all fields for counting total occurrences
+          const searchableText = [
+            doc.title || '',
+            doc.fileName || '',
+            doc.description || '',
+            doc.contributor || '',
+            doc.documentContent || ''
+          ].filter(Boolean).join(' ').toLowerCase();
+          
+          // Count total occurrences
+          const matches = (searchableText.match(new RegExp(queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi')) || []).length;
+          
+          // Calculate relevance score
+          let score = matches;
+          
+          // Boost scores based on where word appears
+          if (inTitle) score += 10;
+          if (inFileName) score += 5;
+          if (inDescription) score += 3;
+          if (inContributor) score += 2;
+          if (inDocumentContent) score += 4; // Important: boost for document content matches
+          
+          // Additional boost if found as whole word
+          const wordBoundaryRegex = new RegExp(`\\b${queryLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+          if (wordBoundaryRegex.test(searchableText)) score += 2;
+          
+          // Ensure documents with matches ONLY in documentContent still get a minimum score
+          if (inDocumentContent && !inTitle && !inFileName && !inDescription && !inContributor) {
+            score = Math.max(score, 5); // Minimum score for content-only matches
+          }
+          
+          exactMatches.push({ document: doc, similarity: score });
+        } else {
+          nonExactMatches.push(doc);
+        }
+      });
+      
+      // Sort exact matches by relevance (higher score = more relevant)
+      exactMatches.sort((a, b) => b.similarity - a.similarity);
+      
+      // IMPORTANT: Return ALL exact matches, not just topK
+      // This ensures documents with matches only in content are included
+      // We'll limit later if needed, but prioritize getting all exact matches first
+      if (exactMatches.length > 0) {
+        // Return all exact matches (they're already sorted by relevance)
+        // If we have more than topK, we'll still return all, but user will see most relevant first
+        return exactMatches;
+      }
+      
+      // Otherwise, supplement with semantic search on non-matching documents
+      // Generate embedding for the search query
+      const queryEmbedding = await this.generateEmbedding(query);
+
+      // Generate embeddings for documents that didn't have exact matches
+      const documentEmbeddings = await Promise.all(
+        nonExactMatches.map(async (doc) => {
+          // Combine all searchable fields including document content
+          const searchableText = [
+            doc.title || '',
+            doc.fileName || '',
+            doc.description || '', // abstract
+            doc.contributor || '', // author
+            doc.documentContent || '' // actual document content (up to 100k chars, sampled from beginning/middle/end)
+          ].filter(Boolean).join(' ');
+
+          // Limit total text to ~30,000 chars to keep embedding API calls reasonable while using more content
+          // This allows us to use significantly more document content for better semantic matching
+          const truncatedText = searchableText.length > 30000 
+            ? searchableText.substring(0, 30000) 
+            : searchableText;
+
+          try {
+            const embedding = await this.generateEmbedding(truncatedText);
+            return { doc, embedding };
+          } catch (error) {
+            console.error(`Error generating embedding for doc ${doc.id}:`, error);
+            return { doc, embedding: null };
+          }
+        })
+      );
+
+      // Calculate similarities for semantic matches
+      const semanticResults = documentEmbeddings
+        .filter((item) => item.embedding !== null)
+        .map((item) => ({
+          document: item.doc,
+          similarity: this.cosineSimilarity(queryEmbedding, item.embedding!)
+        }))
+        .filter((item) => item.similarity > 0.3) // Only include reasonably similar results
+        .sort((a, b) => b.similarity - a.similarity);
+
+      // Combine exact matches (first) with semantic matches (second)
+      // Exact matches are prioritized and ALL are included
+      const allResults = [
+        ...exactMatches, // ALL exact matches included (already sorted by relevance)
+        ...semanticResults.map((item) => ({
+          document: item.document,
+          similarity: item.similarity * 0.5 // Reduce semantic match scores so exact matches rank higher
+        }))
+      ];
+      
+      // Sort all results by similarity (exact matches will be first due to higher scores)
+      allResults.sort((a, b) => b.similarity - a.similarity);
+      
+      // Return top results, but ensure ALL exact matches are included
+      // If we have many exact matches, return them all (up to reasonable limit)
+      const exactMatchCount = exactMatches.length;
+      const maxResults = Math.max(topK, exactMatchCount); // Return at least all exact matches
+      
+      return allResults.slice(0, Math.min(maxResults, 200)); // Cap at 200 to avoid performance issues
+    } catch (error) {
+      console.error('Error in semanticSearchLocalDocuments:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Use GPT-4o to generate an AI summary of the top document preview
+   */
+  private async generateAISummary(query: string, content: string): Promise<string> {
+    if (!content) {
+      return 'No preview available for summary.';
+    }
+
+    try {
+      const url = `${AZURE_OPENAI_ENDPOINT}/openai/deployments/${AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${AZURE_OPENAI_API_VERSION}`;
+
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': AZURE_OPENAI_API_KEY
+        },
+        body: JSON.stringify({
+          messages: [
+            {
+              role: 'system',
+              content:
+                'You summarize documents for business users. Respond in 3-4 concise bullet points, easy to skim.'
+            },
+            {
+              role: 'user',
+              content: `User query: ${query}\n\nHere is a document snippet. Summarize the key points for a business stakeholder:\n\n${content}`
+            }
+          ],
+          temperature: 0.2,
+          max_tokens: 400
+        })
+      });
+
+      if (!res.ok) {
+        console.error('OpenAI summary API failed:', res.status, await res.text());
+        return 'AI summary is not available.';
+      }
+
+      const json = await res.json();
+      return json.choices?.[0]?.message?.content || 'AI summary is not available.';
+    } catch (error) {
+      console.error('Error generating AI summary:', error);
+      return 'AI summary failed.';
+    }
+  }
+
+  // ========================================================================
+  // 🔹 PART 2: YOUR EXISTING METADATA EXTRACTION LOGIC (CORRECTED/COMPLETED)
+  // ========================================================================
+
   /**
    * Extract metadata from document text using GPT-4o
    * Uses chunked processing for large documents
@@ -49,7 +587,7 @@ export class AzureOpenAIService {
       console.log('Total length:', documentText.length, 'characters');
       console.log('First 1000 chars:', documentText.substring(0, 1000));
       console.log('Last 1000 chars:', documentText.substring(Math.max(0, documentText.length - 1000)));
-      
+
       // Count emails in the raw text for debugging
       const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
       const foundEmails = documentText.match(emailRegex);
@@ -61,7 +599,7 @@ export class AzureOpenAIService {
 
       // Chunk size for processing (15k characters per chunk)
       const chunkSize = 15000;
-      
+
       // If document is small enough, process normally
       if (documentText.length <= chunkSize) {
         console.log('=== PROCESSING AS SINGLE CHUNK ===');
@@ -72,10 +610,10 @@ export class AzureOpenAIService {
       console.log('=== PROCESSING WITH CHUNKED METHOD ===');
       console.log('Document length:', documentText.length, 'characters');
       console.log('Chunk size:', chunkSize, 'characters');
-      
+
       const chunks = this.splitIntoChunks(documentText, chunkSize);
       console.log('Number of chunks:', chunks.length);
-      
+
       return await this.processChunks(chunks);
     } catch (error) {
       console.error('Error extracting metadata:', error);
@@ -140,7 +678,7 @@ Look for mentions of regions, countries, or geographic areas. Match to the close
 - Internal departments or teams
 - Generic terms like "the client" or "our customer"
 - Project names that aren't company names
-Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find "the client" or similar without a specific company name, leave empty.
+Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but not a company, leave this empty. If you find "the client" or similar without a specific company name, leave empty.
 
 7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.
 
@@ -186,7 +724,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
    */
   private sanitizeMetadata(metadata: MetadataExtraction): MetadataExtraction {
     const sanitized: MetadataExtraction = {};
-    
+
     // Ensure all fields are strings and trim whitespace
     const fields: (keyof MetadataExtraction)[] = [
       'title', 'documentType', 'bu', 'department', 'region', 'client',
@@ -261,10 +799,10 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     }
 
     // Ensure region is empty if not found (not just whitespace)
-    if (sanitized.region && (sanitized.region.toLowerCase() === 'not found' || 
-        sanitized.region.toLowerCase() === 'n/a' ||
-        sanitized.region.toLowerCase() === 'none' ||
-        sanitized.region.toLowerCase() === 'unknown')) {
+    if (sanitized.region && (sanitized.region.toLowerCase() === 'not found' ||
+      sanitized.region.toLowerCase() === 'n/a' ||
+      sanitized.region.toLowerCase() === 'none' ||
+      sanitized.region.toLowerCase() === 'unknown')) {
       sanitized.region = '';
     }
 
@@ -300,17 +838,17 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     // Remove if it contains person names, generic terms, or invalid content
     if (sanitized.client) {
       const clientLower = sanitized.client.toLowerCase();
-      
+
       // Remove invalid values
       if (clientLower === 'not found' ||
-          clientLower === 'n/a' ||
-          clientLower === 'none' ||
-          clientLower === 'unknown' ||
-          clientLower === 'the client' ||
-          clientLower === 'our client' ||
-          clientLower === 'client' ||
-          clientLower.indexOf('internal') !== -1 ||
-          clientLower.indexOf('team') !== -1) {
+        clientLower === 'n/a' ||
+        clientLower === 'none' ||
+        clientLower === 'unknown' ||
+        clientLower === 'the client' ||
+        clientLower === 'our client' ||
+        clientLower === 'client' ||
+        clientLower.indexOf('internal') !== -1 ||
+        clientLower.indexOf('team') !== -1) {
         sanitized.client = '';
         console.log('⚠️ Client field contained invalid value, cleared');
       } else {
@@ -318,7 +856,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
         // Company indicators: Inc, LLC, Corp, Ltd, Company, Co, etc.
         const companyIndicators = ['inc', 'llc', 'corp', 'ltd', 'company', 'co', 'group', 'enterprises', 'solutions', 'systems', 'technologies', 'consulting', 'services'];
         const hasCompanyIndicator = companyIndicators.some(indicator => clientLower.indexOf(indicator) !== -1);
-        
+
         // If it's just a name without company indicators and doesn't look like a company, clear it
         if (!hasCompanyIndicator && sanitized.client.split(' ').length <= 3) {
           // Might be a person's name - check if it's clearly a company by other means
@@ -336,7 +874,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     console.log('=== BEFORE MASKING ===');
     console.log('Raw emails:', sanitized.emails);
     console.log('Raw phones:', sanitized.phones);
-    
+
     if (sanitized.emails) {
       sanitized.emails = maskAllEmails(sanitized.emails);
     } else {
@@ -361,7 +899,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
 
     while (start < text.length) {
       let end = start + chunkSize;
-      
+
       // If not the last chunk, try to break at a word boundary
       if (end < text.length) {
         // Look for a good break point (newline, period, space)
@@ -371,13 +909,13 @@ Return only valid JSON in this format (use empty string "" for fields not found)
           text.lastIndexOf('. ', end),
           text.lastIndexOf(' ', end)
         );
-        
+
         if (breakPoint > start + chunkSize * 0.8) {
           // Only use break point if it's not too early (at least 80% of chunk size)
           end = breakPoint + 1;
         }
       }
-      
+
       chunks.push(text.substring(start, end));
       start = end;
     }
@@ -422,7 +960,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     if (!response.ok) {
       const errorText = await response.text();
       let errorMessage = `Azure OpenAI API error: ${response.status}`;
-      
+
       // Handle CORS errors
       if (response.status === 0 || response.statusText === '') {
         errorMessage = 'CORS error: Unable to connect to Azure OpenAI. The API may need CORS configuration or a backend proxy.';
@@ -434,7 +972,7 @@ Return only valid JSON in this format (use empty string "" for fields not found)
           errorMessage = errorText || errorMessage;
         }
       }
-      
+
       throw new Error(errorMessage);
     }
 
@@ -451,24 +989,24 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     // Parse JSON response (remove markdown code blocks if present)
     const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
     const jsonText = jsonMatch[1] || content;
-    
+
     console.log('=== PARSED JSON ===');
     console.log(jsonText);
-    
+
     const extracted = JSON.parse(jsonText.trim()) as MetadataExtraction;
-    
+
     console.log('=== EXTRACTED METADATA (BEFORE SANITIZATION) ===');
     console.log(JSON.stringify(extracted, null, 2));
     console.log('Emails extracted:', extracted.emails);
     console.log('Phones extracted:', extracted.phones);
-    
+
     const sanitized = this.sanitizeMetadata(extracted);
-    
+
     console.log('=== FINAL METADATA (AFTER SANITIZATION) ===');
     console.log(JSON.stringify(sanitized, null, 2));
     console.log('Emails (masked):', sanitized.emails);
     console.log('Phones (masked):', sanitized.phones);
-    
+
     return sanitized;
   }
 
@@ -477,9 +1015,9 @@ Return only valid JSON in this format (use empty string "" for fields not found)
    */
   private async processChunks(chunks: string[]): Promise<MetadataExtraction> {
     console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
-    
+
     const chunkResults: MetadataExtraction[] = [];
-    
+
     // Process chunks sequentially to avoid rate limits
     for (let i = 0; i < chunks.length; i++) {
       console.log(`\n=== PROCESSING CHUNK ${i + 1}/${chunks.length} ===`);
@@ -496,138 +1034,97 @@ Return only valid JSON in this format (use empty string "" for fields not found)
 
     console.log('\n=== MERGING CHUNK RESULTS ===');
     const merged = this.mergeChunkResults(chunkResults);
-    
+
     console.log('=== MERGED RESULT (BEFORE FINAL SANITIZATION) ===');
     console.log(JSON.stringify(merged, null, 2));
-    
+
     // Final sanitization (validation, masking, etc.)
     const finalResult = this.sanitizeMetadata(merged);
-    
+
     console.log('=== FINAL MERGED RESULT ===');
     console.log(JSON.stringify(finalResult, null, 2));
-    
+
     return finalResult;
   }
 
   /**
-   * Merge results from multiple chunks intelligently
+   * Merge results from multiple chunks into a single MetadataExtraction object.
    */
-  private mergeChunkResults(results: MetadataExtraction[]): MetadataExtraction {
-    const merged: MetadataExtraction = {
-      title: '',
-      documentType: '',
-      bu: '',
-      department: '',
-      region: '',
-      client: '',
-      abstract: '',
-      emails: '',
-      phones: '',
-      ids: '',
-      pricing: ''
+  private mergeChunkResults(chunkResults: MetadataExtraction[]): MetadataExtraction {
+    if (chunkResults.length === 0) {
+      return {} as MetadataExtraction;
+    }
+
+    const merged: MetadataExtraction = {};
+
+    // 1. Helper to concatenate and get unique, non-empty, comma-separated values for Collection Fields
+    const mergeCollectionField = (
+      field: keyof MetadataExtraction,
+      results: MetadataExtraction[]
+    ): string => {
+      // Collect all values, flatten, and ensure uniqueness
+      const allValues = results
+        .map((r) => (r[field] as string) || '')
+        // Split by comma or semicolon, trim, and filter out empty strings
+        .reduce((acc, s) => {
+          // Check if the value is non-empty before attempting to split
+          if (!s.trim()) return acc;
+          const values = s.split(/[,;]/)
+            .map((v) => v.trim())
+            .filter(v => v !== '');
+          return acc.concat(values);
+        }, [] as string[])
+        .filter((v, i, a) => a.indexOf(v) === i); // Get unique values
+
+      // Join the unique values back into a comma-separated string
+      return allValues.join(', ');
     };
 
-    // Collect all emails and phones (combine from all chunks)
-    const allEmails: string[] = [];
-    const allPhones: string[] = [];
-    const allIds: string[] = [];
-    const allPricing: string[] = [];
-
-    for (let i = 0; i < results.length; i++) {
-      const result = results[i];
-      
-      // Title: Take from first chunk (most likely to be at the start)
-      if (!merged.title && result.title) {
-        merged.title = result.title;
-      }
-
-      // DocumentType: Take from first chunk
-      if (!merged.documentType && result.documentType) {
-        merged.documentType = result.documentType;
-      }
-
-      // BU: Take first non-empty match
-      if (!merged.bu && result.bu) {
-        merged.bu = result.bu;
-      }
-
-      // Department: Take first non-empty match
-      if (!merged.department && result.department) {
-        merged.department = result.department;
-      }
-
-      // Region: Take first non-empty match
-      if (!merged.region && result.region) {
-        merged.region = result.region;
-      }
-
-      // Client: Take first non-empty match
-      if (!merged.client && result.client) {
-        merged.client = result.client;
-      }
-
-      // Abstract: Take the longest one (most comprehensive)
-      if (result.abstract && result.abstract.length > (merged.abstract?.length || 0)) {
-        merged.abstract = result.abstract;
-      }
-
-      // Emails: Collect all unique emails
-      if (result.emails) {
-        const emails = result.emails.split(/[,;\n]/).map(e => e.trim()).filter(e => e.length > 0);
-        for (let j = 0; j < emails.length; j++) {
-          const email = emails[j];
-          // Add if not already in the list (case-insensitive)
-          if (email && allEmails.indexOf(email.toLowerCase()) === -1) {
-            allEmails.push(email.toLowerCase());
-            // Keep original case from first occurrence
-            const originalEmail = emails[j];
-            if (allEmails.indexOf(originalEmail.toLowerCase()) === -1) {
-              allEmails[allEmails.length - 1] = originalEmail;
-            }
-          }
+    // 2. Helper to find the first non-empty value for Single Fields
+    const findFirstNonEmpty = (
+      field: keyof MetadataExtraction,
+      results: MetadataExtraction[]
+    ): string | undefined => {
+      for (const result of results) {
+        const value = result[field];
+        if (typeof value === 'string' && value.trim() !== '') {
+          return value.trim();
         }
       }
+      return undefined; // Return undefined if no non-empty value is found
+    };
 
-      // Phones: Collect all unique phones
-      if (result.phones) {
-        const phones = result.phones.split(/[,;\n]/).map(p => p.trim()).filter(p => p.length > 0);
-        for (let j = 0; j < phones.length; j++) {
-          const phone = phones[j];
-          // Add if not already in the list
-          if (phone && allPhones.indexOf(phone) === -1) {
-            allPhones.push(phone);
-          }
-        }
-      }
+    // --- Apply Merge Logic ---
 
-      // IDs: Collect all
-      if (result.ids) {
-        const ids = result.ids.split(/[,;\n]/).map(id => id.trim()).filter(id => id.length > 0);
-        for (let j = 0; j < ids.length; j++) {
-          const id = ids[j];
-          if (id && allIds.indexOf(id) === -1) {
-            allIds.push(id);
-          }
-        }
-      }
+    // 1. Collection Fields (Concatenate unique values)
+    merged.emails = mergeCollectionField('emails', chunkResults);
+    merged.phones = mergeCollectionField('phones', chunkResults);
+    merged.ids = mergeCollectionField('ids', chunkResults);
+    merged.pricing = mergeCollectionField('pricing', chunkResults);
 
-      // Pricing: Collect all (combine with newlines)
-      if (result.pricing) {
-        allPricing.push(result.pricing);
+    // 2. Single/Mandatory/Conditional Fields (Take the first non-empty result)
+    // The first chunk is most likely to have the best Title, BU, Department, etc.
+    merged.title = findFirstNonEmpty('title', chunkResults);
+    merged.documentType = findFirstNonEmpty('documentType', chunkResults);
+    merged.bu = findFirstNonEmpty('bu', chunkResults);
+    merged.department = findFirstNonEmpty('department', chunkResults);
+    merged.abstract = findFirstNonEmpty('abstract', chunkResults);
+    merged.region = findFirstNonEmpty('region', chunkResults);
+    merged.client = findFirstNonEmpty('client', chunkResults);
+    merged.diseaseArea = findFirstNonEmpty('diseaseArea', chunkResults);
+    merged.therapyArea = findFirstNonEmpty('therapyArea', chunkResults);
+
+    // Filter out fields that remain undefined or empty string, just in case,
+    // although sanitization handles final fallbacks.
+    const finalMerged: MetadataExtraction = {};
+    for (const key in merged) {
+      const value = merged[key as keyof MetadataExtraction];
+      if (value !== undefined && value !== null) {
+        finalMerged[key as keyof MetadataExtraction] = value;
       }
     }
 
-    // Join collected values
-    merged.emails = allEmails.join(', ');
-    merged.phones = allPhones.join(', ');
-    merged.ids = allIds.join(', ');
-    merged.pricing = allPricing.join('\n\n');
-
-    console.log('Merged emails count:', allEmails.length);
-    console.log('Merged phones count:', allPhones.length);
-    console.log('Merged IDs count:', allIds.length);
-
-    return merged;
+    return finalMerged;
   }
 
   /**
@@ -696,4 +1193,3 @@ Return only a JSON array of exactly 3 tag strings, nothing else. Example: ["HR",
     }
   }
 }
-
