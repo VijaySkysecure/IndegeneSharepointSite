@@ -55,16 +55,26 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     setProcessingProgress('');
 
     try {
-      // Process all files with AI in parallel (no SharePoint upload yet)
-      setProcessingProgress(`Processing ${filesArray.length} file(s)...`);
+      // Step 1: Upload files immediately to SharePoint with minimal metadata (Name and Status="Draft")
+      // Upload silently without showing progress message
+      const uploadPromises = filesArray.map(async (file) => {
+        const itemId = await uploadFileToSharePoint(file);
+        return { file, itemId };
+      });
 
-      // Process all files in parallel
-      const processingPromises = filesArray.map(async (file, index) => {
+      const uploadResults = await Promise.all(uploadPromises);
+      console.log('Files uploaded to SharePoint:', uploadResults);
+
+      // Step 2: Process all files with AI in parallel
+      // Now show the analyzing dialog
+      setProcessingProgress(`Processing ${filesArray.length} file(s) with AI...`);
+
+      const processingPromises = uploadResults.map(async ({ file, itemId }, index) => {
         console.log(`Starting parallel processing for file ${index + 1}: ${file.name}`);
         const metadata = await processFileWithAI(file);
         return {
           file: file,
-          itemId: -1, // Placeholder - will be set when uploaded to SharePoint on submit
+          itemId: itemId, // Store the SharePoint item ID
           metadata: metadata || {}
         };
       });
@@ -215,9 +225,9 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
   };
 
   /**
-   * Create item in KMArtifacts folder inside Document Library
+   * Upload file to SharePoint immediately with minimal metadata (Name and Status="Draft")
    */
-  const updateKMArtifactsMetadata = async (file: File) => {
+  const uploadFileToSharePoint = async (file: File): Promise<number> => {
     const LIBRARY_NAME = "KMArtifacts";
     const webUrl = props.context.pageContext.web.absoluteUrl;
 
@@ -227,6 +237,12 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       SPHttpClient.configurations.v1,
       { body: file }
     );
+    
+    if (!uploadResp.ok) {
+      const txt = await uploadResp.text();
+      throw new Error(`File upload failed: ${uploadResp.status} ${txt}`);
+    }
+    
     const uploadJson = await uploadResp.json();
     const serverRelativeUrl = uploadJson.ServerRelativeUrl;
 
@@ -238,6 +254,12 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       `${webUrl}/_api/web/GetFileByServerRelativeUrl('${serverRelativeUrl}')/ListItemAllFields?$select=Id`,
       SPHttpClient.configurations.v1
     );
+    
+    if (!listItemResp.ok) {
+      const txt = await listItemResp.text();
+      throw new Error(`Failed to get list item: ${listItemResp.status} ${txt}`);
+    }
+    
     const listItemJson = await listItemResp.json();
     const itemId = listItemJson.Id;
 
@@ -249,35 +271,30 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     const listInfo = await listInfoResp.json();
     const entityType = listInfo.ListItemEntityTypeFullName;
 
-    // 5️⃣ Get current user ID
-    const currentUserResp = await props.context.spHttpClient.get(
-      `${webUrl}/_api/web/currentuser`,
-      SPHttpClient.configurations.v1
-    );
-    const currentUser = await currentUserResp.json();
-    const userId = currentUser.Id;
-
-    // 6️⃣ Metadata payload (initial values, will be updated with form data)
+    // 5️⃣ Set minimal metadata: only Name (via FileLeafRef) and Status="Draft"
+    // Explicitly set all other fields to empty/default values to prevent auto-population
+    // from Office document properties (Title, Author, etc.)
     const metadataBody = {
       __metadata: { type: entityType },
-      Status: "Submitted", // Will be updated with form data, but set to Submitted as default
-      TitleName: "-",
-      Abstract: "-",
-      BusinessUnit: "-",
-      Department: "-",
-      Region: "-",
-      Client: "-",
-      DocumentType: "-",
-      DiseaseArea: "-",
-      TherapyArea: "-",
+      Status: "Draft",
+      TitleName: "",
+      Abstract: "",
+      BusinessUnit: "",
+      Department: "",
+      Region: "",
+      Client: "",
+      DocumentType: "",
+      DiseaseArea: "",
+      TherapyArea: "",
       ComplianceFlag: false,
       Sanitized: false,
-      PerformedById: userId,
-      TimeStamp: new Date().toISOString()
+      Emails: "",
+      Phones: "",
+      IDs: "",
+      SensitiveTerms: ""
     };
 
-
-    // 7️⃣ Update metadata using fetch + MERGE + odata=nometadata
+    // 6️⃣ Update metadata using MERGE
     const updateResp = await props.context.spHttpClient.post(
       `${webUrl}/_api/web/lists/getbytitle('KMArtifacts')/items(${itemId})`,
       SPHttpClient.configurations.v1,
@@ -293,82 +310,98 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       }
     );
 
-
     if (!updateResp.ok) {
       const txt = await updateResp.text();
       console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
       throw new Error(`KMArtifacts update failed: ${updateResp.status} ${txt}`);
     }
 
-    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+    console.log("File uploaded to SharePoint with Status='Draft', itemId:", itemId);
     return itemId;
-
   };
 
   const updateKMArtifactsWithFormData = async (itemId: number, data: any) => {
-  const LIBRARY_NAME = "KMArtifacts";
-  const webUrl = props.context.pageContext.web.absoluteUrl;
+    const LIBRARY_NAME = "KMArtifacts";
+    const webUrl = props.context.pageContext.web.absoluteUrl;
 
-  const currentUserResp = await props.context.spHttpClient.get(
-    `${webUrl}/_api/web/currentuser`,
-    SPHttpClient.configurations.v1
-  );
-  const currentUser = await currentUserResp.json();
-  const userId = currentUser.Id;
+    console.log("=== DEBUG: updateKMArtifactsWithFormData ===");
+    console.log("ItemId:", itemId);
+    console.log("Form data received:", JSON.stringify(data, null, 2));
+    console.log("data.pricing value:", data.pricing);
+    console.log("data.sensitive value:", data.sensitive);
+    console.log("data.pricing type:", typeof data.pricing);
+    console.log("data.sensitive type:", typeof data.sensitive);
 
-  const payload = {
-    Status: data.Status || "Submitted",
-    TitleName: data.title || "-",
-    Abstract: data.abstract || "-",
-    BusinessUnit: data.bu || "-",
-    Department: data.department || "-",
-    Region: data.region || "-",
-    Client: data.client || "-",
-    DocumentType: data.documentType || "-",
-    DiseaseArea: data.diseaseArea || "-",
-    TherapyArea: data.therapyArea || "-",
-    ComplianceFlag: data.complianceFlag ?? false,
-    Sanitized: data.sanitized ?? false,
-    PerformedById: userId,
-    TimeStamp: new Date().toISOString()
-  };
+    const currentUserResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/currentuser`,
+      SPHttpClient.configurations.v1
+    );
+    const currentUser = await currentUserResp.json();
+    const userId = currentUser.Id;
 
-  // Get entity type for the update
-  const listInfoResp = await props.context.spHttpClient.get(
-    `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`,
-    SPHttpClient.configurations.v1
-  );
-  const listInfo = await listInfoResp.json();
-  const entityType = listInfo.ListItemEntityTypeFullName;
+    // Update Status to "Unpublished" and all other form fields
+    const payload = {
+      Status: "Unpublished", // Change status from "Draft" to "Unpublished"
+      TitleName: data.title || "-",
+      Abstract: data.abstract || "-",
+      BusinessUnit: data.bu || "-",
+      Department: data.department || "-",
+      Region: data.region || "-",
+      Client: data.client || "-",
+      DocumentType: data.documentType || "-",
+      DiseaseArea: data.diseaseArea || "-",
+      TherapyArea: data.therapyArea || "-",
+      ComplianceFlag: data.complianceFlag ?? false,
+      Sanitized: data.sanitized ?? false,
+      Emails: data.emails || "",
+      Phones: data.phones || "",
+      IDs: data.ids || "",
+      SensitiveTerms: data.pricing || data.sensitive || "",
+      PerformedById: userId,
+      TimeStamp: new Date().toISOString()
+    };
 
-  // Add __metadata to payload
-  const payloadWithMetadata = {
-    __metadata: { type: entityType },
-    ...payload
-  };
+    // Get entity type for the update
+    const listInfoResp = await props.context.spHttpClient.get(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`,
+      SPHttpClient.configurations.v1
+    );
+    const listInfo = await listInfoResp.json();
+    const entityType = listInfo.ListItemEntityTypeFullName;
 
-  const resp = await props.context.spHttpClient.post(
-    `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
-    SPHttpClient.configurations.v1,
-    {
-      headers: {
-        "Accept": "application/json;odata=verbose",
-        "Content-Type": "application/json;odata=verbose",
-        "IF-MATCH": "*",
-        "X-HTTP-Method": "MERGE",
-        "odata-version": ""
-      },
-      body: JSON.stringify(payloadWithMetadata)
+    // Add __metadata to payload
+    const payloadWithMetadata = {
+      __metadata: { type: entityType },
+      ...payload
+    };
+
+    const resp = await props.context.spHttpClient.post(
+      `${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`,
+      SPHttpClient.configurations.v1,
+      {
+        headers: {
+          "Accept": "application/json;odata=verbose",
+          "Content-Type": "application/json;odata=verbose",
+          "IF-MATCH": "*",
+          "X-HTTP-Method": "MERGE",
+          "odata-version": ""
+        },
+        body: JSON.stringify(payloadWithMetadata)
+      }
+    );
+
+    if (!resp.ok) {
+      const errorText = await resp.text();
+      throw new Error(`Failed to update metadata: ${resp.status} ${errorText}`);
     }
-  );
 
-  if (!resp.ok) {
-    const errorText = await resp.text();
-    throw new Error(`Failed to update metadata: ${resp.status} ${errorText}`);
-  }
-
-  console.log("KMArtifacts updated with form data:", itemId);
-};
+    const responseText = await resp.text();
+    console.log("=== DEBUG: Update successful ===");
+    console.log("Response status:", resp.status);
+    console.log("Response text:", responseText);
+    console.log("KMArtifacts updated with form data and Status='Unpublished', itemId:", itemId);
+    console.log("SensitiveTerms value that was sent:", payload.SensitiveTerms);
+  };
 
 
   const onDrop = (e: React.DragEvent) => {
@@ -385,20 +418,28 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     isSubmittingRef.current = true;
     setIsProcessing(true);
     setProcessingError(null);
-    setProcessingProgress('Uploading files to SharePoint...');
+    setProcessingProgress('Updating files in SharePoint...');
 
     try {
-      // Process all files in parallel - upload to SharePoint and create items
-      setProcessingProgress(`Uploading ${allFilesData.length} file(s) to SharePoint...`);
+      // Files are already uploaded to SharePoint with Status="Draft"
+      // Now update them with form data and change Status to "Unpublished"
+      setProcessingProgress(`Updating ${allFilesData.length} file(s) in SharePoint...`);
 
       // Process all files in parallel
-      const uploadPromises = allFilesData.map(async (fileData) => {
+      // Files are already uploaded to SharePoint with Status="Draft"
+      // Now we just need to update them with form data and change Status to "Unpublished"
+      const updatePromises = allFilesData.map(async (fileData) => {
         try {
-          // 1. Upload file and create KMArtifacts item
-          const itemId = await updateKMArtifactsMetadata(fileData.file);
-          console.log(`File ${fileData.file.name} uploaded successfully, itemId: ${itemId}`);
+          // File is already uploaded, itemId is already stored in fileData
+          const itemId = fileData.itemId;
+          
+          if (!itemId || itemId === -1) {
+            throw new Error('Invalid item ID. File may not have been uploaded correctly.');
+          }
 
-          // 2. Create audit log item (Action = Submitted)
+          console.log(`Updating file ${fileData.file.name} (itemId: ${itemId}) with form data...`);
+
+          // 1. Create audit log item (Action = Submitted)
           try {
             await createAuditLogItem(fileData.file, "Submitted");
           } catch (err) {
@@ -406,13 +447,13 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
             // Continue even if audit log fails
           }
 
-          // 3. Update KMArtifacts row with actual form values
+          // 2. Update KMArtifacts row with actual form values and change Status to "Unpublished"
           await updateKMArtifactsWithFormData(itemId, fileData.metadata);
           console.log(`Metadata updated successfully for ${fileData.file.name}`);
           
           return { success: true, fileName: fileData.file.name };
         } catch (err) {
-          console.error(`Error processing ${fileData.file.name}:`, err);
+          console.error(`Error updating ${fileData.file.name}:`, err);
           return { 
             success: false, 
             fileName: fileData.file.name, 
@@ -421,8 +462,8 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
         }
       });
 
-      // Wait for all uploads to complete
-      const results = await Promise.all(uploadPromises);
+      // Wait for all updates to complete
+      const results = await Promise.all(updatePromises);
       
       // Check for any failures
       const failures = results.filter(r => !r.success);
@@ -436,21 +477,27 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
 
       console.log(`Successfully submitted ${allFilesData.length} file(s)`);
       
-      // Reset all state immediately to prevent form from showing
-      // Reset in order: filesData first (used in render condition), then others
-      setFilesData([]);
-      setUploadedFiles([]);
-      setShowForm(false);
-      setProcessingError(null);
+      // Show success message
       setProcessingProgress('');
-      isSubmittingRef.current = false;
-      setIsProcessing(false);
+      setProcessingError(null);
+      const fileCount = allFilesData.length;
+      const successMessage = fileCount === 1 ? 'File Uploaded Successfully' : 'Files Uploaded Successfully';
+      setProcessingProgress(successMessage);
       
-      // Close the modal immediately
-      // Use requestAnimationFrame to ensure state updates are processed
-      requestAnimationFrame(() => {
+      // Wait a moment to show the success message, then close
+      setTimeout(() => {
+        // Reset all state
+        setFilesData([]);
+        setUploadedFiles([]);
+        setShowForm(false);
+        setProcessingError(null);
+        setProcessingProgress('');
+        isSubmittingRef.current = false;
+        setIsProcessing(false);
+        
+        // Close the modal
         props.onClose && props.onClose();
-      });
+      }, 1500);
     } catch (err) {
       console.error("Error during form submission:", err);
       setProcessingError(err instanceof Error ? err.message : 'Error submitting files');
@@ -505,10 +552,16 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
               <div className={styles.processingContainer}>
                 <div className={styles.processingSpinner}></div>
                 <h3 className={styles.processingTitle}>
-                  {processingProgress && processingProgress.includes('Uploading') ? 'Uploading Files...' : 'Analyzing Documents...'}
+                  {processingProgress && processingProgress.includes('Uploaded Successfully') 
+                    ? processingProgress 
+                    : processingProgress && processingProgress.includes('Uploading') 
+                    ? 'Uploading Files...' 
+                    : 'Analyzing Documents...'}
                 </h3>
                 <p className={styles.processingMessage}>
-                  {processingProgress || 'Reading your documents and extracting information. This may take a moment.'}
+                  {processingProgress && processingProgress.includes('Uploaded Successfully')
+                    ? ''
+                    : processingProgress || 'Reading your documents and extracting information. This may take a moment.'}
                 </p>
                 {processingError && (
                   <div className={styles.errorMessage}>

@@ -1231,7 +1231,7 @@ var FileUpload = function (props) {
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var filesArray, processingPromises, processedFilesData, error_1;
+        var filesArray, uploadPromises, uploadResults, processingPromises, processedFilesData, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1249,28 +1249,47 @@ var FileUpload = function (props) {
                     setProcessingProgress('');
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 3, , 4]);
-                    // Process all files with AI in parallel (no SharePoint upload yet)
-                    setProcessingProgress("Processing ".concat(filesArray.length, " file(s)..."));
-                    processingPromises = filesArray.map(function (file, index) { return __awaiter(void 0, void 0, void 0, function () {
-                        var metadata;
+                    _a.trys.push([1, 4, , 5]);
+                    uploadPromises = filesArray.map(function (file) { return __awaiter(void 0, void 0, void 0, function () {
+                        var itemId;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
-                                case 0:
-                                    console.log("Starting parallel processing for file ".concat(index + 1, ": ").concat(file.name));
-                                    return [4 /*yield*/, processFileWithAI(file)];
+                                case 0: return [4 /*yield*/, uploadFileToSharePoint(file)];
                                 case 1:
-                                    metadata = _a.sent();
-                                    return [2 /*return*/, {
-                                            file: file,
-                                            itemId: -1,
-                                            metadata: metadata || {}
-                                        }];
+                                    itemId = _a.sent();
+                                    return [2 /*return*/, { file: file, itemId: itemId }];
                             }
                         });
                     }); });
-                    return [4 /*yield*/, Promise.all(processingPromises)];
+                    return [4 /*yield*/, Promise.all(uploadPromises)];
                 case 2:
+                    uploadResults = _a.sent();
+                    console.log('Files uploaded to SharePoint:', uploadResults);
+                    // Step 2: Process all files with AI in parallel
+                    // Now show the analyzing dialog
+                    setProcessingProgress("Processing ".concat(filesArray.length, " file(s) with AI..."));
+                    processingPromises = uploadResults.map(function (_a, index) {
+                        var file = _a.file, itemId = _a.itemId;
+                        return __awaiter(void 0, void 0, void 0, function () {
+                            var metadata;
+                            return __generator(this, function (_b) {
+                                switch (_b.label) {
+                                    case 0:
+                                        console.log("Starting parallel processing for file ".concat(index + 1, ": ").concat(file.name));
+                                        return [4 /*yield*/, processFileWithAI(file)];
+                                    case 1:
+                                        metadata = _b.sent();
+                                        return [2 /*return*/, {
+                                                file: file,
+                                                itemId: itemId,
+                                                metadata: metadata || {}
+                                            }];
+                                }
+                            });
+                        });
+                    });
+                    return [4 /*yield*/, Promise.all(processingPromises)];
+                case 3:
                     processedFilesData = _a.sent();
                     setFilesData(processedFilesData);
                     setIsProcessing(false);
@@ -1281,14 +1300,14 @@ var FileUpload = function (props) {
                     else {
                         setProcessingError('No files were successfully processed.');
                     }
-                    return [3 /*break*/, 4];
-                case 3:
+                    return [3 /*break*/, 5];
+                case 4:
                     error_1 = _a.sent();
                     console.error('Error processing files:', error_1);
                     setProcessingError(error_1 instanceof Error ? error_1.message : 'An error occurred while processing files.');
                     setIsProcessing(false);
-                    return [3 /*break*/, 4];
-                case 4: return [2 /*return*/];
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
             }
         });
     }); };
@@ -1420,10 +1439,10 @@ var FileUpload = function (props) {
         });
     };
     /**
-     * Create item in KMArtifacts folder inside Document Library
+     * Upload file to SharePoint immediately with minimal metadata (Name and Status="Draft")
      */
-    var updateKMArtifactsMetadata = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIBRARY_NAME, webUrl, uploadResp, uploadJson, serverRelativeUrl, listItemResp, listItemJson, itemId, listInfoResp, listInfo, entityType, currentUserResp, currentUser, userId, metadataBody, updateResp, txt;
+    var uploadFileToSharePoint = function (file) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, uploadResp, txt, uploadJson, serverRelativeUrl, listItemResp, txt, listItemJson, itemId, listInfoResp, listInfo, entityType, metadataBody, updateResp, txt;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1432,52 +1451,57 @@ var FileUpload = function (props) {
                     return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/GetFolderByServerRelativeUrl('").concat(LIBRARY_NAME, "')/Files/add(url='").concat(file.name, "',overwrite=true)"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, { body: file })];
                 case 1:
                     uploadResp = _a.sent();
-                    return [4 /*yield*/, uploadResp.json()];
+                    if (!!uploadResp.ok) return [3 /*break*/, 3];
+                    return [4 /*yield*/, uploadResp.text()];
                 case 2:
+                    txt = _a.sent();
+                    throw new Error("File upload failed: ".concat(uploadResp.status, " ").concat(txt));
+                case 3: return [4 /*yield*/, uploadResp.json()];
+                case 4:
                     uploadJson = _a.sent();
                     serverRelativeUrl = uploadJson.ServerRelativeUrl;
                     // 2️⃣ Wait briefly to ensure ListItem exists
                     return [4 /*yield*/, new Promise(function (r) { return setTimeout(r, 500); })];
-                case 3:
+                case 5:
                     // 2️⃣ Wait briefly to ensure ListItem exists
                     _a.sent();
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(serverRelativeUrl, "')/ListItemAllFields?$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 4:
+                case 6:
                     listItemResp = _a.sent();
-                    return [4 /*yield*/, listItemResp.json()];
-                case 5:
+                    if (!!listItemResp.ok) return [3 /*break*/, 8];
+                    return [4 /*yield*/, listItemResp.text()];
+                case 7:
+                    txt = _a.sent();
+                    throw new Error("Failed to get list item: ".concat(listItemResp.status, " ").concat(txt));
+                case 8: return [4 /*yield*/, listItemResp.json()];
+                case 9:
                     listItemJson = _a.sent();
                     itemId = listItemJson.Id;
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 6:
+                case 10:
                     listInfoResp = _a.sent();
                     return [4 /*yield*/, listInfoResp.json()];
-                case 7:
+                case 11:
                     listInfo = _a.sent();
                     entityType = listInfo.ListItemEntityTypeFullName;
-                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 8:
-                    currentUserResp = _a.sent();
-                    return [4 /*yield*/, currentUserResp.json()];
-                case 9:
-                    currentUser = _a.sent();
-                    userId = currentUser.Id;
                     metadataBody = {
                         __metadata: { type: entityType },
-                        Status: "Submitted",
-                        TitleName: "-",
-                        Abstract: "-",
-                        BusinessUnit: "-",
-                        Department: "-",
-                        Region: "-",
-                        Client: "-",
-                        DocumentType: "-",
-                        DiseaseArea: "-",
-                        TherapyArea: "-",
+                        Status: "Draft",
+                        TitleName: "",
+                        Abstract: "",
+                        BusinessUnit: "",
+                        Department: "",
+                        Region: "",
+                        Client: "",
+                        DocumentType: "",
+                        DiseaseArea: "",
+                        TherapyArea: "",
                         ComplianceFlag: false,
                         Sanitized: false,
-                        PerformedById: userId,
-                        TimeStamp: new Date().toISOString()
+                        Emails: "",
+                        Phones: "",
+                        IDs: "",
+                        SensitiveTerms: ""
                     };
                     return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('KMArtifacts')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
                             headers: {
@@ -1489,28 +1513,35 @@ var FileUpload = function (props) {
                             },
                             body: JSON.stringify(metadataBody)
                         })];
-                case 10:
+                case 12:
                     updateResp = _a.sent();
-                    if (!!updateResp.ok) return [3 /*break*/, 12];
+                    if (!!updateResp.ok) return [3 /*break*/, 14];
                     return [4 /*yield*/, updateResp.text()];
-                case 11:
+                case 13:
                     txt = _a.sent();
                     console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
                     throw new Error("KMArtifacts update failed: ".concat(updateResp.status, " ").concat(txt));
-                case 12:
-                    console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
+                case 14:
+                    console.log("File uploaded to SharePoint with Status='Draft', itemId:", itemId);
                     return [2 /*return*/, itemId];
             }
         });
     }); };
     var updateKMArtifactsWithFormData = function (itemId, data) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, listInfoResp, listInfo, entityType, payloadWithMetadata, resp, errorText;
+        var LIBRARY_NAME, webUrl, currentUserResp, currentUser, userId, payload, listInfoResp, listInfo, entityType, payloadWithMetadata, resp, errorText, responseText;
         var _a, _b;
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
                     LIBRARY_NAME = "KMArtifacts";
                     webUrl = props.context.pageContext.web.absoluteUrl;
+                    console.log("=== DEBUG: updateKMArtifactsWithFormData ===");
+                    console.log("ItemId:", itemId);
+                    console.log("Form data received:", JSON.stringify(data, null, 2));
+                    console.log("data.pricing value:", data.pricing);
+                    console.log("data.sensitive value:", data.sensitive);
+                    console.log("data.pricing type:", typeof data.pricing);
+                    console.log("data.sensitive type:", typeof data.sensitive);
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 1:
                     currentUserResp = _c.sent();
@@ -1519,7 +1550,7 @@ var FileUpload = function (props) {
                     currentUser = _c.sent();
                     userId = currentUser.Id;
                     payload = {
-                        Status: data.Status || "Submitted",
+                        Status: "Unpublished",
                         TitleName: data.title || "-",
                         Abstract: data.abstract || "-",
                         BusinessUnit: data.bu || "-",
@@ -1531,6 +1562,10 @@ var FileUpload = function (props) {
                         TherapyArea: data.therapyArea || "-",
                         ComplianceFlag: (_a = data.complianceFlag) !== null && _a !== void 0 ? _a : false,
                         Sanitized: (_b = data.sanitized) !== null && _b !== void 0 ? _b : false,
+                        Emails: data.emails || "",
+                        Phones: data.phones || "",
+                        IDs: data.ids || "",
+                        SensitiveTerms: data.pricing || data.sensitive || "",
                         PerformedById: userId,
                         TimeStamp: new Date().toISOString()
                     };
@@ -1559,8 +1594,14 @@ var FileUpload = function (props) {
                 case 6:
                     errorText = _c.sent();
                     throw new Error("Failed to update metadata: ".concat(resp.status, " ").concat(errorText));
-                case 7:
-                    console.log("KMArtifacts updated with form data:", itemId);
+                case 7: return [4 /*yield*/, resp.text()];
+                case 8:
+                    responseText = _c.sent();
+                    console.log("=== DEBUG: Update successful ===");
+                    console.log("Response status:", resp.status);
+                    console.log("Response text:", responseText);
+                    console.log("KMArtifacts updated with form data and Status='Unpublished', itemId:", itemId);
+                    console.log("SensitiveTerms value that was sent:", payload.SensitiveTerms);
                     return [2 /*return*/];
             }
         });
@@ -1573,7 +1614,7 @@ var FileUpload = function (props) {
         }
     };
     var onFormSubmit = function (allFilesData) { return __awaiter(void 0, void 0, void 0, function () {
-        var uploadPromises, results, failures, errorMessages, err_1;
+        var updatePromises, results, failures, errorMessages, fileCount, successMessage, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1581,54 +1622,56 @@ var FileUpload = function (props) {
                     isSubmittingRef.current = true;
                     setIsProcessing(true);
                     setProcessingError(null);
-                    setProcessingProgress('Uploading files to SharePoint...');
+                    setProcessingProgress('Updating files in SharePoint...');
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 3, , 4]);
-                    // Process all files in parallel - upload to SharePoint and create items
-                    setProcessingProgress("Uploading ".concat(allFilesData.length, " file(s) to SharePoint..."));
-                    uploadPromises = allFilesData.map(function (fileData) { return __awaiter(void 0, void 0, void 0, function () {
+                    // Files are already uploaded to SharePoint with Status="Draft"
+                    // Now update them with form data and change Status to "Unpublished"
+                    setProcessingProgress("Updating ".concat(allFilesData.length, " file(s) in SharePoint..."));
+                    updatePromises = allFilesData.map(function (fileData) { return __awaiter(void 0, void 0, void 0, function () {
                         var itemId, err_2, err_3;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0:
-                                    _a.trys.push([0, 7, , 8]);
-                                    return [4 /*yield*/, updateKMArtifactsMetadata(fileData.file)];
+                                    _a.trys.push([0, 6, , 7]);
+                                    itemId = fileData.itemId;
+                                    if (!itemId || itemId === -1) {
+                                        throw new Error('Invalid item ID. File may not have been uploaded correctly.');
+                                    }
+                                    console.log("Updating file ".concat(fileData.file.name, " (itemId: ").concat(itemId, ") with form data..."));
+                                    _a.label = 1;
                                 case 1:
-                                    itemId = _a.sent();
-                                    console.log("File ".concat(fileData.file.name, " uploaded successfully, itemId: ").concat(itemId));
-                                    _a.label = 2;
-                                case 2:
-                                    _a.trys.push([2, 4, , 5]);
+                                    _a.trys.push([1, 3, , 4]);
                                     return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
-                                case 3:
+                                case 2:
                                     _a.sent();
-                                    return [3 /*break*/, 5];
-                                case 4:
+                                    return [3 /*break*/, 4];
+                                case 3:
                                     err_2 = _a.sent();
                                     console.warn("Audit log creation failed for ".concat(fileData.file.name, ":"), err_2);
-                                    return [3 /*break*/, 5];
-                                case 5: 
-                                // 3. Update KMArtifacts row with actual form values
+                                    return [3 /*break*/, 4];
+                                case 4: 
+                                // 2. Update KMArtifacts row with actual form values and change Status to "Unpublished"
                                 return [4 /*yield*/, updateKMArtifactsWithFormData(itemId, fileData.metadata)];
-                                case 6:
-                                    // 3. Update KMArtifacts row with actual form values
+                                case 5:
+                                    // 2. Update KMArtifacts row with actual form values and change Status to "Unpublished"
                                     _a.sent();
                                     console.log("Metadata updated successfully for ".concat(fileData.file.name));
                                     return [2 /*return*/, { success: true, fileName: fileData.file.name }];
-                                case 7:
+                                case 6:
                                     err_3 = _a.sent();
-                                    console.error("Error processing ".concat(fileData.file.name, ":"), err_3);
+                                    console.error("Error updating ".concat(fileData.file.name, ":"), err_3);
                                     return [2 /*return*/, {
                                             success: false,
                                             fileName: fileData.file.name,
                                             error: err_3 instanceof Error ? err_3.message : String(err_3)
                                         }];
-                                case 8: return [2 /*return*/];
+                                case 7: return [2 /*return*/];
                             }
                         });
                     }); });
-                    return [4 /*yield*/, Promise.all(uploadPromises)];
+                    return [4 /*yield*/, Promise.all(updatePromises)];
                 case 2:
                     results = _a.sent();
                     failures = results.filter(function (r) { return !r.success; });
@@ -1640,20 +1683,25 @@ var FileUpload = function (props) {
                         return [2 /*return*/];
                     }
                     console.log("Successfully submitted ".concat(allFilesData.length, " file(s)"));
-                    // Reset all state immediately to prevent form from showing
-                    // Reset in order: filesData first (used in render condition), then others
-                    setFilesData([]);
-                    setUploadedFiles([]);
-                    setShowForm(false);
-                    setProcessingError(null);
+                    // Show success message
                     setProcessingProgress('');
-                    isSubmittingRef.current = false;
-                    setIsProcessing(false);
-                    // Close the modal immediately
-                    // Use requestAnimationFrame to ensure state updates are processed
-                    requestAnimationFrame(function () {
+                    setProcessingError(null);
+                    fileCount = allFilesData.length;
+                    successMessage = fileCount === 1 ? 'File Uploaded Successfully' : 'Files Uploaded Successfully';
+                    setProcessingProgress(successMessage);
+                    // Wait a moment to show the success message, then close
+                    setTimeout(function () {
+                        // Reset all state
+                        setFilesData([]);
+                        setUploadedFiles([]);
+                        setShowForm(false);
+                        setProcessingError(null);
+                        setProcessingProgress('');
+                        isSubmittingRef.current = false;
+                        setIsProcessing(false);
+                        // Close the modal
                         props.onClose && props.onClose();
-                    });
+                    }, 1500);
                     return [3 /*break*/, 4];
                 case 3:
                     err_1 = _a.sent();
@@ -1684,8 +1732,14 @@ var FileUpload = function (props) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: function () { return props.onClose && props.onClose(); } }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, processingProgress && processingProgress.includes('Uploading') ? 'Uploading Files...' : 'Analyzing Documents...'),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, processingProgress || 'Reading your documents and extracting information. This may take a moment.'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, processingProgress && processingProgress.includes('Uploaded Successfully')
+                ? processingProgress
+                : processingProgress && processingProgress.includes('Uploading')
+                    ? 'Uploading Files...'
+                    : 'Analyzing Documents...'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, processingProgress && processingProgress.includes('Uploaded Successfully')
+                ? ''
+                : processingProgress || 'Reading your documents and extracting information. This may take a moment.'),
             processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length > 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MultiMetadataForm_MultiMetadataForm__WEBPACK_IMPORTED_MODULE_4__.MultiMetadataForm, { onSubmit: onFormSubmit, onClose: function () {
                 setUploadedFiles([]);
                 setFilesData([]);
