@@ -1,8 +1,5 @@
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 
 export interface IQuestionSectionProps {
-  context?: WebPartContext;
+    context: WebPartContext;
 }
-
-
-

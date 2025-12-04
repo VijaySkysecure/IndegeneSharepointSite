@@ -1,11 +1,17 @@
 
 require("./Footer.module.css");
 const styles = {
-  footer: 'footer_49b3a56d',
-  footerContainer: 'footerContainer_49b3a56d',
-  logoContainer: 'logoContainer_49b3a56d',
-  logoSquare: 'logoSquare_49b3a56d',
-  logoText: 'logoText_49b3a56d'
+  footer: 'footer_1e8cdb31',
+  footerContainer: 'footerContainer_1e8cdb31',
+  logoContainer: 'logoContainer_1e8cdb31',
+  logoSquare: 'logoSquare_1e8cdb31',
+  logoText: 'logoText_1e8cdb31',
+  chatButton: 'chatButton_1e8cdb31',
+  chatPopup: 'chatPopup_1e8cdb31',
+  popupFade: 'popupFade_1e8cdb31',
+  chatHeader: 'chatHeader_1e8cdb31',
+  closeBtn: 'closeBtn_1e8cdb31',
+  chatIframe: 'chatIframe_1e8cdb31'
 };
 
 export default styles;

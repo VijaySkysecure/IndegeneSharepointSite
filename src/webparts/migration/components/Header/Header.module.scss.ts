@@ -1,17 +1,21 @@
 
 require("./Header.module.css");
 const styles = {
-  header: 'header_e245bf59',
-  headerContent: 'headerContent_e245bf59',
-  leftSection: 'leftSection_e245bf59',
-  companyName: 'companyName_e245bf59',
-  description: 'description_e245bf59',
-  addFileButton: 'addFileButton_e245bf59',
-  rightSection: 'rightSection_e245bf59',
-  leadership: 'leadership_e245bf59',
-  searchContainer: 'searchContainer_e245bf59',
-  searchIcon: 'searchIcon_e245bf59',
-  searchInput: 'searchInput_e245bf59'
+  header: 'header_52468a40',
+  headerContent: 'headerContent_52468a40',
+  leftSection: 'leftSection_52468a40',
+  companyName: 'companyName_52468a40',
+  description: 'description_52468a40',
+  addFileButton: 'addFileButton_52468a40',
+  rightSection: 'rightSection_52468a40',
+  leadership: 'leadership_52468a40',
+  searchContainer: 'searchContainer_52468a40',
+  searchIcon: 'searchIcon_52468a40',
+  searchInput: 'searchInput_52468a40',
+  dropdownPanel: 'dropdownPanel_52468a40',
+  fadeDown: 'fadeDown_52468a40',
+  dropdownInner: 'dropdownInner_52468a40',
+  dropdownClose: 'dropdownClose_52468a40'
 };
 
 export default styles;

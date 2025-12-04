@@ -1,3 +1,7 @@
+/* ----------------------------- */
+/* EXISTING FOOTER STYLES        */
+/* ----------------------------- */
+
 .footer {
   width: 100%;
   background-color: white;
@@ -34,5 +38,83 @@
   letter-spacing: 0.5px;
 }
 
+/* ----------------------------- */
+/* NEW CHATBOT STYLES            */
+/* ----------------------------- */
 
+.chatButton {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  z-index: 99999;
+  transition: all 0.2s ease;
+}
 
+.chatButton:hover {
+  transform: scale(1.08);
+}
+
+.chatPopup {
+  width: 380px;
+  height: 520px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.28);
+  z-index: 99999;
+  animation: popupFade 0.25s ease;
+  border: 1px solid #e0e0e0;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chatHeader {
+  height: 45px;
+  background-color: #1976d2;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chatIframe {
+  width: 100%;
+  height: calc(100% - 45px);
+  border: none;
+}
