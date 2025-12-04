@@ -1,64 +1,45 @@
+
 require("./DocumentDetailPage.module.css");
-
 const styles = {
-  // Shared / HEAD-only / Master-only — combined
-
-  documentDetailPage: 'documentDetailPage_793d7e46',
-  header: 'header_793d7e46',
-  backButton: 'backButton_793d7e46',
-
-  // From HEAD
-  headerActions: 'headerActions_793d7e46',
-
-  // Shared
-  downloadButton: 'downloadButton_793d7e46',
-  shareButton: 'shareButton_793d7e46',
-  content: 'content_793d7e46',
-
-  // Shared but prefer HEAD ID (your choice; consistent)
-  headerRow: 'headerRow_793d7e46',
-  mainContent: 'mainContent_793d7e46',
-  fileTypeIndicator: 'fileTypeIndicator_793d7e46',
-
-  // Shared keys with same names (IDs from HEAD)
-  fileTypeIcon: 'fileTypeIcon_793d7e46',
-  fileTypeText: 'fileTypeText_793d7e46',
-  documentTitle: 'documentTitle_793d7e46',
-  documentAbstract: 'documentAbstract_793d7e46',
-  metadata: 'metadata_793d7e46',
-  metadataItem: 'metadataItem_793d7e46',
-
-  // HEAD-only
-  tagsContainer: 'tagsContainer_793d7e46',
-  tag: 'tag_793d7e46',
-
-  // Master-only additions
-  titleSection: 'titleSection_ea2b5c02',
-  titleContent: 'titleContent_ea2b5c02',
-  contentWrapper: 'contentWrapper_ea2b5c02',
-  actionButtons: 'actionButtons_ea2b5c02',
-  sidebar: 'sidebar_ea2b5c02',
-  sidebarSection: 'sidebarSection_ea2b5c02',
-  sidebarTitle: 'sidebarTitle_ea2b5c02',
-  infoList: 'infoList_ea2b5c02',
-  infoItem: 'infoItem_ea2b5c02',
-  infoLabel: 'infoLabel_ea2b5c02',
-  infoValue: 'infoValue_ea2b5c02',
-
-  // Shared Preview Section – keep HEAD IDs
-  previewSection: 'previewSection_793d7e46',
-  previewTitle: 'previewTitle_793d7e46',
-  previewContainer: 'previewContainer_793d7e46',
-  previewFrame: 'previewFrame_793d7e46',
-  previewPlaceholder: 'previewPlaceholder_793d7e46',
-  previewError: 'previewError_793d7e46',
-  errorIcon: 'errorIcon_793d7e46',
-  errorText: 'errorText_793d7e46',
-  retryButton: 'retryButton_793d7e46',
-
-  // Shared loading/error – HEAD IDs
-  loading: 'loading_793d7e46',
-  error: 'error_793d7e46'
+  documentDetailPage: 'documentDetailPage_90c02955',
+  header: 'header_90c02955',
+  backButton: 'backButton_90c02955',
+  content: 'content_90c02955',
+  titleSection: 'titleSection_90c02955',
+  titleContent: 'titleContent_90c02955',
+  contentWrapper: 'contentWrapper_90c02955',
+  mainContent: 'mainContent_90c02955',
+  headerRow: 'headerRow_90c02955',
+  fileTypeIndicator: 'fileTypeIndicator_90c02955',
+  fileTypeIcon: 'fileTypeIcon_90c02955',
+  fileTypeText: 'fileTypeText_90c02955',
+  documentTitle: 'documentTitle_90c02955',
+  documentAbstract: 'documentAbstract_90c02955',
+  metadata: 'metadata_90c02955',
+  metadataItem: 'metadataItem_90c02955',
+  actionButtons: 'actionButtons_90c02955',
+  downloadButton: 'downloadButton_90c02955',
+  shareButton: 'shareButton_90c02955',
+  previewSection: 'previewSection_90c02955',
+  previewTitle: 'previewTitle_90c02955',
+  previewContainer: 'previewContainer_90c02955',
+  previewFrame: 'previewFrame_90c02955',
+  previewPlaceholder: 'previewPlaceholder_90c02955',
+  previewError: 'previewError_90c02955',
+  errorIcon: 'errorIcon_90c02955',
+  errorText: 'errorText_90c02955',
+  retryButton: 'retryButton_90c02955',
+  sidebar: 'sidebar_90c02955',
+  sidebarSection: 'sidebarSection_90c02955',
+  sidebarTitle: 'sidebarTitle_90c02955',
+  tagsContainer: 'tagsContainer_90c02955',
+  tag: 'tag_90c02955',
+  infoList: 'infoList_90c02955',
+  infoItem: 'infoItem_90c02955',
+  infoLabel: 'infoLabel_90c02955',
+  infoValue: 'infoValue_90c02955',
+  loading: 'loading_90c02955',
+  error: 'error_90c02955'
 };
 
 export default styles;

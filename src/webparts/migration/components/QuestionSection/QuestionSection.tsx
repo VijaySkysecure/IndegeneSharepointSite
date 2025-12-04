@@ -1722,14 +1722,91 @@ const isOutOfDomainQuery = (query: string): boolean => {
   // Technology products unrelated to Indegene (unless specifically about Indegene's use)
   const techProducts = [
     "sharepoint", "excel", "word", "powerpoint", "outlook", "teams",
-    "windows", "linux", "android", "ios", "javascript", "python", "java"
+    "windows", "linux", "android", "ios", "javascript", "python", "java",
+    "github", "git", "stackoverflow", "docker", "kubernetes"
   ];
   if (techProducts.some(product => text.includes(product)) &&
       !text.includes("indegene") && !text.includes("uses") && !text.includes("using")) {
-    // Only flag if it's a general "what is" question about the product
-    if (text.includes("what is") || text.includes("tell me about")) {
+    // Flag if it's a general "what is", "how is", or "how to use" question about the product
+    if (text.includes("what is") || text.includes("tell me about") || 
+        text.includes("how is") || text.match(/^how is \w+/i) ||
+        text.includes("how to use") || text.match(/how\s+to\s+use\s+\w+/i)) {
       return true;
     }
+  }
+
+  // Phone/device queries (e.g., "is s 23 a good phone", "is iphone good")
+  if ((text.match(/is\s+(s\s*\d+|iphone|samsung|android|phone|mobile)\s+(good|bad|better|worse)/i) ||
+       text.match(/is\s+\w+\s+(phone|mobile|device)\s+(good|bad)/i) ||
+       text.includes("good phone") || text.includes("best phone")) &&
+      !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+    return true;
+  }
+
+  // Unclear queries about "km" (Knowledge Management) - should be handled as general query
+  // But if it's too unclear, decline it
+  if ((text.match(/^(what|how|who|where|when)\s+(is|are|was|were)\s+(the\s+)?km$/i) ||
+       text.match(/^(wht|wat|wht)\s+(is|are)\s+(the\s+)?km$/i)) &&
+      !text.includes("indegene") && !text.includes("knowledge management")) {
+    // This is unclear - could be asking about KM assistant or something else
+    // Let it pass through to general queries handler
+    return false; // Don't flag as out-of-domain, let general queries handle it
+  }
+
+  // Unclear/personal queries (e.g., "are we good", "dash people", "how to find a life")
+  if ((text === "are we good" || text === "are we" || text.match(/^are\s+we\s+\w+$/i)) &&
+      !text.includes("indegene") && !text.includes("company") && !text.includes("team")) {
+    return true;
+  }
+
+  // Gibberish/unclear queries with typos (e.g., "what isa helpmet", "dash people")
+  if (text.match(/^(what|how|who|where|when)\s+isa\s+\w+/i) ||
+      (text.length < 20 && text.match(/^(dash|what|how)\s+\w+$/i) && 
+       !text.includes("indegene") && !text.includes("medical") && !text.includes("health"))) {
+    // Very unclear queries - let them pass to gibberish handler
+    return false;
+  }
+
+  // Personal/romantic queries (e.g., "i like you do you like me")
+  if ((text.includes("i like you") || text.includes("do you like me") || 
+       text.includes("i love you") || text.includes("do you love me") ||
+       text.match(/i\s+(like|love)\s+you/i) || text.match(/do\s+you\s+(like|love)\s+me/i)) &&
+      !text.includes("indegene") && !text.includes("service") && !text.includes("company")) {
+    return true;
+  }
+
+  // Relationship advice queries (e.g., "how to make people hate me", "how to make people love me")
+  if ((text.includes("how to make people") || text.includes("how to make someone") ||
+       text.match(/how\s+to\s+make\s+(people|someone)\s+(hate|love|like|dislike)/i)) &&
+      !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+    return true;
+  }
+
+  // "How to play" - unclear recreational query
+  if (text.match(/^how\s+to\s+play$/i) || text.match(/^how\s+to\s+play\s*$/i) &&
+      !text.includes("indegene") && !text.includes("game") && !text.includes("sport")) {
+    return true;
+  }
+
+  // "How to find a life" - unclear personal query
+  if (text.match(/how\s+to\s+find\s+(a\s+)?life/i) &&
+      !text.includes("indegene") && !text.includes("career") && !text.includes("job")) {
+    return true;
+  }
+
+  // Mental health crisis queries (e.g., "how to commit suicide") - provide resources, don't answer
+  if ((text.includes("suicide") || text.includes("kill myself") || text.includes("end my life") ||
+       text.includes("how to die") || text.match(/how\s+to\s+(commit\s+)?suicide/i) ||
+       text.match(/how\s+to\s+kill\s+(myself|yourself)/i)) &&
+      !text.includes("indegene") && !text.includes("prevention") && !text.includes("help")) {
+    return true; // Flag as out-of-domain, but we should provide resources in the response
+  }
+
+  // "How do i view a document" - might be about system feature, but if unclear, decline
+  if (text.match(/how\s+(do|can)\s+i\s+view\s+(a\s+)?document/i) &&
+      !text.includes("indegene") && !text.includes("knowledge") && !text.includes("case study")) {
+    // This could be about the document viewing feature - let it pass through
+    return false;
   }
 
   // API/endpoint/system architecture questions (technical queries about the chatbot itself)
@@ -1751,11 +1828,16 @@ const isOutOfDomainQuery = (query: string): boolean => {
     "computer", "phone", "television", "radio", "music", "art", "painting", "drawing",
     "sport", "game", "movie", "film", "actor", "singer", "dancer", "writer", "author",
     "country", "city", "town", "village", "street", "road", "building", "school",
-    "university", "college", "student", "teacher", "doctor" // Note: "doctor" might be medical, but "what is doctor" is too generic
+    "university", "college", "student", "teacher", "doctor", // Note: "doctor" might be medical, but "what is doctor" is too generic
+    "profanity" // Profanity is not related to Indegene/healthcare
   ];
   
   // Check for generic "what is X" or "what are X" queries with unrelated words
+  // Also handle typos: "waht is", "wjhtis", "wt is", "what isa"
   if ((text.match(/^what is (the )?(use of )?(\w+)/i) || 
+       text.match(/^waht is (the )?(use of )?(\w+)/i) || // Typo: "waht" for "what"
+       text.match(/^wjhtis (the )?(use of )?(\w+)/i) || // Typo: "wjhtis" for "what is"
+       text.match(/^wt is (the )?(use of )?(\w+)/i) || // Typo: "wt" for "what"
        text.match(/^what are (the )?(\w+)/i) ||
        text.match(/^tell me (about |what is )?(\w+)/i)) &&
       !text.includes("indegene") && 
@@ -1779,10 +1861,19 @@ const isOutOfDomainQuery = (query: string): boolean => {
       !text.includes("pandemic") &&
       !text.includes("disease") &&
       !text.includes("health") &&
-      !text.includes("medical")) {
+      !text.includes("medical") &&
+      !text.includes("cancer") &&
+      !text.includes("treatment") &&
+      !text.includes("therapy") &&
+      !text.includes("symptom") &&
+      !text.includes("diagnosis") &&
+      !text.includes("patient")) {
     
-    // Extract the main word from the query
+    // Extract the main word from the query (handle typos)
     const match = text.match(/^what is (the )?(use of )?(\w+)/i) || 
+                  text.match(/^waht is (the )?(use of )?(\w+)/i) ||
+                  text.match(/^wjhtis (the )?(use of )?(\w+)/i) ||
+                  text.match(/^wt is (the )?(use of )?(\w+)/i) ||
                   text.match(/^what are (the )?(\w+)/i) ||
                   text.match(/^tell me (about |what is )?(\w+)/i);
     
@@ -1790,11 +1881,11 @@ const isOutOfDomainQuery = (query: string): boolean => {
       const mainWord = (match[3] || match[2] || match[1] || "").toLowerCase().trim();
       
       // If it's a very generic word that's clearly not Indegene-related, flag it
-      // BUT: Exclude healthcare/medical terms (covid, coronavirus, disease, etc.)
-      const isHealthcareTerm = mainWord.match(/^(covid|coronavirus|pandemic|disease|health|medical|treatment|therapy|symptom|diagnosis|patient|medicine|drug|vaccine|infection|virus)/i);
+      // BUT: Exclude healthcare/medical terms (covid, coronavirus, disease, cancer, etc.)
+      const isHealthcareTerm = mainWord.match(/^(covid|coronavirus|pandemic|disease|health|medical|treatment|therapy|symptom|diagnosis|patient|medicine|drug|vaccine|infection|virus|cancer|diabetes|hypertension|asthma|arthritis|alzheimer|parkinson|epilepsy|stroke|heart|lung|kidney|liver|brain|mental|depression|anxiety|autism|adhd|ptsd|bipolar|schizophrenia|autism|dementia|migraine|fibromyalgia|osteoporosis|anemia|leukemia|lymphoma|melanoma|tumor|tumour)/i);
       if ((unrelatedCommonWords.includes(mainWord) || 
           mainWord.length < 4 || // Very short words are likely generic
-          (mainWord.length <= 6 && !mainWord.match(/^(indegene|skysecure|prma|heor|medical|clinical|pharma|biotech|regulatory|oncology|therapy|treatment|drug|medicine|covid|coronavirus|pandemic|disease|health|symptom|diagnosis|patient|vaccine|infection|virus)/i))) &&
+          (mainWord.length <= 6 && !mainWord.match(/^(indegene|skysecure|prma|heor|medical|clinical|pharma|biotech|regulatory|oncology|therapy|treatment|drug|medicine|covid|coronavirus|pandemic|disease|health|symptom|diagnosis|patient|vaccine|infection|virus|cancer|diabetes|hypertension|asthma|arthritis|alzheimer|parkinson|epilepsy|stroke|heart|lung|kidney|liver|brain|mental|depression|anxiety|autism|adhd|ptsd|bipolar|schizophrenia|autism|dementia|migraine|fibromyalgia|osteoporosis|anemia|leukemia|lymphoma|melanoma|tumor|tumour)/i))) &&
           !isHealthcareTerm) {
         // Additional check: if it's a single word query like "what is views", flag it
         const words = text.split(/\s+/).filter(w => w.length > 2);
@@ -1895,6 +1986,66 @@ const isOutOfDomainQuery = (query: string): boolean => {
     }
   }
 
+  // "What is [name] doing" / "wt is [name] doing" - personal queries
+  const whatIsDoingPattern = /^(what|wt)\s+is\s+([a-z\s]{2,30})\s+doing$/i;
+  if (whatIsDoingPattern.test(text)) {
+    const match = text.match(whatIsDoingPattern);
+    if (match) {
+      const name = match[2].toLowerCase().trim();
+      
+      // Known Indegene-related names
+      const indegeneNames = [
+        "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+        "manish", "rajesh", "sanjay", "anand", "gaurav"
+      ];
+      
+      // Check if it's a known Indegene person
+      const isIndegenePerson = indegeneNames.some(indegeneName => {
+        const fullName = indegeneName.toLowerCase();
+        return name === fullName || 
+               fullName.includes(name) || 
+               name.includes(fullName) ||
+               (name.length >= 3 && fullName.startsWith(name)) ||
+               (fullName.length >= 3 && name.startsWith(fullName));
+      });
+      
+      // If it's not a known Indegene person, flag as out-of-domain
+      if (!isIndegenePerson && name.length > 2 && name.length < 30 &&
+          !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+      }
+    }
+  }
+  
+  // "What ra [name]" - unclear personal queries
+  const whatRaPattern = /^what\s+ra\s+([a-z\s]{2,30})$/i;
+  if (whatRaPattern.test(text)) {
+    const match = text.match(whatRaPattern);
+    if (match) {
+      const name = match[1].toLowerCase().trim();
+      
+      // Known Indegene-related names
+      const indegeneNames = [
+        "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+        "manish", "rajesh", "sanjay", "anand", "gaurav"
+      ];
+      
+      // Check if it's a known Indegene person
+      const isIndegenePerson = indegeneNames.some(indegeneName => {
+        const fullName = indegeneName.toLowerCase();
+        return name === fullName || 
+               fullName.includes(name) || 
+               name.includes(fullName);
+      });
+      
+      // If it's not a known Indegene person, flag as out-of-domain
+      if (!isIndegenePerson && name.length > 2 && name.length < 30 &&
+          !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+      }
+    }
+  }
+
 
   // Gibberish/unclear queries - detect random character strings
   // Check if query contains mostly non-letter characters or random letter combinations
@@ -1929,12 +2080,27 @@ const isOutOfDomainQuery = (query: string): boolean => {
     return false; // Allow this - it's about World Health Organization (healthcare)
   }
 
-  // "Who is [name]" queries - check if name is related to Indegene
+  // "Who is [name]" / "Who is my [role]" queries - check if name is related to Indegene
   // Known Indegene-related names (CEO, founders, etc.) - these should NOT be flagged
   const indegeneNames = [
     "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
     "manish", "rajesh", "sanjay", "anand", "gaurav"
   ];
+  
+  // Pattern: "who is my [role]" - personal queries about user's own manager/PM/etc.
+  const whoIsMyPattern = /^who\s+(is|os)\s+my\s+([a-z\s]{2,30})$/i; // Handle typo "os" for "is"
+  if (whoIsMyPattern.test(text)) {
+    const match = text.match(whoIsMyPattern);
+    if (match) {
+      const role = match[2].toLowerCase().trim();
+      // Personal queries about user's own manager/PM should be declined
+      if (role.includes("project manager") || role.includes("pm") || 
+          role.includes("manager") || role.includes("supervisor") ||
+          role.includes("lead") || role.includes("boss")) {
+        return true; // Flag as out-of-domain
+      }
+    }
+  }
   
   // Pattern: "who is [name]" - simple pattern to catch person name queries
   // Match "who is" followed by a name (1-3 words, not too long)
@@ -2034,6 +2200,15 @@ const handleGeneralQueries = (query: string): string | null => {
     return "I understand this is a difficult situation, and I truly empathize with your concerns. While I can provide information about healthcare topics, medical conditions, and treatment options, I cannot provide direct financial assistance or personal medical advice.\n\nFor cancer treatment and financial support, I recommend:\n• Consulting with qualified healthcare professionals and oncologists for medical guidance\n• Exploring government health programs and insurance options in your region\n• Contacting cancer support organizations and non-profit foundations that provide financial assistance\n• Checking with hospitals and treatment centers about patient assistance programs\n\nIf you have questions about cancer, treatment options, or healthcare information, I'm happy to help with that. For specific medical advice or financial assistance, please consult with healthcare professionals or relevant support organizations.";
   }
 
+  // Handle feedback/complaints (e.g., "too much you are showing", "too long", "too much information")
+  if ((text.includes("too much") || text.includes("too long") || text.includes("too many") ||
+       text.includes("too much information") || text.includes("too detailed") ||
+       text.match(/too\s+(much|long|many|detailed)/i)) &&
+      (text.includes("showing") || text.includes("displaying") || text.includes("information") ||
+       text.includes("answer") || text.includes("response"))) {
+    return "I understand you'd like a more concise answer. I'll try to keep my responses shorter and more focused. Is there a specific aspect you'd like me to focus on?";
+  }
+
   // Handle unclear/gibberish queries
   if (text.length > 0 && text.length < 30) {
     const words = text.split(/\s+/).filter(w => w.length > 0);
@@ -2054,7 +2229,7 @@ const handleGeneralQueries = (query: string): string | null => {
     }
   }
 
-  // What can you do? / Your capabilities
+  // What can you do? / Your capabilities / KM queries
   if (
     text.includes("what can you do") ||
     text.includes("how can you help") ||
@@ -2066,7 +2241,11 @@ const handleGeneralQueries = (query: string): string | null => {
     text.includes("what can you help with") ||
     text.includes("what do you help with") ||
     text.match(/capabilities?\s+(of|about)\s+(you|yourself)/i) ||
-    text.match(/what\s+(are|is)\s+(your|you)\s+capabilities?/i)
+    text.match(/what\s+(are|is)\s+(your|you)\s+capabilities?/i) ||
+    // KM queries (Knowledge Management assistant)
+    text.match(/^(what|how|who|where|when)\s+(is|are|was|were)\s+(the\s+)?km$/i) ||
+    text.match(/^(wht|wat)\s+(is|are)\s+(the\s+)?km$/i) ||
+    (text.includes("km") && (text.includes("what") || text.includes("how")) && text.length < 20)
   ) {
     return (
       "I can help you with:\n" +
@@ -2529,15 +2708,19 @@ const getDynamicAnswerFromWebsite = async (
     const url = `${endpoint}/openai/deployments/${AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${AZURE_OPENAI_API_VERSION}`;
 
     // Check if this is a "latest news" query - be more flexible with detection
+    // Handle typos: "latest" -> ";atest", "latest" -> "latest", etc.
     const queryLowerForNews = query.toLowerCase();
+    // Normalize common typos in "latest"
+    const normalizedQuery = queryLowerForNews.replace(/[;:]/g, 'l').replace(/atest/g, 'latest');
     const isNewsQuery = queryLowerForNews.includes("latest news") || 
+                        normalizedQuery.includes("latest news") ||
                         queryLowerForNews.includes("recent news") || 
                         queryLowerForNews.includes("news from indegene") ||
                         queryLowerForNews.includes("indegene news") ||
                         queryLowerForNews.includes("press release") ||
                         queryLowerForNews.includes("announcements") ||
                         (queryLowerForNews.includes("news") && queryLowerForNews.includes("indegene")) ||
-                        (queryLowerForNews.includes("news") && queryLowerForNews.includes("latest")) ||
+                        (queryLowerForNews.includes("news") && (queryLowerForNews.includes("latest") || normalizedQuery.includes("latest"))) ||
                         (queryLowerForNews.includes("news") && queryLowerForNews.includes("recent")) ||
                         queryLowerForNews.includes("what's new") ||
                         queryLowerForNews.includes("what is new");
@@ -3110,6 +3293,18 @@ export const QuestionSection: React.FC<IQuestionSectionProps> = (props) => {
       // 2.5) Check for out-of-domain queries (weather, sports, etc.)
       // BUT: Skip this check if we have a RELEVANT context map answer (internal knowledge is always valid)
       if ((!hasContextAnswer || !isContextRelevant) && isOutOfDomainQuery(userMsg.text)) {
+        // Special handling for mental health crisis queries
+        const queryLower = userMsg.text.toLowerCase();
+        if (queryLower.includes("suicide") || queryLower.includes("kill myself") || 
+            queryLower.includes("end my life") || queryLower.includes("how to die") ||
+            queryLower.match(/how\s+to\s+(commit\s+)?suicide/i) ||
+            queryLower.match(/how\s+to\s+kill\s+(myself|yourself)/i)) {
+          const crisisMessage = "I'm deeply concerned about what you're going through. If you're having thoughts of self-harm or suicide, please reach out for help immediately:\n\n• **Crisis Text Line**: Text HOME to 741741 (US)\n• **National Suicide Prevention Lifeline**: 988 (US) or 1-800-273-8255\n• **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n• **Emergency Services**: 911 (US) or your local emergency number\n\nYou are not alone, and there are people who want to help. Please reach out to a mental health professional, a trusted friend or family member, or a crisis helpline.\n\nI can help you with questions about Indegene, life sciences, healthcare, and related topics, but for mental health support, please contact a qualified professional.";
+          setMessages((prev) => [...prev, { sender: "bot", text: crisisMessage }]);
+          setIsLoading(false);
+          return;
+        }
+        
         const outOfDomainMessage = "I'm sorry, but I can only help with questions related to Indegene, life sciences, healthcare, medical content, regulatory intelligence, and related business topics. I can also tell you the current time, date, or day.\n\nFor questions about Indegene, try asking:\n• \"What services does Indegene offer?\"\n• \"Tell me about Indegene's NEXT platforms\"\n• \"What is Indegene's partnership with Microsoft?\"\n";
         setMessages((prev) => [...prev, { sender: "bot", text: outOfDomainMessage }]);
         setIsLoading(false);

@@ -191,29 +191,29 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_c09eba7f{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_c09eba7f,.overlay_c09eba7f{align-items:center;display:flex;justify-content:center}.modal_c09eba7f{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_c09eba7f{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_c09eba7f{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_c09eba7f{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_c09eba7f{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_c09eba7f{color:#4834d4;display:block;height:64px;width:64px}.hintText_c09eba7f{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_c09eba7f{color:#666;font-size:13px}.browseBtn_c09eba7f{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-weight:600;padding:10px 18px}.footer_c09eba7f{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_c09eba7f{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;padding:8px 14px}.fileName_c09eba7f{color:#333;font-size:14px;margin-bottom:12px}.processingContainer_c09eba7f{align-items:center;background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;justify-content:center;max-width:96%;padding:48px 32px;text-align:center;width:600px}.processingSpinner_c09eba7f{animation:spin_c09eba7f 1s linear infinite;border:4px solid rgba(72,52,212,.1);border-radius:50%;border-top-color:#4834d4;height:48px;margin-bottom:24px;width:48px}@keyframes spin_c09eba7f{to{transform:rotate(1turn)}}.processingTitle_c09eba7f{color:#1b3752;font-size:20px;font-weight:700;margin:0 0 12px}.processingMessage_c09eba7f{color:#666;font-size:14px;line-height:1.5;margin:0}.errorMessage_c09eba7f{background:#fee;border:1px solid #fcc;border-radius:6px;color:#c33;font-size:13px;margin-top:20px;max-width:100%;padding:12px 16px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWxlVXBsb2FkL0ZpbGVVcGxvYWQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBR0UsMEJBQUEsQ0FLQSw0QkFBQSxDQU5BLE9BQUEsQ0FEQSxjQUFBLENBTUEsWUFDQSxDQUdGLGtDQU5FLGtCQUFBLENBREEsWUFBQSxDQUVBLHNCQWNBLENBVEYsZ0JBQ0UsY0FBQSxDQUVBLGtCQUFBLENBR0EsZUFBQSxDQURBLGFBQUEsQ0FIQSxTQUFBLENBRUEsVUFLQSxDQUdGLHFCQUNFLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBREEsYUFBQSxDQUhBLFlBQUEsQ0FFQSxXQUVBLENBR0YsZ0JBS0UsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSEEsZUFBQSxDQUtBLG1CQUFBLENBQ0EsZ0JBQUEsQ0FKQSxpQkFJQSxDQUdGLG1CQUtFLGtCQUFBLENBTUEsMEVBQUEsQ0FWQSxxQ0FBQSxDQUNBLGtCQUFBLENBVUEseUNBQUEsQ0FIQSxjQUFBLENBTEEsWUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUZBLHNCQUFBLENBSEEsWUFBQSxDQVVBLGlCQUFBLENBSEEsMkVBR0EsQ0FHRix3QkFFRSw4RUFBQSxDQURBLG9CQUFBLENBRUEseUNBQUEsQ0FHRixxQkFHRSxhQUFBLENBQ0EsYUFBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBR0YsdUJBRUUsVUFBQSxDQURBLGNBQ0EsQ0FHRixvQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FFQSxpQkFBQSxDQUhBLFVBQUEsQ0FJQSxjQUFBLENBQ0EsZUFBQSxDQUhBLGlCQUdBLENBR0YsaUJBQ0UsWUFBQSxDQUdBLFFBQUEsQ0FGQSx3QkFBQSxDQUNBLGVBQ0EsQ0FHRixtQkFDRSxjQUFBLENBQ0EscUJBQUEsQ0FHQSxpQkFBQSxDQUZBLFVBQUEsQ0FHQSxjQUFBLENBRkEsZ0JBRUEsQ0FHRixtQkFFRSxVQUFBLENBREEsY0FBQSxDQUVBLGtCQUFBLENBR0YsOEJBU0Usa0JBQUEsQ0FSQSxlQUFBLENBRUEsa0JBQUEsQ0FHQSxzQ0FBQSxDQUNBLFlBQUEsQ0FDQSxxQkFBQSxDQUVBLHNCQUFBLENBTEEsYUFBQSxDQUhBLGlCQUFBLENBU0EsaUJBQUEsQ0FQQSxXQU9BLENBR0YsNEJBTUUsMENBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBREEsd0JBQUEsQ0FGQSxXQUFBLENBS0Esa0JBQUEsQ0FOQSxVQU1BLENBR0YseUJBQ0UsR0FDRSx1QkFBQSxDQUFBLENBSUosMEJBR0UsYUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsZUFBQSxDQUdGLDRCQUVFLFVBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLFFBQ0EsQ0FHRix1QkFHRSxlQUFBLENBQ0EscUJBQUEsQ0FDQSxpQkFBQSxDQUNBLFVBQUEsQ0FDQSxjQUFBLENBTkEsZUFBQSxDQU9BLGNBQUEsQ0FOQSxpQkFNQSIsImZpbGUiOiJGaWxlVXBsb2FkLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".overlay_ba2477f0{background:rgba(0,0,0,.45);font-family:Inter,sans-serif;inset:0;position:fixed;z-index:9999}.modal_ba2477f0,.overlay_ba2477f0{align-items:center;display:flex;justify-content:center}.modal_ba2477f0{background:0 0;border-radius:12px;box-shadow:none;max-width:96%;padding:0;width:auto}.uploadCard_ba2477f0{background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:96%;padding:28px;width:760px}.title_ba2477f0{color:#1b3752;font-size:24px;font-weight:700;margin:0 0 12px;padding-bottom:10px;padding-top:10px;text-align:center}.dropZone_ba2477f0{align-items:center;background:linear-gradient(180deg,rgba(245,243,255,.8),hsla(0,0%,100%,.6));border:2px dashed rgba(72,52,212,.25);border-radius:10px;box-shadow:0 6px 18px rgba(72,52,212,.06);cursor:pointer;display:flex;flex-direction:column;gap:10px;justify-content:center;padding:36px;text-align:center;transition:border-color .18s ease,background .18s ease,box-shadow .18s ease}.dropZoneHover_ba2477f0{background:linear-gradient(180deg,rgba(232,226,255,.95),rgba(245,243,255,.98));border-color:#4834d4;box-shadow:0 8px 28px rgba(72,52,212,.12)}.uploadIcon_ba2477f0{color:#4834d4;display:block;height:64px;width:64px}.hintText_ba2477f0{color:#2f2f2f;font-size:16px;font-weight:600}.instructions_ba2477f0{color:#666;font-size:13px}.browseBtn_ba2477f0{background-color:#4834d4;border:none;border-radius:6px;color:#fff;cursor:pointer;font-size:14px;font-weight:600;margin-top:5px;padding:10px 24px}.footer_ba2477f0{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.closeBtn_ba2477f0{background:0 0;border:1px solid #ddd;border-radius:6px;color:#333;cursor:pointer;font-size:14px;font-weight:500;padding:8px 14px}.fileName_ba2477f0{color:#333;font-size:14px;margin-bottom:12px}.processingContainer_ba2477f0{align-items:center;background:#fff;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;justify-content:center;max-width:96%;padding:48px 32px;text-align:center;width:600px}.processingSpinner_ba2477f0{animation:spin_ba2477f0 1s linear infinite;border:4px solid rgba(72,52,212,.1);border-radius:50%;border-top-color:#4834d4;height:48px;margin-bottom:24px;width:48px}@keyframes spin_ba2477f0{to{transform:rotate(1turn)}}.processingTitle_ba2477f0{color:#1b3752;font-size:20px;font-weight:700;margin:0 0 12px}.processingMessage_ba2477f0{color:#666;font-size:14px;line-height:1.5;margin:0}.errorMessage_ba2477f0{background:#fee;border:1px solid #fcc;border-radius:6px;color:#c33;font-size:13px;margin-top:20px;max-width:100%;padding:12px 16px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9GaWxlVXBsb2FkL0ZpbGVVcGxvYWQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBR0UsMEJBQUEsQ0FLQSw0QkFBQSxDQU5BLE9BQUEsQ0FEQSxjQUFBLENBTUEsWUFDQSxDQUdGLGtDQU5FLGtCQUFBLENBREEsWUFBQSxDQUVBLHNCQWNBLENBVEYsZ0JBQ0UsY0FBQSxDQUVBLGtCQUFBLENBR0EsZUFBQSxDQURBLGFBQUEsQ0FIQSxTQUFBLENBRUEsVUFLQSxDQUdGLHFCQUNFLGVBQUEsQ0FFQSxrQkFBQSxDQUdBLHNDQUFBLENBREEsYUFBQSxDQUhBLFlBQUEsQ0FFQSxXQUVBLENBR0YsZ0JBS0UsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBSEEsZUFBQSxDQUtBLG1CQUFBLENBQ0EsZ0JBQUEsQ0FKQSxpQkFJQSxDQUdGLG1CQUtFLGtCQUFBLENBTUEsMEVBQUEsQ0FWQSxxQ0FBQSxDQUNBLGtCQUFBLENBVUEseUNBQUEsQ0FIQSxjQUFBLENBTEEsWUFBQSxDQUdBLHFCQUFBLENBQ0EsUUFBQSxDQUZBLHNCQUFBLENBSEEsWUFBQSxDQVVBLGlCQUFBLENBSEEsMkVBR0EsQ0FHRix3QkFFRSw4RUFBQSxDQURBLG9CQUFBLENBRUEseUNBQUEsQ0FHRixxQkFHRSxhQUFBLENBQ0EsYUFBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FFQSxlQUFBLENBR0YsdUJBRUUsVUFBQSxDQURBLGNBQ0EsQ0FHRixvQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FFQSxpQkFBQSxDQUhBLFVBQUEsQ0FJQSxjQUFBLENBRUEsY0FBQSxDQURBLGVBQUEsQ0FFQSxjQUFBLENBTEEsaUJBS0EsQ0FHRixpQkFDRSxZQUFBLENBR0EsUUFBQSxDQUZBLHdCQUFBLENBQ0EsZUFDQSxDQUdGLG1CQUNFLGNBQUEsQ0FDQSxxQkFBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FDQSxjQUFBLENBQ0EsZUFBQSxDQUpBLGdCQUlBLENBR0YsbUJBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxrQkFBQSxDQUdGLDhCQVNFLGtCQUFBLENBUkEsZUFBQSxDQUVBLGtCQUFBLENBR0Esc0NBQUEsQ0FDQSxZQUFBLENBQ0EscUJBQUEsQ0FFQSxzQkFBQSxDQUxBLGFBQUEsQ0FIQSxpQkFBQSxDQVNBLGlCQUFBLENBUEEsV0FPQSxDQUdGLDRCQU1FLDBDQUFBLENBRkEsbUNBQUEsQ0FDQSxpQkFBQSxDQURBLHdCQUFBLENBRkEsV0FBQSxDQUtBLGtCQUFBLENBTkEsVUFNQSxDQUdGLHlCQUNFLEdBQ0UsdUJBQUEsQ0FBQSxDQUlKLDBCQUdFLGFBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUVBLGVBQUEsQ0FHRiw0QkFFRSxVQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxRQUNBLENBR0YsdUJBR0UsZUFBQSxDQUNBLHFCQUFBLENBQ0EsaUJBQUEsQ0FDQSxVQUFBLENBQ0EsY0FBQSxDQU5BLGVBQUEsQ0FPQSxjQUFBLENBTkEsaUJBTUEiLCJmaWxlIjoiRmlsZVVwbG9hZC5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  overlay_c09eba7f: "overlay_c09eba7f",
-  modal_c09eba7f: "modal_c09eba7f",
-  uploadCard_c09eba7f: "uploadCard_c09eba7f",
-  title_c09eba7f: "title_c09eba7f",
-  dropZone_c09eba7f: "dropZone_c09eba7f",
-  dropZoneHover_c09eba7f: "dropZoneHover_c09eba7f",
-  uploadIcon_c09eba7f: "uploadIcon_c09eba7f",
-  hintText_c09eba7f: "hintText_c09eba7f",
-  instructions_c09eba7f: "instructions_c09eba7f",
-  browseBtn_c09eba7f: "browseBtn_c09eba7f",
-  footer_c09eba7f: "footer_c09eba7f",
-  closeBtn_c09eba7f: "closeBtn_c09eba7f",
-  fileName_c09eba7f: "fileName_c09eba7f",
-  processingContainer_c09eba7f: "processingContainer_c09eba7f",
-  processingSpinner_c09eba7f: "processingSpinner_c09eba7f",
-  spin_c09eba7f: "spin_c09eba7f",
-  processingTitle_c09eba7f: "processingTitle_c09eba7f",
-  processingMessage_c09eba7f: "processingMessage_c09eba7f",
-  errorMessage_c09eba7f: "errorMessage_c09eba7f"
+  overlay_ba2477f0: "overlay_ba2477f0",
+  modal_ba2477f0: "modal_ba2477f0",
+  uploadCard_ba2477f0: "uploadCard_ba2477f0",
+  title_ba2477f0: "title_ba2477f0",
+  dropZone_ba2477f0: "dropZone_ba2477f0",
+  dropZoneHover_ba2477f0: "dropZoneHover_ba2477f0",
+  uploadIcon_ba2477f0: "uploadIcon_ba2477f0",
+  hintText_ba2477f0: "hintText_ba2477f0",
+  instructions_ba2477f0: "instructions_ba2477f0",
+  browseBtn_ba2477f0: "browseBtn_ba2477f0",
+  footer_ba2477f0: "footer_ba2477f0",
+  closeBtn_ba2477f0: "closeBtn_ba2477f0",
+  fileName_ba2477f0: "fileName_ba2477f0",
+  processingContainer_ba2477f0: "processingContainer_ba2477f0",
+  processingSpinner_ba2477f0: "processingSpinner_ba2477f0",
+  spin_ba2477f0: "spin_ba2477f0",
+  processingTitle_ba2477f0: "processingTitle_ba2477f0",
+  processingMessage_ba2477f0: "processingMessage_ba2477f0",
+  errorMessage_ba2477f0: "errorMessage_ba2477f0"
 });
 
 
@@ -337,31 +337,31 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_eb48e8e0{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_eb48e8e0{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_eb48e8e0{color:#444;font-size:13px;margin-bottom:6px}.headerBar_eb48e8e0{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_eb48e8e0{background:0 0;padding:16px}.field_eb48e8e0{display:flex;flex-direction:column}.title_eb48e8e0{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_eb48e8e0{align-items:flex-start;display:flex;flex-direction:column}.subtitle_eb48e8e0{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_eb48e8e0{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_eb48e8e0{display:flex;flex-direction:column;grid-column:1/-1}.label_eb48e8e0{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_eb48e8e0{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.input_eb48e8e0:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textarea_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_eb48e8e0:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_eb48e8e0::-webkit-scrollbar{width:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_eb48e8e0{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_eb48e8e0{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_eb48e8e0{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:10px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:700;padding:12px 20px}.submitBtn_eb48e8e0:hover{transform:translateY(-2px)}@media (max-width:640px){.grid_eb48e8e0{grid-template-columns:1fr}}.formInner_eb48e8e0::-webkit-scrollbar{width:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_eb48e8e0::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_eb48e8e0::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_eb48e8e0{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NZXRhZGF0YUZvcm0vTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBSUYsb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixlQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsaUJBQUEsQ0FJRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUhBLGNBQUEsQ0FJQSxpQkFBQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSxZQUNBLENBR0YsZ0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBR0YsZ0JBSUUsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBREEsUUFFQSxDQUdGLG9CQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLHFCQUNBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsY0FDQSxDQUdGLG1CQU9FLGtCQUFBLENBTkEsZUFBQSxDQUNBLG1DQUFBLENBT0EsaUJBQUEsQ0FDQSx3Q0FBQSxDQVBBLGFBQUEsQ0FVQSxjQUFBLENBUEEsbUJBQUEsQ0FLQSxjQUFBLENBTkEsV0FBQSxDQUdBLHNCQUFBLENBSUEsYUFBQSxDQUVBLGlCQUFBLENBRUEsVUFBQSxDQURBLFFBQUEsQ0FYQSxVQUFBLENBYUEsVUFBQSxDQUtGLG9CQUVFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGdCQUVBLENBR0YsZ0JBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHRixnQkFLRSxlQUFBLENBRkEsbUNBQUEsQ0FDQSxpQkFBQSxDQUVBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGlCQUFBLENBT0EsMkRBQUEsQ0FFQSw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHNDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixzQkFDRSxnQ0FBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUNBLDBCQUFBLENBSUosbUJBS0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGdCQUFBLENBREEsWUFBQSxDQUdBLGVBSUEsQ0FFQSxnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHlDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRix5QkFDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUtKLDZCQU9FLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBRUEsaUNBQUEsQ0FQQSxjQUFBLENBTUEsZUFBQSxDQUVBLGVBQUEsQ0FUQSxnQkFBQSxDQURBLGdCQUFBLENBSUEsZUFBQSxDQUxBLFlBQUEsQ0FJQSxXQU9BLENBRUEsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixtREFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YsbUNBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FHRixnREFDRSxTQUFBLENBR0Ysc0RBQ0UsK0JBQUEsQ0FDQSxpQkFBQSxDQUdGLDREQUNFLCtCQUFBLENBR0Ysc0RBQ0UsNkJBQUEsQ0FJSixlQUlFLGlCQUFBLENBSEEsWUFBQSxDQUVBLGFBQUEsQ0FEQSw2QkFFQSxDQUtGLGtCQU1FLDJEQUFBLENBREEsUUFBQSxDQUpBLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGNBQUEsQ0FLQSxrQkFBQSxDQURBLGVBQUEsQ0FIQSxlQUFBLENBS0EsU0FBQSxDQUdGLG9CQUVFLGlEQUFBLENBR0EsV0FBQSxDQUNBLGtCQUFBLENBR0EseUNBQUEsQ0FOQSxVQUFBLENBSUEsY0FBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBUEEsaUJBUUEsQ0FFQSwwQkFDRSwwQkFBQSxDQUlKLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUtKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBSUYsb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_ce3c3795{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_ce3c3795{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_ce3c3795{color:#444;font-size:13px;margin-bottom:6px}.headerBar_ce3c3795{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_ce3c3795{background:0 0;padding:16px}.field_ce3c3795{display:flex;flex-direction:column}.title_ce3c3795{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_ce3c3795{align-items:flex-start;display:flex;flex-direction:column}.subtitle_ce3c3795{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_ce3c3795{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_ce3c3795{display:flex;flex-direction:column;grid-column:1/-1}.label_ce3c3795{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_ce3c3795{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ce3c3795::placeholder{color:#9ca3af;opacity:1}.input_ce3c3795:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_ce3c3795{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795::placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ce3c3795{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ce3c3795::-webkit-scrollbar{width:8px}.textareaScrollable_ce3c3795::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_ce3c3795::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_ce3c3795::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_ce3c3795{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_ce3c3795{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_ce3c3795{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_ce3c3795{grid-template-columns:1fr}}.formInner_ce3c3795::-webkit-scrollbar{width:8px}.formInner_ce3c3795::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_ce3c3795::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_ce3c3795::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_ce3c3795{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NZXRhZGF0YUZvcm0vTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBSUYsb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixlQUVFLFVBQUEsQ0FEQSxjQUFBLENBRUEsaUJBQUEsQ0FJRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUhBLGNBQUEsQ0FJQSxpQkFBQSxDQUdGLG1CQUVFLGNBQUEsQ0FEQSxZQUNBLENBR0YsZ0JBQ0UsWUFBQSxDQUNBLHFCQUFBLENBR0YsZ0JBSUUsYUFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBREEsUUFFQSxDQUdGLG9CQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLHFCQUNBLENBR0YsbUJBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsY0FDQSxDQUdGLG1CQU9FLGtCQUFBLENBTkEsZUFBQSxDQUNBLG1DQUFBLENBT0EsaUJBQUEsQ0FDQSx3Q0FBQSxDQVBBLGFBQUEsQ0FVQSxjQUFBLENBUEEsbUJBQUEsQ0FLQSxjQUFBLENBTkEsV0FBQSxDQUdBLHNCQUFBLENBSUEsYUFBQSxDQUVBLGlCQUFBLENBRUEsVUFBQSxDQURBLFFBQUEsQ0FYQSxVQUFBLENBYUEsVUFBQSxDQUtGLG9CQUVFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGdCQUVBLENBR0YsZ0JBRUUsYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHRixnQkFLRSxlQUFBLENBRkEsbUNBQUEsQ0FDQSxpQkFBQSxDQUVBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGlCQUFBLENBT0EsMkRBQUEsQ0FFQSw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHNDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixzQkFDRSxnQ0FBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUNBLDBCQUFBLENBSUosbUJBS0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FKQSxjQUFBLENBS0EsZUFBQSxDQU5BLGdCQUFBLENBREEsWUFBQSxDQUdBLGVBSUEsQ0FFQSxnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLHlDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRix5QkFDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUtKLDZCQU9FLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBRUEsaUNBQUEsQ0FQQSxjQUFBLENBTUEsZUFBQSxDQUVBLGVBQUEsQ0FUQSxnQkFBQSxDQURBLGdCQUFBLENBSUEsZUFBQSxDQUxBLFlBQUEsQ0FJQSxXQU9BLENBRUEsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixtREFDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YsbUNBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FHRixnREFDRSxTQUFBLENBR0Ysc0RBQ0UsK0JBQUEsQ0FDQSxpQkFBQSxDQUdGLDREQUNFLCtCQUFBLENBR0Ysc0RBQ0UsNkJBQUEsQ0FJSixlQUlFLGlCQUFBLENBSEEsWUFBQSxDQUVBLGFBQUEsQ0FEQSw2QkFFQSxDQUtGLGtCQU1FLDJEQUFBLENBREEsUUFBQSxDQUpBLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGNBQUEsQ0FLQSxrQkFBQSxDQURBLGVBQUEsQ0FIQSxlQUFBLENBS0EsU0FBQSxDQUdGLG9CQUVFLGlEQUFBLENBR0EsV0FBQSxDQUNBLGlCQUFBLENBR0EseUNBQUEsQ0FOQSxVQUFBLENBSUEsY0FBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBUEEsaUJBUUEsQ0FJRix5QkFDRSxlQUNFLHlCQUFBLENBQUEsQ0FLSix1Q0FDRSxTQUFBLENBRUYsNkNBR0UseUJBQUEsQ0FGQSwrQkFBQSxDQUNBLGlCQUNBLENBRUYsbURBQ0UsK0JBQUEsQ0FFRiw2Q0FDRSw2QkFBQSxDQUlGLG9CQUNFLHVEQUFBLENBQ0Esb0JBQUEiLCJmaWxlIjoiTWV0YWRhdGFGb3JtLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_eb48e8e0: "formWrapper_eb48e8e0",
-  formInner_eb48e8e0: "formInner_eb48e8e0",
-  note_eb48e8e0: "note_eb48e8e0",
-  headerBar_eb48e8e0: "headerBar_eb48e8e0",
-  cardMeta_eb48e8e0: "cardMeta_eb48e8e0",
-  field_eb48e8e0: "field_eb48e8e0",
-  title_eb48e8e0: "title_eb48e8e0",
-  titleWrap_eb48e8e0: "titleWrap_eb48e8e0",
-  subtitle_eb48e8e0: "subtitle_eb48e8e0",
-  closeBtn_eb48e8e0: "closeBtn_eb48e8e0",
-  fieldFull_eb48e8e0: "fieldFull_eb48e8e0",
-  label_eb48e8e0: "label_eb48e8e0",
-  input_eb48e8e0: "input_eb48e8e0",
+  formWrapper_ce3c3795: "formWrapper_ce3c3795",
+  formInner_ce3c3795: "formInner_ce3c3795",
+  note_ce3c3795: "note_ce3c3795",
+  headerBar_ce3c3795: "headerBar_ce3c3795",
+  cardMeta_ce3c3795: "cardMeta_ce3c3795",
+  field_ce3c3795: "field_ce3c3795",
+  title_ce3c3795: "title_ce3c3795",
+  titleWrap_ce3c3795: "titleWrap_ce3c3795",
+  subtitle_ce3c3795: "subtitle_ce3c3795",
+  closeBtn_ce3c3795: "closeBtn_ce3c3795",
+  fieldFull_ce3c3795: "fieldFull_ce3c3795",
+  label_ce3c3795: "label_ce3c3795",
+  input_ce3c3795: "input_ce3c3795",
   input: "input",
-  textarea_eb48e8e0: "textarea_eb48e8e0",
+  textarea_ce3c3795: "textarea_ce3c3795",
   textarea: "textarea",
-  textareaScrollable_eb48e8e0: "textareaScrollable_eb48e8e0",
+  textareaScrollable_ce3c3795: "textareaScrollable_ce3c3795",
   textareaScrollable: "textareaScrollable",
-  grid_eb48e8e0: "grid_eb48e8e0",
-  actions_eb48e8e0: "actions_eb48e8e0",
-  submitBtn_eb48e8e0: "submitBtn_eb48e8e0"
+  grid_ce3c3795: "grid_ce3c3795",
+  actions_ce3c3795: "actions_ce3c3795",
+  submitBtn_ce3c3795: "submitBtn_ce3c3795"
 });
 
 
@@ -391,6 +391,51 @@ _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_
 
 /***/ }),
 
+/***/ 5124:
+/*!******************************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.module.css ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/@microsoft/sp-css-loader/node_modules/@microsoft/load-themed-styles/lib-es6/index.js */ 6323);
+// Imports
+
+
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_39441897{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_39441897{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_39441897{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_39441897{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_39441897{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_39441897{align-items:flex-start;display:flex;flex-direction:column}.subtitle_39441897{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_39441897{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_39441897{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;margin-bottom:24px;max-width:100%;overflow:hidden;padding:24px}.fileFormTitle_39441897{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 20px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.fieldFull_39441897,.field_39441897{display:flex;flex-direction:column}.fieldFull_39441897{grid-column:1/-1}.label_39441897{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_39441897{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897::placeholder{color:#9ca3af;opacity:1}.input_39441897:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897::placeholder{color:#9ca3af;opacity:1}.textarea_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897::-webkit-scrollbar{width:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_39441897{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_39441897{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_39441897{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_39441897{grid-template-columns:1fr}}.formInner_39441897::-webkit-scrollbar{width:8px}.formInner_39441897::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_39441897{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9NdWx0aU1ldGFkYXRhRm9ybS9NdWx0aU1ldGFkYXRhRm9ybS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQkFDRSwrQ0FBQSxDQUVBLGtCQUFBLENBR0EseUNBQUEsQ0FHQSxZQUFBLENBQ0EscUJBQUEsQ0FMQSxnQkFBQSxDQUVBLDhCQUFBLENBQ0EsZUFBQSxDQU5BLDJCQUFBLENBU0EsaUJBQUEsQ0FQQSxxQkFPQSxDQUdGLG9CQUlFLGdDQUFBLENBSEEsYUFBQSxDQU1BLDhCQUFBLENBTEEsWUFBQSxDQUNBLGVBQUEsQ0FHQSxnQkFBQSxDQURBLGlCQUVBLENBR0Ysb0JBSUUsa0JBQUEsQ0FIQSxjQUFBLENBRUEsWUFBQSxDQUVBLFFBQUEsQ0FFQSxpQkFBQSxDQUxBLGNBQUEsQ0FJQSxpQkFDQSxDQUdGLG1CQUVFLGNBQUEsQ0FDQSxZQUFBLENBRUEsTUFBQSxDQURBLHFCQUFBLENBRUEsWUFBQSxDQUxBLFlBS0EsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBR0YsOEJBQ0UsZUFBQSxDQUNBLG1DQUFBLENBQ0Esa0JBQUEsQ0FHQSx3Q0FBQSxDQUdBLHFCQUFBLENBSkEsa0JBQUEsQ0FHQSxjQUFBLENBREEsZUFBQSxDQUhBLFlBS0EsQ0FHRix3QkFPRSxvQkFBQSxDQURBLDJDQUFBLENBSEEsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsZUFBQSxDQU9BLGNBQUEsQ0FEQSxlQUFBLENBRkEsd0JBQUEsQ0FIQSxtQkFBQSxDQUlBLHFCQUVBLENBUUYsb0NBSkUsWUFBQSxDQUNBLHFCQU1BLENBSEYsb0JBQ0UsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBSUosNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBR0YsMEJBUUUsMkRBQUEsQ0FIQSx1Q0FBQSxDQUVBLFFBQUEsQ0FOQSxZQUFBLENBQ0Esd0JBQUEsQ0FDQSxlQUFBLENBQ0EsZ0JBQUEsQ0FFQSxlQUFBLENBR0EsU0FBQSxDQUdGLG9CQUVFLGlEQUFBLENBR0EsV0FBQSxDQUNBLGlCQUFBLENBR0EseUNBQUEsQ0FOQSxVQUFBLENBSUEsY0FBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBUEEsaUJBUUEsQ0FJRix5QkFDRSxlQUNFLHlCQUFBLENBQUEsQ0FJSix1Q0FDRSxTQUFBLENBRUYsNkNBR0UseUJBQUEsQ0FGQSwrQkFBQSxDQUNBLGlCQUNBLENBRUYsbURBQ0UsK0JBQUEsQ0FFRiw2Q0FDRSw2QkFBQSxDQUdGLG9CQUNFLHVEQUFBLENBQ0Esb0JBQUEiLCJmaWxlIjoiTXVsdGlNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
+
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  formWrapper_39441897: "formWrapper_39441897",
+  formInner_39441897: "formInner_39441897",
+  headerBar_39441897: "headerBar_39441897",
+  cardMeta_39441897: "cardMeta_39441897",
+  title_39441897: "title_39441897",
+  titleWrap_39441897: "titleWrap_39441897",
+  subtitle_39441897: "subtitle_39441897",
+  closeBtn_39441897: "closeBtn_39441897",
+  singleFormContainer_39441897: "singleFormContainer_39441897",
+  fileFormTitle_39441897: "fileFormTitle_39441897",
+  field_39441897: "field_39441897",
+  fieldFull_39441897: "fieldFull_39441897",
+  label_39441897: "label_39441897",
+  input_39441897: "input_39441897",
+  input: "input",
+  textarea_39441897: "textarea_39441897",
+  textarea: "textarea",
+  textareaScrollable_39441897: "textareaScrollable_39441897",
+  textareaScrollable: "textareaScrollable",
+  grid_39441897: "grid_39441897",
+  submitContainer_39441897: "submitContainer_39441897",
+  submitBtn_39441897: "submitBtn_39441897"
+});
+
+
+/***/ }),
+
 /***/ 4538:
 /*!****************************************************************************!*\
   !*** ./lib/webparts/migration/components/Navigation/Navigation.module.css ***!
@@ -405,14 +450,14 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_72dd57cd{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_72dd57cd{align-items:center;display:flex;gap:0;margin:0 auto;max-width:1400px;padding:0 60px}.navItem_72dd57cd{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_72dd57cd.active_72dd57cd{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9OYXZpZ2F0aW9uL05hdmlnYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEscUJBRUUsd0JBQUEsQ0FFQSxtQ0FBQSxDQUNBLDRCQUFBLENBRkEsU0FBQSxDQUZBLFVBSUEsQ0FHRix1QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FLQSxLQUFBLENBRkEsYUFBQSxDQURBLGdCQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQVFBLGlCQUFBLENBUEEsb0JBQUEsQ0FLQSwrQkFFQSxDQUdBLGtDQUVFLCtCQUFBLENBREEsYUFDQSIsImZpbGUiOiJOYXZpZ2F0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_5165153b{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_5165153b{align-items:center;display:flex;gap:0;justify-content:center;margin:0 auto;max-width:92%;padding:0 60px}.navItem_5165153b{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_5165153b.active_5165153b{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9OYXZpZ2F0aW9uL05hdmlnYXRpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEscUJBRUUsd0JBQUEsQ0FFQSxtQ0FBQSxDQUNBLDRCQUFBLENBRkEsU0FBQSxDQUZBLFVBSUEsQ0FHRix1QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FNQSxLQUFBLENBSkEsc0JBQUEsQ0FFQSxhQUFBLENBREEsYUFBQSxDQUVBLGNBQ0EsQ0FHRixrQkFRRSxtQ0FBQSxDQUxBLGFBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSxpQkFBQSxDQVBBLG9CQUFBLENBS0EsK0JBRUEsQ0FHQSxrQ0FFRSwrQkFBQSxDQURBLGFBQ0EiLCJmaWxlIjoiTmF2aWdhdGlvbi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  navigation_72dd57cd: "navigation_72dd57cd",
-  navContainer_72dd57cd: "navContainer_72dd57cd",
-  navItem_72dd57cd: "navItem_72dd57cd",
-  active_72dd57cd: "active_72dd57cd"
+  navigation_5165153b: "navigation_5165153b",
+  navContainer_5165153b: "navContainer_5165153b",
+  navItem_5165153b: "navItem_5165153b",
+  active_5165153b: "active_5165153b"
 });
 
 
@@ -432,50 +477,50 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_b54e81a5{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_b54e81a5{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_b54e81a5{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_b54e81a5::-webkit-scrollbar{height:8px}.tilesContainer_b54e81a5::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_b54e81a5::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_b54e81a5::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_b54e81a5{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.promptText_b54e81a5{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_b54e81a5{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_b54e81a5{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_b54e81a5:-ms-input-placeholder{color:#999}.questionInput_b54e81a5::placeholder{color:#999}.questionInput_b54e81a5:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_b54e81a5{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_b54e81a5:hover{transform:scale(1.08)}.chatWindow_b54e81a5{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_b54e81a5{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_b54e81a5{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_b54e81a5{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_b54e81a5{justify-content:flex-end}.messageContainerBot_b54e81a5{justify-content:flex-start}.messageAvatar_b54e81a5{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_b54e81a5{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_b54e81a5,.userMsg_b54e81a5{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_b54e81a5{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_b54e81a5.thinking_b54e81a5{animation:pulse_b54e81a5 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_b54e81a5{0%,to{opacity:.7}50%{opacity:1}}.inputRow_b54e81a5{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_b54e81a5{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_b54e81a5:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_b54e81a5{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_b54e81a5:hover{background:#00509e}.sendButton_b54e81a5:active{transform:scale(.96)}.closeButton_b54e81a5{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_b54e81a5{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_b54e81a5{font-size:20px;line-height:1}.fileType_b54e81a5{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_b54e81a5{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_b54e81a5,.tileTitle_b54e81a5{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_b54e81a5{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_b54e81a5{align-items:center;display:flex;gap:12px;margin-top:auto}.viewButton_b54e81a5{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_b54e81a5 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_b54e81a5:hover:not(:disabled){background-color:#1565c0}.viewButton_b54e81a5:active:not(:disabled){background-color:#0d47a1}.viewButton_b54e81a5:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_b54e81a5{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_b54e81a5 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_b54e81a5:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_b54e81a5:active:not(:disabled){background-color:#e0e0e0}.downloadButton_b54e81a5:disabled{cursor:not-allowed;opacity:.4}.loading_b54e81a5,.noDocuments_b54e81a5{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_b54e81a5{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_b54e81a5:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_b54e81a5:active{transform:translateY(0)}.viewAllText_b54e81a5{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_b54e81a5,.viewAllModal_b54e81a5{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}.detailModal_b54e81a5{height:100vh;width:100vw}.chatLauncher_b54e81a5{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_b54e81a5{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_b54e81a5:hover{transform:scale(1.1)}.botLink_b54e81a5{cursor:pointer;display:inline-block;margin-top:6px;text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHVCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBTUEsa0JBQUEsQ0FGQSxnQkFBQSxDQUZBLGVBSUEsQ0FHRix5QkFRRSxnQ0FBQSxDQVBBLFlBQUEsQ0FDQSxRQUFBLENBRUEsYUFBQSxDQURBLGdCQUFBLENBRUEsZUFBQSxDQUNBLGlCQUFBLENBR0EsbUJBQUEsQ0FGQSxzQkFBQSxDQXlCQSxxREFBQSxDQURBLG9CQUNBLENBcEJBLDRDQUNFLFVBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBR0Ysa0RBQ0UsNkJBQUEsQ0FDQSxpQkFBQSxDQUVBLHdEQUNFLDZCQUFBLENBU04sZUFDRSxxQkFBQSxDQVdBLHdCQUFBLENBVkEsaUJBQUEsQ0FFQSxtQ0FBQSxDQU9BLHFCQUFBLENBRkEsWUFBQSxDQUpBLDZCQUFBLENBS0EscUJBQUEsQ0FGQSxZQUFBLENBREEsOEJBQUEsQ0FEQSw4QkFBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxDQUNBLHFCQUFBLENBRkEsWUFBQSxDQUdBLGVBQUEsQ0FQQSxjQUFBLENBRUEsVUFBQSxDQVVBLDhCQUFBLENBVEEsV0FBQSxDQVFBLFlBQ0EsQ0FHRixxQkFFRSxrQkFBQSxDQU1BLGtCQUFBLENBQ0EsbUNBQUEsQ0FGQSxVQUFBLENBTkEsWUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsNkJBQUEsQ0FDQSxpQkFLQSxDQUdGLG1CQU9FLGtCQUFBLENBSEEsWUFBQSxDQUhBLE1BQUEsQ0FJQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxlQUFBLENBREEsWUFLQSxDQUdGLDJCQUVFLHNCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLDhCQUNFLDBCQUFBLENBR0Ysd0JBR0UsaUJBQUEsQ0FHQSxtQ0FBQSxDQURBLGFBQUEsQ0FIQSxXQUFBLENBRUEsZ0JBQUEsQ0FIQSxVQUtBLENBR0Ysa0JBSUUsa0JBQUEsQ0FJQSxtQ0FBQSxDQUhBLFVBSUEsQ0FHRixtQ0FIRSxvQkFBQSxDQU5BLGtCQUFBLENBR0EsZ0JBQUEsQ0FDQSxlQUFBLENBTkEsYUFBQSxDQUNBLGlCQW9CQSxDQVZGLGlCQUlFLGVBQUEsQ0FLQSx3QkFBQSxDQUNBLG9DQUFBLENBTEEsVUFLQSxDQUdGLG1DQUlFLHNDQUFBLENBSEEsa0JBQUEsQ0FFQSw2QkFBQSxDQURBLFVBRUEsQ0FHRiwwQkFDRSxNQUFXLFVBQUEsQ0FDWCxJQUFNLFNBQUEsQ0FBQSxDQUdSLG1CQUVFLGtCQUFBLENBR0EsZUFBQSxDQUNBLHlCQUFBLENBTEEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxZQUVBLENBR0Ysb0JBR0Usd0JBQUEsQ0FDQSxrQkFBQSxDQUhBLE1BQUEsQ0FLQSxjQUFBLENBREEsU0FBQSxDQUhBLGlCQUFBLENBS0EsMENBQUEsQ0FHRiwwQkFDRSxvQkFBQSxDQUNBLHdDQUFBLENBR0YscUJBT0Usa0JBQUEsQ0FKQSxXQUFBLENBREEsa0JBQUEsQ0FNQSxVQUFBLENBRkEsY0FBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSx1Q0FBQSxDQUdGLDJCQUFvQixrQkFBQSxDQUNwQiw0QkFBcUIsb0JBQUEsQ0FFckIsc0JBQ0UsY0FBQSxDQUNBLFdBQUEsQ0FJQSxVQUFBLENBQ0EsY0FBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsVUFBQSxDQUxBLFNBQUEsQ0FNQSxzQkFBQSxDQUVGLHFCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FDQSxrQkFBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsbUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRixvQkFHRSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUtBLGtCQUFBLENBR0YsMkNBUEUsNEJBQUEsQ0FFQSxlQUFBLENBQ0Esc0JBa0JBLENBZEYsdUJBUUUsb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FSQSxVQUFBLENBS0EsbUJBQUEsQ0FOQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQUZBLHFCQUVBLENBR0Ysc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQVVFLGtCQUFBLENBS0EsMEJBQUEsQ0FkQSxtQ0FBQSxDQUNBLG9DQUFBLENBQ0EsaUJBQUEsQ0FTQSxxQkFBQSxDQUNBLGNBQUEsQ0FKQSxZQUFBLENBSkEsNkJBQUEsQ0FHQSxZQUFBLENBR0Esc0JBQUEsQ0FKQSw4QkFBQSxDQURBLDhCQUFBLENBRkEsWUFBQSxDQVVBLHVCQUNBLENBRUEsNEJBQ0UsbUNBQUEsQ0FDQSwrQkFBQSxDQUdGLDZCQUNFLHVCQUFBLENBSUosc0JBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxpQkFBQSxDQWNGLDZDQUpFLHdCQUFBLENBRkEsUUFBQSxDQUZBLE1BQUEsQ0FLQSxlQUFBLENBUEEsY0FBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBSUEsYUFlQSxDQVZGLHNCQVVFLFlBQUEsQ0FEQSxXQUNBLENBR0YsdUJBRUUsV0FBQSxDQUdBLGNBQUEsQ0FKQSxjQUFBLENBRUEsVUFBQSxDQUNBLFlBQ0EsQ0FHRixzQkFHRSxpQkFBQSxDQURBLFdBQUEsQ0FFQSxvQ0FBQSxDQUhBLFVBR0EsQ0FHRiw0QkFDRSxvQkFBQSxDQUVGLGtCQUlFLGNBQUEsQ0FIQSxvQkFBQSxDQUNBLGNBQUEsQ0FDQSx5QkFDQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_f7ecfc39{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_f7ecfc39{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_f7ecfc39{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_f7ecfc39::-webkit-scrollbar{height:8px}.tilesContainer_f7ecfc39::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_f7ecfc39::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_f7ecfc39::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_f7ecfc39{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.promptText_f7ecfc39{color:#fff;font-size:20px;font-weight:500;margin:0;white-space:nowrap}.rightInput_f7ecfc39{align-items:center;display:flex;flex:1;gap:12px;max-width:600px}.questionInput_f7ecfc39{background-color:#fff;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;color:#333;flex:1;font-family:Inter,sans-serif;font-size:16px;font-weight:400;outline:0;padding:16px 20px}.questionInput:-ms-input-placeholder{color:#999}.questionInput_f7ecfc39:-ms-input-placeholder{color:#999}.questionInput_f7ecfc39::placeholder{color:#999}.questionInput_f7ecfc39:focus{box-shadow:0 2px 12px rgba(0,0,0,.15)}.chatbotIcon_f7ecfc39{cursor:pointer;height:36px;transition:transform .2s ease;width:36px}.chatbotIcon_f7ecfc39:hover{transform:scale(1.08)}.chatWindow_f7ecfc39{background:#fff;border-radius:16px;bottom:30px;box-shadow:0 15px 50px rgba(0,0,0,.25);display:flex;flex-direction:column;height:540px;overflow:hidden;position:fixed;right:30px;transition:all .3s ease-in-out;width:380px;z-index:9999}.chatHeader_f7ecfc39{align-items:center;background:#00509e;box-shadow:0 2px 4px rgba(0,0,0,.1);color:#fff;display:flex;font-size:16px;font-weight:600;justify-content:space-between;padding:15px 20px}.messages_f7ecfc39{background:#f9fbfd;display:flex;flex:1;flex-direction:column;gap:12px;overflow-y:auto;padding:18px}.messageContainer_f7ecfc39{align-items:flex-start;display:flex;gap:10px}.messageContainerUser_f7ecfc39{justify-content:flex-end}.messageContainerBot_f7ecfc39{justify-content:flex-start}.messageAvatar_f7ecfc39{border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);flex-shrink:0;height:32px;object-fit:cover;width:32px}.userMsg_f7ecfc39{background:#1f72c9;box-shadow:0 1px 2px rgba(0,0,0,.1);color:#fff}.botMsg_f7ecfc39,.userMsg_f7ecfc39{word-wrap:break-word;border-radius:18px;font-size:14.5px;line-height:1.5;max-width:85%;padding:10px 14px}.botMsg_f7ecfc39{background:#fff;border:1px solid #e6f0f9;box-shadow:0 1px 4px rgba(0,0,0,.05);color:#333}.botMsg_f7ecfc39.thinking_f7ecfc39{animation:pulse_f7ecfc39 1.5s infinite;background:#e6f0f9;border-left:3px solid #1f72c9;color:#555}@keyframes pulse_f7ecfc39{0%,to{opacity:.7}50%{opacity:1}}.inputRow_f7ecfc39{align-items:center;background:#fff;border-top:1px solid #eee;display:flex;gap:10px;padding:12px}.chatInput_f7ecfc39{border:1px solid #d0d0d0;border-radius:25px;flex:1;font-size:15px;outline:0;padding:10px 15px;transition:border-color .2s,box-shadow .2s}.chatInput_f7ecfc39:focus{border-color:#1f72c9;box-shadow:0 0 0 2px rgba(31,114,201,.2)}.sendButton_f7ecfc39{background:#1f72c9;border:none;border-radius:25px;color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 18px;transition:background .2s,transform .1s}.sendButton_f7ecfc39:hover{background:#00509e}.sendButton_f7ecfc39:active{transform:scale(.96)}.closeButton_f7ecfc39{background:0 0;border:none;color:#fff;cursor:pointer;font-size:24px;font-weight:300;opacity:.8;padding:0;transition:opacity .2s}.tileHeader_f7ecfc39{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_f7ecfc39{font-size:20px;line-height:1}.fileType_f7ecfc39{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_f7ecfc39{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_f7ecfc39,.tileTitle_f7ecfc39{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_f7ecfc39{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_f7ecfc39{align-items:center;display:flex;gap:12px;justify-content:center;margin-top:auto}.viewButton_f7ecfc39{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_f7ecfc39 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_f7ecfc39:hover:not(:disabled){background-color:#1565c0}.viewButton_f7ecfc39:active:not(:disabled){background-color:#0d47a1}.viewButton_f7ecfc39:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_f7ecfc39{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_f7ecfc39 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_f7ecfc39:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_f7ecfc39:active:not(:disabled){background-color:#e0e0e0}.downloadButton_f7ecfc39:disabled{cursor:not-allowed;opacity:.4}.loading_f7ecfc39,.noDocuments_f7ecfc39{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_f7ecfc39{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_f7ecfc39:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_f7ecfc39:active{transform:translateY(0)}.viewAllText_f7ecfc39{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_f7ecfc39,.viewAllModal_f7ecfc39{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}.detailModal_f7ecfc39{height:100vh;width:100vw}.chatLauncher_f7ecfc39{bottom:30px;cursor:pointer;position:fixed;right:30px;z-index:9999}.chatbotIcon_f7ecfc39{border-radius:50%;height:60px;transition:transform .2s ease-in-out;width:60px}.chatbotIcon_f7ecfc39:hover{transform:scale(1.1)}.botLink_f7ecfc39{cursor:pointer;display:inline-block;margin-top:6px;text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vY29tcG9uZW50cy9RdWVzdGlvblNlY3Rpb24vUXVlc3Rpb25TZWN0aW9uLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBCQU9FLDJFQUFBLENBRkEscUJBQUEsQ0FDQSw0QkFBQSxDQUZBLGlCQUFBLENBSEEsVUFNQSxDQUdGLHVCQUNFLFVBQUEsQ0FHQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBTUEsa0JBQUEsQ0FGQSxnQkFBQSxDQUZBLGVBSUEsQ0FHRix5QkFRRSxnQ0FBQSxDQVBBLFlBQUEsQ0FDQSxRQUFBLENBRUEsYUFBQSxDQURBLGdCQUFBLENBRUEsZUFBQSxDQUNBLGlCQUFBLENBR0EsbUJBQUEsQ0FGQSxzQkFBQSxDQXlCQSxxREFBQSxDQURBLG9CQUNBLENBcEJBLDRDQUNFLFVBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBR0Ysa0RBQ0UsNkJBQUEsQ0FDQSxpQkFBQSxDQUVBLHdEQUNFLDZCQUFBLENBU04sZUFDRSxxQkFBQSxDQVdBLHdCQUFBLENBVkEsaUJBQUEsQ0FFQSxtQ0FBQSxDQU9BLHFCQUFBLENBRkEsWUFBQSxDQUpBLDZCQUFBLENBS0EscUJBQUEsQ0FGQSxZQUFBLENBREEsOEJBQUEsQ0FEQSw4QkFBQSxDQU9BLGVBQUEsQ0FWQSxZQVVBLENBR0YscUJBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBS0YscUJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUlBLFFBQUEsQ0FIQSxlQUdBLENBR0Ysd0JBUUUscUJBQUEsQ0FMQSxXQUFBLENBQ0EsaUJBQUEsQ0FRQSxtQ0FBQSxDQUZBLHFCQUFBLENBREEsVUFBQSxDQVJBLE1BQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBS0EsU0FBQSxDQVRBLGlCQVVBLENBR0YscUNBQ0UsVUFBQSxDQURGLDhDQUNFLFVBQUEsQ0FERixxQ0FDRSxVQUFBLENBR0YsOEJBQ0UscUNBQUEsQ0FHRixzQkFHRSxjQUFBLENBREEsV0FBQSxDQUdBLDZCQUFBLENBSkEsVUFJQSxDQUdGLDRCQUNFLHFCQUFBLENBT0YscUJBVUUsZUFBQSxDQURBLGtCQUFBLENBUEEsV0FBQSxDQVNBLHNDQUFBLENBTEEsWUFBQSxDQUNBLHFCQUFBLENBRkEsWUFBQSxDQUdBLGVBQUEsQ0FQQSxjQUFBLENBRUEsVUFBQSxDQVVBLDhCQUFBLENBVEEsV0FBQSxDQVFBLFlBQ0EsQ0FHRixxQkFFRSxrQkFBQSxDQU1BLGtCQUFBLENBQ0EsbUNBQUEsQ0FGQSxVQUFBLENBTkEsWUFBQSxDQUlBLGNBQUEsQ0FDQSxlQUFBLENBSEEsNkJBQUEsQ0FDQSxpQkFLQSxDQUdGLG1CQU9FLGtCQUFBLENBSEEsWUFBQSxDQUhBLE1BQUEsQ0FJQSxxQkFBQSxDQUNBLFFBQUEsQ0FIQSxlQUFBLENBREEsWUFLQSxDQUdGLDJCQUVFLHNCQUFBLENBREEsWUFBQSxDQUVBLFFBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLDhCQUNFLDBCQUFBLENBR0Ysd0JBR0UsaUJBQUEsQ0FHQSxtQ0FBQSxDQURBLGFBQUEsQ0FIQSxXQUFBLENBRUEsZ0JBQUEsQ0FIQSxVQUtBLENBR0Ysa0JBSUUsa0JBQUEsQ0FJQSxtQ0FBQSxDQUhBLFVBSUEsQ0FHRixtQ0FIRSxvQkFBQSxDQU5BLGtCQUFBLENBR0EsZ0JBQUEsQ0FDQSxlQUFBLENBTkEsYUFBQSxDQUNBLGlCQW9CQSxDQVZGLGlCQUlFLGVBQUEsQ0FLQSx3QkFBQSxDQUNBLG9DQUFBLENBTEEsVUFLQSxDQUdGLG1DQUlFLHNDQUFBLENBSEEsa0JBQUEsQ0FFQSw2QkFBQSxDQURBLFVBRUEsQ0FHRiwwQkFDRSxNQUFXLFVBQUEsQ0FDWCxJQUFNLFNBQUEsQ0FBQSxDQUdSLG1CQUVFLGtCQUFBLENBR0EsZUFBQSxDQUNBLHlCQUFBLENBTEEsWUFBQSxDQUVBLFFBQUEsQ0FDQSxZQUVBLENBR0Ysb0JBR0Usd0JBQUEsQ0FDQSxrQkFBQSxDQUhBLE1BQUEsQ0FLQSxjQUFBLENBREEsU0FBQSxDQUhBLGlCQUFBLENBS0EsMENBQUEsQ0FHRiwwQkFDRSxvQkFBQSxDQUNBLHdDQUFBLENBR0YscUJBT0Usa0JBQUEsQ0FKQSxXQUFBLENBREEsa0JBQUEsQ0FNQSxVQUFBLENBRkEsY0FBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSkEsaUJBQUEsQ0FRQSx1Q0FBQSxDQUdGLDJCQUFvQixrQkFBQSxDQUNwQiw0QkFBcUIsb0JBQUEsQ0FFckIsc0JBQ0UsY0FBQSxDQUNBLFdBQUEsQ0FJQSxVQUFBLENBQ0EsY0FBQSxDQUhBLGNBQUEsQ0FDQSxlQUFBLENBR0EsVUFBQSxDQUxBLFNBQUEsQ0FNQSxzQkFBQSxDQUVGLHFCQUVFLGtCQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FDQSxrQkFBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsbUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUVBLGVBQ0EsQ0FHRixvQkFHRSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUtBLGtCQUFBLENBR0YsMkNBUEUsNEJBQUEsQ0FFQSxlQUFBLENBQ0Esc0JBa0JBLENBZEYsdUJBUUUsb0JBQUEsQ0FDQSwyQkFBQSxDQUNBLFlBQUEsQ0FSQSxVQUFBLENBS0EsbUJBQUEsQ0FOQSxjQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FVQSxjQUFBLENBQ0EsY0FBQSxDQUZBLHFCQUVBLENBR0Ysc0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBR0EsUUFBQSxDQURBLHNCQUFBLENBRUEsZUFBQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsd0JBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBT0EsY0FBQSxDQVhBLFlBQUEsQ0FVQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUEEsT0FBQSxDQUtBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSx5QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDBDQUNFLHdCQUFBLENBR0YsMkNBQ0Usd0JBQUEsQ0FHRiw4QkFDRSxxQkFBQSxDQUNBLGtCQUFBLENBQ0EsVUFBQSxDQUlKLHlCQUVFLGtCQUFBLENBRUEsNEJBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBSUEsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUtBLFlBQUEsQ0FFQSx5Q0FBQSxDQUVBLDZCQUdFLG1CQUFBLENBQ0EsU0FBQSxDQUZBLFdBQUEsQ0FEQSxVQUdBLENBR0YsOENBQ0Usd0JBQUEsQ0FDQSxVQUFBLENBR0YsK0NBQ0Usd0JBQUEsQ0FHRixrQ0FDRSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix3Q0FFRSxVQUFBLENBR0EsNEJBQUEsQ0FEQSxjQUFBLENBRUEsWUFBQSxDQUhBLGlCQUdBLENBR0Ysc0JBVUUsa0JBQUEsQ0FLQSwwQkFBQSxDQWRBLG1DQUFBLENBQ0Esb0NBQUEsQ0FDQSxpQkFBQSxDQVNBLHFCQUFBLENBQ0EsY0FBQSxDQUpBLFlBQUEsQ0FKQSw2QkFBQSxDQUdBLFlBQUEsQ0FHQSxzQkFBQSxDQUpBLDhCQUFBLENBREEsOEJBQUEsQ0FGQSxZQUFBLENBVUEsdUJBQ0EsQ0FFQSw0QkFDRSxtQ0FBQSxDQUNBLCtCQUFBLENBR0YsNkJBQ0UsdUJBQUEsQ0FJSixzQkFDRSxVQUFBLENBR0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUVBLGlCQUFBLENBY0YsNkNBSkUsd0JBQUEsQ0FGQSxRQUFBLENBRkEsTUFBQSxDQUtBLGVBQUEsQ0FQQSxjQUFBLENBR0EsT0FBQSxDQUZBLEtBQUEsQ0FJQSxhQWVBLENBVkYsc0JBVUUsWUFBQSxDQURBLFdBQ0EsQ0FHRix1QkFFRSxXQUFBLENBR0EsY0FBQSxDQUpBLGNBQUEsQ0FFQSxVQUFBLENBQ0EsWUFDQSxDQUdGLHNCQUdFLGlCQUFBLENBREEsV0FBQSxDQUVBLG9DQUFBLENBSEEsVUFHQSxDQUdGLDRCQUNFLG9CQUFBLENBRUYsa0JBSUUsY0FBQSxDQUhBLG9CQUFBLENBQ0EsY0FBQSxDQUNBLHlCQUNBIiwiZmlsZSI6IlF1ZXN0aW9uU2VjdGlvbi5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_b54e81a5: "questionSection_b54e81a5",
-  sectionTitle_b54e81a5: "sectionTitle_b54e81a5",
-  tilesContainer_b54e81a5: "tilesContainer_b54e81a5",
-  tile_b54e81a5: "tile_b54e81a5",
-  promptText_b54e81a5: "promptText_b54e81a5",
-  rightInput_b54e81a5: "rightInput_b54e81a5",
-  questionInput_b54e81a5: "questionInput_b54e81a5",
+  questionSection_f7ecfc39: "questionSection_f7ecfc39",
+  sectionTitle_f7ecfc39: "sectionTitle_f7ecfc39",
+  tilesContainer_f7ecfc39: "tilesContainer_f7ecfc39",
+  tile_f7ecfc39: "tile_f7ecfc39",
+  promptText_f7ecfc39: "promptText_f7ecfc39",
+  rightInput_f7ecfc39: "rightInput_f7ecfc39",
+  questionInput_f7ecfc39: "questionInput_f7ecfc39",
   questionInput: "questionInput",
-  chatbotIcon_b54e81a5: "chatbotIcon_b54e81a5",
-  chatWindow_b54e81a5: "chatWindow_b54e81a5",
-  chatHeader_b54e81a5: "chatHeader_b54e81a5",
-  messages_b54e81a5: "messages_b54e81a5",
-  messageContainer_b54e81a5: "messageContainer_b54e81a5",
-  messageContainerUser_b54e81a5: "messageContainerUser_b54e81a5",
-  messageContainerBot_b54e81a5: "messageContainerBot_b54e81a5",
-  messageAvatar_b54e81a5: "messageAvatar_b54e81a5",
-  userMsg_b54e81a5: "userMsg_b54e81a5",
-  botMsg_b54e81a5: "botMsg_b54e81a5",
-  thinking_b54e81a5: "thinking_b54e81a5",
-  pulse_b54e81a5: "pulse_b54e81a5",
-  inputRow_b54e81a5: "inputRow_b54e81a5",
-  chatInput_b54e81a5: "chatInput_b54e81a5",
-  sendButton_b54e81a5: "sendButton_b54e81a5",
-  closeButton_b54e81a5: "closeButton_b54e81a5",
-  tileHeader_b54e81a5: "tileHeader_b54e81a5",
-  fileTypeIcon_b54e81a5: "fileTypeIcon_b54e81a5",
-  fileType_b54e81a5: "fileType_b54e81a5",
-  tileTitle_b54e81a5: "tileTitle_b54e81a5",
-  tileAbstract_b54e81a5: "tileAbstract_b54e81a5",
-  tileActions_b54e81a5: "tileActions_b54e81a5",
-  viewButton_b54e81a5: "viewButton_b54e81a5",
-  downloadButton_b54e81a5: "downloadButton_b54e81a5",
-  loading_b54e81a5: "loading_b54e81a5",
-  noDocuments_b54e81a5: "noDocuments_b54e81a5",
-  viewAllTile_b54e81a5: "viewAllTile_b54e81a5",
-  viewAllText_b54e81a5: "viewAllText_b54e81a5",
-  viewAllModal_b54e81a5: "viewAllModal_b54e81a5",
-  detailModal_b54e81a5: "detailModal_b54e81a5",
-  chatLauncher_b54e81a5: "chatLauncher_b54e81a5",
-  botLink_b54e81a5: "botLink_b54e81a5"
+  chatbotIcon_f7ecfc39: "chatbotIcon_f7ecfc39",
+  chatWindow_f7ecfc39: "chatWindow_f7ecfc39",
+  chatHeader_f7ecfc39: "chatHeader_f7ecfc39",
+  messages_f7ecfc39: "messages_f7ecfc39",
+  messageContainer_f7ecfc39: "messageContainer_f7ecfc39",
+  messageContainerUser_f7ecfc39: "messageContainerUser_f7ecfc39",
+  messageContainerBot_f7ecfc39: "messageContainerBot_f7ecfc39",
+  messageAvatar_f7ecfc39: "messageAvatar_f7ecfc39",
+  userMsg_f7ecfc39: "userMsg_f7ecfc39",
+  botMsg_f7ecfc39: "botMsg_f7ecfc39",
+  thinking_f7ecfc39: "thinking_f7ecfc39",
+  pulse_f7ecfc39: "pulse_f7ecfc39",
+  inputRow_f7ecfc39: "inputRow_f7ecfc39",
+  chatInput_f7ecfc39: "chatInput_f7ecfc39",
+  sendButton_f7ecfc39: "sendButton_f7ecfc39",
+  closeButton_f7ecfc39: "closeButton_f7ecfc39",
+  tileHeader_f7ecfc39: "tileHeader_f7ecfc39",
+  fileTypeIcon_f7ecfc39: "fileTypeIcon_f7ecfc39",
+  fileType_f7ecfc39: "fileType_f7ecfc39",
+  tileTitle_f7ecfc39: "tileTitle_f7ecfc39",
+  tileAbstract_f7ecfc39: "tileAbstract_f7ecfc39",
+  tileActions_f7ecfc39: "tileActions_f7ecfc39",
+  viewButton_f7ecfc39: "viewButton_f7ecfc39",
+  downloadButton_f7ecfc39: "downloadButton_f7ecfc39",
+  loading_f7ecfc39: "loading_f7ecfc39",
+  noDocuments_f7ecfc39: "noDocuments_f7ecfc39",
+  viewAllTile_f7ecfc39: "viewAllTile_f7ecfc39",
+  viewAllText_f7ecfc39: "viewAllText_f7ecfc39",
+  viewAllModal_f7ecfc39: "viewAllModal_f7ecfc39",
+  detailModal_f7ecfc39: "detailModal_f7ecfc39",
+  chatLauncher_f7ecfc39: "chatLauncher_f7ecfc39",
+  botLink_f7ecfc39: "botLink_f7ecfc39"
 });
 
 
@@ -495,13 +540,13 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_3c557e40{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_3c557e40{margin:0 auto;max-width:1400px;text-align:center}.contentText_3c557e40{color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:400;margin:0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQWJvdXRQYWdlL0Fib3V0UGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLHNCQUVFLGFBQUEsQ0FHQSw0QkFBQSxDQUpBLGNBQUEsQ0FHQSxlQUFBLENBREEsUUFFQSIsImZpbGUiOiJBYm91dFBhZ2UubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".aboutPage_d84a728a{align-items:center;background-color:#e3f2fd;box-sizing:border-box;display:flex;font-family:Inter,sans-serif;height:330px;justify-content:center;padding:40px 60px;width:100%}.contentContainer_d84a728a{margin:0 auto;max-width:85%;text-align:justify}.contentText_d84a728a{color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:400;margin:0}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvQWJvdXRQYWdlL0Fib3V0UGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFPRSxrQkFBQSxDQUxBLHdCQUFBLENBRUEscUJBQUEsQ0FFQSxZQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBR0Esc0JBQUEsQ0FMQSxpQkFBQSxDQUZBLFVBUUEsQ0FHRiwyQkFHRSxhQUFBLENBREEsYUFBQSxDQURBLGtCQUVBLENBR0Ysc0JBRUUsYUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxRQUVBIiwiZmlsZSI6IkFib3V0UGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  aboutPage_3c557e40: "aboutPage_3c557e40",
-  contentContainer_3c557e40: "contentContainer_3c557e40",
-  contentText_3c557e40: "contentText_3c557e40"
+  aboutPage_d84a728a: "aboutPage_d84a728a",
+  contentContainer_d84a728a: "contentContainer_d84a728a",
+  contentText_d84a728a: "contentText_d84a728a"
 });
 
 
@@ -604,39 +649,49 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_793d7e46{background-color:#f5f5f5;box-sizing:border-box;font-family:Inter,sans-serif;height:100%;min-height:100vh;position:relative;width:100%}.header_793d7e46{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;padding:20px 40px}.backButton_793d7e46{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_793d7e46 svg{stroke:currentColor;fill:none}.backButton_793d7e46:hover{background-color:#f5f5f5}.headerActions_793d7e46{align-items:center;display:flex;gap:12px}.downloadButton_793d7e46{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_793d7e46 svg{stroke:currentColor;fill:none}.downloadButton_793d7e46:hover{background-color:#1565c0}.shareButton_793d7e46{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_793d7e46 svg{stroke:currentColor;fill:none}.shareButton_793d7e46:hover{background-color:#f5f5f5}.content_793d7e46{box-sizing:border-box;margin:0 auto;max-width:1200px;padding:40px;width:100%}.headerRow_793d7e46{align-items:flex-end;display:flex;flex-wrap:wrap;gap:20px;margin-bottom:20px}.mainContent_793d7e46{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;padding:40px;width:100%}.fileTypeIndicator_793d7e46{align-items:flex-end;display:flex;gap:8px}.tagsContainer_793d7e46{align-items:center;display:flex;flex-wrap:wrap;gap:12px}.tag_793d7e46{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;display:inline-block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:6px 12px}.fileTypeIcon_793d7e46{font-size:24px;line-height:1}.fileTypeText_793d7e46{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500;margin-bottom:3px}.documentTitle_793d7e46{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px}.documentAbstract_793d7e46{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px}.metadata_793d7e46{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_793d7e46{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_793d7e46 svg{stroke:currentColor;fill:none}.previewSection_793d7e46{margin-top:32px}.previewTitle_793d7e46{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_793d7e46{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;box-sizing:border-box;display:flex;height:700px;justify-content:center;min-height:1000px;overflow:hidden;position:relative;width:100%}.previewFrame_793d7e46{border:none;height:100%;width:100%}.previewPlaceholder_793d7e46{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_793d7e46,.previewPlaceholder_793d7e46{align-items:center;display:flex;justify-content:center}.previewError_793d7e46{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_793d7e46{font-size:48px;margin-bottom:16px}.errorText_793d7e46{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_793d7e46,.retryButton_793d7e46{font-family:Inter,sans-serif;font-weight:500}.retryButton_793d7e46{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_793d7e46:hover{background-color:#1565c0}.error_793d7e46,.loading_793d7e46{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvRG9jdW1lbnREZXRhaWxQYWdlL0RvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2QkFJRSx3QkFBQSxDQUdBLHFCQUFBLENBRkEsNEJBQUEsQ0FGQSxXQUFBLENBREEsZ0JBQUEsQ0FJQSxpQkFBQSxDQUxBLFVBTUEsQ0FHRixpQkFHRSxrQkFBQSxDQUVBLHFCQUFBLENBQ0EsK0JBQUEsQ0FMQSxZQUFBLENBQ0EsNkJBQUEsQ0FFQSxpQkFFQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FNQSxpQkFBQSxDQUxBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQU9BLDRCQUFBLENBREEsY0FBQSxDQUpBLE9BQUEsQ0FPQSxnQkFBQSxDQUVBLCtCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMkJBQ0Usd0JBQUEsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxRQUFBLENBR0YseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBWEEsWUFBQSxDQVVBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FQQSxPQUFBLENBS0EsaUJBQUEsQ0FLQSwrQkFBQSxDQUVBLDZCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLCtCQUNFLHdCQUFBLENBSUosc0JBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLGlCQUFBLENBRkEsVUFBQSxDQUdBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FJQSxZQUFBLENBR0EsK0JBQUEsQ0FFQSwwQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiw0QkFDRSx3QkFBQSxDQUlKLGtCQUtFLHFCQUFBLENBRkEsYUFBQSxDQUZBLGdCQUFBLENBR0EsWUFBQSxDQUZBLFVBR0EsQ0FHRixvQkFFRSxvQkFBQSxDQURBLFlBQUEsQ0FJQSxjQUFBLENBREEsUUFBQSxDQURBLGtCQUVBLENBR0Ysc0JBQ0UscUJBQUEsQ0FDQSxpQkFBQSxDQUVBLG1DQUFBLENBRUEscUJBQUEsQ0FIQSxZQUFBLENBRUEsVUFDQSxDQUdGLDRCQUVFLG9CQUFBLENBREEsWUFBQSxDQUVBLE9BQUEsQ0FHRix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FHQSxjQUFBLENBREEsUUFDQSxDQUdGLGNBR0Usd0JBQUEsQ0FNQSx3QkFBQSxDQUpBLGlCQUFBLENBREEsVUFBQSxDQUhBLG9CQUFBLENBT0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUxBLGdCQU9BLENBR0YsdUJBQ0UsY0FBQSxDQUNBLGFBQUEsQ0FHRix1QkFFRSxVQUFBLENBRUEsNEJBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQUVBLGlCQUFBLENBR0Ysd0JBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLDJCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsZUFFQSxDQUdGLG1CQUtFLCtCQUFBLENBSkEsWUFBQSxDQUNBLFFBQUEsQ0FDQSxrQkFBQSxDQUNBLG1CQUNBLENBR0YsdUJBRUUsa0JBQUEsQ0FHQSxVQUFBLENBSkEsWUFBQSxDQUtBLDRCQUFBLENBRkEsY0FBQSxDQURBLE9BR0EsQ0FFQSwyQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FJSix5QkFDRSxlQUFBLENBR0YsdUJBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUNBLENBR0YsMkJBVUUsa0JBQUEsQ0FIQSx3QkFBQSxDQUhBLHdCQUFBLENBQ0EsaUJBQUEsQ0FPQSxxQkFBQSxDQUhBLFlBQUEsQ0FQQSxZQUFBLENBU0Esc0JBQUEsQ0FSQSxpQkFBQSxDQUdBLGVBQUEsQ0FFQSxpQkFBQSxDQVBBLFVBV0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBRUEsa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLDBDQUhFLDRCQUFBLENBSEEsZUFnQkEsQ0FWRixzQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBSEEsY0FBQSxDQURBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw0QkFDRSx3QkFBQSxDQUlKLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_90c02955{background-color:#f5f5f5;box-sizing:border-box;font-family:Inter,sans-serif;height:100%;min-height:100vh;position:relative;width:100%}.header_90c02955{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;padding:20px 40px}.backButton_90c02955{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_90c02955 svg{stroke:currentColor;fill:none}.backButton_90c02955:hover{background-color:#f5f5f5}.content_90c02955{margin:0 auto;max-width:1200px}.content_90c02955,.titleSection_90c02955{box-sizing:border-box;padding:40px;width:100%}.titleSection_90c02955{align-self:center;background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);margin-bottom:24px;max-width:100%;overflow:hidden}.titleContent_90c02955{box-sizing:border-box;max-width:100%;width:100%}.contentWrapper_90c02955{align-items:flex-start;display:flex;gap:24px}.mainContent_90c02955{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;padding:40px;width:100%}.headerRow_90c02955{align-items:flex-end;display:flex;flex-wrap:wrap;gap:20px;margin-bottom:20px}.fileTypeIndicator_90c02955{align-items:flex-end;display:flex;gap:8px}.fileTypeIcon_90c02955{font-size:24px;line-height:1}.fileTypeText_90c02955{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500;margin-bottom:3px}.documentTitle_90c02955{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px;max-width:70%}.documentAbstract_90c02955{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 32px;max-width:85%}.metadata_90c02955{border-bottom:1px solid #e0e0e0;display:flex;gap:32px;margin-bottom:40px;padding-bottom:24px}.metadataItem_90c02955{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_90c02955 svg{stroke:currentColor;fill:none}.actionButtons_90c02955{align-items:center;align-self:flex-end;display:flex;flex-shrink:0;gap:15px}.downloadButton_90c02955{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_90c02955 svg{stroke:currentColor;fill:none}.downloadButton_90c02955:hover{background-color:#1565c0}.shareButton_90c02955{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_90c02955 svg{stroke:currentColor;fill:none}.shareButton_90c02955:hover{background-color:#f5f5f5}.previewSection_90c02955{margin-top:0}.previewTitle_90c02955{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_90c02955{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;box-sizing:border-box;display:flex;height:700px;justify-content:center;min-height:1000px;overflow:hidden;position:relative;width:100%}.previewFrame_90c02955{border:none;height:100%;width:100%}.previewPlaceholder_90c02955{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_90c02955,.previewPlaceholder_90c02955{align-items:center;display:flex;justify-content:center}.previewError_90c02955{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_90c02955{font-size:48px;margin-bottom:16px}.errorText_90c02955{color:#d32f2f;font-family:Inter,sans-serif;font-size:16px;font-weight:500;margin-bottom:16px;text-align:center}.retryButton_90c02955{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;font-weight:500;padding:10px 20px;transition:background-color .2s}.retryButton_90c02955:hover{background-color:#1565c0}.sidebar_90c02955{display:flex;flex-direction:column;flex-shrink:0;gap:24px;width:320px}.sidebarSection_90c02955{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:24px}.sidebarTitle_90c02955{align-items:center;color:#333;display:flex;font-family:Inter,sans-serif;font-size:16px;font-weight:600;gap:8px;margin:0 0 16px}.sidebarTitle_90c02955 svg{stroke:currentColor;fill:none;height:16px;width:16px}.tagsContainer_90c02955{align-items:center;display:flex;flex-wrap:wrap;gap:12px}.tag_90c02955{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;display:inline-block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:6px 12px}.infoList_90c02955{display:flex;flex-direction:column;gap:16px}.infoItem_90c02955{display:flex;flex-direction:column;gap:4px}.infoLabel_90c02955{color:#666;font-size:12px;letter-spacing:.5px;text-transform:uppercase}.infoLabel_90c02955,.infoValue_90c02955{font-family:Inter,sans-serif;font-weight:500}.infoValue_90c02955{color:#333;font-size:14px}.error_90c02955,.loading_90c02955{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovU2hhcmVwb2ludCUyMG1pZ3JhdGlvbi9JbmRlZ2VuZVNoYXJlcG9pbnRTaXRlL3NyYy93ZWJwYXJ0cy9taWdyYXRpb24vcGFnZXMvRG9jdW1lbnREZXRhaWxQYWdlL0RvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw2QkFJRSx3QkFBQSxDQUdBLHFCQUFBLENBRkEsNEJBQUEsQ0FGQSxXQUFBLENBREEsZ0JBQUEsQ0FJQSxpQkFBQSxDQUxBLFVBTUEsQ0FHRixpQkFFRSxrQkFBQSxDQUVBLHFCQUFBLENBQ0EsK0JBQUEsQ0FKQSxZQUFBLENBRUEsaUJBRUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBTUEsaUJBQUEsQ0FMQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FPQSw0QkFBQSxDQURBLGNBQUEsQ0FKQSxPQUFBLENBT0EsZ0JBQUEsQ0FFQSwrQkFBQSxDQUdGLHlCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDJCQUNFLHdCQUFBLENBSUYsa0JBR0UsYUFBQSxDQUZBLGdCQUlBLENBR0YseUNBSEUscUJBQUEsQ0FEQSxZQUFBLENBRkEsVUFnQkEsQ0FWRix1QkFRRSxpQkFBQSxDQUxBLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQUNBLGtCQUFBLENBTEEsY0FBQSxDQVFBLGVBQUEsQ0FHRix1QkFHRSxxQkFBQSxDQURBLGNBQUEsQ0FEQSxVQUVBLENBR0YseUJBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EsUUFDQSxDQUlGLHNCQUNFLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQUVBLHFCQUFBLENBSEEsWUFBQSxDQUVBLFVBQ0EsQ0FJRixvQkFFRSxvQkFBQSxDQURBLFlBQUEsQ0FJQSxjQUFBLENBREEsUUFBQSxDQURBLGtCQUVBLENBR0YsNEJBRUUsb0JBQUEsQ0FEQSxZQUFBLENBRUEsT0FBQSxDQUdGLHVCQUNFLGNBQUEsQ0FDQSxhQUFBLENBR0YsdUJBRUUsVUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUVBLGVBQUEsQ0FDQSxpQkFDQSxDQUdGLHdCQUdFLFVBQUEsQ0FFQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FHQSxhQUFBLENBSUYsMkJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBR0EsYUFBQSxDQUlGLG1CQUtFLCtCQUFBLENBSkEsWUFBQSxDQUNBLFFBQUEsQ0FDQSxrQkFBQSxDQUNBLG1CQUNBLENBR0YsdUJBRUUsa0JBQUEsQ0FHQSxVQUFBLENBSkEsWUFBQSxDQUtBLDRCQUFBLENBRkEsY0FBQSxDQURBLE9BR0EsQ0FHRiwyQkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRix3QkFFRSxrQkFBQSxDQUVBLG1CQUFBLENBSEEsWUFBQSxDQUlBLGFBQUEsQ0FGQSxRQUVBLENBR0YseUJBRUUsa0JBQUEsQ0FFQSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FNQSxjQUFBLENBVkEsWUFBQSxDQVFBLGNBQUEsQ0FDQSxlQUFBLENBUEEsT0FBQSxDQUtBLGlCQUFBLENBSUEsK0JBQUEsQ0FHRiw2QkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUdGLHNCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FHQSxpQkFBQSxDQUZBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBSUEsWUFBQSxDQUdBLCtCQUFBLENBR0YsMEJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsNEJBQ0Usd0JBQUEsQ0FHRix5QkFDRSxZQUFBLENBR0YsdUJBR0UsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUNBLENBR0YsMkJBVUUsa0JBQUEsQ0FIQSx3QkFBQSxDQUhBLHdCQUFBLENBQ0EsaUJBQUEsQ0FPQSxxQkFBQSxDQUhBLFlBQUEsQ0FQQSxZQUFBLENBU0Esc0JBQUEsQ0FSQSxpQkFBQSxDQUdBLGVBQUEsQ0FFQSxpQkFBQSxDQVBBLFVBV0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FLQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBQ0Esa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLHNCQUNFLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU1BLGNBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUZBLGlCQUFBLENBSUEsK0JBQUEsQ0FHRiw0QkFDRSx3QkFBQSxDQUdGLGtCQUdFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGFBQUEsQ0FHQSxRQUFBLENBSkEsV0FJQSxDQUdGLHlCQUNFLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQURBLFlBQ0EsQ0FHRix1QkFFRSxrQkFBQSxDQUlBLFVBQUEsQ0FMQSxZQUFBLENBT0EsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUZBLE9BQUEsQ0FJQSxlQUNBLENBR0YsMkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EsQ0FJRix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FHQSxjQUFBLENBREEsUUFDQSxDQUlGLGNBR0Usd0JBQUEsQ0FNQSx3QkFBQSxDQUpBLGlCQUFBLENBREEsVUFBQSxDQUhBLG9CQUFBLENBT0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUxBLGdCQU9BLENBR0YsbUJBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdGLG1CQUNFLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLE9BQUEsQ0FHRixvQkFFRSxVQUFBLENBREEsY0FBQSxDQUtBLG1CQUFBLENBREEsd0JBQ0EsQ0FHRix3Q0FMRSw0QkFBQSxDQURBLGVBVUEsQ0FKRixvQkFFRSxVQUFBLENBREEsY0FHQSxDQUdGLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  documentDetailPage_793d7e46: "documentDetailPage_793d7e46",
-  header_793d7e46: "header_793d7e46",
-  backButton_793d7e46: "backButton_793d7e46",
-  headerActions_793d7e46: "headerActions_793d7e46",
-  downloadButton_793d7e46: "downloadButton_793d7e46",
-  shareButton_793d7e46: "shareButton_793d7e46",
-  content_793d7e46: "content_793d7e46",
-  headerRow_793d7e46: "headerRow_793d7e46",
-  mainContent_793d7e46: "mainContent_793d7e46",
-  fileTypeIndicator_793d7e46: "fileTypeIndicator_793d7e46",
-  tagsContainer_793d7e46: "tagsContainer_793d7e46",
-  tag_793d7e46: "tag_793d7e46",
-  fileTypeIcon_793d7e46: "fileTypeIcon_793d7e46",
-  fileTypeText_793d7e46: "fileTypeText_793d7e46",
-  documentTitle_793d7e46: "documentTitle_793d7e46",
-  documentAbstract_793d7e46: "documentAbstract_793d7e46",
-  metadata_793d7e46: "metadata_793d7e46",
-  metadataItem_793d7e46: "metadataItem_793d7e46",
-  previewSection_793d7e46: "previewSection_793d7e46",
-  previewTitle_793d7e46: "previewTitle_793d7e46",
-  previewContainer_793d7e46: "previewContainer_793d7e46",
-  previewFrame_793d7e46: "previewFrame_793d7e46",
-  previewPlaceholder_793d7e46: "previewPlaceholder_793d7e46",
-  previewError_793d7e46: "previewError_793d7e46",
-  errorIcon_793d7e46: "errorIcon_793d7e46",
-  errorText_793d7e46: "errorText_793d7e46",
-  retryButton_793d7e46: "retryButton_793d7e46",
-  error_793d7e46: "error_793d7e46",
-  loading_793d7e46: "loading_793d7e46"
+  documentDetailPage_90c02955: "documentDetailPage_90c02955",
+  header_90c02955: "header_90c02955",
+  backButton_90c02955: "backButton_90c02955",
+  content_90c02955: "content_90c02955",
+  titleSection_90c02955: "titleSection_90c02955",
+  titleContent_90c02955: "titleContent_90c02955",
+  contentWrapper_90c02955: "contentWrapper_90c02955",
+  mainContent_90c02955: "mainContent_90c02955",
+  headerRow_90c02955: "headerRow_90c02955",
+  fileTypeIndicator_90c02955: "fileTypeIndicator_90c02955",
+  fileTypeIcon_90c02955: "fileTypeIcon_90c02955",
+  fileTypeText_90c02955: "fileTypeText_90c02955",
+  documentTitle_90c02955: "documentTitle_90c02955",
+  documentAbstract_90c02955: "documentAbstract_90c02955",
+  metadata_90c02955: "metadata_90c02955",
+  metadataItem_90c02955: "metadataItem_90c02955",
+  actionButtons_90c02955: "actionButtons_90c02955",
+  downloadButton_90c02955: "downloadButton_90c02955",
+  shareButton_90c02955: "shareButton_90c02955",
+  previewSection_90c02955: "previewSection_90c02955",
+  previewTitle_90c02955: "previewTitle_90c02955",
+  previewContainer_90c02955: "previewContainer_90c02955",
+  previewFrame_90c02955: "previewFrame_90c02955",
+  previewPlaceholder_90c02955: "previewPlaceholder_90c02955",
+  previewError_90c02955: "previewError_90c02955",
+  errorIcon_90c02955: "errorIcon_90c02955",
+  errorText_90c02955: "errorText_90c02955",
+  retryButton_90c02955: "retryButton_90c02955",
+  sidebar_90c02955: "sidebar_90c02955",
+  sidebarSection_90c02955: "sidebarSection_90c02955",
+  sidebarTitle_90c02955: "sidebarTitle_90c02955",
+  tagsContainer_90c02955: "tagsContainer_90c02955",
+  tag_90c02955: "tag_90c02955",
+  infoList_90c02955: "infoList_90c02955",
+  infoItem_90c02955: "infoItem_90c02955",
+  infoLabel_90c02955: "infoLabel_90c02955",
+  infoValue_90c02955: "infoValue_90c02955",
+  error_90c02955: "error_90c02955",
+  loading_90c02955: "loading_90c02955"
 });
 
 
@@ -1187,8 +1242,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FileUpload.module.scss */ 3908);
 /* harmony import */ var _MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MetadataForm/MetadataForm */ 6732);
-/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
-/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+/* harmony import */ var _MultiMetadataForm_MultiMetadataForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../MultiMetadataForm/MultiMetadataForm */ 4760);
+/* harmony import */ var _services_DocumentParser__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../services/DocumentParser */ 2969);
+/* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
+
 
 
 
@@ -1203,48 +1260,67 @@ const AZURE_OPENAI_CONFIG = {
     endpoint: 'https://engineeringteamopenai.openai.azure.com',
     deploymentName: 'gpt-4o'
 };
+const MAX_FILES = 5;
 const FileUpload = (props) => {
     const [dragOver, setDragOver] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-    const [uploadedFile, setUploadedFile] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [uploadedFiles, setUploadedFiles] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
     const [isProcessing, setIsProcessing] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-    const [extractedMetadata, setExtractedMetadata] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const [processingProgress, setProcessingProgress] = react__WEBPACK_IMPORTED_MODULE_0__.useState('');
+    const [filesData, setFilesData] = react__WEBPACK_IMPORTED_MODULE_0__.useState([]);
     const [processingError, setProcessingError] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
-    const [kmItemId, setKmItemId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const [showForm, setShowForm] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-    const [kmFileUrl, setKmFileUrl] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
-    const [successMessage, setSuccessMessage] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    // const [kmFileUrl, setKmFileUrl] = React.useState<string | null>(null); // Removed: not used
+    // const [successMessage, setSuccessMessage] = React.useState<string | null>(null); // Removed: handled by modal close
     const fileInputRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-    const openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_4__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    const openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_5__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
+    const isSubmittingRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
     const onBrowse = () => {
         var _a;
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     const onFileSelected = async (f) => {
-        const file = f && f.length ? f[0] : undefined;
-        if (file) {
-            setUploadedFile(file);
-            setShowForm(false); // ⛔ hide form initially
-            setIsProcessing(true); // ⏳ immediately show analyzing UI
-            setProcessingError(null);
-            setExtractedMetadata(null);
-            // Create log + KMArtifacts + run AI
-            await createAuditLogItem(file);
-            let itemId = null;
-            try {
-                itemId = await updateKMArtifactsMetadata(file);
-                setKmItemId(itemId); // only set if success
-            }
-            catch (err) {
-                console.error("KMArtifacts ERROR:", err);
-                setIsProcessing(false);
-                setProcessingError("KMArtifacts item could not be created.");
-                return; // STOP the flow
-            }
-            const processingSuccess = await processFileWithAI(file);
-            // ONLY SHOW FORM AFTER AI FINISHES SUCCESSFULLY
-            if (processingSuccess) {
+        if (!f || f.length === 0)
+            return;
+        // Limit to MAX_FILES
+        const filesArray = Array.from(f).slice(0, MAX_FILES);
+        if (f.length > MAX_FILES) {
+            alert(`Maximum ${MAX_FILES} files allowed. Only the first ${MAX_FILES} files will be processed.`);
+        }
+        setUploadedFiles(filesArray);
+        setShowForm(false);
+        setIsProcessing(true);
+        setProcessingError(null);
+        setFilesData([]);
+        setProcessingProgress('');
+        try {
+            // Process all files with AI in parallel (no SharePoint upload yet)
+            setProcessingProgress(`Processing ${filesArray.length} file(s)...`);
+            // Process all files in parallel
+            const processingPromises = filesArray.map(async (file, index) => {
+                console.log(`Starting parallel processing for file ${index + 1}: ${file.name}`);
+                const metadata = await processFileWithAI(file);
+                return {
+                    file: file,
+                    itemId: -1,
+                    metadata: metadata || {}
+                };
+            });
+            // Wait for all files to be processed
+            const processedFilesData = await Promise.all(processingPromises);
+            setFilesData(processedFilesData);
+            setIsProcessing(false);
+            setProcessingProgress('');
+            if (processedFilesData.length > 0) {
                 setShowForm(true);
             }
+            else {
+                setProcessingError('No files were successfully processed.');
+            }
+        }
+        catch (error) {
+            console.error('Error processing files:', error);
+            setProcessingError(error instanceof Error ? error.message : 'An error occurred while processing files.');
+            setIsProcessing(false);
         }
     };
     const processFileWithAI = async (file) => {
@@ -1253,12 +1329,10 @@ const FileUpload = (props) => {
         console.log('File:', file.name);
         console.log('File type:', file.type);
         console.log('File size:', file.size, 'bytes');
-        setIsProcessing(true);
-        setProcessingError(null);
         try {
             // Step 1: Parse the document to extract text
             console.log('Step 1: Parsing document...');
-            const parseResult = await _services_DocumentParser__WEBPACK_IMPORTED_MODULE_5__.DocumentParser.parseFile(file);
+            const parseResult = await _services_DocumentParser__WEBPACK_IMPORTED_MODULE_6__.DocumentParser.parseFile(file);
             console.log('Parse result:', {
                 success: parseResult.success,
                 textLength: ((_a = parseResult.text) === null || _a === void 0 ? void 0 : _a.length) || 0,
@@ -1267,16 +1341,11 @@ const FileUpload = (props) => {
             if (!parseResult.success) {
                 const errorMsg = parseResult.error || 'Failed to parse document';
                 console.error('Document parsing failed:', errorMsg);
-                setProcessingError(errorMsg);
-                setIsProcessing(false);
-                return false;
+                return null;
             }
             if (!parseResult.text || parseResult.text.trim().length === 0) {
-                const errorMsg = 'No text content found in the document. The document might be image-based or empty.';
-                console.error('No text extracted:', errorMsg);
-                setProcessingError(errorMsg);
-                setIsProcessing(false);
-                return false;
+                console.warn('No text content found in the document. The document might be image-based or empty.');
+                return null;
             }
             // Log parsed text for debugging
             console.log('=== FILE PARSED SUCCESSFULLY ===');
@@ -1287,12 +1356,8 @@ const FileUpload = (props) => {
             // Step 2: Extract metadata using Azure OpenAI
             console.log('Step 2: Extracting metadata with AI...');
             const metadata = await openAIService.current.extractMetadata(parseResult.text);
-            // Step 3: Set the extracted metadata
-            console.log('Step 3: Setting extracted metadata...');
-            setExtractedMetadata(metadata);
             console.log('=== FILE PROCESSING COMPLETE ===');
-            setIsProcessing(false);
-            return true;
+            return metadata;
         }
         catch (error) {
             console.error('=== ERROR PROCESSING FILE ===');
@@ -1300,12 +1365,7 @@ const FileUpload = (props) => {
             console.error('Error details:', error);
             console.error('Error message:', error instanceof Error ? error.message : String(error));
             console.error('Error stack:', error instanceof Error ? error.stack : 'N/A');
-            const errorMsg = error instanceof Error
-                ? error.message
-                : 'An error occurred while processing the document. Please fill the form manually.';
-            setProcessingError(errorMsg);
-            setIsProcessing(false);
-            return false;
+            return null;
         }
     };
     /**
@@ -1326,7 +1386,6 @@ const FileUpload = (props) => {
         const currentUser = await currentUserResp.json();
         const userId = currentUser.Id;
         // Build payload. Use the internal field names shown in the URLs.
-        // Many lists have a required `Title` field; include it to avoid create failures.
         // When using 'odata=nometadata' we must NOT include __metadata in the payload.
         const body = {
             "__metadata": { "type": "SP.Data.Audit_x0020_LogListItem" },
@@ -1369,13 +1428,16 @@ const FileUpload = (props) => {
      * Create item in KMArtifacts folder inside Document Library
      */
     const updateKMArtifactsMetadata = async (file) => {
+        if (!props.context) {
+            throw new Error('SPFx context not provided to FileUpload component.');
+        }
         const LIBRARY_NAME = "KMArtifacts";
         const webUrl = props.context.pageContext.web.absoluteUrl;
         // 1️⃣ Upload file
         const uploadResp = await props.context.spHttpClient.post(`${webUrl}/_api/web/GetFolderByServerRelativeUrl('${LIBRARY_NAME}')/Files/add(url='${file.name}',overwrite=true)`, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, { body: file });
         const uploadJson = await uploadResp.json();
         const serverRelativeUrl = uploadJson.ServerRelativeUrl;
-        setKmFileUrl(serverRelativeUrl);
+        // setKmFileUrl(serverRelativeUrl); // No need to set state here
         // 2️⃣ Wait briefly to ensure ListItem exists
         await new Promise(r => setTimeout(r, 500));
         // 3️⃣ Get ListItem ID
@@ -1390,10 +1452,10 @@ const FileUpload = (props) => {
         const currentUserResp = await props.context.spHttpClient.get(`${webUrl}/_api/web/currentuser`, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1);
         const currentUser = await currentUserResp.json();
         const userId = currentUser.Id;
-        // 6️⃣ Metadata payload
+        // 6️⃣ Metadata payload (initial values, will be updated with form data)
         const metadataBody = {
             __metadata: { type: entityType },
-            Status: "Draft",
+            Status: "Submitted",
             TitleName: "-",
             Abstract: "-",
             BusinessUnit: "-",
@@ -1423,10 +1485,12 @@ const FileUpload = (props) => {
             throw new Error(`KMArtifacts update failed: ${updateResp.status} ${txt}`);
         }
         console.log("KMArtifacts metadata updated successfully for itemId:", itemId);
-        setKmItemId(itemId); // ⭐ store item id for later updates
         return itemId;
     };
     const updateKMArtifactsWithFormData = async (itemId, data) => {
+        if (!props.context) {
+            throw new Error('SPFx context not provided to FileUpload component.');
+        }
         const LIBRARY_NAME = "KMArtifacts";
         const webUrl = props.context.pageContext.web.absoluteUrl;
         // 1️⃣ Get current user
@@ -1437,9 +1501,8 @@ const FileUpload = (props) => {
         const listInfoResp = await props.context.spHttpClient.get(`${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')?$select=ListItemEntityTypeFullName`, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1);
         const listInfo = await listInfoResp.json();
         const entityType = listInfo.ListItemEntityTypeFullName; // example: SP.Data.KMArtifactsListItem
-        // 3️⃣ Metadata body (with __metadata.type)
+        // 3️⃣ Metadata body (without __metadata.type initially)
         const payload = {
-            __metadata: { type: entityType },
             Status: data.Status || "Unpublished",
             TitleName: data.title || "-",
             Abstract: data.abstract || "-",
@@ -1453,6 +1516,8 @@ const FileUpload = (props) => {
             PerformedById: userId,
             TimeStamp: new Date().toISOString()
         };
+        // Add __metadata to payload
+        const payloadWithMetadata = Object.assign({ __metadata: { type: entityType } }, payload);
         // 4️⃣ Update item (MERGE)
         const resp = await props.context.spHttpClient.post(`${webUrl}/_api/web/lists/getbytitle('${LIBRARY_NAME}')/items(${itemId})`, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
             headers: {
@@ -1462,10 +1527,11 @@ const FileUpload = (props) => {
                 "X-HTTP-Method": "MERGE",
                 "odata-version": ""
             },
-            body: JSON.stringify(payload)
+            body: JSON.stringify(payloadWithMetadata)
         });
         if (!resp.ok) {
-            throw new Error(await resp.text());
+            const errorText = await resp.text();
+            throw new Error(`Failed to update metadata: ${resp.status} ${errorText}`);
         }
         console.log("KMArtifacts updated with form data:", itemId);
     };
@@ -1476,29 +1542,79 @@ const FileUpload = (props) => {
             onFileSelected(e.dataTransfer.files);
         }
     };
-    const onFormSubmit = async (data) => {
-        console.log("Submitting metadata", data);
-        if (!kmItemId) {
-            console.error("KMArtifacts item id is missing");
-            return;
-        }
+    const onFormSubmit = async (allFilesData) => {
+        console.log("Submitting metadata for all files", allFilesData);
+        isSubmittingRef.current = true;
+        setIsProcessing(true);
+        setProcessingError(null);
+        setProcessingProgress('Uploading files to SharePoint...');
         try {
-            // 2️⃣ Create new Audit Log item 
-            await createAuditLogItem(uploadedFile, "Unpublished");
-            // 1️⃣ Update KMArtifacts row with actual form values
-            await updateKMArtifactsWithFormData(kmItemId, Object.assign(Object.assign({}, data), { Status: "Unpublished" }));
-            setSuccessMessage("Your document has been submitted. The KM team will review it shortly.");
-            // optionally show success to user
-            console.log("Submission complete — KM notified.");
+            // Process all files in parallel - upload to SharePoint and create items
+            setProcessingProgress(`Uploading ${allFilesData.length} file(s) to SharePoint...`);
+            // Process all files in parallel
+            const uploadPromises = allFilesData.map(async (fileData) => {
+                try {
+                    // 1. Upload file and create KMArtifacts item
+                    const itemId = await updateKMArtifactsMetadata(fileData.file);
+                    console.log(`File ${fileData.file.name} uploaded successfully, itemId: ${itemId}`);
+                    // 2. Create audit log item (Action = Submitted)
+                    try {
+                        await createAuditLogItem(fileData.file, "Submitted");
+                    }
+                    catch (err) {
+                        console.warn(`Audit log creation failed for ${fileData.file.name}:`, err);
+                        // Continue even if audit log fails
+                    }
+                    // 3. Update KMArtifacts row with actual form values
+                    await updateKMArtifactsWithFormData(itemId, fileData.metadata);
+                    console.log(`Metadata updated successfully for ${fileData.file.name}`);
+                    return { success: true, fileName: fileData.file.name };
+                }
+                catch (err) {
+                    console.error(`Error processing ${fileData.file.name}:`, err);
+                    return {
+                        success: false,
+                        fileName: fileData.file.name,
+                        error: err instanceof Error ? err.message : String(err)
+                    };
+                }
+            });
+            // Wait for all uploads to complete
+            const results = await Promise.all(uploadPromises);
+            // Check for any failures
+            const failures = results.filter(r => !r.success);
+            if (failures.length > 0) {
+                const errorMessages = failures.map(f => `${f.fileName}: ${f.error}`).join('; ');
+                setProcessingError(`Some files failed to upload: ${errorMessages}`);
+                isSubmittingRef.current = false;
+                setIsProcessing(false);
+                return;
+            }
+            console.log(`Successfully submitted ${allFilesData.length} file(s)`);
+            // Reset all state immediately to prevent form from showing
+            // Reset in order: filesData first (used in render condition), then others
+            setFilesData([]);
+            setUploadedFiles([]);
+            setShowForm(false);
+            setProcessingError(null);
+            setProcessingProgress('');
+            isSubmittingRef.current = false;
+            setIsProcessing(false);
+            // Close the modal immediately
+            // Use requestAnimationFrame to ensure state updates are processed
+            requestAnimationFrame(() => {
+                props.onClose && props.onClose();
+            });
         }
         catch (err) {
             console.error("Error during form submission:", err);
-            setProcessingError("Submission failed. Check console for details.");
+            setProcessingError(err instanceof Error ? err.message : 'Error submitting files');
+            isSubmittingRef.current = false;
+            setIsProcessing(false);
         }
-        props.onClose && props.onClose();
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].overlay },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, !uploadedFile ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].modal, role: "dialog", "aria-modal": "true" }, uploadedFiles.length === 0 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadCard },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, "Upload Document"),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZone} ${dragOver ? _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropZoneHover : ''}`, onDragOver: (e) => { e.preventDefault(); setDragOver(true); }, onDragLeave: () => setDragOver(false), onDrop: onDrop, onClick: onBrowse, role: "button", "aria-label": "Upload file" },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].uploadIcon, viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
@@ -1506,24 +1622,30 @@ const FileUpload = (props) => {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M7 9l5-5 5 5", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M12 4v12", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hintText }, "Drag & drop files here"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions }, "Supported formats: PDF, DOCX, PPTX, XLSX, MHTML, MHT, SVG, MPP. Click browse or drop a file to start."),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: (e) => { e.stopPropagation(); onBrowse(); } }, "Browse files"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml", onChange: (e) => onFileSelected(e.target.files) })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions },
+                    "Word, Ppt, Excel, PDF, MHTML, SVG. You can upload up to ",
+                    MAX_FILES,
+                    " files at once."),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].browseBtn, onClick: (e) => { e.stopPropagation(); onBrowse(); } }, "Browse Files"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { ref: fileInputRef, type: "file", multiple: true, style: { display: 'none' }, accept: ".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.mhtml,.mht,.svg,.mpp,message/rfc822,multipart/related,application/x-mimearchive,image/svg+xml", onChange: (e) => onFileSelected(e.target.files) })),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: () => props.onClose && props.onClose() }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-            isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, "Analyzing Document..."),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, "Reading your document and extracting information. This may take a moment."),
-                processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: onFormSubmit, onClose: () => props.onClose && props.onClose(), initialValues: extractedMetadata || undefined })),
-            successMessage && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: {
-                    backgroundColor: "#d4edda",
-                    color: "#155724",
-                    padding: "12px",
-                    borderRadius: "6px",
-                    marginTop: "10px",
-                    border: "1px solid #c3e6cb",
-                } }, successMessage)))))));
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].closeBtn, onClick: () => props.onClose && props.onClose() }, "Close")))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, isProcessing ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingSpinner }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingTitle }, processingProgress && processingProgress.includes('Uploading') ? 'Uploading Files...' : 'Analyzing Documents...'),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].processingMessage }, processingProgress || 'Reading your documents and extracting information. This may take a moment.'),
+            processingError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FileUpload_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorMessage }, processingError)))) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length > 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MultiMetadataForm_MultiMetadataForm__WEBPACK_IMPORTED_MODULE_4__.MultiMetadataForm, { onSubmit: onFormSubmit, onClose: () => {
+                setUploadedFiles([]);
+                setFilesData([]);
+                setShowForm(false);
+                isSubmittingRef.current = false;
+                props.onClose && props.onClose();
+            }, filesData: filesData })) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length === 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: (data) => onFormSubmit([{ file: filesData[0].file, itemId: filesData[0].itemId, metadata: data }]), onClose: () => {
+                setUploadedFiles([]);
+                setFilesData([]);
+                setShowForm(false);
+                isSubmittingRef.current = false;
+                props.onClose && props.onClose();
+            }, initialValues: filesData[0].metadata || undefined })) : null)))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FileUpload);
 
@@ -1542,25 +1664,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./FileUpload.module.css */ 880);
 const styles = {
-    overlay: 'overlay_c09eba7f',
-    modal: 'modal_c09eba7f',
-    uploadCard: 'uploadCard_c09eba7f',
-    title: 'title_c09eba7f',
-    dropZone: 'dropZone_c09eba7f',
-    dropZoneHover: 'dropZoneHover_c09eba7f',
-    uploadIcon: 'uploadIcon_c09eba7f',
-    hintText: 'hintText_c09eba7f',
-    instructions: 'instructions_c09eba7f',
-    browseBtn: 'browseBtn_c09eba7f',
-    footer: 'footer_c09eba7f',
-    closeBtn: 'closeBtn_c09eba7f',
-    fileName: 'fileName_c09eba7f',
-    processingContainer: 'processingContainer_c09eba7f',
-    processingSpinner: 'processingSpinner_c09eba7f',
-    spin: 'spin_c09eba7f',
-    processingTitle: 'processingTitle_c09eba7f',
-    processingMessage: 'processingMessage_c09eba7f',
-    errorMessage: 'errorMessage_c09eba7f'
+    overlay: 'overlay_ba2477f0',
+    modal: 'modal_ba2477f0',
+    uploadCard: 'uploadCard_ba2477f0',
+    title: 'title_ba2477f0',
+    dropZone: 'dropZone_ba2477f0',
+    dropZoneHover: 'dropZoneHover_ba2477f0',
+    uploadIcon: 'uploadIcon_ba2477f0',
+    hintText: 'hintText_ba2477f0',
+    instructions: 'instructions_ba2477f0',
+    browseBtn: 'browseBtn_ba2477f0',
+    footer: 'footer_ba2477f0',
+    closeBtn: 'closeBtn_ba2477f0',
+    fileName: 'fileName_ba2477f0',
+    processingContainer: 'processingContainer_ba2477f0',
+    processingSpinner: 'processingSpinner_ba2477f0',
+    spin: 'spin_ba2477f0',
+    processingTitle: 'processingTitle_ba2477f0',
+    processingMessage: 'processingMessage_ba2477f0',
+    errorMessage: 'errorMessage_ba2477f0'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -1792,6 +1914,8 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
        - Abstract (description)
        - Author (contributor)
        - Title
+       - Document content (up to 100k characters, sampled from beginning/middle/end for large docs)
+       - Headers and footers (extracted from PDFs, Word docs, PowerPoint slides)
     ====================================================== */
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         // Only perform semantic search for documents tab when there's a search query
@@ -1842,6 +1966,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 }
                 // Extract content for ALL documents to ensure complete search coverage
                 // This ensures words in document content (but not in abstract) are found
+                // Extracts up to 100,000 characters per document (sampling from beginning, middle, end for large docs)
                 // Process in batches to avoid overwhelming the browser
                 const batchSize = 10; // Process 10 documents at a time
                 const allDocsWithContent = [];
@@ -1861,11 +1986,37 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                                     if (fileResponse.ok) {
                                         const blob = await fileResponse.blob();
                                         const file = new File([blob], doc.fileName, { type: blob.type });
-                                        // Extract text content
+                                        // Extract text content (includes headers, footers, and body from all pages)
                                         const parseResult = await _services_DocumentParser__WEBPACK_IMPORTED_MODULE_7__.DocumentParser.parseFile(file);
                                         if (parseResult.success && parseResult.text) {
-                                            // Use first 15000 characters for comprehensive search
-                                            documentContent = parseResult.text.substring(0, 15000);
+                                            // Extract more content for comprehensive search
+                                            // Use up to 100,000 characters, sampling from beginning, middle, and end
+                                            // Footers are typically repeated on every page, so they'll be captured in the sampling
+                                            const fullText = parseResult.text;
+                                            const maxLength = 100000;
+                                            // Log extracted text sample to verify footer content is included
+                                            const textSample = fullText.substring(0, 500);
+                                            console.log(`[Document ${doc.id}] Extracted text sample (first 500 chars):`, textSample);
+                                            if (fullText.length > 500) {
+                                                const endSample = fullText.substring(Math.max(0, fullText.length - 500));
+                                                console.log(`[Document ${doc.id}] Extracted text sample (last 500 chars):`, endSample);
+                                            }
+                                            if (fullText.length <= maxLength) {
+                                                // If document is small enough, use all content (includes all footer instances)
+                                                documentContent = fullText;
+                                                console.log(`[Document ${doc.id}] Using full document content (${fullText.length} chars) - includes all headers/footers`);
+                                            }
+                                            else {
+                                                // For large documents, sample from beginning, middle, and end
+                                                // Footers appear on every page, so they'll be captured in these samples
+                                                const chunkSize = Math.floor(maxLength / 3);
+                                                const startChunk = fullText.substring(0, chunkSize);
+                                                const middleStart = Math.floor(fullText.length / 2) - Math.floor(chunkSize / 2);
+                                                const middleChunk = fullText.substring(middleStart, middleStart + chunkSize);
+                                                const endChunk = fullText.substring(fullText.length - chunkSize);
+                                                documentContent = `${startChunk}\n...\n${middleChunk}\n...\n${endChunk}`;
+                                                console.log(`[Document ${doc.id}] Sampled document content (${documentContent.length} chars from ${fullText.length} total) - includes footer content from sampled sections`);
+                                            }
                                             documentContentCache.current.set(doc.id, documentContent);
                                         }
                                     }
@@ -1882,6 +2033,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 }
                 // Perform semantic search on filtered KMArtifacts documents
                 // This searches through: title, fileName, description (abstract), contributor (author), AND document content
+                // Extracts up to 100k characters per document for comprehensive coverage
                 // Increase topK to ensure we get all matches, including those only in document content
                 const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(searchText, allDocsWithContent, 100 // Get top 100 results to ensure we don't miss documents with matches only in content
                 );
@@ -2037,8 +2189,9 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
     /* ======================================================
        Render
     ====================================================== */
+    const workspaceRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].workspace },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].workspace, ref: workspaceRef },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("aside", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrapper },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].railHeader }, "Refine using filters by:"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", { className: _FilterDropdown_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].container }, filterData.map((group) => {
@@ -2252,13 +2405,21 @@ const Header = (props) => {
     // Close dropdown when clicking outside
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         const handleClickOutside = (event) => {
-            if (containerRef.current && !containerRef.current.contains(event.target)) {
+            const target = event.target;
+            // Check if click is outside both the search container and the dropdown panel
+            const isOutsideSearch = searchContainerRef.current && !searchContainerRef.current.contains(target);
+            const isOutsideDropdown = dropdownPanelRef.current && !dropdownPanelRef.current.contains(target);
+            // Close if click is outside both elements (but keep search text)
+            if (isOutsideSearch && isOutsideDropdown) {
                 setIsOpen(false);
             }
         };
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
+        // Only add listener when dropdown is open
+        if (isOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => document.removeEventListener("mousedown", handleClickOutside);
+        }
+    }, [isOpen]);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header, ref: containerRef },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerContent },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
@@ -2418,24 +2579,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MetadataForm.module.css */ 8856);
 const styles = {
-    formWrapper: 'formWrapper_eb48e8e0',
-    formInner: 'formInner_eb48e8e0',
-    note: 'note_eb48e8e0',
-    headerBar: 'headerBar_eb48e8e0',
-    cardMeta: 'cardMeta_eb48e8e0',
-    field: 'field_eb48e8e0',
-    title: 'title_eb48e8e0',
-    titleWrap: 'titleWrap_eb48e8e0',
-    subtitle: 'subtitle_eb48e8e0',
-    closeBtn: 'closeBtn_eb48e8e0',
-    fieldFull: 'fieldFull_eb48e8e0',
-    label: 'label_eb48e8e0',
-    input: 'input_eb48e8e0',
-    textarea: 'textarea_eb48e8e0',
-    textareaScrollable: 'textareaScrollable_eb48e8e0',
-    grid: 'grid_eb48e8e0',
-    actions: 'actions_eb48e8e0',
-    submitBtn: 'submitBtn_eb48e8e0'
+    formWrapper: 'formWrapper_ce3c3795',
+    formInner: 'formInner_ce3c3795',
+    note: 'note_ce3c3795',
+    headerBar: 'headerBar_ce3c3795',
+    cardMeta: 'cardMeta_ce3c3795',
+    field: 'field_ce3c3795',
+    title: 'title_ce3c3795',
+    titleWrap: 'titleWrap_ce3c3795',
+    subtitle: 'subtitle_ce3c3795',
+    closeBtn: 'closeBtn_ce3c3795',
+    fieldFull: 'fieldFull_ce3c3795',
+    label: 'label_ce3c3795',
+    input: 'input_ce3c3795',
+    textarea: 'textarea_ce3c3795',
+    textareaScrollable: 'textareaScrollable_ce3c3795',
+    grid: 'grid_ce3c3795',
+    actions: 'actions_ce3c3795',
+    submitBtn: 'submitBtn_ce3c3795'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2541,6 +2702,158 @@ const styles = {
 
 /***/ }),
 
+/***/ 4760:
+/*!**********************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MultiMetadataForm: () => (/* binding */ MultiMetadataForm),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ 5959);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MultiMetadataForm.module.scss */ 5632);
+
+
+const MultiMetadataForm = ({ onSubmit, onClose, filesData }) => {
+    const [formsData, setFormsData] = react__WEBPACK_IMPORTED_MODULE_0__.useState({});
+    // Initialize forms data from filesData
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        const initialData = {};
+        filesData.forEach((fileData, index) => {
+            initialData[index] = Object.assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, fileData.metadata);
+        });
+        setFormsData(initialData);
+    }, [filesData]);
+    const handleFieldChange = (fileIndex, fieldName, value) => {
+        setFormsData(prev => (Object.assign(Object.assign({}, prev), { [fileIndex]: Object.assign(Object.assign({}, prev[fileIndex]), { [fieldName]: value }) })));
+    };
+    const handleSubmit = (e) => {
+        e && e.preventDefault();
+        // Convert formsData to array format expected by parent
+        const allFormsData = filesData.map((_, index) => ({
+            file: filesData[index].file,
+            itemId: filesData[index].itemId,
+            metadata: formsData[index] || {}
+        }));
+        onSubmit && onSubmit(allFormsData);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formWrapper },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerBar },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].titleWrap },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle },
+                    filesData.length,
+                    " file",
+                    filesData.length > 1 ? 's' : '',
+                    " uploaded. Review and submit metadata for all files."))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", "aria-label": "Close", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: () => onClose && onClose(), title: "Close" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M18 6L6 18M6 6l12 12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].cardMeta },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner }, filesData.map((fileData, index) => {
+                    const formData = formsData[index] || {};
+                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: index, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].singleFormContainer },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fileFormTitle },
+                            "File ",
+                            index + 1,
+                            " - ",
+                            fileData.file.name),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `title-${index}` }, "Title"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `title-${index}`, name: "title", placeholder: "Enter document title", value: formData.title || '', onChange: (e) => handleFieldChange(index, 'title', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `bu-${index}` }, "Business Unit"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `bu-${index}`, name: "bu", placeholder: "Select or type BU", value: formData.bu || '', onChange: (e) => handleFieldChange(index, 'bu', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `department-${index}` }, "Department"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `department-${index}`, name: "department", placeholder: "Department", value: formData.department || '', onChange: (e) => handleFieldChange(index, 'department', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `region-${index}` }, "Region"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `region-${index}`, name: "region", placeholder: "Region", value: formData.region || '', onChange: (e) => handleFieldChange(index, 'region', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `client-${index}` }, "Client"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `client-${index}`, name: "client", placeholder: "Client name", value: formData.client || '', onChange: (e) => handleFieldChange(index, 'client', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `documentType-${index}` }, "Document Type"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `documentType-${index}`, name: "documentType", placeholder: "e.g., PPTX, Report", value: formData.documentType || '', onChange: (e) => handleFieldChange(index, 'documentType', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `diseaseArea-${index}` }, "Disease Area"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `diseaseArea-${index}`, name: "diseaseArea", placeholder: "Disease Area", value: formData.diseaseArea || '', onChange: (e) => handleFieldChange(index, 'diseaseArea', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `therapyArea-${index}` }, "Therapy Area"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: `therapyArea-${index}`, name: "therapyArea", placeholder: "Therapy Area", value: formData.therapyArea || '', onChange: (e) => handleFieldChange(index, 'therapyArea', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `abstract-${index}` }, "Abstract"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: `abstract-${index}`, name: "abstract", placeholder: "Short summary (1-2 lines)", value: formData.abstract || '', onChange: (e) => handleFieldChange(index, 'abstract', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `emails-${index}` }, "Emails Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: `emails-${index}`, name: "emails", value: formData.emails || '', onChange: (e) => handleFieldChange(index, 'emails', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `phones-${index}` }, "Phones Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: `phones-${index}`, name: "phones", value: formData.phones || '', onChange: (e) => handleFieldChange(index, 'phones', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `ids-${index}` }, "IDs Found"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: `ids-${index}`, name: "ids", value: formData.ids || '', onChange: (e) => handleFieldChange(index, 'ids', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: `pricing-${index}` }, "Pricing / Sensitive Terms"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: `pricing-${index}`, name: "pricing", value: formData.pricing || '', onChange: (e) => handleFieldChange(index, 'pricing', e.target.value), className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })))));
+                })),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitContainer },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn },
+                        "Submit All (",
+                        filesData.length,
+                        " file",
+                        filesData.length > 1 ? 's' : '',
+                        ")"))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MultiMetadataForm);
+
+
+/***/ }),
+
+/***/ 5632:
+/*!**********************************************************************************************!*\
+  !*** ./lib/webparts/migration/components/MultiMetadataForm/MultiMetadataForm.module.scss.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+__webpack_require__(/*! ./MultiMetadataForm.module.css */ 5124);
+const styles = {
+    formWrapper: 'formWrapper_39441897',
+    formInner: 'formInner_39441897',
+    headerBar: 'headerBar_39441897',
+    cardMeta: 'cardMeta_39441897',
+    title: 'title_39441897',
+    titleWrap: 'titleWrap_39441897',
+    subtitle: 'subtitle_39441897',
+    closeBtn: 'closeBtn_39441897',
+    singleFormContainer: 'singleFormContainer_39441897',
+    fileFormTitle: 'fileFormTitle_39441897',
+    field: 'field_39441897',
+    fieldFull: 'fieldFull_39441897',
+    label: 'label_39441897',
+    input: 'input_39441897',
+    textarea: 'textarea_39441897',
+    textareaScrollable: 'textareaScrollable_39441897',
+    grid: 'grid_39441897',
+    submitContainer: 'submitContainer_39441897',
+    submitBtn: 'submitBtn_39441897'
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
+
+
+/***/ }),
+
 /***/ 3154:
 /*!********************************************************************!*\
   !*** ./lib/webparts/migration/components/Navigation/Navigation.js ***!
@@ -2588,10 +2901,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./Navigation.module.css */ 4538);
 const styles = {
-    navigation: 'navigation_72dd57cd',
-    navContainer: 'navContainer_72dd57cd',
-    navItem: 'navItem_72dd57cd',
-    active: 'active_72dd57cd'
+    navigation: 'navigation_5165153b',
+    navContainer: 'navContainer_5165153b',
+    navItem: 'navItem_5165153b',
+    active: 'active_5165153b'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2615,6 +2928,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_DocumentDetailPage_DocumentDetailPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../pages/DocumentDetailPage/DocumentDetailPage */ 2434);
 /* harmony import */ var _pages_ViewAllDocumentsPage_ViewAllDocumentsPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pages/ViewAllDocumentsPage/ViewAllDocumentsPage */ 4994);
 /* harmony import */ var _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./QuestionSection.module.scss */ 3356);
+/* harmony import */ var _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/SearchConfig */ 7837);
+
 
 
 
@@ -2653,20 +2968,55 @@ const QUICK_LINKS_MAP = {
         title: "Leadership / Who We Are",
         url: "https://www.indegene.com/who-we-are/leadership"
     },
+    "about us": {
+        title: "About Us",
+        url: "https://www.indegene.com/about-us"
+    },
+    about: {
+        title: "About Us",
+        url: "https://www.indegene.com/about-us"
+    },
+    "who we are": {
+        title: "Who We Are",
+        url: "https://www.indegene.com/who-we-are"
+    },
     "next platforms": {
         title: "NEXT Platforms",
         url: "https://www.indegene.com/what-we-do/next-platforms"
     },
-    privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" }
+    privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" },
+    "retention policy": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "retention policies": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "archival policy": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "preservation of records": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    }
 };
 /* helper: return a matching quick link for the user query (or null) */
 const getLinkForQuery = (query) => {
-    const q = query.toLowerCase();
-    // check for multi-word synonyms first
+    const q = query.toLowerCase().trim();
+    // check for multi-word synonyms first (order matters - more specific first)
     const phraseChecks = [
         { keys: ["case study", "case studies"], mapKey: "case studies" },
-        { keys: ["csr policy", "csr"], mapKey: "csr" },
-        { keys: ["next platforms", "next platform"], mapKey: "next platforms" }
+        { keys: ["csr policy", "corporate social responsibility"], mapKey: "csr" },
+        { keys: ["retention policy", "retention policies", "document retention"], mapKey: "retention policy" },
+        { keys: ["archival policy", "preservation of records", "document archival"], mapKey: "archival policy" },
+        { keys: ["next platforms", "next platform"], mapKey: "next platforms" },
+        { keys: ["privacy policy", "privacy"], mapKey: "privacy" },
+        { keys: ["investor relations", "investor"], mapKey: "investor" },
+        { keys: ["contact us", "contact"], mapKey: "contact" },
+        { keys: ["about us", "about indegene"], mapKey: "about us" },
+        { keys: ["who we are"], mapKey: "who we are" }
     ];
     for (const p of phraseChecks) {
         for (const k of p.keys) {
@@ -2674,7 +3024,11 @@ const getLinkForQuery = (query) => {
                 return QUICK_LINKS_MAP[p.mapKey];
         }
     }
-    // token-level matching
+    // Check for standalone CSR (must be separate word, not part of another word)
+    if (q === "csr" || q.includes(" csr ") || q.startsWith("csr ") || q.endsWith(" csr")) {
+        return QUICK_LINKS_MAP["csr"];
+    }
+    // token-level matching (for single word queries)
     const tokens = q.split(/\s+/);
     for (const t of tokens) {
         if (QUICK_LINKS_MAP[t])
@@ -2754,6 +3108,25 @@ const CONTEXT_MAP = {
         "• Enterprise Clinical / Evidence  RWE, analytics, clinical operations support.",
         "• Data, AI, and Technology solutions powering these services."
     ],
+    "indegene business units": [
+        "Indegene operates through several key business units and service lines:",
+        "• **Enterprise Commercial Solutions (ECS)**: Omnichannel marketing, content operations, marketing analytics, field force support, and commercial strategy.",
+        "• **Enterprise Medical Solutions (EM)**: Medical information, publications, scientific writing, medical review (MLR), safety support, and medical affairs.",
+        "• **Enterprise Clinical / Evidence Services**: Real-world evidence (RWE), analytics, clinical operations support, and evidence generation.",
+        "• **Global Operations**: Project management, quality assurance, compliance, vendor management, and operational excellence.",
+        "• **Technology Solutions**: NEXT platform suite, AI/ML capabilities, GenAI solutions, digital engineering, and cloud services.",
+        "• **Consulting Practice**: Strategic consulting, operating model design, and transformation execution.",
+        "Each business unit focuses on specific aspects of life sciences commercialization while working together to deliver integrated solutions."
+    ],
+    "business units in indegene": [
+        "Indegene's main business units include:",
+        "• Enterprise Commercial Solutions (ECS) - Commercial and marketing operations",
+        "• Enterprise Medical Solutions (EM) - Medical affairs and regulatory support",
+        "• Enterprise Clinical / Evidence - Clinical operations and RWE",
+        "• Global Operations - Project management and operational excellence",
+        "• Technology Solutions - NEXT platforms and AI/ML capabilities",
+        "• Consulting Practice - Strategic consulting and transformation"
+    ],
     "indegene commercial solutions": [
         "Indegene's commercial solutions help brands with:",
         "• Omnichannel HCP engagement.",
@@ -2827,6 +3200,12 @@ const CONTEXT_MAP = {
     ],
     "who is the ceo of indegene": [
         "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company."
+    ],
+    "who is manish": [
+        "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company, which was established in 1998 in Bengaluru, India. He leads strategic growth and global operations at Indegene."
+    ],
+    "manish": [
+        "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company, which was established in 1998 in Bengaluru, India. He leads strategic growth and global operations at Indegene."
     ],
     "is manish gupta founder of indegene": [
         "Yes, Manish Gupta is one of the founding members of Indegene and currently serves as its CEO.",
@@ -3288,6 +3667,562 @@ const CONTEXT_MAP = {
     ],
     "endocrinology documents": [
         "Endocrinology resources: TA Profile Chaitra Gopinath (US), PV Line Listing Best Practices, Manolo Beelke TA profile."
+    ],
+    /* =====================================================
+       INDEGENE – STRATEGIC PARTNERSHIPS & COLLABORATIONS
+    ====================================================== */
+    "indegene microsoft partnership": [
+        "In July 2024, Indegene announced a strategic collaboration with Microsoft to help life sciences companies scale up the adoption of Generative AI.",
+        "This partnership aims to drive faster innovation at scale and accelerate business impact for pharmaceutical and biotech organizations.",
+        "The collaboration focuses on leveraging Microsoft's AI capabilities combined with Indegene's life sciences domain expertise."
+    ],
+    "indegene microsoft collaboration": [
+        "Indegene and Microsoft have partnered to enable life sciences companies to adopt Generative AI solutions more effectively.",
+        "The partnership combines Microsoft's cloud and AI infrastructure with Indegene's commercialization expertise.",
+        "This helps pharma companies accelerate digital transformation and improve operational efficiency."
+    ],
+    "indegene strategic partnerships": [
+        "Indegene has formed strategic alliances to enhance its service offerings and technology capabilities.",
+        "Key partnerships include collaborations with Microsoft for GenAI adoption, technology platform providers, and industry leaders.",
+        "These partnerships help Indegene deliver integrated solutions that combine domain expertise with cutting-edge technology."
+    ],
+    /* =====================================================
+       INDEGENE – ACQUISITIONS & GROWTH
+    ====================================================== */
+    "indegene acquisitions": [
+        "Indegene has expanded its capabilities through strategic acquisitions over the years.",
+        "In October 2025, Indegene acquired BioPharm Communications, a specialized marketing services agency, to strengthen its commercialization portfolio with AdTech solutions.",
+        "Other acquisitions have included companies in medical education, multichannel marketing, real-world evidence, and consulting to build comprehensive life sciences capabilities."
+    ],
+    "indegene biopharm communications": [
+        "Indegene acquired BioPharm Communications in October 2025 to enhance its commercialization services.",
+        "This acquisition added AdTech (Advertising Technology) solutions to Indegene's portfolio.",
+        "BioPharm Communications specialized in marketing services for life sciences companies, complementing Indegene's existing commercial operations."
+    ],
+    "indegene growth strategy": [
+        "Indegene's growth strategy focuses on organic expansion and strategic acquisitions.",
+        "The company has expanded through acquisitions in medical education, multichannel marketing, RWE, consulting, and AdTech.",
+        "This approach allows Indegene to rapidly build comprehensive capabilities across the life sciences value chain."
+    ],
+    /* =====================================================
+       INDEGENE – GLOBAL PRESENCE & OFFICES
+    ====================================================== */
+    "indegene offices": [
+        "Indegene has offices and delivery centers across key healthcare markets globally.",
+        "Locations include: United States, United Kingdom, China, India (headquarters in Bengaluru), Australia, and other regions in North America, Latin America, Europe, and Asia-Pacific.",
+        "These offices support around-the-clock delivery for multinational life sciences companies."
+    ],
+    "indegene locations": [
+        "Indegene operates globally with presence in:",
+        "• North America: United States (multiple locations)",
+        "• Europe: United Kingdom and other European countries",
+        "• Asia-Pacific: India (Bengaluru headquarters), China, Australia",
+        "• Latin America: Regional presence",
+        "This global footprint enables 24/7 delivery and support for international clients."
+    ],
+    "indegene bangalore": [
+        "Indegene's global headquarters is located in Bengaluru (Bangalore), Karnataka, India.",
+        "Bengaluru serves as the primary hub for technology, operations, and strategic leadership.",
+        "The city's tech ecosystem and talent pool support Indegene's digital-first approach to life sciences."
+    ],
+    "indegene us offices": [
+        "Indegene has multiple offices in the United States to serve North American clients.",
+        "US locations support commercial operations, medical affairs, clinical services, and client engagement.",
+        "These offices work closely with the India delivery centers to provide seamless global service delivery."
+    ],
+    /* =====================================================
+       INDEGENE – COMPREHENSIVE SERVICE PORTFOLIO
+    ====================================================== */
+    "indegene service portfolio": [
+        "Indegene's comprehensive service portfolio includes:",
+        "• Medical and Regulatory Solutions: Medical information, publications, regulatory affairs, pharmacovigilance",
+        "• Commercial Solutions: Omnichannel marketing, content operations, field force support, marketing analytics",
+        "• Clinical and Evidence Services: Real-world evidence, clinical operations, data analytics",
+        "• Technology Solutions: AI platforms, digital engineering, cloud services, data management",
+        "• Training Services: Medical education, HCP training, compliance training",
+        "• Competitive and Business Intelligence: Market research, competitive analysis, business insights"
+    ],
+    "indegene medical regulatory solutions": [
+        "Indegene's medical and regulatory solutions encompass:",
+        "• Medical Information: Inquiry handling, response management, medical content development",
+        "• Publications: Scientific writing, publication planning, manuscript development",
+        "• Regulatory Affairs: Regulatory intelligence, submission support, compliance",
+        "• Pharmacovigilance: Safety operations, adverse event monitoring, signal detection",
+        "• Medical Review: MLR support, medical-legal review, content approval workflows"
+    ],
+    "indegene training services": [
+        "Indegene provides comprehensive training services including:",
+        "• Medical Education: HCP training programs, scientific education, therapeutic area training",
+        "• Compliance Training: Regulatory compliance, good practices training, quality standards",
+        "• Commercial Training: Product training, sales force training, marketing education",
+        "• Digital Training: E-learning modules, virtual training platforms, interactive content"
+    ],
+    "indegene competitive intelligence": [
+        "Indegene offers competitive and business intelligence services:",
+        "• Market Research: Industry analysis, market sizing, trend identification",
+        "• Competitive Analysis: Competitor profiling, market positioning, strategy assessment",
+        "• Business Intelligence: Data analytics, insights generation, strategic recommendations",
+        "• Market Monitoring: Real-time tracking, alert systems, competitive landscape updates"
+    ],
+    /* =====================================================
+       INDEGENE – TECHNOLOGY & DIGITAL TRANSFORMATION
+    ====================================================== */
+    "indegene digital transformation": [
+        "Indegene helps life sciences companies with digital transformation by:",
+        "• Modernizing technology stacks and integrating legacy systems",
+        "• Implementing AI and automation to improve efficiency",
+        "• Building data platforms and analytics capabilities",
+        "• Creating digital-first operating models",
+        "• Enabling cloud-based solutions for scalability and compliance"
+    ],
+    "indegene cloud services": [
+        "Indegene provides cloud and data services including:",
+        "• Cloud infrastructure setup and migration",
+        "• Data lake and data warehouse implementation",
+        "• Cloud-based analytics platforms",
+        "• Secure, compliant cloud solutions for life sciences",
+        "• Integration with existing client systems and platforms"
+    ],
+    "indegene data analytics": [
+        "Indegene's data analytics capabilities include:",
+        "• Real-world evidence (RWE) generation and analysis",
+        "• Commercial analytics: Sales, marketing, and HCP engagement analytics",
+        "• Clinical analytics: Trial data analysis, outcomes research",
+        "• Predictive analytics: Forecasting, demand planning, risk assessment",
+        "• Business intelligence dashboards and reporting"
+    ],
+    "indegene automation": [
+        "Indegene leverages automation across multiple areas:",
+        "• Content automation: Modular content creation, tagging, and management",
+        "• Process automation: Workflow automation, approval processes, routine tasks",
+        "• AI-powered automation: Intelligent document processing, data extraction, insights generation",
+        "• Marketing automation: Campaign orchestration, channel optimization, personalization",
+        "• Safety automation: Case processing, signal detection, reporting"
+    ],
+    /* =====================================================
+       INDEGENE – NEXT PLATFORMS DETAILED
+    ====================================================== */
+    "indegene next platform suite": [
+        "NEXT is Indegene's comprehensive suite of AI-powered technology platforms:",
+        "• NEXT Content: Content modularization and management",
+        "• NEXT Customer: Customer data unification and 360-degree view",
+        "• NEXT Journey: Customer journey analytics and optimization",
+        "• NEXT Action: Next-best-action recommendations for HCP engagement",
+        "• NEXT Safety: Pharmacovigilance automation and signal detection",
+        "These platforms integrate with existing CRM, marketing, and safety systems."
+    ],
+    "indegene next content": [
+        "NEXT Content platform enables:",
+        "• Content modularization: Break down content into reusable components",
+        "• Automated tagging: AI-powered content categorization and metadata",
+        "• Multi-channel adaptation: Adapt content for different channels and formats",
+        "• Version control: Track content versions and approvals",
+        "• Compliance management: Ensure content meets regulatory requirements"
+    ],
+    "indegene next customer": [
+        "NEXT Customer platform provides:",
+        "• Customer 360: Unified view of HCPs across all touchpoints",
+        "• Data unification: Integrate data from CRM, marketing, events, and other sources",
+        "• Segmentation: Advanced HCP segmentation and targeting",
+        "• Profile management: Comprehensive HCP profiles and preferences",
+        "• Data quality: Clean, deduplicated, and enriched customer data"
+    ],
+    "indegene next journey": [
+        "NEXT Journey platform offers:",
+        "• Journey mapping: Visualize and analyze customer journeys",
+        "• Journey analytics: Track engagement across touchpoints",
+        "• Channel optimization: Identify most effective channels and timing",
+        "• Journey orchestration: Coordinate multi-channel interactions",
+        "• Performance measurement: Measure journey effectiveness and ROI"
+    ],
+    "indegene next action": [
+        "NEXT Action platform provides:",
+        "• Next-best-action recommendations: AI-powered suggestions for HCP engagement",
+        "• Explainable AI: Transparent reasoning using SHAP values",
+        "• Contextual recommendations: Personalized based on HCP profile and history",
+        "• Integration: Works with Veeva CRM and other platforms",
+        "• Impact: 10-15% increase in leads, 70% rep adoption, 15-20% reduction in manual validation"
+    ],
+    "indegene next safety": [
+        "NEXT Safety platform enables:",
+        "• Automated case processing: Streamline adverse event case handling",
+        "• Signal detection: AI-powered identification of safety signals",
+        "• Compliance automation: Automated regulatory reporting",
+        "• Quality checks: Built-in validation and quality assurance",
+        "• Integration: Connects with safety databases and systems"
+    ],
+    /* =====================================================
+       INDEGENE – GENAI & AI CAPABILITIES
+    ====================================================== */
+    "indegene generative ai": [
+        "Indegene's Generative AI capabilities include:",
+        "• Content generation: Draft medical content, summaries, and communications",
+        "• Document processing: Extract insights from unstructured documents",
+        "• Query handling: Intelligent responses to medical information queries",
+        "• Personalization: Generate personalized content for HCPs",
+        "• Compliance: GenAI solutions designed to meet life sciences quality standards"
+    ],
+    "indegene genai adoption": [
+        "Indegene helps life sciences companies adopt GenAI by:",
+        "• Providing GenAI starter kits and frameworks",
+        "• Ensuring compliance and explainability",
+        "• Integrating GenAI into existing workflows",
+        "• Training teams on GenAI tools and best practices",
+        "• Measuring impact and ROI of GenAI implementations"
+    ],
+    "indegene ai platforms": [
+        "Indegene offers AI-first platforms that include:",
+        "• Machine learning models for HCP engagement",
+        "• Natural language processing for document analysis",
+        "• Computer vision for image and document processing",
+        "• Predictive analytics for forecasting and planning",
+        "• Explainable AI for transparent decision-making"
+    ],
+    "indegene machine learning": [
+        "Indegene applies machine learning across multiple use cases:",
+        "• HCP engagement recommendations with explainable AI",
+        "• Content optimization and personalization",
+        "• Demand forecasting and planning",
+        "• Safety signal detection",
+        "• Customer segmentation and targeting",
+        "• Predictive analytics for commercial and clinical outcomes"
+    ],
+    /* =====================================================
+       INDEGENE – SUSTAINABILITY & CSR
+    ====================================================== */
+    "indegene sustainability": [
+        "Indegene is committed to sustainability and corporate social responsibility.",
+        "The company publishes annual sustainability reports covering environmental, social, and governance (ESG) initiatives.",
+        "Key focus areas include: environmental impact reduction, employee well-being, community engagement, and ethical business practices.",
+        "Indegene integrates sustainability into its operations and client solutions."
+    ],
+    "indegene csr initiatives": [
+        "Indegene's Corporate Social Responsibility initiatives include:",
+        "• Community health programs and medical education",
+        "• Environmental sustainability efforts",
+        "• Employee development and well-being programs",
+        "• Ethical business practices and governance",
+        "• Support for healthcare access and education",
+        "Details are available in the CSR Policy document."
+    ],
+    "csr policy": [
+        "Indegene's Corporate Social Responsibility (CSR) Policy outlines the company's commitment to sustainable business practices and social impact.",
+        "The CSR Policy covers:",
+        "• Community health programs and medical education initiatives",
+        "• Environmental sustainability and carbon footprint reduction",
+        "• Employee development, well-being, and diversity programs",
+        "• Ethical business practices and corporate governance",
+        "• Support for healthcare access and education",
+        "The full CSR Policy document is available as a PDF for detailed information on Indegene's social responsibility framework and initiatives."
+    ],
+    "csr policies": [
+        "Indegene's Corporate Social Responsibility (CSR) policies demonstrate the company's commitment to sustainable business practices and social impact.",
+        "The CSR policies cover:",
+        "• Community health programs and medical education initiatives",
+        "• Environmental sustainability and carbon footprint reduction",
+        "• Employee development, well-being, and diversity programs",
+        "• Ethical business practices and corporate governance",
+        "• Support for healthcare access and education",
+        "The full CSR Policy document is available as a PDF for detailed information on Indegene's social responsibility framework and initiatives."
+    ],
+    "indegene csr policy": [
+        "Indegene's Corporate Social Responsibility (CSR) Policy demonstrates the company's commitment to making a positive social and environmental impact.",
+        "Key areas covered in the CSR Policy include community health programs, environmental sustainability, employee well-being, ethical business practices, and support for healthcare access and education.",
+        "The policy document provides comprehensive details on Indegene's CSR framework, initiatives, and annual reporting practices."
+    ],
+    "indegene csr policies": [
+        "Indegene's Corporate Social Responsibility (CSR) policies demonstrate the company's commitment to making a positive social and environmental impact.",
+        "Key areas covered in the CSR policies include community health programs, environmental sustainability, employee well-being, ethical business practices, and support for healthcare access and education.",
+        "The policy documents provide comprehensive details on Indegene's CSR framework, initiatives, and annual reporting practices."
+    ],
+    "indegene esg": [
+        "Indegene focuses on Environmental, Social, and Governance (ESG) factors:",
+        "• Environmental: Reducing carbon footprint, sustainable operations",
+        "• Social: Employee welfare, community engagement, diversity and inclusion",
+        "• Governance: Ethical practices, transparency, compliance",
+        "The company publishes annual sustainability reports detailing ESG performance and initiatives."
+    ],
+    /* =====================================================
+       INDEGENE – INDUSTRY RECOGNITION & AWARDS
+    ====================================================== */
+    "indegene industry recognition": [
+        "Indegene has received recognition from industry analysts and organizations:",
+        "• ISG Provider Lens Leader (2025) for life sciences digital services in commercial operations",
+        "• Recognized as a leader in digital commercialization services",
+        "• Acknowledged for innovation in life sciences technology and operations",
+        "• Recognized workplace culture and employee engagement"
+    ],
+    "indegene isg recognition": [
+        "In 2025, Indegene was identified as a Leader in ISG Provider Lens evaluations.",
+        "The recognition was specifically for life sciences digital services in commercial operations.",
+        "This reflects strong capabilities, client feedback, and proven results in digital commercial transformation.",
+        "ISG Provider Lens is a respected industry evaluation framework for technology and service providers."
+    ],
+    "indegene awards": [
+        "Indegene has received various awards and recognitions including:",
+        "• Industry analyst recognition for digital services leadership",
+        "• Workplace culture and employee engagement awards",
+        "• Innovation awards for technology solutions",
+        "• Client satisfaction and partnership awards",
+        "These recognitions validate Indegene's position as a trusted partner in life sciences."
+    ],
+    /* =====================================================
+       INDEGENE – THERAPEUTIC AREAS & EXPERTISE
+    ====================================================== */
+    "indegene therapeutic areas": [
+        "Indegene has expertise across multiple therapeutic areas:",
+        "• Oncology: Cancer treatments, supportive care, clinical trials",
+        "• Cardiovascular: Heart disease, hypertension, cardiac care",
+        "• Endocrinology: Diabetes, metabolic disorders, hormone therapies",
+        "• Neurology: Neurological disorders, CNS conditions",
+        "• Ophthalmology: Eye diseases, vision care",
+        "• Dermatology: Skin conditions, dermatological treatments",
+        "• Rare Diseases: Orphan drugs, specialized treatments"
+    ],
+    "indegene oncology expertise": [
+        "Indegene has deep expertise in oncology including:",
+        "• Medical communications: Publications, abstracts, MSL decks",
+        "• Commercial support: Sales enablement, HCP engagement",
+        "• Clinical support: Trial operations, data management",
+        "• Case studies demonstrate success in driving incremental sales and improving medical information support",
+        "• Experience across various cancer types: breast cancer, hematological malignancies, solid tumors"
+    ],
+    "indegene cardiovascular expertise": [
+        "Indegene provides services in cardiovascular therapeutic areas:",
+        "• Medical affairs support for cardiovascular drugs",
+        "• Clinical evidence generation and RWE studies",
+        "• Commercial operations for cardiovascular brands",
+        "• Expertise in adult congenital heart disease, hypertension, heart failure, and other CV conditions"
+    ],
+    /* =====================================================
+       INDEGENE – CLIENT SUCCESS & CASE STUDIES
+    ====================================================== */
+    "indegene client success": [
+        "Indegene has delivered measurable results for clients:",
+        "• >30% faster turnaround times in medical communications",
+        "• >80% first submission acceptance rates",
+        "• $14.2M incremental sales for oncology brands",
+        "• 10-15% increase in leads through AI-powered recommendations",
+        "• 70% rep adoption of AI recommendations",
+        "• 15-20% reduction in manual validation efforts",
+        "• Average CSAT scores of 4.0+ across multiple engagements"
+    ],
+    "indegene case studies": [
+        "Indegene has published numerous case studies demonstrating success:",
+        "• Oncology: Medical communications support, incremental sales growth",
+        "• Hemato-oncology: End-to-end medical communications across US, Europe, APAC",
+        "• Commercial: Omnichannel HCP engagement and sales growth",
+        "• Technology: AI-powered recommendation engines and automation",
+        "Case studies are available on the Indegene website and in the knowledge management system."
+    ],
+    "indegene roi": [
+        "Indegene delivers measurable ROI for clients through:",
+        "• Faster time-to-market for products and campaigns",
+        "• Increased sales and market share",
+        "• Reduced operational costs through automation",
+        "• Improved compliance and quality",
+        "• Enhanced HCP engagement and satisfaction",
+        "• Better resource utilization and efficiency"
+    ],
+    /* =====================================================
+       INDEGENE – COMPLIANCE & QUALITY
+    ====================================================== */
+    "indegene compliance": [
+        "Indegene maintains strict compliance standards:",
+        "• Regulatory compliance: FDA, EMA, and other health authority requirements",
+        "• Quality certifications: CMMI, ISO standards, industry best practices",
+        "• Data security: HIPAA, GDPR, and other data protection regulations",
+        "• Medical-legal review: MLR processes and approval workflows",
+        "• Audit readiness: Continuous monitoring and quality assurance"
+    ],
+    "indegene quality standards": [
+        "Indegene adheres to high quality standards:",
+        "• CMMI certification for process maturity",
+        "• ISO standards for quality management",
+        "• Industry best practices: GPP4, ICMJE guidelines for publications",
+        "• Quality metrics tracking and reporting",
+        "• Continuous improvement processes",
+        "• Quality assurance at every stage of service delivery"
+    ],
+    "indegene data security": [
+        "Indegene prioritizes data security and privacy:",
+        "• HIPAA compliance for healthcare data",
+        "• GDPR compliance for European data",
+        "• SOC 2 and other security certifications",
+        "• Secure cloud infrastructure",
+        "• Data encryption and access controls",
+        "• Regular security audits and assessments",
+        "• Patient privacy protection in all operations"
+    ],
+    "privacy policy": [
+        "Indegene's Privacy Policy outlines how the company collects, uses, protects, and manages personal information and data.",
+        "The Privacy Policy covers:",
+        "• Data collection and usage practices",
+        "• Data security measures and encryption",
+        "• Compliance with privacy regulations (HIPAA, GDPR, etc.)",
+        "• Patient privacy protection",
+        "• User rights and data access controls",
+        "• Cookie and tracking technology usage",
+        "The full Privacy Policy document is available on Indegene's website and provides comprehensive details on data privacy and security practices."
+    ],
+    "privacy policies": [
+        "Indegene's privacy policies demonstrate the company's commitment to protecting personal information and data privacy.",
+        "The privacy policies cover:",
+        "• Data collection and usage practices",
+        "• Data security measures and encryption",
+        "• Compliance with privacy regulations (HIPAA, GDPR, etc.)",
+        "• Patient privacy protection",
+        "• User rights and data access controls",
+        "• Cookie and tracking technology usage",
+        "The full Privacy Policy document is available on Indegene's website and provides comprehensive details on data privacy and security practices."
+    ],
+    "indegene privacy policy": [
+        "Indegene's Privacy Policy demonstrates the company's commitment to protecting personal information and data privacy.",
+        "The policy covers data collection, usage, security measures, compliance with privacy regulations (HIPAA, GDPR), patient privacy protection, and user rights.",
+        "Indegene follows industry best practices for data security and privacy, ensuring compliance with healthcare data protection standards and international privacy regulations."
+    ],
+    "indegene privacy policies": [
+        "Indegene's privacy policies demonstrate the company's commitment to protecting personal information and data privacy.",
+        "The policies cover data collection, usage, security measures, compliance with privacy regulations (HIPAA, GDPR), patient privacy protection, and user rights.",
+        "Indegene follows industry best practices for data security and privacy, ensuring compliance with healthcare data protection standards and international privacy regulations."
+    ],
+    /* =====================================================
+       INDEGENE – RETENTION POLICY / ARCHIVAL POLICY
+    ====================================================== */
+    "retention policy": [
+        "Indegene's Policy on Preservation of Records/Archival Policy outlines the company's document retention and archival procedures.",
+        "The policy is formulated in accordance with SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015 and the Companies Act, 2013.",
+        "Key aspects of the retention policy include:",
+        "• Documents are classified into mandatory (under governing laws) and non-mandatory categories",
+        "• Documents may be preserved permanently or for a minimum period of eight years after completion of transactions",
+        "• Documents can be stored in electronic mode",
+        "• Website disclosures must be maintained for a minimum period of five years under Listing Regulations",
+        "• The policy covers preservation of Board/Committee meeting records, general meeting records, contracts, legal documents, financial records, and more",
+        "The full Policy on Preservation of Records/Archival Policy document (Document ID: LG_P_011, Version 4.0, Effective Date: 28th April 2025) is available at: https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    ],
+    "indegene retention policy": [
+        "Indegene's Policy on Preservation of Records/Archival Policy (Document ID: LG_P_011, Version 4.0) establishes guidelines for document retention and archival.",
+        "The policy ensures compliance with SEBI Listing Regulations and the Companies Act, 2013.",
+        "Documents are preserved considering their importance, usefulness, and information value, with some documents requiring permanent preservation and others maintained for a minimum of eight years.",
+        "The policy also specifies that disclosures made to stock exchanges must be hosted on the company website for a minimum period of five years."
+    ],
+    "archival policy": [
+        "Indegene's Archival Policy (Policy on Preservation of Records) defines the process for preservation and archival of documents, including those maintained in electronic form and disclosed on the company website.",
+        "The policy classifies documents into categories based on statutory requirements and business needs, with preservation periods ranging from permanent to eight years minimum.",
+        "All employees are required to comply with the policy, and departmental heads are responsible for ensuring proper document preservation and archival procedures."
+    ],
+    "preservation of records": [
+        "Indegene's Policy on Preservation of Records ensures systematic identification, categorization, maintenance, review, retention, and destruction of documents received or created in the course of business.",
+        "The policy applies to all departments and covers both physical and electronic records, ensuring they are maintained with the same degree of confidentiality and care.",
+        "Documents are preserved using methods such as department/function-wise, subject/topic-wise, or chronologically, with appropriate backup provisions for electronic records."
+    ],
+    "retention policies": [
+        "Indegene's Policy on Preservation of Records/Archival Policy outlines the company's document retention and archival procedures.",
+        "The policy is formulated in accordance with SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015 and the Companies Act, 2013.",
+        "Key aspects of the retention policies include:",
+        "• Documents are classified into mandatory (under governing laws) and non-mandatory categories",
+        "• Documents may be preserved permanently or for a minimum period of eight years after completion of transactions",
+        "• Documents can be stored in electronic mode",
+        "• Website disclosures must be maintained for a minimum period of five years under Listing Regulations",
+        "• The policy covers preservation of Board/Committee meeting records, general meeting records, contracts, legal documents, financial records, and more",
+        "The full Policy on Preservation of Records/Archival Policy document (Document ID: LG_P_011, Version 4.0, Effective Date: 28th April 2025) is available at: https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    ],
+    "indegene retention policies": [
+        "Indegene's Policy on Preservation of Records/Archival Policy (Document ID: LG_P_011, Version 4.0) establishes guidelines for document retention and archival.",
+        "The policy ensures compliance with SEBI Listing Regulations and the Companies Act, 2013.",
+        "Documents are preserved considering their importance, usefulness, and information value, with some documents requiring permanent preservation and others maintained for a minimum of eight years.",
+        "The policy also specifies that disclosures made to stock exchanges must be hosted on the company website for a minimum period of five years."
+    ],
+    /* =====================================================
+       INDEGENE – CAREER DEVELOPMENT & BENEFITS
+    ====================================================== */
+    "indegene career development": [
+        "Indegene offers career development opportunities:",
+        "• Learning and development programs",
+        "• Cross-functional project exposure",
+        "• Global client engagement",
+        "• Technology and domain skill building",
+        "• Mentorship and coaching",
+        "• Internal mobility and growth paths",
+        "• Certification and training support"
+    ],
+    "indegene employee benefits": [
+        "Indegene provides comprehensive employee benefits:",
+        "• Competitive compensation packages",
+        "• Health and wellness programs",
+        "• Flexible work arrangements (varies by role and project)",
+        "• Learning and development opportunities",
+        "• Global exposure and diverse projects",
+        "• Collaborative work environment",
+        "• Recognition and rewards programs"
+    ],
+    "indegene hiring process": [
+        "Indegene's hiring process typically includes:",
+        "• Resume screening and initial review",
+        "• Technical/functional assessment (role-dependent)",
+        "• Interviews with hiring managers and team members",
+        "• HR discussion on fit, expectations, and compensation",
+        "• Some roles may include case studies or written tests",
+        "• Background verification and offer process",
+        "The process is designed to assess both technical skills and cultural fit."
+    ],
+    /* =====================================================
+       INDEGENE – CONTACT & BUSINESS INQUIRIES
+    ====================================================== */
+    "how to contact indegene": [
+        "You can contact Indegene through:",
+        "• Official website contact forms: https://www.indegene.com/contact-us",
+        "• Regional office contacts (available on website)",
+        "• Business inquiries: Commercial, medical, or technology-related discussions",
+        "• Partnership inquiries: Strategic partnerships and collaborations",
+        "• Media queries: Press and media relations",
+        "• Career inquiries: Visit https://careers.indegene.com/"
+    ],
+    "indegene business inquiry": [
+        "For business inquiries, Indegene can be reached:",
+        "• Through the contact form on the official website",
+        "• Via regional office contacts",
+        "• For commercial services: Commercial operations and marketing",
+        "• For medical services: Medical affairs and regulatory",
+        "• For technology services: Digital transformation and platforms",
+        "• For consulting: Strategic consulting and transformation"
+    ],
+    "indegene partnership": [
+        "Indegene welcomes partnership opportunities:",
+        "• Technology partnerships: Platform integrations, co-development",
+        "• Service partnerships: Complementary service providers",
+        "• Strategic alliances: Long-term collaborative relationships",
+        "• Channel partnerships: Distribution and go-to-market partnerships",
+        "Partnership inquiries can be made through the contact page on the Indegene website."
+    ],
+    /* =====================================================
+       INDEGENE – INVESTOR RELATIONS
+    ====================================================== */
+    "indegene investor relations": [
+        "Indegene Limited is a publicly listed company with active investor relations:",
+        "• Investor relations website: https://ir.indegene.com/",
+        "• Financial reports and earnings releases",
+        "• Annual reports and corporate governance documents",
+        "• Stock information and trading details",
+        "• Investor presentations and webcasts",
+        "• Contact information for investor inquiries"
+    ],
+    "indegene stock": [
+        "Indegene Limited is publicly traded:",
+        "• Listed on Indian stock exchanges",
+        "• Stock information available on the investor relations website",
+        "• Financial performance and quarterly results published regularly",
+        "• Corporate governance and compliance information available",
+        "For detailed stock information, visit https://ir.indegene.com/"
+    ],
+    "indegene financial performance": [
+        "Indegene publishes financial performance regularly:",
+        "• Quarterly earnings reports",
+        "• Annual financial statements",
+        "• Revenue growth and profitability metrics",
+        "• Business segment performance",
+        "• Strategic initiatives and investments",
+        "All financial information is available on the investor relations website."
     ]
 };
 /* =========================================================
@@ -3329,6 +4264,487 @@ const handleInternalQueries = (query) => {
     return null;
 };
 /* =========================================================
+   OUT-OF-DOMAIN QUERY DETECTION
+   Detects queries clearly outside Indegene/knowledge domain
+======================================================== */
+const isOutOfDomainQuery = (query) => {
+    const text = query.toLowerCase().trim();
+    // Weather-related queries (comprehensive)
+    const weatherKeywords = [
+        "weather", "temperature", "forecast", "rain", "snow", "sunny",
+        "cloudy", "humidity", "wind", "climate", "storm", "hurricane",
+        "weather today", "weather forecast", "what's the weather",
+        "how's the weather", "weather report"
+    ];
+    if (weatherKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene") && !text.includes("treatment") && !text.includes("medical")) {
+        return true;
+    }
+    // Sports-related queries (comprehensive)
+    const sportsKeywords = [
+        "sports", "football", "soccer", "basketball", "cricket", "baseball",
+        "tennis", "golf", "match", "game", "score", "player", "team", "league",
+        "who won", "who won the game", "who won the match", "what's the score",
+        "score of the", "football match", "cricket match", "basketball game"
+    ];
+    if (sportsKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene") && !text.includes("case study")) {
+        return true;
+    }
+    // Entertainment queries (comprehensive)
+    const entertainmentKeywords = [
+        "movie", "film", "actor", "actress", "celebrity", "music", "song",
+        "album", "tv show", "television", "netflix", "youtube video",
+        "tell me about movies", "tell me about films", "tell me about music",
+        "best movie", "best film", "movie recommendation", "film recommendation"
+    ];
+    if (entertainmentKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene")) {
+        return true;
+    }
+    // Recreational/personal activity requests (e.g., "i need to play", "i want to play")
+    if ((text.includes("i need to") || text.includes("i want to") || text.includes("need to") || text.includes("want to")) &&
+        (text.includes("play") || text.includes("game") || text.includes("sport") || text.includes("fun") ||
+            text.includes("entertainment") || text.includes("hobby") || text.includes("recreation")) &&
+        !text.includes("indegene") && !text.includes("work") && !text.includes("job") && !text.includes("career")) {
+        return true;
+    }
+    // Personal financial requests unrelated to healthcare (e.g., "i need money for bike")
+    if ((text.includes("i need money") || text.includes("need money") || text.includes("i want money")) &&
+        (text.includes("for") || text.includes("to buy") || text.includes("to get")) &&
+        !text.includes("cancer") && !text.includes("treatment") && !text.includes("disease") &&
+        !text.includes("medical") && !text.includes("health") && !text.includes("hospital") &&
+        !text.includes("indegene") && !text.includes("salary") && !text.includes("compensation")) {
+        return true;
+    }
+    // Cooking/recipes (comprehensive)
+    if ((text.includes("recipe") || text.includes("cook") || text.includes("how to make") ||
+        text.includes("how to cook") || text.match(/recipe for/i) ||
+        text.match(/how to cook \w+/i) || text.match(/recipe of/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("treatment")) {
+        return true;
+    }
+    // General knowledge that's clearly not about Indegene
+    // Only flag if it's clearly unrelated (no Indegene keywords)
+    const unrelatedPatterns = [
+        /^what is the (capital|population|currency|language|meaning) of/i,
+        /^what's the (capital|population|currency|language) of/i,
+        /capital of (france|india|usa|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /^who won (the|a)/i,
+        /^when did (world war|the war)/i,
+        /^tell me about (cats|dogs|animals|plants|birds|trees|flowers|mountains|oceans|rivers|lakes)/i,
+        /^what is (water|life|love|happiness|philosophy|earth|mars|jupiter|planet|f1|formula)/i,
+        /meaning of (life|existence|universe)/i,
+        /^who is the (president|prime minister|king|queen|leader) of/i,
+        /^who is (president|prime minister|king|queen) of/i,
+        /president of (india|usa|france|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /prime minister of (india|usa|france|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /^tell me about (cat|dog|bird|tree|flower|mountain|ocean|river|lake|animal|plant)/i
+    ];
+    if (unrelatedPatterns.some(pattern => pattern.test(text)) &&
+        !text.includes("indegene") && !text.includes("skysecure") &&
+        !text.includes("medical") && !text.includes("treatment") && !text.includes("health")) {
+        return true;
+    }
+    // Political/general knowledge queries (including typos like "indai" for "india")
+    // Check for country names or common misspellings
+    const countryKeywords = ["india", "indai", "usa", "france", "germany", "china", "japan", "uk", "england", "spain", "italy"];
+    if ((text.includes("president of") || text.includes("prime minister of") ||
+        text.includes("king of") || text.includes("queen of")) &&
+        (countryKeywords.some(country => text.includes(country)) ||
+            text.match(/president of \w+/i) || text.match(/prime minister of \w+/i)) &&
+        !text.includes("indegene") && !text.includes("ceo")) {
+        return true;
+    }
+    // Sports personalities (F1, MotoGP, etc.)
+    const sportsPersonalities = [
+        "marquez", "marq marquez", "lewis hamilton", "max verstappen",
+        "messi", "ronaldo", "federer", "nadal", "djokovic"
+    ];
+    if (sportsPersonalities.some(name => text.includes(name)) &&
+        !text.includes("indegene")) {
+        return true;
+    }
+    // F1 / Formula 1 / Racing
+    if ((text.includes("f1") || text.includes("formula 1") || text.includes("formula one") ||
+        text.includes("racing") || text.includes("motogp")) &&
+        !text.includes("indegene") && !text.includes("treatment")) {
+        return true;
+    }
+    // Philosophical or abstract questions
+    if ((text.includes("meaning of") || text.includes("what is the meaning")) &&
+        !text.includes("indegene") && !text.includes("life sciences")) {
+        return true;
+    }
+    // Basic science/astronomy questions unrelated to Indegene
+    if ((text.includes("what is water") || text.includes("what is air") ||
+        text.includes("what is fire") || text.includes("what is earth") ||
+        text.includes("what is the sun") || text.includes("what is the moon")) &&
+        !text.includes("indegene") && !text.includes("treatment") && !text.includes("medical")) {
+        return true;
+    }
+    // Technology products unrelated to Indegene (unless specifically about Indegene's use)
+    const techProducts = [
+        "sharepoint", "excel", "word", "powerpoint", "outlook", "teams",
+        "windows", "linux", "android", "ios", "javascript", "python", "java",
+        "github", "git", "stackoverflow", "docker", "kubernetes"
+    ];
+    if (techProducts.some(product => text.includes(product)) &&
+        !text.includes("indegene") && !text.includes("uses") && !text.includes("using")) {
+        // Only flag if it's a general "what is" or "how is" question about the product
+        if (text.includes("what is") || text.includes("tell me about") ||
+            text.includes("how is") || text.match(/^how is \w+/i)) {
+            return true;
+        }
+    }
+    // Phone/device queries (e.g., "is s 23 a good phone", "is iphone good")
+    if ((text.match(/is\s+(s\s*\d+|iphone|samsung|android|phone|mobile)\s+(good|bad|better|worse)/i) ||
+        text.match(/is\s+\w+\s+(phone|mobile|device)\s+(good|bad)/i) ||
+        text.includes("good phone") || text.includes("best phone")) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+    }
+    // Unclear queries about "km" (Knowledge Management) - should be handled as general query
+    // But if it's too unclear, decline it
+    if ((text.match(/^(what|how|who|where|when)\s+(is|are|was|were)\s+(the\s+)?km$/i) ||
+        text.match(/^(wht|wat|wht)\s+(is|are)\s+(the\s+)?km$/i)) &&
+        !text.includes("indegene") && !text.includes("knowledge management")) {
+        // This is unclear - could be asking about KM assistant or something else
+        // Let it pass through to general queries handler
+        return false; // Don't flag as out-of-domain, let general queries handle it
+    }
+    // Unclear/personal queries (e.g., "are we good", "dash people", "how to find a life")
+    if ((text === "are we good" || text === "are we" || text.match(/^are\s+we\s+\w+$/i)) &&
+        !text.includes("indegene") && !text.includes("company") && !text.includes("team")) {
+        return true;
+    }
+    // Gibberish/unclear queries with typos (e.g., "what isa helpmet", "dash people")
+    if (text.match(/^(what|how|who|where|when)\s+isa\s+\w+/i) ||
+        (text.length < 20 && text.match(/^(dash|what|how)\s+\w+$/i) &&
+            !text.includes("indegene") && !text.includes("medical") && !text.includes("health"))) {
+        // Very unclear queries - let them pass to gibberish handler
+        return false;
+    }
+    // Personal/romantic queries (e.g., "i like you do you like me")
+    if ((text.includes("i like you") || text.includes("do you like me") ||
+        text.includes("i love you") || text.includes("do you love me") ||
+        text.match(/i\s+(like|love)\s+you/i) || text.match(/do\s+you\s+(like|love)\s+me/i)) &&
+        !text.includes("indegene") && !text.includes("service") && !text.includes("company")) {
+        return true;
+    }
+    // Relationship advice queries (e.g., "how to make people hate me", "how to make people love me")
+    if ((text.includes("how to make people") || text.includes("how to make someone") ||
+        text.match(/how\s+to\s+make\s+(people|someone)\s+(hate|love|like|dislike)/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+    }
+    // "How to play" - unclear recreational query
+    if (text.match(/^how\s+to\s+play$/i) || text.match(/^how\s+to\s+play\s*$/i) &&
+        !text.includes("indegene") && !text.includes("game") && !text.includes("sport")) {
+        return true;
+    }
+    // "How to find a life" - unclear personal query
+    if (text.match(/how\s+to\s+find\s+(a\s+)?life/i) &&
+        !text.includes("indegene") && !text.includes("career") && !text.includes("job")) {
+        return true;
+    }
+    // Mental health crisis queries (e.g., "how to commit suicide") - provide resources, don't answer
+    if ((text.includes("suicide") || text.includes("kill myself") || text.includes("end my life") ||
+        text.includes("how to die") || text.match(/how\s+to\s+(commit\s+)?suicide/i) ||
+        text.match(/how\s+to\s+kill\s+(myself|yourself)/i)) &&
+        !text.includes("indegene") && !text.includes("prevention") && !text.includes("help")) {
+        return true; // Flag as out-of-domain, but we should provide resources in the response
+    }
+    // "How do i view a document" - might be about system feature, but if unclear, decline
+    if (text.match(/how\s+(do|can)\s+i\s+view\s+(a\s+)?document/i) &&
+        !text.includes("indegene") && !text.includes("knowledge") && !text.includes("case study")) {
+        // This could be about the document viewing feature - let it pass through
+        return false;
+    }
+    // API/endpoint/system architecture questions (technical queries about the chatbot itself)
+    if ((text.includes("api") || text.includes("endpoint") || text.includes("service")) &&
+        (text.includes("using") || text.includes("use") || text.includes("what") || text.includes("which") ||
+            text.includes("show") || text.includes("give") || text.includes("tell") ||
+            text.match(/what.*api/i) || text.match(/which.*api/i) || text.match(/give.*api/i))) {
+        // Only flag if it's asking about APIs/endpoints/services in general (not about Indegene's APIs)
+        if (!text.includes("indegene") && !text.includes("next") && !text.includes("platform")) {
+            return true;
+        }
+    }
+    // Generic "what is X" queries that are clearly not Indegene-related
+    // Common words that are definitely not about Indegene/life sciences
+    const unrelatedCommonWords = [
+        "food", "views", "view", "table", "chair", "book", "pen", "paper", "car", "house",
+        "dog", "cat", "bird", "tree", "flower", "mountain", "ocean", "river", "lake",
+        "computer", "phone", "television", "radio", "music", "art", "painting", "drawing",
+        "sport", "game", "movie", "film", "actor", "singer", "dancer", "writer", "author",
+        "country", "city", "town", "village", "street", "road", "building", "school",
+        "university", "college", "student", "teacher", "doctor" // Note: "doctor" might be medical, but "what is doctor" is too generic
+    ];
+    // Check for generic "what is X" or "what are X" queries with unrelated words
+    // Also handle typos: "waht is", "wjhtis", "wt is", "what isa"
+    if ((text.match(/^what is (the )?(use of )?(\w+)/i) ||
+        text.match(/^waht is (the )?(use of )?(\w+)/i) || // Typo: "waht" for "what"
+        text.match(/^wjhtis (the )?(use of )?(\w+)/i) || // Typo: "wjhtis" for "what is"
+        text.match(/^wt is (the )?(use of )?(\w+)/i) || // Typo: "wt" for "what"
+        text.match(/^what are (the )?(\w+)/i) ||
+        text.match(/^tell me (about |what is )?(\w+)/i)) &&
+        !text.includes("indegene") &&
+        !text.includes("skysecure") &&
+        !text.includes("prma") &&
+        !text.includes("heor") &&
+        !text.includes("regulatory") &&
+        !text.includes("medical") &&
+        !text.includes("clinical") &&
+        !text.includes("pharma") &&
+        !text.includes("biotech") &&
+        !text.includes("life sciences") &&
+        !text.includes("healthcare") &&
+        !text.includes("oncology") &&
+        !text.includes("therapy") &&
+        !text.includes("treatment") &&
+        !text.includes("drug") &&
+        !text.includes("medicine") &&
+        !text.includes("covid") &&
+        !text.includes("coronavirus") &&
+        !text.includes("pandemic") &&
+        !text.includes("disease") &&
+        !text.includes("health") &&
+        !text.includes("medical") &&
+        !text.includes("cancer") &&
+        !text.includes("treatment") &&
+        !text.includes("therapy") &&
+        !text.includes("symptom") &&
+        !text.includes("diagnosis") &&
+        !text.includes("patient")) {
+        // Extract the main word from the query (handle typos)
+        const match = text.match(/^what is (the )?(use of )?(\w+)/i) ||
+            text.match(/^waht is (the )?(use of )?(\w+)/i) ||
+            text.match(/^wjhtis (the )?(use of )?(\w+)/i) ||
+            text.match(/^wt is (the )?(use of )?(\w+)/i) ||
+            text.match(/^what are (the )?(\w+)/i) ||
+            text.match(/^tell me (about |what is )?(\w+)/i);
+        if (match) {
+            const mainWord = (match[3] || match[2] || match[1] || "").toLowerCase().trim();
+            // If it's a very generic word that's clearly not Indegene-related, flag it
+            // BUT: Exclude healthcare/medical terms (covid, coronavirus, disease, cancer, etc.)
+            const isHealthcareTerm = mainWord.match(/^(covid|coronavirus|pandemic|disease|health|medical|treatment|therapy|symptom|diagnosis|patient|medicine|drug|vaccine|infection|virus|cancer|diabetes|hypertension|asthma|arthritis|alzheimer|parkinson|epilepsy|stroke|heart|lung|kidney|liver|brain|mental|depression|anxiety|autism|adhd|ptsd|bipolar|schizophrenia|autism|dementia|migraine|fibromyalgia|osteoporosis|anemia|leukemia|lymphoma|melanoma|tumor|tumour)/i);
+            if ((unrelatedCommonWords.includes(mainWord) ||
+                mainWord.length < 4 || // Very short words are likely generic
+                (mainWord.length <= 6 && !mainWord.match(/^(indegene|skysecure|prma|heor|medical|clinical|pharma|biotech|regulatory|oncology|therapy|treatment|drug|medicine|covid|coronavirus|pandemic|disease|health|symptom|diagnosis|patient|vaccine|infection|virus|cancer|diabetes|hypertension|asthma|arthritis|alzheimer|parkinson|epilepsy|stroke|heart|lung|kidney|liver|brain|mental|depression|anxiety|autism|adhd|ptsd|bipolar|schizophrenia|autism|dementia|migraine|fibromyalgia|osteoporosis|anemia|leukemia|lymphoma|melanoma|tumor|tumour)/i))) &&
+                !isHealthcareTerm) {
+                // Additional check: if it's a single word query like "what is views", flag it
+                const words = text.split(/\s+/).filter(w => w.length > 2);
+                if (words.length <= 4) { // Very short queries are likely generic
+                    return true;
+                }
+            }
+        }
+    }
+    // Food-related queries (comprehensive - from test questions)
+    if ((text.includes("food") || text.includes("eat") || text.includes("meal") ||
+        text.includes("recipe") || text.includes("cooking") || text.includes("cuisine") ||
+        text.includes("pasta") || text.includes("chicken") || text.includes("pizza") ||
+        text.includes("breakfast") || text.includes("lunch") || text.includes("dinner") ||
+        text.match(/recipe for \w+/i) || text.match(/how to cook \w+/i) ||
+        text.match(/recipe of \w+/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("treatment") &&
+        !text.includes("diet") && !text.includes("nutrition") && !text.includes("health")) {
+        return true;
+    }
+    // Legal/philosophical queries (e.g., "retribution of acts")
+    const legalPhilosophicalTerms = [
+        "retribution", "acts", "legal", "law", "justice", "punishment", "crime",
+        "philosophy", "ethics", "morality", "virtue", "sin", "karma", "dharma",
+        "constitution", "legislation", "statute", "regulation" // Note: "regulation" might be Indegene-related, so check context
+    ];
+    // Check for "X of Y" pattern with legal/philosophical terms
+    if ((legalPhilosophicalTerms.some(term => text.includes(term)) ||
+        text.match(/\b(retribution|justice|punishment|philosophy|ethics|morality)\s+of\s+\w+/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health") &&
+        !text.includes("regulatory intelligence") && !text.includes("regulatory compliance") &&
+        !text.includes("regulatory affairs") && !text.includes("regulatory services")) {
+        return true;
+    }
+    // AI/chatbot comparison queries (e.g., "chat gpt is better", "chatgpt vs")
+    const aiChatbotTerms = [
+        "chatgpt", "chat gpt", "openai", "gpt", "bard", "claude", "ai chatbot",
+        "is better", "vs ", "versus", "compared to", "better than", "worse than"
+    ];
+    if (aiChatbotTerms.some(term => text.includes(term)) &&
+        !text.includes("indegene") && !text.includes("next") && !text.includes("platform")) {
+        return true;
+    }
+    // Insulting/offensive queries directed at the bot (e.g., "why are you dumb", "why are you stupid")
+    const insultingTerms = [
+        "dumb", "stupid", "bad", "useless", "terrible", "awful", "horrible",
+        "suck", "sucks", "worst", "idiot", "fool", "foolish", "dumbass",
+        "retarded", "pathetic", "worthless", "garbage", "trash", "crap",
+        "slow", "wrong", "incorrect", "inaccurate", "broken", "not working"
+    ];
+    // Pattern: "why are you [adjective]" or "why is you [adjective]" with insulting terms
+    const whyAreYouInsultPattern = /^why (are|is) you\s+(\w+)/i;
+    if (whyAreYouInsultPattern.test(text)) {
+        const match = text.match(whyAreYouInsultPattern);
+        if (match && match[2]) {
+            const adjective = match[2].toLowerCase();
+            if (insultingTerms.some(term => adjective.includes(term) || term.includes(adjective)) &&
+                !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+                return true;
+            }
+        }
+    }
+    // Also check for insulting terms in any "you are/you're" pattern
+    if ((text.match(/you are \w+/i) || text.match(/you're \w+/i) ||
+        text.match(/why are you \w+/i) || text.match(/why is you \w+/i)) &&
+        insultingTerms.some(term => text.includes(term)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+    }
+    // "Why is [name]" queries - incomplete or personal name queries
+    // Pattern: "why is [name]" where name is not Indegene-related
+    const whyIsPattern = /^why is\s+([a-z\s]{2,30})$/i;
+    if (whyIsPattern.test(text)) {
+        const match = text.match(whyIsPattern);
+        if (match) {
+            const name = match[1].toLowerCase().trim();
+            // Known Indegene-related terms
+            const indegeneTerms = [
+                "indegene", "manish", "rajesh", "sanjay", "anand", "gaurav",
+                "ceo", "founder", "company", "service", "platform", "next"
+            ];
+            // If it's not about Indegene and looks like a personal name or unclear query
+            if (!indegeneTerms.some(term => name.includes(term)) &&
+                name.length > 2 && name.length < 30 &&
+                !text.includes("indegene") && !text.includes("medical") &&
+                !text.includes("health") && !text.includes("treatment")) {
+                return true;
+            }
+        }
+    }
+    // "What is [name] doing" / "wt is [name] doing" - personal queries
+    const whatIsDoingPattern = /^(what|wt)\s+is\s+([a-z\s]{2,30})\s+doing$/i;
+    if (whatIsDoingPattern.test(text)) {
+        const match = text.match(whatIsDoingPattern);
+        if (match) {
+            const name = match[2].toLowerCase().trim();
+            // Known Indegene-related names
+            const indegeneNames = [
+                "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+                "manish", "rajesh", "sanjay", "anand", "gaurav"
+            ];
+            // Check if it's a known Indegene person
+            const isIndegenePerson = indegeneNames.some(indegeneName => {
+                const fullName = indegeneName.toLowerCase();
+                return name === fullName ||
+                    fullName.includes(name) ||
+                    name.includes(fullName) ||
+                    (name.length >= 3 && fullName.startsWith(name)) ||
+                    (fullName.length >= 3 && name.startsWith(fullName));
+            });
+            // If it's not a known Indegene person, flag as out-of-domain
+            if (!isIndegenePerson && name.length > 2 && name.length < 30 &&
+                !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+                return true;
+            }
+        }
+    }
+    // "What ra [name]" - unclear personal queries
+    const whatRaPattern = /^what\s+ra\s+([a-z\s]{2,30})$/i;
+    if (whatRaPattern.test(text)) {
+        const match = text.match(whatRaPattern);
+        if (match) {
+            const name = match[1].toLowerCase().trim();
+            // Known Indegene-related names
+            const indegeneNames = [
+                "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+                "manish", "rajesh", "sanjay", "anand", "gaurav"
+            ];
+            // Check if it's a known Indegene person
+            const isIndegenePerson = indegeneNames.some(indegeneName => {
+                const fullName = indegeneName.toLowerCase();
+                return name === fullName ||
+                    fullName.includes(name) ||
+                    name.includes(fullName);
+            });
+            // If it's not a known Indegene person, flag as out-of-domain
+            if (!isIndegenePerson && name.length > 2 && name.length < 30 &&
+                !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+                return true;
+            }
+        }
+    }
+    // Gibberish/unclear queries - detect random character strings
+    // Check if query contains mostly non-letter characters or random letter combinations
+    // Only check for obvious gibberish (very short, no vowels, random characters)
+    if (text.length > 0 && text.length < 30) {
+        const words = text.split(/\s+/).filter(w => w.length > 0);
+        const hasValidWords = words.some(word => {
+            // Check if word looks like a real word (has vowels, reasonable length, etc.)
+            const hasVowels = /[aeiou]/i.test(word);
+            const reasonableLength = word.length >= 2 && word.length <= 20;
+            return hasVowels && reasonableLength;
+        });
+        // If no valid words found and query looks like random characters
+        if (!hasValidWords && words.length > 0) {
+            const allWordsGibberish = words.every(w => {
+                const hasVowels = /[aeiou]/i.test(w);
+                const consonantRatio = (w.match(/[bcdfghjklmnpqrstvwxyz]/gi) || []).length / w.length;
+                return !hasVowels || consonantRatio > 0.8 || w.length < 2;
+            });
+            if (allWordsGibberish) {
+                // This looks like gibberish - but don't flag it as out-of-domain, let AI handle it
+                // The AI will recognize it as unclear
+                return false; // Allow it to pass through, AI will handle unclear queries
+            }
+        }
+    }
+    // "What is WHO" - World Health Organization is healthcare-related, should be allowed
+    if (text.match(/^what is\s+who$/i) || text.match(/^what\s+is\s+who\s*$/i)) {
+        return false; // Allow this - it's about World Health Organization (healthcare)
+    }
+    // "Who is [name]" queries - check if name is related to Indegene
+    // Known Indegene-related names (CEO, founders, etc.) - these should NOT be flagged
+    const indegeneNames = [
+        "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+        "manish", "rajesh", "sanjay", "anand", "gaurav"
+    ];
+    // Pattern: "who is [name]" - simple pattern to catch person name queries
+    // Match "who is" followed by a name (1-3 words, not too long)
+    const whoIsPattern = /^who is\s+([a-z\s]{2,30})$/i;
+    if (whoIsPattern.test(text)) {
+        const match = text.match(whoIsPattern);
+        if (match) {
+            const name = match[1].toLowerCase().trim();
+            // Skip if query mentions Indegene, CEO, founder, chairman explicitly
+            if (text.includes("indegene") ||
+                text.includes("ceo") ||
+                text.includes("founder") ||
+                text.includes("chairman") ||
+                text.includes("of indegene")) {
+                return false; // Allow these queries
+            }
+            // Check if it's a known Indegene person (including partial matches like "manish" for "manish gupta")
+            const isIndegenePerson = indegeneNames.some(indegeneName => {
+                const fullName = indegeneName.toLowerCase();
+                const queryName = name.toLowerCase();
+                // Check if query name matches or is part of known name, or vice versa
+                return queryName === fullName ||
+                    fullName.includes(queryName) ||
+                    queryName.includes(fullName) ||
+                    (queryName.length >= 3 && fullName.startsWith(queryName)) ||
+                    (fullName.length >= 3 && queryName.startsWith(fullName));
+            });
+            // If it's not a known Indegene person and doesn't mention Indegene context, flag as out-of-domain
+            if (!isIndegenePerson && name.length > 2 && name.length < 30) {
+                // It's a "who is [name]" query about someone not in our knowledge base
+                return true;
+            }
+        }
+    }
+    return false;
+};
+/* =========================================================
    GENERAL SMALL-TALK / META QUERIES (who are you, hi, help)
 ======================================================== */
 const handleGeneralQueries = (query) => {
@@ -3340,33 +4756,149 @@ const handleGeneralQueries = (query) => {
         text.startsWith("hi ") ||
         text.startsWith("hello ") ||
         text.startsWith("hey ")) {
-        return "Hi! I’m your KM Assistant chatbot. Ask me about Indegene, Skysecure, breast cancer modules, PRMA/HEOR, CPC playbooks, and more — or ask for the time, date, or day.";
+        return "Hi! I'm your KM Assistant chatbot. Ask me about Indegene, Skysecure, breast cancer modules, PRMA/HEOR, CPC playbooks, and more — or ask for the time, date, or day.";
     }
-    // Who are you?
-    if (text.includes("who are you") || text.includes("what are you")) {
-        return "I’m a lightweight, on-page chatbot built for this KM site. I answer questions from a curated internal knowledge map and can also tell you the current time, date, and day.";
+    // Who are you? / What are you? (handle typos like "ytou" for "you", "waht" for "what", ignore casual words like "buddy")
+    // Remove casual words first, then check
+    const cleanedText = text.replace(/\b(buddy|da|dude|bro|mate|friend)\b/gi, "").trim();
+    if (cleanedText.match(/who are (you|ytou|yuo|yoi|u)/i) ||
+        cleanedText.match(/what are (you|ytou|yuo|yoi|u)/i) ||
+        cleanedText.match(/waht are (you|ytou|yuo|yoi|u)/i) || // "waht" typo for "what"
+        cleanedText.match(/who\s+r\s+(you|ytou|yuo)/i) ||
+        cleanedText.match(/what\s+r\s+(you|ytou|yuo)/i) ||
+        cleanedText.match(/waht\s+r\s+(you|ytou|yuo)/i) ||
+        (cleanedText.match(/^(who|what|waht) are/i) && cleanedText.length < 25) ||
+        (text.match(/^(who|what|waht) are (you|ytou|yuo|yoi|u)/i))) {
+        return "I'm your KM Assistant chatbot powered by AI. I can answer questions about Indegene using real-time information from the company website, combined with our internal knowledge base. I can also tell you the current time, date, and day.";
     }
-    // What can you do?
+    // Handle personal health/financial assistance queries with empathy
+    // ONLY trigger for health-related financial requests (cancer, disease, treatment, etc.)
+    // NOT for general financial requests like "i need money for bike"
+    const hasHealthContext = text.includes("cancer") ||
+        text.includes("disease") ||
+        text.includes("sick") ||
+        text.includes("treatment") ||
+        text.includes("cure") ||
+        text.includes("health problem") ||
+        text.includes("medical") ||
+        text.includes("healthcare") ||
+        text.includes("hospital") ||
+        text.includes("doctor") ||
+        text.includes("patient");
+    const hasFinancialRequest = text.includes("need money") ||
+        text.includes("financial assistance") ||
+        text.includes("money for") ||
+        (text.includes("i need") && text.includes("money"));
+    // Only trigger if BOTH health context AND financial request are present
+    if (hasHealthContext && hasFinancialRequest) {
+        return "I understand this is a difficult situation, and I truly empathize with your concerns. While I can provide information about healthcare topics, medical conditions, and treatment options, I cannot provide direct financial assistance or personal medical advice.\n\nFor cancer treatment and financial support, I recommend:\n• Consulting with qualified healthcare professionals and oncologists for medical guidance\n• Exploring government health programs and insurance options in your region\n• Contacting cancer support organizations and non-profit foundations that provide financial assistance\n• Checking with hospitals and treatment centers about patient assistance programs\n\nIf you have questions about cancer, treatment options, or healthcare information, I'm happy to help with that. For specific medical advice or financial assistance, please consult with healthcare professionals or relevant support organizations.";
+    }
+    // Handle feedback/complaints (e.g., "too much you are showing", "too long", "too much information")
+    if ((text.includes("too much") || text.includes("too long") || text.includes("too many") ||
+        text.includes("too much information") || text.includes("too detailed") ||
+        text.match(/too\s+(much|long|many|detailed)/i)) &&
+        (text.includes("showing") || text.includes("displaying") || text.includes("information") ||
+            text.includes("answer") || text.includes("response"))) {
+        return "I understand you'd like a more concise answer. I'll try to keep my responses shorter and more focused. Is there a specific aspect you'd like me to focus on?";
+    }
+    // Handle unclear/gibberish queries
+    if (text.length > 0 && text.length < 30) {
+        const words = text.split(/\s+/).filter(w => w.length > 0);
+        const hasValidWords = words.some(word => {
+            const hasVowels = /[aeiou]/i.test(word);
+            return hasVowels && word.length >= 2;
+        });
+        if (!hasValidWords && words.length > 0) {
+            const allWordsGibberish = words.every(w => {
+                const hasVowels = /[aeiou]/i.test(w);
+                return !hasVowels || w.length < 2;
+            });
+            if (allWordsGibberish) {
+                return "I'm sorry, but I couldn't understand your question. It seems there might be a typo or the question is unclear. Could you please rephrase your question? I can help you with:\n\n• Questions about Indegene\n• Healthcare and medical topics\n• Internal knowledge base topics\n• General queries (time, date, day)";
+            }
+        }
+    }
+    // What can you do? / Your capabilities / KM queries
     if (text.includes("what can you do") ||
         text.includes("how can you help") ||
-        text.includes("what do you do")) {
-        return ("I can:\n" +
-            "• Answer questions about Indegene, Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, etc.\n" +
-            "• Share quick overviews from internal knowledge snippets.\n" +
-            "• Tell you the current time, date, and day.\n\n" +
-            'Try asking: "Tell me about breast cancer" or "Explain regulatory intelligence".');
+        text.includes("what do you do") ||
+        text.includes("capabilities of you") ||
+        text.includes("your capabilities") ||
+        text.includes("what are your capabilities") ||
+        text.includes("what are you capable of") ||
+        text.includes("what can you help with") ||
+        text.includes("what do you help with") ||
+        text.match(/capabilities?\s+(of|about)\s+(you|yourself)/i) ||
+        text.match(/what\s+(are|is)\s+(your|you)\s+capabilities?/i) ||
+        // KM queries (Knowledge Management assistant)
+        text.match(/^(what|how|who|where|when)\s+(is|are|was|were)\s+(the\s+)?km$/i) ||
+        text.match(/^(wht|wat)\s+(is|are)\s+(the\s+)?km$/i) ||
+        (text.includes("km") && (text.includes("what") || text.includes("how")) && text.length < 20)) {
+        return ("I can help you with:\n" +
+            "• Questions about Indegene - services, solutions, technology, partnerships, careers, and more (using real-time website information)\n" +
+            "• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n" +
+            "• General queries - current time, date, day, and quick links\n\n" +
+            "Try asking: \"What services does Indegene offer?\" or \"Tell me about Indegene's NEXT platforms\" or \"Explain regulatory intelligence\".");
     }
     // Help
     if (text === "help" || text.startsWith("help ")) {
-        return ("You can ask me things like:\n" +
-            '• "What is Indegene?"\n' +
-            '• "Tell me about regulatory intelligence"\n' +
-            '• "What is breast cancer?"\n' +
-            '• "What is the time?" or "What\'s today\'s date?"');
+        return ("I can answer questions about:\n\n" +
+            "📊 Indegene Company:\n" +
+            "• \"What services does Indegene offer?\"\n" +
+            "• \"Tell me about Indegene's NEXT platforms\"\n" +
+            "• \"What is Indegene's partnership with Microsoft?\"\n" +
+            "• \"Where are Indegene offices located?\"\n\n" +
+            "📚 Internal Knowledge:\n" +
+            "• \"Tell me about regulatory intelligence\"\n" +
+            "• \"What is breast cancer?\"\n" +
+            "• \"Explain PRMA & HEOR services\"\n\n" +
+            "⏰ General:\n" +
+            "• \"What is the time?\" or \"What's today's date?\"\n" +
+            "• \"Show me quick links\"");
     }
-    // How are you
-    if (text.includes("how are you")) {
-        return "I’m just code, but I’m running fine and ready to help you with KM-related questions!";
+    // How are you (handle typos like "ypou", "yuo", etc.)
+    // Match "how are" followed by "you" or common typos, or just "how are" alone
+    if (text.match(/how\s+are\s+(you|ypou|yuo|yoi|u|y|yo)/i) ||
+        text.match(/how\s+r\s+(you|ypou|yuo)/i) ||
+        (text.match(/^how\s+are/i) && text.length < 15)) { // Short queries starting with "how are"
+        return "I'm just code, but I'm running fine and ready to help you with KM-related questions!";
+    }
+    // Quick links / All links
+    if (text.includes("all links") ||
+        text.includes("links related") ||
+        text.includes("show me links") ||
+        text.includes("quick links") ||
+        text.includes("list of links") ||
+        (text.includes("links") && (text.includes("indegene") || text.includes("related") || text.includes("all")))) {
+        const allLinks = Object.values(QUICK_LINKS_MAP);
+        // Remove duplicates (some entries might have same URL)
+        const uniqueLinks = Array.from(new Map(allLinks.map(link => [link.url, link])).values());
+        let linksText = "Here are all the quick links related to Indegene:\n\n";
+        uniqueLinks.forEach((link, index) => {
+            linksText += `${index + 1}. **${link.title}**\n   🔗 ${link.url}\n\n`;
+        });
+        linksText += "💡 **Tip:** You can also ask me about any of these topics directly (e.g., \"careers\", \"case studies\", \"contact\"), and I'll provide the relevant link along with detailed information!";
+        return linksText;
+    }
+    // Policies query - but only for generic "policies" queries
+    // Specific policy queries (csr, privacy, retention, archival) should go to quick link detection
+    if ((text.includes("policies") || text.includes("policy")) &&
+        !text.includes("csr") &&
+        !text.includes("privacy") &&
+        !text.includes("retention") &&
+        !text.includes("archival") &&
+        !text.includes("preservation") &&
+        (text.includes("indegene") || text.length < 30) // Short queries like "policies" or "indegene policies"
+    ) {
+        return ("Indegene has several important policies available:\n\n" +
+            "• **CSR Policy (Corporate Social Responsibility)** - Details about Indegene's corporate social responsibility initiatives\n" +
+            "• **Privacy Policy** - Information about data privacy and security practices\n" +
+            "• **Retention Policy (Preservation of Records/Archival Policy)** - Document retention and archival procedures\n\n" +
+            "You can ask me specifically about:\n" +
+            "• \"CSR policy\" or \"CSR\" - for Corporate Social Responsibility policy\n" +
+            "• \"Privacy policy\" or \"Privacy\" - for Privacy & Security policy\n" +
+            "• \"Retention policy\" or \"Archival policy\" - for Document Retention/Archival Policy\n\n" +
+            "I'll provide you with the relevant link and information!");
     }
     return null;
 };
@@ -3384,10 +4916,76 @@ const getAnswerFromContext = (query) => {
     if (CONTEXT_MAP[normQuery]) {
         return CONTEXT_MAP[normQuery].join(" ");
     }
+    // 0.25) Try plural/singular variations for policy-related queries
+    if (normQuery.includes("polic")) {
+        // Try singular if plural
+        if (normQuery.endsWith("policies")) {
+            const singular = normQuery.replace(/policies$/, "policy");
+            if (CONTEXT_MAP[singular]) {
+                return CONTEXT_MAP[singular].join(" ");
+            }
+        }
+        // Try plural if singular
+        if (normQuery.endsWith("policy")) {
+            const plural = normQuery.replace(/policy$/, "policies");
+            if (CONTEXT_MAP[plural]) {
+                return CONTEXT_MAP[plural].join(" ");
+            }
+        }
+    }
     const queryTokens = new Set(normQuery.split(" "));
     // 0.5) Hard override for skysecure keyword to avoid tie with "what is indegene"
     if (queryTokens.has("skysecure") && CONTEXT_MAP["skysecure"]) {
         return CONTEXT_MAP["skysecure"].join(" ");
+    }
+    // 0.6) Hard override for CSR policy queries
+    if ((queryTokens.has("csr") || normQuery.includes("csr")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Try exact matches first
+        if (CONTEXT_MAP["csr policies"])
+            return CONTEXT_MAP["csr policies"].join(" ");
+        if (CONTEXT_MAP["csr policy"])
+            return CONTEXT_MAP["csr policy"].join(" ");
+        if (CONTEXT_MAP["indegene csr policies"])
+            return CONTEXT_MAP["indegene csr policies"].join(" ");
+        if (CONTEXT_MAP["indegene csr policy"])
+            return CONTEXT_MAP["indegene csr policy"].join(" ");
+    }
+    // 0.7) Hard override for Privacy policy queries
+    if ((queryTokens.has("privacy") || normQuery.includes("privacy")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Try exact matches first
+        if (CONTEXT_MAP["privacy policies"])
+            return CONTEXT_MAP["privacy policies"].join(" ");
+        if (CONTEXT_MAP["privacy policy"])
+            return CONTEXT_MAP["privacy policy"].join(" ");
+        if (CONTEXT_MAP["indegene privacy policies"])
+            return CONTEXT_MAP["indegene privacy policies"].join(" ");
+        if (CONTEXT_MAP["indegene privacy policy"])
+            return CONTEXT_MAP["indegene privacy policy"].join(" ");
+    }
+    // 0.8) Hard override for Retention/Archival policy queries
+    if ((queryTokens.has("retention") || normQuery.includes("retention")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Check for plural first, then singular
+        if (CONTEXT_MAP["retention policies"])
+            return CONTEXT_MAP["retention policies"].join(" ");
+        if (CONTEXT_MAP["indegene retention policies"])
+            return CONTEXT_MAP["indegene retention policies"].join(" ");
+        if (CONTEXT_MAP["retention policy"])
+            return CONTEXT_MAP["retention policy"].join(" ");
+        if (CONTEXT_MAP["indegene retention policy"])
+            return CONTEXT_MAP["indegene retention policy"].join(" ");
+    }
+    if ((queryTokens.has("archival") || normQuery.includes("archival")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        if (CONTEXT_MAP["archival policy"])
+            return CONTEXT_MAP["archival policy"].join(" ");
+    }
+    if ((queryTokens.has("preservation") || normQuery.includes("preservation")) &&
+        (queryTokens.has("record") || normQuery.includes("record"))) {
+        if (CONTEXT_MAP["preservation of records"])
+            return CONTEXT_MAP["preservation of records"].join(" ");
     }
     // Intent detection
     const employeeIntent = normQuery.includes("employees") ||
@@ -3476,6 +5074,501 @@ const getAnswerFromContext = (query) => {
     }
     return "I could not find a relevant match in my stored knowledge.";
 };
+/* =========================================================
+   AZURE COGNITIVE SEARCH CONTENT FETCHING
+======================================================== */
+/**
+ * Fetches latest news/press releases from Azure Cognitive Search
+ * Specifically searches for recent news, announcements, and press releases
+ */
+const fetchLatestNewsFromAzureSearch = async (topResults = 5) => {
+    try {
+        const searchUrl = `${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_ENDPOINT}/indexes/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_INDEX}/docs/search?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_API_VERSION}`;
+        // Search for news, press releases, announcements
+        // Use a broader search to catch news-related content from Indegene
+        // Search for news-related terms that should appear in Indegene's website content
+        const searchBody = {
+            search: 'news OR "press release" OR announcement OR update OR latest OR recent OR partnership OR collaboration OR acquisition OR launch OR expansion OR "new partnership" OR "announced"',
+            queryType: 'semantic',
+            semanticConfiguration: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_SEMANTIC_CONFIG,
+            top: topResults,
+            select: 'id,title,content,url,publishedDate,businessUnit,documentType,therapyArea',
+            highlight: 'content',
+            highlightPreTag: '<mark>',
+            highlightPostTag: '</mark>'
+        };
+        const response = await fetch(searchUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_KEY
+            },
+            body: JSON.stringify(searchBody)
+        });
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.warn('Azure Search API failed for news:', response.status, errorText);
+            return '';
+        }
+        const data = await response.json();
+        const results = data.value || [];
+        if (results.length === 0) {
+            console.log('No news found in Azure Search');
+            return '';
+        }
+        // Format news content
+        let newsContent = 'LATEST NEWS AND ANNOUNCEMENTS FROM INDEGENE:\n\n';
+        results.forEach((item, index) => {
+            var _a;
+            const title = item.title || 'Untitled';
+            const content = item.content || '';
+            const url = item.url || '';
+            const publishedDate = item.publishedDate || '';
+            // Extract highlighted content if available
+            const highlights = ((_a = item['@search.highlights']) === null || _a === void 0 ? void 0 : _a.content) || [];
+            const highlightedText = highlights.length > 0
+                ? highlights.join(' ... ')
+                : content.substring(0, 800);
+            newsContent += `[News ${index + 1}: ${title}]\n`;
+            if (publishedDate)
+                newsContent += `Published: ${publishedDate}\n`;
+            if (url)
+                newsContent += `Source: ${url}\n`;
+            newsContent += `Content: ${highlightedText}\n\n`;
+        });
+        // Limit total content
+        if (newsContent.length > 10000) {
+            newsContent = newsContent.substring(0, 10000) + '...';
+        }
+        console.log(`Fetched ${results.length} news items from Azure Search`);
+        return newsContent.trim();
+    }
+    catch (error) {
+        console.warn('Error fetching latest news from Azure Search:', error);
+        return '';
+    }
+};
+/**
+ * Fetches relevant content from Azure Cognitive Search based on user query
+ * This is more reliable than web scraping and provides semantic search capabilities
+ */
+const fetchContentFromAzureSearch = async (query, topResults = 5) => {
+    try {
+        const searchUrl = `${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_ENDPOINT}/indexes/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_INDEX}/docs/search?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_API_VERSION}`;
+        const searchBody = {
+            search: query,
+            queryType: 'semantic',
+            semanticConfiguration: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_SEMANTIC_CONFIG,
+            top: topResults,
+            select: 'id,title,content,url,publishedDate,businessUnit,documentType,therapyArea',
+            highlight: 'content',
+            highlightPreTag: '<mark>',
+            highlightPostTag: '</mark>'
+        };
+        const response = await fetch(searchUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_KEY
+            },
+            body: JSON.stringify(searchBody)
+        });
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.warn('Azure Search API failed:', response.status, errorText);
+            return '';
+        }
+        const data = await response.json();
+        const results = data.value || [];
+        if (results.length === 0) {
+            console.log('No results found in Azure Search for query:', query);
+            return '';
+        }
+        // Combine content from top results
+        let combinedContent = '';
+        results.forEach((item, index) => {
+            var _a;
+            const title = item.title || 'Untitled';
+            const content = item.content || '';
+            const url = item.url || '';
+            const publishedDate = item.publishedDate || '';
+            // Extract highlighted content if available
+            const highlights = ((_a = item['@search.highlights']) === null || _a === void 0 ? void 0 : _a.content) || [];
+            const highlightedText = highlights.length > 0
+                ? highlights.join(' ... ')
+                : content.substring(0, 1000);
+            combinedContent += `\n\n[Document ${index + 1}: ${title}]\n`;
+            if (url)
+                combinedContent += `Source: ${url}\n`;
+            if (publishedDate)
+                combinedContent += `Date: ${publishedDate}\n`;
+            combinedContent += `Content: ${highlightedText}\n`;
+        });
+        // Limit total content to avoid token limits (keep it under 8000 chars)
+        if (combinedContent.length > 8000) {
+            combinedContent = combinedContent.substring(0, 8000) + '...';
+        }
+        console.log(`Fetched ${results.length} results from Azure Search, content length: ${combinedContent.length}`);
+        return combinedContent.trim();
+    }
+    catch (error) {
+        console.warn('Error fetching content from Azure Search:', error);
+        return '';
+    }
+};
+/* =========================================================
+   DYNAMIC AI-BASED ANSWER GENERATION FROM WEBSITE
+======================================================== */
+/**
+ * Enhanced dynamic AI answer generation with better prompts and context
+ * This function uses Azure OpenAI to generate comprehensive answers
+ * Now includes dynamic content fetching from Azure Cognitive Search for real-time, relevant information
+ */
+const getDynamicAnswerFromWebsite = async (query, contextMapAnswer) => {
+    var _a, _b, _c;
+    try {
+        const endpoint = _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_ENDPOINT.endsWith('/')
+            ? _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_ENDPOINT.slice(0, -1)
+            : _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_ENDPOINT;
+        const url = `${endpoint}/openai/deployments/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_API_VERSION}`;
+        // Check if this is a "latest news" query - be more flexible with detection
+        const queryLowerForNews = query.toLowerCase();
+        const isNewsQuery = queryLowerForNews.includes("latest news") ||
+            queryLowerForNews.includes("recent news") ||
+            queryLowerForNews.includes("news from indegene") ||
+            queryLowerForNews.includes("indegene news") ||
+            queryLowerForNews.includes("press release") ||
+            queryLowerForNews.includes("announcements") ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("indegene")) ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("latest")) ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("recent")) ||
+            queryLowerForNews.includes("what's new") ||
+            queryLowerForNews.includes("what is new");
+        // Fetch dynamic content from Azure Cognitive Search (non-blocking)
+        let fetchedContent = '';
+        try {
+            if (isNewsQuery) {
+                // For news queries, fetch latest news specifically
+                console.log('Fetching latest news from Azure Cognitive Search');
+                fetchedContent = await fetchLatestNewsFromAzureSearch(5);
+                if (fetchedContent) {
+                    console.log('Successfully fetched latest news from Azure Search, length:', fetchedContent.length);
+                }
+                else {
+                    console.log('No news found in Azure Search, trying general search');
+                    // Fallback to general search
+                    fetchedContent = await fetchContentFromAzureSearch(query, 5);
+                }
+            }
+            else {
+                // For other queries, use regular search
+                console.log('Fetching content from Azure Cognitive Search for query:', query);
+                fetchedContent = await fetchContentFromAzureSearch(query, 5);
+                if (fetchedContent) {
+                    console.log('Successfully fetched content from Azure Search, length:', fetchedContent.length);
+                }
+                else {
+                    console.log('No content found in Azure Search for this query');
+                }
+            }
+        }
+        catch (fetchError) {
+            console.warn('Failed to fetch content from Azure Search (will continue without it):', fetchError);
+            // Continue without fetched content - not critical
+        }
+        // Enhanced system prompt with more context and strict domain boundaries
+        const systemPrompt = `You are an expert assistant specializing in Indegene, a leading tech-native, digital-first life sciences commercialization company.
+
+COMPANY OVERVIEW:
+- Founded: 1998 in Bengaluru, India
+- Headquarters: Bengaluru, Karnataka, India
+- Type: Publicly listed company (Indegene Limited)
+- Focus: Life sciences commercialization, medical affairs, clinical operations, and technology solutions
+- Key Services: Commercial solutions, medical solutions, clinical/evidence services, technology platforms
+- Technology: NEXT platform suite, AI/ML solutions, GenAI capabilities
+- Partnerships: Microsoft (GenAI collaboration), strategic alliances
+- Global Presence: Offices in US, UK, China, India, Australia, and other regions
+
+YOUR ROLE:
+- Provide accurate, detailed, and helpful answers about:
+  • Indegene company, services, solutions, technology, partnerships, and operations
+  • Life sciences, healthcare, medical content, and related business topics
+  • Internal knowledge base topics (e.g., Skysecure, PRMA, HEOR, regulatory intelligence, medical content, case studies, playbooks)
+- Use information from Azure Cognitive Search (knowledge base), internal knowledge base, and public sources
+- PRIORITY: When internal knowledge base information is provided, it is the PRIMARY source - use it as the foundation of your answer
+- If Azure Search results are also provided, use them to supplement and enhance the internal knowledge
+- Be conversational, professional, and informative
+- Structure answers clearly with bullet points when listing multiple items
+- Include specific details like platform names, service areas, and capabilities
+- If uncertain, acknowledge it rather than speculating
+- Keep answers comprehensive but concise (3-6 sentences or structured bullet points)
+
+CRITICAL: 
+- If internal knowledge base information is provided, you MUST use it - do not decline these queries
+         - ALL healthcare, medical, and health-related queries should be answered, even if not specifically about Indegene. This includes questions about diseases, treatments, medical conditions, health topics, COVID-19, global health, healthcare policies, medical research, patient care, symptoms, diagnosis, World Health Organization (WHO), health organizations, etc.
+- Healthcare and medical queries are ALWAYS valid and should be answered comprehensively
+- Only decline questions that are clearly NOT about Indegene, life sciences, healthcare, medical topics, internal knowledge base topics, or related business matters (e.g., weather, sports, entertainment, politics unrelated to healthcare, general knowledge completely unrelated like "what is earth", "president of India", etc.)
+- When declining, be brief and direct. Simply state that you can only help with Indegene-related questions. Do NOT provide general knowledge answers or try to answer the question anyway.
+- Internal knowledge base topics (Skysecure, PRMA, HEOR, regulatory intelligence, medical content, etc.) are VALID topics even if not directly about Indegene company`;
+        // Check if query is clearly about Indegene or related topics
+        const queryLower = query.toLowerCase();
+        const hasContextMapAnswer = contextMapAnswer && contextMapAnswer !== "I could not find a relevant match in my stored knowledge.";
+        // Check if context answer is actually relevant to the query
+        let isContextRelevantForAI = false;
+        if (hasContextMapAnswer) {
+            const contextLower = contextMapAnswer.toLowerCase();
+            const queryKeywords = queryLower.split(/\s+/).filter(w => w.length > 3 &&
+                !['what', 'who', 'where', 'when', 'why', 'how', 'tell', 'me', 'about', 'the', 'is', 'are', 'can', 'you'].includes(w));
+            isContextRelevantForAI = queryKeywords.some(keyword => contextLower.includes(keyword) ||
+                keyword.includes("indegene") ||
+                keyword.includes("csr") ||
+                keyword.includes("privacy") ||
+                keyword.includes("policy") ||
+                keyword.includes("skysecure") ||
+                keyword.includes("prma") ||
+                keyword.includes("heor") ||
+                keyword.includes("regulatory") ||
+                keyword.includes("oncology") ||
+                keyword.includes("medical")) || queryLower.includes("indegene") || queryLower.includes("skysecure");
+        }
+        // If we have a RELEVANT context map answer, it's definitely related (it's in our knowledge base)
+        const isIndegeneRelated = (hasContextMapAnswer && isContextRelevantForAI) || // Priority: if we have relevant internal knowledge, it's valid
+            queryLower.includes("indegene") ||
+            queryLower.includes("life sciences") ||
+            queryLower.includes("pharma") ||
+            queryLower.includes("biotech") ||
+            queryLower.includes("medical") ||
+            queryLower.includes("healthcare") ||
+            queryLower.includes("health care") ||
+            queryLower.includes("health") ||
+            queryLower.includes("disease") ||
+            queryLower.includes("treatment") ||
+            queryLower.includes("therapy") ||
+            queryLower.includes("patient") ||
+            queryLower.includes("diagnosis") ||
+            queryLower.includes("symptom") ||
+            queryLower.includes("medicine") ||
+            queryLower.includes("drug") ||
+            queryLower.includes("covid") ||
+            queryLower.includes("coronavirus") ||
+            queryLower.includes("pandemic") ||
+            queryLower === "who" || // "what is who" - World Health Organization
+            (queryLower.includes("who") && queryLower.includes("health")) || // WHO health organization
+            queryLower.includes("regulatory") ||
+            queryLower.includes("clinical") ||
+            queryLower.includes("commercial") ||
+            queryLower.includes("skysecure") ||
+            queryLower.includes("prma") ||
+            queryLower.includes("heor") ||
+            queryLower.includes("pharmacovigilance") ||
+            queryLower.includes("oncology") ||
+            queryLower.includes("cpc");
+        // Enhanced user prompt with context from concept map and Azure Search content
+        let userPrompt = `Based on information from the Indegene knowledge base and public sources, please provide a comprehensive answer to this question:
+
+Question: ${query}`;
+        // SPECIAL HANDLING: For news queries, prioritize news content over context map
+        if (isNewsQuery && fetchedContent && fetchedContent.length > 0) {
+            // News query with news content found - prioritize news
+            userPrompt += `\n\nPRIMARY SOURCE - LATEST NEWS FROM AZURE COGNITIVE SEARCH:\n${fetchedContent}\n\nCRITICAL: This is the LATEST NEWS and ANNOUNCEMENTS from Indegene's website. Use this as the PRIMARY and ONLY source for answering this news query. Provide a comprehensive summary of the latest news, announcements, press releases, and updates. Include dates, key details, and source URLs. Structure your answer clearly with the most recent news first. DO NOT provide generic company information - focus ONLY on the specific news items provided above.`;
+            // Add context map as background only if available
+            if (hasContextMapAnswer) {
+                userPrompt += `\n\nBACKGROUND CONTEXT (for reference only, do not use as primary source):\n${contextMapAnswer}\n\nNOTE: The user is asking for LATEST NEWS. The news content above is the PRIMARY source. Only use this background context if it helps explain something in the news, but do NOT use it as the main answer.`;
+            }
+        }
+        else if (hasContextMapAnswer) {
+            // Regular query with context map answer - use context map as primary
+            userPrompt += `\n\nPRIMARY SOURCE - INTERNAL KNOWLEDGE BASE:\n${contextMapAnswer}\n\nCRITICAL: This information comes directly from the internal knowledge base and is ACCURATE and RELEVANT to the question. You MUST use this information as the foundation of your answer. Do NOT say you don't have this information - it is provided above. Provide a comprehensive, detailed answer based EXACTLY on this information.`;
+            // Add Azure Search content as supplementary if available
+            if (fetchedContent && fetchedContent.length > 0) {
+                userPrompt += `\n\nSUPPLEMENTARY CONTENT FROM AZURE COGNITIVE SEARCH:\n${fetchedContent}\n\nYou may use this additional content to enhance your answer, but the internal knowledge base information above is the PRIMARY source and must be used.`;
+            }
+            else {
+                userPrompt += `\n\nProvide a detailed, well-structured answer based EXACTLY on the internal knowledge base information provided above. Do NOT say the information is not available - it is provided above.`;
+            }
+        }
+        else {
+            // No context map answer - use Azure Search if available
+            if (fetchedContent && fetchedContent.length > 0) {
+                if (isNewsQuery) {
+                    userPrompt += `\n\nLATEST NEWS FROM AZURE COGNITIVE SEARCH (Knowledge Base):\n${fetchedContent}\n\nCRITICAL: This is the LATEST NEWS and ANNOUNCEMENTS from Indegene's website. Use this as the PRIMARY source. Provide a comprehensive summary of the latest news, announcements, press releases, and updates. Include dates, key details, and source URLs. Structure your answer clearly with the most recent news first. DO NOT provide generic company information - focus ONLY on the specific news items provided above.`;
+                }
+                else {
+                    userPrompt += `\n\nRELEVANT CONTENT FROM AZURE COGNITIVE SEARCH (Knowledge Base):\n${fetchedContent}\n\nUse this dynamically fetched content from the knowledge base to provide the most accurate and up-to-date information. Prioritize information from these search results when answering the question.`;
+                }
+            }
+            else {
+                if (isNewsQuery) {
+                    // For news queries with no results, be explicit
+                    userPrompt += `\n\nIMPORTANT: The user is asking for the latest news from Indegene, but no recent news articles were found in the knowledge base. You should inform the user that you could not find specific recent news articles in the indexed content, and suggest they visit the Indegene website (www.indegene.com) or check the news/press releases section for the most current information. DO NOT provide generic company information as if it were news.`;
+                }
+            }
+            // If query is not clearly related to Indegene, add instruction to decline
+            if (!isIndegeneRelated) {
+                userPrompt += `\n\nCRITICAL: This question is clearly NOT about Indegene, life sciences, healthcare, or related topics. You MUST politely decline with a brief, direct message. Do NOT attempt to answer the question with general knowledge. Do NOT provide any information about the subject. Do NOT mention any names, facts, or details about the unrelated topic. Simply state that you can only help with Indegene-related questions. Keep your response short (1-2 sentences maximum). Example: "I'm sorry, but I can only help with questions related to Indegene, life sciences, healthcare, and related topics."`;
+            }
+            else {
+                userPrompt += `\n\nProvide a detailed, accurate answer${fetchedContent ? ' using the Azure Search results' : ' based on available information'}. Include specific details about services, solutions, technology, partnerships, or operations when relevant.`;
+            }
+        }
+        // Create a timeout promise
+        const timeoutPromise = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error('Request timeout')), 10000); // 10 second timeout
+        });
+        // Race between fetch and timeout
+        const fetchPromise = fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_API_KEY
+            },
+            body: JSON.stringify({
+                messages: [
+                    {
+                        role: 'system',
+                        content: systemPrompt
+                    },
+                    {
+                        role: 'user',
+                        content: userPrompt
+                    }
+                ],
+                temperature: 0.7,
+                max_tokens: 800,
+                top_p: 0.9,
+                frequency_penalty: 0.3,
+                presence_penalty: 0.3
+            })
+        });
+        const response = await Promise.race([fetchPromise, timeoutPromise]);
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error('Azure OpenAI API error:', response.status, errorText);
+            return null;
+        }
+        const data = await response.json();
+        const answer = (_c = (_b = (_a = data.choices) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.message) === null || _c === void 0 ? void 0 : _c.content;
+        if (answer && answer.trim().length > 0) {
+            // Clean and format the answer
+            let formattedAnswer = answer.trim();
+            // Remove markdown code blocks if present
+            formattedAnswer = formattedAnswer.replace(/```[\s\S]*?```/g, '');
+            // Ensure proper spacing
+            formattedAnswer = formattedAnswer.replace(/\n{3,}/g, '\n\n');
+            return formattedAnswer;
+        }
+        return null;
+    }
+    catch (error) {
+        if (error instanceof Error && error.message === 'Request timeout') {
+            console.warn('AI request timed out, using fallback');
+        }
+        else {
+            console.error('Error getting dynamic answer from website:', error);
+        }
+        return null;
+    }
+};
+/**
+ * Enhance AI answer with concept map context for more comprehensive responses
+ */
+const enhanceAnswerWithContext = (aiAnswer, contextAnswer, query) => {
+    // If context answer is just "not found", return AI answer as-is
+    if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+        return aiAnswer;
+    }
+    // Check if AI declined the query (out of domain)
+    const aiLower = aiAnswer.toLowerCase();
+    const aiDeclined = aiLower.includes("i can only help") ||
+        aiLower.includes("i'm sorry") ||
+        aiLower.includes("i cannot help") ||
+        aiLower.includes("only assist with questions related to indegene") ||
+        aiLower.includes("does not appear to be about indegene") ||
+        aiLower.includes("unrelated to indegene") ||
+        aiLower.includes("extends beyond the scope") ||
+        aiLower.includes("does not align with") ||
+        aiLower.includes("philosophical") && aiLower.includes("beyond");
+    // If AI declined, NEVER add context - the query is out of domain
+    if (aiDeclined) {
+        // Return AI answer as-is without any additional context
+        return aiAnswer;
+    }
+    // If both answers are similar, return the more comprehensive one
+    const contextLower = contextAnswer.toLowerCase();
+    // Check if they're very similar (one contains most of the other)
+    if (aiLower.includes(contextLower.substring(0, 50)) ||
+        contextLower.includes(aiLower.substring(0, 50))) {
+        // Return the longer, more comprehensive answer
+        return aiAnswer.length > contextAnswer.length ? aiAnswer : contextAnswer;
+    }
+    // If AI answer already contains the context information, don't duplicate
+    const contextKeyPhrases = contextAnswer.split(/[.,;]/).slice(0, 3).map(p => p.trim().toLowerCase());
+    const aiContainsContext = contextKeyPhrases.some(phrase => phrase.length > 10 && aiLower.includes(phrase.substring(0, 20)));
+    if (aiContainsContext) {
+        // AI already has the context, return AI answer
+        return aiAnswer;
+    }
+    // If they're different, prefer AI answer as it's more dynamic and comprehensive
+    // Don't append context as "Additional Information" - the AI answer should be sufficient
+    return aiAnswer;
+};
+/* ======================================================
+   Message Content Component - Converts URLs to clickable links
+====================================================== */
+/**
+ * Component that renders message text and converts URLs to clickable links
+ * Also preserves newlines and formatting
+ * Handles both plain URLs and markdown-style links
+ */
+const MessageContent = ({ text }) => {
+    // Regular expression to match URLs (with capturing group for split)
+    const urlRegex = /(https?:\/\/[^\s)]+)/g;
+    // Regular expression to match markdown links [text](url)
+    const markdownLinkRegex = /(\[([^\]]+)\]\((https?:\/\/[^)]+)\))/g;
+    // First, handle markdown links
+    let processedText = text;
+    const markdownLinks = [];
+    let match;
+    const urlRegexForMarkdown = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+    while ((match = urlRegexForMarkdown.exec(text)) !== null) {
+        markdownLinks.push({
+            fullMatch: match[0],
+            text: match[1],
+            url: match[2]
+        });
+    }
+    // Replace markdown links with placeholders
+    markdownLinks.forEach((link, index) => {
+        processedText = processedText.replace(link.fullMatch, `__MARKDOWN_LINK_${index}__`);
+    });
+    // Split text by URLs - capturing group ensures URLs are included in the array
+    const parts = processedText.split(urlRegex);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { whiteSpace: 'pre-wrap' } }, parts.map((part, index) => {
+        // Check if this part is a markdown link placeholder
+        const markdownMatch = part.match(/__MARKDOWN_LINK_(\d+)__/);
+        if (markdownMatch) {
+            const linkIndex = parseInt(markdownMatch[1]);
+            const link = markdownLinks[linkIndex];
+            if (link) {
+                return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { key: index, href: link.url, target: "_blank", rel: "noopener noreferrer", style: {
+                        color: '#0078d4',
+                        textDecoration: 'underline',
+                        wordBreak: 'break-all'
+                    }, onClick: (e) => e.stopPropagation() }, link.text));
+            }
+        }
+        // Check if this part is a URL (starts with http:// or https://)
+        if (part.startsWith('http://') || part.startsWith('https://')) {
+            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { key: index, href: part, target: "_blank", rel: "noopener noreferrer", style: {
+                    color: '#0078d4',
+                    textDecoration: 'underline',
+                    wordBreak: 'break-all'
+                }, onClick: (e) => e.stopPropagation() }, part));
+        }
+        // Regular text - will preserve newlines due to whiteSpace: 'pre-wrap' on parent
+        return react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index }, part);
+    })));
+};
 /* ======================================================
    Main Component
 ====================================================== */
@@ -3494,10 +5587,46 @@ const QuestionSection = (props) => {
     const [loading, setLoading] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
     const [selectedDocumentId, setSelectedDocumentId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const [showViewAll, setShowViewAll] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
+    // Ref for messages container to enable auto-scroll
+    const messagesContainerRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    const messagesEndRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         if (props.context)
             fetchLatestDocuments();
     }, [props.context]);
+    // Auto-scroll to bottom when messages change or loading state changes
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        // Use setTimeout to ensure DOM has updated
+        const scrollToBottom = () => {
+            if (messagesContainerRef.current) {
+                messagesContainerRef.current.scrollTo({
+                    top: messagesContainerRef.current.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        };
+        // Small delay to ensure DOM has rendered
+        const timer = setTimeout(scrollToBottom, 100);
+        return () => clearTimeout(timer);
+    }, [messages, isLoading]);
+    /* ======================================================
+       Welcome Message on Chat Open
+    ====================================================== */
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        // Show welcome message when chat is opened for the first time (no messages yet)
+        if (isChatVisible && messages.length === 0) {
+            const welcomeMessage = {
+                sender: "bot",
+                text: "Hello! 👋 Welcome to Indegene's Knowledge Management Assistant.\n\nFeel free to ask me anything about Indegene or browse our knowledge resources. How can I assist you today?"
+            };
+            // Small delay to make it feel natural
+            const timer = setTimeout(() => {
+                setMessages([welcomeMessage]);
+            }, 300);
+            // Cleanup timer if component unmounts or chat closes
+            return () => clearTimeout(timer);
+        }
+    }, [isChatVisible, messages.length]);
     /* ======================================================
        Fetch Last 5 Documents
     ====================================================== */
@@ -3538,38 +5667,155 @@ const QuestionSection = (props) => {
        Chatbot Handlers
     ====================================================== */
     const toggleChat = () => setChatVisible((prev) => !prev);
-    const handleSend = () => {
+    const handleSend = async () => {
         if (!input.trim() || isLoading)
             return;
         const userMsg = { sender: "user", text: input };
         setMessages((prev) => [...prev, userMsg]);
         setInput("");
         setIsLoading(true);
-        setTimeout(() => {
+        try {
+            // 1) Internal time/date/day (fast, no API call needed)
+            const internal = handleInternalQueries(userMsg.text);
+            if (internal) {
+                setMessages((prev) => [...prev, { sender: "bot", text: internal }]);
+                setIsLoading(false);
+                return;
+            }
+            // 2) General questions (hi, who are you, help) - fast, no API call
+            const general = handleGeneralQueries(userMsg.text);
+            if (general) {
+                setMessages((prev) => [...prev, { sender: "bot", text: general }]);
+                setIsLoading(false);
+                return;
+            }
+            // 3) Get concept map answer first (for context enhancement)
+            // IMPORTANT: Check this BEFORE out-of-domain check, because if we have internal knowledge, it's valid
+            const contextAnswer = getAnswerFromContext(userMsg.text);
+            const hasContextAnswer = contextAnswer && contextAnswer !== "I could not find a relevant match in my stored knowledge.";
+            // Check if context answer is actually relevant to the query
+            let isContextRelevant = false;
+            if (hasContextAnswer) {
+                const queryLower = userMsg.text.toLowerCase();
+                const contextLower = contextAnswer.toLowerCase();
+                // Extract meaningful keywords from query (exclude common words)
+                const queryKeywords = queryLower.split(/\s+/).filter(w => w.length > 3 &&
+                    !['what', 'who', 'where', 'when', 'why', 'how', 'tell', 'me', 'about', 'the', 'is', 'are', 'can', 'you'].includes(w));
+                // Check if context contains query keywords or if query is about Indegene/internal knowledge
+                isContextRelevant = queryKeywords.some(keyword => contextLower.includes(keyword) ||
+                    keyword.includes("indegene") ||
+                    keyword.includes("csr") ||
+                    keyword.includes("privacy") ||
+                    keyword.includes("policy") ||
+                    keyword.includes("skysecure") ||
+                    keyword.includes("prma") ||
+                    keyword.includes("heor") ||
+                    keyword.includes("regulatory") ||
+                    keyword.includes("oncology") ||
+                    keyword.includes("medical")) || queryLower.includes("indegene") || queryLower.includes("skysecure");
+            }
+            // 2.5) Check for out-of-domain queries (weather, sports, etc.)
+            // BUT: Skip this check if we have a RELEVANT context map answer (internal knowledge is always valid)
+            if ((!hasContextAnswer || !isContextRelevant) && isOutOfDomainQuery(userMsg.text)) {
+                // Special handling for mental health crisis queries
+                const queryLower = userMsg.text.toLowerCase();
+                if (queryLower.includes("suicide") || queryLower.includes("kill myself") ||
+                    queryLower.includes("end my life") || queryLower.includes("how to die") ||
+                    queryLower.match(/how\s+to\s+(commit\s+)?suicide/i) ||
+                    queryLower.match(/how\s+to\s+kill\s+(myself|yourself)/i)) {
+                    const crisisMessage = "I'm deeply concerned about what you're going through. If you're having thoughts of self-harm or suicide, please reach out for help immediately:\n\n• **Crisis Text Line**: Text HOME to 741741 (US)\n• **National Suicide Prevention Lifeline**: 988 (US) or 1-800-273-8255\n• **International Association for Suicide Prevention**: https://www.iasp.info/resources/Crisis_Centres/\n• **Emergency Services**: 911 (US) or your local emergency number\n\nYou are not alone, and there are people who want to help. Please reach out to a mental health professional, a trusted friend or family member, or a crisis helpline.\n\nI can help you with questions about Indegene, life sciences, healthcare, and related topics, but for mental health support, please contact a qualified professional.";
+                    setMessages((prev) => [...prev, { sender: "bot", text: crisisMessage }]);
+                    setIsLoading(false);
+                    return;
+                }
+                const outOfDomainMessage = "I'm sorry, but I can only help with questions related to Indegene, life sciences, healthcare, medical content, regulatory intelligence, and related business topics. I can also tell you the current time, date, or day.\n\nFor questions about Indegene, try asking:\n• \"What services does Indegene offer?\"\n• \"Tell me about Indegene's NEXT platforms\"\n• \"What is Indegene's partnership with Microsoft?\"\n";
+                setMessages((prev) => [...prev, { sender: "bot", text: outOfDomainMessage }]);
+                setIsLoading(false);
+                return;
+            }
+            // 4) Try dynamic AI-based answer from website
+            // This uses Azure OpenAI to generate answers based on the Indegene website
+            let reply;
             try {
-                // 1) Internal time/date/day
-                const internal = handleInternalQueries(userMsg.text);
-                // 2) General questions (hi, who are you, help)
-                const general = internal ? null : handleGeneralQueries(userMsg.text);
-                // 3) Context lookup
-                const reply = internal || general || getAnswerFromContext(userMsg.text);
-                // 4) Quick links detection
-                const link = getLinkForQuery(userMsg.text);
-                if (link) {
-                    // push a single bot message that contains text + link metadata
-                    setMessages((prev) => [
-                        ...prev,
-                        { sender: "bot", text: reply, title: link.title, url: link.url }
-                    ]);
+                const dynamicAnswer = await getDynamicAnswerFromWebsite(userMsg.text, contextAnswer);
+                if (dynamicAnswer) {
+                    // Check if AI declined the query (indicates it's out of domain)
+                    // BUT: If we have a context map answer, ignore the decline and use context answer
+                    const answerLower = dynamicAnswer.toLowerCase();
+                    const aiDeclined = answerLower.includes("i can only help") ||
+                        answerLower.includes("i'm sorry") ||
+                        answerLower.includes("i cannot help") ||
+                        answerLower.includes("only assist with questions related to indegene") ||
+                        answerLower.includes("does not appear to be about indegene");
+                    if (aiDeclined) {
+                        // AI declined - only use context if it's actually relevant
+                        if (isContextRelevant && hasContextAnswer) {
+                            // Context is relevant, use it
+                            reply = contextAnswer;
+                        }
+                        else {
+                            // Context is not relevant or doesn't exist, use AI's decline message without context
+                            reply = dynamicAnswer;
+                        }
+                    }
+                    else if (isContextRelevant && hasContextAnswer) {
+                        // AI provided answer and we have relevant context - enhance with context
+                        reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer, userMsg.text);
+                    }
+                    else {
+                        // AI provided answer but no relevant context - use AI answer, but check if it needs enhancement
+                        reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer, userMsg.text);
+                    }
                 }
                 else {
-                    setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+                    // Fallback to concept map if AI fails
+                    // If context map also has no answer, provide a helpful message
+                    if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+                        reply = "I couldn't find specific information about that in my knowledge base. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                    }
+                    else {
+                        reply = contextAnswer;
+                    }
                 }
             }
-            finally {
-                setIsLoading(false);
+            catch (error) {
+                console.error('Error in dynamic answer generation, using fallback:', error);
+                // Fallback to concept map on error
+                if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+                    reply = "I couldn't find specific information about that in my knowledge base. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                }
+                else {
+                    reply = contextAnswer;
+                }
             }
-        }, 400);
+            // 5) Quick links detection
+            const link = getLinkForQuery(userMsg.text);
+            if (link) {
+                // push a single bot message that contains text + link metadata
+                setMessages((prev) => [
+                    ...prev,
+                    { sender: "bot", text: reply, title: link.title, url: link.url }
+                ]);
+            }
+            else {
+                setMessages((prev) => [...prev, { sender: "bot", text: reply }]);
+            }
+        }
+        catch (error) {
+            console.error('Error in handleSend:', error);
+            // Final fallback to concept map
+            const fallbackReply = getAnswerFromContext(userMsg.text);
+            if (fallbackReply === "I could not find a relevant match in my stored knowledge.") {
+                const helpfulMessage = "I encountered an error and couldn't find specific information about that. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                setMessages((prev) => [...prev, { sender: "bot", text: helpfulMessage }]);
+            }
+            else {
+                setMessages((prev) => [...prev, { sender: "bot", text: fallbackReply }]);
+            }
+        }
+        finally {
+            setIsLoading(false);
+        }
     };
     const handleKeyPress = (e) => {
         if (e.key === "Enter") {
@@ -3701,17 +5947,18 @@ const QuestionSection = (props) => {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].chatHeader },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Chat Assistant"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].closeButton, onClick: toggleChat }, "\u00D7")),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messages },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messages, ref: messagesContainerRef },
                 messages.map((msg, idx) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: idx, className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainer} ${msg.sender === "user"
                         ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerUser
                         : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerBot}` },
                     msg.sender === "bot" && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageAvatar })),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: msg.sender === "user" ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].userMsg : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botMsg },
-                        msg.text,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(MessageContent, { text: msg.text }),
                         msg.sender === "bot" && msg.url && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { marginTop: 8 } },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: msg.url, target: "_blank", rel: "noopener noreferrer", 
                                 // use a safe cast because your CSS module may not include botLink yet
                                 className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botLink }, msg.title ? msg.title : msg.url))))))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: messagesEndRef }),
                 isLoading && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainer} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerBot}` },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageAvatar }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botMsg} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].thinking}` }, "...Thinking...")))),
@@ -3755,45 +6002,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 const styles = {
-    questionSection: 'questionSection_b54e81a5',
-    sectionTitle: 'sectionTitle_b54e81a5',
-    tilesContainer: 'tilesContainer_b54e81a5',
-    tile: 'tile_b54e81a5',
-    promptText: 'promptText_b54e81a5',
-    rightInput: 'rightInput_b54e81a5',
-    questionInput: 'questionInput_b54e81a5',
-    chatbotIcon: 'chatbotIcon_b54e81a5',
-    chatWindow: 'chatWindow_b54e81a5',
-    chatHeader: 'chatHeader_b54e81a5',
-    messages: 'messages_b54e81a5',
-    messageContainer: 'messageContainer_b54e81a5',
-    messageContainerUser: 'messageContainerUser_b54e81a5',
-    messageContainerBot: 'messageContainerBot_b54e81a5',
-    messageAvatar: 'messageAvatar_b54e81a5',
-    userMsg: 'userMsg_b54e81a5',
-    botMsg: 'botMsg_b54e81a5',
-    thinking: 'thinking_b54e81a5',
-    pulse: 'pulse_b54e81a5',
-    inputRow: 'inputRow_b54e81a5',
-    chatInput: 'chatInput_b54e81a5',
-    sendButton: 'sendButton_b54e81a5',
-    closeButton: 'closeButton_b54e81a5',
-    tileHeader: 'tileHeader_b54e81a5',
-    fileTypeIcon: 'fileTypeIcon_b54e81a5',
-    fileType: 'fileType_b54e81a5',
-    tileTitle: 'tileTitle_b54e81a5',
-    tileAbstract: 'tileAbstract_b54e81a5',
-    tileActions: 'tileActions_b54e81a5',
-    viewButton: 'viewButton_b54e81a5',
-    downloadButton: 'downloadButton_b54e81a5',
-    loading: 'loading_b54e81a5',
-    noDocuments: 'noDocuments_b54e81a5',
-    viewAllTile: 'viewAllTile_b54e81a5',
-    viewAllText: 'viewAllText_b54e81a5',
-    viewAllModal: 'viewAllModal_b54e81a5',
-    detailModal: 'detailModal_b54e81a5',
-    chatLauncher: 'chatLauncher_b54e81a5',
-    botLink: 'botLink_b54e81a5'
+    questionSection: 'questionSection_f7ecfc39',
+    sectionTitle: 'sectionTitle_f7ecfc39',
+    tilesContainer: 'tilesContainer_f7ecfc39',
+    tile: 'tile_f7ecfc39',
+    promptText: 'promptText_f7ecfc39',
+    rightInput: 'rightInput_f7ecfc39',
+    questionInput: 'questionInput_f7ecfc39',
+    chatbotIcon: 'chatbotIcon_f7ecfc39',
+    chatWindow: 'chatWindow_f7ecfc39',
+    chatHeader: 'chatHeader_f7ecfc39',
+    messages: 'messages_f7ecfc39',
+    messageContainer: 'messageContainer_f7ecfc39',
+    messageContainerUser: 'messageContainerUser_f7ecfc39',
+    messageContainerBot: 'messageContainerBot_f7ecfc39',
+    messageAvatar: 'messageAvatar_f7ecfc39',
+    userMsg: 'userMsg_f7ecfc39',
+    botMsg: 'botMsg_f7ecfc39',
+    thinking: 'thinking_f7ecfc39',
+    pulse: 'pulse_f7ecfc39',
+    inputRow: 'inputRow_f7ecfc39',
+    chatInput: 'chatInput_f7ecfc39',
+    sendButton: 'sendButton_f7ecfc39',
+    closeButton: 'closeButton_f7ecfc39',
+    tileHeader: 'tileHeader_f7ecfc39',
+    fileTypeIcon: 'fileTypeIcon_f7ecfc39',
+    fileType: 'fileType_f7ecfc39',
+    tileTitle: 'tileTitle_f7ecfc39',
+    tileAbstract: 'tileAbstract_f7ecfc39',
+    tileActions: 'tileActions_f7ecfc39',
+    viewButton: 'viewButton_f7ecfc39',
+    downloadButton: 'downloadButton_f7ecfc39',
+    loading: 'loading_f7ecfc39',
+    noDocuments: 'noDocuments_f7ecfc39',
+    viewAllTile: 'viewAllTile_f7ecfc39',
+    viewAllText: 'viewAllText_f7ecfc39',
+    viewAllModal: 'viewAllModal_f7ecfc39',
+    detailModal: 'detailModal_f7ecfc39',
+    chatLauncher: 'chatLauncher_f7ecfc39',
+    botLink: 'botLink_f7ecfc39'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3816,37 +6063,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const AboutPage = (props) => {
-    return (
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-            "div",
-            { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-                "div",
-                { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-                    "p",
-                    { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText },
-                    "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies. Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency."
-                ),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-                    "div",
-                    { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-                        className:
-                            _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot +
-                            " " +
-                            _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active
-                    }),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-                        className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot
-                    }),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-                        className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot
-                    })
-                )
-            )
-        )
-    );
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies.  Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency."))));
 };
 
 
@@ -3864,9 +6083,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./AboutPage.module.css */ 6122);
 const styles = {
-    aboutPage: 'aboutPage_3c557e40',
-    contentContainer: 'contentContainer_3c557e40',
-    contentText: 'contentText_3c557e40'
+    aboutPage: 'aboutPage_d84a728a',
+    contentContainer: 'contentContainer_d84a728a',
+    contentText: 'contentText_d84a728a'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -4312,66 +6531,83 @@ const DocumentDetailPage = (props) => {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].backButton, onClick: handleBack },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15 18l-6-6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                backButtonText),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerActions },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: handleDownload },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                    "Download"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].shareButton, onClick: handleShare },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "5", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "6", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "19", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8.59", y1: "13.51", x2: "15.42", y2: "17.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "15.41", y1: "6.51", x2: "8.59", y2: "10.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))),
+                backButtonText)),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].content },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].mainContent },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerRow },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIndicator },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(document.fileType)),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeText }, document.fileType)),
-                    tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tagsContainer }, tags.map((tag, index) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tag }, tag)))))),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentTitle }, document.name),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentAbstract }, document.abstract || 'No description available'),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadata },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "7", r: "4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.author)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("rect", { x: "3", y: "4", width: "18", height: "18", rx: "2", ry: "2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "16", y1: "2", x2: "16", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8", y1: "2", x2: "8", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "3", y1: "10", x2: "21", y2: "10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.date)),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "14 2 14 8 20 8", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.fileSize))),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewSection },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewTitle }, "Document Preview"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewContainer },
-                        previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: (e) => {
-                                console.error('SVG load error:', e);
-                                setPreviewError('Failed to load SVG preview');
-                            }, onLoad: () => {
-                                setPreviewError('');
-                            } },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: () => setPreviewError('Failed to load preview'), onLoad: () => setPreviewError('') }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewPlaceholder }, "Preview not available")),
-                        previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewError },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorIcon }, "\u26A0\uFE0F"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorText }, previewError),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].retryButton, onClick: () => {
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].titleSection },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].titleContent },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerRow },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIndicator },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeIcon }, getFileTypeIcon(document.fileType)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fileTypeText }, document.fileType)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].actionButtons },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].downloadButton, onClick: handleDownload },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                                "Download"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].shareButton, onClick: handleShare },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "5", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "6", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "19", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8.59", y1: "13.51", x2: "15.42", y2: "17.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "15.41", y1: "6.51", x2: "8.59", y2: "10.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentTitle }, document.name),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].documentAbstract }, document.abstract || 'No description available'),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadata },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "7", r: "4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.author)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].metadataItem },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("rect", { x: "3", y: "4", width: "18", height: "18", rx: "2", ry: "2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "16", y1: "2", x2: "16", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8", y1: "2", x2: "8", y2: "6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "3", y1: "10", x2: "21", y2: "10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.date))))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].contentWrapper },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].mainContent },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewSection },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewTitle }, "Document Preview"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewContainer },
+                            previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: (e) => {
+                                    console.error('SVG load error:', e);
+                                    setPreviewError('Failed to load SVG preview');
+                                }, onLoad: () => {
                                     setPreviewError('');
-                                    // Retry by re-fetching the document details
-                                    fetchDocumentDetails();
-                                } }, "Retry")))))))));
+                                } },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewFrame, title: "Document Preview", onError: () => setPreviewError('Failed to load preview'), onLoad: () => setPreviewError('') }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewPlaceholder }, "Preview not available")),
+                            previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].previewError },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorIcon }, "\u26A0\uFE0F"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].errorText }, previewError),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].retryButton, onClick: () => {
+                                        setPreviewError('');
+                                        // Retry by re-fetching the document details
+                                        fetchDocumentDetails();
+                                    } }, "Retry")))))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sidebar },
+                    tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sidebarSection },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sidebarTitle },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "7", y1: "7", x2: "7.01", y2: "7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            "Tags"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tagsContainer }, tags.map((tag, index) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].tag }, tag)))))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sidebarSection },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sidebarTitle }, "Document Information"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoList },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoItem },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoLabel }, "Category"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoValue }, tags.length >= 2 ? tags[1] : 'N/A')),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoItem },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoLabel }, "File Type"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoValue }, document.fileType)),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoItem },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoLabel }, "File Size"),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].infoValue }, document.fileSize)))))))));
 };
 
 
@@ -4389,35 +6625,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./DocumentDetailPage.module.css */ 4790);
 const styles = {
-    documentDetailPage: 'documentDetailPage_793d7e46',
-    header: 'header_793d7e46',
-    backButton: 'backButton_793d7e46',
-    headerActions: 'headerActions_793d7e46',
-    downloadButton: 'downloadButton_793d7e46',
-    shareButton: 'shareButton_793d7e46',
-    content: 'content_793d7e46',
-    headerRow: 'headerRow_793d7e46',
-    mainContent: 'mainContent_793d7e46',
-    fileTypeIndicator: 'fileTypeIndicator_793d7e46',
-    tagsContainer: 'tagsContainer_793d7e46',
-    tag: 'tag_793d7e46',
-    fileTypeIcon: 'fileTypeIcon_793d7e46',
-    fileTypeText: 'fileTypeText_793d7e46',
-    documentTitle: 'documentTitle_793d7e46',
-    documentAbstract: 'documentAbstract_793d7e46',
-    metadata: 'metadata_793d7e46',
-    metadataItem: 'metadataItem_793d7e46',
-    previewSection: 'previewSection_793d7e46',
-    previewTitle: 'previewTitle_793d7e46',
-    previewContainer: 'previewContainer_793d7e46',
-    previewFrame: 'previewFrame_793d7e46',
-    previewPlaceholder: 'previewPlaceholder_793d7e46',
-    previewError: 'previewError_793d7e46',
-    errorIcon: 'errorIcon_793d7e46',
-    errorText: 'errorText_793d7e46',
-    retryButton: 'retryButton_793d7e46',
-    loading: 'loading_793d7e46',
-    error: 'error_793d7e46'
+    documentDetailPage: 'documentDetailPage_90c02955',
+    header: 'header_90c02955',
+    backButton: 'backButton_90c02955',
+    content: 'content_90c02955',
+    titleSection: 'titleSection_90c02955',
+    titleContent: 'titleContent_90c02955',
+    contentWrapper: 'contentWrapper_90c02955',
+    mainContent: 'mainContent_90c02955',
+    headerRow: 'headerRow_90c02955',
+    fileTypeIndicator: 'fileTypeIndicator_90c02955',
+    fileTypeIcon: 'fileTypeIcon_90c02955',
+    fileTypeText: 'fileTypeText_90c02955',
+    documentTitle: 'documentTitle_90c02955',
+    documentAbstract: 'documentAbstract_90c02955',
+    metadata: 'metadata_90c02955',
+    metadataItem: 'metadataItem_90c02955',
+    actionButtons: 'actionButtons_90c02955',
+    downloadButton: 'downloadButton_90c02955',
+    shareButton: 'shareButton_90c02955',
+    previewSection: 'previewSection_90c02955',
+    previewTitle: 'previewTitle_90c02955',
+    previewContainer: 'previewContainer_90c02955',
+    previewFrame: 'previewFrame_90c02955',
+    previewPlaceholder: 'previewPlaceholder_90c02955',
+    previewError: 'previewError_90c02955',
+    errorIcon: 'errorIcon_90c02955',
+    errorText: 'errorText_90c02955',
+    retryButton: 'retryButton_90c02955',
+    sidebar: 'sidebar_90c02955',
+    sidebarSection: 'sidebarSection_90c02955',
+    sidebarTitle: 'sidebarTitle_90c02955',
+    tagsContainer: 'tagsContainer_90c02955',
+    tag: 'tag_90c02955',
+    infoList: 'infoList_90c02955',
+    infoItem: 'infoItem_90c02955',
+    infoLabel: 'infoLabel_90c02955',
+    infoValue: 'infoValue_90c02955',
+    loading: 'loading_90c02955',
+    error: 'error_90c02955'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -5113,17 +7359,18 @@ class AzureOpenAIService {
             const nonExactMatches = [];
             documents.forEach((doc) => {
                 // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+                // documentContent includes: body text, headers, footers (e.g., "© 2025 Skysecure Technologies")
                 const titleLower = (doc.title || '').toLowerCase();
                 const fileNameLower = (doc.fileName || '').toLowerCase();
                 const descriptionLower = (doc.description || '').toLowerCase();
                 const contributorLower = (doc.contributor || '').toLowerCase();
-                const documentContentLower = (doc.documentContent || '').toLowerCase();
-                // Check if word appears in ANY field (especially documentContent)
+                const documentContentLower = (doc.documentContent || '').toLowerCase(); // Includes headers/footers from all pages
+                // Check if word appears in ANY field (especially documentContent which includes footers)
                 const inTitle = titleLower.includes(queryLower);
                 const inFileName = fileNameLower.includes(queryLower);
                 const inDescription = descriptionLower.includes(queryLower);
                 const inContributor = contributorLower.includes(queryLower);
-                const inDocumentContent = documentContentLower.includes(queryLower);
+                const inDocumentContent = documentContentLower.includes(queryLower); // Searches footer content too
                 // Document matches if word appears in ANY field, especially documentContent
                 if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
                     // Combine all fields for counting total occurrences
@@ -5184,11 +7431,12 @@ class AzureOpenAIService {
                     doc.fileName || '',
                     doc.description || '',
                     doc.contributor || '',
-                    doc.documentContent || '' // actual document content (first 5000 chars)
+                    doc.documentContent || '' // actual document content (up to 100k chars, sampled from beginning/middle/end)
                 ].filter(Boolean).join(' ');
-                // Limit total text to ~8000 chars to keep embedding API calls reasonable
-                const truncatedText = searchableText.length > 8000
-                    ? searchableText.substring(0, 8000)
+                // Limit total text to ~30,000 chars to keep embedding API calls reasonable while using more content
+                // This allows us to use significantly more document content for better semantic matching
+                const truncatedText = searchableText.length > 30000
+                    ? searchableText.substring(0, 30000)
                     : searchableText;
                 try {
                     const embedding = await this.generateEmbedding(truncatedText);
@@ -6002,12 +8250,18 @@ class DocumentParser {
     }
     /**
      * Extract text from PDF file
+     * Extracts ALL text including headers, footers, and body content from every page
+     * react-pdftotext extracts all visible text from the PDF by default
      */
     static async parsePDF(file) {
         try {
+            console.log('=== EXTRACTING PDF TEXT (including headers/footers) ===');
             const pdfToTextModule = await __webpack_require__.e(/*! import() */ "vendors-node_modules_react-pdftotext_dist_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! react-pdftotext */ 5715, 23));
             const pdfToText = pdfToTextModule.default || pdfToTextModule;
+            // Extract all text from PDF - this includes headers, footers, and body content
+            // react-pdftotext extracts all visible text from all pages by default
             const text = await pdfToText(file);
+            console.log(`Extracted ${(text === null || text === void 0 ? void 0 : text.length) || 0} characters from PDF (includes headers/footers)`);
             if (!text || text.trim().length === 0) {
                 return {
                     text: '',
@@ -6015,6 +8269,7 @@ class DocumentParser {
                     error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
                 };
             }
+            // Return all extracted text (headers, footers, and body content are all included)
             return {
                 text: text.trim(),
                 success: true
@@ -6041,14 +8296,40 @@ class DocumentParser {
     }
     /**
      * Extract text from Word (.docx) file
+     * Extracts text from document body, headers, and footers
+     * Uses mammoth to extract all readable text content
      */
     static async parseWord(file) {
         try {
+            console.log('=== EXTRACTING WORD DOCUMENT TEXT (including headers/footers) ===');
             const mammoth = await Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_jszip_dist_jszip_min_js"), __webpack_require__.e("vendors-node_modules_mammoth_lib_index_js")]).then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 845, 19));
             const arrayBuffer = await file.arrayBuffer();
+            // Extract raw text - this includes body text
+            // Note: mammoth.extractRawText extracts body text, but headers/footers in Word
+            // are in separate document parts. We'll try to get as much as possible.
             const result = await mammoth.extractRawText({ arrayBuffer });
+            // Also try to extract from HTML conversion which may include more content
+            // including headers/footers if they're in the main document flow
+            let additionalText = '';
+            try {
+                const htmlResult = await mammoth.convertToHtml({ arrayBuffer });
+                if (htmlResult.value) {
+                    // Extract text from HTML (this may include headers/footers if present)
+                    additionalText = this.extractTextFromHTML(htmlResult.value);
+                }
+            }
+            catch (htmlError) {
+                console.warn('Could not extract additional text from HTML conversion:', htmlError);
+            }
+            // Combine body text with any additional text found
+            const combinedText = result.value.trim();
+            const allText = additionalText && additionalText.trim()
+                ? `${combinedText}\n${additionalText.trim()}`
+                : combinedText;
+            console.log(`Extracted ${allText.length} characters from Word document`);
+            console.log(`Body text: ${combinedText.length} chars, Additional: ${additionalText.length} chars`);
             return {
-                text: result.value.trim(),
+                text: allText.trim(),
                 success: true
             };
         }
@@ -6063,10 +8344,12 @@ class DocumentParser {
     /**
      * Extract text from PowerPoint (.pptx) file
      * PPTX files are ZIP archives containing XML files
+     * Extracts text from slides, notes, and headers/footers
      */
     static async parsePowerPoint(file) {
-        var _a;
+        var _a, _b;
         try {
+            console.log('=== EXTRACTING POWERPOINT TEXT (including notes/headers/footers) ===');
             const JSZipModule = await __webpack_require__.e(/*! import() */ "vendors-node_modules_jszip_dist_jszip_min_js").then(__webpack_require__.t.bind(__webpack_require__, /*! jszip */ 4355, 23));
             // Handle both default export and namespace export
             const JSZip = JSZipModule.default || JSZipModule;
@@ -6075,9 +8358,15 @@ class DocumentParser {
             const zip = await JSZip.loadAsync(arrayBuffer);
             // Get all slide files (ppt/slides/slide*.xml)
             const slideFiles = [];
+            // Get all notes files (ppt/notesSlides/notesSlide*.xml) - these contain speaker notes
+            const notesFiles = [];
             zip.forEach((relativePath) => {
                 if (relativePath.startsWith('ppt/slides/slide') && relativePath.endsWith('.xml')) {
                     slideFiles.push(relativePath);
+                }
+                // Also extract from notes slides which may contain additional content
+                if (relativePath.startsWith('ppt/notesSlides/notesSlide') && relativePath.endsWith('.xml')) {
+                    notesFiles.push(relativePath);
                 }
             });
             // Sort slides by number
@@ -6087,6 +8376,13 @@ class DocumentParser {
                 const bNum = parseInt(((_b = b.match(/slide(\d+)\.xml/)) === null || _b === void 0 ? void 0 : _b[1]) || '0');
                 return aNum - bNum;
             });
+            // Sort notes by number
+            notesFiles.sort((a, b) => {
+                var _a, _b;
+                const aNum = parseInt(((_a = a.match(/notesSlide(\d+)\.xml/)) === null || _a === void 0 ? void 0 : _a[1]) || '0');
+                const bNum = parseInt(((_b = b.match(/notesSlide(\d+)\.xml/)) === null || _b === void 0 ? void 0 : _b[1]) || '0');
+                return aNum - bNum;
+            });
             if (slideFiles.length === 0) {
                 return {
                     text: '',
@@ -6094,9 +8390,10 @@ class DocumentParser {
                     error: 'No slides found in the PowerPoint file.'
                 };
             }
-            // Extract text from each slide
+            // Extract text from each slide (includes headers/footers if present in slide content)
             const allText = [];
-            console.log(`Found ${slideFiles.length} slides to process`);
+            console.log(`Found ${slideFiles.length} slides and ${notesFiles.length} notes slides to process`);
+            // Extract text from slides
             for (const slidePath of slideFiles) {
                 try {
                     const slideXml = await ((_a = zip.file(slidePath)) === null || _a === void 0 ? void 0 : _a.async('string'));
@@ -6120,7 +8417,25 @@ class DocumentParser {
                     // Continue with other slides
                 }
             }
-            console.log(`Total slides with text: ${allText.length}`);
+            // Extract text from notes slides (speaker notes)
+            for (const notesPath of notesFiles) {
+                try {
+                    const notesXml = await ((_b = zip.file(notesPath)) === null || _b === void 0 ? void 0 : _b.async('string'));
+                    if (notesXml) {
+                        console.log(`Processing notes: ${notesPath}`);
+                        const notesText = this.extractTextFromSlideXml(notesXml);
+                        if (notesText.trim()) {
+                            allText.push(`[Notes] ${notesText}`);
+                            console.log(`Extracted ${notesText.length} characters from notes ${notesPath}`);
+                        }
+                    }
+                }
+                catch (notesError) {
+                    console.warn(`Error parsing notes ${notesPath}:`, notesError);
+                    // Continue with other notes
+                }
+            }
+            console.log(`Total slides with text: ${slideFiles.length}, Notes extracted: ${notesFiles.length}`);
             const combinedText = allText.join('\n\n').trim();
             if (!combinedText || combinedText.length === 0) {
                 return {
@@ -6129,6 +8444,7 @@ class DocumentParser {
                     error: 'No text content found in PowerPoint slides. The slides might be image-based or empty.'
                 };
             }
+            console.log(`Total extracted text: ${combinedText.length} characters (includes slides, notes, headers/footers)`);
             return {
                 text: combinedText,
                 success: true
@@ -6583,7 +8899,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AZURE_SEARCH_INDEX: () => (/* binding */ AZURE_SEARCH_INDEX),
 /* harmony export */   AZURE_SEARCH_KEY: () => (/* binding */ AZURE_SEARCH_KEY),
 /* harmony export */   AZURE_SEARCH_SEMANTIC_CONFIG: () => (/* binding */ AZURE_SEARCH_SEMANTIC_CONFIG),
-/* harmony export */   AZURE_SEARCH_SUGGESTER_NAME: () => (/* binding */ AZURE_SEARCH_SUGGESTER_NAME)
+/* harmony export */   AZURE_SEARCH_SUGGESTER_NAME: () => (/* binding */ AZURE_SEARCH_SUGGESTER_NAME),
+/* harmony export */   KNOWLEDGE_BASE_URL: () => (/* binding */ KNOWLEDGE_BASE_URL)
 /* harmony export */ });
 // src/webparts/migration/services/SearchConfig.ts
 // ❗ Do NOT commit this file to public repos.
@@ -6601,6 +8918,25 @@ const AZURE_SEARCH_KEY = "pLhCvUdhxq7xPpu6LV6f1oq4JudU6MD7tozjSjxVgTAzSeDaLSy1";
 // Change these two if you used different names in the Search index
 const AZURE_SEARCH_SEMANTIC_CONFIG = "semanticConfig1"; // semantic configuration name
 const AZURE_SEARCH_SUGGESTER_NAME = "sg-migration"; // suggester name
+// ============================================================================
+// DYNAMIC CONTENT FOR CHATBOT
+// ============================================================================
+// The chatbot uses Azure Cognitive Search (configured above) to dynamically
+// fetch relevant content from your indexed knowledge base. This provides
+// real-time, semantic search capabilities for accurate answers.
+//
+// Azure Search Configuration (already set above):
+// - AZURE_SEARCH_ENDPOINT: Your Azure Search service endpoint
+// - AZURE_SEARCH_INDEX: The index name containing your documents
+// - AZURE_SEARCH_KEY: API key for authentication
+// - AZURE_SEARCH_SEMANTIC_CONFIG: Semantic configuration for better results
+//
+// The chatbot will automatically search this index based on user queries
+// and use the results to provide comprehensive, up-to-date answers.
+//
+// KNOWLEDGE_BASE_URL is kept for reference but Azure Search is now primary.
+// ============================================================================
+const KNOWLEDGE_BASE_URL = "https://www.indegene.com/";
 
 
 /***/ }),
