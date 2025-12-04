@@ -3816,9 +3816,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const AboutPage = (props) => {
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText }, "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies.  Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency.."))));
+    return (
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+            "div",
+            { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+                "div",
+                { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentContainer },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+                    "p",
+                    { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contentText },
+                    "Indegene combines deep healthcare domain expertise with proprietary AI/ML tools to provide end-to-end commercialization services for life-sciences companies. Its core business units are Enterprise Commercial Solutions (ECS) and Enterprise Medical Solutions (EMS). Indegene's clients include a wide range of pharmaceutical, biotech and medical-device companies worldwide and as of end-2023 serviced roughly 65 active clients. Through its integrated, technology-driven delivery model and global delivery hubs, Indegene helps these clients modernize and scale their drug-development, regulatory, medical and commercial operations with speed, compliance and efficiency."
+                ),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+                    "div",
+                    { className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].carouselIndicators },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+                        className:
+                            _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot +
+                            " " +
+                            _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].active
+                    }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+                        className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot
+                    }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+                        className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dot
+                    })
+                )
+            )
+        )
+    );
 };
 
 

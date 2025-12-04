@@ -1,10 +1,10 @@
 
 require("./Navigation.module.css");
 const styles = {
-  navigation: 'navigation_72dd57cd',
-  navContainer: 'navContainer_72dd57cd',
-  navItem: 'navItem_72dd57cd',
-  active: 'active_72dd57cd'
+  navigation: 'navigation_5165153b',
+  navContainer: 'navContainer_5165153b',
+  navItem: 'navItem_5165153b',
+  active: 'active_5165153b'
 };
 
 export default styles;

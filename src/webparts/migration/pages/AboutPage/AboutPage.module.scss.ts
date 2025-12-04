@@ -1,9 +1,9 @@
 
 require("./AboutPage.module.css");
 const styles = {
-  aboutPage: 'aboutPage_3c557e40',
-  contentContainer: 'contentContainer_3c557e40',
-  contentText: 'contentText_3c557e40'
+  aboutPage: 'aboutPage_d84a728a',
+  contentContainer: 'contentContainer_d84a728a',
+  contentText: 'contentText_d84a728a'
 };
 
 export default styles;

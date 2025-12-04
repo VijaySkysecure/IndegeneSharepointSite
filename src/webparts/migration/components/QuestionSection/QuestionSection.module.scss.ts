@@ -1,5 +1,5 @@
-
 require("./QuestionSection.module.css");
+
 const styles = {
   questionSection: 'questionSection_b54e81a5',
   sectionTitle: 'sectionTitle_b54e81a5',
@@ -24,6 +24,8 @@ const styles = {
   chatInput: 'chatInput_b54e81a5',
   sendButton: 'sendButton_b54e81a5',
   closeButton: 'closeButton_b54e81a5',
+
+  // Shared keys (HEAD hash is newer)
   tileHeader: 'tileHeader_b54e81a5',
   fileTypeIcon: 'fileTypeIcon_b54e81a5',
   fileType: 'fileType_b54e81a5',
@@ -38,6 +40,8 @@ const styles = {
   viewAllText: 'viewAllText_b54e81a5',
   viewAllModal: 'viewAllModal_b54e81a5',
   detailModal: 'detailModal_b54e81a5',
+
+  // Only in HEAD
   chatLauncher: 'chatLauncher_b54e81a5',
   botLink: 'botLink_b54e81a5'
 };
