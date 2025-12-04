@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "a3c4b123-5678-4cde-9abc-1234567890ab",
+  "alias": "MyPublishedViewerWebPart",
+  "componentType": "WebPart",
+
+  "version": "1.0.0",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "My Published Viewer" },
+    "description": { "default": "Displays My Documents and Published Documents" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "My Published Viewer"
+    }
+  }]
+}
