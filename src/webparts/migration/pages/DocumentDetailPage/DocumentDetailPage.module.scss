@@ -61,9 +61,18 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mainContentWrapper {
   display: flex;
   gap: 24px;
   align-items: flex-start;
@@ -115,6 +124,10 @@
   font-family: 'Inter', sans-serif;
   line-height: 1.3;
   max-width: 70%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  box-sizing: border-box;
 }
 
 .documentAbstract {
@@ -203,6 +216,7 @@
 
 .previewSection {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .previewTitle {
@@ -366,6 +380,255 @@
   color: #333;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
+}
+
+.socialSection {
+  padding: 10px 28px;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+.socialActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.likeButton,
+.commentButton,
+.shareButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.2s, opacity 0.2s;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.likeButton.liked {
+  svg {
+    stroke: none;
+    
+    path {
+      fill: url(#likeGradient);
+    }
+  }
+}
+
+.count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.commentsBox {
+  margin-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+}
+
+.commentsList {
+  height: 170px; /* Fixed height to show exactly 2 comments */
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 16px;
+  padding-right: 8px;
+  min-height: 120px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+
+    &:hover {
+      background: #555;
+    }
+  }
+}
+
+.commentItem {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.commentHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.commentUserName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.commentTime {
+  font-size: 12px;
+  color: #999;
+  font-family: 'Inter', sans-serif;
+}
+
+.commentText {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  word-wrap: break-word;
+}
+
+.deleteCommentButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  color: #999;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    color: #d32f2f;
+  }
+}
+
+.commentItem:hover .deleteCommentButton {
+  opacity: 1;
+}
+
+.noComments {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  padding: 20px 0;
+}
+
+.addCommentSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.commentInputWrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.commentInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  padding: 8px 50px 8px 0;
+  background: transparent;
+  width: 100%;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.charCount {
+  position: absolute;
+  right: 0;
+  font-size: 11px;
+  color: #999;
+  font-family: 'Inter', sans-serif;
+  pointer-events: none;
+  line-height: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.charCountWarning {
+  color: #ff9800;
+}
+
+.charCountError {
+  color: #d32f2f;
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 18px;
+  cursor: pointer;
+  color: #1976d2;
+  transition: opacity 0.2s;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 .loading,

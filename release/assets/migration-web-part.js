@@ -380,14 +380,14 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_5165153b{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_5165153b{align-items:center;display:flex;gap:0;justify-content:center;margin:0 auto;max-width:92%;padding:0 60px}.navItem_5165153b{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_5165153b.active_5165153b{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQU1BLEtBQUEsQ0FKQSxzQkFBQSxDQUVBLGFBQUEsQ0FEQSxhQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQVFBLGlCQUFBLENBUEEsb0JBQUEsQ0FLQSwrQkFFQSxDQUdBLGtDQUVFLCtCQUFBLENBREEsYUFDQSIsImZpbGUiOiJOYXZpZ2F0aW9uLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".navigation_e3b05c65{background-color:#e3f2fd;box-shadow:0 2px 4px rgba(0,0,0,.1);font-family:Inter,sans-serif;padding:0;width:100%}.navContainer_e3b05c65{align-items:center;display:flex;gap:0;justify-content:space-evenly;margin:0 auto;max-width:92%;padding:0 60px}.navItem_e3b05c65{border-bottom:3px solid transparent;color:#424242;font-family:Inter,sans-serif;font-size:14px;font-weight:600;padding:16px 24px;text-align:center;text-decoration:none;transition:background-color .3s}.navItem_e3b05c65.active_e3b05c65{border-bottom:3px solid #c44569;color:#424242}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL05hdmlnYXRpb24vTmF2aWdhdGlvbi5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFFRSx3QkFBQSxDQUVBLG1DQUFBLENBQ0EsNEJBQUEsQ0FGQSxTQUFBLENBRkEsVUFJQSxDQUdGLHVCQUVFLGtCQUFBLENBREEsWUFBQSxDQU1BLEtBQUEsQ0FKQSw0QkFBQSxDQUVBLGFBQUEsQ0FEQSxhQUFBLENBRUEsY0FDQSxDQUdGLGtCQVFFLG1DQUFBLENBTEEsYUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FKQSxpQkFBQSxDQVFBLGlCQUFBLENBUEEsb0JBQUEsQ0FLQSwrQkFFQSxDQUdBLGtDQUVFLCtCQUFBLENBREEsYUFDQSIsImZpbGUiOiJOYXZpZ2F0aW9uLm1vZHVsZS5jc3MifQ== */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  navigation_5165153b: "navigation_5165153b",
-  navContainer_5165153b: "navContainer_5165153b",
-  navItem_5165153b: "navItem_5165153b",
-  active_5165153b: "active_5165153b"
+  navigation_e3b05c65: "navigation_e3b05c65",
+  navContainer_e3b05c65: "navContainer_e3b05c65",
+  navItem_e3b05c65: "navItem_e3b05c65",
+  active_e3b05c65: "active_e3b05c65"
 });
 
 
@@ -557,49 +557,74 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_ea2b5c02{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;position:relative;width:100%}.header_ea2b5c02{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;padding:20px 40px}.backButton_ea2b5c02{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_ea2b5c02 svg{stroke:currentColor;fill:none}.backButton_ea2b5c02:hover{background-color:#f5f5f5}.content_ea2b5c02{margin:0 auto;max-width:1400px;padding:40px}.titleSection_ea2b5c02{align-self:center;background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);margin-bottom:24px;overflow:hidden;padding:40px}.titleContent_ea2b5c02,.titleSection_ea2b5c02{box-sizing:border-box;max-width:100%;width:100%}.contentWrapper_ea2b5c02{align-items:flex-start;display:flex;gap:24px}.mainContent_ea2b5c02{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);flex:1;padding:40px}.headerRow_ea2b5c02{align-items:flex-end;box-sizing:border-box;display:flex;gap:16px;justify-content:space-between;margin-bottom:20px;width:100%}.fileTypeIndicator_ea2b5c02{align-items:flex-end;display:flex;flex-shrink:0;gap:8px}.fileTypeIcon_ea2b5c02{font-size:24px;line-height:1}.fileTypeText_ea2b5c02{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500;margin-bottom:3px}.documentTitle_ea2b5c02{color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px;max-width:70%}.documentAbstract_ea2b5c02{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 24px;max-width:85%}.metadata_ea2b5c02{display:flex;gap:32px;margin-bottom:0}.metadataItem_ea2b5c02{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_ea2b5c02 svg{stroke:currentColor;fill:none}.actionButtons_ea2b5c02{align-items:center;align-self:flex-end;display:flex;flex-shrink:0;gap:15px}.downloadButton_ea2b5c02{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_ea2b5c02 svg{stroke:currentColor;fill:none}.downloadButton_ea2b5c02:hover{background-color:#1565c0}.shareButton_ea2b5c02{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_ea2b5c02 svg{stroke:currentColor;fill:none}.shareButton_ea2b5c02:hover{background-color:#f5f5f5}.previewSection_ea2b5c02{margin-top:0}.previewTitle_ea2b5c02{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_ea2b5c02{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;display:flex;height:700px;justify-content:center;overflow:hidden;position:relative;width:100%}.previewFrame_ea2b5c02{border:none;height:100%;width:100%}.previewPlaceholder_ea2b5c02{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_ea2b5c02,.previewPlaceholder_ea2b5c02{align-items:center;display:flex;justify-content:center}.previewError_ea2b5c02{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_ea2b5c02{font-size:48px;margin-bottom:16px}.errorText_ea2b5c02{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_ea2b5c02,.retryButton_ea2b5c02{font-family:Inter,sans-serif;font-weight:500}.retryButton_ea2b5c02{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_ea2b5c02:hover{background-color:#1565c0}.sidebar_ea2b5c02{display:flex;flex-direction:column;flex-shrink:0;gap:24px;width:320px}.sidebarSection_ea2b5c02{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:24px}.sidebarTitle_ea2b5c02{align-items:center;color:#333;display:flex;font-family:Inter,sans-serif;font-size:16px;font-weight:600;gap:8px;margin:0 0 16px}.sidebarTitle_ea2b5c02 svg{stroke:currentColor;fill:none;height:16px;width:16px}.tagsContainer_ea2b5c02{align-items:center;display:flex;flex-wrap:wrap;gap:8px}.tag_ea2b5c02{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;display:inline-block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:6px 12px}.infoList_ea2b5c02{display:flex;flex-direction:column;gap:16px}.infoItem_ea2b5c02{display:flex;flex-direction:column;gap:4px}.infoLabel_ea2b5c02{color:#666;font-size:12px;letter-spacing:.5px;text-transform:uppercase}.infoLabel_ea2b5c02,.infoValue_ea2b5c02{font-family:Inter,sans-serif;font-weight:500}.infoValue_ea2b5c02{color:#333;font-size:14px}.error_ea2b5c02,.loading_ea2b5c02{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9Eb2N1bWVudERldGFpbFBhZ2UvRG9jdW1lbnREZXRhaWxQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZCQUdFLHdCQUFBLENBQ0EsNEJBQUEsQ0FGQSxnQkFBQSxDQUdBLGlCQUFBLENBSkEsVUFJQSxDQUdGLGlCQUVFLGtCQUFBLENBRUEscUJBQUEsQ0FDQSwrQkFBQSxDQUpBLFlBQUEsQ0FFQSxpQkFFQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FNQSxpQkFBQSxDQUxBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQU9BLDRCQUFBLENBREEsY0FBQSxDQUpBLE9BQUEsQ0FPQSxnQkFBQSxDQUVBLCtCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMkJBQ0Usd0JBQUEsQ0FJSixrQkFFRSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxZQUFBLENBR0YsdUJBUUUsaUJBQUEsQ0FMQSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLGVBQUEsQ0FMQSxZQUtBLENBR0YsOENBSkUscUJBQUEsQ0FQQSxjQUFBLENBREEsVUFlQSxDQUdGLHlCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLFFBQ0EsQ0FHRixzQkFFRSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FKQSxNQUFBLENBR0EsWUFDQSxDQUdGLG9CQUdFLG9CQUFBLENBR0EscUJBQUEsQ0FMQSxZQUFBLENBTUEsUUFBQSxDQUxBLDZCQUFBLENBRUEsa0JBQUEsQ0FDQSxVQUVBLENBR0YsNEJBRUUsb0JBQUEsQ0FEQSxZQUFBLENBR0EsYUFBQSxDQURBLE9BQ0EsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLHVCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBRUEsaUJBQUEsQ0FHRix3QkFHRSxVQUFBLENBRUEsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBR0EsYUFBQSxDQUdGLDJCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUdBLGFBQUEsQ0FHRixtQkFDRSxZQUFBLENBQ0EsUUFBQSxDQUNBLGVBQUEsQ0FHRix1QkFFRSxrQkFBQSxDQUdBLFVBQUEsQ0FKQSxZQUFBLENBS0EsNEJBQUEsQ0FGQSxjQUFBLENBREEsT0FHQSxDQUVBLDJCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUlKLHdCQUVFLGtCQUFBLENBRUEsbUJBQUEsQ0FIQSxZQUFBLENBSUEsYUFBQSxDQUZBLFFBRUEsQ0FHRix5QkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEsNkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsK0JBQ0Usd0JBQUEsQ0FJSixzQkFFRSxrQkFBQSxDQUVBLGNBQUEsQ0FDQSxXQUFBLENBR0EsaUJBQUEsQ0FGQSxVQUFBLENBR0EsY0FBQSxDQVJBLFlBQUEsQ0FFQSxzQkFBQSxDQUlBLFlBQUEsQ0FHQSwrQkFBQSxDQUVBLDBCQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLDRCQUNFLHdCQUFBLENBSUoseUJBQ0UsWUFBQSxDQUdGLHVCQUdFLFVBQUEsQ0FFQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBRUEsZUFDQSxDQUdGLDJCQVNFLGtCQUFBLENBSEEsd0JBQUEsQ0FIQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsWUFBQSxDQU5BLFlBQUEsQ0FRQSxzQkFBQSxDQUxBLGVBQUEsQ0FFQSxpQkFBQSxDQU5BLFVBU0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBRUEsa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLDBDQUhFLDRCQUFBLENBSEEsZUFnQkEsQ0FWRixzQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBSEEsY0FBQSxDQURBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw0QkFDRSx3QkFBQSxDQUlKLGtCQUdFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGFBQUEsQ0FHQSxRQUFBLENBSkEsV0FJQSxDQUdGLHlCQUNFLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQURBLFlBQ0EsQ0FHRix1QkFFRSxrQkFBQSxDQUlBLFVBQUEsQ0FMQSxZQUFBLENBT0EsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUZBLE9BQUEsQ0FJQSxlQUNBLENBRUEsMkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FHQSxjQUFBLENBREEsT0FDQSxDQUdGLGNBR0Usd0JBQUEsQ0FNQSx3QkFBQSxDQUpBLGlCQUFBLENBREEsVUFBQSxDQUhBLG9CQUFBLENBT0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUxBLGdCQU9BLENBR0YsbUJBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdGLG1CQUNFLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLE9BQUEsQ0FHRixvQkFFRSxVQUFBLENBREEsY0FBQSxDQUtBLG1CQUFBLENBREEsd0JBQ0EsQ0FHRix3Q0FMRSw0QkFBQSxDQURBLGVBVUEsQ0FKRixvQkFFRSxVQUFBLENBREEsY0FHQSxDQUdGLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".documentDetailPage_7542105b{background-color:#f5f5f5;font-family:Inter,sans-serif;min-height:100vh;position:relative;width:100%}.header_7542105b{align-items:center;background-color:#fff;border-bottom:1px solid #e0e0e0;display:flex;padding:20px 40px}.backButton_7542105b{align-items:center;background:0 0;border:none;border-radius:4px;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px;padding:8px 12px;transition:background-color .2s}.backButton_7542105b svg{stroke:currentColor;fill:none}.backButton_7542105b:hover{background-color:#f5f5f5}.content_7542105b{margin:0 auto;max-width:1400px;padding:40px}.titleSection_7542105b{align-self:center;background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);margin-bottom:24px;padding:40px}.titleContent_7542105b,.titleSection_7542105b{box-sizing:border-box;max-width:100%;overflow:hidden;width:100%}.titleContent_7542105b{word-wrap:break-word;overflow-wrap:break-word}.contentWrapper_7542105b{display:flex;flex-direction:column;gap:24px}.mainContentWrapper_7542105b{align-items:flex-start;display:flex;gap:24px}.mainContent_7542105b{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);flex:1;padding:40px}.headerRow_7542105b{align-items:flex-end;box-sizing:border-box;display:flex;gap:16px;justify-content:space-between;margin-bottom:20px;width:100%}.fileTypeIndicator_7542105b{align-items:flex-end;display:flex;flex-shrink:0;gap:8px}.fileTypeIcon_7542105b{font-size:24px;line-height:1}.fileTypeText_7542105b{color:#666;font-family:Inter,sans-serif;font-size:14px;font-weight:500;margin-bottom:3px}.documentTitle_7542105b{word-wrap:break-word;box-sizing:border-box;color:#333;font-family:Inter,sans-serif;font-size:32px;font-weight:600;line-height:1.3;margin:0 0 16px;max-width:70%;overflow-wrap:break-word;word-break:break-word}.documentAbstract_7542105b{color:#666;font-family:Inter,sans-serif;font-size:16px;line-height:1.6;margin:0 0 24px;max-width:85%}.metadata_7542105b{display:flex;gap:32px;margin-bottom:0}.metadataItem_7542105b{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:14px;gap:8px}.metadataItem_7542105b svg{stroke:currentColor;fill:none}.actionButtons_7542105b{align-items:center;align-self:flex-end;display:flex;flex-shrink:0;gap:15px}.downloadButton_7542105b{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:14px;font-weight:500;gap:8px;padding:10px 20px;transition:background-color .2s}.downloadButton_7542105b svg{stroke:currentColor;fill:none}.downloadButton_7542105b:hover{background-color:#1565c0}.shareButton_7542105b{align-items:center;background:0 0;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s}.shareButton_7542105b svg{stroke:currentColor;fill:none}.shareButton_7542105b:hover{background-color:#f5f5f5}.previewSection_7542105b{margin-bottom:0;margin-top:0}.previewTitle_7542105b{color:#333;font-family:Inter,sans-serif;font-size:20px;font-weight:600;margin:0 0 16px}.previewContainer_7542105b{align-items:center;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;display:flex;height:700px;justify-content:center;overflow:hidden;position:relative;width:100%}.previewFrame_7542105b{border:none;height:100%;width:100%}.previewPlaceholder_7542105b{color:#999;font-family:Inter,sans-serif;font-size:16px;height:100%;width:100%}.previewError_7542105b,.previewPlaceholder_7542105b{align-items:center;display:flex;justify-content:center}.previewError_7542105b{background-color:hsla(0,0%,100%,.95);bottom:0;flex-direction:column;left:0;position:absolute;right:0;top:0;z-index:10}.errorIcon_7542105b{font-size:48px;margin-bottom:16px}.errorText_7542105b{color:#d32f2f;font-size:16px;margin-bottom:16px;text-align:center}.errorText_7542105b,.retryButton_7542105b{font-family:Inter,sans-serif;font-weight:500}.retryButton_7542105b{background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;padding:10px 20px;transition:background-color .2s}.retryButton_7542105b:hover{background-color:#1565c0}.sidebar_7542105b{display:flex;flex-direction:column;flex-shrink:0;gap:24px;width:320px}.sidebarSection_7542105b{background-color:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);padding:24px}.sidebarTitle_7542105b{align-items:center;color:#333;display:flex;font-family:Inter,sans-serif;font-size:16px;font-weight:600;gap:8px;margin:0 0 16px}.sidebarTitle_7542105b svg{stroke:currentColor;fill:none;height:16px;width:16px}.tagsContainer_7542105b{align-items:center;display:flex;flex-wrap:wrap;gap:8px}.tag_7542105b{background-color:#e0e0e0;border:1px solid #d0d0d0;border-radius:6px;color:#000;display:inline-block;font-family:Inter,sans-serif;font-size:12px;font-weight:500;padding:6px 12px}.infoList_7542105b{display:flex;flex-direction:column;gap:16px}.infoItem_7542105b{display:flex;flex-direction:column;gap:4px}.infoLabel_7542105b{color:#666;font-size:12px;letter-spacing:.5px;text-transform:uppercase}.infoLabel_7542105b,.infoValue_7542105b{font-family:Inter,sans-serif;font-weight:500}.infoValue_7542105b{color:#333;font-size:14px}.socialSection_7542105b{box-sizing:border-box;padding:10px 28px;width:75%}.socialActions_7542105b{align-items:center;display:flex;gap:24px;margin-bottom:16px}.commentButton_7542105b,.likeButton_7542105b,.shareButton_7542105b{align-items:center;background:0 0;border:none;color:#333;cursor:pointer;display:flex;font-family:Inter,sans-serif;gap:12px;padding:0;transition:transform .2s,opacity .2s}.commentButton_7542105b svg,.likeButton_7542105b svg,.shareButton_7542105b svg{stroke:currentColor;fill:none;transition:all .2s}.commentButton_7542105b:hover,.likeButton_7542105b:hover,.shareButton_7542105b:hover{opacity:.8}.commentButton_7542105b:active,.likeButton_7542105b:active,.shareButton_7542105b:active{transform:scale(.95)}.likeButton_7542105b.liked_7542105b svg{stroke:none}.likeButton_7542105b.liked_7542105b svg path{fill:url(#likeGradient)}.count_7542105b{color:#333;font-family:Inter,sans-serif;font-size:14px;font-weight:600}.commentsBox_7542105b{border-top:1px solid #e0e0e0;margin-top:16px;padding-top:16px}.commentsList_7542105b{height:170px;margin-bottom:16px;min-height:120px;overflow-x:hidden;overflow-y:auto;padding-right:8px}.commentsList_7542105b::-webkit-scrollbar{width:6px}.commentsList_7542105b::-webkit-scrollbar-track{background:#f1f1f1;border-radius:3px}.commentsList_7542105b::-webkit-scrollbar-thumb{background:#888;border-radius:3px}.commentsList_7542105b::-webkit-scrollbar-thumb:hover{background:#555}.commentItem_7542105b{margin-bottom:16px;padding-bottom:12px}.commentItem_7542105b:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}.commentHeader_7542105b{align-items:center;display:flex;justify-content:space-between;margin-bottom:4px}.commentHeaderLeft_7542105b{align-items:center;display:flex;gap:8px}.commentUserName_7542105b{color:#333;font-family:Inter,sans-serif;font-size:14px;font-weight:600}.commentTime_7542105b{color:#999;font-family:Inter,sans-serif;font-size:12px}.commentText_7542105b{word-wrap:break-word;color:#333;font-family:Inter,sans-serif;font-size:14px;line-height:1.5;margin:0}.deleteCommentButton_7542105b{align-items:center;background:0 0;border:none;color:#999;cursor:pointer;display:flex;justify-content:center;opacity:0;padding:14px;transition:opacity .2s,color .2s}.deleteCommentButton_7542105b svg{stroke:currentColor;fill:none}.deleteCommentButton_7542105b:hover{color:#d32f2f}.commentItem_7542105b:hover .deleteCommentButton_7542105b{opacity:1}.noComments_7542105b{color:#999;font-family:Inter,sans-serif;font-size:14px;padding:20px 0;text-align:center}.addCommentSection_7542105b{align-items:center;border-top:1px solid #e0e0e0;display:flex;gap:8px;padding-top:12px}.commentInputWrapper_7542105b{align-items:center;display:flex;flex:1;position:relative}.commentInput_7542105b{background:0 0;border:none;color:#333;flex:1;font-family:Inter,sans-serif;font-size:14px;outline:0;padding:8px 50px 8px 0;width:100%}.commentInput:-ms-input-placeholder{color:#999}.commentInput_7542105b:-ms-input-placeholder{color:#999}.commentInput_7542105b::placeholder{color:#999}.charCount_7542105b{color:#999;font-family:Inter,sans-serif;font-size:11px;line-height:14px;pointer-events:none;position:absolute;right:0;top:50%;transform:translateY(-50%)}.charCountWarning_7542105b{color:#ff9800}.charCountError_7542105b{color:#d32f2f}.sendButton_7542105b{align-items:center;background:0 0;border:none;color:#1976d2;cursor:pointer;display:flex;justify-content:center;padding:18px;transition:opacity .2s}.sendButton_7542105b svg{stroke:currentColor;fill:none}.sendButton_7542105b:hover:not(:disabled){opacity:.7}.sendButton_7542105b:disabled{cursor:not-allowed;opacity:.3}.error_7542105b,.loading_7542105b{align-items:center;color:#666;display:flex;font-family:Inter,sans-serif;font-size:18px;justify-content:center;min-height:100vh}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9wYWdlcy9Eb2N1bWVudERldGFpbFBhZ2UvRG9jdW1lbnREZXRhaWxQYWdlLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZCQUdFLHdCQUFBLENBQ0EsNEJBQUEsQ0FGQSxnQkFBQSxDQUdBLGlCQUFBLENBSkEsVUFJQSxDQUdGLGlCQUVFLGtCQUFBLENBRUEscUJBQUEsQ0FDQSwrQkFBQSxDQUpBLFlBQUEsQ0FFQSxpQkFFQSxDQUdGLHFCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FNQSxpQkFBQSxDQUxBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQU9BLDRCQUFBLENBREEsY0FBQSxDQUpBLE9BQUEsQ0FPQSxnQkFBQSxDQUVBLCtCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMkJBQ0Usd0JBQUEsQ0FJSixrQkFFRSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxZQUFBLENBR0YsdUJBUUUsaUJBQUEsQ0FMQSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FDQSxrQkFBQSxDQUZBLFlBS0EsQ0FHRiw4Q0FKRSxxQkFBQSxDQVBBLGNBQUEsQ0FRQSxlQUFBLENBVEEsVUFrQkEsQ0FORix1QkFLRSxvQkFBQSxDQUNBLHdCQUFBLENBR0YseUJBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdGLDZCQUdFLHNCQUFBLENBRkEsWUFBQSxDQUNBLFFBQ0EsQ0FHRixzQkFFRSxxQkFBQSxDQUNBLGlCQUFBLENBRUEsbUNBQUEsQ0FKQSxNQUFBLENBR0EsWUFDQSxDQUdGLG9CQUdFLG9CQUFBLENBR0EscUJBQUEsQ0FMQSxZQUFBLENBTUEsUUFBQSxDQUxBLDZCQUFBLENBRUEsa0JBQUEsQ0FDQSxVQUVBLENBR0YsNEJBRUUsb0JBQUEsQ0FEQSxZQUFBLENBR0EsYUFBQSxDQURBLE9BQ0EsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLHVCQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUFBLENBRUEsaUJBQUEsQ0FHRix3QkFRRSxvQkFBQSxDQUdBLHFCQUFBLENBUkEsVUFBQSxDQUVBLDRCQUFBLENBSkEsY0FBQSxDQUNBLGVBQUEsQ0FJQSxlQUFBLENBRkEsZUFBQSxDQUdBLGFBQUEsQ0FFQSx3QkFBQSxDQUNBLHFCQUNBLENBR0YsMkJBRUUsVUFBQSxDQUVBLDRCQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBR0EsYUFBQSxDQUdGLG1CQUNFLFlBQUEsQ0FDQSxRQUFBLENBQ0EsZUFBQSxDQUdGLHVCQUVFLGtCQUFBLENBR0EsVUFBQSxDQUpBLFlBQUEsQ0FLQSw0QkFBQSxDQUZBLGNBQUEsQ0FEQSxPQUdBLENBRUEsMkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBSUosd0JBRUUsa0JBQUEsQ0FFQSxtQkFBQSxDQUhBLFlBQUEsQ0FJQSxhQUFBLENBRkEsUUFFQSxDQUdGLHlCQUVFLGtCQUFBLENBRUEsd0JBQUEsQ0FFQSxXQUFBLENBQ0EsaUJBQUEsQ0FGQSxVQUFBLENBT0EsY0FBQSxDQVhBLFlBQUEsQ0FVQSw0QkFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBUEEsT0FBQSxDQUtBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw2QkFDRSxtQkFBQSxDQUNBLFNBQUEsQ0FHRiwrQkFDRSx3QkFBQSxDQUlKLHNCQUVFLGtCQUFBLENBRUEsY0FBQSxDQUNBLFdBQUEsQ0FHQSxpQkFBQSxDQUZBLFVBQUEsQ0FHQSxjQUFBLENBUkEsWUFBQSxDQUVBLHNCQUFBLENBSUEsWUFBQSxDQUdBLCtCQUFBLENBRUEsMEJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsNEJBQ0Usd0JBQUEsQ0FJSix5QkFFRSxlQUFBLENBREEsWUFDQSxDQUdGLHVCQUdFLFVBQUEsQ0FFQSw0QkFBQSxDQUpBLGNBQUEsQ0FDQSxlQUFBLENBRUEsZUFDQSxDQUdGLDJCQVNFLGtCQUFBLENBSEEsd0JBQUEsQ0FIQSx3QkFBQSxDQUNBLGlCQUFBLENBSUEsWUFBQSxDQU5BLFlBQUEsQ0FRQSxzQkFBQSxDQUxBLGVBQUEsQ0FFQSxpQkFBQSxDQU5BLFVBU0EsQ0FHRix1QkFHRSxXQUFBLENBREEsV0FBQSxDQURBLFVBRUEsQ0FHRiw2QkFNRSxVQUFBLENBRUEsNEJBQUEsQ0FEQSxjQUFBLENBTEEsV0FBQSxDQURBLFVBT0EsQ0FHRixvREFQRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxzQkFpQkEsQ0FYRix1QkFVRSxvQ0FBQSxDQUxBLFFBQUEsQ0FFQSxxQkFBQSxDQUpBLE1BQUEsQ0FGQSxpQkFBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBU0EsVUFBQSxDQUdGLG9CQUNFLGNBQUEsQ0FDQSxrQkFBQSxDQUdGLG9CQUNFLGFBQUEsQ0FDQSxjQUFBLENBRUEsa0JBQUEsQ0FDQSxpQkFDQSxDQUdGLDBDQUhFLDRCQUFBLENBSEEsZUFnQkEsQ0FWRixzQkFDRSx3QkFBQSxDQUVBLFdBQUEsQ0FDQSxpQkFBQSxDQUZBLFVBQUEsQ0FPQSxjQUFBLENBSEEsY0FBQSxDQURBLGlCQUFBLENBS0EsK0JBQUEsQ0FFQSw0QkFDRSx3QkFBQSxDQUlKLGtCQUdFLFlBQUEsQ0FDQSxxQkFBQSxDQUZBLGFBQUEsQ0FHQSxRQUFBLENBSkEsV0FJQSxDQUdGLHlCQUNFLHFCQUFBLENBQ0EsaUJBQUEsQ0FFQSxtQ0FBQSxDQURBLFlBQ0EsQ0FHRix1QkFFRSxrQkFBQSxDQUlBLFVBQUEsQ0FMQSxZQUFBLENBT0EsNEJBQUEsQ0FKQSxjQUFBLENBQ0EsZUFBQSxDQUZBLE9BQUEsQ0FJQSxlQUNBLENBRUEsMkJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBRUEsV0FBQSxDQURBLFVBQ0EsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FHQSxjQUFBLENBREEsT0FDQSxDQUdGLGNBR0Usd0JBQUEsQ0FNQSx3QkFBQSxDQUpBLGlCQUFBLENBREEsVUFBQSxDQUhBLG9CQUFBLENBT0EsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQUxBLGdCQU9BLENBR0YsbUJBQ0UsWUFBQSxDQUNBLHFCQUFBLENBQ0EsUUFBQSxDQUdGLG1CQUNFLFlBQUEsQ0FDQSxxQkFBQSxDQUNBLE9BQUEsQ0FHRixvQkFFRSxVQUFBLENBREEsY0FBQSxDQUtBLG1CQUFBLENBREEsd0JBQ0EsQ0FHRix3Q0FMRSw0QkFBQSxDQURBLGVBVUEsQ0FKRixvQkFFRSxVQUFBLENBREEsY0FHQSxDQUdGLHdCQUdFLHFCQUFBLENBRkEsaUJBQUEsQ0FDQSxTQUNBLENBR0Ysd0JBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsUUFBQSxDQUNBLGtCQUFBLENBR0YsbUVBSUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLFVBQUEsQ0FEQSxjQUFBLENBTkEsWUFBQSxDQVFBLDRCQUFBLENBTkEsUUFBQSxDQUdBLFNBQUEsQ0FJQSxvQ0FBQSxDQUVBLCtFQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUNBLGtCQUFBLENBR0YscUZBQ0UsVUFBQSxDQUdGLHdGQUNFLG9CQUFBLENBS0Ysd0NBQ0UsV0FBQSxDQUVBLDZDQUNFLHVCQUFBLENBS04sZ0JBR0UsVUFBQSxDQUNBLDRCQUFBLENBSEEsY0FBQSxDQUNBLGVBRUEsQ0FHRixzQkFFRSw0QkFBQSxDQURBLGVBQUEsQ0FFQSxnQkFBQSxDQUdGLHVCQUNFLFlBQUEsQ0FHQSxrQkFBQSxDQUVBLGdCQUFBLENBSEEsaUJBQUEsQ0FEQSxlQUFBLENBR0EsaUJBQ0EsQ0FFQSwwQ0FDRSxTQUFBLENBR0YsZ0RBQ0Usa0JBQUEsQ0FDQSxpQkFBQSxDQUdGLGdEQUNFLGVBQUEsQ0FDQSxpQkFBQSxDQUVBLHNEQUNFLGVBQUEsQ0FLTixzQkFDRSxrQkFBQSxDQUNBLG1CQUFBLENBRUEsaUNBQ0Usa0JBQUEsQ0FDQSxlQUFBLENBQ0EsZ0JBQUEsQ0FJSix3QkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSw2QkFBQSxDQUNBLGlCQUFBLENBR0YsNEJBRUUsa0JBQUEsQ0FEQSxZQUFBLENBRUEsT0FBQSxDQUdGLDBCQUdFLFVBQUEsQ0FDQSw0QkFBQSxDQUhBLGNBQUEsQ0FDQSxlQUVBLENBR0Ysc0JBRUUsVUFBQSxDQUNBLDRCQUFBLENBRkEsY0FFQSxDQUdGLHNCQU1FLG9CQUFBLENBSkEsVUFBQSxDQUdBLDRCQUFBLENBSkEsY0FBQSxDQUVBLGVBQUEsQ0FDQSxRQUVBLENBR0YsOEJBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLFVBQUEsQ0FEQSxjQUFBLENBTkEsWUFBQSxDQUVBLHNCQUFBLENBTUEsU0FBQSxDQUhBLFlBQUEsQ0FJQSxnQ0FBQSxDQUVBLGtDQUNFLG1CQUFBLENBQ0EsU0FBQSxDQUdGLG9DQUNFLGFBQUEsQ0FJSiwwREFDRSxTQUFBLENBR0YscUJBRUUsVUFBQSxDQUVBLDRCQUFBLENBREEsY0FBQSxDQUVBLGNBQUEsQ0FKQSxpQkFJQSxDQUdGLDRCQUVFLGtCQUFBLENBR0EsNEJBQUEsQ0FKQSxZQUFBLENBRUEsT0FBQSxDQUNBLGdCQUNBLENBR0YsOEJBSUUsa0JBQUEsQ0FEQSxZQUFBLENBRkEsTUFBQSxDQUNBLGlCQUVBLENBR0YsdUJBUUUsY0FBQSxDQU5BLFdBQUEsQ0FJQSxVQUFBLENBTEEsTUFBQSxDQUlBLDRCQUFBLENBREEsY0FBQSxDQURBLFNBQUEsQ0FJQSxzQkFBQSxDQUVBLFVBQUEsQ0FFQSxvQ0FDRSxVQUFBLENBREYsNkNBQ0UsVUFBQSxDQURGLG9DQUNFLFVBQUEsQ0FJSixvQkFJRSxVQUFBLENBQ0EsNEJBQUEsQ0FGQSxjQUFBLENBSUEsZ0JBQUEsQ0FEQSxtQkFBQSxDQUxBLGlCQUFBLENBQ0EsT0FBQSxDQU1BLE9BQUEsQ0FDQSwwQkFBQSxDQUdGLDJCQUNFLGFBQUEsQ0FHRix5QkFDRSxhQUFBLENBR0YscUJBRUUsa0JBQUEsQ0FFQSxjQUFBLENBQ0EsV0FBQSxDQUdBLGFBQUEsQ0FEQSxjQUFBLENBTkEsWUFBQSxDQUVBLHNCQUFBLENBR0EsWUFBQSxDQUdBLHNCQUFBLENBRUEseUJBQ0UsbUJBQUEsQ0FDQSxTQUFBLENBR0YsMENBQ0UsVUFBQSxDQUdGLDhCQUVFLGtCQUFBLENBREEsVUFDQSxDQUlKLGtDQUdFLGtCQUFBLENBSUEsVUFBQSxDQUxBLFlBQUEsQ0FNQSw0QkFBQSxDQUZBLGNBQUEsQ0FGQSxzQkFBQSxDQUNBLGdCQUdBIiwiZmlsZSI6IkRvY3VtZW50RGV0YWlsUGFnZS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  documentDetailPage_ea2b5c02: "documentDetailPage_ea2b5c02",
-  header_ea2b5c02: "header_ea2b5c02",
-  backButton_ea2b5c02: "backButton_ea2b5c02",
-  content_ea2b5c02: "content_ea2b5c02",
-  titleSection_ea2b5c02: "titleSection_ea2b5c02",
-  titleContent_ea2b5c02: "titleContent_ea2b5c02",
-  contentWrapper_ea2b5c02: "contentWrapper_ea2b5c02",
-  mainContent_ea2b5c02: "mainContent_ea2b5c02",
-  headerRow_ea2b5c02: "headerRow_ea2b5c02",
-  fileTypeIndicator_ea2b5c02: "fileTypeIndicator_ea2b5c02",
-  fileTypeIcon_ea2b5c02: "fileTypeIcon_ea2b5c02",
-  fileTypeText_ea2b5c02: "fileTypeText_ea2b5c02",
-  documentTitle_ea2b5c02: "documentTitle_ea2b5c02",
-  documentAbstract_ea2b5c02: "documentAbstract_ea2b5c02",
-  metadata_ea2b5c02: "metadata_ea2b5c02",
-  metadataItem_ea2b5c02: "metadataItem_ea2b5c02",
-  actionButtons_ea2b5c02: "actionButtons_ea2b5c02",
-  downloadButton_ea2b5c02: "downloadButton_ea2b5c02",
-  shareButton_ea2b5c02: "shareButton_ea2b5c02",
-  previewSection_ea2b5c02: "previewSection_ea2b5c02",
-  previewTitle_ea2b5c02: "previewTitle_ea2b5c02",
-  previewContainer_ea2b5c02: "previewContainer_ea2b5c02",
-  previewFrame_ea2b5c02: "previewFrame_ea2b5c02",
-  previewPlaceholder_ea2b5c02: "previewPlaceholder_ea2b5c02",
-  previewError_ea2b5c02: "previewError_ea2b5c02",
-  errorIcon_ea2b5c02: "errorIcon_ea2b5c02",
-  errorText_ea2b5c02: "errorText_ea2b5c02",
-  retryButton_ea2b5c02: "retryButton_ea2b5c02",
-  sidebar_ea2b5c02: "sidebar_ea2b5c02",
-  sidebarSection_ea2b5c02: "sidebarSection_ea2b5c02",
-  sidebarTitle_ea2b5c02: "sidebarTitle_ea2b5c02",
-  tagsContainer_ea2b5c02: "tagsContainer_ea2b5c02",
-  tag_ea2b5c02: "tag_ea2b5c02",
-  infoList_ea2b5c02: "infoList_ea2b5c02",
-  infoItem_ea2b5c02: "infoItem_ea2b5c02",
-  infoLabel_ea2b5c02: "infoLabel_ea2b5c02",
-  infoValue_ea2b5c02: "infoValue_ea2b5c02",
-  error_ea2b5c02: "error_ea2b5c02",
-  loading_ea2b5c02: "loading_ea2b5c02"
+  documentDetailPage_7542105b: "documentDetailPage_7542105b",
+  header_7542105b: "header_7542105b",
+  backButton_7542105b: "backButton_7542105b",
+  content_7542105b: "content_7542105b",
+  titleSection_7542105b: "titleSection_7542105b",
+  titleContent_7542105b: "titleContent_7542105b",
+  contentWrapper_7542105b: "contentWrapper_7542105b",
+  mainContentWrapper_7542105b: "mainContentWrapper_7542105b",
+  mainContent_7542105b: "mainContent_7542105b",
+  headerRow_7542105b: "headerRow_7542105b",
+  fileTypeIndicator_7542105b: "fileTypeIndicator_7542105b",
+  fileTypeIcon_7542105b: "fileTypeIcon_7542105b",
+  fileTypeText_7542105b: "fileTypeText_7542105b",
+  documentTitle_7542105b: "documentTitle_7542105b",
+  documentAbstract_7542105b: "documentAbstract_7542105b",
+  metadata_7542105b: "metadata_7542105b",
+  metadataItem_7542105b: "metadataItem_7542105b",
+  actionButtons_7542105b: "actionButtons_7542105b",
+  downloadButton_7542105b: "downloadButton_7542105b",
+  shareButton_7542105b: "shareButton_7542105b",
+  previewSection_7542105b: "previewSection_7542105b",
+  previewTitle_7542105b: "previewTitle_7542105b",
+  previewContainer_7542105b: "previewContainer_7542105b",
+  previewFrame_7542105b: "previewFrame_7542105b",
+  previewPlaceholder_7542105b: "previewPlaceholder_7542105b",
+  previewError_7542105b: "previewError_7542105b",
+  errorIcon_7542105b: "errorIcon_7542105b",
+  errorText_7542105b: "errorText_7542105b",
+  retryButton_7542105b: "retryButton_7542105b",
+  sidebar_7542105b: "sidebar_7542105b",
+  sidebarSection_7542105b: "sidebarSection_7542105b",
+  sidebarTitle_7542105b: "sidebarTitle_7542105b",
+  tagsContainer_7542105b: "tagsContainer_7542105b",
+  tag_7542105b: "tag_7542105b",
+  infoList_7542105b: "infoList_7542105b",
+  infoItem_7542105b: "infoItem_7542105b",
+  infoLabel_7542105b: "infoLabel_7542105b",
+  infoValue_7542105b: "infoValue_7542105b",
+  socialSection_7542105b: "socialSection_7542105b",
+  socialActions_7542105b: "socialActions_7542105b",
+  commentButton_7542105b: "commentButton_7542105b",
+  likeButton_7542105b: "likeButton_7542105b",
+  liked_7542105b: "liked_7542105b",
+  count_7542105b: "count_7542105b",
+  commentsBox_7542105b: "commentsBox_7542105b",
+  commentsList_7542105b: "commentsList_7542105b",
+  commentItem_7542105b: "commentItem_7542105b",
+  commentHeader_7542105b: "commentHeader_7542105b",
+  commentHeaderLeft_7542105b: "commentHeaderLeft_7542105b",
+  commentUserName_7542105b: "commentUserName_7542105b",
+  commentTime_7542105b: "commentTime_7542105b",
+  commentText_7542105b: "commentText_7542105b",
+  deleteCommentButton_7542105b: "deleteCommentButton_7542105b",
+  noComments_7542105b: "noComments_7542105b",
+  addCommentSection_7542105b: "addCommentSection_7542105b",
+  commentInputWrapper_7542105b: "commentInputWrapper_7542105b",
+  commentInput_7542105b: "commentInput_7542105b",
+  commentInput: "commentInput",
+  charCount_7542105b: "charCount_7542105b",
+  charCountWarning_7542105b: "charCountWarning_7542105b",
+  charCountError_7542105b: "charCountError_7542105b",
+  sendButton_7542105b: "sendButton_7542105b",
+  error_7542105b: "error_7542105b",
+  loading_7542105b: "loading_7542105b"
 });
 
 
@@ -2326,10 +2351,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./Navigation.module.css */ 4538);
 var styles = {
-    navigation: 'navigation_5165153b',
-    navContainer: 'navContainer_5165153b',
-    navItem: 'navItem_5165153b',
-    active: 'active_5165153b'
+    navigation: 'navigation_e3b05c65',
+    navContainer: 'navContainer_e3b05c65',
+    navItem: 'navItem_e3b05c65',
+    active: 'active_e3b05c65'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2923,6 +2948,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
 /* harmony import */ var _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DocumentDetailPage.module.scss */ 894);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -2975,6 +3011,14 @@ var DocumentDetailPage = function (props) {
     var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewUrl = _c[0], setPreviewUrl = _c[1];
     var _d = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), previewError = _d[0], setPreviewError = _d[1];
     var _e = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), tags = _e[0], setTags = _e[1];
+    var _f = react__WEBPACK_IMPORTED_MODULE_0__.useState(0), likeCount = _f[0], setLikeCount = _f[1];
+    var _g = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), isLiked = _g[0], setIsLiked = _g[1];
+    var _h = react__WEBPACK_IMPORTED_MODULE_0__.useState(0), commentCount = _h[0], setCommentCount = _h[1];
+    var _j = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), comments = _j[0], setComments = _j[1];
+    var _k = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), showComments = _k[0], setShowComments = _k[1];
+    var _l = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), newComment = _l[0], setNewComment = _l[1];
+    var _m = react__WEBPACK_IMPORTED_MODULE_0__.useState(0), currentUserId = _m[0], setCurrentUserId = _m[1];
+    var _o = react__WEBPACK_IMPORTED_MODULE_0__.useState(''), currentUserName = _o[0], setCurrentUserName = _o[1];
     var iframeRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     // Cleanup blob URLs on unmount
@@ -2987,7 +3031,37 @@ var DocumentDetailPage = function (props) {
     }, [previewUrl]);
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         fetchDocumentDetails();
+        fetchCurrentUser();
     }, [props.documentId]);
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (document && currentUserId && props.context) {
+            // Ensure lists exist before fetching
+            var initializeLists = function () { return __awaiter(void 0, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0: return [4 /*yield*/, ensureListExists('DocumentLikes', [
+                                { name: 'DocumentId', type: 'Number', required: true },
+                                { name: 'UserId', type: 'Number', required: true }
+                            ])];
+                        case 1:
+                            _a.sent();
+                            return [4 /*yield*/, ensureListExists('DocumentComments', [
+                                    { name: 'DocumentId', type: 'Number', required: true },
+                                    { name: 'UserName', type: 'Text', required: true },
+                                    { name: 'Comment', type: 'Note', required: true },
+                                    { name: 'UserId', type: 'Number', required: true }
+                                ])];
+                        case 2:
+                            _a.sent();
+                            fetchLikes();
+                            fetchComments();
+                            return [2 /*return*/];
+                    }
+                });
+            }); };
+            initializeLists();
+        }
+    }, [document, currentUserId]);
     var fetchDocumentDetails = function () { return __awaiter(void 0, void 0, void 0, function () {
         var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, generatedTags, error_1, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_2, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_3, error_4;
         var _a, _b, _c, _d;
@@ -3244,6 +3318,486 @@ var DocumentDetailPage = function (props) {
             }).catch(function (err) { return console.log('Error copying:', err); });
         }
     };
+    var fetchCurrentUser = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, response, user, error_6;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, , 6]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    user = _a.sent();
+                    setCurrentUserId(user.Id);
+                    setCurrentUserName(user.Title || user.LoginName || 'User');
+                    _a.label = 4;
+                case 4: return [3 /*break*/, 6];
+                case 5:
+                    error_6 = _a.sent();
+                    console.error('Error fetching current user:', error_6);
+                    return [3 /*break*/, 6];
+                case 6: return [2 /*return*/];
+            }
+        });
+    }); };
+    var ensureListExists = function (listName, fields) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, checkResp, createListBody, createResp, errorText, listData, listId, _i, fields_1, field, fieldBody, fieldResp, errorText, fieldError_1, error_7;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context)
+                        return [2 /*return*/, false];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 18, , 19]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')?$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    checkResp = _a.sent();
+                    if (checkResp.ok) {
+                        console.log("List \"".concat(listName, "\" already exists"));
+                        return [2 /*return*/, true];
+                    }
+                    // List doesn't exist, create it
+                    console.log("Creating list \"".concat(listName, "\"..."));
+                    createListBody = {
+                        __metadata: { type: 'SP.List' },
+                        Title: listName,
+                        BaseTemplate: 100,
+                        Description: "List for storing ".concat(listName.toLowerCase())
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(createListBody)
+                        })];
+                case 3:
+                    createResp = _a.sent();
+                    if (!!createResp.ok) return [3 /*break*/, 5];
+                    return [4 /*yield*/, createResp.text()];
+                case 4:
+                    errorText = _a.sent();
+                    console.error("Failed to create list \"".concat(listName, "\":"), createResp.status, errorText);
+                    return [2 /*return*/, false];
+                case 5: return [4 /*yield*/, createResp.json()];
+                case 6:
+                    listData = _a.sent();
+                    listId = listData.d.Id;
+                    console.log("List \"".concat(listName, "\" created with ID: ").concat(listId));
+                    // Wait a bit for the list to be ready
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 1000); })];
+                case 7:
+                    // Wait a bit for the list to be ready
+                    _a.sent();
+                    _i = 0, fields_1 = fields;
+                    _a.label = 8;
+                case 8:
+                    if (!(_i < fields_1.length)) return [3 /*break*/, 17];
+                    field = fields_1[_i];
+                    _a.label = 9;
+                case 9:
+                    _a.trys.push([9, 15, , 16]);
+                    fieldBody = {
+                        __metadata: { type: 'SP.Field' },
+                        Title: field.name,
+                        Required: field.required || false
+                    };
+                    if (field.type === 'Number') {
+                        fieldBody.FieldTypeKind = 9; // Number
+                        fieldBody = __assign(__assign({}, fieldBody), { __metadata: { type: 'SP.FieldNumber' } });
+                    }
+                    else if (field.type === 'Text') {
+                        fieldBody.FieldTypeKind = 2; // Text
+                        fieldBody.MaxLength = 255;
+                        fieldBody = __assign(__assign({}, fieldBody), { __metadata: { type: 'SP.FieldText' } });
+                    }
+                    else if (field.type === 'Note') {
+                        fieldBody.FieldTypeKind = 3; // Note (Multiple lines of text)
+                        fieldBody = __assign(__assign({}, fieldBody), { __metadata: { type: 'SP.FieldMultiLineText' } });
+                    }
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists(guid'").concat(listId, "')/fields"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(fieldBody)
+                        })];
+                case 10:
+                    fieldResp = _a.sent();
+                    if (!!fieldResp.ok) return [3 /*break*/, 12];
+                    return [4 /*yield*/, fieldResp.text()];
+                case 11:
+                    errorText = _a.sent();
+                    // Field might already exist, that's okay
+                    if (!errorText.includes('already exists') && !errorText.includes('duplicate')) {
+                        console.warn("Failed to add field \"".concat(field.name, "\" to \"").concat(listName, "\":"), errorText);
+                    }
+                    return [3 /*break*/, 13];
+                case 12:
+                    console.log("Field \"".concat(field.name, "\" added to \"").concat(listName, "\""));
+                    _a.label = 13;
+                case 13: 
+                // Wait a bit between field additions
+                return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 500); })];
+                case 14:
+                    // Wait a bit between field additions
+                    _a.sent();
+                    return [3 /*break*/, 16];
+                case 15:
+                    fieldError_1 = _a.sent();
+                    console.warn("Error adding field \"".concat(field.name, "\":"), fieldError_1);
+                    return [3 /*break*/, 16];
+                case 16:
+                    _i++;
+                    return [3 /*break*/, 8];
+                case 17: return [2 /*return*/, true];
+                case 18:
+                    error_7 = _a.sent();
+                    console.error("Error ensuring list \"".concat(listName, "\" exists:"), error_7);
+                    return [2 /*return*/, false];
+                case 19: return [2 /*return*/];
+            }
+        });
+    }); };
+    var fetchLikes = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, listName, response, data, likes, error_8;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !document || !currentUserId)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    listName = 'DocumentLikes';
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items?$filter=DocumentId eq ").concat(document.id, "&$select=Id,UserId"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    data = _a.sent();
+                    likes = data.value || [];
+                    setLikeCount(likes.length);
+                    setIsLiked(likes.some(function (like) { return like.UserId === currentUserId; }));
+                    return [3 /*break*/, 5];
+                case 4:
+                    // List might not exist yet, that's okay - set defaults
+                    setLikeCount(0);
+                    setIsLiked(false);
+                    _a.label = 5;
+                case 5: return [3 /*break*/, 7];
+                case 6:
+                    error_8 = _a.sent();
+                    // List doesn't exist or other error - set defaults
+                    setLikeCount(0);
+                    setIsLiked(false);
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    var fetchComments = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, listName, response, data, commentsData, countResponse, countData, error_9;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !document)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 10, , 11]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    listName = 'DocumentComments';
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items?$filter=DocumentId eq ").concat(document.id, "&$orderby=Created desc&$select=Id,UserName,Comment,Created,UserId"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    response = _a.sent();
+                    if (!response.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, response.json()];
+                case 3:
+                    data = _a.sent();
+                    commentsData = (data.value || []).map(function (item) { return ({
+                        id: item.Id,
+                        userName: item.UserName || 'User',
+                        comment: item.Comment || '',
+                        created: new Date(item.Created),
+                        userId: item.UserId || 0
+                    }); });
+                    setComments(commentsData);
+                    return [3 /*break*/, 5];
+                case 4:
+                    setComments([]);
+                    _a.label = 5;
+                case 5: return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items?$filter=DocumentId eq ").concat(document.id, "&$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 6:
+                    countResponse = _a.sent();
+                    if (!countResponse.ok) return [3 /*break*/, 8];
+                    return [4 /*yield*/, countResponse.json()];
+                case 7:
+                    countData = _a.sent();
+                    setCommentCount((countData.value || []).length);
+                    return [3 /*break*/, 9];
+                case 8:
+                    setCommentCount(0);
+                    _a.label = 9;
+                case 9: return [3 /*break*/, 11];
+                case 10:
+                    error_9 = _a.sent();
+                    // List doesn't exist or other error - set defaults
+                    console.error('Error fetching comments:', error_9);
+                    setComments([]);
+                    setCommentCount(0);
+                    return [3 /*break*/, 11];
+                case 11: return [2 /*return*/];
+            }
+        });
+    }); };
+    var toggleLike = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, listName, findResponse, findData, likeId, listInfoResp, listInfo, entityType, body, error_10;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !document || !currentUserId)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 12, , 13]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    listName = 'DocumentLikes';
+                    if (!isLiked) return [3 /*break*/, 6];
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items?$filter=DocumentId eq ").concat(document.id, " and UserId eq ").concat(currentUserId, "&$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    findResponse = _a.sent();
+                    if (!findResponse.ok) return [3 /*break*/, 5];
+                    return [4 /*yield*/, findResponse.json()];
+                case 3:
+                    findData = _a.sent();
+                    if (!(findData.value && findData.value.length > 0)) return [3 /*break*/, 5];
+                    likeId = findData.value[0].Id;
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items(").concat(likeId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "DELETE"
+                            }
+                        })];
+                case 4:
+                    _a.sent();
+                    _a.label = 5;
+                case 5:
+                    setIsLiked(false);
+                    setLikeCount(function (prev) { return Math.max(0, prev - 1); });
+                    return [3 /*break*/, 11];
+                case 6: return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 7:
+                    listInfoResp = _a.sent();
+                    if (!listInfoResp.ok) return [3 /*break*/, 10];
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 8:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    body = {
+                        __metadata: { type: entityType },
+                        DocumentId: document.id,
+                        UserId: currentUserId
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(body)
+                        })];
+                case 9:
+                    _a.sent();
+                    _a.label = 10;
+                case 10:
+                    setIsLiked(true);
+                    setLikeCount(function (prev) { return prev + 1; });
+                    _a.label = 11;
+                case 11: return [3 /*break*/, 13];
+                case 12:
+                    error_10 = _a.sent();
+                    console.error('Error toggling like:', error_10);
+                    return [3 /*break*/, 13];
+                case 13: return [2 /*return*/];
+            }
+        });
+    }); };
+    var addComment = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, listName, listExists, listInfoResp, errorText, listInfo, entityType, body, postResp, errorText, error_11;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !document || !currentUserId || !newComment.trim()) {
+                        console.log('Cannot add comment - missing requirements:', {
+                            hasContext: !!props.context,
+                            hasDocument: !!document,
+                            hasUserId: !!currentUserId,
+                            hasComment: !!newComment.trim()
+                        });
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 11, , 12]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    listName = 'DocumentComments';
+                    console.log('Adding comment:', {
+                        documentId: document.id,
+                        userName: currentUserName,
+                        userId: currentUserId,
+                        comment: newComment.trim()
+                    });
+                    return [4 /*yield*/, ensureListExists('DocumentComments', [
+                            { name: 'DocumentId', type: 'Number', required: true },
+                            { name: 'UserName', type: 'Text', required: true },
+                            { name: 'Comment', type: 'Note', required: true },
+                            { name: 'UserId', type: 'Number', required: true }
+                        ])];
+                case 2:
+                    listExists = _a.sent();
+                    if (!listExists) {
+                        alert('Failed to create or access the DocumentComments list. Please try again.');
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 3:
+                    listInfoResp = _a.sent();
+                    if (!!listInfoResp.ok) return [3 /*break*/, 5];
+                    return [4 /*yield*/, listInfoResp.text()];
+                case 4:
+                    errorText = _a.sent();
+                    console.error('Failed to get list info:', listInfoResp.status, errorText);
+                    alert('Failed to add comment. Please try again.');
+                    return [2 /*return*/];
+                case 5: return [4 /*yield*/, listInfoResp.json()];
+                case 6:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    body = {
+                        __metadata: { type: entityType },
+                        DocumentId: document.id,
+                        UserName: currentUserName,
+                        Comment: newComment.trim(),
+                        UserId: currentUserId
+                    };
+                    console.log('Posting comment with body:', body);
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(body)
+                        })];
+                case 7:
+                    postResp = _a.sent();
+                    if (!!postResp.ok) return [3 /*break*/, 9];
+                    return [4 /*yield*/, postResp.text()];
+                case 8:
+                    errorText = _a.sent();
+                    console.error('Failed to add comment:', postResp.status, errorText);
+                    alert('Failed to add comment. Please try again.');
+                    return [2 /*return*/];
+                case 9:
+                    console.log('Comment added successfully');
+                    setNewComment('');
+                    // Refresh comments and count
+                    return [4 /*yield*/, fetchComments()];
+                case 10:
+                    // Refresh comments and count
+                    _a.sent();
+                    return [3 /*break*/, 12];
+                case 11:
+                    error_11 = _a.sent();
+                    console.error('Error adding comment:', error_11);
+                    alert('An error occurred while adding the comment. Please try again.');
+                    return [3 /*break*/, 12];
+                case 12: return [2 /*return*/];
+            }
+        });
+    }); };
+    var deleteComment = function (commentId) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, listName, deleteResp, errorText, error_12;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !commentId)
+                        return [2 /*return*/];
+                    if (!confirm('Are you sure you want to delete this comment?')) {
+                        return [2 /*return*/];
+                    }
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 6, , 7]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    listName = 'DocumentComments';
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(listName, "')/items(").concat(commentId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "DELETE"
+                            }
+                        })];
+                case 2:
+                    deleteResp = _a.sent();
+                    if (!!deleteResp.ok) return [3 /*break*/, 4];
+                    return [4 /*yield*/, deleteResp.text()];
+                case 3:
+                    errorText = _a.sent();
+                    console.error('Failed to delete comment:', deleteResp.status, errorText);
+                    alert('Failed to delete comment. Please try again.');
+                    return [2 /*return*/];
+                case 4:
+                    console.log('Comment deleted successfully');
+                    // Refresh comments and count
+                    return [4 /*yield*/, fetchComments()];
+                case 5:
+                    // Refresh comments and count
+                    _a.sent();
+                    return [3 /*break*/, 7];
+                case 6:
+                    error_12 = _a.sent();
+                    console.error('Error deleting comment:', error_12);
+                    alert('An error occurred while deleting the comment. Please try again.');
+                    return [3 /*break*/, 7];
+                case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    var formatTimeAgo = function (date) {
+        var now = new Date();
+        var diffMs = now.getTime() - date.getTime();
+        var diffMins = Math.floor(diffMs / 60000);
+        var diffHours = Math.floor(diffMs / 3600000);
+        var diffDays = Math.floor(diffMs / 86400000);
+        var diffWeeks = Math.floor(diffDays / 7);
+        var diffYears = Math.floor(diffDays / 365);
+        if (diffMins < 1)
+            return 'just now';
+        if (diffMins < 60)
+            return "".concat(diffMins, " ").concat(diffMins === 1 ? 'minute' : 'minutes', " ago");
+        if (diffHours < 24)
+            return "".concat(diffHours, " ").concat(diffHours === 1 ? 'hour' : 'hours', " ago");
+        if (diffDays < 7)
+            return "".concat(diffDays, " ").concat(diffDays === 1 ? 'day' : 'days', " ago");
+        if (diffWeeks < 52)
+            return "".concat(diffWeeks, " ").concat(diffWeeks === 1 ? 'week' : 'weeks', " ago");
+        return "".concat(diffYears, " ").concat(diffYears === 1 ? 'year' : 'years', " ago");
+    };
     var handleBack = function () {
         if (props.backTo === 'library' && props.onBackToLibrary) {
             props.onBackToLibrary();
@@ -3280,14 +3834,7 @@ var DocumentDetailPage = function (props) {
                                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "7 10 12 15 17 10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "15", x2: "12", y2: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                                "Download"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].shareButton, onClick: handleShare },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "5", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "6", cy: "12", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "18", cy: "19", r: "3", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "8.59", y1: "13.51", x2: "15.42", y2: "17.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "15.41", y1: "6.51", x2: "8.59", y2: "10.49", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))),
+                                "Download"))),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentTitle }, document.name),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].documentAbstract }, document.abstract || 'No description available'),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].metadata },
@@ -3304,45 +3851,91 @@ var DocumentDetailPage = function (props) {
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "3", y1: "10", x2: "21", y2: "10", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, document.date))))),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].contentWrapper },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].mainContent },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewSection },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewTitle }, "Document Preview"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewContainer },
-                            previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function (e) {
-                                    console.error('SVG load error:', e);
-                                    setPreviewError('Failed to load SVG preview');
-                                }, onLoad: function () {
-                                    setPreviewError('');
-                                } },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewPlaceholder }, "Preview not available")),
-                            previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewError },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorIcon }, "\u26A0\uFE0F"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorText }, previewError),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].retryButton, onClick: function () {
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].mainContentWrapper },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].mainContent },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewSection },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewTitle }, "Document Preview"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewContainer },
+                                previewUrl ? (document.fileType.toLowerCase() === 'pdf' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("embed", { src: previewUrl, type: "application/pdf", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview" })) : document.fileType.toLowerCase() === 'svg' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("object", { data: previewUrl, type: "image/svg+xml", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function (e) {
+                                        console.error('SVG load error:', e);
+                                        setPreviewError('Failed to load SVG preview');
+                                    }, onLoad: function () {
                                         setPreviewError('');
-                                        // Retry by re-fetching the document details
-                                        fetchDocumentDetails();
-                                    } }, "Retry")))))),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebar },
-                    tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarSection },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarTitle },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "7", y1: "7", x2: "7.01", y2: "7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                            "Tags"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarSection },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarTitle }, "Document Information"),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoList },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "Category"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, tags.length >= 2 ? tags[1] : 'N/A')),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "File Type"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, document.fileType)),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "File Size"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, document.fileSize)))))))));
+                                    } },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: previewUrl, alt: "Document Preview", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, style: { objectFit: 'contain', maxWidth: '100%', maxHeight: '100%', width: '100%', height: '100%' } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", { ref: iframeRef, src: previewUrl, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewFrame, title: "Document Preview", onError: function () { return setPreviewError('Failed to load preview'); }, onLoad: function () { return setPreviewError(''); } }))) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewPlaceholder }, "Preview not available")),
+                                previewError && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].previewError },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorIcon }, "\u26A0\uFE0F"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].errorText }, previewError),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].retryButton, onClick: function () {
+                                            setPreviewError('');
+                                            // Retry by re-fetching the document details
+                                            fetchDocumentDetails();
+                                        } }, "Retry")))))),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebar },
+                        tags.length > 0 && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarSection },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarTitle },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "7", y1: "7", x2: "7.01", y2: "7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                                "Tags"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarSection },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarTitle }, "Document Information"),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoList },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "Category"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, tags.length >= 2 ? tags[1] : 'N/A')),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "File Type"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, document.fileType)),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoItem },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoLabel }, "File Size"),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].infoValue }, document.fileSize)))))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].socialSection },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].socialActions },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "".concat(_DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].likeButton, " ").concat(isLiked ? _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].liked : ''), onClick: toggleLike, "aria-label": "Like" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: isLiked ? "url(#likeGradient)" : "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("defs", null,
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("linearGradient", { id: "likeGradient", x1: "0%", y1: "0%", x2: "100%", y2: "0%" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("stop", { offset: "0%", stopColor: "#ff6b9d" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("stop", { offset: "30%", stopColor: "#c44569" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("stop", { offset: "70%", stopColor: "#6c5ce7" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("stop", { offset: "100%", stopColor: "#4834d4" }))),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z", fill: isLiked ? "url(#likeGradient)" : "none", stroke: isLiked ? "url(#likeGradient)" : "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].count }, likeCount)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentButton, onClick: function () { return setShowComments(!showComments); }, "aria-label": "Comment" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].count }, commentCount)),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].shareButton, onClick: handleShare, "aria-label": "Share" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "22", y1: "2", x2: "11", y2: "13", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polygon", { points: "22 2 15 22 11 13 2 9 22 2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))),
+                    showComments && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentsBox },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentsList }, comments.length > 0 ? (comments.map(function (comment) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: comment.id, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentItem },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentHeader },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentHeaderLeft },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentUserName }, comment.userName),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentTime }, formatTimeAgo(comment.created))),
+                                comment.userId === currentUserId && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].deleteCommentButton, onClick: function () { return deleteComment(comment.id); }, "aria-label": "Delete comment" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "3 6 5 6 21 6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))))),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentText }, comment.comment))); })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].noComments }, "No comments yet"))),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].addCommentSection },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentInputWrapper },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "text", className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].commentInput, placeholder: "Add a comment...", value: newComment, maxLength: 500, onChange: function (e) { return setNewComment(e.target.value); }, onKeyPress: function (e) {
+                                        if (e.key === 'Enter' && newComment.trim() && newComment.length <= 500) {
+                                            addComment();
+                                        }
+                                    } }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: "".concat(_DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].charCount, " ").concat(newComment.length >= 450 ? _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].charCountWarning : '', " ").concat(newComment.length >= 500 ? _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].charCountError : '') },
+                                    newComment.length,
+                                    "/500")),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sendButton, onClick: addComment, disabled: !newComment.trim() || newComment.length > 500, "aria-label": "Send comment" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "22", y1: "2", x2: "11", y2: "13", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("polygon", { points: "22 2 15 22 11 13 2 9 22 2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))))))))));
 };
 
 
@@ -3360,45 +3953,69 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./DocumentDetailPage.module.css */ 4790);
 var styles = {
-    documentDetailPage: 'documentDetailPage_ea2b5c02',
-    header: 'header_ea2b5c02',
-    backButton: 'backButton_ea2b5c02',
-    content: 'content_ea2b5c02',
-    titleSection: 'titleSection_ea2b5c02',
-    titleContent: 'titleContent_ea2b5c02',
-    contentWrapper: 'contentWrapper_ea2b5c02',
-    mainContent: 'mainContent_ea2b5c02',
-    headerRow: 'headerRow_ea2b5c02',
-    fileTypeIndicator: 'fileTypeIndicator_ea2b5c02',
-    fileTypeIcon: 'fileTypeIcon_ea2b5c02',
-    fileTypeText: 'fileTypeText_ea2b5c02',
-    documentTitle: 'documentTitle_ea2b5c02',
-    documentAbstract: 'documentAbstract_ea2b5c02',
-    metadata: 'metadata_ea2b5c02',
-    metadataItem: 'metadataItem_ea2b5c02',
-    actionButtons: 'actionButtons_ea2b5c02',
-    downloadButton: 'downloadButton_ea2b5c02',
-    shareButton: 'shareButton_ea2b5c02',
-    previewSection: 'previewSection_ea2b5c02',
-    previewTitle: 'previewTitle_ea2b5c02',
-    previewContainer: 'previewContainer_ea2b5c02',
-    previewFrame: 'previewFrame_ea2b5c02',
-    previewPlaceholder: 'previewPlaceholder_ea2b5c02',
-    previewError: 'previewError_ea2b5c02',
-    errorIcon: 'errorIcon_ea2b5c02',
-    errorText: 'errorText_ea2b5c02',
-    retryButton: 'retryButton_ea2b5c02',
-    sidebar: 'sidebar_ea2b5c02',
-    sidebarSection: 'sidebarSection_ea2b5c02',
-    sidebarTitle: 'sidebarTitle_ea2b5c02',
-    tagsContainer: 'tagsContainer_ea2b5c02',
-    tag: 'tag_ea2b5c02',
-    infoList: 'infoList_ea2b5c02',
-    infoItem: 'infoItem_ea2b5c02',
-    infoLabel: 'infoLabel_ea2b5c02',
-    infoValue: 'infoValue_ea2b5c02',
-    loading: 'loading_ea2b5c02',
-    error: 'error_ea2b5c02'
+    documentDetailPage: 'documentDetailPage_7542105b',
+    header: 'header_7542105b',
+    backButton: 'backButton_7542105b',
+    content: 'content_7542105b',
+    titleSection: 'titleSection_7542105b',
+    titleContent: 'titleContent_7542105b',
+    contentWrapper: 'contentWrapper_7542105b',
+    mainContentWrapper: 'mainContentWrapper_7542105b',
+    mainContent: 'mainContent_7542105b',
+    headerRow: 'headerRow_7542105b',
+    fileTypeIndicator: 'fileTypeIndicator_7542105b',
+    fileTypeIcon: 'fileTypeIcon_7542105b',
+    fileTypeText: 'fileTypeText_7542105b',
+    documentTitle: 'documentTitle_7542105b',
+    documentAbstract: 'documentAbstract_7542105b',
+    metadata: 'metadata_7542105b',
+    metadataItem: 'metadataItem_7542105b',
+    actionButtons: 'actionButtons_7542105b',
+    downloadButton: 'downloadButton_7542105b',
+    shareButton: 'shareButton_7542105b',
+    previewSection: 'previewSection_7542105b',
+    previewTitle: 'previewTitle_7542105b',
+    previewContainer: 'previewContainer_7542105b',
+    previewFrame: 'previewFrame_7542105b',
+    previewPlaceholder: 'previewPlaceholder_7542105b',
+    previewError: 'previewError_7542105b',
+    errorIcon: 'errorIcon_7542105b',
+    errorText: 'errorText_7542105b',
+    retryButton: 'retryButton_7542105b',
+    sidebar: 'sidebar_7542105b',
+    sidebarSection: 'sidebarSection_7542105b',
+    sidebarTitle: 'sidebarTitle_7542105b',
+    tagsContainer: 'tagsContainer_7542105b',
+    tag: 'tag_7542105b',
+    infoList: 'infoList_7542105b',
+    infoItem: 'infoItem_7542105b',
+    infoLabel: 'infoLabel_7542105b',
+    infoValue: 'infoValue_7542105b',
+    socialSection: 'socialSection_7542105b',
+    socialActions: 'socialActions_7542105b',
+    likeButton: 'likeButton_7542105b',
+    commentButton: 'commentButton_7542105b',
+    liked: 'liked_7542105b',
+    count: 'count_7542105b',
+    commentsBox: 'commentsBox_7542105b',
+    commentsList: 'commentsList_7542105b',
+    commentItem: 'commentItem_7542105b',
+    commentHeader: 'commentHeader_7542105b',
+    commentHeaderLeft: 'commentHeaderLeft_7542105b',
+    commentUserName: 'commentUserName_7542105b',
+    commentTime: 'commentTime_7542105b',
+    commentText: 'commentText_7542105b',
+    deleteCommentButton: 'deleteCommentButton_7542105b',
+    noComments: 'noComments_7542105b',
+    addCommentSection: 'addCommentSection_7542105b',
+    commentInputWrapper: 'commentInputWrapper_7542105b',
+    commentInput: 'commentInput_7542105b',
+    charCount: 'charCount_7542105b',
+    charCountWarning: 'charCountWarning_7542105b',
+    charCountError: 'charCountError_7542105b',
+    sendButton: 'sendButton_7542105b',
+    loading: 'loading_7542105b',
+    error: 'error_7542105b'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
