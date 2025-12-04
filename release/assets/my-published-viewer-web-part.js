@@ -34,6 +34,17 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -262,6 +273,37 @@ var MyPublishedViewer = /** @class */ (function (_super) {
             return { expandedCols: Array.from(expanded) };
         });
     };
+    // Get status chip styling based on status value
+    MyPublishedViewer.prototype.getStatusChipStyle = function (status) {
+        var statusLower = (status || '').toString().toLowerCase().trim();
+        switch (statusLower) {
+            case 'draft':
+                return {
+                    backgroundColor: '#fff9c4',
+                    color: '#8b6f47' // Brown text
+                };
+            case 'unpublished':
+                return {
+                    backgroundColor: '#e3f2fd',
+                    color: '#1976d2' // Dark blue text
+                };
+            case 'published':
+                return {
+                    backgroundColor: '#c8e6c9',
+                    color: '#2e7d32' // Dark green text
+                };
+            case 'rejected':
+                return {
+                    backgroundColor: '#ffcdd2',
+                    color: '#c62828' // Dark red text
+                };
+            default:
+                return {
+                    backgroundColor: '#f5f5f5',
+                    color: '#666666' // Gray text
+                };
+        }
+    };
     MyPublishedViewer.prototype.render = function () {
         var _this = this;
         var _a = this.state, items = _a.items, loading = _a.loading, expandedCols = _a.expandedCols, hoverCol = _a.hoverCol;
@@ -322,7 +364,11 @@ var MyPublishedViewer = /** @class */ (function (_super) {
                         whiteSpace: 'pre-wrap',
                         textAlign: 'center'
                     };
-                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", { key: col, style: style }, col === 'PerformedBy' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: cellContentStyle }, ((_a = item === null || item === void 0 ? void 0 : item.PerformedBy) === null || _a === void 0 ? void 0 : _a.Title) || "")) : col === 'Editor' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: cellContentStyle }, ((_b = item === null || item === void 0 ? void 0 : item.Editor) === null || _b === void 0 ? void 0 : _b.Title) || "")
+                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", { key: col, style: style }, col === 'Status' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: __assign(__assign({}, cellContentStyle), { display: 'flex', justifyContent: 'center', alignItems: 'center' }) }, (function () {
+                        var statusValue = item[col] ? item[col].toString() : '';
+                        var statusChipStyle = _this.getStatusChipStyle(statusValue);
+                        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { style: __assign(__assign({}, statusChipStyle), { display: 'inline-block', padding: '4px 12px', borderRadius: '16px', fontSize: '14px', fontWeight: 500, whiteSpace: 'nowrap', textAlign: 'center' }) }, statusValue || ''));
+                    })())) : col === 'PerformedBy' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: cellContentStyle }, ((_a = item === null || item === void 0 ? void 0 : item.PerformedBy) === null || _a === void 0 ? void 0 : _a.Title) || "")) : col === 'Editor' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: cellContentStyle }, ((_b = item === null || item === void 0 ? void 0 : item.Editor) === null || _b === void 0 ? void 0 : _b.Title) || "")
                     /* File Name with link */
                     ) : col === 'FileLeafRef' ? (
                     // 2️⃣ Special handling for FileLeafRef with link

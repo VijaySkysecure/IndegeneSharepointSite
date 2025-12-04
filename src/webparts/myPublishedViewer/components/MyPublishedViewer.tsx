@@ -176,6 +176,39 @@ export default class MyPublishedViewer extends React.Component<IMyPublishedViewe
     });
   }
 
+  // Get status chip styling based on status value
+  private getStatusChipStyle(status: string): { backgroundColor: string; color: string } {
+    const statusLower = (status || '').toString().toLowerCase().trim();
+    
+    switch (statusLower) {
+      case 'draft':
+        return {
+          backgroundColor: '#fff9c4', // Light yellow
+          color: '#8b6f47' // Brown text
+        };
+      case 'unpublished':
+        return {
+          backgroundColor: '#e3f2fd', // Light blue
+          color: '#1976d2' // Dark blue text
+        };
+      case 'published':
+        return {
+          backgroundColor: '#c8e6c9', // Light green
+          color: '#2e7d32' // Dark green text
+        };
+      case 'rejected':
+        return {
+          backgroundColor: '#ffcdd2', // Light red/pink
+          color: '#c62828' // Dark red text
+        };
+      default:
+        return {
+          backgroundColor: '#f5f5f5', // Light gray for unknown status
+          color: '#666666' // Gray text
+        };
+    }
+  }
+
   public render(): React.ReactElement<IMyPublishedViewerProps> {
 
     const { items, loading, expandedCols, hoverCol } = this.state;
@@ -270,8 +303,31 @@ export default class MyPublishedViewer extends React.Component<IMyPublishedViewe
                     return (
                       <td key={col} style={style}>
                         
-                        {/* 1️⃣ Special handling for PerformedBy */}
-                        {col === 'PerformedBy' ? (
+                        {/* 1️⃣ Special handling for Status column with colored chips */}
+                        {col === 'Status' ? (
+                          <div style={{ ...cellContentStyle, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            {(() => {
+                              const statusValue = item[col] ? item[col].toString() : '';
+                              const statusChipStyle = this.getStatusChipStyle(statusValue);
+                              return (
+                                <span
+                                  style={{
+                                    ...statusChipStyle,
+                                    display: 'inline-block',
+                                    padding: '4px 12px',
+                                    borderRadius: '16px',
+                                    fontSize: '14px',
+                                    fontWeight: 500,
+                                    whiteSpace: 'nowrap',
+                                    textAlign: 'center'
+                                  }}
+                                >
+                                  {statusValue || ''}
+                                </span>
+                              );
+                            })()}
+                          </div>
+                        ) : col === 'PerformedBy' ? (
                           <div style={cellContentStyle}>
                             {item?.PerformedBy?.Title || ""}
                           </div>
