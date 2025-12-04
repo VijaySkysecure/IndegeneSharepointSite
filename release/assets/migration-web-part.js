@@ -2369,7 +2369,7 @@ var QuestionSection = function (props) {
                     console.log('Current Site URL (auto-detected):', webUrl);
                     console.log('Target Library:', libraryName);
                     console.log('Expected Library URL:', "".concat(webUrl, "/KMArtifacts"));
-                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=5");
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status&$filter=Status eq 'Published'&$orderby=Created desc&$top=5");
                     console.log('Full API Endpoint:', apiUrl);
                     console.log('Note: This will work if KMArtifacts library exists on the current site');
                     return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
@@ -3554,7 +3554,7 @@ var ViewAllDocumentsPage = function (props) {
                     _a.trys.push([1, 5, 6, 7]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
-                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File&$orderby=Created desc");
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc");
                     return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 2:
                     response = _a.sent();

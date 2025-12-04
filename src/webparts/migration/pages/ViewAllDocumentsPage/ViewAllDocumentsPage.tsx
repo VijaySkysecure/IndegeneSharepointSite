@@ -46,7 +46,8 @@ export const ViewAllDocumentsPage: React.FunctionComponent<IViewAllDocumentsPage
       const libraryName = 'KMArtifacts';
       
       // Fetch all documents with all needed fields
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File&$orderby=Created desc`;
+      // Filter to only show documents with Status = "Published"
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc`;
       
       const response: SPHttpClientResponse = await props.context.spHttpClient.get(
         apiUrl,

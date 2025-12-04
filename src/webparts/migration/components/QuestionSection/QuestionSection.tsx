@@ -50,7 +50,8 @@ export const QuestionSection: React.FunctionComponent<IQuestionSectionProps> = (
       // This works for both lists and document libraries
       // The API automatically uses the site context from webUrl
       // Note: ServerRelativeUrl is not available directly on items - use FileRef instead
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef&$orderby=Created desc&$top=5`;
+      // Filter to only show documents with Status = "Published"
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status&$filter=Status eq 'Published'&$orderby=Created desc&$top=5`;
       
       console.log('Full API Endpoint:', apiUrl);
       console.log('Note: This will work if KMArtifacts library exists on the current site');
