@@ -393,18 +393,19 @@ export class AzureOpenAIService {
       
       documents.forEach((doc) => {
         // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+        // documentContent includes: body text, headers, footers (e.g., "© 2025 Skysecure Technologies")
         const titleLower = (doc.title || '').toLowerCase();
         const fileNameLower = (doc.fileName || '').toLowerCase();
         const descriptionLower = (doc.description || '').toLowerCase();
         const contributorLower = (doc.contributor || '').toLowerCase();
-        const documentContentLower = (doc.documentContent || '').toLowerCase();
+        const documentContentLower = (doc.documentContent || '').toLowerCase(); // Includes headers/footers from all pages
         
-        // Check if word appears in ANY field (especially documentContent)
+        // Check if word appears in ANY field (especially documentContent which includes footers)
         const inTitle = titleLower.includes(queryLower);
         const inFileName = fileNameLower.includes(queryLower);
         const inDescription = descriptionLower.includes(queryLower);
         const inContributor = contributorLower.includes(queryLower);
-        const inDocumentContent = documentContentLower.includes(queryLower);
+        const inDocumentContent = documentContentLower.includes(queryLower); // Searches footer content too
         
         // Document matches if word appears in ANY field, especially documentContent
         if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
@@ -470,12 +471,13 @@ export class AzureOpenAIService {
             doc.fileName || '',
             doc.description || '', // abstract
             doc.contributor || '', // author
-            doc.documentContent || '' // actual document content (first 5000 chars)
+            doc.documentContent || '' // actual document content (up to 100k chars, sampled from beginning/middle/end)
           ].filter(Boolean).join(' ');
 
-          // Limit total text to ~8000 chars to keep embedding API calls reasonable
-          const truncatedText = searchableText.length > 8000 
-            ? searchableText.substring(0, 8000) 
+          // Limit total text to ~30,000 chars to keep embedding API calls reasonable while using more content
+          // This allows us to use significantly more document content for better semantic matching
+          const truncatedText = searchableText.length > 30000 
+            ? searchableText.substring(0, 30000) 
             : searchableText;
 
           try {

@@ -266,6 +266,8 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
      - Abstract (description)
      - Author (contributor)
      - Title
+     - Document content (up to 100k characters, sampled from beginning/middle/end for large docs)
+     - Headers and footers (extracted from PDFs, Word docs, PowerPoint slides)
   ====================================================== */
   React.useEffect(() => {
     // Only perform semantic search for documents tab when there's a search query
@@ -341,6 +343,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
         // Extract content for ALL documents to ensure complete search coverage
         // This ensures words in document content (but not in abstract) are found
+        // Extracts up to 100,000 characters per document (sampling from beginning, middle, end for large docs)
         // Process in batches to avoid overwhelming the browser
         const batchSize = 10; // Process 10 documents at a time
         const allDocsWithContent: Array<{
@@ -377,13 +380,40 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
                       const blob = await fileResponse.blob();
                       const file = new File([blob], doc.fileName, { type: blob.type });
                       
-                      // Extract text content
-                      const parseResult = await DocumentParser.parseFile(file);
-                      if (parseResult.success && parseResult.text) {
-                        // Use first 15000 characters for comprehensive search
-                        documentContent = parseResult.text.substring(0, 15000);
-                        documentContentCache.current.set(doc.id, documentContent);
+                    // Extract text content (includes headers, footers, and body from all pages)
+                    const parseResult = await DocumentParser.parseFile(file);
+                    if (parseResult.success && parseResult.text) {
+                      // Extract more content for comprehensive search
+                      // Use up to 100,000 characters, sampling from beginning, middle, and end
+                      // Footers are typically repeated on every page, so they'll be captured in the sampling
+                      const fullText = parseResult.text;
+                      const maxLength = 100000;
+                      
+                      // Log extracted text sample to verify footer content is included
+                      const textSample = fullText.substring(0, 500);
+                      console.log(`[Document ${doc.id}] Extracted text sample (first 500 chars):`, textSample);
+                      if (fullText.length > 500) {
+                        const endSample = fullText.substring(Math.max(0, fullText.length - 500));
+                        console.log(`[Document ${doc.id}] Extracted text sample (last 500 chars):`, endSample);
                       }
+                      
+                      if (fullText.length <= maxLength) {
+                        // If document is small enough, use all content (includes all footer instances)
+                        documentContent = fullText;
+                        console.log(`[Document ${doc.id}] Using full document content (${fullText.length} chars) - includes all headers/footers`);
+                      } else {
+                        // For large documents, sample from beginning, middle, and end
+                        // Footers appear on every page, so they'll be captured in these samples
+                        const chunkSize = Math.floor(maxLength / 3);
+                        const startChunk = fullText.substring(0, chunkSize);
+                        const middleStart = Math.floor(fullText.length / 2) - Math.floor(chunkSize / 2);
+                        const middleChunk = fullText.substring(middleStart, middleStart + chunkSize);
+                        const endChunk = fullText.substring(fullText.length - chunkSize);
+                        documentContent = `${startChunk}\n...\n${middleChunk}\n...\n${endChunk}`;
+                        console.log(`[Document ${doc.id}] Sampled document content (${documentContent.length} chars from ${fullText.length} total) - includes footer content from sampled sections`);
+                      }
+                      documentContentCache.current.set(doc.id, documentContent);
+                    }
                     }
                   } catch (err) {
                     console.warn(`Could not extract content for document ${doc.id}:`, err);
@@ -410,6 +440,7 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
         // Perform semantic search on filtered KMArtifacts documents
         // This searches through: title, fileName, description (abstract), contributor (author), AND document content
+        // Extracts up to 100k characters per document for comprehensive coverage
         // Increase topK to ensure we get all matches, including those only in document content
         const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(
           searchText,

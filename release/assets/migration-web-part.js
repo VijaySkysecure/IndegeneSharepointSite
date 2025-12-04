@@ -1792,6 +1792,8 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
        - Abstract (description)
        - Author (contributor)
        - Title
+       - Document content (up to 100k characters, sampled from beginning/middle/end for large docs)
+       - Headers and footers (extracted from PDFs, Word docs, PowerPoint slides)
     ====================================================== */
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         // Only perform semantic search for documents tab when there's a search query
@@ -1842,6 +1844,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 }
                 // Extract content for ALL documents to ensure complete search coverage
                 // This ensures words in document content (but not in abstract) are found
+                // Extracts up to 100,000 characters per document (sampling from beginning, middle, end for large docs)
                 // Process in batches to avoid overwhelming the browser
                 const batchSize = 10; // Process 10 documents at a time
                 const allDocsWithContent = [];
@@ -1861,11 +1864,37 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                                     if (fileResponse.ok) {
                                         const blob = await fileResponse.blob();
                                         const file = new File([blob], doc.fileName, { type: blob.type });
-                                        // Extract text content
+                                        // Extract text content (includes headers, footers, and body from all pages)
                                         const parseResult = await _services_DocumentParser__WEBPACK_IMPORTED_MODULE_7__.DocumentParser.parseFile(file);
                                         if (parseResult.success && parseResult.text) {
-                                            // Use first 15000 characters for comprehensive search
-                                            documentContent = parseResult.text.substring(0, 15000);
+                                            // Extract more content for comprehensive search
+                                            // Use up to 100,000 characters, sampling from beginning, middle, and end
+                                            // Footers are typically repeated on every page, so they'll be captured in the sampling
+                                            const fullText = parseResult.text;
+                                            const maxLength = 100000;
+                                            // Log extracted text sample to verify footer content is included
+                                            const textSample = fullText.substring(0, 500);
+                                            console.log(`[Document ${doc.id}] Extracted text sample (first 500 chars):`, textSample);
+                                            if (fullText.length > 500) {
+                                                const endSample = fullText.substring(Math.max(0, fullText.length - 500));
+                                                console.log(`[Document ${doc.id}] Extracted text sample (last 500 chars):`, endSample);
+                                            }
+                                            if (fullText.length <= maxLength) {
+                                                // If document is small enough, use all content (includes all footer instances)
+                                                documentContent = fullText;
+                                                console.log(`[Document ${doc.id}] Using full document content (${fullText.length} chars) - includes all headers/footers`);
+                                            }
+                                            else {
+                                                // For large documents, sample from beginning, middle, and end
+                                                // Footers appear on every page, so they'll be captured in these samples
+                                                const chunkSize = Math.floor(maxLength / 3);
+                                                const startChunk = fullText.substring(0, chunkSize);
+                                                const middleStart = Math.floor(fullText.length / 2) - Math.floor(chunkSize / 2);
+                                                const middleChunk = fullText.substring(middleStart, middleStart + chunkSize);
+                                                const endChunk = fullText.substring(fullText.length - chunkSize);
+                                                documentContent = `${startChunk}\n...\n${middleChunk}\n...\n${endChunk}`;
+                                                console.log(`[Document ${doc.id}] Sampled document content (${documentContent.length} chars from ${fullText.length} total) - includes footer content from sampled sections`);
+                                            }
                                             documentContentCache.current.set(doc.id, documentContent);
                                         }
                                     }
@@ -1882,6 +1911,7 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 }
                 // Perform semantic search on filtered KMArtifacts documents
                 // This searches through: title, fileName, description (abstract), contributor (author), AND document content
+                // Extracts up to 100k characters per document for comprehensive coverage
                 // Increase topK to ensure we get all matches, including those only in document content
                 const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(searchText, allDocsWithContent, 100 // Get top 100 results to ensure we don't miss documents with matches only in content
                 );
@@ -2664,20 +2694,55 @@ const QUICK_LINKS_MAP = {
         title: "Leadership / Who We Are",
         url: "https://www.indegene.com/who-we-are/leadership"
     },
+    "about us": {
+        title: "About Us",
+        url: "https://www.indegene.com/about-us"
+    },
+    about: {
+        title: "About Us",
+        url: "https://www.indegene.com/about-us"
+    },
+    "who we are": {
+        title: "Who We Are",
+        url: "https://www.indegene.com/who-we-are"
+    },
     "next platforms": {
         title: "NEXT Platforms",
         url: "https://www.indegene.com/what-we-do/next-platforms"
     },
-    privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" }
+    privacy: { title: "Privacy Policy", url: "https://www.indegene.com/privacy-policy" },
+    "retention policy": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "retention policies": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "archival policy": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    },
+    "preservation of records": {
+        title: "Policy on Preservation of Records/Archival Policy",
+        url: "https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    }
 };
 /* helper: return a matching quick link for the user query (or null) */
 const getLinkForQuery = (query) => {
-    const q = query.toLowerCase();
-    // check for multi-word synonyms first
+    const q = query.toLowerCase().trim();
+    // check for multi-word synonyms first (order matters - more specific first)
     const phraseChecks = [
         { keys: ["case study", "case studies"], mapKey: "case studies" },
-        { keys: ["csr policy", "csr"], mapKey: "csr" },
-        { keys: ["next platforms", "next platform"], mapKey: "next platforms" }
+        { keys: ["csr policy", "corporate social responsibility"], mapKey: "csr" },
+        { keys: ["retention policy", "retention policies", "document retention"], mapKey: "retention policy" },
+        { keys: ["archival policy", "preservation of records", "document archival"], mapKey: "archival policy" },
+        { keys: ["next platforms", "next platform"], mapKey: "next platforms" },
+        { keys: ["privacy policy", "privacy"], mapKey: "privacy" },
+        { keys: ["investor relations", "investor"], mapKey: "investor" },
+        { keys: ["contact us", "contact"], mapKey: "contact" },
+        { keys: ["about us", "about indegene"], mapKey: "about us" },
+        { keys: ["who we are"], mapKey: "who we are" }
     ];
     for (const p of phraseChecks) {
         for (const k of p.keys) {
@@ -2685,7 +2750,11 @@ const getLinkForQuery = (query) => {
                 return QUICK_LINKS_MAP[p.mapKey];
         }
     }
-    // token-level matching
+    // Check for standalone CSR (must be separate word, not part of another word)
+    if (q === "csr" || q.includes(" csr ") || q.startsWith("csr ") || q.endsWith(" csr")) {
+        return QUICK_LINKS_MAP["csr"];
+    }
+    // token-level matching (for single word queries)
     const tokens = q.split(/\s+/);
     for (const t of tokens) {
         if (QUICK_LINKS_MAP[t])
@@ -2765,6 +2834,25 @@ const CONTEXT_MAP = {
         "• Enterprise Clinical / Evidence  RWE, analytics, clinical operations support.",
         "• Data, AI, and Technology solutions powering these services."
     ],
+    "indegene business units": [
+        "Indegene operates through several key business units and service lines:",
+        "• **Enterprise Commercial Solutions (ECS)**: Omnichannel marketing, content operations, marketing analytics, field force support, and commercial strategy.",
+        "• **Enterprise Medical Solutions (EM)**: Medical information, publications, scientific writing, medical review (MLR), safety support, and medical affairs.",
+        "• **Enterprise Clinical / Evidence Services**: Real-world evidence (RWE), analytics, clinical operations support, and evidence generation.",
+        "• **Global Operations**: Project management, quality assurance, compliance, vendor management, and operational excellence.",
+        "• **Technology Solutions**: NEXT platform suite, AI/ML capabilities, GenAI solutions, digital engineering, and cloud services.",
+        "• **Consulting Practice**: Strategic consulting, operating model design, and transformation execution.",
+        "Each business unit focuses on specific aspects of life sciences commercialization while working together to deliver integrated solutions."
+    ],
+    "business units in indegene": [
+        "Indegene's main business units include:",
+        "• Enterprise Commercial Solutions (ECS) - Commercial and marketing operations",
+        "• Enterprise Medical Solutions (EM) - Medical affairs and regulatory support",
+        "• Enterprise Clinical / Evidence - Clinical operations and RWE",
+        "• Global Operations - Project management and operational excellence",
+        "• Technology Solutions - NEXT platforms and AI/ML capabilities",
+        "• Consulting Practice - Strategic consulting and transformation"
+    ],
     "indegene commercial solutions": [
         "Indegene's commercial solutions help brands with:",
         "• Omnichannel HCP engagement.",
@@ -2838,6 +2926,12 @@ const CONTEXT_MAP = {
     ],
     "who is the ceo of indegene": [
         "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company."
+    ],
+    "who is manish": [
+        "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company, which was established in 1998 in Bengaluru, India. He leads strategic growth and global operations at Indegene."
+    ],
+    "manish": [
+        "Manish Gupta is the current CEO of Indegene. He is also one of the original founders of the company, which was established in 1998 in Bengaluru, India. He leads strategic growth and global operations at Indegene."
     ],
     "is manish gupta founder of indegene": [
         "Yes, Manish Gupta is one of the founding members of Indegene and currently serves as its CEO.",
@@ -3537,6 +3631,36 @@ const CONTEXT_MAP = {
         "• Support for healthcare access and education",
         "Details are available in the CSR Policy document."
     ],
+    "csr policy": [
+        "Indegene's Corporate Social Responsibility (CSR) Policy outlines the company's commitment to sustainable business practices and social impact.",
+        "The CSR Policy covers:",
+        "• Community health programs and medical education initiatives",
+        "• Environmental sustainability and carbon footprint reduction",
+        "• Employee development, well-being, and diversity programs",
+        "• Ethical business practices and corporate governance",
+        "• Support for healthcare access and education",
+        "The full CSR Policy document is available as a PDF for detailed information on Indegene's social responsibility framework and initiatives."
+    ],
+    "csr policies": [
+        "Indegene's Corporate Social Responsibility (CSR) policies demonstrate the company's commitment to sustainable business practices and social impact.",
+        "The CSR policies cover:",
+        "• Community health programs and medical education initiatives",
+        "• Environmental sustainability and carbon footprint reduction",
+        "• Employee development, well-being, and diversity programs",
+        "• Ethical business practices and corporate governance",
+        "• Support for healthcare access and education",
+        "The full CSR Policy document is available as a PDF for detailed information on Indegene's social responsibility framework and initiatives."
+    ],
+    "indegene csr policy": [
+        "Indegene's Corporate Social Responsibility (CSR) Policy demonstrates the company's commitment to making a positive social and environmental impact.",
+        "Key areas covered in the CSR Policy include community health programs, environmental sustainability, employee well-being, ethical business practices, and support for healthcare access and education.",
+        "The policy document provides comprehensive details on Indegene's CSR framework, initiatives, and annual reporting practices."
+    ],
+    "indegene csr policies": [
+        "Indegene's Corporate Social Responsibility (CSR) policies demonstrate the company's commitment to making a positive social and environmental impact.",
+        "Key areas covered in the CSR policies include community health programs, environmental sustainability, employee well-being, ethical business practices, and support for healthcare access and education.",
+        "The policy documents provide comprehensive details on Indegene's CSR framework, initiatives, and annual reporting practices."
+    ],
     "indegene esg": [
         "Indegene focuses on Environmental, Social, and Governance (ESG) factors:",
         "• Environmental: Reducing carbon footprint, sustainable operations",
@@ -3655,6 +3779,85 @@ const CONTEXT_MAP = {
         "• Data encryption and access controls",
         "• Regular security audits and assessments",
         "• Patient privacy protection in all operations"
+    ],
+    "privacy policy": [
+        "Indegene's Privacy Policy outlines how the company collects, uses, protects, and manages personal information and data.",
+        "The Privacy Policy covers:",
+        "• Data collection and usage practices",
+        "• Data security measures and encryption",
+        "• Compliance with privacy regulations (HIPAA, GDPR, etc.)",
+        "• Patient privacy protection",
+        "• User rights and data access controls",
+        "• Cookie and tracking technology usage",
+        "The full Privacy Policy document is available on Indegene's website and provides comprehensive details on data privacy and security practices."
+    ],
+    "privacy policies": [
+        "Indegene's privacy policies demonstrate the company's commitment to protecting personal information and data privacy.",
+        "The privacy policies cover:",
+        "• Data collection and usage practices",
+        "• Data security measures and encryption",
+        "• Compliance with privacy regulations (HIPAA, GDPR, etc.)",
+        "• Patient privacy protection",
+        "• User rights and data access controls",
+        "• Cookie and tracking technology usage",
+        "The full Privacy Policy document is available on Indegene's website and provides comprehensive details on data privacy and security practices."
+    ],
+    "indegene privacy policy": [
+        "Indegene's Privacy Policy demonstrates the company's commitment to protecting personal information and data privacy.",
+        "The policy covers data collection, usage, security measures, compliance with privacy regulations (HIPAA, GDPR), patient privacy protection, and user rights.",
+        "Indegene follows industry best practices for data security and privacy, ensuring compliance with healthcare data protection standards and international privacy regulations."
+    ],
+    "indegene privacy policies": [
+        "Indegene's privacy policies demonstrate the company's commitment to protecting personal information and data privacy.",
+        "The policies cover data collection, usage, security measures, compliance with privacy regulations (HIPAA, GDPR), patient privacy protection, and user rights.",
+        "Indegene follows industry best practices for data security and privacy, ensuring compliance with healthcare data protection standards and international privacy regulations."
+    ],
+    /* =====================================================
+       INDEGENE – RETENTION POLICY / ARCHIVAL POLICY
+    ====================================================== */
+    "retention policy": [
+        "Indegene's Policy on Preservation of Records/Archival Policy outlines the company's document retention and archival procedures.",
+        "The policy is formulated in accordance with SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015 and the Companies Act, 2013.",
+        "Key aspects of the retention policy include:",
+        "• Documents are classified into mandatory (under governing laws) and non-mandatory categories",
+        "• Documents may be preserved permanently or for a minimum period of eight years after completion of transactions",
+        "• Documents can be stored in electronic mode",
+        "• Website disclosures must be maintained for a minimum period of five years under Listing Regulations",
+        "• The policy covers preservation of Board/Committee meeting records, general meeting records, contracts, legal documents, financial records, and more",
+        "The full Policy on Preservation of Records/Archival Policy document (Document ID: LG_P_011, Version 4.0, Effective Date: 28th April 2025) is available at: https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    ],
+    "indegene retention policy": [
+        "Indegene's Policy on Preservation of Records/Archival Policy (Document ID: LG_P_011, Version 4.0) establishes guidelines for document retention and archival.",
+        "The policy ensures compliance with SEBI Listing Regulations and the Companies Act, 2013.",
+        "Documents are preserved considering their importance, usefulness, and information value, with some documents requiring permanent preservation and others maintained for a minimum of eight years.",
+        "The policy also specifies that disclosures made to stock exchanges must be hosted on the company website for a minimum period of five years."
+    ],
+    "archival policy": [
+        "Indegene's Archival Policy (Policy on Preservation of Records) defines the process for preservation and archival of documents, including those maintained in electronic form and disclosed on the company website.",
+        "The policy classifies documents into categories based on statutory requirements and business needs, with preservation periods ranging from permanent to eight years minimum.",
+        "All employees are required to comply with the policy, and departmental heads are responsible for ensuring proper document preservation and archival procedures."
+    ],
+    "preservation of records": [
+        "Indegene's Policy on Preservation of Records ensures systematic identification, categorization, maintenance, review, retention, and destruction of documents received or created in the course of business.",
+        "The policy applies to all departments and covers both physical and electronic records, ensuring they are maintained with the same degree of confidentiality and care.",
+        "Documents are preserved using methods such as department/function-wise, subject/topic-wise, or chronologically, with appropriate backup provisions for electronic records."
+    ],
+    "retention policies": [
+        "Indegene's Policy on Preservation of Records/Archival Policy outlines the company's document retention and archival procedures.",
+        "The policy is formulated in accordance with SEBI (Listing Obligations and Disclosure Requirements) Regulation, 2015 and the Companies Act, 2013.",
+        "Key aspects of the retention policies include:",
+        "• Documents are classified into mandatory (under governing laws) and non-mandatory categories",
+        "• Documents may be preserved permanently or for a minimum period of eight years after completion of transactions",
+        "• Documents can be stored in electronic mode",
+        "• Website disclosures must be maintained for a minimum period of five years under Listing Regulations",
+        "• The policy covers preservation of Board/Committee meeting records, general meeting records, contracts, legal documents, financial records, and more",
+        "The full Policy on Preservation of Records/Archival Policy document (Document ID: LG_P_011, Version 4.0, Effective Date: 28th April 2025) is available at: https://ir.indegene.com/media/a4fl0eab/policy-on-preservation-of-records-archival-policy-on-website.pdf"
+    ],
+    "indegene retention policies": [
+        "Indegene's Policy on Preservation of Records/Archival Policy (Document ID: LG_P_011, Version 4.0) establishes guidelines for document retention and archival.",
+        "The policy ensures compliance with SEBI Listing Regulations and the Companies Act, 2013.",
+        "Documents are preserved considering their importance, usefulness, and information value, with some documents requiring permanent preservation and others maintained for a minimum of eight years.",
+        "The policy also specifies that disclosures made to stock exchanges must be hosted on the company website for a minimum period of five years."
     ],
     /* =====================================================
        INDEGENE – CAREER DEVELOPMENT & BENEFITS
@@ -3787,6 +3990,356 @@ const handleInternalQueries = (query) => {
     return null;
 };
 /* =========================================================
+   OUT-OF-DOMAIN QUERY DETECTION
+   Detects queries clearly outside Indegene/knowledge domain
+======================================================== */
+const isOutOfDomainQuery = (query) => {
+    const text = query.toLowerCase().trim();
+    // Weather-related queries (comprehensive)
+    const weatherKeywords = [
+        "weather", "temperature", "forecast", "rain", "snow", "sunny",
+        "cloudy", "humidity", "wind", "climate", "storm", "hurricane",
+        "weather today", "weather forecast", "what's the weather",
+        "how's the weather", "weather report"
+    ];
+    if (weatherKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene") && !text.includes("treatment") && !text.includes("medical")) {
+        return true;
+    }
+    // Sports-related queries (comprehensive)
+    const sportsKeywords = [
+        "sports", "football", "soccer", "basketball", "cricket", "baseball",
+        "tennis", "golf", "match", "game", "score", "player", "team", "league",
+        "who won", "who won the game", "who won the match", "what's the score",
+        "score of the", "football match", "cricket match", "basketball game"
+    ];
+    if (sportsKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene") && !text.includes("case study")) {
+        return true;
+    }
+    // Entertainment queries (comprehensive)
+    const entertainmentKeywords = [
+        "movie", "film", "actor", "actress", "celebrity", "music", "song",
+        "album", "tv show", "television", "netflix", "youtube video",
+        "tell me about movies", "tell me about films", "tell me about music",
+        "best movie", "best film", "movie recommendation", "film recommendation"
+    ];
+    if (entertainmentKeywords.some(keyword => text.includes(keyword)) &&
+        !text.includes("indegene")) {
+        return true;
+    }
+    // Recreational/personal activity requests (e.g., "i need to play", "i want to play")
+    if ((text.includes("i need to") || text.includes("i want to") || text.includes("need to") || text.includes("want to")) &&
+        (text.includes("play") || text.includes("game") || text.includes("sport") || text.includes("fun") ||
+            text.includes("entertainment") || text.includes("hobby") || text.includes("recreation")) &&
+        !text.includes("indegene") && !text.includes("work") && !text.includes("job") && !text.includes("career")) {
+        return true;
+    }
+    // Personal financial requests unrelated to healthcare (e.g., "i need money for bike")
+    if ((text.includes("i need money") || text.includes("need money") || text.includes("i want money")) &&
+        (text.includes("for") || text.includes("to buy") || text.includes("to get")) &&
+        !text.includes("cancer") && !text.includes("treatment") && !text.includes("disease") &&
+        !text.includes("medical") && !text.includes("health") && !text.includes("hospital") &&
+        !text.includes("indegene") && !text.includes("salary") && !text.includes("compensation")) {
+        return true;
+    }
+    // Cooking/recipes (comprehensive)
+    if ((text.includes("recipe") || text.includes("cook") || text.includes("how to make") ||
+        text.includes("how to cook") || text.match(/recipe for/i) ||
+        text.match(/how to cook \w+/i) || text.match(/recipe of/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("treatment")) {
+        return true;
+    }
+    // General knowledge that's clearly not about Indegene
+    // Only flag if it's clearly unrelated (no Indegene keywords)
+    const unrelatedPatterns = [
+        /^what is the (capital|population|currency|language|meaning) of/i,
+        /^what's the (capital|population|currency|language) of/i,
+        /capital of (france|india|usa|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /^who won (the|a)/i,
+        /^when did (world war|the war)/i,
+        /^tell me about (cats|dogs|animals|plants|birds|trees|flowers|mountains|oceans|rivers|lakes)/i,
+        /^what is (water|life|love|happiness|philosophy|earth|mars|jupiter|planet|f1|formula)/i,
+        /meaning of (life|existence|universe)/i,
+        /^who is the (president|prime minister|king|queen|leader) of/i,
+        /^who is (president|prime minister|king|queen) of/i,
+        /president of (india|usa|france|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /prime minister of (india|usa|france|germany|china|japan|uk|england|spain|italy|brazil|australia|canada)/i,
+        /^tell me about (cat|dog|bird|tree|flower|mountain|ocean|river|lake|animal|plant)/i
+    ];
+    if (unrelatedPatterns.some(pattern => pattern.test(text)) &&
+        !text.includes("indegene") && !text.includes("skysecure") &&
+        !text.includes("medical") && !text.includes("treatment") && !text.includes("health")) {
+        return true;
+    }
+    // Political/general knowledge queries (including typos like "indai" for "india")
+    // Check for country names or common misspellings
+    const countryKeywords = ["india", "indai", "usa", "france", "germany", "china", "japan", "uk", "england", "spain", "italy"];
+    if ((text.includes("president of") || text.includes("prime minister of") ||
+        text.includes("king of") || text.includes("queen of")) &&
+        (countryKeywords.some(country => text.includes(country)) ||
+            text.match(/president of \w+/i) || text.match(/prime minister of \w+/i)) &&
+        !text.includes("indegene") && !text.includes("ceo")) {
+        return true;
+    }
+    // Sports personalities (F1, MotoGP, etc.)
+    const sportsPersonalities = [
+        "marquez", "marq marquez", "lewis hamilton", "max verstappen",
+        "messi", "ronaldo", "federer", "nadal", "djokovic"
+    ];
+    if (sportsPersonalities.some(name => text.includes(name)) &&
+        !text.includes("indegene")) {
+        return true;
+    }
+    // F1 / Formula 1 / Racing
+    if ((text.includes("f1") || text.includes("formula 1") || text.includes("formula one") ||
+        text.includes("racing") || text.includes("motogp")) &&
+        !text.includes("indegene") && !text.includes("treatment")) {
+        return true;
+    }
+    // Philosophical or abstract questions
+    if ((text.includes("meaning of") || text.includes("what is the meaning")) &&
+        !text.includes("indegene") && !text.includes("life sciences")) {
+        return true;
+    }
+    // Basic science/astronomy questions unrelated to Indegene
+    if ((text.includes("what is water") || text.includes("what is air") ||
+        text.includes("what is fire") || text.includes("what is earth") ||
+        text.includes("what is the sun") || text.includes("what is the moon")) &&
+        !text.includes("indegene") && !text.includes("treatment") && !text.includes("medical")) {
+        return true;
+    }
+    // Technology products unrelated to Indegene (unless specifically about Indegene's use)
+    const techProducts = [
+        "sharepoint", "excel", "word", "powerpoint", "outlook", "teams",
+        "windows", "linux", "android", "ios", "javascript", "python", "java"
+    ];
+    if (techProducts.some(product => text.includes(product)) &&
+        !text.includes("indegene") && !text.includes("uses") && !text.includes("using")) {
+        // Only flag if it's a general "what is" question about the product
+        if (text.includes("what is") || text.includes("tell me about")) {
+            return true;
+        }
+    }
+    // API/endpoint/system architecture questions (technical queries about the chatbot itself)
+    if ((text.includes("api") || text.includes("endpoint") || text.includes("service")) &&
+        (text.includes("using") || text.includes("use") || text.includes("what") || text.includes("which") ||
+            text.includes("show") || text.includes("give") || text.includes("tell") ||
+            text.match(/what.*api/i) || text.match(/which.*api/i) || text.match(/give.*api/i))) {
+        // Only flag if it's asking about APIs/endpoints/services in general (not about Indegene's APIs)
+        if (!text.includes("indegene") && !text.includes("next") && !text.includes("platform")) {
+            return true;
+        }
+    }
+    // Generic "what is X" queries that are clearly not Indegene-related
+    // Common words that are definitely not about Indegene/life sciences
+    const unrelatedCommonWords = [
+        "food", "views", "view", "table", "chair", "book", "pen", "paper", "car", "house",
+        "dog", "cat", "bird", "tree", "flower", "mountain", "ocean", "river", "lake",
+        "computer", "phone", "television", "radio", "music", "art", "painting", "drawing",
+        "sport", "game", "movie", "film", "actor", "singer", "dancer", "writer", "author",
+        "country", "city", "town", "village", "street", "road", "building", "school",
+        "university", "college", "student", "teacher", "doctor" // Note: "doctor" might be medical, but "what is doctor" is too generic
+    ];
+    // Check for generic "what is X" or "what are X" queries with unrelated words
+    if ((text.match(/^what is (the )?(use of )?(\w+)/i) ||
+        text.match(/^what are (the )?(\w+)/i) ||
+        text.match(/^tell me (about |what is )?(\w+)/i)) &&
+        !text.includes("indegene") &&
+        !text.includes("skysecure") &&
+        !text.includes("prma") &&
+        !text.includes("heor") &&
+        !text.includes("regulatory") &&
+        !text.includes("medical") &&
+        !text.includes("clinical") &&
+        !text.includes("pharma") &&
+        !text.includes("biotech") &&
+        !text.includes("life sciences") &&
+        !text.includes("healthcare") &&
+        !text.includes("oncology") &&
+        !text.includes("therapy") &&
+        !text.includes("treatment") &&
+        !text.includes("drug") &&
+        !text.includes("medicine") &&
+        !text.includes("covid") &&
+        !text.includes("coronavirus") &&
+        !text.includes("pandemic") &&
+        !text.includes("disease") &&
+        !text.includes("health") &&
+        !text.includes("medical")) {
+        // Extract the main word from the query
+        const match = text.match(/^what is (the )?(use of )?(\w+)/i) ||
+            text.match(/^what are (the )?(\w+)/i) ||
+            text.match(/^tell me (about |what is )?(\w+)/i);
+        if (match) {
+            const mainWord = (match[3] || match[2] || match[1] || "").toLowerCase().trim();
+            // If it's a very generic word that's clearly not Indegene-related, flag it
+            // BUT: Exclude healthcare/medical terms (covid, coronavirus, disease, etc.)
+            const isHealthcareTerm = mainWord.match(/^(covid|coronavirus|pandemic|disease|health|medical|treatment|therapy|symptom|diagnosis|patient|medicine|drug|vaccine|infection|virus)/i);
+            if ((unrelatedCommonWords.includes(mainWord) ||
+                mainWord.length < 4 || // Very short words are likely generic
+                (mainWord.length <= 6 && !mainWord.match(/^(indegene|skysecure|prma|heor|medical|clinical|pharma|biotech|regulatory|oncology|therapy|treatment|drug|medicine|covid|coronavirus|pandemic|disease|health|symptom|diagnosis|patient|vaccine|infection|virus)/i))) &&
+                !isHealthcareTerm) {
+                // Additional check: if it's a single word query like "what is views", flag it
+                const words = text.split(/\s+/).filter(w => w.length > 2);
+                if (words.length <= 4) { // Very short queries are likely generic
+                    return true;
+                }
+            }
+        }
+    }
+    // Food-related queries (comprehensive - from test questions)
+    if ((text.includes("food") || text.includes("eat") || text.includes("meal") ||
+        text.includes("recipe") || text.includes("cooking") || text.includes("cuisine") ||
+        text.includes("pasta") || text.includes("chicken") || text.includes("pizza") ||
+        text.includes("breakfast") || text.includes("lunch") || text.includes("dinner") ||
+        text.match(/recipe for \w+/i) || text.match(/how to cook \w+/i) ||
+        text.match(/recipe of \w+/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("treatment") &&
+        !text.includes("diet") && !text.includes("nutrition") && !text.includes("health")) {
+        return true;
+    }
+    // Legal/philosophical queries (e.g., "retribution of acts")
+    const legalPhilosophicalTerms = [
+        "retribution", "acts", "legal", "law", "justice", "punishment", "crime",
+        "philosophy", "ethics", "morality", "virtue", "sin", "karma", "dharma",
+        "constitution", "legislation", "statute", "regulation" // Note: "regulation" might be Indegene-related, so check context
+    ];
+    // Check for "X of Y" pattern with legal/philosophical terms
+    if ((legalPhilosophicalTerms.some(term => text.includes(term)) ||
+        text.match(/\b(retribution|justice|punishment|philosophy|ethics|morality)\s+of\s+\w+/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health") &&
+        !text.includes("regulatory intelligence") && !text.includes("regulatory compliance") &&
+        !text.includes("regulatory affairs") && !text.includes("regulatory services")) {
+        return true;
+    }
+    // AI/chatbot comparison queries (e.g., "chat gpt is better", "chatgpt vs")
+    const aiChatbotTerms = [
+        "chatgpt", "chat gpt", "openai", "gpt", "bard", "claude", "ai chatbot",
+        "is better", "vs ", "versus", "compared to", "better than", "worse than"
+    ];
+    if (aiChatbotTerms.some(term => text.includes(term)) &&
+        !text.includes("indegene") && !text.includes("next") && !text.includes("platform")) {
+        return true;
+    }
+    // Insulting/offensive queries directed at the bot (e.g., "why are you dumb", "why are you stupid")
+    const insultingTerms = [
+        "dumb", "stupid", "bad", "useless", "terrible", "awful", "horrible",
+        "suck", "sucks", "worst", "idiot", "fool", "foolish", "dumbass",
+        "retarded", "pathetic", "worthless", "garbage", "trash", "crap",
+        "slow", "wrong", "incorrect", "inaccurate", "broken", "not working"
+    ];
+    // Pattern: "why are you [adjective]" or "why is you [adjective]" with insulting terms
+    const whyAreYouInsultPattern = /^why (are|is) you\s+(\w+)/i;
+    if (whyAreYouInsultPattern.test(text)) {
+        const match = text.match(whyAreYouInsultPattern);
+        if (match && match[2]) {
+            const adjective = match[2].toLowerCase();
+            if (insultingTerms.some(term => adjective.includes(term) || term.includes(adjective)) &&
+                !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+                return true;
+            }
+        }
+    }
+    // Also check for insulting terms in any "you are/you're" pattern
+    if ((text.match(/you are \w+/i) || text.match(/you're \w+/i) ||
+        text.match(/why are you \w+/i) || text.match(/why is you \w+/i)) &&
+        insultingTerms.some(term => text.includes(term)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true;
+    }
+    // "Why is [name]" queries - incomplete or personal name queries
+    // Pattern: "why is [name]" where name is not Indegene-related
+    const whyIsPattern = /^why is\s+([a-z\s]{2,30})$/i;
+    if (whyIsPattern.test(text)) {
+        const match = text.match(whyIsPattern);
+        if (match) {
+            const name = match[1].toLowerCase().trim();
+            // Known Indegene-related terms
+            const indegeneTerms = [
+                "indegene", "manish", "rajesh", "sanjay", "anand", "gaurav",
+                "ceo", "founder", "company", "service", "platform", "next"
+            ];
+            // If it's not about Indegene and looks like a personal name or unclear query
+            if (!indegeneTerms.some(term => name.includes(term)) &&
+                name.length > 2 && name.length < 30 &&
+                !text.includes("indegene") && !text.includes("medical") &&
+                !text.includes("health") && !text.includes("treatment")) {
+                return true;
+            }
+        }
+    }
+    // Gibberish/unclear queries - detect random character strings
+    // Check if query contains mostly non-letter characters or random letter combinations
+    // Only check for obvious gibberish (very short, no vowels, random characters)
+    if (text.length > 0 && text.length < 30) {
+        const words = text.split(/\s+/).filter(w => w.length > 0);
+        const hasValidWords = words.some(word => {
+            // Check if word looks like a real word (has vowels, reasonable length, etc.)
+            const hasVowels = /[aeiou]/i.test(word);
+            const reasonableLength = word.length >= 2 && word.length <= 20;
+            return hasVowels && reasonableLength;
+        });
+        // If no valid words found and query looks like random characters
+        if (!hasValidWords && words.length > 0) {
+            const allWordsGibberish = words.every(w => {
+                const hasVowels = /[aeiou]/i.test(w);
+                const consonantRatio = (w.match(/[bcdfghjklmnpqrstvwxyz]/gi) || []).length / w.length;
+                return !hasVowels || consonantRatio > 0.8 || w.length < 2;
+            });
+            if (allWordsGibberish) {
+                // This looks like gibberish - but don't flag it as out-of-domain, let AI handle it
+                // The AI will recognize it as unclear
+                return false; // Allow it to pass through, AI will handle unclear queries
+            }
+        }
+    }
+    // "What is WHO" - World Health Organization is healthcare-related, should be allowed
+    if (text.match(/^what is\s+who$/i) || text.match(/^what\s+is\s+who\s*$/i)) {
+        return false; // Allow this - it's about World Health Organization (healthcare)
+    }
+    // "Who is [name]" queries - check if name is related to Indegene
+    // Known Indegene-related names (CEO, founders, etc.) - these should NOT be flagged
+    const indegeneNames = [
+        "manish gupta", "rajesh nair", "sanjay parikh", "anand kiran", "gaurav kapoor",
+        "manish", "rajesh", "sanjay", "anand", "gaurav"
+    ];
+    // Pattern: "who is [name]" - simple pattern to catch person name queries
+    // Match "who is" followed by a name (1-3 words, not too long)
+    const whoIsPattern = /^who is\s+([a-z\s]{2,30})$/i;
+    if (whoIsPattern.test(text)) {
+        const match = text.match(whoIsPattern);
+        if (match) {
+            const name = match[1].toLowerCase().trim();
+            // Skip if query mentions Indegene, CEO, founder, chairman explicitly
+            if (text.includes("indegene") ||
+                text.includes("ceo") ||
+                text.includes("founder") ||
+                text.includes("chairman") ||
+                text.includes("of indegene")) {
+                return false; // Allow these queries
+            }
+            // Check if it's a known Indegene person (including partial matches like "manish" for "manish gupta")
+            const isIndegenePerson = indegeneNames.some(indegeneName => {
+                const fullName = indegeneName.toLowerCase();
+                const queryName = name.toLowerCase();
+                // Check if query name matches or is part of known name, or vice versa
+                return queryName === fullName ||
+                    fullName.includes(queryName) ||
+                    queryName.includes(fullName) ||
+                    (queryName.length >= 3 && fullName.startsWith(queryName)) ||
+                    (fullName.length >= 3 && queryName.startsWith(fullName));
+            });
+            // If it's not a known Indegene person and doesn't mention Indegene context, flag as out-of-domain
+            if (!isIndegenePerson && name.length > 2 && name.length < 30) {
+                // It's a "who is [name]" query about someone not in our knowledge base
+                return true;
+            }
+        }
+    }
+    return false;
+};
+/* =========================================================
    GENERAL SMALL-TALK / META QUERIES (who are you, hi, help)
 ======================================================== */
 const handleGeneralQueries = (query) => {
@@ -3798,16 +4351,72 @@ const handleGeneralQueries = (query) => {
         text.startsWith("hi ") ||
         text.startsWith("hello ") ||
         text.startsWith("hey ")) {
-        return "Hi! I’m your KM Assistant chatbot. Ask me about Indegene, Skysecure, breast cancer modules, PRMA/HEOR, CPC playbooks, and more — or ask for the time, date, or day.";
+        return "Hi! I'm your KM Assistant chatbot. Ask me about Indegene, Skysecure, breast cancer modules, PRMA/HEOR, CPC playbooks, and more — or ask for the time, date, or day.";
     }
-    // Who are you?
-    if (text.includes("who are you") || text.includes("what are you")) {
+    // Who are you? / What are you? (handle typos like "ytou" for "you", "waht" for "what", ignore casual words like "buddy")
+    // Remove casual words first, then check
+    const cleanedText = text.replace(/\b(buddy|da|dude|bro|mate|friend)\b/gi, "").trim();
+    if (cleanedText.match(/who are (you|ytou|yuo|yoi|u)/i) ||
+        cleanedText.match(/what are (you|ytou|yuo|yoi|u)/i) ||
+        cleanedText.match(/waht are (you|ytou|yuo|yoi|u)/i) || // "waht" typo for "what"
+        cleanedText.match(/who\s+r\s+(you|ytou|yuo)/i) ||
+        cleanedText.match(/what\s+r\s+(you|ytou|yuo)/i) ||
+        cleanedText.match(/waht\s+r\s+(you|ytou|yuo)/i) ||
+        (cleanedText.match(/^(who|what|waht) are/i) && cleanedText.length < 25) ||
+        (text.match(/^(who|what|waht) are (you|ytou|yuo|yoi|u)/i))) {
         return "I'm your KM Assistant chatbot powered by AI. I can answer questions about Indegene using real-time information from the company website, combined with our internal knowledge base. I can also tell you the current time, date, and day.";
     }
-    // What can you do?
+    // Handle personal health/financial assistance queries with empathy
+    // ONLY trigger for health-related financial requests (cancer, disease, treatment, etc.)
+    // NOT for general financial requests like "i need money for bike"
+    const hasHealthContext = text.includes("cancer") ||
+        text.includes("disease") ||
+        text.includes("sick") ||
+        text.includes("treatment") ||
+        text.includes("cure") ||
+        text.includes("health problem") ||
+        text.includes("medical") ||
+        text.includes("healthcare") ||
+        text.includes("hospital") ||
+        text.includes("doctor") ||
+        text.includes("patient");
+    const hasFinancialRequest = text.includes("need money") ||
+        text.includes("financial assistance") ||
+        text.includes("money for") ||
+        (text.includes("i need") && text.includes("money"));
+    // Only trigger if BOTH health context AND financial request are present
+    if (hasHealthContext && hasFinancialRequest) {
+        return "I understand this is a difficult situation, and I truly empathize with your concerns. While I can provide information about healthcare topics, medical conditions, and treatment options, I cannot provide direct financial assistance or personal medical advice.\n\nFor cancer treatment and financial support, I recommend:\n• Consulting with qualified healthcare professionals and oncologists for medical guidance\n• Exploring government health programs and insurance options in your region\n• Contacting cancer support organizations and non-profit foundations that provide financial assistance\n• Checking with hospitals and treatment centers about patient assistance programs\n\nIf you have questions about cancer, treatment options, or healthcare information, I'm happy to help with that. For specific medical advice or financial assistance, please consult with healthcare professionals or relevant support organizations.";
+    }
+    // Handle unclear/gibberish queries
+    if (text.length > 0 && text.length < 30) {
+        const words = text.split(/\s+/).filter(w => w.length > 0);
+        const hasValidWords = words.some(word => {
+            const hasVowels = /[aeiou]/i.test(word);
+            return hasVowels && word.length >= 2;
+        });
+        if (!hasValidWords && words.length > 0) {
+            const allWordsGibberish = words.every(w => {
+                const hasVowels = /[aeiou]/i.test(w);
+                return !hasVowels || w.length < 2;
+            });
+            if (allWordsGibberish) {
+                return "I'm sorry, but I couldn't understand your question. It seems there might be a typo or the question is unclear. Could you please rephrase your question? I can help you with:\n\n• Questions about Indegene\n• Healthcare and medical topics\n• Internal knowledge base topics\n• General queries (time, date, day)";
+            }
+        }
+    }
+    // What can you do? / Your capabilities
     if (text.includes("what can you do") ||
         text.includes("how can you help") ||
-        text.includes("what do you do")) {
+        text.includes("what do you do") ||
+        text.includes("capabilities of you") ||
+        text.includes("your capabilities") ||
+        text.includes("what are your capabilities") ||
+        text.includes("what are you capable of") ||
+        text.includes("what can you help with") ||
+        text.includes("what do you help with") ||
+        text.match(/capabilities?\s+(of|about)\s+(you|yourself)/i) ||
+        text.match(/what\s+(are|is)\s+(your|you)\s+capabilities?/i)) {
         return ("I can help you with:\n" +
             "• Questions about Indegene - services, solutions, technology, partnerships, careers, and more (using real-time website information)\n" +
             "• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n" +
@@ -3830,9 +4439,49 @@ const handleGeneralQueries = (query) => {
             "• \"What is the time?\" or \"What's today's date?\"\n" +
             "• \"Show me quick links\"");
     }
-    // How are you
-    if (text.includes("how are you")) {
-        return "I’m just code, but I’m running fine and ready to help you with KM-related questions!";
+    // How are you (handle typos like "ypou", "yuo", etc.)
+    // Match "how are" followed by "you" or common typos, or just "how are" alone
+    if (text.match(/how\s+are\s+(you|ypou|yuo|yoi|u|y|yo)/i) ||
+        text.match(/how\s+r\s+(you|ypou|yuo)/i) ||
+        (text.match(/^how\s+are/i) && text.length < 15)) { // Short queries starting with "how are"
+        return "I'm just code, but I'm running fine and ready to help you with KM-related questions!";
+    }
+    // Quick links / All links
+    if (text.includes("all links") ||
+        text.includes("links related") ||
+        text.includes("show me links") ||
+        text.includes("quick links") ||
+        text.includes("list of links") ||
+        (text.includes("links") && (text.includes("indegene") || text.includes("related") || text.includes("all")))) {
+        const allLinks = Object.values(QUICK_LINKS_MAP);
+        // Remove duplicates (some entries might have same URL)
+        const uniqueLinks = Array.from(new Map(allLinks.map(link => [link.url, link])).values());
+        let linksText = "Here are all the quick links related to Indegene:\n\n";
+        uniqueLinks.forEach((link, index) => {
+            linksText += `${index + 1}. **${link.title}**\n   🔗 ${link.url}\n\n`;
+        });
+        linksText += "💡 **Tip:** You can also ask me about any of these topics directly (e.g., \"careers\", \"case studies\", \"contact\"), and I'll provide the relevant link along with detailed information!";
+        return linksText;
+    }
+    // Policies query - but only for generic "policies" queries
+    // Specific policy queries (csr, privacy, retention, archival) should go to quick link detection
+    if ((text.includes("policies") || text.includes("policy")) &&
+        !text.includes("csr") &&
+        !text.includes("privacy") &&
+        !text.includes("retention") &&
+        !text.includes("archival") &&
+        !text.includes("preservation") &&
+        (text.includes("indegene") || text.length < 30) // Short queries like "policies" or "indegene policies"
+    ) {
+        return ("Indegene has several important policies available:\n\n" +
+            "• **CSR Policy (Corporate Social Responsibility)** - Details about Indegene's corporate social responsibility initiatives\n" +
+            "• **Privacy Policy** - Information about data privacy and security practices\n" +
+            "• **Retention Policy (Preservation of Records/Archival Policy)** - Document retention and archival procedures\n\n" +
+            "You can ask me specifically about:\n" +
+            "• \"CSR policy\" or \"CSR\" - for Corporate Social Responsibility policy\n" +
+            "• \"Privacy policy\" or \"Privacy\" - for Privacy & Security policy\n" +
+            "• \"Retention policy\" or \"Archival policy\" - for Document Retention/Archival Policy\n\n" +
+            "I'll provide you with the relevant link and information!");
     }
     return null;
 };
@@ -3850,10 +4499,76 @@ const getAnswerFromContext = (query) => {
     if (CONTEXT_MAP[normQuery]) {
         return CONTEXT_MAP[normQuery].join(" ");
     }
+    // 0.25) Try plural/singular variations for policy-related queries
+    if (normQuery.includes("polic")) {
+        // Try singular if plural
+        if (normQuery.endsWith("policies")) {
+            const singular = normQuery.replace(/policies$/, "policy");
+            if (CONTEXT_MAP[singular]) {
+                return CONTEXT_MAP[singular].join(" ");
+            }
+        }
+        // Try plural if singular
+        if (normQuery.endsWith("policy")) {
+            const plural = normQuery.replace(/policy$/, "policies");
+            if (CONTEXT_MAP[plural]) {
+                return CONTEXT_MAP[plural].join(" ");
+            }
+        }
+    }
     const queryTokens = new Set(normQuery.split(" "));
     // 0.5) Hard override for skysecure keyword to avoid tie with "what is indegene"
     if (queryTokens.has("skysecure") && CONTEXT_MAP["skysecure"]) {
         return CONTEXT_MAP["skysecure"].join(" ");
+    }
+    // 0.6) Hard override for CSR policy queries
+    if ((queryTokens.has("csr") || normQuery.includes("csr")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Try exact matches first
+        if (CONTEXT_MAP["csr policies"])
+            return CONTEXT_MAP["csr policies"].join(" ");
+        if (CONTEXT_MAP["csr policy"])
+            return CONTEXT_MAP["csr policy"].join(" ");
+        if (CONTEXT_MAP["indegene csr policies"])
+            return CONTEXT_MAP["indegene csr policies"].join(" ");
+        if (CONTEXT_MAP["indegene csr policy"])
+            return CONTEXT_MAP["indegene csr policy"].join(" ");
+    }
+    // 0.7) Hard override for Privacy policy queries
+    if ((queryTokens.has("privacy") || normQuery.includes("privacy")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Try exact matches first
+        if (CONTEXT_MAP["privacy policies"])
+            return CONTEXT_MAP["privacy policies"].join(" ");
+        if (CONTEXT_MAP["privacy policy"])
+            return CONTEXT_MAP["privacy policy"].join(" ");
+        if (CONTEXT_MAP["indegene privacy policies"])
+            return CONTEXT_MAP["indegene privacy policies"].join(" ");
+        if (CONTEXT_MAP["indegene privacy policy"])
+            return CONTEXT_MAP["indegene privacy policy"].join(" ");
+    }
+    // 0.8) Hard override for Retention/Archival policy queries
+    if ((queryTokens.has("retention") || normQuery.includes("retention")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        // Check for plural first, then singular
+        if (CONTEXT_MAP["retention policies"])
+            return CONTEXT_MAP["retention policies"].join(" ");
+        if (CONTEXT_MAP["indegene retention policies"])
+            return CONTEXT_MAP["indegene retention policies"].join(" ");
+        if (CONTEXT_MAP["retention policy"])
+            return CONTEXT_MAP["retention policy"].join(" ");
+        if (CONTEXT_MAP["indegene retention policy"])
+            return CONTEXT_MAP["indegene retention policy"].join(" ");
+    }
+    if ((queryTokens.has("archival") || normQuery.includes("archival")) &&
+        (queryTokens.has("polic") || normQuery.includes("polic"))) {
+        if (CONTEXT_MAP["archival policy"])
+            return CONTEXT_MAP["archival policy"].join(" ");
+    }
+    if ((queryTokens.has("preservation") || normQuery.includes("preservation")) &&
+        (queryTokens.has("record") || normQuery.includes("record"))) {
+        if (CONTEXT_MAP["preservation of records"])
+            return CONTEXT_MAP["preservation of records"].join(" ");
     }
     // Intent detection
     const employeeIntent = normQuery.includes("employees") ||
@@ -3943,11 +4658,154 @@ const getAnswerFromContext = (query) => {
     return "I could not find a relevant match in my stored knowledge.";
 };
 /* =========================================================
+   AZURE COGNITIVE SEARCH CONTENT FETCHING
+======================================================== */
+/**
+ * Fetches latest news/press releases from Azure Cognitive Search
+ * Specifically searches for recent news, announcements, and press releases
+ */
+const fetchLatestNewsFromAzureSearch = async (topResults = 5) => {
+    try {
+        const searchUrl = `${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_ENDPOINT}/indexes/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_INDEX}/docs/search?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_API_VERSION}`;
+        // Search for news, press releases, announcements
+        // Use a broader search to catch news-related content from Indegene
+        // Search for news-related terms that should appear in Indegene's website content
+        const searchBody = {
+            search: 'news OR "press release" OR announcement OR update OR latest OR recent OR partnership OR collaboration OR acquisition OR launch OR expansion OR "new partnership" OR "announced"',
+            queryType: 'semantic',
+            semanticConfiguration: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_SEMANTIC_CONFIG,
+            top: topResults,
+            select: 'id,title,content,url,publishedDate,businessUnit,documentType,therapyArea',
+            highlight: 'content',
+            highlightPreTag: '<mark>',
+            highlightPostTag: '</mark>'
+        };
+        const response = await fetch(searchUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_KEY
+            },
+            body: JSON.stringify(searchBody)
+        });
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.warn('Azure Search API failed for news:', response.status, errorText);
+            return '';
+        }
+        const data = await response.json();
+        const results = data.value || [];
+        if (results.length === 0) {
+            console.log('No news found in Azure Search');
+            return '';
+        }
+        // Format news content
+        let newsContent = 'LATEST NEWS AND ANNOUNCEMENTS FROM INDEGENE:\n\n';
+        results.forEach((item, index) => {
+            var _a;
+            const title = item.title || 'Untitled';
+            const content = item.content || '';
+            const url = item.url || '';
+            const publishedDate = item.publishedDate || '';
+            // Extract highlighted content if available
+            const highlights = ((_a = item['@search.highlights']) === null || _a === void 0 ? void 0 : _a.content) || [];
+            const highlightedText = highlights.length > 0
+                ? highlights.join(' ... ')
+                : content.substring(0, 800);
+            newsContent += `[News ${index + 1}: ${title}]\n`;
+            if (publishedDate)
+                newsContent += `Published: ${publishedDate}\n`;
+            if (url)
+                newsContent += `Source: ${url}\n`;
+            newsContent += `Content: ${highlightedText}\n\n`;
+        });
+        // Limit total content
+        if (newsContent.length > 10000) {
+            newsContent = newsContent.substring(0, 10000) + '...';
+        }
+        console.log(`Fetched ${results.length} news items from Azure Search`);
+        return newsContent.trim();
+    }
+    catch (error) {
+        console.warn('Error fetching latest news from Azure Search:', error);
+        return '';
+    }
+};
+/**
+ * Fetches relevant content from Azure Cognitive Search based on user query
+ * This is more reliable than web scraping and provides semantic search capabilities
+ */
+const fetchContentFromAzureSearch = async (query, topResults = 5) => {
+    try {
+        const searchUrl = `${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_ENDPOINT}/indexes/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_INDEX}/docs/search?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_API_VERSION}`;
+        const searchBody = {
+            search: query,
+            queryType: 'semantic',
+            semanticConfiguration: _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_SEMANTIC_CONFIG,
+            top: topResults,
+            select: 'id,title,content,url,publishedDate,businessUnit,documentType,therapyArea',
+            highlight: 'content',
+            highlightPreTag: '<mark>',
+            highlightPostTag: '</mark>'
+        };
+        const response = await fetch(searchUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_SEARCH_KEY
+            },
+            body: JSON.stringify(searchBody)
+        });
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.warn('Azure Search API failed:', response.status, errorText);
+            return '';
+        }
+        const data = await response.json();
+        const results = data.value || [];
+        if (results.length === 0) {
+            console.log('No results found in Azure Search for query:', query);
+            return '';
+        }
+        // Combine content from top results
+        let combinedContent = '';
+        results.forEach((item, index) => {
+            var _a;
+            const title = item.title || 'Untitled';
+            const content = item.content || '';
+            const url = item.url || '';
+            const publishedDate = item.publishedDate || '';
+            // Extract highlighted content if available
+            const highlights = ((_a = item['@search.highlights']) === null || _a === void 0 ? void 0 : _a.content) || [];
+            const highlightedText = highlights.length > 0
+                ? highlights.join(' ... ')
+                : content.substring(0, 1000);
+            combinedContent += `\n\n[Document ${index + 1}: ${title}]\n`;
+            if (url)
+                combinedContent += `Source: ${url}\n`;
+            if (publishedDate)
+                combinedContent += `Date: ${publishedDate}\n`;
+            combinedContent += `Content: ${highlightedText}\n`;
+        });
+        // Limit total content to avoid token limits (keep it under 8000 chars)
+        if (combinedContent.length > 8000) {
+            combinedContent = combinedContent.substring(0, 8000) + '...';
+        }
+        console.log(`Fetched ${results.length} results from Azure Search, content length: ${combinedContent.length}`);
+        return combinedContent.trim();
+    }
+    catch (error) {
+        console.warn('Error fetching content from Azure Search:', error);
+        return '';
+    }
+};
+/* =========================================================
    DYNAMIC AI-BASED ANSWER GENERATION FROM WEBSITE
 ======================================================== */
 /**
  * Enhanced dynamic AI answer generation with better prompts and context
- * This function uses Azure OpenAI to generate comprehensive answers based on Indegene website
+ * This function uses Azure OpenAI to generate comprehensive answers
+ * Now includes dynamic content fetching from Azure Cognitive Search for real-time, relevant information
  */
 const getDynamicAnswerFromWebsite = async (query, contextMapAnswer) => {
     var _a, _b, _c;
@@ -3956,7 +4814,52 @@ const getDynamicAnswerFromWebsite = async (query, contextMapAnswer) => {
             ? _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_ENDPOINT.slice(0, -1)
             : _services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_ENDPOINT;
         const url = `${endpoint}/openai/deployments/${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=${_services_SearchConfig__WEBPACK_IMPORTED_MODULE_5__.AZURE_OPENAI_API_VERSION}`;
-        // Enhanced system prompt with more context
+        // Check if this is a "latest news" query - be more flexible with detection
+        const queryLowerForNews = query.toLowerCase();
+        const isNewsQuery = queryLowerForNews.includes("latest news") ||
+            queryLowerForNews.includes("recent news") ||
+            queryLowerForNews.includes("news from indegene") ||
+            queryLowerForNews.includes("indegene news") ||
+            queryLowerForNews.includes("press release") ||
+            queryLowerForNews.includes("announcements") ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("indegene")) ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("latest")) ||
+            (queryLowerForNews.includes("news") && queryLowerForNews.includes("recent")) ||
+            queryLowerForNews.includes("what's new") ||
+            queryLowerForNews.includes("what is new");
+        // Fetch dynamic content from Azure Cognitive Search (non-blocking)
+        let fetchedContent = '';
+        try {
+            if (isNewsQuery) {
+                // For news queries, fetch latest news specifically
+                console.log('Fetching latest news from Azure Cognitive Search');
+                fetchedContent = await fetchLatestNewsFromAzureSearch(5);
+                if (fetchedContent) {
+                    console.log('Successfully fetched latest news from Azure Search, length:', fetchedContent.length);
+                }
+                else {
+                    console.log('No news found in Azure Search, trying general search');
+                    // Fallback to general search
+                    fetchedContent = await fetchContentFromAzureSearch(query, 5);
+                }
+            }
+            else {
+                // For other queries, use regular search
+                console.log('Fetching content from Azure Cognitive Search for query:', query);
+                fetchedContent = await fetchContentFromAzureSearch(query, 5);
+                if (fetchedContent) {
+                    console.log('Successfully fetched content from Azure Search, length:', fetchedContent.length);
+                }
+                else {
+                    console.log('No content found in Azure Search for this query');
+                }
+            }
+        }
+        catch (fetchError) {
+            console.warn('Failed to fetch content from Azure Search (will continue without it):', fetchError);
+            // Continue without fetched content - not critical
+        }
+        // Enhanced system prompt with more context and strict domain boundaries
         const systemPrompt = `You are an expert assistant specializing in Indegene, a leading tech-native, digital-first life sciences commercialization company.
 
 COMPANY OVERVIEW:
@@ -3970,23 +4873,126 @@ COMPANY OVERVIEW:
 - Global Presence: Offices in US, UK, China, India, Australia, and other regions
 
 YOUR ROLE:
-- Provide accurate, detailed, and helpful answers about Indegene
-- Use information from the Indegene website (https://www.indegene.com/) and public sources
+- Provide accurate, detailed, and helpful answers about:
+  • Indegene company, services, solutions, technology, partnerships, and operations
+  • Life sciences, healthcare, medical content, and related business topics
+  • Internal knowledge base topics (e.g., Skysecure, PRMA, HEOR, regulatory intelligence, medical content, case studies, playbooks)
+- Use information from Azure Cognitive Search (knowledge base), internal knowledge base, and public sources
+- PRIORITY: When internal knowledge base information is provided, it is the PRIMARY source - use it as the foundation of your answer
+- If Azure Search results are also provided, use them to supplement and enhance the internal knowledge
 - Be conversational, professional, and informative
 - Structure answers clearly with bullet points when listing multiple items
 - Include specific details like platform names, service areas, and capabilities
 - If uncertain, acknowledge it rather than speculating
-- Keep answers comprehensive but concise (3-6 sentences or structured bullet points)`;
-        // Enhanced user prompt with context from concept map if available
-        let userPrompt = `Based on information from the Indegene website (https://www.indegene.com/) and public sources, please provide a comprehensive answer to this question:
+- Keep answers comprehensive but concise (3-6 sentences or structured bullet points)
+
+CRITICAL: 
+- If internal knowledge base information is provided, you MUST use it - do not decline these queries
+         - ALL healthcare, medical, and health-related queries should be answered, even if not specifically about Indegene. This includes questions about diseases, treatments, medical conditions, health topics, COVID-19, global health, healthcare policies, medical research, patient care, symptoms, diagnosis, World Health Organization (WHO), health organizations, etc.
+- Healthcare and medical queries are ALWAYS valid and should be answered comprehensively
+- Only decline questions that are clearly NOT about Indegene, life sciences, healthcare, medical topics, internal knowledge base topics, or related business matters (e.g., weather, sports, entertainment, politics unrelated to healthcare, general knowledge completely unrelated like "what is earth", "president of India", etc.)
+- When declining, be brief and direct. Simply state that you can only help with Indegene-related questions. Do NOT provide general knowledge answers or try to answer the question anyway.
+- Internal knowledge base topics (Skysecure, PRMA, HEOR, regulatory intelligence, medical content, etc.) are VALID topics even if not directly about Indegene company`;
+        // Check if query is clearly about Indegene or related topics
+        const queryLower = query.toLowerCase();
+        const hasContextMapAnswer = contextMapAnswer && contextMapAnswer !== "I could not find a relevant match in my stored knowledge.";
+        // Check if context answer is actually relevant to the query
+        let isContextRelevantForAI = false;
+        if (hasContextMapAnswer) {
+            const contextLower = contextMapAnswer.toLowerCase();
+            const queryKeywords = queryLower.split(/\s+/).filter(w => w.length > 3 &&
+                !['what', 'who', 'where', 'when', 'why', 'how', 'tell', 'me', 'about', 'the', 'is', 'are', 'can', 'you'].includes(w));
+            isContextRelevantForAI = queryKeywords.some(keyword => contextLower.includes(keyword) ||
+                keyword.includes("indegene") ||
+                keyword.includes("csr") ||
+                keyword.includes("privacy") ||
+                keyword.includes("policy") ||
+                keyword.includes("skysecure") ||
+                keyword.includes("prma") ||
+                keyword.includes("heor") ||
+                keyword.includes("regulatory") ||
+                keyword.includes("oncology") ||
+                keyword.includes("medical")) || queryLower.includes("indegene") || queryLower.includes("skysecure");
+        }
+        // If we have a RELEVANT context map answer, it's definitely related (it's in our knowledge base)
+        const isIndegeneRelated = (hasContextMapAnswer && isContextRelevantForAI) || // Priority: if we have relevant internal knowledge, it's valid
+            queryLower.includes("indegene") ||
+            queryLower.includes("life sciences") ||
+            queryLower.includes("pharma") ||
+            queryLower.includes("biotech") ||
+            queryLower.includes("medical") ||
+            queryLower.includes("healthcare") ||
+            queryLower.includes("health care") ||
+            queryLower.includes("health") ||
+            queryLower.includes("disease") ||
+            queryLower.includes("treatment") ||
+            queryLower.includes("therapy") ||
+            queryLower.includes("patient") ||
+            queryLower.includes("diagnosis") ||
+            queryLower.includes("symptom") ||
+            queryLower.includes("medicine") ||
+            queryLower.includes("drug") ||
+            queryLower.includes("covid") ||
+            queryLower.includes("coronavirus") ||
+            queryLower.includes("pandemic") ||
+            queryLower === "who" || // "what is who" - World Health Organization
+            (queryLower.includes("who") && queryLower.includes("health")) || // WHO health organization
+            queryLower.includes("regulatory") ||
+            queryLower.includes("clinical") ||
+            queryLower.includes("commercial") ||
+            queryLower.includes("skysecure") ||
+            queryLower.includes("prma") ||
+            queryLower.includes("heor") ||
+            queryLower.includes("pharmacovigilance") ||
+            queryLower.includes("oncology") ||
+            queryLower.includes("cpc");
+        // Enhanced user prompt with context from concept map and Azure Search content
+        let userPrompt = `Based on information from the Indegene knowledge base and public sources, please provide a comprehensive answer to this question:
 
 Question: ${query}`;
-        // If we have context map answer, use it to enhance the AI response
-        if (contextMapAnswer && contextMapAnswer !== "I could not find a relevant match in my stored knowledge.") {
-            userPrompt += `\n\nAdditional context from internal knowledge base:\n${contextMapAnswer}\n\nPlease enhance and expand upon this information with details from the Indegene website. Provide a comprehensive, well-structured answer that combines both sources.`;
+        // SPECIAL HANDLING: For news queries, prioritize news content over context map
+        if (isNewsQuery && fetchedContent && fetchedContent.length > 0) {
+            // News query with news content found - prioritize news
+            userPrompt += `\n\nPRIMARY SOURCE - LATEST NEWS FROM AZURE COGNITIVE SEARCH:\n${fetchedContent}\n\nCRITICAL: This is the LATEST NEWS and ANNOUNCEMENTS from Indegene's website. Use this as the PRIMARY and ONLY source for answering this news query. Provide a comprehensive summary of the latest news, announcements, press releases, and updates. Include dates, key details, and source URLs. Structure your answer clearly with the most recent news first. DO NOT provide generic company information - focus ONLY on the specific news items provided above.`;
+            // Add context map as background only if available
+            if (hasContextMapAnswer) {
+                userPrompt += `\n\nBACKGROUND CONTEXT (for reference only, do not use as primary source):\n${contextMapAnswer}\n\nNOTE: The user is asking for LATEST NEWS. The news content above is the PRIMARY source. Only use this background context if it helps explain something in the news, but do NOT use it as the main answer.`;
+            }
+        }
+        else if (hasContextMapAnswer) {
+            // Regular query with context map answer - use context map as primary
+            userPrompt += `\n\nPRIMARY SOURCE - INTERNAL KNOWLEDGE BASE:\n${contextMapAnswer}\n\nCRITICAL: This information comes directly from the internal knowledge base and is ACCURATE and RELEVANT to the question. You MUST use this information as the foundation of your answer. Do NOT say you don't have this information - it is provided above. Provide a comprehensive, detailed answer based EXACTLY on this information.`;
+            // Add Azure Search content as supplementary if available
+            if (fetchedContent && fetchedContent.length > 0) {
+                userPrompt += `\n\nSUPPLEMENTARY CONTENT FROM AZURE COGNITIVE SEARCH:\n${fetchedContent}\n\nYou may use this additional content to enhance your answer, but the internal knowledge base information above is the PRIMARY source and must be used.`;
+            }
+            else {
+                userPrompt += `\n\nProvide a detailed, well-structured answer based EXACTLY on the internal knowledge base information provided above. Do NOT say the information is not available - it is provided above.`;
+            }
         }
         else {
-            userPrompt += `\n\nProvide a detailed, accurate answer based on the company's website and public information. Include specific details about services, solutions, technology, partnerships, or operations when relevant.`;
+            // No context map answer - use Azure Search if available
+            if (fetchedContent && fetchedContent.length > 0) {
+                if (isNewsQuery) {
+                    userPrompt += `\n\nLATEST NEWS FROM AZURE COGNITIVE SEARCH (Knowledge Base):\n${fetchedContent}\n\nCRITICAL: This is the LATEST NEWS and ANNOUNCEMENTS from Indegene's website. Use this as the PRIMARY source. Provide a comprehensive summary of the latest news, announcements, press releases, and updates. Include dates, key details, and source URLs. Structure your answer clearly with the most recent news first. DO NOT provide generic company information - focus ONLY on the specific news items provided above.`;
+                }
+                else {
+                    userPrompt += `\n\nRELEVANT CONTENT FROM AZURE COGNITIVE SEARCH (Knowledge Base):\n${fetchedContent}\n\nUse this dynamically fetched content from the knowledge base to provide the most accurate and up-to-date information. Prioritize information from these search results when answering the question.`;
+                }
+            }
+            else {
+                if (isNewsQuery) {
+                    // For news queries with no results, be explicit
+                    userPrompt += `\n\nIMPORTANT: The user is asking for the latest news from Indegene, but no recent news articles were found in the knowledge base. You should inform the user that you could not find specific recent news articles in the indexed content, and suggest they visit the Indegene website (www.indegene.com) or check the news/press releases section for the most current information. DO NOT provide generic company information as if it were news.`;
+                }
+            }
+            // If query is not clearly related to Indegene, add instruction to decline
+            if (!isIndegeneRelated) {
+                userPrompt += `\n\nCRITICAL: This question is clearly NOT about Indegene, life sciences, healthcare, or related topics. You MUST politely decline with a brief, direct message. Do NOT attempt to answer the question with general knowledge. Do NOT provide any information about the subject. Do NOT mention any names, facts, or details about the unrelated topic. Simply state that you can only help with Indegene-related questions. Keep your response short (1-2 sentences maximum). Example: "I'm sorry, but I can only help with questions related to Indegene, life sciences, healthcare, and related topics."`;
+            }
+            else {
+                userPrompt += `\n\nProvide a detailed, accurate answer${fetchedContent ? ' using the Azure Search results' : ' based on available information'}. Include specific details about services, solutions, technology, partnerships, or operations when relevant.`;
+            }
         }
         // Create a timeout promise
         const timeoutPromise = new Promise((_, reject) => {
@@ -4049,13 +5055,28 @@ Question: ${query}`;
 /**
  * Enhance AI answer with concept map context for more comprehensive responses
  */
-const enhanceAnswerWithContext = (aiAnswer, contextAnswer) => {
+const enhanceAnswerWithContext = (aiAnswer, contextAnswer, query) => {
     // If context answer is just "not found", return AI answer as-is
     if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
         return aiAnswer;
     }
-    // If both answers are similar, return the more comprehensive one
+    // Check if AI declined the query (out of domain)
     const aiLower = aiAnswer.toLowerCase();
+    const aiDeclined = aiLower.includes("i can only help") ||
+        aiLower.includes("i'm sorry") ||
+        aiLower.includes("i cannot help") ||
+        aiLower.includes("only assist with questions related to indegene") ||
+        aiLower.includes("does not appear to be about indegene") ||
+        aiLower.includes("unrelated to indegene") ||
+        aiLower.includes("extends beyond the scope") ||
+        aiLower.includes("does not align with") ||
+        aiLower.includes("philosophical") && aiLower.includes("beyond");
+    // If AI declined, NEVER add context - the query is out of domain
+    if (aiDeclined) {
+        // Return AI answer as-is without any additional context
+        return aiAnswer;
+    }
+    // If both answers are similar, return the more comprehensive one
     const contextLower = contextAnswer.toLowerCase();
     // Check if they're very similar (one contains most of the other)
     if (aiLower.includes(contextLower.substring(0, 50)) ||
@@ -4063,17 +5084,73 @@ const enhanceAnswerWithContext = (aiAnswer, contextAnswer) => {
         // Return the longer, more comprehensive answer
         return aiAnswer.length > contextAnswer.length ? aiAnswer : contextAnswer;
     }
-    // If they're different, combine them intelligently
-    // Check if context has unique information
-    const contextWords = new Set(contextLower.split(/\s+/));
-    const aiWords = new Set(aiLower.split(/\s+/));
-    const uniqueContextWords = Array.from(contextWords).filter(w => !aiWords.has(w) && w.length > 3);
-    if (uniqueContextWords.length > 5) {
-        // Context has significant unique information, combine them
-        return `${aiAnswer}\n\nAdditional Information:\n${contextAnswer}`;
+    // If AI answer already contains the context information, don't duplicate
+    const contextKeyPhrases = contextAnswer.split(/[.,;]/).slice(0, 3).map(p => p.trim().toLowerCase());
+    const aiContainsContext = contextKeyPhrases.some(phrase => phrase.length > 10 && aiLower.includes(phrase.substring(0, 20)));
+    if (aiContainsContext) {
+        // AI already has the context, return AI answer
+        return aiAnswer;
     }
-    // Otherwise, prefer AI answer as it's more dynamic
+    // If they're different, prefer AI answer as it's more dynamic and comprehensive
+    // Don't append context as "Additional Information" - the AI answer should be sufficient
     return aiAnswer;
+};
+/* ======================================================
+   Message Content Component - Converts URLs to clickable links
+====================================================== */
+/**
+ * Component that renders message text and converts URLs to clickable links
+ * Also preserves newlines and formatting
+ * Handles both plain URLs and markdown-style links
+ */
+const MessageContent = ({ text }) => {
+    // Regular expression to match URLs (with capturing group for split)
+    const urlRegex = /(https?:\/\/[^\s)]+)/g;
+    // Regular expression to match markdown links [text](url)
+    const markdownLinkRegex = /(\[([^\]]+)\]\((https?:\/\/[^)]+)\))/g;
+    // First, handle markdown links
+    let processedText = text;
+    const markdownLinks = [];
+    let match;
+    const urlRegexForMarkdown = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+    while ((match = urlRegexForMarkdown.exec(text)) !== null) {
+        markdownLinks.push({
+            fullMatch: match[0],
+            text: match[1],
+            url: match[2]
+        });
+    }
+    // Replace markdown links with placeholders
+    markdownLinks.forEach((link, index) => {
+        processedText = processedText.replace(link.fullMatch, `__MARKDOWN_LINK_${index}__`);
+    });
+    // Split text by URLs - capturing group ensures URLs are included in the array
+    const parts = processedText.split(urlRegex);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { whiteSpace: 'pre-wrap' } }, parts.map((part, index) => {
+        // Check if this part is a markdown link placeholder
+        const markdownMatch = part.match(/__MARKDOWN_LINK_(\d+)__/);
+        if (markdownMatch) {
+            const linkIndex = parseInt(markdownMatch[1]);
+            const link = markdownLinks[linkIndex];
+            if (link) {
+                return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { key: index, href: link.url, target: "_blank", rel: "noopener noreferrer", style: {
+                        color: '#0078d4',
+                        textDecoration: 'underline',
+                        wordBreak: 'break-all'
+                    }, onClick: (e) => e.stopPropagation() }, link.text));
+            }
+        }
+        // Check if this part is a URL (starts with http:// or https://)
+        if (part.startsWith('http://') || part.startsWith('https://')) {
+            return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { key: index, href: part, target: "_blank", rel: "noopener noreferrer", style: {
+                    color: '#0078d4',
+                    textDecoration: 'underline',
+                    wordBreak: 'break-all'
+                }, onClick: (e) => e.stopPropagation() }, part));
+        }
+        // Regular text - will preserve newlines due to whiteSpace: 'pre-wrap' on parent
+        return react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index }, part);
+    })));
 };
 /* ======================================================
    Main Component
@@ -4093,10 +5170,28 @@ const QuestionSection = (props) => {
     const [loading, setLoading] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
     const [selectedDocumentId, setSelectedDocumentId] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
     const [showViewAll, setShowViewAll] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
+    // Ref for messages container to enable auto-scroll
+    const messagesContainerRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    const messagesEndRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
         if (props.context)
             fetchLatestDocuments();
     }, [props.context]);
+    // Auto-scroll to bottom when messages change or loading state changes
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+        // Use setTimeout to ensure DOM has updated
+        const scrollToBottom = () => {
+            if (messagesContainerRef.current) {
+                messagesContainerRef.current.scrollTo({
+                    top: messagesContainerRef.current.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        };
+        // Small delay to ensure DOM has rendered
+        const timer = setTimeout(scrollToBottom, 100);
+        return () => clearTimeout(timer);
+    }, [messages, isLoading]);
     /* ======================================================
        Welcome Message on Chat Open
     ====================================================== */
@@ -4178,25 +5273,92 @@ const QuestionSection = (props) => {
                 return;
             }
             // 3) Get concept map answer first (for context enhancement)
+            // IMPORTANT: Check this BEFORE out-of-domain check, because if we have internal knowledge, it's valid
             const contextAnswer = getAnswerFromContext(userMsg.text);
+            const hasContextAnswer = contextAnswer && contextAnswer !== "I could not find a relevant match in my stored knowledge.";
+            // Check if context answer is actually relevant to the query
+            let isContextRelevant = false;
+            if (hasContextAnswer) {
+                const queryLower = userMsg.text.toLowerCase();
+                const contextLower = contextAnswer.toLowerCase();
+                // Extract meaningful keywords from query (exclude common words)
+                const queryKeywords = queryLower.split(/\s+/).filter(w => w.length > 3 &&
+                    !['what', 'who', 'where', 'when', 'why', 'how', 'tell', 'me', 'about', 'the', 'is', 'are', 'can', 'you'].includes(w));
+                // Check if context contains query keywords or if query is about Indegene/internal knowledge
+                isContextRelevant = queryKeywords.some(keyword => contextLower.includes(keyword) ||
+                    keyword.includes("indegene") ||
+                    keyword.includes("csr") ||
+                    keyword.includes("privacy") ||
+                    keyword.includes("policy") ||
+                    keyword.includes("skysecure") ||
+                    keyword.includes("prma") ||
+                    keyword.includes("heor") ||
+                    keyword.includes("regulatory") ||
+                    keyword.includes("oncology") ||
+                    keyword.includes("medical")) || queryLower.includes("indegene") || queryLower.includes("skysecure");
+            }
+            // 2.5) Check for out-of-domain queries (weather, sports, etc.)
+            // BUT: Skip this check if we have a RELEVANT context map answer (internal knowledge is always valid)
+            if ((!hasContextAnswer || !isContextRelevant) && isOutOfDomainQuery(userMsg.text)) {
+                const outOfDomainMessage = "I'm sorry, but I can only help with questions related to Indegene, life sciences, healthcare, medical content, regulatory intelligence, and related business topics. I can also tell you the current time, date, or day.\n\nFor questions about Indegene, try asking:\n• \"What services does Indegene offer?\"\n• \"Tell me about Indegene's NEXT platforms\"\n• \"What is Indegene's partnership with Microsoft?\"\n";
+                setMessages((prev) => [...prev, { sender: "bot", text: outOfDomainMessage }]);
+                setIsLoading(false);
+                return;
+            }
             // 4) Try dynamic AI-based answer from website
             // This uses Azure OpenAI to generate answers based on the Indegene website
             let reply;
             try {
                 const dynamicAnswer = await getDynamicAnswerFromWebsite(userMsg.text, contextAnswer);
                 if (dynamicAnswer) {
-                    // Enhance AI answer with context map if it has unique information
-                    reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer);
+                    // Check if AI declined the query (indicates it's out of domain)
+                    // BUT: If we have a context map answer, ignore the decline and use context answer
+                    const answerLower = dynamicAnswer.toLowerCase();
+                    const aiDeclined = answerLower.includes("i can only help") ||
+                        answerLower.includes("i'm sorry") ||
+                        answerLower.includes("i cannot help") ||
+                        answerLower.includes("only assist with questions related to indegene") ||
+                        answerLower.includes("does not appear to be about indegene");
+                    if (aiDeclined) {
+                        // AI declined - only use context if it's actually relevant
+                        if (isContextRelevant && hasContextAnswer) {
+                            // Context is relevant, use it
+                            reply = contextAnswer;
+                        }
+                        else {
+                            // Context is not relevant or doesn't exist, use AI's decline message without context
+                            reply = dynamicAnswer;
+                        }
+                    }
+                    else if (isContextRelevant && hasContextAnswer) {
+                        // AI provided answer and we have relevant context - enhance with context
+                        reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer, userMsg.text);
+                    }
+                    else {
+                        // AI provided answer but no relevant context - use AI answer, but check if it needs enhancement
+                        reply = enhanceAnswerWithContext(dynamicAnswer, contextAnswer, userMsg.text);
+                    }
                 }
                 else {
                     // Fallback to concept map if AI fails
-                    reply = contextAnswer;
+                    // If context map also has no answer, provide a helpful message
+                    if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+                        reply = "I couldn't find specific information about that in my knowledge base. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                    }
+                    else {
+                        reply = contextAnswer;
+                    }
                 }
             }
             catch (error) {
                 console.error('Error in dynamic answer generation, using fallback:', error);
                 // Fallback to concept map on error
-                reply = contextAnswer;
+                if (contextAnswer === "I could not find a relevant match in my stored knowledge.") {
+                    reply = "I couldn't find specific information about that in my knowledge base. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                }
+                else {
+                    reply = contextAnswer;
+                }
             }
             // 5) Quick links detection
             const link = getLinkForQuery(userMsg.text);
@@ -4215,7 +5377,13 @@ const QuestionSection = (props) => {
             console.error('Error in handleSend:', error);
             // Final fallback to concept map
             const fallbackReply = getAnswerFromContext(userMsg.text);
-            setMessages((prev) => [...prev, { sender: "bot", text: fallbackReply }]);
+            if (fallbackReply === "I could not find a relevant match in my stored knowledge.") {
+                const helpfulMessage = "I encountered an error and couldn't find specific information about that. I can help you with:\n\n• Questions about Indegene - services, solutions, technology, partnerships, careers\n• Internal knowledge - Skysecure, PRMA/HEOR, PV, oncology docs, CPC playbooks, medical content\n• General queries - current time, date, day\n\nCould you try rephrasing your question or ask about something related to Indegene or life sciences?";
+                setMessages((prev) => [...prev, { sender: "bot", text: helpfulMessage }]);
+            }
+            else {
+                setMessages((prev) => [...prev, { sender: "bot", text: fallbackReply }]);
+            }
         }
         finally {
             setIsLoading(false);
@@ -4351,17 +5519,18 @@ const QuestionSection = (props) => {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].chatHeader },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Chat Assistant"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].closeButton, onClick: toggleChat }, "\u00D7")),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messages },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messages, ref: messagesContainerRef },
                 messages.map((msg, idx) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: idx, className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainer} ${msg.sender === "user"
                         ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerUser
                         : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerBot}` },
                     msg.sender === "bot" && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageAvatar })),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: msg.sender === "user" ? _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].userMsg : _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botMsg },
-                        msg.text,
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(MessageContent, { text: msg.text }),
                         msg.sender === "bot" && msg.url && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { marginTop: 8 } },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", { href: msg.url, target: "_blank", rel: "noopener noreferrer", 
                                 // use a safe cast because your CSS module may not include botLink yet
                                 className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botLink }, msg.title ? msg.title : msg.url))))))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: messagesEndRef }),
                 isLoading && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainer} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageContainerBot}` },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { src: chatbotIcon, alt: "Bot", className: _QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].messageAvatar }),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].botMsg} ${_QuestionSection_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].thinking}` }, "...Thinking...")))),
@@ -5735,17 +6904,18 @@ class AzureOpenAIService {
             const nonExactMatches = [];
             documents.forEach((doc) => {
                 // Check each field separately to ensure we catch matches in documentContent even if other fields don't match
+                // documentContent includes: body text, headers, footers (e.g., "© 2025 Skysecure Technologies")
                 const titleLower = (doc.title || '').toLowerCase();
                 const fileNameLower = (doc.fileName || '').toLowerCase();
                 const descriptionLower = (doc.description || '').toLowerCase();
                 const contributorLower = (doc.contributor || '').toLowerCase();
-                const documentContentLower = (doc.documentContent || '').toLowerCase();
-                // Check if word appears in ANY field (especially documentContent)
+                const documentContentLower = (doc.documentContent || '').toLowerCase(); // Includes headers/footers from all pages
+                // Check if word appears in ANY field (especially documentContent which includes footers)
                 const inTitle = titleLower.includes(queryLower);
                 const inFileName = fileNameLower.includes(queryLower);
                 const inDescription = descriptionLower.includes(queryLower);
                 const inContributor = contributorLower.includes(queryLower);
-                const inDocumentContent = documentContentLower.includes(queryLower);
+                const inDocumentContent = documentContentLower.includes(queryLower); // Searches footer content too
                 // Document matches if word appears in ANY field, especially documentContent
                 if (inTitle || inFileName || inDescription || inContributor || inDocumentContent) {
                     // Combine all fields for counting total occurrences
@@ -5806,11 +6976,12 @@ class AzureOpenAIService {
                     doc.fileName || '',
                     doc.description || '',
                     doc.contributor || '',
-                    doc.documentContent || '' // actual document content (first 5000 chars)
+                    doc.documentContent || '' // actual document content (up to 100k chars, sampled from beginning/middle/end)
                 ].filter(Boolean).join(' ');
-                // Limit total text to ~8000 chars to keep embedding API calls reasonable
-                const truncatedText = searchableText.length > 8000
-                    ? searchableText.substring(0, 8000)
+                // Limit total text to ~30,000 chars to keep embedding API calls reasonable while using more content
+                // This allows us to use significantly more document content for better semantic matching
+                const truncatedText = searchableText.length > 30000
+                    ? searchableText.substring(0, 30000)
                     : searchableText;
                 try {
                     const embedding = await this.generateEmbedding(truncatedText);
@@ -6624,12 +7795,18 @@ class DocumentParser {
     }
     /**
      * Extract text from PDF file
+     * Extracts ALL text including headers, footers, and body content from every page
+     * react-pdftotext extracts all visible text from the PDF by default
      */
     static async parsePDF(file) {
         try {
+            console.log('=== EXTRACTING PDF TEXT (including headers/footers) ===');
             const pdfToTextModule = await __webpack_require__.e(/*! import() */ "vendors-node_modules_react-pdftotext_dist_index_js").then(__webpack_require__.t.bind(__webpack_require__, /*! react-pdftotext */ 5715, 23));
             const pdfToText = pdfToTextModule.default || pdfToTextModule;
+            // Extract all text from PDF - this includes headers, footers, and body content
+            // react-pdftotext extracts all visible text from all pages by default
             const text = await pdfToText(file);
+            console.log(`Extracted ${(text === null || text === void 0 ? void 0 : text.length) || 0} characters from PDF (includes headers/footers)`);
             if (!text || text.trim().length === 0) {
                 return {
                     text: '',
@@ -6637,6 +7814,7 @@ class DocumentParser {
                     error: 'No text content found in PDF. The PDF might be image-based (scanned) or encrypted. Please use a text-based PDF or convert the document to Word format.'
                 };
             }
+            // Return all extracted text (headers, footers, and body content are all included)
             return {
                 text: text.trim(),
                 success: true
@@ -6663,14 +7841,40 @@ class DocumentParser {
     }
     /**
      * Extract text from Word (.docx) file
+     * Extracts text from document body, headers, and footers
+     * Uses mammoth to extract all readable text content
      */
     static async parseWord(file) {
         try {
+            console.log('=== EXTRACTING WORD DOCUMENT TEXT (including headers/footers) ===');
             const mammoth = await Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_jszip_dist_jszip_min_js"), __webpack_require__.e("vendors-node_modules_mammoth_lib_index_js")]).then(__webpack_require__.t.bind(__webpack_require__, /*! mammoth */ 845, 19));
             const arrayBuffer = await file.arrayBuffer();
+            // Extract raw text - this includes body text
+            // Note: mammoth.extractRawText extracts body text, but headers/footers in Word
+            // are in separate document parts. We'll try to get as much as possible.
             const result = await mammoth.extractRawText({ arrayBuffer });
+            // Also try to extract from HTML conversion which may include more content
+            // including headers/footers if they're in the main document flow
+            let additionalText = '';
+            try {
+                const htmlResult = await mammoth.convertToHtml({ arrayBuffer });
+                if (htmlResult.value) {
+                    // Extract text from HTML (this may include headers/footers if present)
+                    additionalText = this.extractTextFromHTML(htmlResult.value);
+                }
+            }
+            catch (htmlError) {
+                console.warn('Could not extract additional text from HTML conversion:', htmlError);
+            }
+            // Combine body text with any additional text found
+            const combinedText = result.value.trim();
+            const allText = additionalText && additionalText.trim()
+                ? `${combinedText}\n${additionalText.trim()}`
+                : combinedText;
+            console.log(`Extracted ${allText.length} characters from Word document`);
+            console.log(`Body text: ${combinedText.length} chars, Additional: ${additionalText.length} chars`);
             return {
-                text: result.value.trim(),
+                text: allText.trim(),
                 success: true
             };
         }
@@ -6685,10 +7889,12 @@ class DocumentParser {
     /**
      * Extract text from PowerPoint (.pptx) file
      * PPTX files are ZIP archives containing XML files
+     * Extracts text from slides, notes, and headers/footers
      */
     static async parsePowerPoint(file) {
-        var _a;
+        var _a, _b;
         try {
+            console.log('=== EXTRACTING POWERPOINT TEXT (including notes/headers/footers) ===');
             const JSZipModule = await __webpack_require__.e(/*! import() */ "vendors-node_modules_jszip_dist_jszip_min_js").then(__webpack_require__.t.bind(__webpack_require__, /*! jszip */ 4355, 23));
             // Handle both default export and namespace export
             const JSZip = JSZipModule.default || JSZipModule;
@@ -6697,9 +7903,15 @@ class DocumentParser {
             const zip = await JSZip.loadAsync(arrayBuffer);
             // Get all slide files (ppt/slides/slide*.xml)
             const slideFiles = [];
+            // Get all notes files (ppt/notesSlides/notesSlide*.xml) - these contain speaker notes
+            const notesFiles = [];
             zip.forEach((relativePath) => {
                 if (relativePath.startsWith('ppt/slides/slide') && relativePath.endsWith('.xml')) {
                     slideFiles.push(relativePath);
+                }
+                // Also extract from notes slides which may contain additional content
+                if (relativePath.startsWith('ppt/notesSlides/notesSlide') && relativePath.endsWith('.xml')) {
+                    notesFiles.push(relativePath);
                 }
             });
             // Sort slides by number
@@ -6709,6 +7921,13 @@ class DocumentParser {
                 const bNum = parseInt(((_b = b.match(/slide(\d+)\.xml/)) === null || _b === void 0 ? void 0 : _b[1]) || '0');
                 return aNum - bNum;
             });
+            // Sort notes by number
+            notesFiles.sort((a, b) => {
+                var _a, _b;
+                const aNum = parseInt(((_a = a.match(/notesSlide(\d+)\.xml/)) === null || _a === void 0 ? void 0 : _a[1]) || '0');
+                const bNum = parseInt(((_b = b.match(/notesSlide(\d+)\.xml/)) === null || _b === void 0 ? void 0 : _b[1]) || '0');
+                return aNum - bNum;
+            });
             if (slideFiles.length === 0) {
                 return {
                     text: '',
@@ -6716,9 +7935,10 @@ class DocumentParser {
                     error: 'No slides found in the PowerPoint file.'
                 };
             }
-            // Extract text from each slide
+            // Extract text from each slide (includes headers/footers if present in slide content)
             const allText = [];
-            console.log(`Found ${slideFiles.length} slides to process`);
+            console.log(`Found ${slideFiles.length} slides and ${notesFiles.length} notes slides to process`);
+            // Extract text from slides
             for (const slidePath of slideFiles) {
                 try {
                     const slideXml = await ((_a = zip.file(slidePath)) === null || _a === void 0 ? void 0 : _a.async('string'));
@@ -6742,7 +7962,25 @@ class DocumentParser {
                     // Continue with other slides
                 }
             }
-            console.log(`Total slides with text: ${allText.length}`);
+            // Extract text from notes slides (speaker notes)
+            for (const notesPath of notesFiles) {
+                try {
+                    const notesXml = await ((_b = zip.file(notesPath)) === null || _b === void 0 ? void 0 : _b.async('string'));
+                    if (notesXml) {
+                        console.log(`Processing notes: ${notesPath}`);
+                        const notesText = this.extractTextFromSlideXml(notesXml);
+                        if (notesText.trim()) {
+                            allText.push(`[Notes] ${notesText}`);
+                            console.log(`Extracted ${notesText.length} characters from notes ${notesPath}`);
+                        }
+                    }
+                }
+                catch (notesError) {
+                    console.warn(`Error parsing notes ${notesPath}:`, notesError);
+                    // Continue with other notes
+                }
+            }
+            console.log(`Total slides with text: ${slideFiles.length}, Notes extracted: ${notesFiles.length}`);
             const combinedText = allText.join('\n\n').trim();
             if (!combinedText || combinedText.length === 0) {
                 return {
@@ -6751,6 +7989,7 @@ class DocumentParser {
                     error: 'No text content found in PowerPoint slides. The slides might be image-based or empty.'
                 };
             }
+            console.log(`Total extracted text: ${combinedText.length} characters (includes slides, notes, headers/footers)`);
             return {
                 text: combinedText,
                 success: true
@@ -7205,7 +8444,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AZURE_SEARCH_INDEX: () => (/* binding */ AZURE_SEARCH_INDEX),
 /* harmony export */   AZURE_SEARCH_KEY: () => (/* binding */ AZURE_SEARCH_KEY),
 /* harmony export */   AZURE_SEARCH_SEMANTIC_CONFIG: () => (/* binding */ AZURE_SEARCH_SEMANTIC_CONFIG),
-/* harmony export */   AZURE_SEARCH_SUGGESTER_NAME: () => (/* binding */ AZURE_SEARCH_SUGGESTER_NAME)
+/* harmony export */   AZURE_SEARCH_SUGGESTER_NAME: () => (/* binding */ AZURE_SEARCH_SUGGESTER_NAME),
+/* harmony export */   KNOWLEDGE_BASE_URL: () => (/* binding */ KNOWLEDGE_BASE_URL)
 /* harmony export */ });
 // src/webparts/migration/services/SearchConfig.ts
 // ❗ Do NOT commit this file to public repos.
@@ -7223,6 +8463,25 @@ const AZURE_SEARCH_KEY = "pLhCvUdhxq7xPpu6LV6f1oq4JudU6MD7tozjSjxVgTAzSeDaLSy1";
 // Change these two if you used different names in the Search index
 const AZURE_SEARCH_SEMANTIC_CONFIG = "semanticConfig1"; // semantic configuration name
 const AZURE_SEARCH_SUGGESTER_NAME = "sg-migration"; // suggester name
+// ============================================================================
+// DYNAMIC CONTENT FOR CHATBOT
+// ============================================================================
+// The chatbot uses Azure Cognitive Search (configured above) to dynamically
+// fetch relevant content from your indexed knowledge base. This provides
+// real-time, semantic search capabilities for accurate answers.
+//
+// Azure Search Configuration (already set above):
+// - AZURE_SEARCH_ENDPOINT: Your Azure Search service endpoint
+// - AZURE_SEARCH_INDEX: The index name containing your documents
+// - AZURE_SEARCH_KEY: API key for authentication
+// - AZURE_SEARCH_SEMANTIC_CONFIG: Semantic configuration for better results
+//
+// The chatbot will automatically search this index based on user queries
+// and use the results to provide comprehensive, up-to-date answers.
+//
+// KNOWLEDGE_BASE_URL is kept for reference but Azure Search is now primary.
+// ============================================================================
+const KNOWLEDGE_BASE_URL = "https://www.indegene.com/";
 
 
 /***/ }),

@@ -19,3 +19,23 @@ export const AZURE_SEARCH_KEY = "pLhCvUdhxq7xPpu6LV6f1oq4JudU6MD7tozjSjxVgTAzSeD
 // Change these two if you used different names in the Search index
 export const AZURE_SEARCH_SEMANTIC_CONFIG = "semanticConfig1"; // semantic configuration name
 export const AZURE_SEARCH_SUGGESTER_NAME = "sg-migration";     // suggester name
+
+// ============================================================================
+// DYNAMIC CONTENT FOR CHATBOT
+// ============================================================================
+// The chatbot uses Azure Cognitive Search (configured above) to dynamically
+// fetch relevant content from your indexed knowledge base. This provides
+// real-time, semantic search capabilities for accurate answers.
+//
+// Azure Search Configuration (already set above):
+// - AZURE_SEARCH_ENDPOINT: Your Azure Search service endpoint
+// - AZURE_SEARCH_INDEX: The index name containing your documents
+// - AZURE_SEARCH_KEY: API key for authentication
+// - AZURE_SEARCH_SEMANTIC_CONFIG: Semantic configuration for better results
+//
+// The chatbot will automatically search this index based on user queries
+// and use the results to provide comprehensive, up-to-date answers.
+//
+// KNOWLEDGE_BASE_URL is kept for reference but Azure Search is now primary.
+// ============================================================================
+export const KNOWLEDGE_BASE_URL = "https://www.indegene.com/";

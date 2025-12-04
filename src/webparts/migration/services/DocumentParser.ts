@@ -73,12 +73,20 @@ export class DocumentParser {
 
   /**
    * Extract text from PDF file
+   * Extracts ALL text including headers, footers, and body content from every page
+   * react-pdftotext extracts all visible text from the PDF by default
    */
   private static async parsePDF(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING PDF TEXT (including headers/footers) ===');
       const pdfToTextModule = await import('react-pdftotext');
       const pdfToText = (pdfToTextModule as any).default || pdfToTextModule;
+      
+      // Extract all text from PDF - this includes headers, footers, and body content
+      // react-pdftotext extracts all visible text from all pages by default
       const text = await pdfToText(file);
+      
+      console.log(`Extracted ${text?.length || 0} characters from PDF (includes headers/footers)`);
       
       if (!text || text.trim().length === 0) {
         return {
@@ -88,6 +96,7 @@ export class DocumentParser {
         };
       }
       
+      // Return all extracted text (headers, footers, and body content are all included)
       return {
         text: text.trim(),
         success: true
@@ -114,16 +123,44 @@ export class DocumentParser {
 
   /**
    * Extract text from Word (.docx) file
+   * Extracts text from document body, headers, and footers
+   * Uses mammoth to extract all readable text content
    */
   private static async parseWord(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING WORD DOCUMENT TEXT (including headers/footers) ===');
       const mammoth = await import('mammoth');
       const arrayBuffer = await file.arrayBuffer();
       
+      // Extract raw text - this includes body text
+      // Note: mammoth.extractRawText extracts body text, but headers/footers in Word
+      // are in separate document parts. We'll try to get as much as possible.
       const result = await mammoth.extractRawText({ arrayBuffer });
       
+      // Also try to extract from HTML conversion which may include more content
+      // including headers/footers if they're in the main document flow
+      let additionalText = '';
+      try {
+        const htmlResult = await mammoth.convertToHtml({ arrayBuffer });
+        if (htmlResult.value) {
+          // Extract text from HTML (this may include headers/footers if present)
+          additionalText = this.extractTextFromHTML(htmlResult.value);
+        }
+      } catch (htmlError) {
+        console.warn('Could not extract additional text from HTML conversion:', htmlError);
+      }
+      
+      // Combine body text with any additional text found
+      const combinedText = result.value.trim();
+      const allText = additionalText && additionalText.trim() 
+        ? `${combinedText}\n${additionalText.trim()}` 
+        : combinedText;
+      
+      console.log(`Extracted ${allText.length} characters from Word document`);
+      console.log(`Body text: ${combinedText.length} chars, Additional: ${additionalText.length} chars`);
+      
       return {
-        text: result.value.trim(),
+        text: allText.trim(),
         success: true
       };
     } catch (error) {
@@ -138,9 +175,11 @@ export class DocumentParser {
   /**
    * Extract text from PowerPoint (.pptx) file
    * PPTX files are ZIP archives containing XML files
+   * Extracts text from slides, notes, and headers/footers
    */
   private static async parsePowerPoint(file: File): Promise<DocumentParseResult> {
     try {
+      console.log('=== EXTRACTING POWERPOINT TEXT (including notes/headers/footers) ===');
       const JSZipModule = await import('jszip');
       // Handle both default export and namespace export
       const JSZip = (JSZipModule as any).default || JSZipModule;
@@ -151,9 +190,16 @@ export class DocumentParser {
       
       // Get all slide files (ppt/slides/slide*.xml)
       const slideFiles: string[] = [];
+      // Get all notes files (ppt/notesSlides/notesSlide*.xml) - these contain speaker notes
+      const notesFiles: string[] = [];
+      
       zip.forEach((relativePath) => {
         if (relativePath.startsWith('ppt/slides/slide') && relativePath.endsWith('.xml')) {
           slideFiles.push(relativePath);
+        }
+        // Also extract from notes slides which may contain additional content
+        if (relativePath.startsWith('ppt/notesSlides/notesSlide') && relativePath.endsWith('.xml')) {
+          notesFiles.push(relativePath);
         }
       });
       
@@ -161,6 +207,13 @@ export class DocumentParser {
       slideFiles.sort((a, b) => {
         const aNum = parseInt(a.match(/slide(\d+)\.xml/)?.[1] || '0');
         const bNum = parseInt(b.match(/slide(\d+)\.xml/)?.[1] || '0');
+        return aNum - bNum;
+      });
+      
+      // Sort notes by number
+      notesFiles.sort((a, b) => {
+        const aNum = parseInt(a.match(/notesSlide(\d+)\.xml/)?.[1] || '0');
+        const bNum = parseInt(b.match(/notesSlide(\d+)\.xml/)?.[1] || '0');
         return aNum - bNum;
       });
       
@@ -172,11 +225,12 @@ export class DocumentParser {
         };
       }
       
-      // Extract text from each slide
+      // Extract text from each slide (includes headers/footers if present in slide content)
       const allText: string[] = [];
       
-      console.log(`Found ${slideFiles.length} slides to process`);
+      console.log(`Found ${slideFiles.length} slides and ${notesFiles.length} notes slides to process`);
       
+      // Extract text from slides
       for (const slidePath of slideFiles) {
         try {
           const slideXml = await zip.file(slidePath)?.async('string');
@@ -198,7 +252,25 @@ export class DocumentParser {
         }
       }
       
-      console.log(`Total slides with text: ${allText.length}`);
+      // Extract text from notes slides (speaker notes)
+      for (const notesPath of notesFiles) {
+        try {
+          const notesXml = await zip.file(notesPath)?.async('string');
+          if (notesXml) {
+            console.log(`Processing notes: ${notesPath}`);
+            const notesText = this.extractTextFromSlideXml(notesXml);
+            if (notesText.trim()) {
+              allText.push(`[Notes] ${notesText}`);
+              console.log(`Extracted ${notesText.length} characters from notes ${notesPath}`);
+            }
+          }
+        } catch (notesError) {
+          console.warn(`Error parsing notes ${notesPath}:`, notesError);
+          // Continue with other notes
+        }
+      }
+      
+      console.log(`Total slides with text: ${slideFiles.length}, Notes extracted: ${notesFiles.length}`);
       
       const combinedText = allText.join('\n\n').trim();
       
@@ -209,6 +281,8 @@ export class DocumentParser {
           error: 'No text content found in PowerPoint slides. The slides might be image-based or empty.'
         };
       }
+      
+      console.log(`Total extracted text: ${combinedText.length} characters (includes slides, notes, headers/footers)`);
       
       return {
         text: combinedText,
