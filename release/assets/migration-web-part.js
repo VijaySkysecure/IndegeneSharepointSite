@@ -335,32 +335,32 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_f108d305{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_f108d305{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_f108d305{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_f108d305{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_f108d305{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_f108d305{align-items:flex-start;display:flex;flex-direction:column}.subtitle_f108d305{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_f108d305{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_f108d305{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);margin-bottom:24px;padding:24px}.fileFormTitle_f108d305{border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 20px;padding-bottom:12px}.fieldFull_f108d305,.field_f108d305{display:flex;flex-direction:column}.fieldFull_f108d305{grid-column:1/-1}.label_f108d305{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_f108d305{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_f108d305:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_f108d305::placeholder{color:#9ca3af;opacity:1}.input_f108d305:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_f108d305{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_f108d305:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_f108d305::placeholder{color:#9ca3af;opacity:1}.textarea_f108d305:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_f108d305{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_f108d305:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_f108d305::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_f108d305:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_f108d305::-webkit-scrollbar{width:8px}.textareaScrollable_f108d305::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_f108d305::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_f108d305::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_f108d305{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_f108d305{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_f108d305{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_f108d305{grid-template-columns:1fr}}.formInner_f108d305::-webkit-scrollbar{width:8px}.formInner_f108d305::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_f108d305::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_f108d305::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_f108d305{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBREEsa0JBQUEsQ0FEQSxZQUVBLENBR0Ysd0JBTUUsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBQ0EsbUJBQ0EsQ0FRRixvQ0FKRSxZQUFBLENBQ0EscUJBTUEsQ0FIRixvQkFDRSxnQkFFQSxDQUdGLGdCQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGlCQUNBLENBR0YsZ0JBS0UsZUFBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FFQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxpQkFBQSxDQU9BLDJEQUFBLENBRUEsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixzQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0Ysc0JBQ0UsZ0NBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FDQSwwQkFBQSxDQUlKLG1CQUtFLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxnQkFBQSxDQURBLFlBQUEsQ0FHQSxlQUlBLENBRUEsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRix5Q0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YseUJBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FJSiw2QkFPRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUVBLGlDQUFBLENBUEEsY0FBQSxDQU1BLGVBQUEsQ0FFQSxlQUFBLENBVEEsZ0JBQUEsQ0FEQSxnQkFBQSxDQUlBLGVBQUEsQ0FMQSxZQUFBLENBSUEsV0FPQSxDQUVBLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsbURBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLG1DQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBR0YsZ0RBQ0UsU0FBQSxDQUdGLHNEQUNFLCtCQUFBLENBQ0EsaUJBQUEsQ0FHRiw0REFDRSwrQkFBQSxDQUdGLHNEQUNFLDZCQUFBLENBSUosZUFJRSxpQkFBQSxDQUhBLFlBQUEsQ0FFQSxhQUFBLENBREEsNkJBRUEsQ0FHRiwwQkFRRSwyREFBQSxDQUhBLHVDQUFBLENBRUEsUUFBQSxDQU5BLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGVBQUEsQ0FDQSxnQkFBQSxDQUVBLGVBQUEsQ0FHQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0EsaUJBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUlGLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUlKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBR0Ysb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNdWx0aU1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_39441897{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_39441897{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_39441897{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_39441897{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_39441897{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_39441897{align-items:flex-start;display:flex;flex-direction:column}.subtitle_39441897{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_39441897{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_39441897{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;margin-bottom:24px;max-width:100%;overflow:hidden;padding:24px}.fileFormTitle_39441897{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 20px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.fieldFull_39441897,.field_39441897{display:flex;flex-direction:column}.fieldFull_39441897{grid-column:1/-1}.label_39441897{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_39441897{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897::placeholder{color:#9ca3af;opacity:1}.input_39441897:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897::placeholder{color:#9ca3af;opacity:1}.textarea_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897::-webkit-scrollbar{width:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_39441897{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_39441897{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_39441897{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_39441897{grid-template-columns:1fr}}.formInner_39441897::-webkit-scrollbar{width:8px}.formInner_39441897::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_39441897{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBR0EscUJBQUEsQ0FKQSxrQkFBQSxDQUdBLGNBQUEsQ0FEQSxlQUFBLENBSEEsWUFLQSxDQUdGLHdCQU9FLG9CQUFBLENBREEsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBT0EsY0FBQSxDQURBLGVBQUEsQ0FGQSx3QkFBQSxDQUhBLG1CQUFBLENBSUEscUJBRUEsQ0FRRixvQ0FKRSxZQUFBLENBQ0EscUJBTUEsQ0FIRixvQkFDRSxnQkFFQSxDQUdGLGdCQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGlCQUNBLENBR0YsZ0JBS0UsZUFBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FFQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxpQkFBQSxDQU9BLDJEQUFBLENBRUEsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixzQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0Ysc0JBQ0UsZ0NBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FDQSwwQkFBQSxDQUlKLG1CQUtFLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxnQkFBQSxDQURBLFlBQUEsQ0FHQSxlQUlBLENBRUEsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRix5Q0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YseUJBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FJSiw2QkFPRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUVBLGlDQUFBLENBUEEsY0FBQSxDQU1BLGVBQUEsQ0FFQSxlQUFBLENBVEEsZ0JBQUEsQ0FEQSxnQkFBQSxDQUlBLGVBQUEsQ0FMQSxZQUFBLENBSUEsV0FPQSxDQUVBLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsbURBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLG1DQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBR0YsZ0RBQ0UsU0FBQSxDQUdGLHNEQUNFLCtCQUFBLENBQ0EsaUJBQUEsQ0FHRiw0REFDRSwrQkFBQSxDQUdGLHNEQUNFLDZCQUFBLENBSUosZUFJRSxpQkFBQSxDQUhBLFlBQUEsQ0FFQSxhQUFBLENBREEsNkJBRUEsQ0FHRiwwQkFRRSwyREFBQSxDQUhBLHVDQUFBLENBRUEsUUFBQSxDQU5BLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGVBQUEsQ0FDQSxnQkFBQSxDQUVBLGVBQUEsQ0FHQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0EsaUJBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUlGLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUlKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBR0Ysb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNdWx0aU1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_f108d305: "formWrapper_f108d305",
-  formInner_f108d305: "formInner_f108d305",
-  headerBar_f108d305: "headerBar_f108d305",
-  cardMeta_f108d305: "cardMeta_f108d305",
-  title_f108d305: "title_f108d305",
-  titleWrap_f108d305: "titleWrap_f108d305",
-  subtitle_f108d305: "subtitle_f108d305",
-  closeBtn_f108d305: "closeBtn_f108d305",
-  singleFormContainer_f108d305: "singleFormContainer_f108d305",
-  fileFormTitle_f108d305: "fileFormTitle_f108d305",
-  field_f108d305: "field_f108d305",
-  fieldFull_f108d305: "fieldFull_f108d305",
-  label_f108d305: "label_f108d305",
-  input_f108d305: "input_f108d305",
+  formWrapper_39441897: "formWrapper_39441897",
+  formInner_39441897: "formInner_39441897",
+  headerBar_39441897: "headerBar_39441897",
+  cardMeta_39441897: "cardMeta_39441897",
+  title_39441897: "title_39441897",
+  titleWrap_39441897: "titleWrap_39441897",
+  subtitle_39441897: "subtitle_39441897",
+  closeBtn_39441897: "closeBtn_39441897",
+  singleFormContainer_39441897: "singleFormContainer_39441897",
+  fileFormTitle_39441897: "fileFormTitle_39441897",
+  field_39441897: "field_39441897",
+  fieldFull_39441897: "fieldFull_39441897",
+  label_39441897: "label_39441897",
+  input_39441897: "input_39441897",
   input: "input",
-  textarea_f108d305: "textarea_f108d305",
+  textarea_39441897: "textarea_39441897",
   textarea: "textarea",
-  textareaScrollable_f108d305: "textareaScrollable_f108d305",
+  textareaScrollable_39441897: "textareaScrollable_39441897",
   textareaScrollable: "textareaScrollable",
-  grid_f108d305: "grid_f108d305",
-  submitContainer_f108d305: "submitContainer_f108d305",
-  submitBtn_f108d305: "submitBtn_f108d305"
+  grid_39441897: "grid_39441897",
+  submitContainer_39441897: "submitContainer_39441897",
+  submitBtn_39441897: "submitBtn_39441897"
 });
 
 
@@ -1231,7 +1231,7 @@ var FileUpload = function (props) {
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var filesArray, processedFilesData, i, file, metadata, error_1;
+        var filesArray, processingPromises, processedFilesData, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1249,44 +1249,46 @@ var FileUpload = function (props) {
                     setProcessingProgress('');
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 6, , 7]);
-                    processedFilesData = [];
-                    i = 0;
-                    _a.label = 2;
+                    _a.trys.push([1, 3, , 4]);
+                    // Process all files with AI in parallel (no SharePoint upload yet)
+                    setProcessingProgress("Processing ".concat(filesArray.length, " file(s)..."));
+                    processingPromises = filesArray.map(function (file, index) { return __awaiter(void 0, void 0, void 0, function () {
+                        var metadata;
+                        return __generator(this, function (_a) {
+                            switch (_a.label) {
+                                case 0:
+                                    console.log("Starting parallel processing for file ".concat(index + 1, ": ").concat(file.name));
+                                    return [4 /*yield*/, processFileWithAI(file)];
+                                case 1:
+                                    metadata = _a.sent();
+                                    return [2 /*return*/, {
+                                            file: file,
+                                            itemId: -1,
+                                            metadata: metadata || {}
+                                        }];
+                            }
+                        });
+                    }); });
+                    return [4 /*yield*/, Promise.all(processingPromises)];
                 case 2:
-                    if (!(i < filesArray.length)) return [3 /*break*/, 5];
-                    file = filesArray[i];
-                    setProcessingProgress("Processing file ".concat(i + 1, " of ").concat(filesArray.length, ": ").concat(file.name));
-                    return [4 /*yield*/, processFileWithAI(file)];
-                case 3:
-                    metadata = _a.sent();
-                    // Add file to processed data (itemId will be set on submit)
-                    processedFilesData.push({
-                        file: file,
-                        itemId: -1,
-                        metadata: metadata || {}
-                    });
-                    _a.label = 4;
-                case 4:
-                    i++;
-                    return [3 /*break*/, 2];
-                case 5:
+                    processedFilesData = _a.sent();
                     setFilesData(processedFilesData);
                     setIsProcessing(false);
+                    setProcessingProgress('');
                     if (processedFilesData.length > 0) {
                         setShowForm(true);
                     }
                     else {
                         setProcessingError('No files were successfully processed.');
                     }
-                    return [3 /*break*/, 7];
-                case 6:
+                    return [3 /*break*/, 4];
+                case 3:
                     error_1 = _a.sent();
                     console.error('Error processing files:', error_1);
                     setProcessingError(error_1 instanceof Error ? error_1.message : 'An error occurred while processing files.');
                     setIsProcessing(false);
-                    return [3 /*break*/, 7];
-                case 7: return [2 /*return*/];
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
             }
         });
     }); };
@@ -1571,7 +1573,7 @@ var FileUpload = function (props) {
         }
     };
     var onFormSubmit = function (allFilesData) { return __awaiter(void 0, void 0, void 0, function () {
-        var i, fileData, itemId, err_1, err_2, err_3, err_4;
+        var uploadPromises, results, failures, errorMessages, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1582,55 +1584,61 @@ var FileUpload = function (props) {
                     setProcessingProgress('Uploading files to SharePoint...');
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 14, , 15]);
-                    i = 0;
-                    _a.label = 2;
+                    _a.trys.push([1, 3, , 4]);
+                    // Process all files in parallel - upload to SharePoint and create items
+                    setProcessingProgress("Uploading ".concat(allFilesData.length, " file(s) to SharePoint..."));
+                    uploadPromises = allFilesData.map(function (fileData) { return __awaiter(void 0, void 0, void 0, function () {
+                        var itemId, err_2, err_3;
+                        return __generator(this, function (_a) {
+                            switch (_a.label) {
+                                case 0:
+                                    _a.trys.push([0, 7, , 8]);
+                                    return [4 /*yield*/, updateKMArtifactsMetadata(fileData.file)];
+                                case 1:
+                                    itemId = _a.sent();
+                                    console.log("File ".concat(fileData.file.name, " uploaded successfully, itemId: ").concat(itemId));
+                                    _a.label = 2;
+                                case 2:
+                                    _a.trys.push([2, 4, , 5]);
+                                    return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
+                                case 3:
+                                    _a.sent();
+                                    return [3 /*break*/, 5];
+                                case 4:
+                                    err_2 = _a.sent();
+                                    console.warn("Audit log creation failed for ".concat(fileData.file.name, ":"), err_2);
+                                    return [3 /*break*/, 5];
+                                case 5: 
+                                // 3. Update KMArtifacts row with actual form values
+                                return [4 /*yield*/, updateKMArtifactsWithFormData(itemId, fileData.metadata)];
+                                case 6:
+                                    // 3. Update KMArtifacts row with actual form values
+                                    _a.sent();
+                                    console.log("Metadata updated successfully for ".concat(fileData.file.name));
+                                    return [2 /*return*/, { success: true, fileName: fileData.file.name }];
+                                case 7:
+                                    err_3 = _a.sent();
+                                    console.error("Error processing ".concat(fileData.file.name, ":"), err_3);
+                                    return [2 /*return*/, {
+                                            success: false,
+                                            fileName: fileData.file.name,
+                                            error: err_3 instanceof Error ? err_3.message : String(err_3)
+                                        }];
+                                case 8: return [2 /*return*/];
+                            }
+                        });
+                    }); });
+                    return [4 /*yield*/, Promise.all(uploadPromises)];
                 case 2:
-                    if (!(i < allFilesData.length)) return [3 /*break*/, 13];
-                    fileData = allFilesData[i];
-                    setProcessingProgress("Uploading file ".concat(i + 1, " of ").concat(allFilesData.length, ": ").concat(fileData.file.name));
-                    itemId = void 0;
-                    _a.label = 3;
-                case 3:
-                    _a.trys.push([3, 5, , 6]);
-                    return [4 /*yield*/, updateKMArtifactsMetadata(fileData.file)];
-                case 4:
-                    itemId = _a.sent();
-                    return [3 /*break*/, 6];
-                case 5:
-                    err_1 = _a.sent();
-                    console.error("KMArtifacts ERROR for ".concat(fileData.file.name, ":"), err_1);
-                    setProcessingError("Failed to upload ".concat(fileData.file.name, " to SharePoint. Please try again."));
-                    isSubmittingRef.current = false;
-                    setIsProcessing(false);
-                    return [2 /*return*/]; // Stop processing on error
-                case 6:
-                    _a.trys.push([6, 8, , 9]);
-                    return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
-                case 7:
-                    _a.sent();
-                    return [3 /*break*/, 9];
-                case 8:
-                    err_2 = _a.sent();
-                    console.warn("Audit log creation failed for ".concat(fileData.file.name, ":"), err_2);
-                    return [3 /*break*/, 9];
-                case 9:
-                    _a.trys.push([9, 11, , 12]);
-                    return [4 /*yield*/, updateKMArtifactsWithFormData(itemId, fileData.metadata)];
-                case 10:
-                    _a.sent();
-                    return [3 /*break*/, 12];
-                case 11:
-                    err_3 = _a.sent();
-                    console.error("Failed to update metadata for ".concat(fileData.file.name, ":"), err_3);
-                    setProcessingError("Failed to update metadata for ".concat(fileData.file.name, ". File uploaded but metadata may be incomplete."));
-                    isSubmittingRef.current = false;
-                    setIsProcessing(false);
-                    return [2 /*return*/]; // Stop processing on error
-                case 12:
-                    i++;
-                    return [3 /*break*/, 2];
-                case 13:
+                    results = _a.sent();
+                    failures = results.filter(function (r) { return !r.success; });
+                    if (failures.length > 0) {
+                        errorMessages = failures.map(function (f) { return "".concat(f.fileName, ": ").concat(f.error); }).join('; ');
+                        setProcessingError("Some files failed to upload: ".concat(errorMessages));
+                        isSubmittingRef.current = false;
+                        setIsProcessing(false);
+                        return [2 /*return*/];
+                    }
                     console.log("Successfully submitted ".concat(allFilesData.length, " file(s)"));
                     // Reset all state immediately to prevent form from showing
                     // Reset in order: filesData first (used in render condition), then others
@@ -1646,15 +1654,15 @@ var FileUpload = function (props) {
                     requestAnimationFrame(function () {
                         props.onClose && props.onClose();
                     });
-                    return [3 /*break*/, 15];
-                case 14:
-                    err_4 = _a.sent();
-                    console.error("Error during form submission:", err_4);
-                    setProcessingError(err_4 instanceof Error ? err_4.message : 'Error submitting files');
+                    return [3 /*break*/, 4];
+                case 3:
+                    err_1 = _a.sent();
+                    console.error("Error during form submission:", err_1);
+                    setProcessingError(err_1 instanceof Error ? err_1.message : 'Error submitting files');
                     isSubmittingRef.current = false;
                     setIsProcessing(false);
-                    return [3 /*break*/, 15];
-                case 15: return [2 /*return*/];
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
             }
         });
     }); };
@@ -2192,25 +2200,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MultiMetadataForm.module.css */ 5124);
 var styles = {
-    formWrapper: 'formWrapper_f108d305',
-    formInner: 'formInner_f108d305',
-    headerBar: 'headerBar_f108d305',
-    cardMeta: 'cardMeta_f108d305',
-    title: 'title_f108d305',
-    titleWrap: 'titleWrap_f108d305',
-    subtitle: 'subtitle_f108d305',
-    closeBtn: 'closeBtn_f108d305',
-    singleFormContainer: 'singleFormContainer_f108d305',
-    fileFormTitle: 'fileFormTitle_f108d305',
-    field: 'field_f108d305',
-    fieldFull: 'fieldFull_f108d305',
-    label: 'label_f108d305',
-    input: 'input_f108d305',
-    textarea: 'textarea_f108d305',
-    textareaScrollable: 'textareaScrollable_f108d305',
-    grid: 'grid_f108d305',
-    submitContainer: 'submitContainer_f108d305',
-    submitBtn: 'submitBtn_f108d305'
+    formWrapper: 'formWrapper_39441897',
+    formInner: 'formInner_39441897',
+    headerBar: 'headerBar_39441897',
+    cardMeta: 'cardMeta_39441897',
+    title: 'title_39441897',
+    titleWrap: 'titleWrap_39441897',
+    subtitle: 'subtitle_39441897',
+    closeBtn: 'closeBtn_39441897',
+    singleFormContainer: 'singleFormContainer_39441897',
+    fileFormTitle: 'fileFormTitle_39441897',
+    field: 'field_39441897',
+    fieldFull: 'fieldFull_39441897',
+    label: 'label_39441897',
+    input: 'input_39441897',
+    textarea: 'textarea_39441897',
+    textareaScrollable: 'textareaScrollable_39441897',
+    grid: 'grid_39441897',
+    submitContainer: 'submitContainer_39441897',
+    submitBtn: 'submitBtn_39441897'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

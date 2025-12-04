@@ -55,26 +55,26 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     setProcessingProgress('');
 
     try {
-      // Process all files with AI only (no SharePoint upload yet)
-      const processedFilesData: FileData[] = [];
+      // Process all files with AI in parallel (no SharePoint upload yet)
+      setProcessingProgress(`Processing ${filesArray.length} file(s)...`);
 
-      for (let i = 0; i < filesArray.length; i++) {
-        const file = filesArray[i];
-        setProcessingProgress(`Processing file ${i + 1} of ${filesArray.length}: ${file.name}`);
-
-        // Process file with AI (no SharePoint upload at this stage)
+      // Process all files in parallel
+      const processingPromises = filesArray.map(async (file, index) => {
+        console.log(`Starting parallel processing for file ${index + 1}: ${file.name}`);
         const metadata = await processFileWithAI(file);
-        
-        // Add file to processed data (itemId will be set on submit)
-        processedFilesData.push({
+        return {
           file: file,
           itemId: -1, // Placeholder - will be set when uploaded to SharePoint on submit
           metadata: metadata || {}
-        });
-      }
+        };
+      });
+
+      // Wait for all files to be processed
+      const processedFilesData = await Promise.all(processingPromises);
 
       setFilesData(processedFilesData);
       setIsProcessing(false);
+      setProcessingProgress('');
       
       if (processedFilesData.length > 0) {
         setShowForm(true);
@@ -388,41 +388,50 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
     setProcessingProgress('Uploading files to SharePoint...');
 
     try {
-      // Process each file - upload to SharePoint and create items
-      for (let i = 0; i < allFilesData.length; i++) {
-        const fileData = allFilesData[i];
-        setProcessingProgress(`Uploading file ${i + 1} of ${allFilesData.length}: ${fileData.file.name}`);
+      // Process all files in parallel - upload to SharePoint and create items
+      setProcessingProgress(`Uploading ${allFilesData.length} file(s) to SharePoint...`);
 
-        // 1. Upload file and create KMArtifacts item
-        let itemId: number;
+      // Process all files in parallel
+      const uploadPromises = allFilesData.map(async (fileData) => {
         try {
-          itemId = await updateKMArtifactsMetadata(fileData.file);
-        } catch (err) {
-          console.error(`KMArtifacts ERROR for ${fileData.file.name}:`, err);
-          setProcessingError(`Failed to upload ${fileData.file.name} to SharePoint. Please try again.`);
-          isSubmittingRef.current = false;
-          setIsProcessing(false);
-          return; // Stop processing on error
-        }
+          // 1. Upload file and create KMArtifacts item
+          const itemId = await updateKMArtifactsMetadata(fileData.file);
+          console.log(`File ${fileData.file.name} uploaded successfully, itemId: ${itemId}`);
 
-        // 2. Create audit log item (Action = Submitted)
-        try {
-          await createAuditLogItem(fileData.file, "Submitted");
-        } catch (err) {
-          console.warn(`Audit log creation failed for ${fileData.file.name}:`, err);
-          // Continue even if audit log fails
-        }
+          // 2. Create audit log item (Action = Submitted)
+          try {
+            await createAuditLogItem(fileData.file, "Submitted");
+          } catch (err) {
+            console.warn(`Audit log creation failed for ${fileData.file.name}:`, err);
+            // Continue even if audit log fails
+          }
 
-        // 3. Update KMArtifacts row with actual form values
-        try {
+          // 3. Update KMArtifacts row with actual form values
           await updateKMArtifactsWithFormData(itemId, fileData.metadata);
+          console.log(`Metadata updated successfully for ${fileData.file.name}`);
+          
+          return { success: true, fileName: fileData.file.name };
         } catch (err) {
-          console.error(`Failed to update metadata for ${fileData.file.name}:`, err);
-          setProcessingError(`Failed to update metadata for ${fileData.file.name}. File uploaded but metadata may be incomplete.`);
-          isSubmittingRef.current = false;
-          setIsProcessing(false);
-          return; // Stop processing on error
+          console.error(`Error processing ${fileData.file.name}:`, err);
+          return { 
+            success: false, 
+            fileName: fileData.file.name, 
+            error: err instanceof Error ? err.message : String(err) 
+          };
         }
+      });
+
+      // Wait for all uploads to complete
+      const results = await Promise.all(uploadPromises);
+      
+      // Check for any failures
+      const failures = results.filter(r => !r.success);
+      if (failures.length > 0) {
+        const errorMessages = failures.map(f => `${f.fileName}: ${f.error}`).join('; ');
+        setProcessingError(`Some files failed to upload: ${errorMessages}`);
+        isSubmittingRef.current = false;
+        setIsProcessing(false);
+        return;
       }
 
       console.log(`Successfully submitted ${allFilesData.length} file(s)`);

@@ -1,25 +1,25 @@
 
 require("./MultiMetadataForm.module.css");
 const styles = {
-  formWrapper: 'formWrapper_f108d305',
-  formInner: 'formInner_f108d305',
-  headerBar: 'headerBar_f108d305',
-  cardMeta: 'cardMeta_f108d305',
-  title: 'title_f108d305',
-  titleWrap: 'titleWrap_f108d305',
-  subtitle: 'subtitle_f108d305',
-  closeBtn: 'closeBtn_f108d305',
-  singleFormContainer: 'singleFormContainer_f108d305',
-  fileFormTitle: 'fileFormTitle_f108d305',
-  field: 'field_f108d305',
-  fieldFull: 'fieldFull_f108d305',
-  label: 'label_f108d305',
-  input: 'input_f108d305',
-  textarea: 'textarea_f108d305',
-  textareaScrollable: 'textareaScrollable_f108d305',
-  grid: 'grid_f108d305',
-  submitContainer: 'submitContainer_f108d305',
-  submitBtn: 'submitBtn_f108d305'
+  formWrapper: 'formWrapper_39441897',
+  formInner: 'formInner_39441897',
+  headerBar: 'headerBar_39441897',
+  cardMeta: 'cardMeta_39441897',
+  title: 'title_39441897',
+  titleWrap: 'titleWrap_39441897',
+  subtitle: 'subtitle_39441897',
+  closeBtn: 'closeBtn_39441897',
+  singleFormContainer: 'singleFormContainer_39441897',
+  fileFormTitle: 'fileFormTitle_39441897',
+  field: 'field_39441897',
+  fieldFull: 'fieldFull_39441897',
+  label: 'label_39441897',
+  input: 'input_39441897',
+  textarea: 'textarea_39441897',
+  textareaScrollable: 'textareaScrollable_39441897',
+  grid: 'grid_39441897',
+  submitContainer: 'submitContainer_39441897',
+  submitBtn: 'submitBtn_39441897'
 };
 
 export default styles;
