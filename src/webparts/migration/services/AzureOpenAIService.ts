@@ -65,7 +65,10 @@ export class AzureOpenAIService {
       // If document is small enough, process normally
       if (documentText.length <= chunkSize) {
         console.log('=== PROCESSING AS SINGLE CHUNK ===');
-        return await this.processSingleChunk(documentText);
+        const result = await this.processSingleChunk(documentText);
+        // Validate and retry if needed
+        const validatedResult = await this.validateAndRetryIfNeeded(result, [documentText]);
+        return validatedResult;
       }
 
       // Otherwise, use chunked processing
@@ -86,7 +89,7 @@ export class AzureOpenAIService {
   /**
    * Build the prompt for metadata extraction
    */
-  private buildExtractionPrompt(documentText: string): string {
+  private buildExtractionPrompt(documentText: string, chunkContext?: { chunkIndex?: number; totalChunks?: number; previousFindings?: Partial<MetadataExtraction> }): string {
     const buList = ALLOWED_BUSINESS_UNITS.join('\n- ');
     const deptList = ALLOWED_DEPARTMENTS.join('\n- ');
     const diseaseAreaList = ALLOWED_DISEASE_AREAS.join('\n- ');
@@ -94,9 +97,32 @@ export class AzureOpenAIService {
     const regionList = ALLOWED_REGIONS.join('\n- ');
     const documentTypeList = ALLOWED_DOCUMENT_TYPES.join('\n- ');
 
-    return `You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.
+    let contextNote = '';
+    if (chunkContext && chunkContext.totalChunks && chunkContext.totalChunks > 1) {
+      contextNote = `\n\n**IMPORTANT: This is chunk ${chunkContext.chunkIndex || 1} of ${chunkContext.totalChunks}.** `;
+      if (chunkContext.previousFindings) {
+        const prev = chunkContext.previousFindings;
+        contextNote += `Previous chunks found: ${prev.title ? `title="${prev.title}"` : ''} ${prev.documentType ? `documentType="${prev.documentType}"` : ''} ${prev.bu ? `bu="${prev.bu}"` : ''} ${prev.department ? `department="${prev.department}"` : ''}. `;
+      }
+      contextNote += `Extract information from THIS chunk. If mandatory fields are missing from previous chunks, extract them from this chunk.`;
+    }
 
-CRITICAL EXTRACTION RULES:
+    return `You are an expert document analyzer. Analyze the following document text and extract structured information. You MUST be thorough, accurate, and NEVER leave mandatory fields empty.
+
+**CRITICAL RULES - READ CAREFULLY:**
+
+1. **NEVER HALLUCINATE**: Only extract information that is ACTUALLY PRESENT in the document text below. Do NOT make up, infer, or guess information that is not explicitly or clearly implied in the document. If information is not found, use empty string "" for optional fields, but ALWAYS fill mandatory fields.
+
+2. **MANDATORY FIELDS ARE ABSOLUTELY REQUIRED**: The following fields MUST ALWAYS have a value - they can NEVER be empty strings:
+   - title: MUST extract a title from the document. If no explicit title exists, use the first heading, first line, document name, or create a descriptive title based on the main topic visible in the text.
+   - documentType: MUST identify the document type from content structure or explicitly stated type.
+   - bu (Business Unit): MUST match to one of the allowed values below, even if you need to infer from context.
+   - department: MUST match to one of the allowed values below, even if you need to infer from context.
+   - abstract: MUST create a brief summary (1-2 sentences) describing what the document is about.
+
+3. **SCAN EVERY CHARACTER**: Read the ENTIRE document text carefully. Do not skip any part. Look in headers, footers, titles, body text, signatures, and all sections.
+
+${contextNote}
 
 **MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**
 - title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic
@@ -105,11 +131,11 @@ CRITICAL EXTRACTION RULES:
 - department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)
 - abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content
 
-**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**
-- region: ONLY if a geographic region is explicitly mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", etc.)
+**CONDITIONAL FIELDS (ONLY FILL IF FOUND IN DOCUMENT - DO NOT HALLUCINATE):**
+- region: ONLY if a geographic region is explicitly mentioned (e.g., "North America", "Europe", "Asia", "APAC", "EMEA", etc.). If not found, use "".
 - client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.
 
-**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**
+**COLLECTION FIELDS (EXTRACT ALL INSTANCES FROM DOCUMENT):**
 - emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.
 - phones: Extract EVERY phone number found (even if 100+). Include all formats.
 - ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.
@@ -117,32 +143,37 @@ CRITICAL EXTRACTION RULES:
 
 Fields to extract:
 
-1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.
+1. title - **MANDATORY - NEVER EMPTY**: The document title, main heading, or document name. Read the document carefully from the beginning. Look for:
+   - Explicit title lines
+   - First major heading
+   - Document name or filename references
+   - First line of significant text
+   If no explicit title exists, create a descriptive title based on the main topic visible in the text. NEVER return empty string for this field.
 
-2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):
+2. documentType - **MANDATORY - NEVER EMPTY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):
 - ${documentTypeList}
-Carefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = "Deck", training content = "Training", FAQ format = "Frequently Asked Questions (FAQs)", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.
+Carefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = "Deck", training content = "Training", FAQ format = "Frequently Asked Questions (FAQs)", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list. NEVER return empty string.
 
-3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):
+3. bu - **MANDATORY - NEVER EMPTY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):
 - ${buList}
-If not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.
+Read the entire document carefully. Look for department names, project descriptions, team mentions, company divisions, or organizational references. If not explicitly mentioned, analyze the document content to infer the most likely Business Unit. NEVER leave empty - always match to the closest value from the list above.
 
-4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):
+4. department - **MANDATORY - NEVER EMPTY**: Department. MUST be one of these exact values (match the closest one, or infer from context):
 - ${deptList}
-If not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.
+Read the entire document carefully. Look for team names, functional areas, work descriptions, project context, or department references. If not explicitly mentioned, analyze the document content to infer the most likely Department. NEVER leave empty - always match to the closest value from the list above.
 
 5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):
 - ${regionList}
 Look for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string "".
 
-6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:
+6. client - **COMPANY NAME ONLY - DO NOT HALLUCINATE**: Client name or organization. This field should ONLY contain company names, business entities, or organization names that are ACTUALLY MENTIONED in the document. Do NOT include:
 - Person names (unless it's clearly a company name like "John's Consulting LLC")
 - Internal departments or teams
 - Generic terms like "the client" or "our customer"
 - Project names that aren't company names
-Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find "the client" or similar without a specific company name, leave empty.
+Look for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find "the client" or similar without a specific company name, leave empty. If no company name is found, use "".
 
-7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.
+7. abstract - **MANDATORY - NEVER EMPTY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. Read through the document and summarize its main content. MUST provide a summary even if brief. NEVER leave empty.
 
 8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):
 - ${diseaseAreaList}
@@ -156,14 +187,21 @@ Carefully read and understand the entire document. Look for mentions of medical 
 
 11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like "+1-555-123-4567", "(555) 123-4567", "555-123-4567", "555.123.4567", "+44 20 1234 5678", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: "+1-555-123-4567, 555-987-6543, ..." If you find even one phone, include it. If you find none, use empty string "".
 
-12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)
+12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple). If none found, use "".
 
-13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned
+13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned. If none found, use "".
 
-Document text:
+**Document text to analyze:**
 ${documentText}
 
-Return only valid JSON in this format (use empty string "" for fields not found):
+**IMPORTANT REMINDERS:**
+- Read EVERY character of the document text above
+- For MANDATORY fields (title, documentType, bu, department, abstract): NEVER return empty string ""
+- For OPTIONAL fields: Only fill if information is actually present in the document
+- DO NOT make up or invent information that is not in the document
+- Extract ALL instances of emails, phones, IDs, and pricing
+
+Return only valid JSON in this format:
 {
   "title": "...",
   "documentType": "...",
@@ -388,11 +426,14 @@ Return only valid JSON in this format (use empty string "" for fields not found)
   /**
    * Process a single chunk of text
    */
-  private async processSingleChunk(chunkText: string): Promise<MetadataExtraction> {
+  private async processSingleChunk(chunkText: string, chunkContext?: { chunkIndex?: number; totalChunks?: number; previousFindings?: Partial<MetadataExtraction> }): Promise<MetadataExtraction> {
     console.log('=== PROCESSING SINGLE CHUNK ===');
     console.log('Chunk length:', chunkText.length, 'characters');
+    if (chunkContext) {
+      console.log(`Chunk ${chunkContext.chunkIndex || 1} of ${chunkContext.totalChunks || 1}`);
+    }
 
-    const prompt = this.buildExtractionPrompt(chunkText);
+    const prompt = this.buildExtractionPrompt(chunkText, chunkContext);
 
     const response = await fetch(
       `${this.config.endpoint}/openai/deployments/${this.config.deploymentName}/chat/completions?api-version=${this.config.apiVersion}`,
@@ -406,14 +447,14 @@ Return only valid JSON in this format (use empty string "" for fields not found)
           messages: [
             {
               role: 'system',
-              content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
+              content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks. NEVER leave mandatory fields empty. Only extract information that is actually present in the document - do not make up or hallucinate information.'
             },
             {
               role: 'user',
               content: prompt
             }
           ],
-          temperature: 0.8,
+          temperature: 0.3,
           max_tokens: 2000
         })
       }
@@ -479,13 +520,26 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
     
     const chunkResults: MetadataExtraction[] = [];
+    const previousFindings: Partial<MetadataExtraction> = {};
     
     // Process chunks sequentially to avoid rate limits
     for (let i = 0; i < chunks.length; i++) {
       console.log(`\n=== PROCESSING CHUNK ${i + 1}/${chunks.length} ===`);
       try {
-        const result = await this.processSingleChunk(chunks[i]);
+        const chunkContext = {
+          chunkIndex: i + 1,
+          totalChunks: chunks.length,
+          previousFindings: i > 0 ? previousFindings : undefined
+        };
+        const result = await this.processSingleChunk(chunks[i], chunkContext);
         chunkResults.push(result);
+        
+        // Update previous findings for next chunk
+        if (result.title && !previousFindings.title) previousFindings.title = result.title;
+        if (result.documentType && !previousFindings.documentType) previousFindings.documentType = result.documentType;
+        if (result.bu && !previousFindings.bu) previousFindings.bu = result.bu;
+        if (result.department && !previousFindings.department) previousFindings.department = result.department;
+        
         console.log(`✓ Chunk ${i + 1} processed successfully`);
       } catch (error) {
         console.error(`✗ Error processing chunk ${i + 1}:`, error);
@@ -503,14 +557,18 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     // Final sanitization (validation, masking, etc.)
     const finalResult = this.sanitizeMetadata(merged);
     
-    console.log('=== FINAL MERGED RESULT ===');
-    console.log(JSON.stringify(finalResult, null, 2));
+    // Validate mandatory fields and retry if needed
+    const validatedResult = await this.validateAndRetryIfNeeded(finalResult, chunks);
     
-    return finalResult;
+    console.log('=== FINAL MERGED RESULT ===');
+    console.log(JSON.stringify(validatedResult, null, 2));
+    
+    return validatedResult;
   }
 
   /**
    * Merge results from multiple chunks intelligently
+   * Searches ALL chunks for mandatory fields to ensure nothing is missed
    */
   private mergeChunkResults(results: MetadataExtraction[]): MetadataExtraction {
     const merged: MetadataExtraction = {
@@ -533,42 +591,50 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     const allIds: string[] = [];
     const allPricing: string[] = [];
 
+    // For mandatory fields, search ALL chunks (not just first)
+    // This ensures we don't miss title/documentType if they're in later chunks
+    const allTitles: string[] = [];
+    const allDocumentTypes: string[] = [];
+    const allBUs: string[] = [];
+    const allDepartments: string[] = [];
+    const allAbstracts: string[] = [];
+
     for (let i = 0; i < results.length; i++) {
       const result = results[i];
       
-      // Title: Take from first chunk (most likely to be at the start)
-      if (!merged.title && result.title) {
-        merged.title = result.title;
+      // Title: Collect from ALL chunks, prioritize first chunk but check all
+      if (result.title && result.title.trim()) {
+        allTitles.push(result.title.trim());
       }
 
-      // DocumentType: Take from first chunk
-      if (!merged.documentType && result.documentType) {
-        merged.documentType = result.documentType;
+      // DocumentType: Collect from ALL chunks
+      if (result.documentType && result.documentType.trim()) {
+        allDocumentTypes.push(result.documentType.trim());
       }
 
-      // BU: Take first non-empty match
-      if (!merged.bu && result.bu) {
-        merged.bu = result.bu;
+      // BU: Collect from ALL chunks
+      if (result.bu && result.bu.trim()) {
+        allBUs.push(result.bu.trim());
       }
 
-      // Department: Take first non-empty match
-      if (!merged.department && result.department) {
-        merged.department = result.department;
+      // Department: Collect from ALL chunks
+      if (result.department && result.department.trim()) {
+        allDepartments.push(result.department.trim());
+      }
+
+      // Abstract: Collect from ALL chunks (will take longest)
+      if (result.abstract && result.abstract.trim()) {
+        allAbstracts.push(result.abstract.trim());
       }
 
       // Region: Take first non-empty match
-      if (!merged.region && result.region) {
-        merged.region = result.region;
+      if (!merged.region && result.region && result.region.trim()) {
+        merged.region = result.region.trim();
       }
 
       // Client: Take first non-empty match
-      if (!merged.client && result.client) {
-        merged.client = result.client;
-      }
-
-      // Abstract: Take the longest one (most comprehensive)
-      if (result.abstract && result.abstract.length > (merged.abstract?.length || 0)) {
-        merged.abstract = result.abstract;
+      if (!merged.client && result.client && result.client.trim()) {
+        merged.client = result.client.trim();
       }
 
       // Emails: Collect all unique emails
@@ -617,6 +683,19 @@ Return only valid JSON in this format (use empty string "" for fields not found)
       }
     }
 
+    // Set mandatory fields - prioritize first chunk but use any valid value
+    merged.title = allTitles.length > 0 ? allTitles[0] : '';
+    merged.documentType = allDocumentTypes.length > 0 ? allDocumentTypes[0] : '';
+    merged.bu = allBUs.length > 0 ? allBUs[0] : '';
+    merged.department = allDepartments.length > 0 ? allDepartments[0] : '';
+    
+    // Abstract: Take the longest one (most comprehensive)
+    if (allAbstracts.length > 0) {
+      merged.abstract = allAbstracts.reduce((longest, current) => 
+        current.length > longest.length ? current : longest
+      );
+    }
+
     // Join collected values
     merged.emails = allEmails.join(', ');
     merged.phones = allPhones.join(', ');
@@ -626,8 +705,155 @@ Return only valid JSON in this format (use empty string "" for fields not found)
     console.log('Merged emails count:', allEmails.length);
     console.log('Merged phones count:', allPhones.length);
     console.log('Merged IDs count:', allIds.length);
+    console.log('Title found in chunks:', allTitles.length > 0 ? 'YES' : 'NO');
+    console.log('DocumentType found in chunks:', allDocumentTypes.length > 0 ? 'YES' : 'NO');
+    console.log('BU found in chunks:', allBUs.length > 0 ? 'YES' : 'NO');
+    console.log('Department found in chunks:', allDepartments.length > 0 ? 'YES' : 'NO');
 
     return merged;
+  }
+
+  /**
+   * Validate mandatory fields and retry extraction if needed
+   */
+  private async validateAndRetryIfNeeded(result: MetadataExtraction, chunks: string[]): Promise<MetadataExtraction> {
+    const mandatoryFields: (keyof MetadataExtraction)[] = ['title', 'documentType', 'bu', 'department', 'abstract'];
+    const missingFields: (keyof MetadataExtraction)[] = [];
+
+    // Check for missing mandatory fields
+    for (const field of mandatoryFields) {
+      if (!result[field] || (typeof result[field] === 'string' && result[field].trim() === '')) {
+        missingFields.push(field);
+      }
+    }
+
+    if (missingFields.length === 0) {
+      console.log('✓ All mandatory fields are present');
+      return result;
+    }
+
+    console.warn(`⚠️ Missing mandatory fields: ${missingFields.join(', ')}`);
+    console.log('Attempting to extract missing fields from document...');
+
+    // Try to extract missing fields by re-analyzing the first chunk or all chunks
+    // Focus on the beginning of the document where title/documentType are most likely
+    const firstChunk = chunks[0] || '';
+    const firstChunkPreview = firstChunk.substring(0, Math.min(5000, firstChunk.length));
+    
+    if (firstChunkPreview.length > 0) {
+      try {
+        // Create a focused prompt for missing fields only
+        const focusedPrompt = this.buildFocusedExtractionPrompt(firstChunkPreview, missingFields);
+        
+        const response = await fetch(
+          `${this.config.endpoint}/openai/deployments/${this.config.deploymentName}/chat/completions?api-version=${this.config.apiVersion}`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'api-key': this.config.apiKey
+            },
+            body: JSON.stringify({
+              messages: [
+                {
+                  role: 'system',
+                  content: 'You are an expert document analyzer. Extract ONLY the requested fields from the document. Return valid JSON only, without any markdown formatting or code blocks. NEVER leave requested fields empty.'
+                },
+                {
+                  role: 'user',
+                  content: focusedPrompt
+                }
+              ],
+              temperature: 0.2,
+              max_tokens: 1000
+            })
+          }
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          const content = data.choices?.[0]?.message?.content;
+          
+          if (content) {
+            const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
+            const jsonText = jsonMatch[1] || content;
+            
+            try {
+              const retryResult = JSON.parse(jsonText.trim()) as Partial<MetadataExtraction>;
+              
+              // Fill in missing fields
+              for (const field of missingFields) {
+                if (retryResult[field] && typeof retryResult[field] === 'string' && retryResult[field].trim() !== '') {
+                  result[field] = retryResult[field];
+                  console.log(`✓ Retry extracted ${field}: ${retryResult[field]}`);
+                }
+              }
+            } catch (parseError) {
+              console.warn('Failed to parse retry result:', parseError);
+            }
+          }
+        }
+      } catch (error) {
+        console.warn('Retry extraction failed:', error);
+      }
+    }
+
+    // Final check - if still missing, use fallback values (already handled in sanitizeMetadata)
+    return result;
+  }
+
+  /**
+   * Build a focused prompt for extracting specific missing fields
+   */
+  private buildFocusedExtractionPrompt(documentText: string, missingFields: (keyof MetadataExtraction)[]): string {
+    const buList = ALLOWED_BUSINESS_UNITS.join('\n- ');
+    const deptList = ALLOWED_DEPARTMENTS.join('\n- ');
+    const documentTypeList = ALLOWED_DOCUMENT_TYPES.join('\n- ');
+
+    let fieldInstructions = '';
+
+    if (missingFields.includes('title')) {
+      fieldInstructions += `\n1. title - **CRITICAL**: Extract the document title. Look for:
+   - Explicit title lines at the beginning
+   - First major heading
+   - Document name or filename references
+   - First line of significant text
+   If no explicit title exists, create a descriptive title based on the main topic. NEVER return empty string.`;
+    }
+
+    if (missingFields.includes('documentType')) {
+      fieldInstructions += `\n2. documentType - **CRITICAL**: MUST be one of these exact values:
+- ${documentTypeList}
+Analyze the document structure and content. Match to the closest value. NEVER return empty string.`;
+    }
+
+    if (missingFields.includes('bu')) {
+      fieldInstructions += `\n3. bu - **CRITICAL**: Business Unit. MUST be one of these exact values:
+- ${buList}
+Infer from document content if not explicitly mentioned. NEVER return empty string.`;
+    }
+
+    if (missingFields.includes('department')) {
+      fieldInstructions += `\n4. department - **CRITICAL**: Department. MUST be one of these exact values:
+- ${deptList}
+Infer from document content if not explicitly mentioned. NEVER return empty string.`;
+    }
+
+    if (missingFields.includes('abstract')) {
+      fieldInstructions += `\n5. abstract - **CRITICAL**: A brief summary (1-2 sentences) describing what the document is about. NEVER return empty string.`;
+    }
+
+    return `You are an expert document analyzer. The following fields are MISSING and MUST be extracted from the document text below. Read the document carefully and extract ONLY these fields.
+
+**CRITICAL**: These fields are MANDATORY and CANNOT be empty. Extract them from the document text provided.${fieldInstructions}
+
+**Document text (beginning of document):**
+${documentText}
+
+Return ONLY a JSON object with the requested fields. Example:
+{
+${missingFields.map(f => `  "${f}": "..."`).join(',\n')}
+}`;
   }
 
   /**

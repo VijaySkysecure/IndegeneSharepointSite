@@ -95,7 +95,7 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
       
       // Fetch document with all needed fields including Performed By and Time Stamp
       // PerformedBy is a person field, need to expand it
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items(${props.documentId})?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File`;
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items(${props.documentId})?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl,Tags&$expand=PerformedBy,File`;
       
       const response: SPHttpClientResponse = await props.context.spHttpClient.get(
         apiUrl,
@@ -156,99 +156,132 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
       
       setDocument(documentDetail);
       
-      // Use passed tags if available, otherwise generate tags from abstract using AI
+      // Show page immediately - don't wait for tags or preview
+      setLoading(false);
+      
+      // Parse tags from SharePoint if they exist (async, non-blocking)
+      let storedTags: string[] = [];
+      if (item.Tags) {
+        try {
+          if (typeof item.Tags === 'string') {
+            if (item.Tags.startsWith('[')) {
+              storedTags = JSON.parse(item.Tags);
+            } else {
+              storedTags = item.Tags.split(',').map(t => t.trim()).filter(t => t.length > 0);
+            }
+          } else if (Array.isArray(item.Tags)) {
+            storedTags = item.Tags;
+          }
+        } catch (error) {
+          console.error('Error parsing tags:', error);
+          storedTags = [];
+        }
+      }
+      
+      // Load tags asynchronously (non-blocking)
       if (props.tags && props.tags.length > 0) {
         setTags(props.tags);
+      } else if (storedTags.length > 0) {
+        setTags(storedTags);
       } else if (abstract && abstract.trim().length > 0) {
-        try {
-          const generatedTags = await openAIService.current.generateTags(abstract);
+        // Generate tags asynchronously without blocking page render
+        openAIService.current.generateTags(abstract).then(generatedTags => {
           setTags(generatedTags);
-        } catch (error) {
+          // Save generated tags to SharePoint for future use
+          saveTagsToSharePoint(props.documentId, generatedTags).catch(err => {
+            console.error('Error saving tags:', err);
+          });
+        }).catch(error => {
           console.error('Error generating tags:', error);
           setTags([]);
-        }
+        });
       } else {
         setTags([]);
       }
       
-      // Generate preview URL using SharePoint's preview mechanism
+      // Generate preview URL asynchronously (non-blocking)
       if (serverRelativeUrl) {
-        const webUrl = props.context.pageContext.web.absoluteUrl;
-        let fileUrl = serverRelativeUrl;
-        
-        // Ensure proper server relative URL format
-        if (!fileUrl.startsWith('/')) {
-          fileUrl = `/${fileUrl}`;
-        }
-        
-        // Construct full file URL
-        const fullFileUrl = `${webUrl}${fileUrl}`;
-        
-        // For Office documents, use SharePoint's native preview or Office Online viewer
-        if (['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1) {
-          // Try SharePoint's native preview first (better authentication handling)
-          // Format: /_layouts/15/WopiFrame.aspx?sourcedoc={serverRelativeUrl}&action=default
-          const encodedServerUrl = encodeURIComponent(fileUrl);
-          setPreviewUrl(`${webUrl}/_layouts/15/WopiFrame.aspx?sourcedoc=${encodedServerUrl}&action=default`);
-        } else if (fileExtension.toLowerCase() === 'pdf') {
-          // For PDFs, fetch as blob and create object URL with proper content-type
-          // This prevents download and ensures proper preview
-          try {
-            const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
-            const fileResponse = await props.context.spHttpClient.get(
-              downloadUrl,
-              SPHttpClient.configurations.v1
-            );
-            
-            if (fileResponse.ok) {
-              const blob = await fileResponse.blob();
-              // Ensure blob has correct content-type for PDF
-              const pdfBlob = new Blob([blob], { type: 'application/pdf' });
-              const blobUrl = window.URL.createObjectURL(pdfBlob);
-              setPreviewUrl(blobUrl);
-            } else {
-              // Fallback to direct URL
-              setPreviewUrl(fullFileUrl);
-            }
-          } catch (error) {
-            console.error('Error fetching PDF for preview:', error);
-            // Fallback to direct URL
-            setPreviewUrl(fullFileUrl);
-          }
-        } else if (fileExtension.toLowerCase() === 'svg') {
-          // For SVG files, fetch as blob to handle authentication properly
-          try {
-            const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
-            const fileResponse = await props.context.spHttpClient.get(
-              downloadUrl,
-              SPHttpClient.configurations.v1
-            );
-            
-            if (fileResponse.ok) {
-              const blob = await fileResponse.blob();
-              // Ensure blob has correct content-type for SVG
-              const svgBlob = new Blob([blob], { type: 'image/svg+xml' });
-              const blobUrl = window.URL.createObjectURL(svgBlob);
-              setPreviewUrl(blobUrl);
-            } else {
-              // Fallback to direct URL
-              setPreviewUrl(fullFileUrl);
-            }
-          } catch (error) {
-            console.error('Error fetching SVG for preview:', error);
-            // Fallback to direct URL
-            setPreviewUrl(fullFileUrl);
-          }
-        } else {
-          // For other files, try direct URL
-          setPreviewUrl(fullFileUrl);
-        }
+        generatePreviewUrlAsync(serverRelativeUrl, fileExtension);
       }
       
     } catch (error) {
       console.error('Error fetching document details:', error);
-    } finally {
       setLoading(false);
+    }
+  };
+
+  const generatePreviewUrlAsync = async (serverRelativeUrl: string, fileExtension: string) => {
+    if (!props.context) return;
+    
+    const webUrl = props.context.pageContext.web.absoluteUrl;
+    let fileUrl = serverRelativeUrl;
+    
+    // Ensure proper server relative URL format
+    if (!fileUrl.startsWith('/')) {
+      fileUrl = `/${fileUrl}`;
+    }
+    
+    // Construct full file URL
+    const fullFileUrl = `${webUrl}${fileUrl}`;
+    
+    // For Office documents, use SharePoint's native preview or Office Online viewer
+    if (['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1) {
+      // Try SharePoint's native preview first (better authentication handling)
+      // Format: /_layouts/15/WopiFrame.aspx?sourcedoc={serverRelativeUrl}&action=default
+      const encodedServerUrl = encodeURIComponent(fileUrl);
+      setPreviewUrl(`${webUrl}/_layouts/15/WopiFrame.aspx?sourcedoc=${encodedServerUrl}&action=default`);
+    } else if (fileExtension.toLowerCase() === 'pdf') {
+      // For PDFs, fetch as blob and create object URL with proper content-type
+      // This prevents download and ensures proper preview
+      try {
+        const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
+        const fileResponse = await props.context.spHttpClient.get(
+          downloadUrl,
+          SPHttpClient.configurations.v1
+        );
+        
+        if (fileResponse.ok) {
+          const blob = await fileResponse.blob();
+          // Ensure blob has correct content-type for PDF
+          const pdfBlob = new Blob([blob], { type: 'application/pdf' });
+          const blobUrl = window.URL.createObjectURL(pdfBlob);
+          setPreviewUrl(blobUrl);
+        } else {
+          // Fallback to direct URL
+          setPreviewUrl(fullFileUrl);
+        }
+      } catch (error) {
+        console.error('Error fetching PDF for preview:', error);
+        // Fallback to direct URL
+        setPreviewUrl(fullFileUrl);
+      }
+    } else if (fileExtension.toLowerCase() === 'svg') {
+      // For SVG files, fetch as blob to handle authentication properly
+      try {
+        const downloadUrl = `${webUrl}/_api/web/GetFileByServerRelativeUrl('${encodeURIComponent(fileUrl)}')/$value`;
+        const fileResponse = await props.context.spHttpClient.get(
+          downloadUrl,
+          SPHttpClient.configurations.v1
+        );
+        
+        if (fileResponse.ok) {
+          const blob = await fileResponse.blob();
+          // Ensure blob has correct content-type for SVG
+          const svgBlob = new Blob([blob], { type: 'image/svg+xml' });
+          const blobUrl = window.URL.createObjectURL(svgBlob);
+          setPreviewUrl(blobUrl);
+        } else {
+          // Fallback to direct URL
+          setPreviewUrl(fullFileUrl);
+        }
+      } catch (error) {
+        console.error('Error fetching SVG for preview:', error);
+        // Fallback to direct URL
+        setPreviewUrl(fullFileUrl);
+      }
+    } else {
+      // For other files, try direct URL
+      setPreviewUrl(fullFileUrl);
     }
   };
 
@@ -738,6 +771,60 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
     }
   };
 
+  const saveTagsToSharePoint = async (itemId: number, tags: string[]) => {
+    if (!props.context || !tags || tags.length === 0) return;
+
+    try {
+      const webUrl = props.context.pageContext.web.absoluteUrl;
+      const libraryName = 'KMArtifacts';
+      
+      // Get entity type
+      const listInfoResp = await props.context.spHttpClient.get(
+        `${webUrl}/_api/web/lists/getbytitle('${libraryName}')?$select=ListItemEntityTypeFullName`,
+        SPHttpClient.configurations.v1
+      );
+      
+      if (!listInfoResp.ok) {
+        console.error('Failed to get list info for saving tags');
+        return;
+      }
+      
+      const listInfo = await listInfoResp.json();
+      const entityType = listInfo.ListItemEntityTypeFullName;
+      
+      // Store tags as JSON string
+      const tagsJson = JSON.stringify(tags);
+      
+      const updateBody = {
+        __metadata: { type: entityType },
+        Tags: tagsJson
+      };
+      
+      const updateResp = await props.context.spHttpClient.post(
+        `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items(${itemId})`,
+        SPHttpClient.configurations.v1,
+        {
+          headers: {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE",
+            "odata-version": ""
+          },
+          body: JSON.stringify(updateBody)
+        }
+      );
+      
+      if (!updateResp.ok) {
+        console.error(`Failed to save tags for document ${itemId}:`, updateResp.status);
+      } else {
+        console.log(`Tags saved for document ${itemId}:`, tags);
+      }
+    } catch (error) {
+      console.error(`Error saving tags for document ${itemId}:`, error);
+    }
+  };
+
   const formatTimeAgo = (date: Date): string => {
     const now = new Date();
     const diffMs = now.getTime() - date.getTime();
@@ -913,7 +1000,7 @@ export const DocumentDetailPage: React.FunctionComponent<IDocumentDetailPageProp
                       <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       <line x1="7" y1="7" x2="7.01" y2="7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    Tags
+                    Meta Tags
                   </h3>
                   <div className={styles.tagsContainer}>
                     {tags.map((tag, index) => (

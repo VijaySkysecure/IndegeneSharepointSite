@@ -420,28 +420,28 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_b41e7360{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_b41e7360{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_b41e7360{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_b41e7360::-webkit-scrollbar{height:8px}.tilesContainer_b41e7360::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_b41e7360::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_b41e7360::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_b41e7360{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);overflow:hidden;padding:24px}.tileHeader_b41e7360{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_b41e7360{font-size:20px;line-height:1}.fileType_b41e7360{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_b41e7360{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_b41e7360,.tileTitle_b41e7360{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_b41e7360{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_b41e7360{align-items:center;display:flex;gap:12px;justify-content:center;margin-top:auto}.viewButton_b41e7360{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_b41e7360 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_b41e7360:hover:not(:disabled){background-color:#1565c0}.viewButton_b41e7360:active:not(:disabled){background-color:#0d47a1}.viewButton_b41e7360:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_b41e7360{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_b41e7360 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_b41e7360:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_b41e7360:active:not(:disabled){background-color:#e0e0e0}.downloadButton_b41e7360:disabled{cursor:not-allowed;opacity:.4}.loading_b41e7360,.noDocuments_b41e7360{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_b41e7360{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;max-width:calc(33.333% - 16px);min-width:calc(33.333% - 16px);padding:24px;transition:all .3s ease}.viewAllTile_b41e7360:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_b41e7360:active{transform:translateY(0)}.viewAllText_b41e7360{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_b41e7360,.viewAllModal_b41e7360{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBV0Esd0JBQUEsQ0FWQSxpQkFBQSxDQUVBLG1DQUFBLENBT0EscUJBQUEsQ0FGQSxZQUFBLENBSkEsNkJBQUEsQ0FLQSxxQkFBQSxDQUZBLFlBQUEsQ0FEQSw4QkFBQSxDQURBLDhCQUFBLENBT0EsZUFBQSxDQVZBLFlBVUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUdBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQVVFLGtCQUFBLENBS0EsMEJBQUEsQ0FkQSxtQ0FBQSxDQUNBLG9DQUFBLENBQ0EsaUJBQUEsQ0FTQSxxQkFBQSxDQUNBLGNBQUEsQ0FKQSxZQUFBLENBSkEsNkJBQUEsQ0FHQSxZQUFBLENBR0Esc0JBQUEsQ0FKQSw4QkFBQSxDQURBLDhCQUFBLENBRkEsWUFBQSxDQVVBLHVCQUNBLENBRUEsNEJBQ0UsbUNBQUEsQ0FDQSwrQkFBQSxDQUdGLDZCQUNFLHVCQUFBLENBSUosc0JBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxpQkFBQSxDQWNGLDZDQU9FLHdCQUFBLENBRkEsUUFBQSxDQUZBLE1BQUEsQ0FLQSxlQUFBLENBUEEsY0FBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBSUEsYUFFQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".questionSection_065bb524{background:linear-gradient(90deg,#ff6b9d 0,#c44569 30%,#6c5ce7 70%,#4834d4);box-sizing:border-box;font-family:Inter,sans-serif;padding:30px 40px;width:100%}.sectionTitle_065bb524{color:#fff;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin:0 auto 20px;max-width:1400px;text-align:left}.tilesContainer_065bb524{-webkit-overflow-scrolling:touch;display:flex;gap:24px;margin:0 auto;max-width:1400px;overflow-x:auto;overflow-y:hidden;padding-bottom:10px;scroll-behavior:smooth;scrollbar-color:hsla(0,0%,100%,.3) hsla(0,0%,100%,.1);scrollbar-width:thin}.tilesContainer_065bb524::-webkit-scrollbar{height:8px}.tilesContainer_065bb524::-webkit-scrollbar-track{background:hsla(0,0%,100%,.1);border-radius:4px}.tilesContainer_065bb524::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.3);border-radius:4px}.tilesContainer_065bb524::-webkit-scrollbar-thumb:hover{background:hsla(0,0%,100%,.5)}.tile_065bb524{background-color:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1);box-sizing:border-box;display:flex;flex:0 0 calc(33.333% - 16px);flex-direction:column;height:212px;overflow:hidden;padding:24px;width:300px}.tileHeader_065bb524{align-items:center;display:flex;gap:8px;margin-bottom:16px}.fileTypeIcon_065bb524{font-size:20px;line-height:1}.fileType_065bb524{color:#666;font-family:Inter,sans-serif;font-size:10px;font-weight:500}.tileTitle_065bb524{color:#333;font-size:16px;font-weight:600;line-height:1.4;margin:0 0 12px;white-space:nowrap}.tileAbstract_065bb524,.tileTitle_065bb524{font-family:Inter,sans-serif;overflow:hidden;text-overflow:ellipsis}.tileAbstract_065bb524{-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;color:#666;display:-webkit-box;font-size:12px;line-height:1.5;margin:0 0 20px;max-height:3em;min-height:3em;word-break:break-word}.tileActions_065bb524{align-items:center;display:flex;gap:12px;justify-content:center;margin-top:auto}.viewButton_065bb524{align-items:center;background-color:#1976d2;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-family:Inter,sans-serif;font-size:12px;font-weight:500;gap:6px;padding:10px 30px;transition:background-color .2s}.viewButton_065bb524 svg{stroke:currentColor;fill:none;height:16px;width:16px}.viewButton_065bb524:hover:not(:disabled){background-color:#1565c0}.viewButton_065bb524:active:not(:disabled){background-color:#0d47a1}.viewButton_065bb524:disabled{background-color:#ccc;cursor:not-allowed;opacity:.6}.downloadButton_065bb524{align-items:center;background-color:transparent;border:none;border-radius:4px;color:#666;cursor:pointer;display:flex;justify-content:center;padding:10px;transition:background-color .2s,color .2s}.downloadButton_065bb524 svg{stroke:currentColor;fill:none;height:16px;width:16px}.downloadButton_065bb524:hover:not(:disabled){background-color:#f5f5f5;color:#333}.downloadButton_065bb524:active:not(:disabled){background-color:#e0e0e0}.downloadButton_065bb524:disabled{cursor:not-allowed;opacity:.4}.loading_065bb524,.noDocuments_065bb524{color:#fff;font-family:Inter,sans-serif;font-size:12px;padding:40px;text-align:center}.viewAllTile_065bb524{align-items:center;backdrop-filter:blur(10px);background-color:hsla(0,0%,100%,.2);border:2px dashed hsla(0,0%,100%,.4);border-radius:8px;box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 calc(33.333% - 16px);height:212px;justify-content:center;padding:24px;transition:all .3s ease;width:300px}.viewAllTile_065bb524:hover{background-color:hsla(0,0%,100%,.3);border-color:hsla(0,0%,100%,.6)}.viewAllTile_065bb524:active{transform:translateY(0)}.viewAllText_065bb524{color:#fff;font-family:Inter,sans-serif;font-size:20px;font-weight:600;text-align:center}.detailModal_065bb524,.viewAllModal_065bb524{background-color:#f5f5f5;bottom:0;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:10000}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL1F1ZXN0aW9uU2VjdGlvbi9RdWVzdGlvblNlY3Rpb24ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBRUUsMkVBQUEsQ0FFQSxxQkFBQSxDQUNBLDRCQUFBLENBRkEsaUJBQUEsQ0FGQSxVQUlBLENBR0YsdUJBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FNQSxrQkFBQSxDQUZBLGdCQUFBLENBRkEsZUFJQSxDQUdGLHlCQVFFLGdDQUFBLENBUEEsWUFBQSxDQUNBLFFBQUEsQ0FFQSxhQUFBLENBREEsZ0JBQUEsQ0FFQSxlQUFBLENBQ0EsaUJBQUEsQ0FHQSxtQkFBQSxDQUZBLHNCQUFBLENBeUJBLHFEQUFBLENBREEsb0JBQ0EsQ0FwQkEsNENBQ0UsVUFBQSxDQUdGLGtEQUNFLDZCQUFBLENBQ0EsaUJBQUEsQ0FHRixrREFDRSw2QkFBQSxDQUNBLGlCQUFBLENBRUEsd0RBQ0UsNkJBQUEsQ0FTTixlQUNFLHFCQUFBLENBVUEsd0JBQUEsQ0FUQSxpQkFBQSxDQUVBLG1DQUFBLENBTUEscUJBQUEsQ0FGQSxZQUFBLENBSEEsNkJBQUEsQ0FJQSxxQkFBQSxDQUZBLFlBQUEsQ0FLQSxlQUFBLENBVEEsWUFBQSxDQUdBLFdBTUEsQ0FHRixxQkFFRSxrQkFBQSxDQURBLFlBQUEsQ0FFQSxPQUFBLENBQ0Esa0JBQUEsQ0FHRix1QkFDRSxjQUFBLENBQ0EsYUFBQSxDQUdGLG1CQUVFLFVBQUEsQ0FFQSw0QkFBQSxDQUhBLGNBQUEsQ0FFQSxlQUNBLENBR0Ysb0JBR0UsVUFBQSxDQUZBLGNBQUEsQ0FDQSxlQUFBLENBSUEsZUFBQSxDQUZBLGVBQUEsQ0FLQSxrQkFBQSxDQUdGLDJDQVBFLDRCQUFBLENBRUEsZUFBQSxDQUNBLHNCQWtCQSxDQWRGLHVCQVFFLG9CQUFBLENBQ0EsMkJBQUEsQ0FDQSxZQUFBLENBUkEsVUFBQSxDQUtBLG1CQUFBLENBTkEsY0FBQSxDQUlBLGVBQUEsQ0FGQSxlQUFBLENBVUEsY0FBQSxDQUNBLGNBQUEsQ0FGQSxxQkFFQSxDQUdGLHNCQUVFLGtCQUFBLENBREEsWUFBQSxDQUdBLFFBQUEsQ0FEQSxzQkFBQSxDQUVBLGVBQUEsQ0FHRixxQkFFRSxrQkFBQSxDQUVBLHdCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQU9BLGNBQUEsQ0FYQSxZQUFBLENBVUEsNEJBQUEsQ0FGQSxjQUFBLENBQ0EsZUFBQSxDQVBBLE9BQUEsQ0FLQSxpQkFBQSxDQUtBLCtCQUFBLENBRUEseUJBR0UsbUJBQUEsQ0FDQSxTQUFBLENBRkEsV0FBQSxDQURBLFVBR0EsQ0FHRiwwQ0FDRSx3QkFBQSxDQUdGLDJDQUNFLHdCQUFBLENBR0YsOEJBQ0UscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLFVBQUEsQ0FJSix5QkFFRSxrQkFBQSxDQUVBLDRCQUFBLENBRUEsV0FBQSxDQUNBLGlCQUFBLENBRkEsVUFBQSxDQUlBLGNBQUEsQ0FSQSxZQUFBLENBRUEsc0JBQUEsQ0FLQSxZQUFBLENBRUEseUNBQUEsQ0FFQSw2QkFHRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxXQUFBLENBREEsVUFHQSxDQUdGLDhDQUNFLHdCQUFBLENBQ0EsVUFBQSxDQUdGLCtDQUNFLHdCQUFBLENBR0Ysa0NBQ0Usa0JBQUEsQ0FDQSxVQUFBLENBSUosd0NBRUUsVUFBQSxDQUdBLDRCQUFBLENBREEsY0FBQSxDQUVBLFlBQUEsQ0FIQSxpQkFHQSxDQUdGLHNCQVNFLGtCQUFBLENBS0EsMEJBQUEsQ0FiQSxtQ0FBQSxDQUNBLG9DQUFBLENBQ0EsaUJBQUEsQ0FRQSxxQkFBQSxDQUNBLGNBQUEsQ0FKQSxZQUFBLENBSEEsNkJBQUEsQ0FFQSxZQUFBLENBR0Esc0JBQUEsQ0FOQSxZQUFBLENBU0EsdUJBQUEsQ0FQQSxXQVFBLENBRUEsNEJBQ0UsbUNBQUEsQ0FDQSwrQkFBQSxDQUdGLDZCQUNFLHVCQUFBLENBSUosc0JBQ0UsVUFBQSxDQUdBLDRCQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxpQkFBQSxDQWNGLDZDQU9FLHdCQUFBLENBRkEsUUFBQSxDQUZBLE1BQUEsQ0FLQSxlQUFBLENBUEEsY0FBQSxDQUdBLE9BQUEsQ0FGQSxLQUFBLENBSUEsYUFFQSIsImZpbGUiOiJRdWVzdGlvblNlY3Rpb24ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  questionSection_b41e7360: "questionSection_b41e7360",
-  sectionTitle_b41e7360: "sectionTitle_b41e7360",
-  tilesContainer_b41e7360: "tilesContainer_b41e7360",
-  tile_b41e7360: "tile_b41e7360",
-  tileHeader_b41e7360: "tileHeader_b41e7360",
-  fileTypeIcon_b41e7360: "fileTypeIcon_b41e7360",
-  fileType_b41e7360: "fileType_b41e7360",
-  tileTitle_b41e7360: "tileTitle_b41e7360",
-  tileAbstract_b41e7360: "tileAbstract_b41e7360",
-  tileActions_b41e7360: "tileActions_b41e7360",
-  viewButton_b41e7360: "viewButton_b41e7360",
-  downloadButton_b41e7360: "downloadButton_b41e7360",
-  loading_b41e7360: "loading_b41e7360",
-  noDocuments_b41e7360: "noDocuments_b41e7360",
-  viewAllTile_b41e7360: "viewAllTile_b41e7360",
-  viewAllText_b41e7360: "viewAllText_b41e7360",
-  viewAllModal_b41e7360: "viewAllModal_b41e7360",
-  detailModal_b41e7360: "detailModal_b41e7360"
+  questionSection_065bb524: "questionSection_065bb524",
+  sectionTitle_065bb524: "sectionTitle_065bb524",
+  tilesContainer_065bb524: "tilesContainer_065bb524",
+  tile_065bb524: "tile_065bb524",
+  tileHeader_065bb524: "tileHeader_065bb524",
+  fileTypeIcon_065bb524: "fileTypeIcon_065bb524",
+  fileType_065bb524: "fileType_065bb524",
+  tileTitle_065bb524: "tileTitle_065bb524",
+  tileAbstract_065bb524: "tileAbstract_065bb524",
+  tileActions_065bb524: "tileActions_065bb524",
+  viewButton_065bb524: "viewButton_065bb524",
+  downloadButton_065bb524: "downloadButton_065bb524",
+  loading_065bb524: "loading_065bb524",
+  noDocuments_065bb524: "noDocuments_065bb524",
+  viewAllTile_065bb524: "viewAllTile_065bb524",
+  viewAllText_065bb524: "viewAllText_065bb524",
+  viewAllModal_065bb524: "viewAllModal_065bb524",
+  detailModal_065bb524: "detailModal_065bb524"
 });
 
 
@@ -2819,24 +2819,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./QuestionSection.module.css */ 2408);
 var styles = {
-    questionSection: 'questionSection_b41e7360',
-    sectionTitle: 'sectionTitle_b41e7360',
-    tilesContainer: 'tilesContainer_b41e7360',
-    tile: 'tile_b41e7360',
-    tileHeader: 'tileHeader_b41e7360',
-    fileTypeIcon: 'fileTypeIcon_b41e7360',
-    fileType: 'fileType_b41e7360',
-    tileTitle: 'tileTitle_b41e7360',
-    tileAbstract: 'tileAbstract_b41e7360',
-    tileActions: 'tileActions_b41e7360',
-    viewButton: 'viewButton_b41e7360',
-    downloadButton: 'downloadButton_b41e7360',
-    loading: 'loading_b41e7360',
-    noDocuments: 'noDocuments_b41e7360',
-    viewAllTile: 'viewAllTile_b41e7360',
-    viewAllText: 'viewAllText_b41e7360',
-    viewAllModal: 'viewAllModal_b41e7360',
-    detailModal: 'detailModal_b41e7360'
+    questionSection: 'questionSection_065bb524',
+    sectionTitle: 'sectionTitle_065bb524',
+    tilesContainer: 'tilesContainer_065bb524',
+    tile: 'tile_065bb524',
+    tileHeader: 'tileHeader_065bb524',
+    fileTypeIcon: 'fileTypeIcon_065bb524',
+    fileType: 'fileType_065bb524',
+    tileTitle: 'tileTitle_065bb524',
+    tileAbstract: 'tileAbstract_065bb524',
+    tileActions: 'tileActions_065bb524',
+    viewButton: 'viewButton_065bb524',
+    downloadButton: 'downloadButton_065bb524',
+    loading: 'loading_065bb524',
+    noDocuments: 'noDocuments_065bb524',
+    viewAllTile: 'viewAllTile_065bb524',
+    viewAllText: 'viewAllText_065bb524',
+    viewAllModal: 'viewAllModal_065bb524',
+    detailModal: 'detailModal_065bb524'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -3169,7 +3169,7 @@ var DocumentDetailPage = function (props) {
         }
     }, [document, currentUserId]);
     var fetchDocumentDetails = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, generatedTags, error_1, webUrl_1, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_2, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_3, error_4;
+        var webUrl, libraryName, apiUrl, response, item, fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, documentDetail, storedTags, error_1;
         var _a, _b, _c, _d;
         return __generator(this, function (_e) {
             switch (_e.label) {
@@ -3180,10 +3180,10 @@ var DocumentDetailPage = function (props) {
                     }
                     _e.label = 1;
                 case 1:
-                    _e.trys.push([1, 29, 30, 31]);
+                    _e.trys.push([1, 4, , 5]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
-                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$expand=PerformedBy,File");
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(props.documentId, ")?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl,Tags&$expand=PerformedBy,File");
                     return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 2:
                     response = _e.sent();
@@ -3233,112 +3233,146 @@ var DocumentDetailPage = function (props) {
                         fileRef: item.FileRef || serverRelativeUrl
                     };
                     setDocument(documentDetail);
-                    if (!(props.tags && props.tags.length > 0)) return [3 /*break*/, 4];
-                    setTags(props.tags);
-                    return [3 /*break*/, 10];
+                    // Show page immediately - don't wait for tags or preview
+                    setLoading(false);
+                    storedTags = [];
+                    if (item.Tags) {
+                        try {
+                            if (typeof item.Tags === 'string') {
+                                if (item.Tags.startsWith('[')) {
+                                    storedTags = JSON.parse(item.Tags);
+                                }
+                                else {
+                                    storedTags = item.Tags.split(',').map(function (t) { return t.trim(); }).filter(function (t) { return t.length > 0; });
+                                }
+                            }
+                            else if (Array.isArray(item.Tags)) {
+                                storedTags = item.Tags;
+                            }
+                        }
+                        catch (error) {
+                            console.error('Error parsing tags:', error);
+                            storedTags = [];
+                        }
+                    }
+                    // Load tags asynchronously (non-blocking)
+                    if (props.tags && props.tags.length > 0) {
+                        setTags(props.tags);
+                    }
+                    else if (storedTags.length > 0) {
+                        setTags(storedTags);
+                    }
+                    else if (abstract && abstract.trim().length > 0) {
+                        // Generate tags asynchronously without blocking page render
+                        openAIService.current.generateTags(abstract).then(function (generatedTags) {
+                            setTags(generatedTags);
+                            // Save generated tags to SharePoint for future use
+                            saveTagsToSharePoint(props.documentId, generatedTags).catch(function (err) {
+                                console.error('Error saving tags:', err);
+                            });
+                        }).catch(function (error) {
+                            console.error('Error generating tags:', error);
+                            setTags([]);
+                        });
+                    }
+                    else {
+                        setTags([]);
+                    }
+                    // Generate preview URL asynchronously (non-blocking)
+                    if (serverRelativeUrl) {
+                        generatePreviewUrlAsync(serverRelativeUrl, fileExtension);
+                    }
+                    return [3 /*break*/, 5];
                 case 4:
-                    if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 9];
-                    _e.label = 5;
-                case 5:
-                    _e.trys.push([5, 7, , 8]);
-                    return [4 /*yield*/, openAIService.current.generateTags(abstract)];
-                case 6:
-                    generatedTags = _e.sent();
-                    setTags(generatedTags);
-                    return [3 /*break*/, 8];
-                case 7:
                     error_1 = _e.sent();
-                    console.error('Error generating tags:', error_1);
-                    setTags([]);
-                    return [3 /*break*/, 8];
-                case 8: return [3 /*break*/, 10];
-                case 9:
-                    setTags([]);
-                    _e.label = 10;
-                case 10:
-                    if (!serverRelativeUrl) return [3 /*break*/, 28];
-                    webUrl_1 = props.context.pageContext.web.absoluteUrl;
+                    console.error('Error fetching document details:', error_1);
+                    setLoading(false);
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
+            }
+        });
+    }); };
+    var generatePreviewUrlAsync = function (serverRelativeUrl, fileExtension) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, fileUrl, fullFileUrl, encodedServerUrl, downloadUrl, fileResponse, blob, pdfBlob, blobUrl, error_2, downloadUrl, fileResponse, blob, svgBlob, blobUrl, error_3;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context)
+                        return [2 /*return*/];
+                    webUrl = props.context.pageContext.web.absoluteUrl;
                     fileUrl = serverRelativeUrl;
                     // Ensure proper server relative URL format
                     if (!fileUrl.startsWith('/')) {
                         fileUrl = "/".concat(fileUrl);
                     }
-                    fullFileUrl = "".concat(webUrl_1).concat(fileUrl);
-                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 11];
+                    fullFileUrl = "".concat(webUrl).concat(fileUrl);
+                    if (!(['docx', 'doc', 'pptx', 'ppt', 'xlsx', 'xls'].indexOf(fileExtension.toLowerCase()) !== -1)) return [3 /*break*/, 1];
                     encodedServerUrl = encodeURIComponent(fileUrl);
-                    setPreviewUrl("".concat(webUrl_1, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
-                    return [3 /*break*/, 28];
-                case 11:
-                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 19];
-                    _e.label = 12;
-                case 12:
-                    _e.trys.push([12, 17, , 18]);
-                    downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
+                    setPreviewUrl("".concat(webUrl, "/_layouts/15/WopiFrame.aspx?sourcedoc=").concat(encodedServerUrl, "&action=default"));
+                    return [3 /*break*/, 18];
+                case 1:
+                    if (!(fileExtension.toLowerCase() === 'pdf')) return [3 /*break*/, 9];
+                    _a.label = 2;
+                case 2:
+                    _a.trys.push([2, 7, , 8]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 13:
-                    fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 15];
+                case 3:
+                    fileResponse = _a.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 5];
                     return [4 /*yield*/, fileResponse.blob()];
-                case 14:
-                    blob = _e.sent();
+                case 4:
+                    blob = _a.sent();
                     pdfBlob = new Blob([blob], { type: 'application/pdf' });
                     blobUrl = window.URL.createObjectURL(pdfBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 16];
-                case 15:
+                    return [3 /*break*/, 6];
+                case 5:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 16;
-                case 16: return [3 /*break*/, 18];
-                case 17:
-                    error_2 = _e.sent();
+                    _a.label = 6;
+                case 6: return [3 /*break*/, 8];
+                case 7:
+                    error_2 = _a.sent();
                     console.error('Error fetching PDF for preview:', error_2);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 18];
-                case 18: return [3 /*break*/, 28];
-                case 19:
-                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 27];
-                    _e.label = 20;
-                case 20:
-                    _e.trys.push([20, 25, , 26]);
-                    downloadUrl = "".concat(webUrl_1, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
+                    return [3 /*break*/, 8];
+                case 8: return [3 /*break*/, 18];
+                case 9:
+                    if (!(fileExtension.toLowerCase() === 'svg')) return [3 /*break*/, 17];
+                    _a.label = 10;
+                case 10:
+                    _a.trys.push([10, 15, , 16]);
+                    downloadUrl = "".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(encodeURIComponent(fileUrl), "')/$value");
                     return [4 /*yield*/, props.context.spHttpClient.get(downloadUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
-                case 21:
-                    fileResponse = _e.sent();
-                    if (!fileResponse.ok) return [3 /*break*/, 23];
+                case 11:
+                    fileResponse = _a.sent();
+                    if (!fileResponse.ok) return [3 /*break*/, 13];
                     return [4 /*yield*/, fileResponse.blob()];
-                case 22:
-                    blob = _e.sent();
+                case 12:
+                    blob = _a.sent();
                     svgBlob = new Blob([blob], { type: 'image/svg+xml' });
                     blobUrl = window.URL.createObjectURL(svgBlob);
                     setPreviewUrl(blobUrl);
-                    return [3 /*break*/, 24];
-                case 23:
+                    return [3 /*break*/, 14];
+                case 13:
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 24;
-                case 24: return [3 /*break*/, 26];
-                case 25:
-                    error_3 = _e.sent();
+                    _a.label = 14;
+                case 14: return [3 /*break*/, 16];
+                case 15:
+                    error_3 = _a.sent();
                     console.error('Error fetching SVG for preview:', error_3);
                     // Fallback to direct URL
                     setPreviewUrl(fullFileUrl);
-                    return [3 /*break*/, 26];
-                case 26: return [3 /*break*/, 28];
-                case 27:
+                    return [3 /*break*/, 16];
+                case 16: return [3 /*break*/, 18];
+                case 17:
                     // For other files, try direct URL
                     setPreviewUrl(fullFileUrl);
-                    _e.label = 28;
-                case 28: return [3 /*break*/, 31];
-                case 29:
-                    error_4 = _e.sent();
-                    console.error('Error fetching document details:', error_4);
-                    return [3 /*break*/, 31];
-                case 30:
-                    setLoading(false);
-                    return [7 /*endfinally*/];
-                case 31: return [2 /*return*/];
+                    _a.label = 18;
+                case 18: return [2 /*return*/];
             }
         });
     }); };
@@ -3359,7 +3393,7 @@ var DocumentDetailPage = function (props) {
         return '📎';
     };
     var handleDownload = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_5;
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, error_4;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3392,8 +3426,8 @@ var DocumentDetailPage = function (props) {
                     _a.label = 4;
                 case 4: return [3 /*break*/, 6];
                 case 5:
-                    error_5 = _a.sent();
-                    console.error('Download error:', error_5);
+                    error_4 = _a.sent();
+                    console.error('Download error:', error_4);
                     return [3 /*break*/, 6];
                 case 6: return [2 /*return*/];
             }
@@ -3425,7 +3459,7 @@ var DocumentDetailPage = function (props) {
         }
     };
     var fetchCurrentUser = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, response, user, error_6;
+        var webUrl, response, user, error_5;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3447,15 +3481,15 @@ var DocumentDetailPage = function (props) {
                     _a.label = 4;
                 case 4: return [3 /*break*/, 6];
                 case 5:
-                    error_6 = _a.sent();
-                    console.error('Error fetching current user:', error_6);
+                    error_5 = _a.sent();
+                    console.error('Error fetching current user:', error_5);
                     return [3 /*break*/, 6];
                 case 6: return [2 /*return*/];
             }
         });
     }); };
     var ensureListExists = function (listName, fields) { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, checkResp, createListBody, createResp, errorText, listData, listId, _i, fields_1, field, fieldBody, fieldResp, errorText, fieldError_1, error_7;
+        var webUrl, checkResp, createListBody, createResp, errorText, listData, listId, _i, fields_1, field, fieldBody, fieldResp, errorText, fieldError_1, error_6;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3570,15 +3604,15 @@ var DocumentDetailPage = function (props) {
                     return [3 /*break*/, 8];
                 case 17: return [2 /*return*/, true];
                 case 18:
-                    error_7 = _a.sent();
-                    console.error("Error ensuring list \"".concat(listName, "\" exists:"), error_7);
+                    error_6 = _a.sent();
+                    console.error("Error ensuring list \"".concat(listName, "\" exists:"), error_6);
                     return [2 /*return*/, false];
                 case 19: return [2 /*return*/];
             }
         });
     }); };
     var fetchLikes = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, listName, response, data, likes, error_8;
+        var webUrl, listName, response, data, likes, error_7;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3607,7 +3641,7 @@ var DocumentDetailPage = function (props) {
                     _a.label = 5;
                 case 5: return [3 /*break*/, 7];
                 case 6:
-                    error_8 = _a.sent();
+                    error_7 = _a.sent();
                     // List doesn't exist or other error - set defaults
                     setLikeCount(0);
                     setIsLiked(false);
@@ -3617,7 +3651,7 @@ var DocumentDetailPage = function (props) {
         });
     }); };
     var fetchComments = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, listName, response, data, commentsData, countResponse, countData, error_9;
+        var webUrl, listName, response, data, commentsData, countResponse, countData, error_8;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3661,9 +3695,9 @@ var DocumentDetailPage = function (props) {
                     _a.label = 9;
                 case 9: return [3 /*break*/, 11];
                 case 10:
-                    error_9 = _a.sent();
+                    error_8 = _a.sent();
                     // List doesn't exist or other error - set defaults
-                    console.error('Error fetching comments:', error_9);
+                    console.error('Error fetching comments:', error_8);
                     setComments([]);
                     setCommentCount(0);
                     return [3 /*break*/, 11];
@@ -3672,7 +3706,7 @@ var DocumentDetailPage = function (props) {
         });
     }); };
     var toggleLike = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, listName, findResponse, findData, likeId, listInfoResp, listInfo, entityType, body, error_10;
+        var webUrl, listName, findResponse, findData, likeId, listInfoResp, listInfo, entityType, body, error_9;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3736,15 +3770,15 @@ var DocumentDetailPage = function (props) {
                     _a.label = 11;
                 case 11: return [3 /*break*/, 13];
                 case 12:
-                    error_10 = _a.sent();
-                    console.error('Error toggling like:', error_10);
+                    error_9 = _a.sent();
+                    console.error('Error toggling like:', error_9);
                     return [3 /*break*/, 13];
                 case 13: return [2 /*return*/];
             }
         });
     }); };
     var addComment = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, listName, listExists, listInfoResp, errorText, listInfo, entityType, body, postResp, errorText, error_11;
+        var webUrl, listName, listExists, listInfoResp, errorText, listInfo, entityType, body, postResp, errorText, error_10;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3829,8 +3863,8 @@ var DocumentDetailPage = function (props) {
                     _a.sent();
                     return [3 /*break*/, 12];
                 case 11:
-                    error_11 = _a.sent();
-                    console.error('Error adding comment:', error_11);
+                    error_10 = _a.sent();
+                    console.error('Error adding comment:', error_10);
                     alert('An error occurred while adding the comment. Please try again.');
                     return [3 /*break*/, 12];
                 case 12: return [2 /*return*/];
@@ -3838,7 +3872,7 @@ var DocumentDetailPage = function (props) {
         });
     }); };
     var deleteComment = function (commentId) { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, listName, deleteResp, errorText, error_12;
+        var webUrl, listName, deleteResp, errorText, error_11;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -3876,11 +3910,66 @@ var DocumentDetailPage = function (props) {
                     _a.sent();
                     return [3 /*break*/, 7];
                 case 6:
-                    error_12 = _a.sent();
-                    console.error('Error deleting comment:', error_12);
+                    error_11 = _a.sent();
+                    console.error('Error deleting comment:', error_11);
                     alert('An error occurred while deleting the comment. Please try again.');
                     return [3 /*break*/, 7];
                 case 7: return [2 /*return*/];
+            }
+        });
+    }); };
+    var saveTagsToSharePoint = function (itemId, tags) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, listInfoResp, listInfo, entityType, tagsJson, updateBody, updateResp, error_12;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !tags || tags.length === 0)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, , 6]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    listInfoResp = _a.sent();
+                    if (!listInfoResp.ok) {
+                        console.error('Failed to get list info for saving tags');
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 3:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    tagsJson = JSON.stringify(tags);
+                    updateBody = {
+                        __metadata: { type: entityType },
+                        Tags: tagsJson
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(updateBody)
+                        })];
+                case 4:
+                    updateResp = _a.sent();
+                    if (!updateResp.ok) {
+                        console.error("Failed to save tags for document ".concat(itemId, ":"), updateResp.status);
+                    }
+                    else {
+                        console.log("Tags saved for document ".concat(itemId, ":"), tags);
+                    }
+                    return [3 /*break*/, 6];
+                case 5:
+                    error_12 = _a.sent();
+                    console.error("Error saving tags for document ".concat(itemId, ":"), error_12);
+                    return [3 /*break*/, 6];
+                case 6: return [2 /*return*/];
             }
         });
     }); };
@@ -3983,7 +4072,7 @@ var DocumentDetailPage = function (props) {
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
                                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
                                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "7", y1: "7", x2: "7.01", y2: "7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })),
-                                "Tags"),
+                                "Meta Tags"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tagsContainer }, tags.map(function (tag, index) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { key: index, className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].tag }, tag)); })))),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarSection },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _DocumentDetailPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].sidebarTitle }, "Document Information"),
@@ -4262,6 +4351,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/AzureOpenAIService */ 1651);
 /* harmony import */ var _ViewAllDocumentsPage_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ViewAllDocumentsPage.module.scss */ 9902);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -4311,12 +4411,19 @@ var AZURE_OPENAI_CONFIG = {
 var ViewAllDocumentsPage = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__.useState([]), documents = _a[0], setDocuments = _a[1];
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(true), loading = _b[0], setLoading = _b[1];
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(false), tagsLoading = _c[0], setTagsLoading = _c[1];
     var openAIService = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new _services_AzureOpenAIService__WEBPACK_IMPORTED_MODULE_2__.AzureOpenAIService(AZURE_OPENAI_CONFIG));
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         if (props.context) {
             fetchAllDocuments();
         }
     }, [props.context]);
+    // Load tags asynchronously after documents are displayed
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
+        if (documents.length > 0 && documents.some(function (doc) { return doc.tags.length === 0 && doc.abstract; })) {
+            loadTagsAsync();
+        }
+    }, [documents.length]);
     var fetchAllDocuments = function () { return __awaiter(void 0, void 0, void 0, function () {
         var webUrl, libraryName, apiUrl, response, data, items, processedDocuments, error_1;
         return __generator(this, function (_a) {
@@ -4328,10 +4435,10 @@ var ViewAllDocumentsPage = function (props) {
                     }
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 5, 6, 7]);
+                    _a.trys.push([1, 4, , 5]);
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     libraryName = 'KMArtifacts';
-                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc");
+                    apiUrl = "".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl,Tags&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc");
                     return [4 /*yield*/, props.context.spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 2:
                     response = _a.sent();
@@ -4342,82 +4449,203 @@ var ViewAllDocumentsPage = function (props) {
                 case 3:
                     data = _a.sent();
                     items = data.value || [];
-                    return [4 /*yield*/, Promise.all(items.map(function (item) { return __awaiter(void 0, void 0, void 0, function () {
-                            var fileName, fileExtension, displayName, abstract, author, formattedDate, date, fileSize, bytes, serverRelativeUrl, tags, error_2;
-                            var _a, _b, _c, _d;
-                            return __generator(this, function (_e) {
-                                switch (_e.label) {
-                                    case 0:
-                                        fileName = item.FileLeafRef || item.TitleName || item.Title || '';
-                                        fileExtension = ((_a = fileName.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toUpperCase()) || '';
-                                        displayName = fileName || item.Title || "Document ".concat(item.Id);
-                                        abstract = item.Abstract || '';
-                                        author = ((_b = item.PerformedBy) === null || _b === void 0 ? void 0 : _b.Title) || ((_c = item.PerformedBy) === null || _c === void 0 ? void 0 : _c.Name) || item.PerformedBy || 'Unknown';
-                                        formattedDate = '';
-                                        if (item.TimeStamp) {
-                                            date = new Date(item.TimeStamp);
-                                            formattedDate = date.toLocaleDateString('en-GB', {
-                                                day: '2-digit',
-                                                month: '2-digit',
-                                                year: 'numeric'
-                                            });
-                                        }
-                                        fileSize = '';
-                                        if (item.File && item.File.Length) {
-                                            bytes = item.File.Length;
-                                            if (bytes < 1024) {
-                                                fileSize = "".concat(bytes, " B");
-                                            }
-                                            else if (bytes < 1024 * 1024) {
-                                                fileSize = "".concat((bytes / 1024).toFixed(1), " KB");
-                                            }
-                                            else {
-                                                fileSize = "".concat((bytes / (1024 * 1024)).toFixed(1), " MB");
-                                            }
-                                        }
-                                        serverRelativeUrl = item.FileRef || ((_d = item.File) === null || _d === void 0 ? void 0 : _d.ServerRelativeUrl) || '';
-                                        tags = [];
-                                        if (!(abstract && abstract.trim().length > 0)) return [3 /*break*/, 4];
-                                        _e.label = 1;
-                                    case 1:
-                                        _e.trys.push([1, 3, , 4]);
-                                        return [4 /*yield*/, openAIService.current.generateTags(abstract)];
-                                    case 2:
-                                        tags = _e.sent();
-                                        return [3 /*break*/, 4];
-                                    case 3:
-                                        error_2 = _e.sent();
-                                        console.error('Error generating tags:', error_2);
-                                        tags = [];
-                                        return [3 /*break*/, 4];
-                                    case 4: return [2 /*return*/, {
-                                            id: item.Id,
-                                            name: displayName,
-                                            abstract: abstract,
-                                            fileType: fileExtension,
-                                            author: author,
-                                            date: formattedDate,
-                                            fileSize: fileSize,
-                                            serverRelativeUrl: serverRelativeUrl,
-                                            fileRef: item.FileRef || serverRelativeUrl,
-                                            tags: tags
-                                        }];
-                                }
+                    processedDocuments = items.map(function (item) {
+                        var _a, _b, _c, _d;
+                        var fileName = item.FileLeafRef || item.TitleName || item.Title || '';
+                        var fileExtension = ((_a = fileName.split('.').pop()) === null || _a === void 0 ? void 0 : _a.toUpperCase()) || '';
+                        var displayName = fileName || item.Title || "Document ".concat(item.Id);
+                        var abstract = item.Abstract || '';
+                        // Get author from PerformedBy (person field)
+                        var author = ((_b = item.PerformedBy) === null || _b === void 0 ? void 0 : _b.Title) || ((_c = item.PerformedBy) === null || _c === void 0 ? void 0 : _c.Name) || item.PerformedBy || 'Unknown';
+                        // Format date from TimeStamp
+                        var formattedDate = '';
+                        if (item.TimeStamp) {
+                            var date = new Date(item.TimeStamp);
+                            formattedDate = date.toLocaleDateString('en-GB', {
+                                day: '2-digit',
+                                month: '2-digit',
+                                year: 'numeric'
                             });
-                        }); }))];
-                case 4:
-                    processedDocuments = _a.sent();
+                        }
+                        // Get file size
+                        var fileSize = '';
+                        if (item.File && item.File.Length) {
+                            var bytes = item.File.Length;
+                            if (bytes < 1024) {
+                                fileSize = "".concat(bytes, " B");
+                            }
+                            else if (bytes < 1024 * 1024) {
+                                fileSize = "".concat((bytes / 1024).toFixed(1), " KB");
+                            }
+                            else {
+                                fileSize = "".concat((bytes / (1024 * 1024)).toFixed(1), " MB");
+                            }
+                        }
+                        var serverRelativeUrl = item.FileRef || ((_d = item.File) === null || _d === void 0 ? void 0 : _d.ServerRelativeUrl) || '';
+                        // Parse tags from SharePoint if they exist
+                        var tags = [];
+                        if (item.Tags) {
+                            try {
+                                // Tags might be stored as JSON string or comma-separated
+                                if (typeof item.Tags === 'string') {
+                                    if (item.Tags.startsWith('[')) {
+                                        tags = JSON.parse(item.Tags);
+                                    }
+                                    else {
+                                        tags = item.Tags.split(',').map(function (t) { return t.trim(); }).filter(function (t) { return t.length > 0; });
+                                    }
+                                }
+                                else if (Array.isArray(item.Tags)) {
+                                    tags = item.Tags;
+                                }
+                            }
+                            catch (error) {
+                                console.error('Error parsing tags for document', item.Id, error);
+                                tags = [];
+                            }
+                        }
+                        return {
+                            id: item.Id,
+                            name: displayName,
+                            abstract: abstract,
+                            fileType: fileExtension,
+                            author: author,
+                            date: formattedDate,
+                            fileSize: fileSize,
+                            serverRelativeUrl: serverRelativeUrl,
+                            fileRef: item.FileRef || serverRelativeUrl,
+                            tags: tags // Use stored tags if available
+                        };
+                    });
+                    // Show documents immediately
                     setDocuments(processedDocuments);
-                    return [3 /*break*/, 7];
-                case 5:
+                    setLoading(false);
+                    // Start loading tags asynchronously
+                    loadTagsAsync(processedDocuments);
+                    return [3 /*break*/, 5];
+                case 4:
                     error_1 = _a.sent();
                     console.error('Error fetching documents:', error_1);
                     setDocuments([]);
-                    return [3 /*break*/, 7];
-                case 6:
                     setLoading(false);
-                    return [7 /*endfinally*/];
-                case 7: return [2 /*return*/];
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
+            }
+        });
+    }); };
+    var loadTagsAsync = function (docs) { return __awaiter(void 0, void 0, void 0, function () {
+        var documentsToProcess, documentsNeedingTags, batchSize, i, batch;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    documentsToProcess = docs || documents;
+                    documentsNeedingTags = documentsToProcess.filter(function (doc) {
+                        return doc.tags.length === 0 && doc.abstract && doc.abstract.trim().length > 0;
+                    });
+                    if (documentsNeedingTags.length === 0)
+                        return [2 /*return*/];
+                    setTagsLoading(true);
+                    batchSize = 5;
+                    i = 0;
+                    _a.label = 1;
+                case 1:
+                    if (!(i < documentsNeedingTags.length)) return [3 /*break*/, 5];
+                    batch = documentsNeedingTags.slice(i, i + batchSize);
+                    return [4 /*yield*/, Promise.all(batch.map(function (doc) { return __awaiter(void 0, void 0, void 0, function () {
+                            var tags_1, error_2;
+                            return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0:
+                                        _a.trys.push([0, 3, , 4]);
+                                        return [4 /*yield*/, openAIService.current.generateTags(doc.abstract)];
+                                    case 1:
+                                        tags_1 = _a.sent();
+                                        // Save tags to SharePoint
+                                        return [4 /*yield*/, saveTagsToSharePoint(doc.id, tags_1)];
+                                    case 2:
+                                        // Save tags to SharePoint
+                                        _a.sent();
+                                        // Update the specific document with tags
+                                        setDocuments(function (prev) { return prev.map(function (d) {
+                                            return d.id === doc.id ? __assign(__assign({}, d), { tags: tags_1 }) : d;
+                                        }); });
+                                        return [3 /*break*/, 4];
+                                    case 3:
+                                        error_2 = _a.sent();
+                                        console.error("Error generating tags for document ".concat(doc.id, ":"), error_2);
+                                        return [3 /*break*/, 4];
+                                    case 4: return [2 /*return*/];
+                                }
+                            });
+                        }); }))];
+                case 2:
+                    _a.sent();
+                    if (!(i + batchSize < documentsNeedingTags.length)) return [3 /*break*/, 4];
+                    return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, 100); })];
+                case 3:
+                    _a.sent();
+                    _a.label = 4;
+                case 4:
+                    i += batchSize;
+                    return [3 /*break*/, 1];
+                case 5:
+                    setTagsLoading(false);
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    var saveTagsToSharePoint = function (itemId, tags) { return __awaiter(void 0, void 0, void 0, function () {
+        var webUrl, libraryName, listInfoResp, listInfo, entityType, tagsJson, updateBody, updateResp, error_3;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!props.context || !tags || tags.length === 0)
+                        return [2 /*return*/];
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 5, , 6]);
+                    webUrl = props.context.pageContext.web.absoluteUrl;
+                    libraryName = 'KMArtifacts';
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 2:
+                    listInfoResp = _a.sent();
+                    if (!listInfoResp.ok) {
+                        console.error('Failed to get list info for saving tags');
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, listInfoResp.json()];
+                case 3:
+                    listInfo = _a.sent();
+                    entityType = listInfo.ListItemEntityTypeFullName;
+                    tagsJson = JSON.stringify(tags);
+                    updateBody = {
+                        __metadata: { type: entityType },
+                        Tags: tagsJson
+                    };
+                    return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(libraryName, "')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
+                            headers: {
+                                "Accept": "application/json;odata=verbose",
+                                "Content-Type": "application/json;odata=verbose",
+                                "IF-MATCH": "*",
+                                "X-HTTP-Method": "MERGE",
+                                "odata-version": ""
+                            },
+                            body: JSON.stringify(updateBody)
+                        })];
+                case 4:
+                    updateResp = _a.sent();
+                    if (!updateResp.ok) {
+                        console.error("Failed to save tags for document ".concat(itemId, ":"), updateResp.status);
+                    }
+                    else {
+                        console.log("Tags saved for document ".concat(itemId, ":"), tags);
+                    }
+                    return [3 /*break*/, 6];
+                case 5:
+                    error_3 = _a.sent();
+                    console.error("Error saving tags for document ".concat(itemId, ":"), error_3);
+                    return [3 /*break*/, 6];
+                case 6: return [2 /*return*/];
             }
         });
     }); };
@@ -4441,7 +4669,7 @@ var ViewAllDocumentsPage = function (props) {
         props.onViewDocument(documentId, tags);
     };
     var handleDownload = function (item) { return __awaiter(void 0, void 0, void 0, function () {
-        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_3, fileUrl;
+        var webUrl, serverRelativeUrl, downloadUrl, response, blob, url, link, fileUrl, error_4, fileUrl;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -4477,8 +4705,8 @@ var ViewAllDocumentsPage = function (props) {
                     _a.label = 5;
                 case 5: return [3 /*break*/, 7];
                 case 6:
-                    error_3 = _a.sent();
-                    console.error('Download error:', error_3);
+                    error_4 = _a.sent();
+                    console.error('Download error:', error_4);
                     fileUrl = "".concat(webUrl).concat(serverRelativeUrl);
                     window.open(fileUrl, '_blank');
                     return [3 /*break*/, 7];
@@ -4692,11 +4920,11 @@ var AzureOpenAIService = /** @class */ (function () {
      */
     AzureOpenAIService.prototype.extractMetadata = function (documentText) {
         return __awaiter(this, void 0, void 0, function () {
-            var emailRegex, foundEmails, chunkSize, chunks, error_1;
+            var emailRegex, foundEmails, chunkSize, result, validatedResult, chunks, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 4, , 5]);
+                        _a.trys.push([0, 5, , 6]);
                         // Log the extracted text for debugging
                         console.log('=== DOCUMENT TEXT EXTRACTED ===');
                         console.log('Total length:', documentText.length, 'characters');
@@ -4710,11 +4938,16 @@ var AzureOpenAIService = /** @class */ (function () {
                             console.log('Emails:', foundEmails);
                         }
                         chunkSize = 15000;
-                        if (!(documentText.length <= chunkSize)) return [3 /*break*/, 2];
+                        if (!(documentText.length <= chunkSize)) return [3 /*break*/, 3];
                         console.log('=== PROCESSING AS SINGLE CHUNK ===');
                         return [4 /*yield*/, this.processSingleChunk(documentText)];
-                    case 1: return [2 /*return*/, _a.sent()];
+                    case 1:
+                        result = _a.sent();
+                        return [4 /*yield*/, this.validateAndRetryIfNeeded(result, [documentText])];
                     case 2:
+                        validatedResult = _a.sent();
+                        return [2 /*return*/, validatedResult];
+                    case 3:
                         // Otherwise, use chunked processing
                         console.log('=== PROCESSING WITH CHUNKED METHOD ===');
                         console.log('Document length:', documentText.length, 'characters');
@@ -4722,12 +4955,12 @@ var AzureOpenAIService = /** @class */ (function () {
                         chunks = this.splitIntoChunks(documentText, chunkSize);
                         console.log('Number of chunks:', chunks.length);
                         return [4 /*yield*/, this.processChunks(chunks)];
-                    case 3: return [2 /*return*/, _a.sent()];
-                    case 4:
+                    case 4: return [2 /*return*/, _a.sent()];
+                    case 5:
                         error_1 = _a.sent();
                         console.error('Error extracting metadata:', error_1);
                         throw error_1;
-                    case 5: return [2 /*return*/];
+                    case 6: return [2 /*return*/];
                 }
             });
         });
@@ -4735,14 +4968,23 @@ var AzureOpenAIService = /** @class */ (function () {
     /**
      * Build the prompt for metadata extraction
      */
-    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText) {
+    AzureOpenAIService.prototype.buildExtractionPrompt = function (documentText, chunkContext) {
         var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
         var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
         var diseaseAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DISEASE_AREAS.join('\n- ');
         var therapyAreaList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_THERAPY_AREAS.join('\n- ');
         var regionList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_REGIONS.join('\n- ');
         var documentTypeList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DOCUMENT_TYPES.join('\n- ');
-        return "You are an expert document analyzer. Analyze the following document and extract structured information. You MUST be thorough and accurate.\n\nCRITICAL EXTRACTION RULES:\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.)\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY**: The document title, main heading, or document name. If no explicit title exists, create a descriptive title based on the main topic or first major heading. NEVER leave this empty.\n\n2. documentType - **MANDATORY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):\n- ".concat(documentTypeList, "\nCarefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = \"Deck\", training content = \"Training\", FAQ format = \"Frequently Asked Questions (FAQs)\", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list.\n\n3. bu - **MANDATORY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(buList, "\nIf not explicitly mentioned, analyze the document content, department references, project descriptions, or team mentions to infer the most likely Business Unit. NEVER leave empty - always match to the closest value.\n\n4. department - **MANDATORY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nIf not explicitly mentioned, analyze the document content, team names, functional areas, work descriptions, or project context to infer the most likely Department. NEVER leave empty - always match to the closest value.\n\n5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):\n- ").concat(regionList, "\nLook for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string \"\".\n\n6. client - **COMPANY NAME ONLY**: Client name or organization. This field should ONLY contain company names, business entities, or organization names. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty.\n\n7. abstract - **MANDATORY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. MUST provide a summary even if brief. NEVER leave empty.\n\n8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(diseaseAreaList, "\nCarefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string \"\".\n\n9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(therapyAreaList, "\nCarefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string \"\".\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple)\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned\n\nDocument text:\n").concat(documentText, "\n\nReturn only valid JSON in this format (use empty string \"\" for fields not found):\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
+        var contextNote = '';
+        if (chunkContext && chunkContext.totalChunks && chunkContext.totalChunks > 1) {
+            contextNote = "\n\n**IMPORTANT: This is chunk ".concat(chunkContext.chunkIndex || 1, " of ").concat(chunkContext.totalChunks, ".** ");
+            if (chunkContext.previousFindings) {
+                var prev = chunkContext.previousFindings;
+                contextNote += "Previous chunks found: ".concat(prev.title ? "title=\"".concat(prev.title, "\"") : '', " ").concat(prev.documentType ? "documentType=\"".concat(prev.documentType, "\"") : '', " ").concat(prev.bu ? "bu=\"".concat(prev.bu, "\"") : '', " ").concat(prev.department ? "department=\"".concat(prev.department, "\"") : '', ". ");
+            }
+            contextNote += "Extract information from THIS chunk. If mandatory fields are missing from previous chunks, extract them from this chunk.";
+        }
+        return "You are an expert document analyzer. Analyze the following document text and extract structured information. You MUST be thorough, accurate, and NEVER leave mandatory fields empty.\n\n**CRITICAL RULES - READ CAREFULLY:**\n\n1. **NEVER HALLUCINATE**: Only extract information that is ACTUALLY PRESENT in the document text below. Do NOT make up, infer, or guess information that is not explicitly or clearly implied in the document. If information is not found, use empty string \"\" for optional fields, but ALWAYS fill mandatory fields.\n\n2. **MANDATORY FIELDS ARE ABSOLUTELY REQUIRED**: The following fields MUST ALWAYS have a value - they can NEVER be empty strings:\n   - title: MUST extract a title from the document. If no explicit title exists, use the first heading, first line, document name, or create a descriptive title based on the main topic visible in the text.\n   - documentType: MUST identify the document type from content structure or explicitly stated type.\n   - bu (Business Unit): MUST match to one of the allowed values below, even if you need to infer from context.\n   - department: MUST match to one of the allowed values below, even if you need to infer from context.\n   - abstract: MUST create a brief summary (1-2 sentences) describing what the document is about.\n\n3. **SCAN EVERY CHARACTER**: Read the ENTIRE document text carefully. Do not skip any part. Look in headers, footers, titles, body text, signatures, and all sections.\n\n".concat(contextNote, "\n\n**MANDATORY FIELDS (MUST ALWAYS BE FILLED - NEVER LEAVE BLANK):**\n- title: MUST extract a title. If no explicit title exists, use the first heading, document name, or create a descriptive title based on the main topic\n- documentType: MUST identify the document type. Look at file format, content structure, or explicitly stated type. Common types: \"PPTX\", \"PDF\", \"Word Document\", \"Report\", \"Proposal\", \"Presentation\", \"White Paper\", \"Case Study\", \"Training Material\", etc.\n- bu (Business Unit): MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (department names, project descriptions, team mentions, etc.)\n- department: MUST find and match to one of the allowed values below. If not explicitly mentioned, infer from context (team names, functional areas, work descriptions, etc.)\n- abstract: MUST create a brief summary (1-2 sentences) describing what the document is about, its purpose, or main content\n\n**CONDITIONAL FIELDS (ONLY FILL IF FOUND IN DOCUMENT - DO NOT HALLUCINATE):**\n- region: ONLY if a geographic region is explicitly mentioned (e.g., \"North America\", \"Europe\", \"Asia\", \"APAC\", \"EMEA\", etc.). If not found, use \"\".\n- client: ONLY if a COMPANY NAME or ORGANIZATION NAME is mentioned. This should be a business entity, not a person's name, department, or internal team. Look for company names, client organizations, customer names, partner companies. If you find a person's name but not a company, leave this empty.\n\n**COLLECTION FIELDS (EXTRACT ALL INSTANCES FROM DOCUMENT):**\n- emails: Extract EVERY email address found (even if 100+). Look carefully throughout the entire document.\n- phones: Extract EVERY phone number found (even if 100+). Include all formats.\n- ids: Extract all ID numbers, reference numbers, document IDs, case numbers, etc.\n- pricing: Extract all pricing, cost, financial, or monetary information\n\nFields to extract:\n\n1. title - **MANDATORY - NEVER EMPTY**: The document title, main heading, or document name. Read the document carefully from the beginning. Look for:\n   - Explicit title lines\n   - First major heading\n   - Document name or filename references\n   - First line of significant text\n   If no explicit title exists, create a descriptive title based on the main topic visible in the text. NEVER return empty string for this field.\n\n2. documentType - **MANDATORY - NEVER EMPTY**: Document Type. MUST be one of these exact values (match the closest one based on the document's content, structure, and context):\n- ").concat(documentTypeList, "\nCarefully read and understand the entire document. Analyze the content structure, format, purpose, and context. Look for explicit document type mentions, or infer from the document's structure (e.g., slides = \"Deck\", training content = \"Training\", FAQ format = \"Frequently Asked Questions (FAQs)\", etc.). Match to the closest value from the list above. This field MUST always be filled - if no exact match can be found, choose the most appropriate category from the list. NEVER return empty string.\n\n3. bu - **MANDATORY - NEVER EMPTY**: Business Unit. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(buList, "\nRead the entire document carefully. Look for department names, project descriptions, team mentions, company divisions, or organizational references. If not explicitly mentioned, analyze the document content to infer the most likely Business Unit. NEVER leave empty - always match to the closest value from the list above.\n\n4. department - **MANDATORY - NEVER EMPTY**: Department. MUST be one of these exact values (match the closest one, or infer from context):\n- ").concat(deptList, "\nRead the entire document carefully. Look for team names, functional areas, work descriptions, project context, or department references. If not explicitly mentioned, analyze the document content to infer the most likely Department. NEVER leave empty - always match to the closest value from the list above.\n\n5. region - Geographic region. ONLY fill if a geographic region is explicitly mentioned in the document. MUST be one of these exact values (match the closest one):\n- ").concat(regionList, "\nLook for mentions of regions, countries, or geographic areas. Match to the closest value from the list above. If no region is mentioned or cannot be inferred, use empty string \"\".\n\n6. client - **COMPANY NAME ONLY - DO NOT HALLUCINATE**: Client name or organization. This field should ONLY contain company names, business entities, or organization names that are ACTUALLY MENTIONED in the document. Do NOT include:\n- Person names (unless it's clearly a company name like \"John's Consulting LLC\")\n- Internal departments or teams\n- Generic terms like \"the client\" or \"our customer\"\n- Project names that aren't company names\nLook for: company names, client organizations, customer companies, partner organizations, vendor names. If you find a person's name but no associated company, leave this empty. If you find \"the client\" or similar without a specific company name, leave empty. If no company name is found, use \"\".\n\n7. abstract - **MANDATORY - NEVER EMPTY**: A brief summary (1-2 sentences) describing what the document is about, its main purpose, key topics, or primary content. Read through the document and summarize its main content. MUST provide a summary even if brief. NEVER leave empty.\n\n8. diseaseArea - Disease Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(diseaseAreaList, "\nCarefully read and understand the entire document. Look for mentions of diseases, medical conditions, health conditions, or therapeutic areas. Match to the closest value from the list above. If no disease area is mentioned or cannot be inferred, use empty string \"\".\n\n9. therapyArea - Therapy Area. MUST be one of these exact values (match the closest one based on the document content):\n- ").concat(therapyAreaList, "\nCarefully read and understand the entire document. Look for mentions of medical specialties, therapeutic approaches, treatment areas, or clinical domains. Match to the closest value from the list above. If no therapy area is mentioned or cannot be inferred, use empty string \"\".\n\n10. emails - **CRITICAL: Extract ALL email addresses found in the document.** Look for patterns like \"text@domain.com\" or \"name@company.org\". Extract EVERY single email address you can find, even if there are 20, 50, or 100+. Do NOT skip any emails. Scan the ENTIRE document carefully, including headers, footers, signatures, and body text. Separate multiple emails with commas. Format: \"email1@example.com, email2@example.com, email3@example.com, ...\" If you find even one email, include it. If you find none, use empty string \"\".\n\n11. phones - **CRITICAL: Extract ALL phone numbers found in the document.** Look for patterns like \"+1-555-123-4567\", \"(555) 123-4567\", \"555-123-4567\", \"555.123.4567\", \"+44 20 1234 5678\", etc. Extract EVERY single phone number you can find, even if there are many. Include all formats (with/without country codes, with/without dashes, with/without parentheses, international formats). Separate multiple phones with commas. Format: \"+1-555-123-4567, 555-987-6543, ...\" If you find even one phone, include it. If you find none, use empty string \"\".\n\n12. ids - Any ID numbers, reference numbers, document IDs, case numbers, ticket numbers, or identifiers found (comma-separated if multiple). If none found, use \"\".\n\n13. pricing - Any pricing information, costs, financial terms, monetary values, budgets, or financial data mentioned. If none found, use \"\".\n\n**Document text to analyze:**\n").concat(documentText, "\n\n**IMPORTANT REMINDERS:**\n- Read EVERY character of the document text above\n- For MANDATORY fields (title, documentType, bu, department, abstract): NEVER return empty string \"\"\n- For OPTIONAL fields: Only fill if information is actually present in the document\n- DO NOT make up or invent information that is not in the document\n- Extract ALL instances of emails, phones, IDs, and pricing\n\nReturn only valid JSON in this format:\n{\n  \"title\": \"...\",\n  \"documentType\": \"...\",\n  \"bu\": \"...\",\n  \"department\": \"...\",\n  \"region\": \"...\",\n  \"client\": \"...\",\n  \"abstract\": \"...\",\n  \"diseaseArea\": \"...\",\n  \"therapyArea\": \"...\",\n  \"emails\": \"...\",\n  \"phones\": \"...\",\n  \"ids\": \"...\",\n  \"pricing\": \"...\"\n}");
     };
     /**
      * Sanitize and validate extracted metadata
@@ -4931,7 +5173,7 @@ var AzureOpenAIService = /** @class */ (function () {
     /**
      * Process a single chunk of text
      */
-    AzureOpenAIService.prototype.processSingleChunk = function (chunkText) {
+    AzureOpenAIService.prototype.processSingleChunk = function (chunkText, chunkContext) {
         var _a, _b, _c, _d;
         return __awaiter(this, void 0, void 0, function () {
             var prompt, response, errorText, errorMessage, errorJson, data, content, jsonMatch, jsonText, extracted, sanitized;
@@ -4940,7 +5182,10 @@ var AzureOpenAIService = /** @class */ (function () {
                     case 0:
                         console.log('=== PROCESSING SINGLE CHUNK ===');
                         console.log('Chunk length:', chunkText.length, 'characters');
-                        prompt = this.buildExtractionPrompt(chunkText);
+                        if (chunkContext) {
+                            console.log("Chunk ".concat(chunkContext.chunkIndex || 1, " of ").concat(chunkContext.totalChunks || 1));
+                        }
+                        prompt = this.buildExtractionPrompt(chunkText, chunkContext);
                         return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
                                 method: 'POST',
                                 headers: {
@@ -4951,14 +5196,14 @@ var AzureOpenAIService = /** @class */ (function () {
                                     messages: [
                                         {
                                             role: 'system',
-                                            content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks.'
+                                            content: 'You are an expert document analyzer. Extract structured information from documents and return it as valid JSON only, without any markdown formatting or code blocks. NEVER leave mandatory fields empty. Only extract information that is actually present in the document - do not make up or hallucinate information.'
                                         },
                                         {
                                             role: 'user',
                                             content: prompt
                                         }
                                     ],
-                                    temperature: 0.8,
+                                    temperature: 0.3,
                                     max_tokens: 2000
                                 })
                             })];
@@ -5016,12 +5261,13 @@ var AzureOpenAIService = /** @class */ (function () {
      */
     AzureOpenAIService.prototype.processChunks = function (chunks) {
         return __awaiter(this, void 0, void 0, function () {
-            var chunkResults, i, result, error_2, merged, finalResult;
+            var chunkResults, previousFindings, i, chunkContext, result, error_2, merged, finalResult, validatedResult;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         console.log('=== PROCESSING', chunks.length, 'CHUNKS ===');
                         chunkResults = [];
+                        previousFindings = {};
                         i = 0;
                         _a.label = 1;
                     case 1:
@@ -5030,10 +5276,24 @@ var AzureOpenAIService = /** @class */ (function () {
                         _a.label = 2;
                     case 2:
                         _a.trys.push([2, 4, , 5]);
-                        return [4 /*yield*/, this.processSingleChunk(chunks[i])];
+                        chunkContext = {
+                            chunkIndex: i + 1,
+                            totalChunks: chunks.length,
+                            previousFindings: i > 0 ? previousFindings : undefined
+                        };
+                        return [4 /*yield*/, this.processSingleChunk(chunks[i], chunkContext)];
                     case 3:
                         result = _a.sent();
                         chunkResults.push(result);
+                        // Update previous findings for next chunk
+                        if (result.title && !previousFindings.title)
+                            previousFindings.title = result.title;
+                        if (result.documentType && !previousFindings.documentType)
+                            previousFindings.documentType = result.documentType;
+                        if (result.bu && !previousFindings.bu)
+                            previousFindings.bu = result.bu;
+                        if (result.department && !previousFindings.department)
+                            previousFindings.department = result.department;
                         console.log("\u2713 Chunk ".concat(i + 1, " processed successfully"));
                         return [3 /*break*/, 5];
                     case 4:
@@ -5051,18 +5311,21 @@ var AzureOpenAIService = /** @class */ (function () {
                         console.log('=== MERGED RESULT (BEFORE FINAL SANITIZATION) ===');
                         console.log(JSON.stringify(merged, null, 2));
                         finalResult = this.sanitizeMetadata(merged);
+                        return [4 /*yield*/, this.validateAndRetryIfNeeded(finalResult, chunks)];
+                    case 7:
+                        validatedResult = _a.sent();
                         console.log('=== FINAL MERGED RESULT ===');
-                        console.log(JSON.stringify(finalResult, null, 2));
-                        return [2 /*return*/, finalResult];
+                        console.log(JSON.stringify(validatedResult, null, 2));
+                        return [2 /*return*/, validatedResult];
                 }
             });
         });
     };
     /**
      * Merge results from multiple chunks intelligently
+     * Searches ALL chunks for mandatory fields to ensure nothing is missed
      */
     AzureOpenAIService.prototype.mergeChunkResults = function (results) {
-        var _a;
         var merged = {
             title: '',
             documentType: '',
@@ -5081,35 +5344,42 @@ var AzureOpenAIService = /** @class */ (function () {
         var allPhones = [];
         var allIds = [];
         var allPricing = [];
+        // For mandatory fields, search ALL chunks (not just first)
+        // This ensures we don't miss title/documentType if they're in later chunks
+        var allTitles = [];
+        var allDocumentTypes = [];
+        var allBUs = [];
+        var allDepartments = [];
+        var allAbstracts = [];
         for (var i = 0; i < results.length; i++) {
             var result = results[i];
-            // Title: Take from first chunk (most likely to be at the start)
-            if (!merged.title && result.title) {
-                merged.title = result.title;
+            // Title: Collect from ALL chunks, prioritize first chunk but check all
+            if (result.title && result.title.trim()) {
+                allTitles.push(result.title.trim());
             }
-            // DocumentType: Take from first chunk
-            if (!merged.documentType && result.documentType) {
-                merged.documentType = result.documentType;
+            // DocumentType: Collect from ALL chunks
+            if (result.documentType && result.documentType.trim()) {
+                allDocumentTypes.push(result.documentType.trim());
             }
-            // BU: Take first non-empty match
-            if (!merged.bu && result.bu) {
-                merged.bu = result.bu;
+            // BU: Collect from ALL chunks
+            if (result.bu && result.bu.trim()) {
+                allBUs.push(result.bu.trim());
             }
-            // Department: Take first non-empty match
-            if (!merged.department && result.department) {
-                merged.department = result.department;
+            // Department: Collect from ALL chunks
+            if (result.department && result.department.trim()) {
+                allDepartments.push(result.department.trim());
+            }
+            // Abstract: Collect from ALL chunks (will take longest)
+            if (result.abstract && result.abstract.trim()) {
+                allAbstracts.push(result.abstract.trim());
             }
             // Region: Take first non-empty match
-            if (!merged.region && result.region) {
-                merged.region = result.region;
+            if (!merged.region && result.region && result.region.trim()) {
+                merged.region = result.region.trim();
             }
             // Client: Take first non-empty match
-            if (!merged.client && result.client) {
-                merged.client = result.client;
-            }
-            // Abstract: Take the longest one (most comprehensive)
-            if (result.abstract && result.abstract.length > (((_a = merged.abstract) === null || _a === void 0 ? void 0 : _a.length) || 0)) {
-                merged.abstract = result.abstract;
+            if (!merged.client && result.client && result.client.trim()) {
+                merged.client = result.client.trim();
             }
             // Emails: Collect all unique emails
             if (result.emails) {
@@ -5153,6 +5423,17 @@ var AzureOpenAIService = /** @class */ (function () {
                 allPricing.push(result.pricing);
             }
         }
+        // Set mandatory fields - prioritize first chunk but use any valid value
+        merged.title = allTitles.length > 0 ? allTitles[0] : '';
+        merged.documentType = allDocumentTypes.length > 0 ? allDocumentTypes[0] : '';
+        merged.bu = allBUs.length > 0 ? allBUs[0] : '';
+        merged.department = allDepartments.length > 0 ? allDepartments[0] : '';
+        // Abstract: Take the longest one (most comprehensive)
+        if (allAbstracts.length > 0) {
+            merged.abstract = allAbstracts.reduce(function (longest, current) {
+                return current.length > longest.length ? current : longest;
+            });
+        }
         // Join collected values
         merged.emails = allEmails.join(', ');
         merged.phones = allPhones.join(', ');
@@ -5161,7 +5442,127 @@ var AzureOpenAIService = /** @class */ (function () {
         console.log('Merged emails count:', allEmails.length);
         console.log('Merged phones count:', allPhones.length);
         console.log('Merged IDs count:', allIds.length);
+        console.log('Title found in chunks:', allTitles.length > 0 ? 'YES' : 'NO');
+        console.log('DocumentType found in chunks:', allDocumentTypes.length > 0 ? 'YES' : 'NO');
+        console.log('BU found in chunks:', allBUs.length > 0 ? 'YES' : 'NO');
+        console.log('Department found in chunks:', allDepartments.length > 0 ? 'YES' : 'NO');
         return merged;
+    };
+    /**
+     * Validate mandatory fields and retry extraction if needed
+     */
+    AzureOpenAIService.prototype.validateAndRetryIfNeeded = function (result, chunks) {
+        var _a, _b, _c;
+        return __awaiter(this, void 0, void 0, function () {
+            var mandatoryFields, missingFields, _i, mandatoryFields_1, field, firstChunk, firstChunkPreview, focusedPrompt, response, data, content, jsonMatch, jsonText, retryResult, _d, missingFields_1, field, error_3;
+            return __generator(this, function (_e) {
+                switch (_e.label) {
+                    case 0:
+                        mandatoryFields = ['title', 'documentType', 'bu', 'department', 'abstract'];
+                        missingFields = [];
+                        // Check for missing mandatory fields
+                        for (_i = 0, mandatoryFields_1 = mandatoryFields; _i < mandatoryFields_1.length; _i++) {
+                            field = mandatoryFields_1[_i];
+                            if (!result[field] || (typeof result[field] === 'string' && result[field].trim() === '')) {
+                                missingFields.push(field);
+                            }
+                        }
+                        if (missingFields.length === 0) {
+                            console.log('✓ All mandatory fields are present');
+                            return [2 /*return*/, result];
+                        }
+                        console.warn("\u26A0\uFE0F Missing mandatory fields: ".concat(missingFields.join(', ')));
+                        console.log('Attempting to extract missing fields from document...');
+                        firstChunk = chunks[0] || '';
+                        firstChunkPreview = firstChunk.substring(0, Math.min(5000, firstChunk.length));
+                        if (!(firstChunkPreview.length > 0)) return [3 /*break*/, 6];
+                        _e.label = 1;
+                    case 1:
+                        _e.trys.push([1, 5, , 6]);
+                        focusedPrompt = this.buildFocusedExtractionPrompt(firstChunkPreview, missingFields);
+                        return [4 /*yield*/, fetch("".concat(this.config.endpoint, "/openai/deployments/").concat(this.config.deploymentName, "/chat/completions?api-version=").concat(this.config.apiVersion), {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'api-key': this.config.apiKey
+                                },
+                                body: JSON.stringify({
+                                    messages: [
+                                        {
+                                            role: 'system',
+                                            content: 'You are an expert document analyzer. Extract ONLY the requested fields from the document. Return valid JSON only, without any markdown formatting or code blocks. NEVER leave requested fields empty.'
+                                        },
+                                        {
+                                            role: 'user',
+                                            content: focusedPrompt
+                                        }
+                                    ],
+                                    temperature: 0.2,
+                                    max_tokens: 1000
+                                })
+                            })];
+                    case 2:
+                        response = _e.sent();
+                        if (!response.ok) return [3 /*break*/, 4];
+                        return [4 /*yield*/, response.json()];
+                    case 3:
+                        data = _e.sent();
+                        content = (_c = (_b = (_a = data.choices) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.message) === null || _c === void 0 ? void 0 : _c.content;
+                        if (content) {
+                            jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/) || [null, content];
+                            jsonText = jsonMatch[1] || content;
+                            try {
+                                retryResult = JSON.parse(jsonText.trim());
+                                // Fill in missing fields
+                                for (_d = 0, missingFields_1 = missingFields; _d < missingFields_1.length; _d++) {
+                                    field = missingFields_1[_d];
+                                    if (retryResult[field] && typeof retryResult[field] === 'string' && retryResult[field].trim() !== '') {
+                                        result[field] = retryResult[field];
+                                        console.log("\u2713 Retry extracted ".concat(field, ": ").concat(retryResult[field]));
+                                    }
+                                }
+                            }
+                            catch (parseError) {
+                                console.warn('Failed to parse retry result:', parseError);
+                            }
+                        }
+                        _e.label = 4;
+                    case 4: return [3 /*break*/, 6];
+                    case 5:
+                        error_3 = _e.sent();
+                        console.warn('Retry extraction failed:', error_3);
+                        return [3 /*break*/, 6];
+                    case 6: 
+                    // Final check - if still missing, use fallback values (already handled in sanitizeMetadata)
+                    return [2 /*return*/, result];
+                }
+            });
+        });
+    };
+    /**
+     * Build a focused prompt for extracting specific missing fields
+     */
+    AzureOpenAIService.prototype.buildFocusedExtractionPrompt = function (documentText, missingFields) {
+        var buList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_BUSINESS_UNITS.join('\n- ');
+        var deptList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DEPARTMENTS.join('\n- ');
+        var documentTypeList = _ValidationConstants__WEBPACK_IMPORTED_MODULE_0__.ALLOWED_DOCUMENT_TYPES.join('\n- ');
+        var fieldInstructions = '';
+        if (missingFields.includes('title')) {
+            fieldInstructions += "\n1. title - **CRITICAL**: Extract the document title. Look for:\n   - Explicit title lines at the beginning\n   - First major heading\n   - Document name or filename references\n   - First line of significant text\n   If no explicit title exists, create a descriptive title based on the main topic. NEVER return empty string.";
+        }
+        if (missingFields.includes('documentType')) {
+            fieldInstructions += "\n2. documentType - **CRITICAL**: MUST be one of these exact values:\n- ".concat(documentTypeList, "\nAnalyze the document structure and content. Match to the closest value. NEVER return empty string.");
+        }
+        if (missingFields.includes('bu')) {
+            fieldInstructions += "\n3. bu - **CRITICAL**: Business Unit. MUST be one of these exact values:\n- ".concat(buList, "\nInfer from document content if not explicitly mentioned. NEVER return empty string.");
+        }
+        if (missingFields.includes('department')) {
+            fieldInstructions += "\n4. department - **CRITICAL**: Department. MUST be one of these exact values:\n- ".concat(deptList, "\nInfer from document content if not explicitly mentioned. NEVER return empty string.");
+        }
+        if (missingFields.includes('abstract')) {
+            fieldInstructions += "\n5. abstract - **CRITICAL**: A brief summary (1-2 sentences) describing what the document is about. NEVER return empty string.";
+        }
+        return "You are an expert document analyzer. The following fields are MISSING and MUST be extracted from the document text below. Read the document carefully and extract ONLY these fields.\n\n**CRITICAL**: These fields are MANDATORY and CANNOT be empty. Extract them from the document text provided.".concat(fieldInstructions, "\n\n**Document text (beginning of document):**\n").concat(documentText, "\n\nReturn ONLY a JSON object with the requested fields. Example:\n{\n").concat(missingFields.map(function (f) { return "  \"".concat(f, "\": \"...\""); }).join(',\n'), "\n}");
     };
     /**
      * Generate tags from document abstract using AI
@@ -5169,7 +5570,7 @@ var AzureOpenAIService = /** @class */ (function () {
     AzureOpenAIService.prototype.generateTags = function (abstract) {
         var _a, _b, _c;
         return __awaiter(this, void 0, void 0, function () {
-            var prompt_1, response, data, content, jsonMatch, tags, error_3;
+            var prompt_1, response, data, content, jsonMatch, tags, error_4;
             return __generator(this, function (_d) {
                 switch (_d.label) {
                     case 0:
@@ -5221,8 +5622,8 @@ var AzureOpenAIService = /** @class */ (function () {
                         }
                         return [2 /*return*/, []];
                     case 4:
-                        error_3 = _d.sent();
-                        console.error('Error generating tags:', error_3);
+                        error_4 = _d.sent();
+                        console.error('Error generating tags:', error_4);
                         return [2 /*return*/, []];
                     case 5: return [2 /*return*/];
                 }

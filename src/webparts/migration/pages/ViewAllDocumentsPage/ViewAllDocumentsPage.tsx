@@ -27,6 +27,7 @@ interface DocumentItem {
 export const ViewAllDocumentsPage: React.FunctionComponent<IViewAllDocumentsPageProps> = (props) => {
   const [documents, setDocuments] = React.useState<DocumentItem[]>([]);
   const [loading, setLoading] = React.useState<boolean>(true);
+  const [tagsLoading, setTagsLoading] = React.useState<boolean>(false);
   const openAIService = React.useRef<AzureOpenAIService>(new AzureOpenAIService(AZURE_OPENAI_CONFIG));
 
   React.useEffect(() => {
@@ -34,6 +35,13 @@ export const ViewAllDocumentsPage: React.FunctionComponent<IViewAllDocumentsPage
       fetchAllDocuments();
     }
   }, [props.context]);
+
+  // Load tags asynchronously after documents are displayed
+  React.useEffect(() => {
+    if (documents.length > 0 && documents.some(doc => doc.tags.length === 0 && doc.abstract)) {
+      loadTagsAsync();
+    }
+  }, [documents.length]);
 
   const fetchAllDocuments = async () => {
     if (!props.context) {
@@ -45,9 +53,9 @@ export const ViewAllDocumentsPage: React.FunctionComponent<IViewAllDocumentsPage
       const webUrl = props.context.pageContext.web.absoluteUrl;
       const libraryName = 'KMArtifacts';
       
-      // Fetch all documents with all needed fields
+      // Fetch all documents with all needed fields including Tags
       // Filter to only show documents with Status = "Published"
-      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc`;
+      const apiUrl = `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items?$select=Id,Title,TitleName,Abstract,FileLeafRef,FileRef,Status,PerformedBy/Title,PerformedBy/Name,TimeStamp,File/Length,File/ServerRelativeUrl,Tags&$filter=Status eq 'Published'&$expand=PerformedBy,File&$orderby=Created desc`;
       
       const response: SPHttpClientResponse = await props.context.spHttpClient.get(
         apiUrl,
@@ -61,75 +69,182 @@ export const ViewAllDocumentsPage: React.FunctionComponent<IViewAllDocumentsPage
       const data = await response.json();
       const items = data.value || [];
 
-      // Process all items and generate tags
-      const processedDocuments: DocumentItem[] = await Promise.all(
-        items.map(async (item: any) => {
-          const fileName = item.FileLeafRef || item.TitleName || item.Title || '';
-          const fileExtension = fileName.split('.').pop()?.toUpperCase() || '';
-          const displayName = fileName || item.Title || `Document ${item.Id}`;
-          const abstract = item.Abstract || '';
-          
-          // Get author from PerformedBy (person field)
-          const author = item.PerformedBy?.Title || item.PerformedBy?.Name || item.PerformedBy || 'Unknown';
-          
-          // Format date from TimeStamp
-          let formattedDate = '';
-          if (item.TimeStamp) {
-            const date = new Date(item.TimeStamp);
-            formattedDate = date.toLocaleDateString('en-GB', { 
-              day: '2-digit', 
-              month: '2-digit', 
-              year: 'numeric' 
-            });
+      // Process items WITHOUT waiting for AI tags - show page immediately
+      const processedDocuments: DocumentItem[] = items.map((item: any) => {
+        const fileName = item.FileLeafRef || item.TitleName || item.Title || '';
+        const fileExtension = fileName.split('.').pop()?.toUpperCase() || '';
+        const displayName = fileName || item.Title || `Document ${item.Id}`;
+        const abstract = item.Abstract || '';
+        
+        // Get author from PerformedBy (person field)
+        const author = item.PerformedBy?.Title || item.PerformedBy?.Name || item.PerformedBy || 'Unknown';
+        
+        // Format date from TimeStamp
+        let formattedDate = '';
+        if (item.TimeStamp) {
+          const date = new Date(item.TimeStamp);
+          formattedDate = date.toLocaleDateString('en-GB', { 
+            day: '2-digit', 
+            month: '2-digit', 
+            year: 'numeric' 
+          });
+        }
+        
+        // Get file size
+        let fileSize = '';
+        if (item.File && item.File.Length) {
+          const bytes = item.File.Length;
+          if (bytes < 1024) {
+            fileSize = `${bytes} B`;
+          } else if (bytes < 1024 * 1024) {
+            fileSize = `${(bytes / 1024).toFixed(1)} KB`;
+          } else {
+            fileSize = `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
           }
-          
-          // Get file size
-          let fileSize = '';
-          if (item.File && item.File.Length) {
-            const bytes = item.File.Length;
-            if (bytes < 1024) {
-              fileSize = `${bytes} B`;
-            } else if (bytes < 1024 * 1024) {
-              fileSize = `${(bytes / 1024).toFixed(1)} KB`;
-            } else {
-              fileSize = `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+        }
+        
+        const serverRelativeUrl = item.FileRef || item.File?.ServerRelativeUrl || '';
+        
+        // Parse tags from SharePoint if they exist
+        let tags: string[] = [];
+        if (item.Tags) {
+          try {
+            // Tags might be stored as JSON string or comma-separated
+            if (typeof item.Tags === 'string') {
+              if (item.Tags.startsWith('[')) {
+                tags = JSON.parse(item.Tags);
+              } else {
+                tags = item.Tags.split(',').map(t => t.trim()).filter(t => t.length > 0);
+              }
+            } else if (Array.isArray(item.Tags)) {
+              tags = item.Tags;
             }
+          } catch (error) {
+            console.error('Error parsing tags for document', item.Id, error);
+            tags = [];
           }
-          
-          const serverRelativeUrl = item.FileRef || item.File?.ServerRelativeUrl || '';
-          
-          // Generate tags from abstract using AI
-          let tags: string[] = [];
-          if (abstract && abstract.trim().length > 0) {
-            try {
-              tags = await openAIService.current.generateTags(abstract);
-            } catch (error) {
-              console.error('Error generating tags:', error);
-              tags = [];
-            }
-          }
-          
-          return {
-            id: item.Id,
-            name: displayName,
-            abstract: abstract,
-            fileType: fileExtension,
-            author: author,
-            date: formattedDate,
-            fileSize: fileSize,
-            serverRelativeUrl: serverRelativeUrl,
-            fileRef: item.FileRef || serverRelativeUrl,
-            tags: tags
-          };
-        })
-      );
+        }
+        
+        return {
+          id: item.Id,
+          name: displayName,
+          abstract: abstract,
+          fileType: fileExtension,
+          author: author,
+          date: formattedDate,
+          fileSize: fileSize,
+          serverRelativeUrl: serverRelativeUrl,
+          fileRef: item.FileRef || serverRelativeUrl,
+          tags: tags // Use stored tags if available
+        };
+      });
 
+      // Show documents immediately
       setDocuments(processedDocuments);
+      setLoading(false);
+      
+      // Start loading tags asynchronously
+      loadTagsAsync(processedDocuments);
     } catch (error) {
       console.error('Error fetching documents:', error);
       setDocuments([]);
-    } finally {
       setLoading(false);
+    }
+  };
+
+  const loadTagsAsync = async (docs?: DocumentItem[]) => {
+    const documentsToProcess = docs || documents;
+    const documentsNeedingTags = documentsToProcess.filter(doc => 
+      doc.tags.length === 0 && doc.abstract && doc.abstract.trim().length > 0
+    );
+
+    if (documentsNeedingTags.length === 0) return;
+
+    setTagsLoading(true);
+
+    // Process tags in batches to avoid overwhelming the API
+    const batchSize = 5;
+    for (let i = 0; i < documentsNeedingTags.length; i += batchSize) {
+      const batch = documentsNeedingTags.slice(i, i + batchSize);
+      
+      await Promise.all(
+        batch.map(async (doc) => {
+          try {
+            const tags = await openAIService.current.generateTags(doc.abstract);
+            
+            // Save tags to SharePoint
+            await saveTagsToSharePoint(doc.id, tags);
+            
+            // Update the specific document with tags
+            setDocuments(prev => prev.map(d => 
+              d.id === doc.id ? { ...d, tags } : d
+            ));
+          } catch (error) {
+            console.error(`Error generating tags for document ${doc.id}:`, error);
+          }
+        })
+      );
+
+      // Small delay between batches to avoid rate limiting
+      if (i + batchSize < documentsNeedingTags.length) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+    }
+
+    setTagsLoading(false);
+  };
+
+  const saveTagsToSharePoint = async (itemId: number, tags: string[]) => {
+    if (!props.context || !tags || tags.length === 0) return;
+
+    try {
+      const webUrl = props.context.pageContext.web.absoluteUrl;
+      const libraryName = 'KMArtifacts';
+      
+      // Get entity type
+      const listInfoResp = await props.context.spHttpClient.get(
+        `${webUrl}/_api/web/lists/getbytitle('${libraryName}')?$select=ListItemEntityTypeFullName`,
+        SPHttpClient.configurations.v1
+      );
+      
+      if (!listInfoResp.ok) {
+        console.error('Failed to get list info for saving tags');
+        return;
+      }
+      
+      const listInfo = await listInfoResp.json();
+      const entityType = listInfo.ListItemEntityTypeFullName;
+      
+      // Store tags as JSON string
+      const tagsJson = JSON.stringify(tags);
+      
+      const updateBody = {
+        __metadata: { type: entityType },
+        Tags: tagsJson
+      };
+      
+      const updateResp = await props.context.spHttpClient.post(
+        `${webUrl}/_api/web/lists/getbytitle('${libraryName}')/items(${itemId})`,
+        SPHttpClient.configurations.v1,
+        {
+          headers: {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "IF-MATCH": "*",
+            "X-HTTP-Method": "MERGE",
+            "odata-version": ""
+          },
+          body: JSON.stringify(updateBody)
+        }
+      );
+      
+      if (!updateResp.ok) {
+        console.error(`Failed to save tags for document ${itemId}:`, updateResp.status);
+      } else {
+        console.log(`Tags saved for document ${itemId}:`, tags);
+      }
+    } catch (error) {
+      console.error(`Error saving tags for document ${itemId}:`, error);
     }
   };
 
