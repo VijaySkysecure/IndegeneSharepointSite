@@ -1260,7 +1260,7 @@ var FileUpload = function (props) {
         (_a = fileInputRef.current) === null || _a === void 0 ? void 0 : _a.click();
     };
     var onFileSelected = function (f) { return __awaiter(void 0, void 0, void 0, function () {
-        var filesArray, uploadPromises, uploadResults, processingPromises, processedFilesData, error_1;
+        var filesArray, processingPromises, processedFilesData, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1278,47 +1278,28 @@ var FileUpload = function (props) {
                     setProcessingProgress('');
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 4, , 5]);
-                    uploadPromises = filesArray.map(function (file) { return __awaiter(void 0, void 0, void 0, function () {
-                        var itemId;
+                    _a.trys.push([1, 3, , 4]);
+                    // Process all files with AI in parallel
+                    setProcessingProgress("Processing ".concat(filesArray.length, " file(s) with AI..."));
+                    processingPromises = filesArray.map(function (file, index) { return __awaiter(void 0, void 0, void 0, function () {
+                        var metadata;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
-                                case 0: return [4 /*yield*/, uploadFileToSharePoint(file)];
+                                case 0:
+                                    console.log("Starting parallel processing for file ".concat(index + 1, ": ").concat(file.name));
+                                    return [4 /*yield*/, processFileWithAI(file)];
                                 case 1:
-                                    itemId = _a.sent();
-                                    return [2 /*return*/, { file: file, itemId: itemId }];
+                                    metadata = _a.sent();
+                                    return [2 /*return*/, {
+                                            file: file,
+                                            itemId: -1,
+                                            metadata: metadata || {}
+                                        }];
                             }
                         });
                     }); });
-                    return [4 /*yield*/, Promise.all(uploadPromises)];
-                case 2:
-                    uploadResults = _a.sent();
-                    console.log('Files uploaded to SharePoint:', uploadResults);
-                    // Step 2: Process all files with AI in parallel
-                    // Now show the analyzing dialog
-                    setProcessingProgress("Processing ".concat(filesArray.length, " file(s) with AI..."));
-                    processingPromises = uploadResults.map(function (_a, index) {
-                        var file = _a.file, itemId = _a.itemId;
-                        return __awaiter(void 0, void 0, void 0, function () {
-                            var metadata;
-                            return __generator(this, function (_b) {
-                                switch (_b.label) {
-                                    case 0:
-                                        console.log("Starting parallel processing for file ".concat(index + 1, ": ").concat(file.name));
-                                        return [4 /*yield*/, processFileWithAI(file)];
-                                    case 1:
-                                        metadata = _b.sent();
-                                        return [2 /*return*/, {
-                                                file: file,
-                                                itemId: itemId,
-                                                metadata: metadata || {}
-                                            }];
-                                }
-                            });
-                        });
-                    });
                     return [4 /*yield*/, Promise.all(processingPromises)];
-                case 3:
+                case 2:
                     processedFilesData = _a.sent();
                     setFilesData(processedFilesData);
                     setIsProcessing(false);
@@ -1329,14 +1310,14 @@ var FileUpload = function (props) {
                     else {
                         setProcessingError('No files were successfully processed.');
                     }
-                    return [3 /*break*/, 5];
-                case 4:
+                    return [3 /*break*/, 4];
+                case 3:
                     error_1 = _a.sent();
                     console.error('Error processing files:', error_1);
                     setProcessingError(error_1 instanceof Error ? error_1.message : 'An error occurred while processing files.');
                     setIsProcessing(false);
-                    return [3 /*break*/, 5];
-                case 5: return [2 /*return*/];
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
             }
         });
     }); };
@@ -1468,69 +1449,79 @@ var FileUpload = function (props) {
         });
     };
     /**
-     * Upload file to SharePoint immediately with minimal metadata (Name and Status="Draft")
+     * Upload file to SharePoint with Status="Unpublished" and form metadata
      */
-    var uploadFileToSharePoint = function (file) { return __awaiter(void 0, void 0, void 0, function () {
-        var LIBRARY_NAME, webUrl, uploadResp, txt, uploadJson, serverRelativeUrl, listItemResp, txt, listItemJson, itemId, listInfoResp, listInfo, entityType, metadataBody, updateResp, txt;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+    var uploadFileToSharePoint = function (file, formData) { return __awaiter(void 0, void 0, void 0, function () {
+        var LIBRARY_NAME, webUrl, uploadResp, txt, uploadJson, serverRelativeUrl, listItemResp, txt, listItemJson, itemId, listInfoResp, listInfo, entityType, currentUserResp, currentUser, userId, metadataBody, updateResp, txt;
+        var _a, _b;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
                 case 0:
                     LIBRARY_NAME = "KMArtifacts";
                     webUrl = props.context.pageContext.web.absoluteUrl;
                     return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/GetFolderByServerRelativeUrl('").concat(LIBRARY_NAME, "')/Files/add(url='").concat(file.name, "',overwrite=true)"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, { body: file })];
                 case 1:
-                    uploadResp = _a.sent();
+                    uploadResp = _c.sent();
                     if (!!uploadResp.ok) return [3 /*break*/, 3];
                     return [4 /*yield*/, uploadResp.text()];
                 case 2:
-                    txt = _a.sent();
+                    txt = _c.sent();
                     throw new Error("File upload failed: ".concat(uploadResp.status, " ").concat(txt));
                 case 3: return [4 /*yield*/, uploadResp.json()];
                 case 4:
-                    uploadJson = _a.sent();
+                    uploadJson = _c.sent();
                     serverRelativeUrl = uploadJson.ServerRelativeUrl;
                     // 2️⃣ Wait briefly to ensure ListItem exists
                     return [4 /*yield*/, new Promise(function (r) { return setTimeout(r, 500); })];
                 case 5:
                     // 2️⃣ Wait briefly to ensure ListItem exists
-                    _a.sent();
+                    _c.sent();
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/GetFileByServerRelativeUrl('").concat(serverRelativeUrl, "')/ListItemAllFields?$select=Id"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 6:
-                    listItemResp = _a.sent();
+                    listItemResp = _c.sent();
                     if (!!listItemResp.ok) return [3 /*break*/, 8];
                     return [4 /*yield*/, listItemResp.text()];
                 case 7:
-                    txt = _a.sent();
+                    txt = _c.sent();
                     throw new Error("Failed to get list item: ".concat(listItemResp.status, " ").concat(txt));
                 case 8: return [4 /*yield*/, listItemResp.json()];
                 case 9:
-                    listItemJson = _a.sent();
+                    listItemJson = _c.sent();
                     itemId = listItemJson.Id;
                     return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/lists/getbytitle('").concat(LIBRARY_NAME, "')?$select=ListItemEntityTypeFullName"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
                 case 10:
-                    listInfoResp = _a.sent();
+                    listInfoResp = _c.sent();
                     return [4 /*yield*/, listInfoResp.json()];
                 case 11:
-                    listInfo = _a.sent();
+                    listInfo = _c.sent();
                     entityType = listInfo.ListItemEntityTypeFullName;
+                    return [4 /*yield*/, props.context.spHttpClient.get("".concat(webUrl, "/_api/web/currentuser"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1)];
+                case 12:
+                    currentUserResp = _c.sent();
+                    return [4 /*yield*/, currentUserResp.json()];
+                case 13:
+                    currentUser = _c.sent();
+                    userId = currentUser.Id;
                     metadataBody = {
                         __metadata: { type: entityType },
-                        Status: "Draft",
-                        TitleName: "",
-                        Abstract: "",
-                        BusinessUnit: "",
-                        Department: "",
-                        Region: "",
-                        Client: "",
-                        DocumentType: "",
-                        DiseaseArea: "",
-                        TherapyArea: "",
-                        ComplianceFlag: false,
-                        Sanitized: false,
-                        Emails: "",
-                        Phones: "",
-                        IDs: "",
-                        SensitiveTerms: ""
+                        Status: "Unpublished",
+                        TitleName: formData.title || "-",
+                        Abstract: formData.abstract || "-",
+                        BusinessUnit: formData.bu || "-",
+                        Department: formData.department || "-",
+                        Region: formData.region || "-",
+                        Client: formData.client || "-",
+                        DocumentType: formData.documentType || "-",
+                        DiseaseArea: formData.diseaseArea || "-",
+                        TherapyArea: formData.therapyArea || "-",
+                        ComplianceFlag: (_a = formData.complianceFlag) !== null && _a !== void 0 ? _a : false,
+                        Sanitized: (_b = formData.sanitized) !== null && _b !== void 0 ? _b : false,
+                        Emails: formData.emails || "",
+                        Phones: formData.phones || "",
+                        IDs: formData.ids || "",
+                        SensitiveTerms: formData.pricing || formData.sensitive || "",
+                        PerformedById: userId,
+                        TimeStamp: new Date().toISOString()
                     };
                     return [4 /*yield*/, props.context.spHttpClient.post("".concat(webUrl, "/_api/web/lists/getbytitle('KMArtifacts')/items(").concat(itemId, ")"), _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_1__.SPHttpClient.configurations.v1, {
                             headers: {
@@ -1542,16 +1533,16 @@ var FileUpload = function (props) {
                             },
                             body: JSON.stringify(metadataBody)
                         })];
-                case 12:
-                    updateResp = _a.sent();
-                    if (!!updateResp.ok) return [3 /*break*/, 14];
+                case 14:
+                    updateResp = _c.sent();
+                    if (!!updateResp.ok) return [3 /*break*/, 16];
                     return [4 /*yield*/, updateResp.text()];
-                case 13:
-                    txt = _a.sent();
+                case 15:
+                    txt = _c.sent();
                     console.error("KMArtifacts metadata update FAILED:", updateResp.status, txt);
                     throw new Error("KMArtifacts update failed: ".concat(updateResp.status, " ").concat(txt));
-                case 14:
-                    console.log("File uploaded to SharePoint with Status='Draft', itemId:", itemId);
+                case 16:
+                    console.log("File uploaded to SharePoint with Status='Unpublished', itemId:", itemId);
                     return [2 /*return*/, itemId];
             }
         });
@@ -1643,7 +1634,7 @@ var FileUpload = function (props) {
         }
     };
     var onFormSubmit = function (allFilesData) { return __awaiter(void 0, void 0, void 0, function () {
-        var updatePromises, results, failures, errorMessages, fileCount, successMessage, err_1;
+        var uploadPromises, results, failures, errorMessages, fileCount, successMessage, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -1651,46 +1642,42 @@ var FileUpload = function (props) {
                     isSubmittingRef.current = true;
                     setIsProcessing(true);
                     setProcessingError(null);
-                    setProcessingProgress('Updating files in SharePoint...');
+                    setProcessingProgress('Uploading files to SharePoint...');
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 3, , 4]);
-                    // Files are already uploaded to SharePoint with Status="Draft"
-                    // Now update them with form data and change Status to "Unpublished"
-                    setProcessingProgress("Updating ".concat(allFilesData.length, " file(s) in SharePoint..."));
-                    updatePromises = allFilesData.map(function (fileData) { return __awaiter(void 0, void 0, void 0, function () {
+                    // Upload files to SharePoint with Status="Unpublished" and form data
+                    setProcessingProgress("Uploading ".concat(allFilesData.length, " file(s) to SharePoint..."));
+                    uploadPromises = allFilesData.map(function (fileData) { return __awaiter(void 0, void 0, void 0, function () {
                         var itemId, err_2, err_3;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
                                 case 0:
                                     _a.trys.push([0, 6, , 7]);
-                                    itemId = fileData.itemId;
+                                    console.log("Uploading file ".concat(fileData.file.name, " to SharePoint..."));
+                                    return [4 /*yield*/, uploadFileToSharePoint(fileData.file, fileData.metadata)];
+                                case 1:
+                                    itemId = _a.sent();
                                     if (!itemId || itemId === -1) {
                                         throw new Error('Invalid item ID. File may not have been uploaded correctly.');
                                     }
-                                    console.log("Updating file ".concat(fileData.file.name, " (itemId: ").concat(itemId, ") with form data..."));
-                                    _a.label = 1;
-                                case 1:
-                                    _a.trys.push([1, 3, , 4]);
-                                    return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
+                                    _a.label = 2;
                                 case 2:
-                                    _a.sent();
-                                    return [3 /*break*/, 4];
+                                    _a.trys.push([2, 4, , 5]);
+                                    return [4 /*yield*/, createAuditLogItem(fileData.file, "Submitted")];
                                 case 3:
+                                    _a.sent();
+                                    return [3 /*break*/, 5];
+                                case 4:
                                     err_2 = _a.sent();
                                     console.warn("Audit log creation failed for ".concat(fileData.file.name, ":"), err_2);
-                                    return [3 /*break*/, 4];
-                                case 4: 
-                                // 2. Update KMArtifacts row with actual form values and change Status to "Unpublished"
-                                return [4 /*yield*/, updateKMArtifactsWithFormData(itemId, fileData.metadata)];
+                                    return [3 /*break*/, 5];
                                 case 5:
-                                    // 2. Update KMArtifacts row with actual form values and change Status to "Unpublished"
-                                    _a.sent();
-                                    console.log("Metadata updated successfully for ".concat(fileData.file.name));
+                                    console.log("File uploaded successfully: ".concat(fileData.file.name, " (itemId: ").concat(itemId, ")"));
                                     return [2 /*return*/, { success: true, fileName: fileData.file.name }];
                                 case 6:
                                     err_3 = _a.sent();
-                                    console.error("Error updating ".concat(fileData.file.name, ":"), err_3);
+                                    console.error("Error uploading ".concat(fileData.file.name, ":"), err_3);
                                     return [2 /*return*/, {
                                             success: false,
                                             fileName: fileData.file.name,
@@ -1700,7 +1687,7 @@ var FileUpload = function (props) {
                             }
                         });
                     }); });
-                    return [4 /*yield*/, Promise.all(updatePromises)];
+                    return [4 /*yield*/, Promise.all(uploadPromises)];
                 case 2:
                     results = _a.sent();
                     failures = results.filter(function (r) { return !r.success; });
