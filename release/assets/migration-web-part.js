@@ -1845,14 +1845,16 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 setError(null);
                 const libraryName = "KMArtifacts";
                 const apiUrl = `${siteUrl}/_api/web/lists/getbytitle('${libraryName}')/items` +
-                    `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea` +
-                    `&$expand=Author`;
+                    `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea,Status` +
+                    `&$expand=Author` +
+                    `&$filter=Status eq 'Published'`;
                 const response = await spHttpClient.get(apiUrl, _microsoft_sp_http__WEBPACK_IMPORTED_MODULE_3__.SPHttpClient.configurations.v1);
                 if (!response.ok) {
                     throw new Error(`HTTP error ${response.status}`);
                 }
                 const data = await response.json();
-                const docs = (data.value || []).map((item) => {
+                const docs = (data.value || [])
+                    .map((item) => {
                     var _a;
                     // Extract just the filename from FileLeafRef (which might include path)
                     const fileLeafRef = item.FileLeafRef || "";
@@ -1880,8 +1882,12 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                         region: item.Region || undefined,
                         therapyArea: item.TherapyArea || undefined,
                         diseaseArea: item.DiseaseArea || undefined,
+                        status: item.Status || undefined,
                     };
-                });
+                })
+                    // Client-side safety filter: Only include Published documents
+                    // This ensures Draft, Unpublished, Rejected, and any other statuses are excluded
+                    .filter((doc) => doc.status === "Published");
                 setDocuments(docs);
             }
             catch (err) {
@@ -2038,7 +2044,10 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 const semanticResults = await openAIServiceRef.current.semanticSearchLocalDocuments(searchText, allDocsWithContent, 100 // Get top 100 results to ensure we don't miss documents with matches only in content
                 );
                 // Map semantic search results back to ResultItem format
-                const mappedResults = semanticResults.map((result) => result.document);
+                // Filter to ensure only Published documents are included (safety check)
+                const mappedResults = semanticResults
+                    .map((result) => result.document)
+                    .filter((doc) => doc.status === "Published");
                 setSemanticSearchResults(mappedResults);
             }
             catch (err) {
@@ -2126,9 +2135,12 @@ const FilterDropdown = ({ searchText, spHttpClient, siteUrl, context, }) => {
                 (activeTab === "documents" &&
                     item.diseaseArea &&
                     item.diseaseArea.trim() === selectedDiseaseArea.trim());
+            // Status filter - Only show Published documents (exclude Draft, Unpublished, Rejected, etc.)
+            const matchesStatus = activeTab !== "documents" || // Experts don't have status
+                (item.status && item.status === "Published");
             return matchesSearch && matchesFormat && matchesBusinessUnit &&
                 matchesDocumentType && matchesClient && matchesRegion &&
-                matchesTherapyArea && matchesDiseaseArea;
+                matchesTherapyArea && matchesDiseaseArea && matchesStatus;
         });
     }, [
         hasAnyFilter,
@@ -4456,6 +4468,27 @@ const isOutOfDomainQuery = (query) => {
         !text.includes("indegene") && !text.includes("prevention") && !text.includes("help")) {
         return true; // Flag as out-of-domain, but we should provide resources in the response
     }
+    // Violent/harmful queries (e.g., "how to kill", "how to murder")
+    if ((text.match(/how\s+to\s+kill/i) || text.match(/how\s+to\s+murder/i) ||
+        text.match(/how\s+to\s+harm/i) || text.match(/how\s+to\s+hurt/i)) &&
+        !text.includes("indegene") && !text.includes("cancer") && !text.includes("disease") &&
+        !text.includes("treatment") && !text.includes("medical")) {
+        return true; // Flag as out-of-domain
+    }
+    // Illegal/harmful purchase queries (e.g., "how to buy drugs", "how to buy cancer")
+    if ((text.match(/how\s+to\s+buy\s+(drugs?|weapons?|guns?|cancer|diseases?)/i) ||
+        (text.includes("how to buy") && (text.includes("drug") || text.includes("illegal") ||
+            text.includes("weapon") || text.includes("gun") || text.includes("cancer")))) &&
+        !text.includes("indegene") && !text.includes("treatment") && !text.includes("medicine") &&
+        !text.includes("prescription")) {
+        return true; // Flag as out-of-domain
+    }
+    // Song lyrics/entertainment queries (e.g., "woop woop that's the sound of the police")
+    if ((text.includes("woop woop") || text.includes("that's the sound") ||
+        text.match(/that'?s\s+the\s+sound\s+of/i) || text.match(/woop\s+woop/i)) &&
+        !text.includes("indegene") && !text.includes("medical") && !text.includes("health")) {
+        return true; // Flag as out-of-domain
+    }
     // "How do i view a document" - might be about system feature, but if unclear, decline
     if (text.match(/how\s+(do|can)\s+i\s+view\s+(a\s+)?document/i) &&
         !text.includes("indegene") && !text.includes("knowledge") && !text.includes("case study")) {
@@ -4490,6 +4523,7 @@ const isOutOfDomainQuery = (query) => {
         text.match(/^wjhtis (the )?(use of )?(\w+)/i) || // Typo: "wjhtis" for "what is"
         text.match(/^wt is (the )?(use of )?(\w+)/i) || // Typo: "wt" for "what"
         text.match(/^what are (the )?(\w+)/i) ||
+        text.match(/^waht are (the )?(\w+)/i) || // Typo: "waht" for "what"
         text.match(/^tell me (about |what is )?(\w+)/i)) &&
         !text.includes("indegene") &&
         !text.includes("skysecure") &&
@@ -4776,15 +4810,16 @@ const handleGeneralQueries = (query) => {
     }
     // Who are you? / What are you? (handle typos like "ytou" for "you", "waht" for "what", ignore casual words like "buddy")
     // Remove casual words first, then check
+    // IMPORTANT: Make sure "what are songs" doesn't match - only match if it's "what are you"
     const cleanedText = text.replace(/\b(buddy|da|dude|bro|mate|friend)\b/gi, "").trim();
-    if (cleanedText.match(/who are (you|ytou|yuo|yoi|u)/i) ||
-        cleanedText.match(/what are (you|ytou|yuo|yoi|u)/i) ||
-        cleanedText.match(/waht are (you|ytou|yuo|yoi|u)/i) || // "waht" typo for "what"
-        cleanedText.match(/who\s+r\s+(you|ytou|yuo)/i) ||
-        cleanedText.match(/what\s+r\s+(you|ytou|yuo)/i) ||
-        cleanedText.match(/waht\s+r\s+(you|ytou|yuo)/i) ||
-        (cleanedText.match(/^(who|what|waht) are/i) && cleanedText.length < 25) ||
-        (text.match(/^(who|what|waht) are (you|ytou|yuo|yoi|u)/i))) {
+    if ((cleanedText.match(/who are (you|ytou|yuo|yoi|u)$/i) ||
+        cleanedText.match(/what are (you|ytou|yuo|yoi|u)$/i) ||
+        cleanedText.match(/waht are (you|ytou|yuo|yoi|u)$/i) || // "waht" typo for "what"
+        cleanedText.match(/who\s+r\s+(you|ytou|yuo)$/i) ||
+        cleanedText.match(/what\s+r\s+(you|ytou|yuo)$/i) ||
+        cleanedText.match(/waht\s+r\s+(you|ytou|yuo)$/i) ||
+        (cleanedText.match(/^(who|what|waht) are (you|ytou|yuo|yoi|u)$/i))) &&
+        !cleanedText.match(/what are (songs?|music|movies?|films?|games?|sports?)/i)) { // Exclude entertainment queries
         return "I'm your KM Assistant chatbot powered by AI. I can answer questions about Indegene using real-time information from the company website, combined with our internal knowledge base. I can also tell you the current time, date, and day.";
     }
     // Handle personal health/financial assistance queries with empathy

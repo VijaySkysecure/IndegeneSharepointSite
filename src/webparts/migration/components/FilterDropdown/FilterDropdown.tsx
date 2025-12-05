@@ -37,6 +37,7 @@ type ResultItem = {
   region?: string;         // Region from SharePoint
   therapyArea?: string;    // Therapy Area from SharePoint
   diseaseArea?: string;    // Disease Area from SharePoint
+  status?: string;         // Status from SharePoint (Published, Draft, Unpublished, Rejected, etc.)
 };
 
 const filterData: FilterGroup[] = [
@@ -187,8 +188,9 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
         const apiUrl =
           `${siteUrl}/_api/web/lists/getbytitle('${libraryName}')/items` +
-          `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea` +
-          `&$expand=Author`;
+          `?$select=Id,Title,Abstract,FileLeafRef,FileRef,Author/Title,Created,BusinessUnit,DocumentType,Client,Region,TherapyArea,DiseaseArea,Status` +
+          `&$expand=Author` +
+          `&$filter=Status eq 'Published'`;
 
         const response: SPHttpClientResponse = await spHttpClient.get(
           apiUrl,
@@ -201,36 +203,41 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
 
         const data = await response.json();
 
-        const docs: ResultItem[] = (data.value || []).map((item: any) => {
-          // Extract just the filename from FileLeafRef (which might include path)
-          const fileLeafRef = item.FileLeafRef || "";
-          const fileName = fileLeafRef.split('/').pop() || fileLeafRef || "Untitled";
-          const fileType = getFileTypeFromName(fileName);
-          // Always use Title field as document title, fallback to filename if Title is empty
-          const documentTitle = item.Title && item.Title.trim() ? item.Title.trim() : fileName;
+        const docs: ResultItem[] = (data.value || [])
+          .map((item: any) => {
+            // Extract just the filename from FileLeafRef (which might include path)
+            const fileLeafRef = item.FileLeafRef || "";
+            const fileName = fileLeafRef.split('/').pop() || fileLeafRef || "Untitled";
+            const fileType = getFileTypeFromName(fileName);
+            // Always use Title field as document title, fallback to filename if Title is empty
+            const documentTitle = item.Title && item.Title.trim() ? item.Title.trim() : fileName;
 
-          return {
-            id: item.Id,
-            title: documentTitle, // Document Title (from SharePoint Title field) - always shown
-            fileName: fileName,   // Actual filename (extracted from FileLeafRef) - always shown
-            contributor: item.Author?.Title || "Unknown",
-            updated: item.Created
-              ? new Date(item.Created).toLocaleString()
-              : "",
-            description: item.Abstract || "No abstract available",
-            fileUrl: item.FileRef
-              ? `${window.location.origin}${item.FileRef}`
-              : undefined,
-            fileType,
-            serverRelativeUrl: item.FileRef || "",
-            businessUnit: item.BusinessUnit || undefined,
-            documentType: item.DocumentType || undefined,
-            client: item.Client || undefined,
-            region: item.Region || undefined,
-            therapyArea: item.TherapyArea || undefined,
-            diseaseArea: item.DiseaseArea || undefined,
-          };
-        });
+            return {
+              id: item.Id,
+              title: documentTitle, // Document Title (from SharePoint Title field) - always shown
+              fileName: fileName,   // Actual filename (extracted from FileLeafRef) - always shown
+              contributor: item.Author?.Title || "Unknown",
+              updated: item.Created
+                ? new Date(item.Created).toLocaleString()
+                : "",
+              description: item.Abstract || "No abstract available",
+              fileUrl: item.FileRef
+                ? `${window.location.origin}${item.FileRef}`
+                : undefined,
+              fileType,
+              serverRelativeUrl: item.FileRef || "",
+              businessUnit: item.BusinessUnit || undefined,
+              documentType: item.DocumentType || undefined,
+              client: item.Client || undefined,
+              region: item.Region || undefined,
+              therapyArea: item.TherapyArea || undefined,
+              diseaseArea: item.DiseaseArea || undefined,
+              status: item.Status || undefined,
+            };
+          })
+          // Client-side safety filter: Only include Published documents
+          // This ensures Draft, Unpublished, Rejected, and any other statuses are excluded
+          .filter((doc) => doc.status === "Published");
 
         setDocuments(docs);
       } catch (err: any) {
@@ -449,7 +456,10 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
         );
 
         // Map semantic search results back to ResultItem format
-        const mappedResults: ResultItem[] = semanticResults.map((result) => result.document);
+        // Filter to ensure only Published documents are included (safety check)
+        const mappedResults: ResultItem[] = semanticResults
+          .map((result) => result.document)
+          .filter((doc) => doc.status === "Published");
 
         setSemanticSearchResults(mappedResults);
       } catch (err: any) {
@@ -557,9 +567,14 @@ const FilterDropdown: React.FC<IFilterDropdownProps> = ({
           item.diseaseArea &&
           item.diseaseArea.trim() === selectedDiseaseArea.trim());
 
+      // Status filter - Only show Published documents (exclude Draft, Unpublished, Rejected, etc.)
+      const matchesStatus =
+        activeTab !== "documents" || // Experts don't have status
+        (item.status && item.status === "Published");
+
       return matchesSearch && matchesFormat && matchesBusinessUnit && 
              matchesDocumentType && matchesClient && matchesRegion && 
-             matchesTherapyArea && matchesDiseaseArea;
+             matchesTherapyArea && matchesDiseaseArea && matchesStatus;
     });
   }, [
     hasAnyFilter,
