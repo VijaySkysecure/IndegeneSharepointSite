@@ -17,9 +17,11 @@
   min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-right: 8px;
+  padding-right: 16px;
   padding-left: 8px;
   max-height: calc(100vh - 280px);
+  height: calc(100vh - 280px);
+  scrollbar-gutter: stable;
 }
 
 .headerBar {
@@ -81,16 +83,111 @@
   z-index: 40;
 }
 
+.accordionWrapper {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .singleFormContainer {
+  flex: 1;
   background: #ffffff;
   border: 1px solid rgba(15,33,51,0.08);
   border-radius: 10px;
-  padding: 24px;
-  margin-bottom: 24px;
   box-shadow: 0 4px 12px rgba(15,33,51,0.04);
   overflow: hidden;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.accordionHeaderWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.accordionHeader {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.accordionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.deleteFileButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  color: #999;
+  opacity: 1;
+  transition: color 0.2s;
+  flex-shrink: 0;
+  margin-top: 10px;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+  }
+
+  &:hover {
+    color: #d32f2f;
+  }
+}
+
+.accordionIcon {
+  flex-shrink: 0;
+  stroke: #666;
+  transition: transform 0.3s ease, stroke 0.2s;
+  width: 20px;
+  height: 20px;
+  transform-origin: center;
+}
+
+.accordionIconOpen {
+  transform: scaleY(-1);
+  stroke: #6c5ce7;
+}
+
+.accordionContent {
+  padding: 0 24px 24px 24px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
 }
 
 .fileFormTitle {
@@ -138,7 +235,7 @@
   font-size: 15px;
   color: #1b3752;
   margin-bottom: 8px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .input {

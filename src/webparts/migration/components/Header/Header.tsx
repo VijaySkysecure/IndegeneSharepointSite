@@ -15,7 +15,7 @@ export const Header: React.FunctionComponent<IHeaderProps> = (props) => {
           <p className={styles.description}>
             Trusted partner of healthcare organizations.
           </p>
-          <button className={styles.addFileButton} onClick={() => setShowUploader(true)}>Upload File</button>
+          <button className={styles.addFileButton} onClick={() => setShowUploader(true)}>Upload Files</button>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.leadership}>Leadership</div>

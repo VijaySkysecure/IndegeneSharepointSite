@@ -337,34 +337,43 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_60dda148{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_60dda148{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_60dda148{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_60dda148{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_60dda148{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_60dda148{align-items:flex-start;display:flex;flex-direction:column}.subtitle_60dda148{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_60dda148{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_60dda148{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;margin-bottom:24px;max-width:100%;overflow:hidden;padding:24px}.fileFormTitle_60dda148{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 12px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.sensitiveWarning_60dda148{align-items:center;color:#d32f2f;display:flex;font-size:13px;font-weight:600;gap:6px;margin-bottom:16px}.sensitiveWarning_60dda148 svg{stroke:currentColor;fill:none;flex-shrink:0}.fieldFull_60dda148,.field_60dda148{display:flex;flex-direction:column}.fieldFull_60dda148{grid-column:1/-1}.label_60dda148{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_60dda148{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_60dda148::placeholder{color:#9ca3af;opacity:1}.input_60dda148:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.inputSensitive_60dda148{border-color:#ff9800!important}.inputSensitive_60dda148:focus{border-color:#ff9800!important;box-shadow:0 12px 30px rgba(255,152,0,.15)!important}.textarea_60dda148{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_60dda148::placeholder{color:#9ca3af;opacity:1}.textarea_60dda148:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_60dda148{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_60dda148::-webkit-scrollbar{width:8px}.textareaScrollable_60dda148::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_60dda148::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_60dda148::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.textareaScrollable_60dda148.inputSensitive_60dda148{border-color:#ff9800!important}.textareaScrollable_60dda148.inputSensitive_60dda148:focus{border-color:#ff9800!important;box-shadow:0 8px 24px rgba(255,152,0,.15)!important}.grid_60dda148{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_60dda148{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_60dda148{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_60dda148{grid-template-columns:1fr}}.formInner_60dda148::-webkit-scrollbar{width:8px}.formInner_60dda148::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_60dda148::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_60dda148::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_60dda148{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBR0EscUJBQUEsQ0FKQSxrQkFBQSxDQUdBLGNBQUEsQ0FEQSxlQUFBLENBSEEsWUFLQSxDQUdGLHdCQU9FLG9CQUFBLENBREEsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBT0EsY0FBQSxDQURBLGVBQUEsQ0FGQSx3QkFBQSxDQUhBLG1CQUFBLENBSUEscUJBRUEsQ0FHRiwyQkFFRSxrQkFBQSxDQUdBLGFBQUEsQ0FKQSxZQUFBLENBS0EsY0FBQSxDQUNBLGVBQUEsQ0FKQSxPQUFBLENBQ0Esa0JBR0EsQ0FFQSwrQkFFRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxhQUVBLENBU0osb0NBSkUsWUFBQSxDQUNBLHFCQU1BLENBSEYsb0JBQ0UsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSix5QkFDRSw4QkFBQSxDQUVBLCtCQUNFLDhCQUFBLENBQ0Esb0RBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBSUosNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUdGLHFEQUNFLDhCQUFBLENBRUEsMkRBQ0UsOEJBQUEsQ0FDQSxtREFBQSxDQUtOLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBR0YsMEJBUUUsMkRBQUEsQ0FIQSx1Q0FBQSxDQUVBLFFBQUEsQ0FOQSxZQUFBLENBQ0Esd0JBQUEsQ0FDQSxlQUFBLENBQ0EsZ0JBQUEsQ0FFQSxlQUFBLENBR0EsU0FBQSxDQUdGLG9CQUVFLGlEQUFBLENBR0EsV0FBQSxDQUNBLGlCQUFBLENBR0EseUNBQUEsQ0FOQSxVQUFBLENBSUEsY0FBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBUEEsaUJBUUEsQ0FJRix5QkFDRSxlQUNFLHlCQUFBLENBQUEsQ0FJSix1Q0FDRSxTQUFBLENBRUYsNkNBR0UseUJBQUEsQ0FGQSwrQkFBQSxDQUNBLGlCQUNBLENBRUYsbURBQ0UsK0JBQUEsQ0FFRiw2Q0FDRSw2QkFBQSxDQUdGLG9CQUNFLHVEQUFBLENBQ0Esb0JBQUEiLCJmaWxlIjoiTXVsdGlNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_0568ac67{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_0568ac67{-webkit-overflow-scrolling:touch;flex:1 1 auto;height:calc(100vh - 280px);max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:16px;scrollbar-gutter:stable}.headerBar_0568ac67{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_0568ac67{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_0568ac67{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_0568ac67{align-items:flex-start;display:flex;flex-direction:column}.subtitle_0568ac67{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_0568ac67{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.accordionWrapper_0568ac67{align-items:flex-start;display:flex;gap:12px;margin-bottom:16px;position:relative}.singleFormContainer_0568ac67{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;flex:1;max-width:100%;overflow:hidden}.accordionHeaderWrapper_0568ac67{align-items:center;display:flex;position:relative}.accordionHeader_0568ac67{align-items:center;background:#fff;border:none;cursor:pointer;display:flex;flex:1;justify-content:space-between;padding:18px 24px;text-align:left;transition:background-color .2s}.accordionHeader_0568ac67:focus{outline:0}.accordionTitle_0568ac67{word-wrap:break-word;color:#000;flex:1;font-size:16px;font-weight:600;margin-right:12px;overflow-wrap:break-word;word-break:break-word}.deleteFileButton_0568ac67{align-items:center;background:0 0;border:none;color:#999;cursor:pointer;display:flex;flex-shrink:0;justify-content:center;margin-top:10px;opacity:1;padding:14px;transition:color .2s}.deleteFileButton_0568ac67 svg{stroke:currentColor;fill:none}.deleteFileButton_0568ac67:hover{color:#d32f2f}.accordionIcon_0568ac67{stroke:#666;flex-shrink:0;height:20px;transform-origin:center;transition:transform .3s ease,stroke .2s;width:20px}.accordionIconOpen_0568ac67{stroke:#6c5ce7;transform:scaleY(-1)}.accordionContent_0568ac67{animation:slideDown_0568ac67 .3s ease-out;padding:0 24px 24px}@keyframes slideDown_0568ac67{0%{max-height:0;opacity:0}to{max-height:2000px;opacity:1}}.fileFormTitle_0568ac67{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 12px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.sensitiveWarning_0568ac67{align-items:center;color:#d32f2f;display:flex;font-size:13px;font-weight:600;gap:6px;margin-bottom:16px}.sensitiveWarning_0568ac67 svg{stroke:currentColor;fill:none;flex-shrink:0}.fieldFull_0568ac67,.field_0568ac67{display:flex;flex-direction:column}.fieldFull_0568ac67{grid-column:1/-1}.label_0568ac67{color:#1b3752;font-size:15px;font-weight:600;margin-bottom:8px}.input_0568ac67{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_0568ac67:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_0568ac67::placeholder{color:#9ca3af;opacity:1}.input_0568ac67:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.inputSensitive_0568ac67{border-color:#ff9800!important}.inputSensitive_0568ac67:focus{border-color:#ff9800!important;box-shadow:0 12px 30px rgba(255,152,0,.15)!important}.textarea_0568ac67{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_0568ac67:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_0568ac67::placeholder{color:#9ca3af;opacity:1}.textarea_0568ac67:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_0568ac67{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_0568ac67:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_0568ac67::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_0568ac67:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_0568ac67::-webkit-scrollbar{width:8px}.textareaScrollable_0568ac67::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_0568ac67::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_0568ac67::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.textareaScrollable_0568ac67.inputSensitive_0568ac67{border-color:#ff9800!important}.textareaScrollable_0568ac67.inputSensitive_0568ac67:focus{border-color:#ff9800!important;box-shadow:0 8px 24px rgba(255,152,0,.15)!important}.grid_0568ac67{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_0568ac67{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_0568ac67{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_0568ac67{grid-template-columns:1fr}}.formInner_0568ac67::-webkit-scrollbar{width:8px}.formInner_0568ac67::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_0568ac67::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_0568ac67::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_0568ac67{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBT0EsMEJBQUEsQ0FEQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxrQkFBQSxDQUlBLHVCQUFBLENBR0Ysb0JBSUUsa0JBQUEsQ0FIQSxjQUFBLENBRUEsWUFBQSxDQUVBLFFBQUEsQ0FFQSxpQkFBQSxDQUxBLGNBQUEsQ0FJQSxpQkFDQSxDQUdGLG1CQUVFLGNBQUEsQ0FDQSxZQUFBLENBRUEsTUFBQSxDQURBLHFCQUFBLENBRUEsWUFBQSxDQUxBLFlBS0EsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBR0YsMkJBSUUsc0JBQUEsQ0FE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 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_60dda148: "formWrapper_60dda148",
-  formInner_60dda148: "formInner_60dda148",
-  headerBar_60dda148: "headerBar_60dda148",
-  cardMeta_60dda148: "cardMeta_60dda148",
-  title_60dda148: "title_60dda148",
-  titleWrap_60dda148: "titleWrap_60dda148",
-  subtitle_60dda148: "subtitle_60dda148",
-  closeBtn_60dda148: "closeBtn_60dda148",
-  singleFormContainer_60dda148: "singleFormContainer_60dda148",
-  fileFormTitle_60dda148: "fileFormTitle_60dda148",
-  sensitiveWarning_60dda148: "sensitiveWarning_60dda148",
-  field_60dda148: "field_60dda148",
-  fieldFull_60dda148: "fieldFull_60dda148",
-  label_60dda148: "label_60dda148",
-  input_60dda148: "input_60dda148",
+  formWrapper_0568ac67: "formWrapper_0568ac67",
+  formInner_0568ac67: "formInner_0568ac67",
+  headerBar_0568ac67: "headerBar_0568ac67",
+  cardMeta_0568ac67: "cardMeta_0568ac67",
+  title_0568ac67: "title_0568ac67",
+  titleWrap_0568ac67: "titleWrap_0568ac67",
+  subtitle_0568ac67: "subtitle_0568ac67",
+  closeBtn_0568ac67: "closeBtn_0568ac67",
+  accordionWrapper_0568ac67: "accordionWrapper_0568ac67",
+  singleFormContainer_0568ac67: "singleFormContainer_0568ac67",
+  accordionHeaderWrapper_0568ac67: "accordionHeaderWrapper_0568ac67",
+  accordionHeader_0568ac67: "accordionHeader_0568ac67",
+  accordionTitle_0568ac67: "accordionTitle_0568ac67",
+  deleteFileButton_0568ac67: "deleteFileButton_0568ac67",
+  accordionIcon_0568ac67: "accordionIcon_0568ac67",
+  accordionIconOpen_0568ac67: "accordionIconOpen_0568ac67",
+  accordionContent_0568ac67: "accordionContent_0568ac67",
+  slideDown_0568ac67: "slideDown_0568ac67",
+  fileFormTitle_0568ac67: "fileFormTitle_0568ac67",
+  sensitiveWarning_0568ac67: "sensitiveWarning_0568ac67",
+  field_0568ac67: "field_0568ac67",
+  fieldFull_0568ac67: "fieldFull_0568ac67",
+  label_0568ac67: "label_0568ac67",
+  input_0568ac67: "input_0568ac67",
   input: "input",
-  inputSensitive_60dda148: "inputSensitive_60dda148",
-  textarea_60dda148: "textarea_60dda148",
+  inputSensitive_0568ac67: "inputSensitive_0568ac67",
+  textarea_0568ac67: "textarea_0568ac67",
   textarea: "textarea",
-  textareaScrollable_60dda148: "textareaScrollable_60dda148",
+  textareaScrollable_0568ac67: "textareaScrollable_0568ac67",
   textareaScrollable: "textareaScrollable",
-  grid_60dda148: "grid_60dda148",
-  submitContainer_60dda148: "submitContainer_60dda148",
-  submitBtn_60dda148: "submitBtn_60dda148"
+  grid_0568ac67: "grid_0568ac67",
+  submitContainer_0568ac67: "submitContainer_0568ac67",
+  submitBtn_0568ac67: "submitBtn_0568ac67"
 });
 
 
@@ -932,7 +941,7 @@ var BUHeader = function (props) {
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z", fill: "white" }))),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buName }, props.buName),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "About the business unit, the services they provide...etc"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Upload File")),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton }, "Upload Files")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buHead }, "BU Head"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _BUHeader_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer },
@@ -1762,6 +1771,20 @@ var FileUpload = function (props) {
                 setShowForm(false);
                 isSubmittingRef.current = false;
                 props.onClose && props.onClose();
+            }, onDelete: function (index) {
+                var updatedFiles = filesData.filter(function (_, i) { return i !== index; });
+                setFilesData(updatedFiles);
+                if (updatedFiles.length === 0) {
+                    setShowForm(false);
+                    setUploadedFiles([]);
+                    isSubmittingRef.current = false;
+                    props.onClose && props.onClose();
+                }
+                else if (updatedFiles.length === 1) {
+                    // Switch to single file form
+                    setShowForm(false);
+                    // The effect will handle showing the single form
+                }
             }, filesData: filesData })) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length === 1 ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MetadataForm_MetadataForm__WEBPACK_IMPORTED_MODULE_3__.MetadataForm, { onSubmit: function (data) { return onFormSubmit([{ file: filesData[0].file, itemId: filesData[0].itemId, metadata: data }]); }, onClose: function () {
                 setUploadedFiles([]);
                 setFilesData([]);
@@ -1837,7 +1860,7 @@ var Header = function (props) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leftSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].companyName }, "Indegene"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].description }, "Trusted partner of healthcare organizations."),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Upload File")),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].addFileButton, onClick: function () { return setShowUploader(true); } }, "Upload Files")),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].rightSection },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].leadership }, "Leadership"),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _Header_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].searchContainer },
@@ -2177,8 +2200,9 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 
 var MultiMetadataForm = function (_a) {
-    var onSubmit = _a.onSubmit, onClose = _a.onClose, filesData = _a.filesData;
+    var onSubmit = _a.onSubmit, onClose = _a.onClose, onDelete = _a.onDelete, filesData = _a.filesData;
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState({}), formsData = _b[0], setFormsData = _b[1];
+    var _c = react__WEBPACK_IMPORTED_MODULE_0__.useState(new Set([0])), openAccordionIndices = _c[0], setOpenAccordionIndices = _c[1];
     // Track which fields were auto-filled for each file
     var autoFilledFields = react__WEBPACK_IMPORTED_MODULE_0__.useRef({});
     // Initialize forms data from filesData
@@ -2207,6 +2231,27 @@ var MultiMetadataForm = function (_a) {
             return (__assign(__assign({}, prev), (_a = {}, _a[fileIndex] = __assign(__assign({}, prev[fileIndex]), (_b = {}, _b[fieldName] = value, _b)), _a)));
         });
     };
+    var toggleAccordion = function (index) {
+        setOpenAccordionIndices(function (prev) {
+            var newSet = new Set(prev);
+            if (newSet.has(index)) {
+                newSet.delete(index);
+            }
+            else {
+                newSet.add(index);
+            }
+            return newSet;
+        });
+    };
+    var handleDeleteFile = function (index) {
+        if (!confirm("Are you sure you want to remove \"".concat(filesData[index].file.name, "\" from the upload?"))) {
+            return;
+        }
+        // Call parent to handle file deletion - parent will update filesData
+        if (onDelete) {
+            onDelete(index);
+        }
+    };
     var handleSubmit = function (e) {
         e && e.preventDefault();
         // Convert formsData to array format expected by parent
@@ -2233,62 +2278,76 @@ var MultiMetadataForm = function (_a) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", { onSubmit: handleSubmit },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formInner }, filesData.map(function (fileData, index) {
                     var formData = formsData[index] || {};
-                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: index, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].singleFormContainer },
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fileFormTitle },
-                            "File ",
-                            index + 1,
-                            " - ",
-                            fileData.file.name),
-                        (function () {
-                            var fileAutoFilledFields = autoFilledFields.current[index] || new Set();
-                            var hasSensitiveInfo = fileAutoFilledFields.size > 0;
-                            return hasSensitiveInfo ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sensitiveWarning },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "2" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }),
-                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "16", x2: "12.01", y2: "16", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" })),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "This file contains sensitive information"))) : null;
-                        })(),
-                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title-".concat(index) }, "Title"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title-".concat(index), name: "title", placeholder: "Enter document title", value: formData.title || '', onChange: function (e) { return handleFieldChange(index, 'title', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu-".concat(index) }, "Business Unit"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu-".concat(index), name: "bu", placeholder: "Select or type BU", value: formData.bu || '', onChange: function (e) { return handleFieldChange(index, 'bu', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department-".concat(index) }, "Department"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department-".concat(index), name: "department", placeholder: "Department", value: formData.department || '', onChange: function (e) { return handleFieldChange(index, 'department', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region-".concat(index) }, "Region"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region-".concat(index), name: "region", placeholder: "Region", value: formData.region || '', onChange: function (e) { return handleFieldChange(index, 'region', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client-".concat(index) }, "Client"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client-".concat(index), name: "client", placeholder: "Client name", value: formData.client || '', onChange: function (e) { return handleFieldChange(index, 'client', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input, " ").concat((autoFilledFields.current[index] || new Set()).has('client') && formData.client ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType-".concat(index) }, "Document Type"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType-".concat(index), name: "documentType", placeholder: "e.g., PPTX, Report", value: formData.documentType || '', onChange: function (e) { return handleFieldChange(index, 'documentType', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea-".concat(index) }, "Disease Area"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "diseaseArea-".concat(index), name: "diseaseArea", placeholder: "Disease Area", value: formData.diseaseArea || '', onChange: function (e) { return handleFieldChange(index, 'diseaseArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea-".concat(index) }, "Therapy Area"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "therapyArea-".concat(index), name: "therapyArea", placeholder: "Therapy Area", value: formData.therapyArea || '', onChange: function (e) { return handleFieldChange(index, 'therapyArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract-".concat(index) }, "Abstract"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract-".concat(index), name: "abstract", placeholder: "Short summary (1-2 lines)", value: formData.abstract || '', onChange: function (e) { return handleFieldChange(index, 'abstract', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails-".concat(index) }, "Emails Found"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails-".concat(index), name: "emails", value: formData.emails || '', onChange: function (e) { return handleFieldChange(index, 'emails', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('emails') && formData.emails ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones-".concat(index) }, "Phones Found"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones-".concat(index), name: "phones", value: formData.phones || '', onChange: function (e) { return handleFieldChange(index, 'phones', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('phones') && formData.phones ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids-".concat(index) }, "IDs Found"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids-".concat(index), name: "ids", value: formData.ids || '', onChange: function (e) { return handleFieldChange(index, 'ids', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing-".concat(index) }, "Pricing / Sensitive Terms"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing-".concat(index), name: "pricing", value: formData.pricing || '', onChange: function (e) { return handleFieldChange(index, 'pricing', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })))));
+                    var isOpen = openAccordionIndices.has(index);
+                    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { key: index, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionWrapper },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].singleFormContainer },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionHeaderWrapper },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionHeader, onClick: function () { return toggleAccordion(index); }, "aria-expanded": isOpen },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionTitle },
+                                        "File ",
+                                        index + 1,
+                                        " - ",
+                                        fileData.file.name),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionIcon, " ").concat(isOpen ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionIconOpen : ''), width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M6 9l6 6 6-6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))),
+                            isOpen && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].accordionContent },
+                                (function () {
+                                    var fileAutoFilledFields = autoFilledFields.current[index] || new Set();
+                                    var hasSensitiveInfo = fileAutoFilledFields.size > 0;
+                                    return hasSensitiveInfo ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sensitiveWarning },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "2" }),
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }),
+                                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "16", x2: "12.01", y2: "16", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" })),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "This file contains sensitive information"))) : null;
+                                })(),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title-".concat(index) }, "Title"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "title-".concat(index), name: "title", placeholder: "Enter document title", value: formData.title || '', onChange: function (e) { return handleFieldChange(index, 'title', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "bu-".concat(index) }, "Business Unit"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "bu-".concat(index), name: "bu", placeholder: "Select or type BU", value: formData.bu || '', onChange: function (e) { return handleFieldChange(index, 'bu', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "department-".concat(index) }, "Department"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "department-".concat(index), name: "department", placeholder: "Department", value: formData.department || '', onChange: function (e) { return handleFieldChange(index, 'department', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "region-".concat(index) }, "Region"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region-".concat(index), name: "region", placeholder: "Region", value: formData.region || '', onChange: function (e) { return handleFieldChange(index, 'region', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client-".concat(index) }, "Client"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client-".concat(index), name: "client", placeholder: "Client name", value: formData.client || '', onChange: function (e) { return handleFieldChange(index, 'client', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input, " ").concat((autoFilledFields.current[index] || new Set()).has('client') && formData.client ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType-".concat(index) }, "Document Type"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType-".concat(index), name: "documentType", placeholder: "e.g., PPTX, Report", value: formData.documentType || '', onChange: function (e) { return handleFieldChange(index, 'documentType', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "diseaseArea-".concat(index) }, "Disease Area"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "diseaseArea-".concat(index), name: "diseaseArea", placeholder: "Disease Area", value: formData.diseaseArea || '', onChange: function (e) { return handleFieldChange(index, 'diseaseArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "therapyArea-".concat(index) }, "Therapy Area"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "therapyArea-".concat(index), name: "therapyArea", placeholder: "Therapy Area", value: formData.therapyArea || '', onChange: function (e) { return handleFieldChange(index, 'therapyArea', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "abstract-".concat(index) }, "Abstract"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract-".concat(index), name: "abstract", placeholder: "Short summary (1-2 lines)", value: formData.abstract || '', onChange: function (e) { return handleFieldChange(index, 'abstract', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails-".concat(index) }, "Emails Found"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails-".concat(index), name: "emails", value: formData.emails || '', onChange: function (e) { return handleFieldChange(index, 'emails', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('emails') && formData.emails ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones-".concat(index) }, "Phones Found"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones-".concat(index), name: "phones", value: formData.phones || '', onChange: function (e) { return handleFieldChange(index, 'phones', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('phones') && formData.phones ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids-".concat(index) }, "IDs Found"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids-".concat(index), name: "ids", value: formData.ids || '', onChange: function (e) { return handleFieldChange(index, 'ids', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "pricing-".concat(index) }, "Pricing / Sensitive Terms"),
+                                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "pricing-".concat(index), name: "pricing", value: formData.pricing || '', onChange: function (e) { return handleFieldChange(index, 'pricing', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })))))),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].deleteFileButton, onClick: function (e) {
+                                e.stopPropagation();
+                                handleDeleteFile(index);
+                            }, "aria-label": "Delete file" },
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("polyline", { points: "3 6 5 6 21 6", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" })))));
                 })),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitContainer },
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "submit", className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn },
@@ -2315,27 +2374,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MultiMetadataForm.module.css */ 5124);
 var styles = {
-    formWrapper: 'formWrapper_60dda148',
-    formInner: 'formInner_60dda148',
-    headerBar: 'headerBar_60dda148',
-    cardMeta: 'cardMeta_60dda148',
-    title: 'title_60dda148',
-    titleWrap: 'titleWrap_60dda148',
-    subtitle: 'subtitle_60dda148',
-    closeBtn: 'closeBtn_60dda148',
-    singleFormContainer: 'singleFormContainer_60dda148',
-    fileFormTitle: 'fileFormTitle_60dda148',
-    sensitiveWarning: 'sensitiveWarning_60dda148',
-    field: 'field_60dda148',
-    fieldFull: 'fieldFull_60dda148',
-    label: 'label_60dda148',
-    input: 'input_60dda148',
-    inputSensitive: 'inputSensitive_60dda148',
-    textarea: 'textarea_60dda148',
-    textareaScrollable: 'textareaScrollable_60dda148',
-    grid: 'grid_60dda148',
-    submitContainer: 'submitContainer_60dda148',
-    submitBtn: 'submitBtn_60dda148'
+    formWrapper: 'formWrapper_0568ac67',
+    formInner: 'formInner_0568ac67',
+    headerBar: 'headerBar_0568ac67',
+    cardMeta: 'cardMeta_0568ac67',
+    title: 'title_0568ac67',
+    titleWrap: 'titleWrap_0568ac67',
+    subtitle: 'subtitle_0568ac67',
+    closeBtn: 'closeBtn_0568ac67',
+    accordionWrapper: 'accordionWrapper_0568ac67',
+    singleFormContainer: 'singleFormContainer_0568ac67',
+    accordionHeaderWrapper: 'accordionHeaderWrapper_0568ac67',
+    accordionHeader: 'accordionHeader_0568ac67',
+    accordionTitle: 'accordionTitle_0568ac67',
+    deleteFileButton: 'deleteFileButton_0568ac67',
+    accordionIcon: 'accordionIcon_0568ac67',
+    accordionIconOpen: 'accordionIconOpen_0568ac67',
+    accordionContent: 'accordionContent_0568ac67',
+    slideDown: 'slideDown_0568ac67',
+    fileFormTitle: 'fileFormTitle_0568ac67',
+    sensitiveWarning: 'sensitiveWarning_0568ac67',
+    field: 'field_0568ac67',
+    fieldFull: 'fieldFull_0568ac67',
+    label: 'label_0568ac67',
+    input: 'input_0568ac67',
+    inputSensitive: 'inputSensitive_0568ac67',
+    textarea: 'textarea_0568ac67',
+    textareaScrollable: 'textareaScrollable_0568ac67',
+    grid: 'grid_0568ac67',
+    submitContainer: 'submitContainer_0568ac67',
+    submitBtn: 'submitBtn_0568ac67'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

@@ -32,7 +32,7 @@ export const BUHeader: React.FunctionComponent<IBUHeaderProps> = (props) => {
           <p className={styles.description}>
             About the business unit, the services they provide...etc
           </p>
-          <button className={styles.addFileButton}>Upload File</button>
+          <button className={styles.addFileButton}>Upload Files</button>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.buHead}>BU Head</div>

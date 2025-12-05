@@ -7,6 +7,7 @@ export interface FileData {
 export interface IMultiMetadataFormProps {
   onSubmit?: (filesData: FileData[]) => void;
   onClose?: () => void;
+  onDelete?: (index: number) => void;
   filesData: FileData[];
 }
 

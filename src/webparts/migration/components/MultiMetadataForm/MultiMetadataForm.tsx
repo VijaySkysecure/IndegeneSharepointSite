@@ -2,8 +2,9 @@ import * as React from 'react';
 import styles from './MultiMetadataForm.module.scss';
 import { IMultiMetadataFormProps } from './IMultiMetadataFormProps';
 
-export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit, onClose, filesData }) => {
+export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit, onClose, onDelete, filesData }) => {
   const [formsData, setFormsData] = React.useState<Record<number, Record<string, any>>>({});
+  const [openAccordionIndices, setOpenAccordionIndices] = React.useState<Set<number>>(new Set([0]));
   
   // Track which fields were auto-filled for each file
   const autoFilledFields = React.useRef<Record<number, Set<string>>>({});
@@ -55,6 +56,29 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
     }));
   };
 
+  const toggleAccordion = (index: number) => {
+    setOpenAccordionIndices(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
+
+  const handleDeleteFile = (index: number) => {
+    if (!confirm(`Are you sure you want to remove "${filesData[index].file.name}" from the upload?`)) {
+      return;
+    }
+
+    // Call parent to handle file deletion - parent will update filesData
+    if (onDelete) {
+      onDelete(index);
+    }
+  };
+
   const handleSubmit = (e?: React.FormEvent) => {
     e && e.preventDefault();
     // Convert formsData to array format expected by parent
@@ -94,25 +118,55 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
           <div className={styles.formInner}>
             {filesData.map((fileData, index) => {
               const formData = formsData[index] || {};
+              const isOpen = openAccordionIndices.has(index);
               return (
-                <div key={index} className={styles.singleFormContainer}>
-                  <h3 className={styles.fileFormTitle}>File {index + 1} - {fileData.file.name}</h3>
-                  {(() => {
-                    const fileAutoFilledFields = autoFilledFields.current[index] || new Set();
-                    const hasSensitiveInfo = fileAutoFilledFields.size > 0;
-                    return hasSensitiveInfo ? (
-                      <div className={styles.sensitiveWarning}>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                          <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                          <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <div key={index} className={styles.accordionWrapper}>
+                  <div className={styles.singleFormContainer}>
+                    <div className={styles.accordionHeaderWrapper}>
+                      <button
+                        type="button"
+                        className={styles.accordionHeader}
+                        onClick={() => toggleAccordion(index)}
+                        aria-expanded={isOpen}
+                      >
+                        <span className={styles.accordionTitle}>File {index + 1} - {fileData.file.name}</span>
+                        <svg
+                          className={`${styles.accordionIcon} ${isOpen ? styles.accordionIconOpen : ''}`}
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6 9l6 6 6-6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
-                        <span>This file contains sensitive information</span>
-                      </div>
-                    ) : null;
-                  })()}
+                      </button>
+                    </div>
                   
-                  <div className={styles.grid}>
+                  {isOpen && (
+                    <div className={styles.accordionContent}>
+                      {(() => {
+                        const fileAutoFilledFields = autoFilledFields.current[index] || new Set();
+                        const hasSensitiveInfo = fileAutoFilledFields.size > 0;
+                        return hasSensitiveInfo ? (
+                          <div className={styles.sensitiveWarning}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+                              <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                              <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                            </svg>
+                            <span>This file contains sensitive information</span>
+                          </div>
+                        ) : null;
+                      })()}
+                      
+                      <div className={styles.grid}>
                     <div className={styles.field}>
                       <label className={styles.label} htmlFor={`title-${index}`}>Title</label>
                       <input 
@@ -264,7 +318,24 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
                         className={styles.textarea} 
                       />
                     </div>
+                      </div>
+                    </div>
+                  )}
                   </div>
+                  <button
+                    type="button"
+                    className={styles.deleteFileButton}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDeleteFile(index);
+                    }}
+                    aria-label="Delete file"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <polyline points="3 6 5 6 21 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
                 </div>
               );
             })}

@@ -571,6 +571,20 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
                   isSubmittingRef.current = false;
                   props.onClose && props.onClose();
                 }}
+                onDelete={(index) => {
+                  const updatedFiles = filesData.filter((_, i) => i !== index);
+                  setFilesData(updatedFiles);
+                  if (updatedFiles.length === 0) {
+                    setShowForm(false);
+                    setUploadedFiles([]);
+                    isSubmittingRef.current = false;
+                    props.onClose && props.onClose();
+                  } else if (updatedFiles.length === 1) {
+                    // Switch to single file form
+                    setShowForm(false);
+                    // The effect will handle showing the single form
+                  }
+                }}
                 filesData={filesData}
               />
             ) : !isSubmittingRef.current && showForm && filesData.length > 0 && filesData.length === 1 ? (
