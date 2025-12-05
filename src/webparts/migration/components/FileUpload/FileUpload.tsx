@@ -276,6 +276,10 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       DocumentType: "-",
       DiseaseArea: "-",
       TherapyArea: "-",
+      Emails: "-",
+      Phones: "-",
+      IDs: "-",
+      SensitiveTerms: "-",
       PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };
@@ -344,6 +348,10 @@ export const FileUpload: React.FC<IFileUploadProps> = (props) => {
       DocumentType: data.documentType || "-",
       DiseaseArea: data.diseaseArea || "-",
       TherapyArea: data.therapyArea || "-",
+      Emails: data.emails || "-",
+      Phones: data.phones || "-",
+      IDs: data.ids || "-",
+      SensitiveTerms: data.pricing || "-",
       PerformedById: userId,
       TimeStamp: new Date().toISOString()
     };

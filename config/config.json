@@ -9,11 +9,22 @@
           "manifest": "./src/webparts/migration/MigrationWebPart.manifest.json"
         }
       ]
+    },
+
+    "my-published-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myPublishedViewer/MyPublishedViewerWebPart.js",
+          "manifest": "./src/webparts/myPublishedViewer/MyPublishedViewerWebPart.manifest.json"
+        }
+      ]
     }
+
   },
   "externals": {},
   "localizedResources": {
-    "MigrationWebPartStrings": "lib/webparts/migration/loc/{locale}.js"
+    "MigrationWebPartStrings": "lib/webparts/migration/loc/{locale}.js",
+    "MyPublishedViewerWebPartStrings": "lib/webparts/myPublishedViewer/loc/{locale}.js"
   }
 }
 
