@@ -1,24 +1,26 @@
 
 require("./MetadataForm.module.css");
 const styles = {
-  formWrapper: 'formWrapper_ce3c3795',
-  formInner: 'formInner_ce3c3795',
-  note: 'note_ce3c3795',
-  headerBar: 'headerBar_ce3c3795',
-  cardMeta: 'cardMeta_ce3c3795',
-  field: 'field_ce3c3795',
-  title: 'title_ce3c3795',
-  titleWrap: 'titleWrap_ce3c3795',
-  subtitle: 'subtitle_ce3c3795',
-  closeBtn: 'closeBtn_ce3c3795',
-  fieldFull: 'fieldFull_ce3c3795',
-  label: 'label_ce3c3795',
-  input: 'input_ce3c3795',
-  textarea: 'textarea_ce3c3795',
-  textareaScrollable: 'textareaScrollable_ce3c3795',
-  grid: 'grid_ce3c3795',
-  actions: 'actions_ce3c3795',
-  submitBtn: 'submitBtn_ce3c3795'
+  formWrapper: 'formWrapper_ee4e8b41',
+  formInner: 'formInner_ee4e8b41',
+  note: 'note_ee4e8b41',
+  headerBar: 'headerBar_ee4e8b41',
+  cardMeta: 'cardMeta_ee4e8b41',
+  field: 'field_ee4e8b41',
+  title: 'title_ee4e8b41',
+  titleWrap: 'titleWrap_ee4e8b41',
+  subtitle: 'subtitle_ee4e8b41',
+  sensitiveWarning: 'sensitiveWarning_ee4e8b41',
+  closeBtn: 'closeBtn_ee4e8b41',
+  fieldFull: 'fieldFull_ee4e8b41',
+  label: 'label_ee4e8b41',
+  input: 'input_ee4e8b41',
+  inputSensitive: 'inputSensitive_ee4e8b41',
+  textarea: 'textarea_ee4e8b41',
+  textareaScrollable: 'textareaScrollable_ee4e8b41',
+  grid: 'grid_ee4e8b41',
+  actions: 'actions_ee4e8b41',
+  submitBtn: 'submitBtn_ee4e8b41'
 };
 
 export default styles;

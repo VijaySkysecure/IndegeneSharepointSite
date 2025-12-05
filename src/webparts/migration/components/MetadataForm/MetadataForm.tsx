@@ -21,12 +21,27 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
     ...initialValues
   });
 
-  // Update values when initialValues change
+  // Track which fields were auto-filled (from initialValues)
+  const autoFilledFields = React.useRef<Set<string>>(new Set());
+  
   React.useEffect(() => {
     if (initialValues) {
+      // Track which sensitive fields were auto-filled
+      if (initialValues.emails && initialValues.emails.trim()) {
+        autoFilledFields.current.add('emails');
+      }
+      if (initialValues.phones && initialValues.phones.trim()) {
+        autoFilledFields.current.add('phones');
+      }
+      if (initialValues.client && initialValues.client.trim()) {
+        autoFilledFields.current.add('client');
+      }
       setValues(prev => ({ ...prev, ...initialValues }));
     }
   }, [initialValues]);
+
+  // Check if any sensitive field was auto-filled
+  const hasSensitiveInfo = autoFilledFields.current.size > 0;
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -44,6 +59,16 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
         <div className={styles.titleWrap}>
           <h2 className={styles.title}>Document Metadata</h2>
           <div className={styles.subtitle}>Add context and tags for better discoverability</div>
+          {hasSensitiveInfo && (
+            <div className={styles.sensitiveWarning}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+                <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+              <span>This file contains sensitive information</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -85,7 +110,14 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
 
                   <div className={styles.field}>
                     <label className={styles.label} htmlFor="client">Client</label>
-                    <input id="client" name="client" placeholder="Client name" value={values.client} onChange={onChange} className={styles.input} />
+                    <input 
+                      id="client" 
+                      name="client" 
+                      placeholder="Client name" 
+                      value={values.client} 
+                      onChange={onChange} 
+                      className={`${styles.input} ${autoFilledFields.current.has('client') && values.client ? styles.inputSensitive : ''}`} 
+                    />
                   </div>
 
                   <div className={styles.field}>
@@ -115,7 +147,7 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
                       name="emails" 
                       value={values.emails} 
                       onChange={onChange} 
-                      className={styles.textareaScrollable}
+                      className={`${styles.textareaScrollable} ${autoFilledFields.current.has('emails') && values.emails ? styles.inputSensitive : ''}`}
                     />
                   </div>
 
@@ -126,7 +158,7 @@ export const MetadataForm: React.FC<IMetadataFormProps> = ({ onSubmit, onClose, 
                       name="phones" 
                       value={values.phones} 
                       onChange={onChange} 
-                      className={styles.textareaScrollable}
+                      className={`${styles.textareaScrollable} ${autoFilledFields.current.has('phones') && values.phones ? styles.inputSensitive : ''}`}
                     />
                   </div>
 

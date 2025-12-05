@@ -267,31 +267,33 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_ce3c3795{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_ce3c3795{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_ce3c3795{color:#444;font-size:13px;margin-bottom:6px}.headerBar_ce3c3795{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_ce3c3795{background:0 0;padding:16px}.field_ce3c3795{display:flex;flex-direction:column}.title_ce3c3795{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_ce3c3795{align-items:flex-start;display:flex;flex-direction:column}.subtitle_ce3c3795{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_ce3c3795{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_ce3c3795{display:flex;flex-direction:column;grid-column:1/-1}.label_ce3c3795{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_ce3c3795{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ce3c3795::placeholder{color:#9ca3af;opacity:1}.input_ce3c3795:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_ce3c3795{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795::placeholder{color:#9ca3af;opacity:1}.textarea_ce3c3795:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ce3c3795{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ce3c3795:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ce3c3795::-webkit-scrollbar{width:8px}.textareaScrollable_ce3c3795::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_ce3c3795::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_ce3c3795::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_ce3c3795{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_ce3c3795{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_ce3c3795{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_ce3c3795{grid-template-columns:1fr}}.formInner_ce3c3795::-webkit-scrollbar{width:8px}.formInner_ce3c3795::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_ce3c3795::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_ce3c3795::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_ce3c3795{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0EsaUJBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUlGLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUtKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBSUYsb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_ee4e8b41{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_ee4e8b41{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 220px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.note_ee4e8b41{color:#444;font-size:13px;margin-bottom:6px}.headerBar_ee4e8b41{align-items:center;background:0 0;display:flex;gap:12px;padding:10px 0;position:relative}.cardMeta_ee4e8b41{background:0 0;padding:16px}.field_ee4e8b41{display:flex;flex-direction:column}.title_ee4e8b41{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_ee4e8b41{align-items:flex-start;display:flex;flex-direction:column}.subtitle_ee4e8b41{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.sensitiveWarning_ee4e8b41{align-items:center;color:#d32f2f;display:flex;font-size:13px;font-weight:600;gap:6px;margin-top:8px}.sensitiveWarning_ee4e8b41 svg{stroke:currentColor;fill:none;flex-shrink:0}.closeBtn_ee4e8b41{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.fieldFull_ee4e8b41{display:flex;flex-direction:column;grid-column:1/-1}.label_ee4e8b41{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_ee4e8b41{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ee4e8b41:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_ee4e8b41::placeholder{color:#9ca3af;opacity:1}.input_ee4e8b41:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.inputSensitive_ee4e8b41{border-color:#ff9800!important}.inputSensitive_ee4e8b41:focus{border-color:#ff9800!important;box-shadow:0 12px 30px rgba(255,152,0,.15)!important}.textarea_ee4e8b41{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ee4e8b41:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_ee4e8b41::placeholder{color:#9ca3af;opacity:1}.textarea_ee4e8b41:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ee4e8b41.inputSensitive_ee4e8b41{border-color:#ff9800!important}.textareaScrollable_ee4e8b41.inputSensitive_ee4e8b41:focus{border-color:#ff9800!important;box-shadow:0 8px 24px rgba(255,152,0,.15)!important}.textareaScrollable_ee4e8b41{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ee4e8b41:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ee4e8b41::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_ee4e8b41:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_ee4e8b41::-webkit-scrollbar{width:8px}.textareaScrollable_ee4e8b41::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_ee4e8b41::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_ee4e8b41::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_ee4e8b41{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.actions_ee4e8b41{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);bottom:0;display:flex;justify-content:flex-end;margin-top:8px;padding-bottom:8px;padding-top:8px;position:sticky;z-index:5}.submitBtn_ee4e8b41{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_ee4e8b41{grid-template-columns:1fr}}.formInner_ee4e8b41::-webkit-scrollbar{width:8px}.formInner_ee4e8b41::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_ee4e8b41::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_ee4e8b41::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_ee4e8b41{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL01ldGFkYXRhRm9ybS9NZXRhZGF0YUZvcm0ubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsc0JBQ0UsK0NBQUEsQ0FFQSxrQkFBQSxDQUdBLHlDQUFBLENBR0EsWUFBQSxDQUNBLHFCQUFBLENBTEEsZ0JBQUEsQ0FFQSw4QkFBQSxDQUNBLGVBQUEsQ0FOQSwyQkFBQSxDQVNBLGlCQUFBLENBUEEscUJBT0EsQ0FJRixvQkFJRSxnQ0FBQSxDQUhBLGFBQUEsQ0FNQSw4QkFBQSxDQUxBLFlBQUEsQ0FDQSxlQUFBLENBR0EsZ0JBQUEsQ0FEQSxpQkFFQSxDQUdGLGVBRUUsVUFBQSxDQURBLGNBQUEsQ0FFQSxpQkFBQSxDQUlGLG9CQUlFLGtCQUFBLENBSEEsY0FBQSxDQUVBLFlBQUEsQ0FFQSxRQUFBLENBSEEsY0FBQSxDQUlBLGlCQUFBLENBR0YsbUJBRUUsY0FBQSxDQURBLFlBQ0EsQ0FHRixnQkFDRSxZQUFBLENBQ0EscUJBQUEsQ0FHRixnQkFJRSxhQUFBLENBSEEsY0FBQSxDQUVBLGVBQUEsQ0FEQSxRQUVBLENBR0Ysb0JBR0Usc0JBQUEsQ0FGQSxZQUFBLENBQ0EscUJBQ0EsQ0FHRixtQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxjQUNBLENBR0YsMkJBRUUsa0JBQUEsQ0FHQSxhQUFBLENBSkEsWUFBQSxDQUtBLGNBQUEsQ0FDQSxlQUFBLENBSkEsT0FBQSxDQUNBLGNBR0EsQ0FFQSwrQkFFRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxhQUVBLENBSUosbUJBT0Usa0JBQUEsQ0FOQSxlQUFBLENBQ0EsbUNBQUEsQ0FPQSxpQkFBQSxDQUNBLHdDQUFBLENBUEEsYUFBQSxDQVVBLGNBQUEsQ0FQQSxtQkFBQSxDQUtBLGNBQUEsQ0FOQSxXQUFBLENBR0Esc0JBQUEsQ0FJQSxhQUFBLENBRUEsaUJBQUEsQ0FFQSxVQUFBLENBREEsUUFBQSxDQVhBLFVBQUEsQ0FhQSxVQUFBLENBS0Ysb0JBRUUsWUFBQSxDQUNBLHFCQUFBLENBRkEsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSix5QkFDRSw4QkFBQSxDQUVBLCtCQUNFLDhCQUFBLENBQ0Esb0RBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBSUoscURBQ0UsOEJBQUEsQ0FFQSwyREFDRSw4QkFBQSxDQUNBLG1EQUFBLENBS0osNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUlKLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBS0Ysa0JBTUUsMkRBQUEsQ0FEQSxRQUFBLENBSkEsWUFBQSxDQUNBLHdCQUFBLENBQ0EsY0FBQSxDQUtBLGtCQUFBLENBREEsZUFBQSxDQUhBLGVBQUEsQ0FLQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0EsaUJBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUlGLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUtKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBSUYsb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_ce3c3795: "formWrapper_ce3c3795",
-  formInner_ce3c3795: "formInner_ce3c3795",
-  note_ce3c3795: "note_ce3c3795",
-  headerBar_ce3c3795: "headerBar_ce3c3795",
-  cardMeta_ce3c3795: "cardMeta_ce3c3795",
-  field_ce3c3795: "field_ce3c3795",
-  title_ce3c3795: "title_ce3c3795",
-  titleWrap_ce3c3795: "titleWrap_ce3c3795",
-  subtitle_ce3c3795: "subtitle_ce3c3795",
-  closeBtn_ce3c3795: "closeBtn_ce3c3795",
-  fieldFull_ce3c3795: "fieldFull_ce3c3795",
-  label_ce3c3795: "label_ce3c3795",
-  input_ce3c3795: "input_ce3c3795",
+  formWrapper_ee4e8b41: "formWrapper_ee4e8b41",
+  formInner_ee4e8b41: "formInner_ee4e8b41",
+  note_ee4e8b41: "note_ee4e8b41",
+  headerBar_ee4e8b41: "headerBar_ee4e8b41",
+  cardMeta_ee4e8b41: "cardMeta_ee4e8b41",
+  field_ee4e8b41: "field_ee4e8b41",
+  title_ee4e8b41: "title_ee4e8b41",
+  titleWrap_ee4e8b41: "titleWrap_ee4e8b41",
+  subtitle_ee4e8b41: "subtitle_ee4e8b41",
+  sensitiveWarning_ee4e8b41: "sensitiveWarning_ee4e8b41",
+  closeBtn_ee4e8b41: "closeBtn_ee4e8b41",
+  fieldFull_ee4e8b41: "fieldFull_ee4e8b41",
+  label_ee4e8b41: "label_ee4e8b41",
+  input_ee4e8b41: "input_ee4e8b41",
   input: "input",
-  textarea_ce3c3795: "textarea_ce3c3795",
+  inputSensitive_ee4e8b41: "inputSensitive_ee4e8b41",
+  textarea_ee4e8b41: "textarea_ee4e8b41",
   textarea: "textarea",
-  textareaScrollable_ce3c3795: "textareaScrollable_ce3c3795",
+  textareaScrollable_ee4e8b41: "textareaScrollable_ee4e8b41",
   textareaScrollable: "textareaScrollable",
-  grid_ce3c3795: "grid_ce3c3795",
-  actions_ce3c3795: "actions_ce3c3795",
-  submitBtn_ce3c3795: "submitBtn_ce3c3795"
+  grid_ee4e8b41: "grid_ee4e8b41",
+  actions_ee4e8b41: "actions_ee4e8b41",
+  submitBtn_ee4e8b41: "submitBtn_ee4e8b41"
 });
 
 
@@ -335,32 +337,34 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_39441897{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_39441897{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_39441897{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_39441897{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_39441897{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_39441897{align-items:flex-start;display:flex;flex-direction:column}.subtitle_39441897{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_39441897{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_39441897{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;margin-bottom:24px;max-width:100%;overflow:hidden;padding:24px}.fileFormTitle_39441897{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 20px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.fieldFull_39441897,.field_39441897{display:flex;flex-direction:column}.fieldFull_39441897{grid-column:1/-1}.label_39441897{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_39441897{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_39441897::placeholder{color:#9ca3af;opacity:1}.input_39441897:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.textarea_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_39441897::placeholder{color:#9ca3af;opacity:1}.textarea_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_39441897:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_39441897::-webkit-scrollbar{width:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.grid_39441897{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_39441897{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_39441897{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_39441897{grid-template-columns:1fr}}.formInner_39441897::-webkit-scrollbar{width:8px}.formInner_39441897::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_39441897::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_39441897::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_39441897{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBR0EscUJBQUEsQ0FKQSxrQkFBQSxDQUdBLGNBQUEsQ0FEQSxlQUFBLENBSEEsWUFLQSxDQUdGLHdCQU9FLG9CQUFBLENBREEsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBT0EsY0FBQSxDQURBLGVBQUEsQ0FGQSx3QkFBQSxDQUhBLG1CQUFBLENBSUEscUJBRUEsQ0FRRixvQ0FKRSxZQUFBLENBQ0EscUJBTUEsQ0FIRixvQkFDRSxnQkFFQSxDQUdGLGdCQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGlCQUNBLENBR0YsZ0JBS0UsZUFBQSxDQUZBLG1DQUFBLENBQ0EsaUJBQUEsQ0FFQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxpQkFBQSxDQU9BLDJEQUFBLENBRUEsNkJBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixzQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0Ysc0JBQ0UsZ0NBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FDQSwwQkFBQSxDQUlKLG1CQUtFLG1DQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQUFBLENBSkEsY0FBQSxDQUtBLGVBQUEsQ0FOQSxnQkFBQSxDQURBLFlBQUEsQ0FHQSxlQUlBLENBRUEsZ0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRix5Q0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBR0YseUJBQ0Usb0JBQUEsQ0FDQSwwQ0FBQSxDQUNBLFNBQUEsQ0FJSiw2QkFPRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUVBLGlDQUFBLENBUEEsY0FBQSxDQU1BLGVBQUEsQ0FFQSxlQUFBLENBVEEsZ0JBQUEsQ0FEQSxnQkFBQSxDQUlBLGVBQUEsQ0FMQSxZQUFBLENBSUEsV0FPQSxDQUVBLDBDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsbURBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLG1DQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBR0YsZ0RBQ0UsU0FBQSxDQUdGLHNEQUNFLCtCQUFBLENBQ0EsaUJBQUEsQ0FHRiw0REFDRSwrQkFBQSxDQUdGLHNEQUNFLDZCQUFBLENBSUosZUFJRSxpQkFBQSxDQUhBLFlBQUEsQ0FFQSxhQUFBLENBREEsNkJBRUEsQ0FHRiwwQkFRRSwyREFBQSxDQUhBLHVDQUFBLENBRUEsUUFBQSxDQU5BLFlBQUEsQ0FDQSx3QkFBQSxDQUNBLGVBQUEsQ0FDQSxnQkFBQSxDQUVBLGVBQUEsQ0FHQSxTQUFBLENBR0Ysb0JBRUUsaURBQUEsQ0FHQSxXQUFBLENBQ0EsaUJBQUEsQ0FHQSx5Q0FBQSxDQU5BLFVBQUEsQ0FJQSxjQUFBLENBSEEsY0FBQSxDQUlBLGVBQUEsQ0FQQSxpQkFRQSxDQUlGLHlCQUNFLGVBQ0UseUJBQUEsQ0FBQSxDQUlKLHVDQUNFLFNBQUEsQ0FFRiw2Q0FHRSx5QkFBQSxDQUZBLCtCQUFBLENBQ0EsaUJBQ0EsQ0FFRixtREFDRSwrQkFBQSxDQUVGLDZDQUNFLDZCQUFBLENBR0Ysb0JBQ0UsdURBQUEsQ0FDQSxvQkFBQSIsImZpbGUiOiJNdWx0aU1ldGFkYXRhRm9ybS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".formWrapper_60dda148{background:linear-gradient(180deg,#f7f9fb,#fff);border-radius:12px;box-shadow:0 18px 40px rgba(31,43,70,.08);display:flex;flex-direction:column;margin:22px auto;max-height:calc(100vh - 110px);overflow:hidden;padding:24px 20px 24px 28px;position:relative;width:min(820px,96vw)}.formInner_60dda148{-webkit-overflow-scrolling:touch;flex:1 1 auto;max-height:calc(100vh - 280px);min-height:0;overflow-y:auto;padding-left:8px;padding-right:8px}.headerBar_60dda148{align-items:center;background:0 0;display:flex;gap:12px;margin-bottom:8px;padding:10px 0;position:relative}.cardMeta_60dda148{background:0 0;display:flex;flex:1;flex-direction:column;min-height:0;padding:16px}.title_60dda148{color:#0f2133;font-size:28px;font-weight:800;margin:0}.titleWrap_60dda148{align-items:flex-start;display:flex;flex-direction:column}.subtitle_60dda148{color:#5b6b7a;font-size:13px;font-weight:600;margin-top:6px}.closeBtn_60dda148{align-items:center;background:#fff;border:1px solid rgba(15,33,51,.06);border-radius:50%;box-shadow:0 6px 18px rgba(15,33,51,.06);color:#0f2133;cursor:pointer;display:inline-flex;font-size:18px;height:44px;justify-content:center;line-height:1;position:absolute;right:20px;top:24px;width:44px;z-index:40}.singleFormContainer_60dda148{background:#fff;border:1px solid rgba(15,33,51,.08);border-radius:10px;box-shadow:0 4px 12px rgba(15,33,51,.04);box-sizing:border-box;margin-bottom:24px;max-width:100%;overflow:hidden;padding:24px}.fileFormTitle_60dda148{word-wrap:break-word;border-bottom:2px solid rgba(72,52,212,.15);color:#000;font-size:16px;font-weight:600;margin:0 0 12px;max-width:100%;overflow:hidden;overflow-wrap:break-word;padding-bottom:12px;word-break:break-word}.sensitiveWarning_60dda148{align-items:center;color:#d32f2f;display:flex;font-size:13px;font-weight:600;gap:6px;margin-bottom:16px}.sensitiveWarning_60dda148 svg{stroke:currentColor;fill:none;flex-shrink:0}.fieldFull_60dda148,.field_60dda148{display:flex;flex-direction:column}.fieldFull_60dda148{grid-column:1/-1}.label_60dda148{color:#1b3752;font-size:15px;font-weight:700;margin-bottom:8px}.input_60dda148{background:#fff;border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;padding:10px 12px;transition:border-color .14s,box-shadow .14s,transform 60ms}.input:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.input_60dda148::placeholder{color:#9ca3af;opacity:1}.input_60dda148:focus{border-color:rgba(108,92,231,.9);box-shadow:0 12px 30px rgba(76,63,203,.08);outline:0;transform:translateY(-2px)}.inputSensitive_60dda148{border-color:#ff9800!important}.inputSensitive_60dda148:focus{border-color:#ff9800!important;box-shadow:0 12px 30px rgba(255,152,0,.15)!important}.textarea_60dda148{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-size:15px;font-weight:500;min-height:110px;padding:14px;resize:vertical}.textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.textarea_60dda148::placeholder{color:#9ca3af;opacity:1}.textarea_60dda148:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_60dda148{border:1px solid rgba(15,33,51,.12);border-radius:8px;color:#6b7280;font-family:Courier New,monospace;font-size:14px;font-weight:500;line-height:1.6;max-height:200px;min-height:110px;overflow-y:auto;padding:14px;resize:none}.textareaScrollable:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148:-ms-input-placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148::placeholder{color:#9ca3af;opacity:1}.textareaScrollable_60dda148:focus{border-color:#6c5ce7;box-shadow:0 8px 24px rgba(108,92,231,.08);outline:0}.textareaScrollable_60dda148::-webkit-scrollbar{width:8px}.textareaScrollable_60dda148::-webkit-scrollbar-thumb{background:rgba(108,92,231,.32);border-radius:8px}.textareaScrollable_60dda148::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.textareaScrollable_60dda148::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.textareaScrollable_60dda148.inputSensitive_60dda148{border-color:#ff9800!important}.textareaScrollable_60dda148.inputSensitive_60dda148:focus{border-color:#ff9800!important;box-shadow:0 8px 24px rgba(255,152,0,.15)!important}.grid_60dda148{align-items:start;display:grid;gap:16px 18px;grid-template-columns:1fr 1fr}.submitContainer_60dda148{background:linear-gradient(180deg,hsla(0,0%,100%,.95),#fff);border-top:1px solid rgba(15,33,51,.08);bottom:0;display:flex;justify-content:flex-end;margin-top:24px;padding-top:16px;position:sticky;z-index:5}.submitBtn_60dda148{background:linear-gradient(90deg,#6c5ce7,#4834d4);border:none;border-radius:6px;box-shadow:0 8px 20px rgba(72,52,212,.14);color:#fff;cursor:pointer;font-size:15px;font-weight:600;padding:10px 24px}@media (max-width:640px){.grid_60dda148{grid-template-columns:1fr}}.formInner_60dda148::-webkit-scrollbar{width:8px}.formInner_60dda148::-webkit-scrollbar-thumb{backdrop-filter:blur(2px);background:rgba(108,92,231,.32);border-radius:8px}.formInner_60dda148::-webkit-scrollbar-thumb:hover{background:rgba(108,92,231,.46)}.formInner_60dda148::-webkit-scrollbar-track{background:rgba(15,33,51,.03)}.formInner_60dda148{scrollbar-color:rgba(108,92,231,.32) rgba(15,33,51,.03);scrollbar-width:thin}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vQzovVXNlcnMvVmlqYXlHYW5lc2gvRG93bmxvYWRzL0luZGVnZW5lU2hhcmVwb2ludFNpdGUvc3JjL3dlYnBhcnRzL21pZ3JhdGlvbi9jb21wb25lbnRzL011bHRpTWV0YWRhdGFGb3JtL011bHRpTWV0YWRhdGFGb3JtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHNCQUNFLCtDQUFBLENBRUEsa0JBQUEsQ0FHQSx5Q0FBQSxDQUdBLFlBQUEsQ0FDQSxxQkFBQSxDQUxBLGdCQUFBLENBRUEsOEJBQUEsQ0FDQSxlQUFBLENBTkEsMkJBQUEsQ0FTQSxpQkFBQSxDQVBBLHFCQU9BLENBR0Ysb0JBSUUsZ0NBQUEsQ0FIQSxhQUFBLENBTUEsOEJBQUEsQ0FMQSxZQUFBLENBQ0EsZUFBQSxDQUdBLGdCQUFBLENBREEsaUJBRUEsQ0FHRixvQkFJRSxrQkFBQSxDQUhBLGNBQUEsQ0FFQSxZQUFBLENBRUEsUUFBQSxDQUVBLGlCQUFBLENBTEEsY0FBQSxDQUlBLGlCQUNBLENBR0YsbUJBRUUsY0FBQSxDQUNBLFlBQUEsQ0FFQSxNQUFBLENBREEscUJBQUEsQ0FFQSxZQUFBLENBTEEsWUFLQSxDQUdGLGdCQUlFLGFBQUEsQ0FIQSxjQUFBLENBRUEsZUFBQSxDQURBLFFBRUEsQ0FHRixvQkFHRSxzQkFBQSxDQUZBLFlBQUEsQ0FDQSxxQkFDQSxDQUdGLG1CQUVFLGFBQUEsQ0FEQSxjQUFBLENBR0EsZUFBQSxDQURBLGNBQ0EsQ0FHRixtQkFPRSxrQkFBQSxDQU5BLGVBQUEsQ0FDQSxtQ0FBQSxDQU9BLGlCQUFBLENBQ0Esd0NBQUEsQ0FQQSxhQUFBLENBVUEsY0FBQSxDQVBBLG1CQUFBLENBS0EsY0FBQSxDQU5BLFdBQUEsQ0FHQSxzQkFBQSxDQUlBLGFBQUEsQ0FFQSxpQkFBQSxDQUVBLFVBQUEsQ0FEQSxRQUFBLENBWEEsVUFBQSxDQWFBLFVBQUEsQ0FHRiw4QkFDRSxlQUFBLENBQ0EsbUNBQUEsQ0FDQSxrQkFBQSxDQUdBLHdDQUFBLENBR0EscUJBQUEsQ0FKQSxrQkFBQSxDQUdBLGNBQUEsQ0FEQSxlQUFBLENBSEEsWUFLQSxDQUdGLHdCQU9FLG9CQUFBLENBREEsMkNBQUEsQ0FIQSxVQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBT0EsY0FBQSxDQURBLGVBQUEsQ0FGQSx3QkFBQSxDQUhBLG1CQUFBLENBSUEscUJBRUEsQ0FHRiwyQkFFRSxrQkFBQSxDQUdBLGFBQUEsQ0FKQSxZQUFBLENBS0EsY0FBQSxDQUNBLGVBQUEsQ0FKQSxPQUFBLENBQ0Esa0JBR0EsQ0FFQSwrQkFFRSxtQkFBQSxDQUNBLFNBQUEsQ0FGQSxhQUVBLENBU0osb0NBSkUsWUFBQSxDQUNBLHFCQU1BLENBSEYsb0JBQ0UsZ0JBRUEsQ0FHRixnQkFFRSxhQUFBLENBREEsY0FBQSxDQUdBLGVBQUEsQ0FEQSxpQkFDQSxDQUdGLGdCQUtFLGVBQUEsQ0FGQSxtQ0FBQSxDQUNBLGlCQUFBLENBRUEsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsaUJBQUEsQ0FPQSwyREFBQSxDQUVBLDZCQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsc0NBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRiw2QkFDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHNCQUNFLGdDQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBQ0EsMEJBQUEsQ0FJSix5QkFDRSw4QkFBQSxDQUVBLCtCQUNFLDhCQUFBLENBQ0Esb0RBQUEsQ0FJSixtQkFLRSxtQ0FBQSxDQUNBLGlCQUFBLENBQ0EsYUFBQSxDQUpBLGNBQUEsQ0FLQSxlQUFBLENBTkEsZ0JBQUEsQ0FEQSxZQUFBLENBR0EsZUFJQSxDQUVBLGdDQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYseUNBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FGRixnQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUdGLHlCQUNFLG9CQUFBLENBQ0EsMENBQUEsQ0FDQSxTQUFBLENBSUosNkJBT0UsbUNBQUEsQ0FDQSxpQkFBQSxDQUNBLGFBQUEsQ0FFQSxpQ0FBQSxDQVBBLGNBQUEsQ0FNQSxlQUFBLENBRUEsZUFBQSxDQVRBLGdCQUFBLENBREEsZ0JBQUEsQ0FJQSxlQUFBLENBTEEsWUFBQSxDQUlBLFdBT0EsQ0FFQSwwQ0FDRSxhQUFBLENBQ0EsU0FBQSxDQUZGLG1EQUNFLGFBQUEsQ0FDQSxTQUFBLENBRkYsMENBQ0UsYUFBQSxDQUNBLFNBQUEsQ0FHRixtQ0FDRSxvQkFBQSxDQUNBLDBDQUFBLENBQ0EsU0FBQSxDQUdGLGdEQUNFLFNBQUEsQ0FHRixzREFDRSwrQkFBQSxDQUNBLGlCQUFBLENBR0YsNERBQ0UsK0JBQUEsQ0FHRixzREFDRSw2QkFBQSxDQUdGLHFEQUNFLDhCQUFBLENBRUEsMkRBQ0UsOEJBQUEsQ0FDQSxtREFBQSxDQUtOLGVBSUUsaUJBQUEsQ0FIQSxZQUFBLENBRUEsYUFBQSxDQURBLDZCQUVBLENBR0YsMEJBUUUsMkRBQUEsQ0FIQSx1Q0FBQSxDQUVBLFFBQUEsQ0FOQSxZQUFBLENBQ0Esd0JBQUEsQ0FDQSxlQUFBLENBQ0EsZ0JBQUEsQ0FFQSxlQUFBLENBR0EsU0FBQSxDQUdGLG9CQUVFLGlEQUFBLENBR0EsV0FBQSxDQUNBLGlCQUFBLENBR0EseUNBQUEsQ0FOQSxVQUFBLENBSUEsY0FBQSxDQUhBLGNBQUEsQ0FJQSxlQUFBLENBUEEsaUJBUUEsQ0FJRix5QkFDRSxlQUNFLHlCQUFBLENBQUEsQ0FJSix1Q0FDRSxTQUFBLENBRUYsNkNBR0UseUJBQUEsQ0FGQSwrQkFBQSxDQUNBLGlCQUNBLENBRUYsbURBQ0UsK0JBQUEsQ0FFRiw2Q0FDRSw2QkFBQSxDQUdGLG9CQUNFLHVEQUFBLENBQ0Esb0JBQUEiLCJmaWxlIjoiTXVsdGlNZXRhZGF0YUZvcm0ubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  formWrapper_39441897: "formWrapper_39441897",
-  formInner_39441897: "formInner_39441897",
-  headerBar_39441897: "headerBar_39441897",
-  cardMeta_39441897: "cardMeta_39441897",
-  title_39441897: "title_39441897",
-  titleWrap_39441897: "titleWrap_39441897",
-  subtitle_39441897: "subtitle_39441897",
-  closeBtn_39441897: "closeBtn_39441897",
-  singleFormContainer_39441897: "singleFormContainer_39441897",
-  fileFormTitle_39441897: "fileFormTitle_39441897",
-  field_39441897: "field_39441897",
-  fieldFull_39441897: "fieldFull_39441897",
-  label_39441897: "label_39441897",
-  input_39441897: "input_39441897",
+  formWrapper_60dda148: "formWrapper_60dda148",
+  formInner_60dda148: "formInner_60dda148",
+  headerBar_60dda148: "headerBar_60dda148",
+  cardMeta_60dda148: "cardMeta_60dda148",
+  title_60dda148: "title_60dda148",
+  titleWrap_60dda148: "titleWrap_60dda148",
+  subtitle_60dda148: "subtitle_60dda148",
+  closeBtn_60dda148: "closeBtn_60dda148",
+  singleFormContainer_60dda148: "singleFormContainer_60dda148",
+  fileFormTitle_60dda148: "fileFormTitle_60dda148",
+  sensitiveWarning_60dda148: "sensitiveWarning_60dda148",
+  field_60dda148: "field_60dda148",
+  fieldFull_60dda148: "fieldFull_60dda148",
+  label_60dda148: "label_60dda148",
+  input_60dda148: "input_60dda148",
   input: "input",
-  textarea_39441897: "textarea_39441897",
+  inputSensitive_60dda148: "inputSensitive_60dda148",
+  textarea_60dda148: "textarea_60dda148",
   textarea: "textarea",
-  textareaScrollable_39441897: "textareaScrollable_39441897",
+  textareaScrollable_60dda148: "textareaScrollable_60dda148",
   textareaScrollable: "textareaScrollable",
-  grid_39441897: "grid_39441897",
-  submitContainer_39441897: "submitContainer_39441897",
-  submitBtn_39441897: "submitBtn_39441897"
+  grid_60dda148: "grid_60dda148",
+  submitContainer_60dda148: "submitContainer_60dda148",
+  submitBtn_60dda148: "submitBtn_60dda148"
 });
 
 
@@ -1918,12 +1922,25 @@ var __assign = (undefined && undefined.__assign) || function () {
 var MetadataForm = function (_a) {
     var onSubmit = _a.onSubmit, onClose = _a.onClose, initialValues = _a.initialValues;
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState(__assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, initialValues)), values = _b[0], setValues = _b[1];
-    // Update values when initialValues change
+    // Track which fields were auto-filled (from initialValues)
+    var autoFilledFields = react__WEBPACK_IMPORTED_MODULE_0__.useRef(new Set());
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         if (initialValues) {
+            // Track which sensitive fields were auto-filled
+            if (initialValues.emails && initialValues.emails.trim()) {
+                autoFilledFields.current.add('emails');
+            }
+            if (initialValues.phones && initialValues.phones.trim()) {
+                autoFilledFields.current.add('phones');
+            }
+            if (initialValues.client && initialValues.client.trim()) {
+                autoFilledFields.current.add('client');
+            }
             setValues(function (prev) { return (__assign(__assign({}, prev), initialValues)); });
         }
     }, [initialValues]);
+    // Check if any sensitive field was auto-filled
+    var hasSensitiveInfo = autoFilledFields.current.size > 0;
     var onChange = function (e) {
         var _a = e.target, name = _a.name, value = _a.value;
         setValues(function (v) {
@@ -1939,7 +1956,13 @@ var MetadataForm = function (_a) {
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].headerBar },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].titleWrap },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Document Metadata"),
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle }, "Add context and tags for better discoverability"))),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subtitle }, "Add context and tags for better discoverability"),
+                hasSensitiveInfo && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sensitiveWarning },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "2" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "16", x2: "12.01", y2: "16", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" })),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "This file contains sensitive information"))))),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { type: "button", "aria-label": "Close", className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].closeBtn, onClick: function () { return onClose && onClose(); }, title: "Close" },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": true },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", { d: "M18 6L6 18M6 6l12 12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }))),
@@ -1961,7 +1984,7 @@ var MetadataForm = function (_a) {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region", name: "region", placeholder: "Region", value: values.region, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client" }, "Client"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client", name: "client", placeholder: "Client name", value: values.client, onChange: onChange, className: "".concat(_MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input, " ").concat(autoFilledFields.current.has('client') && values.client ? _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType" }, "Document Type"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType", name: "documentType", placeholder: "e.g., PPTX, Report", value: values.documentType, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
@@ -1976,10 +1999,10 @@ var MetadataForm = function (_a) {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract", name: "abstract", placeholder: "Short summary (1-2 lines)", value: values.abstract, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails" }, "Emails Found"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails", name: "emails", value: values.emails, onChange: onChange, className: "".concat(_MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat(autoFilledFields.current.has('emails') && values.emails ? _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones" }, "Phones Found"),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones", name: "phones", value: values.phones, onChange: onChange, className: "".concat(_MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat(autoFilledFields.current.has('phones') && values.phones ? _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids" }, "IDs Found"),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids", name: "ids", value: values.ids, onChange: onChange, className: _MetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
@@ -2006,24 +2029,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MetadataForm.module.css */ 8856);
 var styles = {
-    formWrapper: 'formWrapper_ce3c3795',
-    formInner: 'formInner_ce3c3795',
-    note: 'note_ce3c3795',
-    headerBar: 'headerBar_ce3c3795',
-    cardMeta: 'cardMeta_ce3c3795',
-    field: 'field_ce3c3795',
-    title: 'title_ce3c3795',
-    titleWrap: 'titleWrap_ce3c3795',
-    subtitle: 'subtitle_ce3c3795',
-    closeBtn: 'closeBtn_ce3c3795',
-    fieldFull: 'fieldFull_ce3c3795',
-    label: 'label_ce3c3795',
-    input: 'input_ce3c3795',
-    textarea: 'textarea_ce3c3795',
-    textareaScrollable: 'textareaScrollable_ce3c3795',
-    grid: 'grid_ce3c3795',
-    actions: 'actions_ce3c3795',
-    submitBtn: 'submitBtn_ce3c3795'
+    formWrapper: 'formWrapper_ee4e8b41',
+    formInner: 'formInner_ee4e8b41',
+    note: 'note_ee4e8b41',
+    headerBar: 'headerBar_ee4e8b41',
+    cardMeta: 'cardMeta_ee4e8b41',
+    field: 'field_ee4e8b41',
+    title: 'title_ee4e8b41',
+    titleWrap: 'titleWrap_ee4e8b41',
+    subtitle: 'subtitle_ee4e8b41',
+    sensitiveWarning: 'sensitiveWarning_ee4e8b41',
+    closeBtn: 'closeBtn_ee4e8b41',
+    fieldFull: 'fieldFull_ee4e8b41',
+    label: 'label_ee4e8b41',
+    input: 'input_ee4e8b41',
+    inputSensitive: 'inputSensitive_ee4e8b41',
+    textarea: 'textarea_ee4e8b41',
+    textareaScrollable: 'textareaScrollable_ee4e8b41',
+    grid: 'grid_ee4e8b41',
+    actions: 'actions_ee4e8b41',
+    submitBtn: 'submitBtn_ee4e8b41'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -2167,11 +2192,25 @@ var __assign = (undefined && undefined.__assign) || function () {
 var MultiMetadataForm = function (_a) {
     var onSubmit = _a.onSubmit, onClose = _a.onClose, filesData = _a.filesData;
     var _b = react__WEBPACK_IMPORTED_MODULE_0__.useState({}), formsData = _b[0], setFormsData = _b[1];
+    // Track which fields were auto-filled for each file
+    var autoFilledFields = react__WEBPACK_IMPORTED_MODULE_0__.useRef({});
     // Initialize forms data from filesData
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(function () {
         var initialData = {};
         filesData.forEach(function (fileData, index) {
+            var _a, _b, _c;
             initialData[index] = __assign({ title: '', abstract: '', bu: '', department: '', region: '', client: '', documentType: '', diseaseArea: '', therapyArea: '', emails: '', phones: '', ids: '', pricing: '', sensitive: '' }, fileData.metadata);
+            // Track which sensitive fields were auto-filled for this file
+            autoFilledFields.current[index] = new Set();
+            if (((_a = fileData.metadata) === null || _a === void 0 ? void 0 : _a.emails) && fileData.metadata.emails.trim()) {
+                autoFilledFields.current[index].add('emails');
+            }
+            if (((_b = fileData.metadata) === null || _b === void 0 ? void 0 : _b.phones) && fileData.metadata.phones.trim()) {
+                autoFilledFields.current[index].add('phones');
+            }
+            if (((_c = fileData.metadata) === null || _c === void 0 ? void 0 : _c.client) && fileData.metadata.client.trim()) {
+                autoFilledFields.current[index].add('client');
+            }
         });
         setFormsData(initialData);
     }, [filesData]);
@@ -2213,6 +2252,16 @@ var MultiMetadataForm = function (_a) {
                             index + 1,
                             " - ",
                             fileData.file.name),
+                        (function () {
+                            var fileAutoFilledFields = autoFilledFields.current[index] || new Set();
+                            var hasSensitiveInfo = fileAutoFilledFields.size > 0;
+                            return hasSensitiveInfo ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sensitiveWarning },
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", { width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", { cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "2" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "8", x2: "12", y2: "12", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }),
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("line", { x1: "12", y1: "16", x2: "12.01", y2: "16", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" })),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "This file contains sensitive information"))) : null;
+                        })(),
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "title-".concat(index) }, "Title"),
@@ -2228,7 +2277,7 @@ var MultiMetadataForm = function (_a) {
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "region-".concat(index), name: "region", placeholder: "Region", value: formData.region || '', onChange: function (e) { return handleFieldChange(index, 'region', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "client-".concat(index) }, "Client"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client-".concat(index), name: "client", placeholder: "Client name", value: formData.client || '', onChange: function (e) { return handleFieldChange(index, 'client', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "client-".concat(index), name: "client", placeholder: "Client name", value: formData.client || '', onChange: function (e) { return handleFieldChange(index, 'client', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input, " ").concat((autoFilledFields.current[index] || new Set()).has('client') && formData.client ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].field },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "documentType-".concat(index) }, "Document Type"),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { id: "documentType-".concat(index), name: "documentType", placeholder: "e.g., PPTX, Report", value: formData.documentType || '', onChange: function (e) { return handleFieldChange(index, 'documentType', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input })),
@@ -2243,10 +2292,10 @@ var MultiMetadataForm = function (_a) {
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "abstract-".concat(index), name: "abstract", placeholder: "Short summary (1-2 lines)", value: formData.abstract || '', onChange: function (e) { return handleFieldChange(index, 'abstract', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "emails-".concat(index) }, "Emails Found"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails-".concat(index), name: "emails", value: formData.emails || '', onChange: function (e) { return handleFieldChange(index, 'emails', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "emails-".concat(index), name: "emails", value: formData.emails || '', onChange: function (e) { return handleFieldChange(index, 'emails', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('emails') && formData.emails ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "phones-".concat(index) }, "Phones Found"),
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones-".concat(index), name: "phones", value: formData.phones || '', onChange: function (e) { return handleFieldChange(index, 'phones', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable })),
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "phones-".concat(index), name: "phones", value: formData.phones || '', onChange: function (e) { return handleFieldChange(index, 'phones', e.target.value); }, className: "".concat(_MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textareaScrollable, " ").concat((autoFilledFields.current[index] || new Set()).has('phones') && formData.phones ? _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].inputSensitive : '') })),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].fieldFull },
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", { className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, htmlFor: "ids-".concat(index) }, "IDs Found"),
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", { id: "ids-".concat(index), name: "ids", value: formData.ids || '', onChange: function (e) { return handleFieldChange(index, 'ids', e.target.value); }, className: _MultiMetadataForm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textarea })),
@@ -2279,25 +2328,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./MultiMetadataForm.module.css */ 5124);
 var styles = {
-    formWrapper: 'formWrapper_39441897',
-    formInner: 'formInner_39441897',
-    headerBar: 'headerBar_39441897',
-    cardMeta: 'cardMeta_39441897',
-    title: 'title_39441897',
-    titleWrap: 'titleWrap_39441897',
-    subtitle: 'subtitle_39441897',
-    closeBtn: 'closeBtn_39441897',
-    singleFormContainer: 'singleFormContainer_39441897',
-    fileFormTitle: 'fileFormTitle_39441897',
-    field: 'field_39441897',
-    fieldFull: 'fieldFull_39441897',
-    label: 'label_39441897',
-    input: 'input_39441897',
-    textarea: 'textarea_39441897',
-    textareaScrollable: 'textareaScrollable_39441897',
-    grid: 'grid_39441897',
-    submitContainer: 'submitContainer_39441897',
-    submitBtn: 'submitBtn_39441897'
+    formWrapper: 'formWrapper_60dda148',
+    formInner: 'formInner_60dda148',
+    headerBar: 'headerBar_60dda148',
+    cardMeta: 'cardMeta_60dda148',
+    title: 'title_60dda148',
+    titleWrap: 'titleWrap_60dda148',
+    subtitle: 'subtitle_60dda148',
+    closeBtn: 'closeBtn_60dda148',
+    singleFormContainer: 'singleFormContainer_60dda148',
+    fileFormTitle: 'fileFormTitle_60dda148',
+    sensitiveWarning: 'sensitiveWarning_60dda148',
+    field: 'field_60dda148',
+    fieldFull: 'fieldFull_60dda148',
+    label: 'label_60dda148',
+    input: 'input_60dda148',
+    inputSensitive: 'inputSensitive_60dda148',
+    textarea: 'textarea_60dda148',
+    textareaScrollable: 'textareaScrollable_60dda148',
+    grid: 'grid_60dda148',
+    submitContainer: 'submitContainer_60dda148',
+    submitBtn: 'submitBtn_60dda148'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 

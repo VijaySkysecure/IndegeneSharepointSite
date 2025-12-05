@@ -4,6 +4,9 @@ import { IMultiMetadataFormProps } from './IMultiMetadataFormProps';
 
 export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit, onClose, filesData }) => {
   const [formsData, setFormsData] = React.useState<Record<number, Record<string, any>>>({});
+  
+  // Track which fields were auto-filled for each file
+  const autoFilledFields = React.useRef<Record<number, Set<string>>>({});
 
   // Initialize forms data from filesData
   React.useEffect(() => {
@@ -26,6 +29,18 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
         sensitive: '',
         ...fileData.metadata
       };
+      
+      // Track which sensitive fields were auto-filled for this file
+      autoFilledFields.current[index] = new Set();
+      if (fileData.metadata?.emails && fileData.metadata.emails.trim()) {
+        autoFilledFields.current[index].add('emails');
+      }
+      if (fileData.metadata?.phones && fileData.metadata.phones.trim()) {
+        autoFilledFields.current[index].add('phones');
+      }
+      if (fileData.metadata?.client && fileData.metadata.client.trim()) {
+        autoFilledFields.current[index].add('client');
+      }
     });
     setFormsData(initialData);
   }, [filesData]);
@@ -82,6 +97,20 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
               return (
                 <div key={index} className={styles.singleFormContainer}>
                   <h3 className={styles.fileFormTitle}>File {index + 1} - {fileData.file.name}</h3>
+                  {(() => {
+                    const fileAutoFilledFields = autoFilledFields.current[index] || new Set();
+                    const hasSensitiveInfo = fileAutoFilledFields.size > 0;
+                    return hasSensitiveInfo ? (
+                      <div className={styles.sensitiveWarning}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+                          <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                          <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                        </svg>
+                        <span>This file contains sensitive information</span>
+                      </div>
+                    ) : null;
+                  })()}
                   
                   <div className={styles.grid}>
                     <div className={styles.field}>
@@ -140,7 +169,7 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
                         placeholder="Client name" 
                         value={formData.client || ''} 
                         onChange={(e) => handleFieldChange(index, 'client', e.target.value)} 
-                        className={styles.input} 
+                        className={`${styles.input} ${(autoFilledFields.current[index] || new Set()).has('client') && formData.client ? styles.inputSensitive : ''}`} 
                       />
                     </div>
 
@@ -199,7 +228,7 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
                         name="emails" 
                         value={formData.emails || ''} 
                         onChange={(e) => handleFieldChange(index, 'emails', e.target.value)} 
-                        className={styles.textareaScrollable}
+                        className={`${styles.textareaScrollable} ${(autoFilledFields.current[index] || new Set()).has('emails') && formData.emails ? styles.inputSensitive : ''}`}
                       />
                     </div>
 
@@ -210,7 +239,7 @@ export const MultiMetadataForm: React.FC<IMultiMetadataFormProps> = ({ onSubmit,
                         name="phones" 
                         value={formData.phones || ''} 
                         onChange={(e) => handleFieldChange(index, 'phones', e.target.value)} 
-                        className={styles.textareaScrollable}
+                        className={`${styles.textareaScrollable} ${(autoFilledFields.current[index] || new Set()).has('phones') && formData.phones ? styles.inputSensitive : ''}`}
                       />
                     </div>
 
